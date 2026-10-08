@@ -7,8 +7,15 @@ manifest=json.loads((root/'lean/source-manifest.json').read_text())
 assert manifest['counts']=={'Arctangent':14,'Logarithm':55,'OAI':869}
 for name,digest in manifest['source_sha256'].items():
     assert hashlib.sha256((root/'lean'/name).read_bytes()).hexdigest()==digest,name
+supplement={}
+for line in (root/'lean/formal-conjectures-sources.sha256').read_text().splitlines():
+    digest,name=line.split(maxsplit=1)
+    supplement[name]=digest
+    assert hashlib.sha256((root/'lean'/name).read_bytes()).hexdigest()==digest,name
+assert set(supplement)=={'Arctangent/FormalConjectures.lean'}
 for group,count in manifest['counts'].items():
-    assert len(list((root/'lean'/group).rglob('*.lean')))==count,group
+    additions=sum(name.startswith(group+'/') for name in supplement)
+    assert len(list((root/'lean'/group).rglob('*.lean')))==count+additions,group
 for path in root.rglob('*.md'):
     text=path.read_text(encoding='utf-8')
     text=re.sub(r'\\\[.*?\\\]|\\\(.*?\\\)', '', text, flags=re.S)
@@ -26,4 +33,4 @@ assert (root/'paper.pdf').read_bytes().startswith(b'%PDF-')
 for file in ['README.md','NOTICE','CITATION.cff','build/manuscript.md']:
     assert 'Ryan Matthew Casper' in (root/file).read_text() or file=='CITATION.cff'
 assert 'AI use disclosure' in (root/'build/manuscript.md').read_text()
-print(f"PASS: {sum(manifest['counts'].values())} proof modules, source manifest, local links, authorship, PDF, and present release assets")
+print(f"PASS: {sum(manifest['counts'].values())} frozen proof modules and {len(supplement)} supplementary module, source manifests, local links, authorship, PDF, and present release assets")

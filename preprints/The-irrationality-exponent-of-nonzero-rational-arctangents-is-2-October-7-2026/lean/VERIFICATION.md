@@ -34,7 +34,7 @@ All 31 audited endpoint and intermediate declarations report exactly `propext`, 
 
 Mathlib is pinned to `d13f23b723b8a846827a245b89c10fc7d3f11612`. OpenAI's original source is pinned to `adc7f1241b42e322a6451854ab7e4b4c146bf78a`.
 
-The package contains 14 new Arctangent modules, 55 unchanged Logarithm modules, and 869 unchanged OpenAI modules. All 938 module hashes match the sources used by the checked native environment. The inherited files also match the previous audited bundle byte for byte. The new source scan found no `sorry`, `admit`, axiom declaration, `unsafe`, `extern`, or `implemented_by`. See `source-manifest.json` and `sources.sha256`.
+The frozen core contains 14 new Arctangent modules, 55 unchanged Logarithm modules, and 869 unchanged OpenAI modules. All 938 module hashes match the sources used by the checked native environment. The inherited files also match the previous audited bundle byte for byte. The new source scan found no `sorry`, `admit`, axiom declaration, `unsafe`, `extern`, or `implemented_by`. See `source-manifest.json` and `sources.sha256`.
 
 `source-manifest.json` SHA-256:
 
@@ -77,3 +77,19 @@ The formalization rotates rational approximants by `Complex.I`, preserving their
 The dedicated half-arctangent path uses `U=3+4i`, `D=5`. The general path proves non-torsion for rational inputs outside `0,±1`, handles `±1` through the certified pi bound, and excludes zero. Division by 2 and 4 is proved at the quantified approximation-bound level with exponent slack. No algebraic-scaling invariance is invoked.
 
 The verification concerns the displayed formal statements and definitions relative to the three foundational axioms. Independent exported-proof checking and stock-kernel replay reduce reliance on a single checker implementation; they do not constitute an independent mathematical discovery, exhaustive priority search, or external human peer review.
+
+## Catalogue statement module
+
+[Arctangent/FormalConjectures.lean](Arctangent/FormalConjectures.lean) proves
+`OAI.Arctangent.rational_arctan_irrationality_and_bound`, the exact conjunction
+used by the proposed Formal Conjectures entry. It imports `Arctangent.Main`.
+The supplementary module has its own hash in `formal-conjectures-sources.sha256`;
+the frozen core manifests above are unchanged.
+
+The module compiled on Lean 4.34.1 with `autoImplicit=false` and warnings treated
+as errors, using native dependencies whose sources match the frozen manifests.
+Its axiom audit reports only `propext`, `Classical.choice`, and `Quot.sound`.
+See the [receipt](../evidence/formal-conjectures-verification.json) and
+[axiom output](../evidence/formal-conjectures-axioms.log). Run `bash verify.sh`
+to build and audit it with the rest of the source package. This additional
+module is not included in the retained export or its earlier independent replay.
