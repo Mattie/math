@@ -15,6 +15,8 @@ package = Path(__file__).resolve().parents[1]
 pin = json.loads((package / 'evidence/dependency-pin.json').read_text())
 target = Path(sys.argv[1]).resolve()
 if not (target / 'lakefile.lean').exists():
+    if target.exists() and (not target.is_dir() or any(target.iterdir())):
+        raise SystemExit('Dependency target must be empty or an existing project; use a new directory.')
     url = pin['repository'] + '/archive/' + pin['commit'] + '.zip'
     with urllib.request.urlopen(url) as response:
         archive = zipfile.ZipFile(io.BytesIO(response.read()))
@@ -29,5 +31,6 @@ if not (target / 'lakefile.lean').exists():
             raise SystemExit('Unexpected archive path.')
         output = target.joinpath(*relative.parts)
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_bytes(archive.read(member))
+        with output.open('xb') as destination:
+            destination.write(archive.read(member))
 print(target)

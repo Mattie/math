@@ -21,5 +21,14 @@
   ],
   "main_source_repository": "https://github.com/leanprover/lean-kernel-arena",
   "main_source_commit": "b83254de5146ef34147ab82a48edbe1856b0edcc",
-  "main_source_path": "checkers/official/Main.lean"
+  "main_source_path": "checkers/official/Main.lean",
+  "packaged_source_sha256": {
+    "Main.lean": "e24f12e0eb56b8ae6522de96930161f2276bd34df7c45e3ed1a111d044781125",
+    "lakefile.toml": "c8ab0f29333ee80051806046391869dfa253415bc939e5cf77dc7047f6032cd6",
+    "lake-manifest.json": "39f18f618d8f81a19b40d463f5bc4916e9ac88e31028965e39a3b9df91e919bf",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "parser/Export/Parse.lean": "1f943b5cc776eece6d528937b976509c8bd57d10bc69a39b1c119bfb6d664286",
+    "parser/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "packaged_source_changes": "Corrected quotient comment and invalid-argument usage text only. source_sha256 and reader_binary_sha256 identify the historical full replay; packaged_source_sha256 identifies the distributed reader. No full replay with the updated reader is claimed."
 }

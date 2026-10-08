@@ -13,7 +13,7 @@
     "evidence/dependency-source-sha256.json": "6b636632ab7122235b7103590e41b17d429b929b59423ab0977252f5ef24f3b8",
     "evidence/preparation.json": "9197e18428cc803ad5e334016f10e6a25adf2a523490ecc4d811671f5a8aa44b",
     "evidence/publication-review.json": "5e0c54c1568e44c017960c0a2ba33316980830138a0c5749f8878952ea40cf9e",
-    "evidence/second-lean-reader.json": "602e4a8906897a13f5005cf44051dfb8a7576d129eba690034c047ed2305ee39",
+    "evidence/second-lean-reader.json": "77e7ff8b495911c7d11b0f634f233135b2efa295876010b9097833ef33171b24",
     "lean/AlgebraicLog/AdmissibleParameters.lean": "c10d98ca66695f0cef07a8a32b813d875aa2dfc0791bd5c4133a974c651505ed",
     "lean/AlgebraicLog/AnalyticAggregate.lean": "91a02f48de3efbb883f72aedd1c291c8ac377ea940ac30b53ee0445047135339",
     "lean/AlgebraicLog/AnalyticData.lean": "0de017ae10c3f0350a1a012c40a022fe79427990f6e62cd001ece184d7b884b3",
@@ -45,7 +45,7 @@
     "lean/reference-reader/lake-manifest.json": "39f18f618d8f81a19b40d463f5bc4916e9ac88e31028965e39a3b9df91e919bf",
     "lean/reference-reader/lakefile.toml": "c8ab0f29333ee80051806046391869dfa253415bc939e5cf77dc7047f6032cd6",
     "lean/reference-reader/lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
-    "lean/reference-reader/Main.lean": "556dd7ff4498ab19fecfa3c268d48090b2e7e723abd59f43d8e513c9769d8e5c",
+    "lean/reference-reader/Main.lean": "e24f12e0eb56b8ae6522de96930161f2276bd34df7c45e3ed1a111d044781125",
     "lean/reference-reader/parser/Export/Parse.lean": "1f943b5cc776eece6d528937b976509c8bd57d10bc69a39b1c119bfb6d664286",
     "lean/reference-reader/parser/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "lean/verify.sh": "1a3019e5ee66877253fad79e61fb58aaa76818e94a5ac4de8d8322a313d09629",
@@ -66,9 +66,10 @@
     "scripts/check-sources.py": "c006ae56d1a0f55df4e2cf4157a345a029808680a14daf2cba910ae2c7828a79",
     "scripts/dependency-targets.py": "8950def27a52d933d1c4b99aa39cc77a6e3c2f6e2cd66dab5f205faee6eefeb6",
     "scripts/export.sh": "f2ff8425cce8939a7ddafd8dfb9da8d82da9cfb4af9aa565719f13403a91d9db",
-    "scripts/fetch-dependency.py": "6bf7795960df711df370879c630825a1d08a4e7803e234204beaf56721688c88",
+    "scripts/fetch-dependency.py": "e01f6afa8b851e09c2339cea785a9dd3d25e1625635acc99d5616dfadcc52d4d",
     "scripts/prepare-manuscript.py": "59e33f993f3dccd337373939d7bfe354e1d70e8b13bccf53c24cc9f877dd85de",
     "scripts/replay.sh": "7858c972c87cc1f488d2ed565178921b98437444270a2dc853200cefd04894d0",
-    "VERIFY.md": "a77b4df93e881360d29b5c1fede431087eb88779cc88c18bc2d00952e0f884a1"
+    "VERIFY.md": "7a611b378f1b3521c785c3898343257677e6b17cbecc37fabd40cd0008ebe7fc",
+    "scripts/test-fetch-dependency.py": "91f09f2132157ddd989dcff5cf51b2916d4bdd06d8e9383015d6f2672e6085a2"
   }
 }
