@@ -14,7 +14,9 @@ bash verify.sh
 
 The second command group requires Bash, elan/Lean, Git, and network access to
 fetch pinned dependencies. Use a native Linux filesystem for large WSL builds.
-It verifies source hashes, builds the project, and runs the endpoint axiom audit.
+It verifies the frozen and supplementary source hashes, builds the project and
+`Arctangent.FormalConjectures`, and runs their axiom audits. The supplementary
+module proves the exact catalogue statement; it is not part of the retained export.
 
 For independent exported-proof checking, also install Rust and Python 3:
 

@@ -7,7 +7,7 @@ exponent 2. The argument extends OpenAI's weighted interpolation and determinant
 method using Gaussian arithmetic, with a Lean formalization.
 
 - [Manuscript PDF](paper.pdf) and [editable manuscript](build/manuscript.md)
-- [Formal proof](lean/Arctangent/Main.lean)
+- [Formal proof](lean/Arctangent/Main.lean) and [catalogue statement](lean/Arctangent/FormalConjectures.lean)
 - [Reproduction instructions](VERIFY.md) and [verification summary](lean/VERIFICATION.md)
 - [Citation metadata](CITATION.cff), [license scope](LICENSES.md), and [attribution](NOTICE)
 

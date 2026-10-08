@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-08T02:36:19.463986+00:00",
+  "module": "Arctangent.FormalConjectures",
+  "theorem": "OAI.Arctangent.rational_arctan_irrationality_and_bound",
+  "source_sha256": "6041855136b631a38a609bceea95516589142cd60d300229ce083ae80abaa04f",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "warnings_as_errors": true,
+  "auto_implicit": false,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "frozen_dependency_sources_verified": true,
+  "retained_export_includes_this_module": false,
+  "independent_export_replay_rerun": false
+}
