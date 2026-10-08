@@ -1,0 +1,20 @@
+All-power weighted degree bounds for monomial compactifications
+Copyright (c) 2026 Ryan Matthew Casper
+
+The original argument, new Degree modules, and reproduction scripts are by
+Ryan Matthew Casper with substantial contributions from OpenAI coding agents.
+The tensor-power principle is standard; no priority claim is made for it.
+
+The formalization imports the rational-logarithm proof package and the
+OpenAI pi library, pinned to the revisions recorded in evidence/dependency-pin.json.
+It also uses Mathlib. These dependencies retain their original licenses and notices.
+The proof export includes their transitive dependency closure.
+
+OpenAI is credited as an upstream contributor, not as the author of this note.
+Automated adversarial review is model review and does not constitute independent
+human mathematical review. No endorsement by any upstream organization is implied.
+
+The retained replay reader Main.lean is unchanged from Lean Kernel Arena,
+commit b83254de5146ef34147ab82a48edbe1856b0edcc, under Apache 2.0.
+Its parser is from lean4export, under Apache 2.0. Lean is under Apache 2.0.
+See LICENSES.md for the complete scope.

@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-08",
+  "native": {
+    "version": "4.34.1",
+    "fresh_extension_modules": 5,
+    "dependency_cache_reused": true,
+    "fresh_entire_library_rebuild": false,
+    "axiom_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "nanoda": {
+    "version": "0.4.19",
+    "accepted_declarations": 73054,
+    "errors": 0,
+    "exit_code": 0,
+    "elapsed_seconds": 102.94,
+    "peak_rss_kib": 1264836,
+    "unpermitted_axiom_hard_error": true,
+    "unsafe_permit_all_axioms": false
+  },
+  "lean_replay": {
+    "version": "4.34.0",
+    "accepted_explicit_declarations": 73051,
+    "regenerated_quotient_primitives": 3,
+    "exit_code": 0,
+    "elapsed_seconds": 554.99,
+    "peak_rss_kib": 2093736,
+    "parse_only": false
+  },
+  "automated_adversarial_review": {
+    "model": "Astra",
+    "reasoning_effort": "Max",
+    "fresh_extension_build": true,
+    "boundary_diagnostics": true,
+    "recomputed_export_digest": true,
+    "audited_recorded_replay_outcomes": true,
+    "reran_independent_checkers": false,
+    "unresolved_mathematical_defects": 0,
+    "independent_human_review": false
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "source_files": {
+    "Degree/AllPowers.lean": "9d63b2122837217f246ad7cfa7b80f9273877f9ae8af3e23ded93325b447ef04",
+    "Degree/Audit.lean": "02357cf562554f0d6d4b3bf3772f6528c894ef81afe7fa1a72e95eda98e7ae33",
+    "Degree/LogarithmBridge.lean": "52d9c6cd7f7f5f966d4d89fbde161376e3cf6480ae0605d426b2c2de40f04b2d",
+    "Degree/PolynomialPowers.lean": "342fff8323dcc43c12e57ffb5f6ba7fbbb5b5a23b1106b136364be5c05011092",
+    "Degree/SectionDegrees.lean": "656ab87dd2f43dd4b4a338e7ca45b2229662626a0a7132b4ccee30f015e25e21"
+  },
+  "export_sha256": "e0d80c6854703682a764bc601cd35b971bf383ea2715b3997323174e3f16dd89",
+  "export_size_bytes": 730631418,
+  "export_metadata": {
+    "meta": {
+      "exporter": {
+        "name": "lean4export",
+        "version": "3.1.0"
+      },
+      "format": {
+        "version": "3.1.0"
+      },
+      "lean": {
+        "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+        "version": "4.34.1"
+      }
+    }
+  },
+  "exporter_commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+  "exporter_binary_sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1",
+  "nanoda_commit": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+  "nanoda_binary_sha256": "a58f6590e9561bd296b7b187d75515fb3e6920defcaeac3582417579210e062d",
+  "endpoints": [
+    "Degree.supportBound_of_pow",
+    "Degree.monomial_all_supportBound",
+    "Degree.logarithm_all_supportBound",
+    "Degree.admissible_all_supportBound",
+    "Degree.Audit.projective_line_example"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}
