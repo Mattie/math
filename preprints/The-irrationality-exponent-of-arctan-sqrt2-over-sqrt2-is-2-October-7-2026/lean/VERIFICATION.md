@@ -36,7 +36,7 @@ The generic first theorem accepts `PeriodData`: a nonzero real angle, a positive
 
 Lean 4.34.1, commit `5045d0056413266e57c625dcd7c365b10e377c52`, compiled all 15 new modules in one coherent dependency-order run with `autoImplicit=false`. `Imaginary.EndpointAudit` audits 27 intermediate and endpoint declarations. Each uses only `propext`, `Classical.choice`, and `Quot.sound`. The source audit can be reproduced with `bash verify.sh`.
 
-Mathlib is pinned to `d13f23b723b8a846827a245b89c10fc7d3f11612`. The original OpenAI library is pinned to `adc7f1241b42e322a6451854ab7e4b4c146bf78a`. The package contains 15 Imaginary, 55 Logarithm, and 869 OAI modules. All 939 source files match the sources used in the compiled environment; the 924 inherited files also match the preceding frozen package byte for byte. The new-source scan found no `sorry`, `admit`, axiom declaration, `unsafe`, `extern`, or `implemented_by`.
+Mathlib is pinned to `d13f23b723b8a846827a245b89c10fc7d3f11612`. The original OpenAI library is pinned to `adc7f1241b42e322a6451854ab7e4b4c146bf78a`. The frozen core contains 15 Imaginary, 55 Logarithm, and 869 OAI modules. All 939 source files match the sources used in the compiled environment; the 924 inherited files also match the preceding frozen package byte for byte. The new-source scan found no `sorry`, `admit`, axiom declaration, `unsafe`, `extern`, or `implemented_by`.
 
 Source-manifest SHA-256: `611f176c1dc96160ce1c966c7bbbea2b9554c5fc5a16ca265ff6065035ef49fc`.
 
@@ -69,3 +69,18 @@ The new determinant argument retains the matrix factors `alpha^(j*h)` and the ro
 The result covers the exact normalized target and non-torsion periods in `Q(√−2)`. It does not certify every imaginary quadratic field, the unnormalized `arctan√2`, or torsion periods such as `π/√d`. No algebraic-scaling invariance or principal-logarithm identity for powers is assumed.
 
 Formal verification is relative to the three stated foundational axioms. Independent proof checking is not external human peer review or an exhaustive priority search. Ryan Matthew Casper is the author; OpenAI coding agents contributed substantially to the adaptation, proof development, checking, and exposition. The mathematical framework and inherited library are attributed to OpenAI/math and Mathlib.
+
+## Catalogue statement module
+
+[Imaginary/FormalConjectures.lean](Imaginary/FormalConjectures.lean) proves
+`OAI.Imaginary.normalized_arctan_sqrt_two_irrationality_and_bound` for the
+normalized value arctan(sqrt(2))/sqrt(2). Its hash is recorded separately in
+`formal-conjectures-sources.sha256`; the frozen core manifests are unchanged.
+
+The module compiled on Lean 4.34.1 with `autoImplicit=false` and warnings treated
+as errors, using native dependencies whose sources match the frozen manifests.
+Its axiom audit reports only `propext`, `Classical.choice`, and `Quot.sound`.
+See the [receipt](../evidence/formal-conjectures-verification.json) and
+[axiom output](../evidence/formal-conjectures-axioms.log). Run `bash verify.sh`
+to build and audit it with the rest of the source package. This supplementary
+module is not included in the retained export or its earlier independent replay.
