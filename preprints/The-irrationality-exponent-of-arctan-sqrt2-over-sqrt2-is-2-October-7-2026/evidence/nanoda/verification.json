@@ -1,0 +1,52 @@
+{
+  "export_size_bytes": 1273418143,
+  "export_sha256": "1aeffb0545974663a19694c8810d0bb8eb9110dc77f0aa9bf76d39a404f7c0dd",
+  "export_metadata": {
+    "meta": {
+      "exporter": {
+        "name": "lean4export",
+        "version": "3.1.0"
+      },
+      "format": {
+        "version": "3.1.0"
+      },
+      "lean": {
+        "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+        "version": "4.34.1"
+      }
+    }
+  },
+  "nanoda_commit": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+  "exporter_commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+  "nanoda_binary_sha256": "a58f6590e9561bd296b7b187d75515fb3e6920defcaeac3582417579210e062d",
+  "exporter_binary_sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1",
+  "configuration": {
+    "use_stdin": true,
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "unpermitted_axiom_hard_error": true,
+    "unsafe_permit_all_axioms": false,
+    "num_threads": 4,
+    "nat_extension": true,
+    "string_extension": true,
+    "print_success_message": true,
+    "print_axioms": true,
+    "pp_to_stdout": true,
+    "pp_declars": [
+      "OAI.Imaginary.period_irrationalityExponent_eq_two",
+      "OAI.Imaginary.normalized_arctan_sqrt_two_eventualLowerBound",
+      "OAI.Imaginary.normalized_arctan_sqrt_two_irrationalityExponent_eq_two",
+      "OAI.Imaginary.normalized_arctan_sqrt_two_integer_eventualLowerBound",
+      "OAI.Imaginary.normalized_arctan_sqrt_two_explicit_bound"
+    ],
+    "pp_options": {
+      "proofs": false
+    }
+  },
+  "checked_declarations": 117922,
+  "check_exit_status": 0,
+  "negative_control_rejected": true
+}

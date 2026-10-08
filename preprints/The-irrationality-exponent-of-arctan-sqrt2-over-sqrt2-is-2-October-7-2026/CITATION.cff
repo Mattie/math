@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this preprint and its upstream sources when using this work."
+type: article
+title: "The irrationality exponent of arctan(sqrt(2))/sqrt(2) is 2"
+authors:
+  - family-names: Casper
+    given-names: Ryan Matthew
+date-released: 2026-10-07
+license: CC-BY-4.0

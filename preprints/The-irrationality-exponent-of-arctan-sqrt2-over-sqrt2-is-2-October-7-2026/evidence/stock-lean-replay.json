@@ -1,0 +1,14 @@
+{
+  "export_sha256": "1aeffb0545974663a19694c8810d0bb8eb9110dc77f0aa9bf76d39a404f7c0dd",
+  "exported_declarations": 117922,
+  "stock_lean_accepted_declarations": 117919,
+  "regenerated_quotient_primitives": 3,
+  "lean_version": "4.34.0",
+  "lean_commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+  "checker_commit": "b83254de5146ef34147ab82a48edbe1856b0edcc",
+  "checker_binary_sha256": "f18020ea3525ee1058788decc2169480cc9ed371a990f4081170c82c186053f9",
+  "check_exit_status": 0,
+  "trust_level": 0,
+  "proof_body_checking": true,
+  "negative_control_rejected": true
+}
