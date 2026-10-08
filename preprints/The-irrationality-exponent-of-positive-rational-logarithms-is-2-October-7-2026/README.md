@@ -29,6 +29,10 @@ assert an exponent for their quotient.
 - [Reproduction](VERIFY.md) and [statement validation](review/blind-statement/CertifiedBridge.lean).
 - [License scope](LICENSES.md).
 
+Explanations of this paper: [PhD outside this area](explainers/ELIPHD.md),
+[master's](explainers/ELIMS.md), [bachelor's](explainers/ELIBS.md), and
+[high-school calculus](explainers/ELIHS.md).
+
 The author initiated and directed an investigation of extending OpenAI’s irrationality-exponent method to logarithms of positive rational numbers. OpenAI coding agents contributed substantially to developing the candidate argument, producing the Lean formalization, and conducting automated adversarial reviews. The construction builds on OpenAI’s published manuscript and released Lean library.
 
 The internal reviews are automated; external human peer review and a complete
