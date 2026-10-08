@@ -20,6 +20,7 @@ jobs:
       fail-fast: false
       matrix:
         preprint:
+          - The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026
           - The-irrationality-exponent-of-arctan-sqrt2-over-sqrt2-is-2-October-7-2026
           - The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026
           - The-irrationality-exponent-of-nonzero-rational-arctangents-is-2-October-7-2026
@@ -37,6 +38,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - preprint: The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026
+            verify_script: lean/verify.sh
           - preprint: The-irrationality-exponent-of-arctan-sqrt2-over-sqrt2-is-2-October-7-2026
             verify_script: lean/verify.sh
           - preprint: The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026

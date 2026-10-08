@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-08T03:32:46.279260+00:00",
+  "module": "RealNorm.FormalConjectures",
+  "theorem": "OAI.RealNorm.normalized_log_sqrt_two_irrationality_and_bound",
+  "source_sha256": "79115042a7b01f9f690079b590dbcdb1fb0ec5d19573c9911b9b4ba4adbd0ecc",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "warnings_as_errors": true,
+  "auto_implicit": false,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "frozen_dependency_sources_verified": true,
+  "retained_export_includes_this_module": false,
+  "independent_export_replay_rerun": false
+}

@@ -1,0 +1,294 @@
+# Irrationality exponent two for a normalized real quadratic logarithm
+
+**Ryan Matthew Casper**  
+7 October 2026
+
+**Verification.** All 14 new modules, including the exact endpoint, passed one coherent Lean 4.34.1 build and a foundational-axiom audit. Nanoda and a separate stock Lean 4.34.0 replay checked the same frozen export of 117,830 declarations, with only the three standard foundational axioms.
+
+## 1. Statement and normalization
+
+Let
+\[
+u=3+2\sqrt2,\qquad x=\frac{\log u}{\sqrt2}.
+\]
+The target is
+\[
+\mu(x)=2.
+\tag{1}
+\]
+The proof establishes the stronger quantified statement
+\[
+\forall\nu>2\ \exists Q\in\mathbb Z,\ Q\ge2:\quad
+\forall p,q\in\mathbb Z,\ q\ge Q\Longrightarrow
+q^{-\nu}\le\left|\frac{\log(3+2\sqrt2)}{\sqrt2}-\frac pq\right|.
+\tag{2}
+\]
+Fractions need not be reduced, and the threshold is uniform in the numerator and denominator. The threshold is not asserted to be effective. The usual rational irrationality exponent is the supremum of exponents admitting infinitely many reduced rational approximants with positive error smaller than the corresponding negative power of the denominator.
+
+The normalization in (1) is essential to this argument. We prove (2) directly. We do not infer it by multiplying a theorem about a logarithm by an irrational algebraic number, and we do not infer the exponent of the unnormalized logarithm from (1).
+
+Put \(\beta=\sqrt2\), \(\mathcal O=\mathbb Z[\beta]\), and let
+\[
+\sigma_+(a+b\beta)=a+b\sqrt2,\qquad
+\sigma_-(a+b\beta)=a-b\sqrt2.
+\]
+These are injective ring homomorphisms into \(\mathbb R\subset\mathbb C\). The norm is
+\[
+N(a+b\beta)=a^2-2b^2=\sigma_+(a+b\beta)\sigma_-(a+b\beta)\in\mathbb Z.
+\]
+For a nonzero order element its norm is a nonzero integer, so
+\[
+1\le |\sigma_+(z)|\,|\sigma_-(z)|.
+\tag{3}
+\]
+Unlike the imaginary-quadratic case, (3) does not bound either embedding separately.
+
+Here \(N(u)=1\), \(u>1\), and \(\sigma_-(u)=3-2\sqrt2=u^{-1}>0\). Writing \(\omega=\log u=\beta x\), the two compatible exponentials are
+\[
+e^{\beta x}=u,\qquad e^{-\beta x}=u^{-1}.
+\tag{4}
+\]
+Both sequences of nonnegative powers are injective. The formal generic input allows \(U\in\mathcal O\), a positive integer \(D\), a nonzero real \(x\), and the two identities
+\[
+e^{\pm\beta x}=\sigma_\pm(U)/D
+\tag{5}
+\]
+with injective powers. These are explicit arithmetic conditions. The endpoint uses \(U=3+2\beta\), \(D=1\), and verifies every condition. This package is confined to \(\mathbb Q(\sqrt2)\); it does not certify every real quadratic field.
+
+## 2. One selected minor and its two embeddings
+
+Fix \(\nu>2\). Suppose rational approximations \(r_k=p_k/q_k\) satisfying
+\[
+|x-r_k|\le q_k^{-\nu}
+\tag{6}
+\]
+exist with arbitrarily large positive denominators. Choose finitely many of them, with successively separated weights
+\[
+w_k=\lceil\log q_k\rceil,\qquad v_k=w_k/\theta,\qquad
+T_k=\lceil F_0w_k/v_0\rceil,\qquad
+G_k(t)=\sum_{1\le l<T_k}\frac{(-1)^{l+1}}l t^l.
+\]
+The positive rational parameters satisfy \(0<\theta<1\) and \(F_0>2/\theta\). Their order of selection is given in §5.
+
+At sign \(\varepsilon\in\{+1,-1\}\), write
+\(\alpha_\varepsilon=e^{\varepsilon\beta x}=\sigma_\varepsilon(U)/D\).
+Use multiplicative-additive centers
+\[
+(Y,X_1,\ldots,X_m)=
+(\alpha_\varepsilon^j,\varepsilon\beta jr_1,\ldots,\varepsilon\beta jr_m),
+\qquad 0\le j<K.
+\]
+Columns are monomials \(Y^hX^\gamma\) with
+\(w_0h+\sum_kw_k\gamma_k\le H\). Rows are \((j,s,a)\) with
+\[
+0\le j<K,\qquad v_0s+\theta^{-1}\sum_kw_ka_k<H.
+\]
+The actual matrix entry is
+\[
+A^\varepsilon_{(j,s,a),(h,\gamma)}=
+[t^su^a]\,(\alpha_\varepsilon^j(1+t))^h
+\prod_k(\varepsilon\beta jr_k+G_k(t)+u_k)^{\gamma_k}.
+\tag{7}
+\]
+The factor \(\alpha_\varepsilon^{jh}\) remains part of the matrix.
+
+The inherited logarithmic interpolation theorem applies to arbitrary complex additive centers and distinct nonzero multiplicative centers. Its strict weighted-volume, coordinate-ratio, and separated-product conditions are supplied by §5. It gives surjectivity of \(A^+\) onto all rows for sufficiently large heights in a cofinal sequence \(H=nR\), where \(R\) clears the rational weights. Truncation preserves the relevant jet packets because \(T_kv_0\ge F_0w_k>v_k\). The theorem is proved by the inherited weighted curve comparison, logarithmic differential frame, ordinary blowup, and Serre vanishing argument; no interpolation conclusion is supplied as an endpoint hypothesis.
+
+Select a square nonzero minor \(\Delta_H^+\) containing every row. Define \(\Delta_H^-\) by using **exactly the same selected columns** in \(A^-\). No second minor is selected. Put
+\[
+M_H=\#\{\text{rows}\},\qquad
+b_H=\frac{\sum_{\rm rows}\sum_kw_ka_k}{M_HH}.
+\]
+Then \(0\le b_H\le\theta\), and lattice counting gives
+\[
+M_H\sim\frac{K\theta^mH^{m+1}}{(m+1)!v_0\prod_kw_k}.
+\tag{8}
+\]
+
+## 3. A common cleared order matrix
+
+Let
+\[
+L_k=\operatorname{lcm}(1,\ldots,T_k),\qquad
+E_H=\prod_kL_k^{\lfloor H/w_k\rfloor}.
+\]
+Multiply each selected column \((h,\gamma)\) by
+\(D^{Kh}\prod_kq_k^{\gamma_k}\), each row by \(\prod_kq_k^{-a_k}\), and every entry by \(E_H\). If \(a\le\gamma\), the resulting order-valued entry before evaluation is
+\[
+E_H U^{jh}D^{(K-j)h}\binom\gamma a
+[t^s](1+t)^h
+\prod_k(\beta jp_k+q_kG_k(t))^{\gamma_k-a_k}.
+\tag{9}
+\]
+It is zero otherwise. The exponent \((K-j)h\) is nonnegative, and each
+\(\gamma_k-a_k\le\lfloor H/w_k\rfloor\), so the \(L_k\) factors clear all logarithm coefficients. Thus (9) belongs to \(\mathcal O\).
+
+For additional precision, the formal proof first constructs one polynomial \(Q_T\in\mathbb Z[t]\) with \(Q_T=L_TG_T\). For exponent \(d\le e\), it expresses the cleared factor as
+\[
+L_T^{e-d}(L_T\beta jp+qQ_T(t))^d.
+\]
+This fixes one order polynomial, coefficient, and matrix before either embedding is applied. Ring homomorphisms commute with its finite products, powers, coefficients, and determinant. Evaluation at \(-\beta\) changes \(U\) and the additive centers while leaving \(Q_T\), row indices, and selected columns unchanged. Therefore the two evaluated determinants are precisely
+\[
+\sigma_\pm(\det B_H)=C_H\Delta_H^\pm,
+\quad
+C_H=E_H^{M_H}
+\prod_{\rm columns}\left(D^{Kh}\prod_kq_k^{\gamma_k}\right)
+\prod_{\rm rows}\prod_kq_k^{-a_k}>0.
+\tag{10}
+\]
+This is an identity for the actual selected determinants. It uses only the two explicit embeddings of the quadratic order, not an assumed automorphism of all real or complex numbers.
+
+Since \(\Delta_H^+\ne0\), also \(\det B_H\ne0\). Equation (3) then proves both \(\Delta_H^-\ne0\) and
+\[
+1\le C_H^2|\Delta_H^+|\,|\Delta_H^-|.
+\tag{11}
+\]
+Let \(\Lambda=4+\log4\) and \(w_* =\min_kw_k\). From
+\(\log L_k\le\Lambda T_k\), the column degree constraint, and
+\(w_k-1\le\log q_k\le w_k\), the normalized arithmetic consequence is
+\[
+\frac{\log|\Delta_H^+|+\log|\Delta_H^-|}{2M_HH}
+\ge -(1-b_H)-E_{\rm ar},
+\tag{12}
+\]
+where
+\[
+E_{\rm ar}=\frac{\Lambda F_0m}{v_0}
++\Lambda\sum_k\frac1{w_k}+\frac\theta{w_*}
++\frac{K\log D}{w_0}.
+\tag{13}
+\]
+Columns cost at most \(M_HH(1+K\log D/w_0)\); row factors save at least \(M_HH(b_H-\theta/w_*)\). The two embeddings double both the clearing logarithm and the analytic logarithms, so averaging retains the original coefficient \(1-b_H\). At our integral-unit endpoint \(D=1\), the base-denominator term is zero.
+
+## 4. Analytic smallness at both embeddings
+
+Choose \(\rho=100\max(1,2|x|)\), which covers both
+\(\omega_\varepsilon=\varepsilon\beta x\). For a monomial column define
+\[
+f_{b,P}(z)=[u^b]P(e^z,z+u_1,\ldots,z+u_m)
+=\binom\gamma b e^{hz}z^{|\gamma|-|b|}.
+\]
+For \(|t|<1\), put \(z_j^\varepsilon(t)=j\omega_\varepsilon+\log(1+t)\).
+Then \(e^{z_j^\varepsilon(t)}=\alpha_\varepsilon^j(1+t)\), and the additive arguments in (7) are
+\[
+z_j^\varepsilon(t)+u_k+e_{jk}^\varepsilon+\tau_k(t),\qquad
+e_{jk}^\varepsilon=\varepsilon\beta j(r_k-x),\quad
+\tau_k=G_k-\log(1+t).
+\tag{14}
+\]
+The rational truncation stays fixed at the negative embedding; its local comparison is \(-j\omega+\log(1+t)\). No principal-logarithm identity for powers is needed.
+
+Both signs have the same error norm. Using \(|\beta|\le2\), the finite row translation expansion gives scalar size at most
+\[
+\exp\{-\nu w(b-a)+HE_{\rm tr}\},\qquad
+E_{\rm tr}=\frac\nu{F_0}+\frac{\log2}{v_0}
++\frac{\log4+\log(2K)+\nu+\log2}{w_*}.
+\tag{15}
+\]
+Here a nonzero tail term has multiplicities with \(\sum_ke_kT_k\le s\), hence \(\sum_kw_ke_k<H/F_0\). The additional slope cost is the single term \(\log2/w_*\), which will be paid explicitly in §5.
+
+On \(|z|\le\rho K\), the column functions have size bounded by
+\(\exp\{H(\rho K/w_0+\log(2\rho K)/w_*)\}\). All comparison points on \(|t|=1/2\) lie in the disc of radius \(\rho K/2\). Taylor expansion has an absolutely convergent geometric majorant. When rows with the same transverse index use the same Taylor order, the determinant term vanishes. If there are \(n_b\) rows of transverse index \(b\), surviving orders sum to at least \(\binom{n_b}2\).
+
+With \(c=\log2/4\), the inherited collision estimate supplies the saving \(-c\sum_bn_b^2\) and normalized holomorphic cost
+\[
+E_{\rm hol}=\frac{\rho K}{w_0}+\frac{\log2}{v_0}
++\frac{\log(2\rho K)}{w_*}.
+\]
+Let \(N_A(H)\) count transverse indices of weight at most \(AH\), and set
+\[
+c_H=\frac{c\eta^2M_H}{HN_A(H)},\qquad
+c_\infty=\frac{c\eta^2K\theta^m}{(m+1)v_0A^m}.
+\]
+If at least \(\eta M_H\) rows use low indices, Cauchy–Schwarz gives saving \(-c_H\). Otherwise the approximation errors give saving
+\(-\nu(A(1-\eta)-b_H)\). The finite row-expansion count is bounded by
+\((\lfloor H\rfloor+1)^{2m}(\lfloor H/v_0\rfloor+1)\); its normalized logarithm and the collision remainder tend to zero. Therefore, uniformly in the selected columns and at each sign,
+\[
+\frac{\log|\Delta_H^\pm|}{M_HH}
+\le E_{\rm an}+o(1)+
+\max\{-c_H,-\nu(A(1-\eta)-b_H)\},
+\quad E_{\rm an}=E_{\rm tr}+E_{\rm hol},
+\tag{16}
+\]
+and \(c_H\to c_\infty\). All weights, approximants, and parameters are fixed before this height limit. Averaging the two inequalities in (16) gives the identical upper bound for the left side of (12).
+
+## 5. Parameters and the contradiction
+
+Replace the lcm budget by \(\Lambda'=\Lambda+\log2\). For every \(\nu>2\), choose positive rational \(\theta,A,B,C\) such that
+\[
+0<\theta<A<B<1,\quad \nu(A-\theta)>1-\theta,
+\quad C>1,\quad CB<1,\quad B<C\theta<1.
+\tag{17}
+\]
+For example choose rational \(b\in(1/2,1-1/\nu)\), take
+\(\theta=1-s\), \(A=1-bs\) for small positive rational \(s\), then choose
+\(C\in(A/\theta,1/A)\) and \(B\in(A,\min(1/C,C\theta))\).
+The inequality \(A^2<\theta\) ensures these intervals are nonempty.
+
+Choose small rational \(\eta>0\) with
+\(g=\nu(A(1-\eta)-\theta)-(1-\theta)>0\), and let
+\(\epsilon=\min(g/2,1/2)\). Choose \(F_0>2/\theta\) with
+\(\nu/F_0<\epsilon/3\). As \(m\) grows, set
+\[
+K=\lfloor C^m\rfloor,\qquad w_0=B^{-m},\qquad
+v_0=2K\theta^mw_0.
+\]
+Then \(K/w_0\le(CB)^m\to0\), \(v_0\to\infty\), \(m/v_0\to0\), and
+\[
+c_\infty=\frac{c\eta^2(B/A)^m}{2(m+1)}\longrightarrow\infty.
+\]
+Fix a sufficiently large \(m\) so that
+\[
+\frac{\Lambda'F_0m+2\log2}{v_0}
++\frac{(\rho+\log D)K}{w_0}<\epsilon/3,\qquad c_\infty>2.
+\tag{18}
+\]
+The interpolation volume is \(K(w_0/v_0)\theta^m=1/2\), while \(K\theta^m<1\). A small positive rational margin \(\sigma\) gives the required strict volume and coordinate-ratio conditions.
+
+Only now choose the approximants from (6), with all weights sufficiently large and successively separated to meet the inherited finite product comparisons. For equally sized index subsets, common factors cancel; increasing the next weight supplies the remaining strict comparison. The weights may also satisfy
+\[
+\Lambda'\sum_k\frac1{w_k}
++\frac{\theta+\log4+\log(2K)+\nu+\log(2\rho K)}{w_*}<\epsilon/3.
+\tag{19}
+\]
+The interpolation threshold is chosen after these fixed centers and weights, so there is no circular dependence on height.
+
+The finite nonempty set of weights attains its minimum, giving the exact reserve
+\[
+\frac{\log2}{w_*}\le\log2\sum_k\frac1{w_k}
+\le(\Lambda'-\Lambda)
+\left(\frac{F_0m}{v_0}+\sum_k\frac1{w_k}\right).
+\tag{20}
+\]
+Thus (18), (19), and the initial choice of \(F_0\) imply
+\[
+E_{\rm ar}+E_{\rm an}<\epsilon<g,
+\qquad c_\infty>1+E_{\rm ar}+E_{\rm an}.
+\tag{21}
+\]
+
+For large cofinal heights, (12) and the average of (16) are incompatible. The collision alternative would require
+\(c_H\le1-b_H+E_{\rm ar}+E_{\rm an}+o(1)\), contradicting (21).
+The approximation alternative would require
+\[
+\nu(A(1-\eta)-b_H)-(1-b_H)
+\le E_{\rm ar}+E_{\rm an}+o(1).
+\]
+Its left side is at least \(g\) since \(b_H\le\theta\) and \(\nu>1\), again contradicting (21). Hence arbitrarily large denominators satisfying (6) do not exist, proving (2).
+
+If \(x\) were rational, its unreduced exact fractions with unbounded denominators would violate (2). Thus \(x\) is irrational. Dirichlet approximation gives exponent at least 2; (2) excludes every larger exponent, proving (1).
+
+## 6. Relation to prior work and provenance
+
+The normalized family is established in approximation theory. Bashmakova and Zolotukhina's [2017 primary article](https://www.mathnet.ru/eng/cheb531) treats
+\(\sqrt d\log((\sqrt d+1)/(\sqrt d-1))\); at \(d=2\) this is exactly twice our target. Their normalization is therefore directly comparable by rational scaling. Related quadratic logarithms also appear in [Polyanskii's work](https://arxiv.org/abs/1501.06752). We do not identify the strongest previously published numerical bound for this exact target or claim exhaustive priority.
+
+
+The proof reuses OpenAI's weighted interpolation framework and released library at [commit adc7f1241b42e322a6451854ab7e4b4c146bf78a](https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a), Mathlib, and the author's preceding logarithm and imaginary-quadratic adaptations. The new mechanism is the single order-valued cleared matrix evaluated at both real embeddings, together with analytic savings for its same selected minor at both signs. The averaging in (12) removes the degree-two loss without discarding the row savings. The interpolation geometry, Taylor collision estimate, parameter existence, and final ordinary-exponent consequence are substantial inherited results.
+
+**AI use disclosure.** Ryan Matthew Casper initiated and directed the investigation. OpenAI coding agents contributed substantially to the research assessment, mathematical adaptation, Lean proof development, verification tooling, and exposition. Formal checking concerns the specified statements relative to their foundational axioms. It is not independent human peer review. No external referee was contacted for this work.
+
+
+## Verification materials
+
+The [Lean endpoint](../lean/RealNorm/Main.lean), [verification summary](../lean/VERIFICATION.md), and [reproduction instructions](../VERIFY.md) accompany this paper. The proof sources are frozen; verification status and exact export identities are recorded with the package.

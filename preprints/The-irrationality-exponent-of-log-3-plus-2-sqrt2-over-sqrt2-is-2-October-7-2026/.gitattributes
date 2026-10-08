@@ -1,0 +1,4 @@
+# Frozen hashes refer to exact source bytes; avoid checkout conversion.
+* -text
+*.pdf binary
+*.zip binary
