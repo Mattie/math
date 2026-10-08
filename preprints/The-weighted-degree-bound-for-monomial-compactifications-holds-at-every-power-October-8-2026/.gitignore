@@ -1,0 +1,12 @@
+.verification/
+lean/.verification/
+lean/reference-reader/.lake/
+release-assets/*
+!release-assets/README.md
+build/*.aux
+build/*.log
+build/*.out
+build/main.pdf
+*.olean
+*.ilean
+*.o

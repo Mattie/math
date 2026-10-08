@@ -11,6 +11,10 @@ Preprints and accompanying formal AI-assisted proofs by Ryan Matthew Casper.
 
 Each preprint includes its own citation metadata, license notices, and AI-use disclosure.
 
+## Supplemental preprints
+
+- **October 8, 2026:** [The weighted degree bound for monomial compactifications holds at every power](preprints/The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026/README.md) — a separate reference note strengthening the shared degree-bound lemma, with Lean source and verification materials.
+
 ## Formalization contributions
 
 - [Flint Hills and Cookson Hills](formalizations/FlintCooksonHills/README.md) — a short Cookson convergence proof and catalogue endpoints, using OpenAI's existing formal Flint theorem.
