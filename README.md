@@ -1,6 +1,6 @@
 # Mathematics
 
-Preprints and accompanying formal proofs by Ryan Matthew Casper.
+Preprints and accompanying formal AI-assisted proofs by Ryan Matthew Casper.
 
 ## Preprints
 
