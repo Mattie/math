@@ -1,0 +1,18 @@
+{
+  "checked_date": "2026-10-08",
+  "source_sha256": "9a6604aebf7eb7ed284f89b2841cffcac8dc45493b7b6958b6578877987467ad",
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "inherited_openai_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "command": "lake env lean -DautoImplicit=false -DwarningAsError=true SmallDivisors/Main.lean",
+  "dependency_build": "Existing pinned compiled dependency cache",
+  "shared_source_resolution_check": "lake query OAI.NumberTheory.PiExponent.Main:lean",
+  "shared_source_resolution_passed": true,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "new_independent_export_replay": false
+}

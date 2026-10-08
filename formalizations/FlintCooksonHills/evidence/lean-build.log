@@ -1,0 +1,4 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+'SmallDivisors.flint_hills_series_converges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmallDivisors.cookson_hills_series_converges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmallDivisors.cos_nat_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

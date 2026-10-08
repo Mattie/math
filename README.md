@@ -10,3 +10,7 @@ Preprints and accompanying formal proofs by Ryan Matthew Casper.
 - **October 7, 2026:** [The irrationality exponent of positive rational logarithms is 2](preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026/README.md) — manuscript, Lean formalization, and verification materials.
 
 Each preprint includes its own citation metadata, license notices, and AI-use disclosure.
+
+## Formalization contributions
+
+- [Flint Hills and Cookson Hills](formalizations/FlintCooksonHills/README.md) — a short Cookson convergence proof and catalogue endpoints, using OpenAI's existing formal Flint theorem.
