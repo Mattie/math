@@ -1,0 +1,26 @@
+We extended OpenAI's weighted logarithmic interpolation and determinant method to positive rational logarithms. We proved the required interpolation result at distinct exponential coordinates, incorporated the additional arithmetic and analytic costs, and formalized the resulting exponent-two theorem using the released \(\pi\) library.
+
+Here ``positive rational logarithms'' means natural logarithms of positive rational numbers other than 1. The conclusions below concern each logarithm individually. They do not assert an irrationality exponent for the quotient log 2 / log 3.
+
+The contribution statement describes our extension. The inherited geometric comparison and determinant framework belong to the released OpenAI library. The exact source boundary is recorded in §9. This document is an exposition of a machine-checked argument, with several substantial inherited lemmas stated and attributed explicitly. It is not a claim that an external human referee has already reconstructed the proof.
+
+\section{The theorem and the contradiction to be excluded}
+
+\begin{theorem} If \(a\in\mathbb Q\), \(a>0\), and \(a\ne1\), then \(\xi=\log a\) is irrational and has irrationality exponent 2. More explicitly, for every real \(\nu>2\), there is an integer \(Q\ge2\) such that
+\[
+\left|\xi-\frac pq\right|\ge q^{-\nu}
+\qquad(p\in\mathbb Z,\ q\in\mathbb N,\ q\ge Q).
+\tag{1}
+\]
+The threshold may depend on \(a\) and \(\nu\); it is uniform in \(p,q\). The theorem includes \(0<a<1\), where the logarithm is negative.
+\end{theorem}
+
+Our convention for the irrationality exponent is the supremum of the exponents admitting infinitely many reduced rational approximations with error less than \(q^{-\nu}\). The formal source connects this convention to (1) and verifies boundedness of the relevant set before using its supremum.
+
+We prove (1) by excluding arbitrarily large denominators with error at most \(q^{-\nu}\), for any fixed \(\nu>2\). This slightly stronger exclusion is convenient for choosing finitely many very widely separated denominators.
+
+No irrationality assumption enters that construction. Irrationality follows afterwards: if \(\xi=u/v\) were rational, the unreduced fractions \(ku/(kv)\) would give exact approximations with arbitrarily large denominators, contradicting (1). Dirichlet's theorem then gives exponent at least 2, while (1) excludes every exponent above 2.
+
+The result is an exponent statement. It does not supply an explicit threshold, bounded continued-fraction coefficients, or a lower bound \(c/q^2\) with fixed positive \(c\).
+
+The upstream method and library are cited in \citep{openai2026pi}.

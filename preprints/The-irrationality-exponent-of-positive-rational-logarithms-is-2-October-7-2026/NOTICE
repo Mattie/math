@@ -1,0 +1,13 @@
+The irrationality exponent of positive rational logarithms is 2
+Author: Ryan Matthew Casper
+
+This distribution contains an unchanged snapshot of OpenAI/math's PiExponent
+library from commit adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+The original OpenAI sources retain their Apache 2.0 license and attribution.
+The logarithm extension is a separate development built on that library.
+
+The paper layout follows the OpenAI preprint dated September 24, 2026.
+No OpenAI authorship, sponsorship, endorsement, or peer review is asserted.
+
+Retained reference-checker source comes from Lean Kernel Arena and Lean 4,
+under their Apache 2.0 licenses. See LICENSES.md and licenses/.

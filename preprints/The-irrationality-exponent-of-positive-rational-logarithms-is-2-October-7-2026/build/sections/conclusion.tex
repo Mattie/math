@@ -1,0 +1,88 @@
+\section{Parameter selection without circularity}
+
+Fix \(a,\nu\) first. Thus \(\rho\) and \(\delta=\log d\) are fixed.
+
+Choose positive rational \(\theta,A,B,C\) satisfying
+\[
+0<\theta<A<B<1,\quad
+\nu(A-\theta)>1-\theta,\quad
+C>1,\quad CB<1,\quad B<C\theta<1.
+\tag{16}
+\]
+For existence, choose rational \(b\in(1/2,1-1/\nu)\), then a small positive rational \(s\), and put \(\theta=1-s,A=1-bs\). For small \(s\), the gap in (16) is positive and \(A^2<\theta\). Choose \(C\in(A/\theta,1/A)\) and then \(B\in(A,\min(1/C,C\theta))\).
+
+Choose a small rational \(\eta>0\) so that
+\[
+g=\nu(A(1-\eta)-\theta)-(1-\theta)>0,
+\qquad \epsilon=\min(g/2,1/2).
+\]
+Take \(F_0>2/\theta\) with \(\nu/F_0<\epsilon/3\).
+
+Now increase \(m\), setting
+\[
+K=\lfloor C^m\rfloor,\quad w_0=B^{-m},
+\quad v_0=2K\theta^mw_0.
+\]
+The ambient interpolation mass is exactly \(1/2\). Also
+\[
+\frac K{w_0}\le(CB)^m\to0,\quad
+v_0\sim2(C\theta/B)^m\to\infty,\quad
+\frac m{v_0}\to0,
+\]
+while (15) becomes
+\[
+c_\infty=\frac{c\eta^2(B/A)^m}{2(m+1)}\to\infty.
+\]
+Choose one finite \(m\ge1\) for which
+\[
+\frac{\Lambda F_0m+2\log2}{v_0}
++\frac{(\rho+\delta)K}{w_0}<\epsilon/3,
+\qquad c_\infty>2.
+\tag{17}
+\]
+Fix these parameters.
+
+Since \(K\theta^m<1\), choose small rational \(\sigma>0\) satisfying
+\[
+(1+3\sigma)^{m+1}/2<1,\quad
+(1+3\sigma)^mK\theta^m<1,\quad
+(1+\sigma)\theta<1.
+\]
+The middle condition is retained in the formal parameter package; the distinct-\(Y\) interpolation proof uses the ambient mass inequality.
+
+Only now choose the finitely many approximations. Arbitrarily large denominators let us make all \(w_i\) large and successively separated, satisfying (3), as well as
+\[
+\Lambda\sum_i\frac1{w_i}
++\frac{\theta+\log4+\log(2K)+\nu+\log(2\rho K)}{w_*}
+<\epsilon/3.
+\tag{18}
+\]
+There are finitely many product comparisons. Since \(v_i=w_i/\theta\) for positive indices, common factors cancel and each remaining comparison is met by increasing the next denominator sufficiently. The weight-separation requirement and the uniform rectangular cutoff depend on the fixed weights and \(\sigma\), rather than the center locations. The eventual interpolation threshold may depend on the fully selected centers; these are fixed before \(H\) tends to infinity.
+
+Equations (12), (17), and (18) give
+\[
+E_{\rm ar}+E_{\rm an}<\epsilon<g,\qquad
+c_\infty>1+E_{\rm ar}+E_{\rm an}.
+\tag{19}
+\]
+This order absorbs both costs introduced by a general rational base: \(\log d\) in the arithmetic estimate and \(\rho\) in the analytic radius.
+
+\section{Comparing the same nonzero determinant}
+
+For sufficiently large cofinal \(H=nR\), interpolation supplies the minor, so (10) and (14) both apply.
+
+If the maximum in (14) is the collision alternative, compatibility requires
+\[
+c_H\le1-b_H+E_{\rm ar}+E_{\rm an}+o(1)
+\le1+E_{\rm ar}+E_{\rm an}+o(1).
+\]
+This contradicts the strict limiting margin in (19).
+
+For the other alternative compatibility requires
+\[
+\nu(A(1-\eta)-b_H)-(1-b_H)
+\le E_{\rm ar}+E_{\rm an}+o(1).
+\]
+The left side is at least \(g\): it decreases with \(b_H\), and \(b_H\le\theta\). This contradicts the other margin in (19).
+
+Both alternatives fail. Hence arbitrarily large approximations of the stated quality cannot exist, proving (1). The irrationality and Dirichlet argument from §1 completes the exponent-two conclusion.

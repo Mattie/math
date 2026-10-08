@@ -1,0 +1,7 @@
+/ln2ln3/
+.mstatus/
+AGENTS.local.md
+AGENTS.override.md
+.env
+.env.*
+/.publication-work/

@@ -1,0 +1,173 @@
+\section{The rational matrix associated to good approximations}
+
+Fix \(a=n/d>0\) in lowest terms and \(\nu>2\). Under the contradiction hypothesis choose finitely many approximations
+\[
+r_i=p_i/q_i,\qquad |\xi-r_i|\le q_i^{-\nu},\quad 1\le i\le m,
+\]
+with very large, successively separated denominators. Put
+\[
+w_i=\lceil\log q_i\rceil,\qquad v_i=w_i/\theta
+\]
+for a rational \(0<\theta<1\), and take the centers
+\[
+y_j=a^j,\qquad c_{ji}=jr_i,\quad 0\le j<K.
+\]
+Positive powers of \(a\ne1\) are distinct, whether \(a>1\) or \(0<a<1\). Since \(\xi\ne0\), sufficiently large approximations also have \(p_i\ne0\).
+
+Choose \(F_0>2/\theta\) and set
+\[
+T_i=\lceil F_0w_i/v_0\rceil,\qquad
+G_i(t)=\sum_{1\le k<T_i}\frac{(-1)^{k+1}t^k}{k}.
+\]
+The omitted tail has weight \(T_iv_0\ge F_0w_i>v_i\), so replacing the formal logarithm by \(G_i\) preserves the packets.
+
+Columns of the interpolation matrix are monomials \(Y^hX^\alpha\) with \(w_0h+w\alpha\le H\). Rows are \((j,s,\beta)\) with
+\[
+v_0s+w\beta/\theta<H.
+\]
+The actual entry is
+\[
+[t^su^\beta]\,
+\bigl(a^j(1+t)\bigr)^h
+\prod_i(jr_i+G_i(t)+u_i)^{\alpha_i}.
+\tag{8}
+\]
+In particular, its factor \(a^{jh}\) is retained.
+
+Interpolation gives full row rank over \(\mathbb C\) at cofinal heights \(H=nR\). Since the entries are rational, the resulting nonzero square minor is rational as well. Select such a minor \(\Delta_H\) containing all rows. Let \(M_H\) be its row count, and write
+\[
+b_H=\frac{\sum_{\text{rows}}w\beta}{M_HH}.
+\]
+Then \(0\le b_H\le\theta\), and lattice counting gives
+\[
+M_H\sim
+\frac{K\theta^mH^{m+1}}{(m+1)!\,v_0\prod_iw_i}.
+\tag{9}
+\]
+Both determinant estimates below concern this same minor and are uniform in the selected columns.
+
+\section{The arithmetic lower bound, including the rational base}
+
+Use the actual conservative denominator choices
+\[
+L_i=\operatorname{lcm}(1,\ldots,T_i),\qquad
+D_H=\prod_iL_i^{\lfloor H/w_i\rfloor}.
+\]
+Multiply column \((h,\alpha)\) by \(d^{Kh}\prod_iq_i^{\alpha_i}\), row \((j,s,\beta)\) by \(\prod_iq_i^{-\beta_i}\), and every entry by \(D_H\).
+
+If \(\beta\le\alpha\), the resulting entry is
+\[
+D_Hn^{jh}d^{(K-j)h}\binom{\alpha}{\beta}
+[t^s](1+t)^h
+\prod_i(jp_i+q_iG_i(t))^{\alpha_i-\beta_i}.
+\]
+Otherwise it is zero. The lcm factors clear the coefficient denominators, so the scaled nonzero determinant is an integer and has absolute value at least 1.
+
+Set
+\[
+\Lambda=4+\log4,\qquad w_*=\min_iw_i.
+\]
+The formal lcm estimate is \(\log L_i\le\Lambda T_i\). From \(T_i\le F_0w_i/v_0+1\), the column degree bounds, and
+\[
+w_i-1\le\log q_i\le w_i,
+\]
+we obtain
+\[
+\frac{\log|\Delta_H|}{M_HH}\ge-(1-b_H)-E_{\rm ar},
+\tag{10}
+\]
+where
+\[
+E_{\rm ar}=
+\frac{\Lambda F_0m}{v_0}
++\Lambda\sum_i\frac1{w_i}
++\frac{\theta}{w_*}
++\frac{K\log d}{w_0}.
+\tag{11}
+\]
+The denominator \(d\) of the rational base produces the final term. It vanishes for integer bases such as 2 and 3. We use \(K\), not a sharpened \(K-1\), and the constant \(\Lambda\) above throughout the parameter selection.
+
+\section{The analytic upper bound and its two alternatives}
+
+Let \(\rho=100\max(1,|\xi|)\). For a selected monomial \(P\) and multi-index \(b\), define the entire function
+\[
+f_{b,P}(z)=[u^b]P(e^z,z+u_1,\ldots,z+u_m).
+\]
+For \(P=Y^hX^\alpha\), this is
+\[
+\binom{\alpha}{b}e^{hz}z^{|\alpha|-|b|}
+\]
+when \(b\le\alpha\), and zero otherwise.
+
+At center \(j\), put \(z_j(t)=j\xi+\log(1+t)\). Then \(e^{z_j(t)}=a^j(1+t)\), while the \(X_i\) arguments in (8) are
+\[
+z_j(t)+u_i+e_{ji}+\tau_i(t),\qquad
+e_{ji}=j(r_i-\xi),\quad
+\tau_i=G_i-\log(1+t).
+\]
+Expanding the \(X_i\) powers gives a finite linear combination of row vectors
+\[
+\bigl([t^\ell]f_{b,P}(z_j(t))\bigr)_P
+\]
+with \(b\ge\beta\) and \(wb\le H\). The scalar coefficients do not depend on the chosen column \(P\).
+
+The approximation hypothesis gives
+\[
+|e_{ji}|\le K e^\nu e^{-\nu w_i}.
+\]
+Each tail begins at \(T_i\). A contributing term using tail multiplicities \(e_i\) satisfies \(\sum_i e_iT_i\le s\); hence \(\sum_iw_ie_i<H/F_0\). On \(|t|=1/2\), tail and binomial estimates give the scalar bound
+\[
+\exp\{-\nu w(b-\beta)+H E_{\rm tr}\},
+\]
+where
+\[
+E_{\rm tr}=
+\frac{\nu}{F_0}+\frac{\log2}{v_0}
++\frac{\log4+\log(2K)+\nu}{w_*}.
+\tag{12}
+\]
+
+On \(|z|\le\rho K\), the entire functions are bounded by
+\[
+\exp\left\{H\left(\frac{\rho K}{w_0}
++\frac{\log(2\rho K)}{w_*}\right)\right\}.
+\]
+Moreover, \(|z_j(t)|<\rho K/2\) on the coefficient circle. Expand in Taylor powers of \(z/(\rho K)\). If two rows have the same pair consisting of \(b\) and Taylor order, their determinant contribution is zero. Thus, among \(n_b\) rows with the same \(b\), the sum of Taylor orders is at least \(\binom{n_b}{2}\).
+
+Absolute convergence permits the determinant expansion and summation. For each resulting test matrix \(B\), factorial bounds and the geometric Taylor sums yield
+\[
+|\det B|\le\exp\{-c\sum_bn_b^2+M_HH(E_{\rm hol}+o(1))\},
+\qquad c=\log2/4.
+\]
+This estimate also covers singular test matrices. The collision saving is in the unnormalized determinant exponent; normalization divides it by \(M_HH\). The holomorphic cost is
+\[
+E_{\rm hol}=
+\frac{\rho K}{w_0}+\frac{\log2}{v_0}
++\frac{\log(2\rho K)}{w_*},\qquad
+E_{\rm an}=E_{\rm tr}+E_{\rm hol}.
+\tag{13}
+\]
+
+Fix \(A>\theta\) and \(0<\eta<1\). Let \(N_A(H)\) count the multi-indices with \(wb\le AH\), and set
+\[
+c_H=\frac{c\eta^2M_H}{H N_A(H)}.
+\]
+If at least \(\eta M_H\) rows use such low indices, Cauchy--Schwarz gives \(\sum_bn_b^2\ge\eta^2M_H^2/N_A(H)\), producing the collision saving \(-c_H\). Otherwise more than \((1-\eta)M_H\) rows have \(wb>AH\), producing the approximation saving \(-\nu(A(1-\eta)-b_H)\).
+
+The number \(Q_H\) of finite expansion choices for a single row is polynomial in \(H\) for fixed parameters; a bound is
+\[
+(\lfloor H\rfloor+1)^{2m}(\lfloor H/v_0\rfloor+1).
+\]
+The total number of determinant choice families is at most \(Q_H^{M_H}\), so its logarithm divided by \(M_HH\) is at most \(\log Q_H/H\), which tends to zero. The normalized factorial errors also tend to zero. We obtain
+\[
+\frac{\log|\Delta_H|}{M_HH}
+\le E_{\rm an}+o(1)+
+\max\{-c_H,-\nu(A(1-\eta)-b_H)\}.
+\tag{14}
+\]
+Here all parameters and chosen approximations are fixed before \(H\) tends to infinity. Lattice asymptotics in (9) give
+\[
+c_H\longrightarrow
+c_\infty=\frac{c\eta^2K\theta^m}{(m+1)v_0A^m}.
+\tag{15}
+\]

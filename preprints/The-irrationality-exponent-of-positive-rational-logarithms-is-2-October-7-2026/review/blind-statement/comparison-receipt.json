@@ -1,0 +1,11 @@
+{
+  "frozen_statement_sha256": "67a94140297c35f581700806f5e84def50659b14a74488b083e1fd4acc977473",
+  "certified_bridge_sha256": "a1ce78b306ec5f38fcbfce6857a56f4df967da5102f117f2be876e97cec6227d",
+  "declaration_type_text_identical": true,
+  "sorry_specification_not_imported": true,
+  "bridge_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

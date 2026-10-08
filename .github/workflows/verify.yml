@@ -1,0 +1,38 @@
+name: Verify publication
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      rebuild_proof:
+        description: Rebuild and audit the complete Lean proof
+        type: boolean
+        default: false
+
+defaults:
+  run:
+    working-directory: preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - run: python3 scripts/check-publication.py
+  proof:
+    if: github.event_name == 'workflow_dispatch' && inputs.rebuild_proof
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Install elan
+        run: |
+          curl --fail --location --silent --show-error https://elan.lean-lang.org/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --no-modify-path --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build and audit the proof
+        run: bash scripts/verify.sh

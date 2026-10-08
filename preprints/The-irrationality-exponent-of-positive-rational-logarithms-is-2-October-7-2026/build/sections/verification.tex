@@ -1,0 +1,40 @@
+\section{What the verification establishes}
+
+The extension consists of 55 Lean modules on top of 869 unchanged modules from the released \(\pi\) library. The source manifest contains all 924 files. Endpoint and intermediate axiom audits report only the standard foundational axioms: propositional extensionality, classical choice, and quotient soundness.
+
+The proof export was accepted by Nanoda 0.4.19 and by a separate stock Lean 4.34.0 kernel, in addition to the original Lean 4.34.1 build. The second Lean check replayed the exported declarations into a fresh environment rather than trying to load newer binary objects into an older runtime. Negative controls checked rejection of a forbidden axiom and an ill-typed purported proof. Exact pins, commands, hashes, and limits are in \href{run:lean/VERIFICATION.md}{VERIFICATION.md}.
+
+These checks validate the formal declarations relative to their definitions and foundational axioms. The human exposition still needs mathematical scrutiny, particularly at the inherited comparison lemma, the passage from curve inequalities to ordinary-power interpolation, and the determinant expansion. A separate statement check tests the connection between the formal declarations and the advertised approximation bound.
+
+An AI reviewer with no proof history first formalized the advertised claim using only Mathlib definitions. We then proved its exact frozen type in \href{run:review/blind-statement/CertifiedBridge.lean}{CertifiedBridge.lean}. That separate Lean compilation succeeded and its axiom audit reported only the three foundational axioms above. The bridge does not import the specification file's intentional placeholder. This checks statement agreement; it is not a blind mathematical reproof.
+
+This distinction addresses the proof-correctness and mathematical-understanding stages discussed in \href{https://arxiv.org/html/2608.16753v1}{Tao's essay}: kernel acceptance supports correctness of the formal statement, while readable arguments and independent mathematical scrutiny support understanding and wider acceptance.
+
+\section{Source map and provenance}
+
+The inherited OpenAI library is pinned to \href{https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a}{commit adc7f1241b42e322a6451854ab7e4b4c146bf78a}. Mathlib is pinned to d13f23b723b8a846827a245b89c10fc7d3f11612. The extension's source manifest and reproduction instructions are included in the \href{run:lean/README.md}{certified bundle}.
+
+\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.29\textwidth}>{\raggedright\arraybackslash}p{0.66\textwidth}@{}}
+\toprule
+\textbf{Mathematical step} & \textbf{Principal formal sources}\\
+\midrule
+\endhead
+Weighted frames and generalized centers & \href{run:lean/Logarithm/GeneralizedCenters.lean}{GeneralizedCenters}, \href{run:lean/Logarithm/GeometryData.lean}{GeometryData}\\[5pt]
+Auxiliary polynomial and derivative vanishing & \href{run:lean/Logarithm/AuxiliaryJet.lean}{AuxiliaryJet}, \href{run:lean/Logarithm/DerivativeVanishing.lean}{DerivativeVanishing}\\[5pt]
+Inherited persistent normal comparison & \href{run:lean/OAI/NumberTheory/PiExponent/Approximation/PersistentWeightComparison.lean}{PersistentWeightComparison}, \href{run:lean/OAI/NumberTheory/PiExponent/Jets/TransverseSliceComparison.lean}{TransverseSliceComparison}\\[5pt]
+Rigidity, constant fibers, and curve inequality & \href{run:lean/Logarithm/CurveRigidity.lean}{CurveRigidity}, \href{run:lean/Logarithm/ConstantFiber.lean}{ConstantFiber}, \href{run:lean/Logarithm/CurveInequalityIntrinsic.lean}{CurveInequalityIntrinsic}\\[5pt]
+Actual degree identities and ampleness & \href{run:lean/Logarithm/CurveModelDegrees.lean}{CurveModelDegrees}, \href{run:lean/Logarithm/GeometryAmple.lean}{GeometryAmple}\\[5pt]
+Ordinary powers and interpolation & \href{run:lean/Logarithm/CompactJetIdeal.lean}{CompactJetIdeal}, \href{run:lean/Logarithm/GeometricInterpolation.lean}{GeometricInterpolation}, \href{run:lean/Logarithm/Interpolation.lean}{Interpolation}\\[5pt]
+Actual rational matrix and rank & \href{run:lean/Logarithm/ScaledMatrix.lean}{ScaledMatrix}, \href{run:lean/Logarithm/GlobalMatrixInterpolation.lean}{GlobalMatrixInterpolation}\\[5pt]
+Arithmetic denominator bound & \href{run:lean/Logarithm/ScaledArithmetic.lean}{ScaledArithmetic}\\[5pt]
+Analytic expansion and collision bound & \href{run:lean/Logarithm/LiteralAnalyticSummand.lean}{LiteralAnalyticSummand}, \href{run:lean/Logarithm/ScaledPeriodAnalytic.lean}{ScaledPeriodAnalytic}, \href{run:lean/Logarithm/AnalyticAggregate.lean}{AnalyticAggregate}\\[5pt]
+Parameter existence and contradiction & \href{run:lean/Logarithm/LogarithmParameters.lean}{LogarithmParameters}, \href{run:lean/Logarithm/DeterminantContradiction.lean}{DeterminantContradiction}\\[5pt]
+Irrationality exponent consequence & \href{run:lean/Logarithm/ExponentConsequence.lean}{ExponentConsequence}, \href{run:lean/Logarithm/Main.lean}{Main}\\[5pt]
+\bottomrule
+\end{longtable}
+\normalsize
+
+\textbf{AI use disclosure.} The author initiated and directed an investigation of extending OpenAI's irrationality-exponent method to logarithms of positive rational numbers. OpenAI coding agents contributed substantially to developing the candidate argument, producing the Lean formalization, and conducting automated adversarial reviews. The construction builds on OpenAI's published manuscript and released Lean library.
+
+OpenAI agents also assisted in preparing this exposition and the blind specification check. These automated checks do not constitute external human peer review.

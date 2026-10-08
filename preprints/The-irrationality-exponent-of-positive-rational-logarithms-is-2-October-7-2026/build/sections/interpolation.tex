@@ -1,0 +1,150 @@
+\section{Weighted logarithmic interpolation at distinct exponential coordinates}
+
+We first describe the geometric input, because it is the point at which the extension changes the original centers. The geometry and interpolation are over \(\mathbb C\); the matrices used later have rational entries.
+
+Let \(m,K\ge1\), and let
+\[
+W=(w_0,\ldots,w_m),\qquad V=(v_0,\ldots,v_m)
+\]
+be positive rational weights. Let \(\sigma>0\) be rational. Define the conservative comparison constant
+\[
+\mathcal C(m,\sigma)=
+2(m+2)^{m+2}\left(1+\frac{m+2}{\sigma}\right)^{m+2}.
+\]
+We impose the following conditions:
+\[
+K(1+3\sigma)^{m+1}\frac{\prod_iw_i}{\prod_iv_i}<1,
+\qquad
+(1+\sigma)w_i<v_i\quad(1\le i\le m).
+\tag{2}
+\]
+For equally sized subsets \(A,B\subseteq\{0,\ldots,m\}\), if the largest index in their symmetric difference is positive and belongs to \(A\), require
+\[
+\mathcal C(m,\sigma)\prod_{j\in B}v_j
+<\prod_{i\in A}w_i.
+\tag{3}
+\]
+
+The centers are
+\[
+b_j=(y_j,c_{j1},\ldots,c_{jm}),\quad 0\le j<K,
+\]
+with distinct nonzero \(y_j\). There is no requirement that the \(c_{ji}\) be distinct. Near each center use formal coordinates
+\[
+t=Y/y_j-1,\qquad
+u_i=X_i-c_{ji}-\log(1+t).
+\tag{4}
+\]
+A jet packet of height \(H\) consists of the coefficients of \(t^su^\beta\) with \(v_0s+\sum_i v_i\beta_i<H\).
+
+\textbf{Interpolation theorem used here.} There is a positive integer \(R\), clearing the weight denominators, such that for every sufficiently large integer \(n\), polynomials of \(W\)-weighted degree at most \(H=nR\) map surjectively onto the packets of height \(H\) at all \(K\) centers.
+
+The cofinal heights \(nR\) suffice for the determinant argument. We do not need, and do not claim as a checked intermediate theorem, surjectivity for every sufficiently large real height.
+
+\subsection{A curve estimate}
+
+For an irreducible algebraic curve \(C\) in the affine space with \(Y\ne0\), work on its smooth complete normalization. At every place \(P\), set
+\[
+D_W(C)=\sum_P
+\max\left(0,\frac{\operatorname{pole}_P Y}{w_0},
+\frac{\operatorname{pole}_P X_1}{w_1},\ldots,
+\frac{\operatorname{pole}_P X_m}{w_m}\right).
+\]
+The notation means the sum of the displayed local maxima; identically zero coordinates contribute no poles. For each branch over a center define
+\[
+h_P=\min\left(\frac{\operatorname{ord}_P t}{v_0},
+\frac{\operatorname{ord}_P u_1}{v_1},\ldots,
+\frac{\operatorname{ord}_P u_m}{v_m}\right),\qquad
+S(C)=\sum_{P\text{ over centers}}h_P.
+\]
+Orders of identically zero series may be infinite. On a nonconstant curve the minimum remains finite.
+
+The needed estimate is
+\[
+D_W(C)\ge(1+\sigma)S(C).
+\tag{5}
+\]
+
+Suppose instead that (5) fails. The volume inequality in (2) implies, by counting monomials and jet conditions, that for every sufficiently large \(N\) there is a nonzero polynomial \(F_N\) of \(W\)-degree at most \(N\), whose \(V\)-weighted order at every center is at least \((1+3\sigma)N\). This count needs no independence of the vanishing conditions.
+
+Use the commuting polynomial differential frame
+\[
+D_0=Y\partial_Y+\sum_{i=1}^m\partial_{X_i},
+\qquad D_i=\partial_{X_i}\quad(i>0).
+\]
+In the chart (4), these become \((1+t)\partial_t,\partial_{u_i}\). Differentiation preserves the \(W\)-degree bound and loses at most its assigned \(V\)-cost in weighted order.
+
+Every derivative word of cost at most \(\sigma N\) therefore has weighted order at least \((1+2\sigma)N\). Its restriction to each branch has order at least \((1+2\sigma)Nh_P\), whereas its total pole degree is at most \(ND_W(C)\). The assumed failure of (5) forces all these derivatives to vanish identically on \(C\).
+
+Consider common zero loci of derivatives at successive cost cutoffs
+\[
+r\delta_N,\qquad \delta_N=\sigma N/(m+2).
+\]
+Choose nested irreducible components containing the affine part of \(C\). Their dimensions range from 1 to \(m\); consecutive stages eventually share a component \(Z\). On this component, the defining equations from the earlier stage have degree at most \(N\), and their further derivatives through cost \(\delta_N\) vanish.
+
+We now use the inherited \textbf{persistent normal comparison lemma}. For a coordinate normal basis indexed by \(A\), and a differential-frame normal basis indexed by \(B\), persistence gives
+\[
+\prod_{i\in A}w_i\le
+\mathcal C(m,\sigma)\prod_{j\in B}v_j.
+\tag{6}
+\]
+The lemma compares an upper bound from weighted Bézout with a lower bound from rectangular transverse jets. Its large-\(N\) requirement is uniform in the component: the relevant rectangular cutoffs are at least 2 once \(N\) is sufficiently large in terms of the fixed weights, dimension and \(\sigma\).
+
+This is a substantial reused lemma, not a new result about arbitrary analytic frames. The formal applications are mapped in §9 to the original persistent-weight and transverse-slice sources.
+
+If some positive-index coordinate direction is not tangent to \(Z\), take the largest such index \(i\). The coordinate normal basis can include \(i\), with all larger directions tangent. Equations (3) and (6) force every frame normal basis to include \(D_i\). All other frame vectors lie in
+\[
+\ker(dX_i-dY/Y).
+\]
+Their normal rank is one less than the codimension, so the tangent space of \(Z\) lies in this hyperplane. Thus \(dX_i=dY/Y\) on \(Z\).
+
+If \(Y\) were nonconstant, restrict to an algebraic curve on which it remains nonconstant and pass to a smooth complete model. An exact differential \(dX_i\) has zero residues, while \(dY/Y\) has residue \(\operatorname{ord}_P Y\) at each zero or pole. A nonconstant rational function has such a place, giving a contradiction. Consequently \(Y\) is constant on \(Z\).
+
+In the remaining case all positive-index coordinate directions are tangent. Since \(Z\) is proper, its tangent space is their span; therefore \(dY=0\), and characteristic zero again makes \(Y\) constant. In either case \(Y\) is constant on \(C\).
+
+Distinct \(y_j\) now matter: a constant-\(Y\) curve meets at most one center. Some \(X_i\) is nonconstant on \(C\). At that center \(t=0\) and \(u_i=X_i-c_{ji}\), so the zero/pole equality for this function gives
+\[
+v_iS(C)\le w_iD_W(C).
+\]
+The coordinate inequality in (2) contradicts the assumed failure of (5). This proves the curve estimate, counting every branch, including branches over singular points.
+
+\subsection{From curves to bounded-degree interpolation}
+
+Choose \(R\) so that \(R/w_i,R/v_i\) are positive integers. Compactify by the monomials of \(W\)-degree at most \(R\), retaining the constant coordinate as the affine chart. If \(L=\mathcal O(1)\), then on every normalized affine curve,
+\[
+\deg L=R D_W(C).
+\]
+The constant and pure-coordinate monomials attain the local maxima defining this degree.
+
+Replace the logarithm in (4) by a polynomial truncation whose first omitted term has \(t\)-weight larger than every relevant \(v_i\). This leaves the weighted filtration and branch contacts unchanged. At center \(j\), form the finite-colength ideal
+\[
+I_j=(t^{R/v_0},(u'_1)^{R/v_1},\ldots,(u'_m)^{R/v_m}).
+\]
+These ideals give a coherent ideal \(I\), equal to the unit ideal away from the centers.
+
+On the ordinary blowup, write \(I\mathcal O=\mathcal O(-E)\) and \(A=\pi^*L\). The source constructs the actual curve models and proves, for noncontracted affine curves,
+\[
+A\cdot C=RD_W(C),\qquad E\cdot C=RS(C).
+\]
+Affine curves with \(Y\equiv0\) meet none of the prescribed centers, so \(S(C)=0\) and their curve estimate is automatic. Together with (5) for curves meeting \(Y\ne0\), this makes \(A-(1+\sigma)E\) nef. Boundary curves avoid \(E\); on contracted curves \(A\) has degree zero and \(-E\) is positive by relative ampleness.
+
+For a sufficiently large integer \(r>1\), \(rA-E\) is ample. The exact identity
+\[
+A-E=
+\frac{r-1}{r(1+\sigma)-1}\,[A-(1+\sigma)E]
++\frac{\sigma}{r(1+\sigma)-1}\,[rA-E]
+\tag{7}
+\]
+has positive coefficients, and supplies ampleness together with a uniform positive curve margin. This step does not infer ampleness from strict nefness alone.
+
+For all sufficiently large \(n\), the ordinary blowup has
+\[
+\pi_*\mathcal O(-nE)=I^n,\qquad R^q\pi_*\mathcal O(-nE)=0\quad(q>0).
+\]
+These are eventual identities for ordinary powers of \(I\); they are not assertions about integral closures or about every small \(n\). Serre vanishing for \(A-E\), followed by the projection formula and Leray, yields
+\[
+H^1(X,I^nL^n)=0.
+\]
+Sections therefore surject onto the local quotients. The monomials generating \(I_j^n\) have weighted order at least \(nR\), so this surjection prescribes all packets below \(H=nR\). Completion does not change these finite-colength quotients.
+
+Finally, eventual polynomial generation for the projective embedding expresses sections of \(L^n\) as degree-\(n\) homogeneous polynomials in its coordinates. On the affine chart their \(W\)-degree is at most \(nR\). This last step is essential: a Chinese remainder theorem without a degree bound would not give our interpolation statement.

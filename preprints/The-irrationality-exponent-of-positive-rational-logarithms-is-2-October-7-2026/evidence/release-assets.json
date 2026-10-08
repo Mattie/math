@@ -1,0 +1,10 @@
+{
+  "files": [
+    {
+      "path": "release-assets/logarithm-main.ndjson.gz",
+      "bytes": 251779698,
+      "sha256": "fdb74704ed1bc0fa9bf3a142eb3ae676d65da86832eed51bb91be8870e052206"
+    }
+  ],
+  "distribution": "GitHub release attachments; excluded from Git source history"
+}

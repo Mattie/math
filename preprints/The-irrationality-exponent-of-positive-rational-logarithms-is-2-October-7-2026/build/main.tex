@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1.08in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs,longtable,array}
+\hypersetup{pdftitle={The irrationality exponent of positive rational logarithms is 2},
+  pdfauthor={Ryan Matthew Casper},
+  pdfsubject={Rational logarithms, irrationality exponents, and Lean formalization}}
+\setlist{topsep=4pt,itemsep=3pt}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\title{The irrationality exponent of positive rational logarithms is \(2\)}
+\author{Ryan Matthew Casper}
+\date{October 7, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove that the natural logarithm of every positive rational number other
+than \(1\) is irrational and has irrationality exponent \(2\).
+The argument extends OpenAI's weighted logarithmic interpolation and
+determinant method to distinct exponential coordinates, incorporating the
+arithmetic denominator and analytic radius costs of a general rational base.
+The resulting theorem is formalized using the released \(\pi\) library.
+It includes the individual logarithms of \(2\) and \(3\).
+\end{abstract}
+\input{sections/introduction}
+\input{sections/interpolation}
+\input{sections/determinant}
+\input{sections/conclusion}
+\input{sections/verification}
+\renewcommand{\bibfont}{\raggedright}
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}
