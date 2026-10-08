@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-08",
+  "status": "prepared locally",
+  "package_native_build": {
+    "exit_code": 0,
+    "mathematical_modules": 25,
+    "audit_modules": 1,
+    "dependency_objects": "reused after checking source and configuration hashes",
+    "log_sha256": "4489eed03f7ebe6c4cabed28aae0d6cf89c0ce907370967466033d5f921acd72"
+  },
+  "public_dependency_fetch": {
+    "status": "passed",
+    "source_files": 924,
+    "configuration_files": 3,
+    "complete_network_bootstrap_build": "not run"
+  },
+  "paper": {
+    "pages": 9,
+    "builder": "Pandoc 3.6.4 and Tectonic 0.17.0",
+    "visual_review": "all pages inspected; no clipping or overflow found",
+    "tex_layout_and_glyph_diagnostics": "none",
+    "sha256": "bcde8bdadf8891637952ae84e8d13aec3e2e3df7b41699d9b6c520718ec87f25"
+  },
+  "content_checks": {
+    "displayed_formulas_preserved": 40,
+    "latex_formula_correspondence": "passed, allowing documented layout changes",
+    "pdf_author_and_disclosure_present": true,
+    "pdf_private_text_scan": "passed",
+    "excluded_contemporary_project_references": "absent"
+  },
+  "shell_syntax": "verify.sh, export.sh and replay.sh passed bash -n",
+  "proof_changes": "none; 26 Lean files match the frozen source identities",
+  "replay_scope": "Previous successful runs retained; replay scripts packaged, not rerun during preparation",
+  "committed": false,
+  "published": false
+}

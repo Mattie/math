@@ -1,0 +1,4 @@
+# Preserve the exact bytes covered by the verification manifests.
+* -text
+*.pdf binary
+*.gz binary

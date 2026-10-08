@@ -1,0 +1,26 @@
+{
+  "scope": "Recorded checks of the unchanged reviewed sources; not rerun during packaging",
+  "lean_version": "4.34.1",
+  "mathematical_modules": 25,
+  "audit_modules": 1,
+  "nanoda": {
+    "exit_code": 0,
+    "declarations": 118145
+  },
+  "second_lean": {
+    "version": "4.34.0",
+    "exit_code": 0,
+    "declarations": 118142,
+    "quotient_entries_regenerated": 3
+  },
+  "controls": "Both replay routes accepted a positive control and rejected an ill-typed body in type checking.",
+  "model_reviews": [
+    "blind mathematical/specification review",
+    "commissioned proof-failure investigation",
+    "inherited geometric foundation audit"
+  ],
+  "confirmed_defects": 0,
+  "sandboxed_comparator": "not run",
+  "independent_human_specialist_review": "not recorded",
+  "full_dependency_source_rebuild": "not performed in recorded runs"
+}

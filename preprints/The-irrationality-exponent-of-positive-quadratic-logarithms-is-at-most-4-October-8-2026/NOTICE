@@ -1,0 +1,7 @@
+The irrationality exponent of positive quadratic logarithms is at most 4
+Copyright (c) 2026 Ryan Matthew Casper
+
+The original quadratic extension and its exposition were developed under the author's direction with substantial contributions from OpenAI coding agents.
+The work builds on OpenAI's pi manuscript and library, the preceding rational-logarithm extension, and Mathlib. Exact dependency revisions are in evidence/dependency-pin.json.
+Dependencies retain their upstream licenses and notices. No endorsement is implied.
+The retained replay reader is from Lean Kernel Arena, revision b83254de5146ef34147ab82a48edbe1856b0edcc, under Apache 2.0. Its parser is from lean4export, revision 076e8e57707e813375e8f9da8bf989799ace9680, under Apache 2.0.

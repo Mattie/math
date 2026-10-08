@@ -1,0 +1,25 @@
+{
+  "reader_repository_revision": null,
+  "reader_identity": "Retained source hashes; reader directory is not a Git checkout",
+  "source_sha256": {
+    "Main.lean": "556dd7ff4498ab19fecfa3c268d48090b2e7e723abd59f43d8e513c9769d8e5c",
+    "lakefile.toml": "c8ab0f29333ee80051806046391869dfa253415bc939e5cf77dc7047f6032cd6",
+    "lake-manifest.json": "39f18f618d8f81a19b40d463f5bc4916e9ac88e31028965e39a3b9df91e919bf",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "parser/Export/Parse.lean": "1f943b5cc776eece6d528937b976509c8bd57d10bc69a39b1c119bfb6d664286",
+    "parser/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "reader_binary_sha256": "f18020ea3525ee1058788decc2169480cc9ed371a990f4081170c82c186053f9",
+  "lean_version": "4.34.0",
+  "lean_commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+  "parser_repository": "https://github.com/leanprover/lean4export",
+  "parser_commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+  "quotient_primitives_regenerated": [
+    "Quot.mk",
+    "Quot.lift",
+    "Quot.ind"
+  ],
+  "main_source_repository": "https://github.com/leanprover/lean-kernel-arena",
+  "main_source_commit": "b83254de5146ef34147ab82a48edbe1856b0edcc",
+  "main_source_path": "checkers/official/Main.lean"
+}
