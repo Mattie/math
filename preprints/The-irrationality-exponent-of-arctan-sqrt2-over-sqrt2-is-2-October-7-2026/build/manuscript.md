@@ -1,0 +1,302 @@
+# The irrationality exponent of arctan(sqrt(2))/sqrt(2) is 2
+
+**Ryan Matthew Casper**  
+7 October 2026
+
+**Verification status.** The complete determinant extension and exact endpoint have passed Lean 4.34.1, the independent Nanoda checker, and a second stock Lean 4.34.0 replay, with only the three foundational axioms. Both independent checks cover the same final textual export, and fresh negative controls passed. Detailed statements, source pins, and receipts are in [VERIFICATION.md](../lean/VERIFICATION.md).
+
+## 1. Statement and normalization
+
+The concrete target is
+\[
+\mu\!\left(\frac{\arctan\sqrt2}{\sqrt2}\right)=2.
+\tag{1}
+\]
+The stronger quantified approximation statement is
+\[
+\forall\nu>2\;\exists Q\in\mathbb Z, Q\ge2:
+\quad\forall p,q\in\mathbb Z, q\ge Q\Longrightarrow
+q^{-\nu}\le
+\left|\frac{\arctan\sqrt2}{\sqrt2}-\frac pq\right|.
+\tag{2}
+\]
+Fractions in this statement need not be reduced. The threshold depends only on the target and the chosen exponent, and is uniform in the numerator and denominator.
+
+For an irrational real number \(x\), its rational irrationality exponent is the supremum of the exponents \(\nu\) admitting infinitely many distinct reduced rational approximants with denominator at least 2 and strictly positive error smaller than \(q^{-\nu}\). Irrationality and the lower bound 2 are proved before identifying this supremum.
+
+Put \(\beta=i\sqrt2\), and write \(\mathcal O=\mathbb Z[\beta]\). The determinant argument treats the following broader data:
+\[
+x\in\mathbb R\setminus\{0\},\quad U\in\mathcal O,\quad
+D\in\mathbb Z_{>0},\quad
+\alpha=U/D=e^{\beta x},\quad
+(\alpha^j)_{j\ge0}\text{ pairwise distinct}.
+\tag{3}
+\]
+It proves the eventual bound for \(x\). These are arithmetic input conditions, not assumed interpolation or determinant conclusions. The concrete endpoint discharges every condition.
+
+For (1), use
+\[
+x=\frac{2\arctan\sqrt2}{\sqrt2},\qquad
+U=-1+2\beta,\quad D=3,
+\quad \alpha=\frac{-1+2\beta}{3}.
+\tag{4}
+\]
+The double-angle formulas give
+\[
+e^{\beta x}=e^{2i\arctan\sqrt2}
+=\frac{1-2+2i\sqrt2}{1+2}=\alpha.
+\]
+The positive number \(x\) is nonzero. If \(\alpha^n=1\) for some positive integer \(n\), both \(\alpha\) and \(\bar\alpha\) are algebraic integers. Their sum is the rational number \(-2/3\), which would then be an integer. This is impossible. Since \(\alpha\ne0\), its nonnegative powers are distinct.
+
+After proving the bound for \(x\), division by the ordinary integer 2 yields (2). This is rational scaling. No invariance of the irrationality exponent under multiplication by \(\sqrt2\) is used, and no statement about the unnormalized \(\arctan\sqrt2\) is inferred.
+
+## 2. The quadratic order and the interpolation matrix
+
+Elements of \(\mathcal O\) have the form \(a+b\beta\), with \(a,b\in\mathbb Z\), and
+\[
+N(a+b\beta)=a^2+2b^2=|a+b\beta|^2.
+\tag{5}
+\]
+This is a positive integer for every nonzero element. Hence
+\[
+0\ne z\in\mathcal O\Longrightarrow |z|\ge1.
+\tag{6}
+\]
+The formal ring is `Zsqrtd (-2)`, embedded into \(\mathbb C\) by sending its generator to \(i\sqrt2\). The embedding is injective. We only require this explicit order; no claim about a general ring of integers is needed.
+
+Fix (3) and \(\nu>2\). Suppose approximations \(r_k=p_k/q_k\) with
+\[
+|x-r_k|\le q_k^{-\nu}
+\tag{7}
+\]
+exist with arbitrarily large positive denominators. Choose a finite number \(m\) of them, with large successively separated weights
+\[
+w_k=\lceil\log q_k\rceil,\quad v_k=w_k/\theta,
+\quad T_k=\lceil F_0w_k/v_0\rceil,
+\quad G_k(t)=\sum_{1\le l<T_k}\frac{(-1)^{l+1}}l t^l.
+\]
+The positive rational parameters satisfy \(0<\theta<1\) and \(F_0>2/\theta\). Their order of selection is specified in §5.
+
+The centers in \(\mathbb G_m\times\mathbb A^m\) are
+\[
+(Y,X_1,\ldots,X_m)=(\alpha^j,\beta jr_1,\ldots,\beta jr_m),
+\qquad 0\le j<K.
+\]
+Columns are monomials \(Y^hX^\gamma\) satisfying
+\(w_0h+\sum_kw_k\gamma_k\le H\). Rows are \((j,s,a)\) satisfying
+\[
+0\le j<K,\qquad v_0s+\frac1\theta\sum_kw_ka_k<H.
+\]
+The actual matrix entry is
+\[
+[t^su^a]\,\bigl(\alpha^j(1+t)\bigr)^h
+\prod_k\bigl(\beta jr_k+G_k(t)+u_k\bigr)^{\gamma_k}.
+\tag{8}
+\]
+In particular the factor \(\alpha^{jh}\) remains in the matrix.
+
+The inherited distinct-center logarithmic interpolation theorem applies to arbitrary complex additive centers and pairwise distinct nonzero multiplicative coordinates. Its hypotheses are positive rational weights, a strict weighted volume margin, strict coordinate ratios, and sufficiently separated products of equally many degree and jet weights. One may use the comparison constant
+\[
+\mathcal C(m,\sigma)=2(m+2)^{m+2}
+\left(1+\frac{m+2}{\sigma}\right)^{m+2}.
+\]
+For equally sized subsets \(A,B\subseteq\{0,\ldots,m\}\), when the largest differing positive index belongs to \(A\), the product condition is
+\(\mathcal C(m,\sigma)\prod_{k\in B}v_k<\prod_{k\in A}w_k\).
+The parameter choice below supplies this and the strict volume conditions.
+
+This theorem gives surjectivity of (8) onto all its rows for sufficiently large heights in a cofinal sequence \(H=nR\), with \(R\) a positive integer clearing the rational weights. Polynomial truncation preserves the packets because \(T_kv_0\ge F_0w_k>v_k\). The proof is inherited from the weighted curve comparison, logarithmic differential frame, ordinary blowup, and Serre-vanishing argument. In particular, the interpolation conclusion is not supplied as a hypothesis of our endpoint. Its full construction is in the unchanged `Logarithm/Interpolation.lean` and the OpenAI library it imports.
+
+Select a square nonzero minor \(\Delta_H\) containing every row. Write
+\[
+M_H=\#\{\text{rows}\},\qquad
+b_H=\frac{\sum_{\mathrm{rows}}\sum_kw_ka_k}{M_HH}.
+\]
+Then \(0\le b_H\le\theta\), and weighted lattice counting gives
+\[
+M_H\sim\frac{K\theta^m H^{m+1}}{(m+1)!v_0\prod_kw_k}.
+\tag{9}
+\]
+Both bounds below apply to this same minor, uniformly in the selected columns.
+
+## 3. Exact denominator clearing and the lower bound
+
+Let
+\[
+L_k=\operatorname{lcm}(1,\ldots,T_k),\qquad
+E_H=\prod_kL_k^{\lfloor H/w_k\rfloor}.
+\]
+Multiply each column \((h,\gamma)\) by
+\(D^{Kh}\prod_kq_k^{\gamma_k}\), each row \((j,s,a)\) by
+\(\prod_kq_k^{-a_k}\), and each entry by \(E_H\). For \(a\le\gamma\), the resulting entry is exactly
+\[
+E_H U^{jh}D^{(K-j)h}\binom\gamma a
+[t^s](1+t)^h
+\prod_k(\beta jp_k+q_kG_k(t))^{\gamma_k-a_k}.
+\tag{10}
+\]
+If a coordinate of \(a\) exceeds that of \(\gamma\), the entry is zero. The power identity in (10) follows from \(D^{Kh}\alpha^{jh}=U^{jh}D^{(K-j)h}\); its exponent is nonnegative since \(j<K\). Each \(\gamma_k-a_k\le\lfloor H/w_k\rfloor\), so the powers of \(L_k\) clear all logarithm coefficients. The integer multiples \(\beta jp_k\) belong to \(\mathcal O\). Thus the cleared matrix and determinant lie in \(\mathcal O\).
+
+All row, column, and common factors are nonzero. The cleared determinant is therefore nonzero, and (6) applies. Set \(\Lambda=4+\log4\) and \(w_* =\min_kw_k\). The bound \(\log L_k\le\Lambda T_k\), the column degree constraint, and \(w_k-1\le\log q_k\le w_k\) give
+\[
+\frac{\log|\Delta_H|}{M_HH}\ge -(1-b_H)-E_{\rm ar},
+\tag{11}
+\]
+where
+\[
+E_{\rm ar}=\frac{\Lambda F_0m}{v_0}
++\Lambda\sum_k\frac1{w_k}+\frac\theta{w_*}
++\frac{K\log D}{w_0}.
+\tag{12}
+\]
+The common factor contributes the first two terms. Columns cost at most \(M_HH(1+K\log D/w_0)\), while row logarithms save at least \(M_HH(b_H-\theta/w_*)\). These row savings are retained exactly. The quadratic field causes no degree multiplier in the leading \(1-b_H\): the two complex embeddings have the same modulus, already giving (6) in the chosen embedding.
+
+## 4. Analytic expansion and the rotation cost
+
+Set
+\[
+\omega=\beta x,\qquad \rho=100\max(1,2|x|).
+\]
+Then \(100\le\rho\) and \(100|\omega|\le\rho\), since \(|\beta|=\sqrt2\le2\). For a column monomial \(P=Y^hX^\gamma\), define
+\[
+f_{b,P}(z)=[u^b]P(e^z,z+u_1,\ldots,z+u_m)
+=\binom\gamma b e^{hz}z^{|\gamma|-|b|}.
+\]
+As usual this is zero for \(b\not\le\gamma\). Put \(z_j(t)=j\omega+\log(1+t)\) for \(|t|<1\). The identity \(e^{j\omega}=\alpha^j\) implies \(e^{z_j(t)}=\alpha^j(1+t)\). The additive arguments in (8) are
+\[
+z_j(t)+u_k+e_{jk}+\tau_k(t),\quad
+e_{jk}=\beta j(r_k-x),\quad \tau_k=G_k-\log(1+t).
+\tag{13}
+\]
+No principal-branch identity for \(\log(\alpha^j)\) is used.
+
+The rational approximation errors and \(w_k=\lceil\log q_k\rceil\) give
+\[
+|e_{jk}|\le2\exp\{\log(2K)+\nu-\nu w_k\}.
+\]
+The conservative factor 2 is the only additional translation multiplier. The finite row expansion has transverse index \(b\ge a\) and \(wb\le H\). A nonzero tail contribution uses multiplicities \(e_k\) satisfying \(\sum_ke_kT_k\le s\), hence \(\sum_kw_ke_k<H/F_0\). The inherited coefficient bounds on \(|t|=1/2\) therefore give scalar size at most
+\[
+\exp\{-\nu w(b-a)+HE_{\rm tr}\},
+\quad
+E_{\rm tr}=\frac\nu{F_0}+\frac{\log2}{v_0}
++\frac{\log4+\log(2K)+\nu+\log2}{w_*}.
+\tag{14}
+\]
+The extra cost is precisely \(\log2/w_*\); it is not multiplied by a denominator weight or by the principal clearing term.
+
+On \(|z|\le\rho K\), the column functions have size at most
+\(\exp\{H(\rho K/w_0+\log(2\rho K)/w_*)\}\).
+The points \(z_j(t)\) for \(|t|=1/2\) lie in the smaller disc of radius \(\rho K/2\). Taylor expansion thus has an absolutely convergent geometric majorant. If two rows with the same transverse index use the same Taylor order, their determinant term vanishes. For \(n_b\) rows with that index, the surviving orders sum to at least \(\binom{n_b}2\).
+
+With \(c=\log2/4\), the inherited collision estimate yields the saving \(-c\sum_bn_b^2\), with normalized holomorphic error
+\[
+E_{\rm hol}=\frac{\rho K}{w_0}+\frac{\log2}{v_0}
++\frac{\log(2\rho K)}{w_*}.
+\]
+Let \(N_A(H)\) count transverse indices with \(wb\le AH\), and put
+\[
+c_H=\frac{c\eta^2M_H}{H N_A(H)},\qquad
+c_\infty=\frac{c\eta^2K\theta^m}{(m+1)v_0 A^m}.
+\]
+If at least \(\eta M_H\) rows use such indices, Cauchy–Schwarz gives the normalized saving \(-c_H\). Otherwise at least \((1-\eta)M_H\) rows have index weight exceeding \(AH\), and (14) gives the saving \(-\nu(A(1-\eta)-b_H)\).
+
+There are at most
+\(Q_H=(\lfloor H\rfloor+1)^{2m}(\lfloor H/v_0\rfloor+1)\)
+choices in each row expansion. Determinant multilinearity contributes at most \(Q_H^{M_H}\) terms; its normalized logarithm is \(\log Q_H/H=o(1)\). The normalized collision remainder also tends to zero. Consequently the actual same minor satisfies
+\[
+\frac{\log|\Delta_H|}{M_HH}\le
+E_{\rm an}+o(1)+
+\max\{-c_H,-\nu(A(1-\eta)-b_H)\},
+\quad E_{\rm an}=E_{\rm tr}+E_{\rm hol},
+\tag{15}
+\]
+and lattice counting gives \(c_H\to c_\infty\). All approximants and parameters are fixed before \(H\) tends to infinity.
+
+## 5. Parameter selection and the exact reserve
+
+Fix \(x,U,D,\nu\), and therefore \(\rho\) and \(\delta=\log D\). Replace the lcm budget constant by
+\[
+\Lambda'=\Lambda+\log2.
+\]
+Choose positive rational \(\theta,A,B,C\) with
+\[
+0<\theta<A<B<1,\quad \nu(A-\theta)>1-\theta,
+\quad C>1,\quad CB<1,\quad B<C\theta<1.
+\tag{16}
+\]
+For \(\nu>2\), these exist: choose rational \(b\in(1/2,1-1/\nu)\), put \(\theta=1-s\), \(A=1-bs\) for sufficiently small positive rational \(s\), and choose \(C\in(A/\theta,1/A)\) and \(B\in(A,\min(1/C,C\theta))\). The inequality \(A^2<\theta\), valid for small \(s\), ensures these intervals are nonempty.
+
+Choose small rational \(\eta>0\) so that
+\(g=\nu(A(1-\eta)-\theta)-(1-\theta)>0\), and put \(\epsilon=\min(g/2,1/2)\). Choose \(F_0>2/\theta\) with \(\nu/F_0<\epsilon/3\). Increase \(m\), setting
+\[
+K=\lfloor C^m\rfloor,\quad w_0=B^{-m},\quad v_0=2K\theta^mw_0.
+\]
+Then \(K/w_0\le(CB)^m\to0\), \(v_0\to\infty\), \(m/v_0\to0\), and
+\(c_\infty=c\eta^2(B/A)^m/(2(m+1))\to\infty\).
+Fix one sufficiently large \(m\) so that
+\[
+\frac{\Lambda'F_0m+2\log2}{v_0}+\frac{(\rho+\delta)K}{w_0}<\epsilon/3,
+\qquad c_\infty>2.
+\tag{17}
+\]
+The interpolation volume is exactly \(K(w_0/v_0)\theta^m=1/2\), and \(K\theta^m<1\). A sufficiently small positive rational \(\sigma\) therefore satisfies
+\[
+(1+3\sigma)^{m+1}/2<1,\quad
+(1+3\sigma)^mK\theta^m<1,\quad (1+\sigma)\theta<1.
+\]
+
+Only now select the approximants from (7). Arbitrarily large denominators allow all the finitely many weights to exceed a common threshold and to be successively separated by the inherited product-comparison factor. They can also satisfy
+\[
+\Lambda'\sum_k\frac1{w_k}+
+\frac{\theta+\log4+\log(2K)+\nu+\log(2\rho K)}{w_*}<\epsilon/3.
+\tag{18}
+\]
+Common factors in the equally sized product comparisons cancel; increasing the next weight satisfies each remaining strict comparison. The eventual interpolation threshold is chosen after these centers and weights, so it creates no circular dependence.
+
+The exact payment for the new rotation cost is
+\[
+\frac{\log2}{w_*}\le\log2\sum_k\frac1{w_k}
+\le(\Lambda'-\Lambda)
+\left(\frac{F_0m}{v_0}+\sum_k\frac1{w_k}\right).
+\tag{19}
+\]
+The first inequality uses the attained minimum among the nonempty finite set of weights. This is the reserve established in the formal arithmetic bound. Thus (17), (18), and the initial \(F_0\) margin give
+\[
+E_{\rm ar}+E_{\rm an}<\epsilon<g,
+\qquad c_\infty>1+E_{\rm ar}+E_{\rm an}.
+\tag{20}
+\]
+Both the fixed radius and the base denominator costs are included in (17).
+
+For sufficiently large cofinal heights, compatibility of (11) and (15) is impossible. In the collision alternative it requires
+\(c_H\le1-b_H+E_{\rm ar}+E_{\rm an}+o(1)\), contradicting (20) and \(c_H\to c_\infty\). In the approximation alternative it requires
+\[
+\nu(A(1-\eta)-b_H)-(1-b_H)
+\le E_{\rm ar}+E_{\rm an}+o(1).
+\]
+The left side is at least \(g\), because \(b_H\le\theta\) and \(\nu>1\). This contradicts (20). Hence (7) cannot occur at arbitrarily large denominators, proving the eventual bound for (3).
+
+## 6. Endpoint, scope, and provenance
+
+For a positive integer \(n\), an eventual bound for \(x\) transfers to \(x/n\). Given \(\nu>2\), choose \(\mu\in(2,\nu)\). At sufficiently large denominators, \(q^{\nu-\mu}\ge n\), and
+\[
+|x/n-p/q|=n^{-1}|x-np/q|\ge n^{-1}q^{-\mu}\ge q^{-\nu}.
+\]
+Applying this with (4) and \(n=2\) gives (2). If the target were rational, its unreduced exact fractions with arbitrarily large denominators would violate (2). Dirichlet approximation supplies exponent 2 for the now irrational target, and (2) excludes every larger exponent. This proves the claimed value of the supremum.
+
+The formal generic endpoint is confined to \(\mathbb Q(\sqrt{-2})\) and non-torsion exponentials. The argument suggests the corresponding construction for other imaginary quadratic orders, but this package does not certify that broader field family. In particular it makes no inference about \(\pi/\sqrt d\) from the exponent of \(\pi\); torsion centers require a separate geometric treatment.
+
+The normalized family already occurs in approximation theory; see [Polyanskii's primary preprint](https://arxiv.org/pdf/1501.06752) and [Zeilberger–Zudilin's primary article page](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/gat.html). No exhaustive priority claim or strongest earlier numerical bound for the exact value in (1) is asserted.
+
+The proof reuses OpenAI's weighted interpolation framework and released library at [commit adc7f1241b42e322a6451854ab7e4b4c146bf78a](https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a), Mathlib, and the author's preceding logarithm and Gaussian-arctangent adaptations. The new ingredients are the explicit quadratic order, exact clearing into that order, its modulus lower bound, the non-unit rotation estimate, and the reserve (19). The nonzero-minor geometry, collision estimate, parameter existence, and ordinary irrationality-exponent consequence remain substantial inherited results.
+
+**AI use disclosure.** Ryan Matthew Casper initiated and directed the investigation. OpenAI coding agents contributed substantially to the research assessment, mathematical adaptation, Lean proof development, verification tooling, and exposition. Automated formal checking is evidence about the specified formal statements relative to their foundational axioms; it is not independent human peer review. No external referee was contacted for this work.
+
+
+## References
+
+- OpenAI. *Math: released PiExponent formalization*. [Pinned source library](https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a).
+- Ryan Matthew Casper. *The irrationality exponent of positive rational logarithms is 2*. October 7, 2026. [Preceding preprint](../../The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026/paper.pdf).
+- Ryan Matthew Casper. *The irrationality exponent of nonzero rational arctangents is 2*. October 7, 2026. [Preceding preprint](../../The-irrationality-exponent-of-nonzero-rational-arctangents-is-2-October-7-2026/paper.pdf).
+- The Mathlib Community. *Mathlib*. [Pinned source library](https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612).
+- Alexandr Polyanskii. *On the irrationality measure of certain numbers*. 2015. [arXiv:1501.06752](https://arxiv.org/abs/1501.06752).
+- Doron Zeilberger and Wadim Zudilin. *Automatic Discovery of Irrationality Proofs and Irrationality Measures*. International Journal of Number Theory 17 (2021), 815-825. [Article page](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/gat.html).

@@ -1,0 +1,31 @@
+import Imaginary.Main
+
+#print OAI.Imaginary.normalized_arctan_sqrt_two_irrationalityExponent_eq_two
+#check OAI.Imaginary.normalized_arctan_sqrt_two_explicit_bound
+#print axioms OAI.Imaginary.rotation_sq
+#print axioms OAI.Imaginary.ImaginaryInt.intCast_real_norm
+#print axioms OAI.Imaginary.ImaginaryInt.toComplex_injective
+#print axioms OAI.Imaginary.Arithmetic.quadratic_norm_one_le
+#print axioms OAI.Imaginary.Arithmetic.shifted_truncation_product_coeff_quadratic
+#print axioms OAI.Imaginary.ScaledArithmetic.entry_truncatedLog_cleared_quadratic
+#print axioms OAI.Imaginary.ScaledArithmetic.selectedMinor_entries_quadratic
+#print axioms OAI.Imaginary.ScaledArithmetic.selectedMinor_arithmetic_lower_bound
+#print axioms OAI.Imaginary.ScaledApproximationErrors.actual_error_exp
+#print axioms OAI.Imaginary.DeterminantData.actual_minor_arithmetic_lower_bound
+#print axioms OAI.Imaginary.GlobalMatrixInterpolation.cofinal_actualMatrix
+#print axioms OAI.Imaginary.LiteralAnalytic.norm_choiceScalar_le
+#print axioms OAI.Imaginary.LiteralAnalytic.norm_choiceMatrix_le
+#print axioms OAI.Imaginary.LiteralAnalytic.actual_minor_expansion
+#print axioms OAI.Imaginary.LiteralAnalytic.actual_minor_analytic_bound
+#print axioms OAI.Imaginary.exists_period_parameters
+#print axioms OAI.Imaginary.DeterminantContradiction.no_fixed_data
+#print axioms OAI.Imaginary.DeterminantContradiction.period_eventualLowerBound
+#print axioms OAI.Imaginary.exp_normalizedAngle
+#print axioms OAI.Imaginary.alpha_no_root
+#print axioms OAI.Imaginary.alpha_powers_injective
+#print axioms OAI.Imaginary.eventualLowerBound_div_nat
+#print axioms OAI.Imaginary.period_irrationalityExponent_eq_two
+#print axioms OAI.Imaginary.normalized_arctan_sqrt_two_eventualLowerBound
+#print axioms OAI.Imaginary.normalized_arctan_sqrt_two_irrationalityExponent_eq_two
+#print axioms OAI.Imaginary.normalized_arctan_sqrt_two_integer_eventualLowerBound
+#print axioms OAI.Imaginary.normalized_arctan_sqrt_two_explicit_bound

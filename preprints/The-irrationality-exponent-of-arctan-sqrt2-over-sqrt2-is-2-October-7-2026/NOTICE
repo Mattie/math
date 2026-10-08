@@ -1,0 +1,19 @@
+The irrationality exponent of arctan(sqrt(2))/sqrt(2) is 2
+Author: Ryan Matthew Casper
+
+This distribution includes 869 unchanged OpenAI/math PiExponent modules from
+commit adc7f1241b42e322a6451854ab7e4b4c146bf78a, under Apache 2.0.
+It also includes 55 unchanged modules from Casper's preceding rational-logarithm
+formalization and 15 new Imaginary modules. The original contributions are MIT;
+the original manuscript and explanatory prose are CC BY 4.0. See LICENSES.md.
+
+OpenAI's weighted interpolation and determinant method and its released library
+are substantial foundations of this work. Casper's preceding rational-logarithm
+package supplies the geometric generalization and complex analytic interfaces.
+The manuscript makes no exhaustive priority or novelty claim.
+
+OpenAI coding agents contributed substantially to the mathematical development,
+formalization, verification, and writing under Casper's direction. No OpenAI
+authorship, sponsorship, endorsement, or external human peer review is asserted.
+Checker dependencies retain their upstream licenses and are fetched at pinned
+commits by the reproduction scripts. See licenses/ and lean/VERIFICATION.md.
