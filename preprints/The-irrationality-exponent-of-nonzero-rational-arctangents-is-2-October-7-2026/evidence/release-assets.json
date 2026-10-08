@@ -1,0 +1,11 @@
+{
+  "assets": [
+    {
+      "file": "arctangent-main.ndjson.gz",
+      "bytes": 203187347,
+      "sha256": "695453c9039fd6b88c066d7893e4c1b9d9de7c9ad51e873c5e374dab895a87dd",
+      "uncompressed_bytes": 1281816054,
+      "uncompressed_sha256": "f02fa59112a93d2d82077fe5d39ac171e914b31dcaf1fa93e8b301b76594702c"
+    }
+  ]
+}

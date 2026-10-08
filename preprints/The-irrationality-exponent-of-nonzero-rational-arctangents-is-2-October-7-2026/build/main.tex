@@ -1,0 +1,675 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1.08in]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={The irrationality exponent of nonzero rational arctangents is 2},pdfauthor={Ryan Matthew Casper}}
+\setlength{\emergencystretch}{3em}
+\setcounter{secnumdepth}{0}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title{The irrationality exponent of nonzero rational arctangents is 2}
+\author{Ryan Matthew Casper}
+\date{October 7, 2026}
+\begin{document}
+\maketitle
+This manuscript presents an extension of OpenAI's weighted logarithmic
+interpolation and determinant method to arctangents of nonzero rational
+numbers. The arithmetic takes place in the Gaussian integers. The
+argument retains the actual exponential factors in the matrix, the row
+denominator savings, and the approximation-center translation costs.
+
+The Lean endpoints prove the statement below without an irrationality,
+non-torsion, interpolation, ampleness, or approximation-bound
+hypothesis. The geometric comparison framework and its formal
+infrastructure are inherited from OpenAI's released library and our
+preceding rational-logarithm implementation. Substantial inherited
+lemmas are identified explicitly below. This is a mathematical
+exposition of the formal argument, not a claim of external human peer
+review.
+
+Yufei Bai's preprint submitted on 20 August 2026 reports the upper bound
+8.585166\ldots{} for the irrationality measure of arctan(1/2). We cite
+it as a concrete earlier benchmark; this investigation does not
+establish an exhaustive priority claim.
+\href{https://arxiv.org/abs/2608.19782}{Bai, arXiv:2608.19782}.
+
+\section{1. Statement and conventions}\label{statement-and-conventions}
+
+\textbf{Theorem.} For every rational number \(r\ne0\), the real number
+\(\arctan r\) is irrational and \[
+\mu(\arctan r)=2.
+\] In particular, \(\mu(\arctan(1/2))=2\). The approximation statement
+proved before taking the irrationality exponent is \[
+\forall\nu>2\;\exists Q\in\mathbb Z,\ Q\ge2:\quad
+\forall p,q\in\mathbb Z,\ q\ge Q\Longrightarrow
+q^{-\nu}\le\left|\arctan r-\frac pq\right|.
+\tag{1}
+\] The threshold depends on \(r,\nu\), and is uniform in \(p,q\).
+Fractions in (1) need not be reduced. The case \(r=0\) is excluded: its
+arctangent is zero and exact rational approximations prevent (1).
+
+For an irrational real number \(x\), \(\mu(x)\) is the supremum of the
+positive exponents \(\nu\) for which infinitely many reduced rational
+numbers \(p/q\), with \(q\ge2\), satisfy \(0<|x-p/q|<q^{-\nu}\). The
+formal proof establishes irrationality and the lower bound 2 before
+identifying the supremum, so an unbounded-supremum convention plays no
+role.
+
+We first prove a slightly broader angle statement. Let \(\xi\ne0\) be
+real, let \(U\in\mathbb Z[i]\), and let \(D\) be a positive integer.
+Suppose \[
+\alpha=U/D=e^{i\xi},\qquad
+\alpha^0,\alpha^1,\alpha^2,\ldots\text{ are pairwise distinct}.
+\tag{2}
+\] Then (1), with \(\xi\) in place of \(\arctan r\), holds. The
+arctangent hypotheses and the passage from \(2\arctan r\) to
+\(\arctan r\) are discharged in §§2 and 8.
+
+\section{2. The arctangent exponential and the torsion
+exceptions}\label{the-arctangent-exponential-and-the-torsion-exceptions}
+
+For rational \(r\), put \[
+\xi=2\arctan r,\quad \omega=i\xi,\quad
+a_r=\frac{1-r^2}{1+r^2},\quad b_r=\frac{2r}{1+r^2}.
+\] The double-angle formulas and \(\tan(\arctan r)=r\) give \[
+e^{i\xi}=a_r+ib_r=\frac{1+ir}{1-ir},\qquad a_r^2+b_r^2=1.
+\tag{3}
+\] There is no choice of a global logarithm branch in this identity. We
+specify the real angle \(2\arctan r\) directly. The local logarithm used
+later is only \(\log(1+t)\) on \(|t|<1\).
+
+Every number \(a_r+ib_r\) can be written \(U/D\) with Gaussian \(U\) and
+positive integer \(D\). The family implementation uses \[
+D=\operatorname{den}(a_r)\operatorname{den}(b_r),\qquad
+U=\operatorname{num}(a_r)\operatorname{den}(b_r)
++i\operatorname{num}(b_r)\operatorname{den}(a_r).
+\] Lowest terms are unnecessary. For the first target, the separate
+formal path uses exactly \[
+r=1/2,\quad \xi=2\arctan(1/2),\quad U=3+4i,\quad D=5.
+\tag{4}
+\]
+
+We need the exact root-of-unity exceptions. Suppose \(z=a+ib\), with
+\(a,b\in\mathbb Q\), \(a^2+b^2=1\), and \(z^n=1\) for a positive integer
+\(n\). Both \(z\) and \(\bar z\) are algebraic integers. Hence \[
+2a=z+\bar z,\qquad 2b=-i(z-\bar z)
+\] are rational algebraic integers and therefore ordinary integers.
+Write them as \(k,l\). Then \(k^2+l^2=4\), so \((k,l)\) is one of
+\((\pm2,0),(0,\pm2)\). Thus \(z\in\{1,-1,i,-i\}\).
+
+For (3), \(a_r=1\) forces \(r=0\); \(a_r=-1\) is impossible; and
+\(a_r=0\) forces \(r=\pm1\). Conversely these exceptional values do give
+roots of unity. Therefore the powers of \(\alpha\) are distinct whenever
+\(r\notin\{0,1,-1\}\): an equality \(\alpha^j=\alpha^k\), with \(j<k\),
+would give \(\alpha^{k-j}=1\). In particular the powers in (4) are
+distinct. For that single value one can also use its trace
+\(\alpha+\bar\alpha=6/5\), which cannot be an integer.
+
+The nonzero rational exceptions \(r=\pm1\) will be handled separately
+using \(\arctan(1)=\pi/4\), \(\arctan(-1)=-\pi/4\), and the certified
+OpenAI bound for \(\pi\).
+
+\section{3. Weighted logarithmic interpolation at distinct exponential
+coordinates}\label{weighted-logarithmic-interpolation-at-distinct-exponential-coordinates}
+
+We first describe the geometric input, because it is the point at which
+the extension changes the original centers. The geometry and
+interpolation are over \(\mathbb C\); the matrices used later have
+Gaussian rational entries.
+
+Let \(m,K\ge1\), and let \[
+W=(w_0,\ldots,w_m),\qquad V=(v_0,\ldots,v_m)
+\] be positive rational weights. Let \(\sigma>0\) be rational. Define
+the conservative comparison constant \[
+\mathcal C(m,\sigma)=
+2(m+2)^{m+2}\left(1+\frac{m+2}{\sigma}\right)^{m+2}.
+\] We impose the following conditions: \[
+K(1+3\sigma)^{m+1}\frac{\prod_iw_i}{\prod_iv_i}<1,
+\qquad
+(1+\sigma)w_i<v_i\quad(1\le i\le m).
+\tag{G1}
+\] For equally sized subsets \(A,B\subseteq\{0,\ldots,m\}\), if the
+largest index in their symmetric difference is positive and belongs to
+\(A\), require \[
+\mathcal C(m,\sigma)\prod_{j\in B}v_j
+<\prod_{i\in A}w_i.
+\tag{G2}
+\]
+
+The centers are \[
+b_j=(y_j,c_{j1},\ldots,c_{jm}),\quad 0\le j<K,
+\] with distinct nonzero \(y_j\). There is no requirement that the
+\(c_{ji}\) be distinct. Near each center use formal coordinates \[
+t=Y/y_j-1,\qquad
+u_i=X_i-c_{ji}-\log(1+t).
+\tag{G3}
+\] A jet packet of height \(H\) consists of the coefficients of
+\(t^su^\beta\) with \(v_0s+\sum_i v_i\beta_i<H\).
+
+\textbf{Interpolation theorem used here.} There is a positive integer
+\(R\), clearing the weight denominators, such that for every
+sufficiently large integer \(n\), polynomials of \(W\)-weighted degree
+at most \(H=nR\) map surjectively onto the packets of height \(H\) at
+all \(K\) centers.
+
+The cofinal heights \(nR\) suffice for the determinant argument. We do
+not need, and do not claim as a checked intermediate theorem,
+surjectivity for every sufficiently large real height.
+
+\subsection{3.1 A curve estimate}\label{a-curve-estimate}
+
+For an irreducible algebraic curve \(C\) in the affine space with
+\(Y\ne0\), work on its smooth complete normalization. At every place
+\(P\), set \[
+D_W(C)=\sum_P
+\max\left(0,\frac{\operatorname{pole}_P Y}{w_0},
+\frac{\operatorname{pole}_P X_1}{w_1},\ldots,
+\frac{\operatorname{pole}_P X_m}{w_m}\right).
+\] The notation means the sum of the displayed local maxima; identically
+zero coordinates contribute no poles. For each branch over a center
+define \[
+h_P=\min\left(\frac{\operatorname{ord}_P t}{v_0},
+\frac{\operatorname{ord}_P u_1}{v_1},\ldots,
+\frac{\operatorname{ord}_P u_m}{v_m}\right),\qquad
+S(C)=\sum_{P\text{ over centers}}h_P.
+\] Orders of identically zero series may be infinite. On a nonconstant
+curve the minimum remains finite.
+
+The needed estimate is \[
+D_W(C)\ge(1+\sigma)S(C).
+\tag{G4}
+\]
+
+Suppose instead that (G4) fails. The volume inequality in (G1) implies,
+by counting monomials and jet conditions, that for every sufficiently
+large \(N\) there is a nonzero polynomial \(F_N\) of \(W\)-degree at
+most \(N\), whose \(V\)-weighted order at every center is at least
+\((1+3\sigma)N\). This count needs no independence of the vanishing
+conditions.
+
+Use the commuting polynomial differential frame \[
+D_0=Y\partial_Y+\sum_{i=1}^m\partial_{X_i},
+\qquad D_i=\partial_{X_i}\quad(i>0).
+\] In the chart (G3), these become \((1+t)\partial_t,\partial_{u_i}\).
+Differentiation preserves the \(W\)-degree bound and loses at most its
+assigned \(V\)-cost in weighted order.
+
+Every derivative word of cost at most \(\sigma N\) therefore has
+weighted order at least \((1+2\sigma)N\). Its restriction to each branch
+has order at least \((1+2\sigma)Nh_P\), whereas its total pole degree is
+at most \(ND_W(C)\). The assumed failure of (G4) forces all these
+derivatives to vanish identically on \(C\).
+
+Consider common zero loci of derivatives at successive cost cutoffs \[
+r\delta_N,\qquad \delta_N=\sigma N/(m+2).
+\] Choose nested irreducible components containing the affine part of
+\(C\). Their dimensions range from 1 to \(m\); consecutive stages
+eventually share a component \(Z\). On this component, the defining
+equations from the earlier stage have degree at most \(N\), and their
+further derivatives through cost \(\delta_N\) vanish.
+
+We now use the inherited \textbf{persistent normal comparison lemma}.
+For a coordinate normal basis indexed by \(A\), and a differential-frame
+normal basis indexed by \(B\), persistence gives \[
+\prod_{i\in A}w_i\le
+\mathcal C(m,\sigma)\prod_{j\in B}v_j.
+\tag{G5}
+\] The lemma compares an upper bound from weighted Bézout with a lower
+bound from rectangular transverse jets. Its large-\(N\) requirement is
+uniform in the component: the relevant rectangular cutoffs are at least
+2 once \(N\) is sufficiently large in terms of the fixed weights,
+dimension and \(\sigma\).
+
+This is a substantial reused lemma, not a new result about arbitrary
+analytic frames. The formal applications are mapped in §9 to the
+original persistent-weight and transverse-slice sources.
+
+If some positive-index coordinate direction is not tangent to \(Z\),
+take the largest such index \(i\). The coordinate normal basis can
+include \(i\), with all larger directions tangent. Equations (G2) and
+(G5) force every frame normal basis to include \(D_i\). All other frame
+vectors lie in \[
+\ker(dX_i-dY/Y).
+\] Their normal rank is one less than the codimension, so the tangent
+space of \(Z\) lies in this hyperplane. Thus \(dX_i=dY/Y\) on \(Z\).
+
+If \(Y\) were nonconstant, restrict to an algebraic curve on which it
+remains nonconstant and pass to a smooth complete model. An exact
+differential \(dX_i\) has zero residues, while \(dY/Y\) has residue
+\(\operatorname{ord}_P Y\) at each zero or pole. A nonconstant rational
+function has such a place, giving a contradiction. Consequently \(Y\) is
+constant on \(Z\).
+
+In the remaining case all positive-index coordinate directions are
+tangent. Since \(Z\) is proper, its tangent space is their span;
+therefore \(dY=0\), and characteristic zero again makes \(Y\) constant.
+In either case \(Y\) is constant on \(C\).
+
+Distinct \(y_j\) now matter: a constant-\(Y\) curve meets at most one
+center. Some \(X_i\) is nonconstant on \(C\). At that center \(t=0\) and
+\(u_i=X_i-c_{ji}\), so the zero/pole equality for this function gives \[
+v_iS(C)\le w_iD_W(C).
+\] The coordinate inequality in (G1) contradicts the assumed failure of
+(G4). This proves the curve estimate, counting every branch, including
+branches over singular points.
+
+\subsection{3.2 From curves to bounded-degree
+interpolation}\label{from-curves-to-bounded-degree-interpolation}
+
+Choose \(R\) so that \(R/w_i,R/v_i\) are positive integers. Compactify
+by the monomials of \(W\)-degree at most \(R\), retaining the constant
+coordinate as the affine chart. If \(L=\mathcal O(1)\), then on every
+normalized affine curve, \[
+\deg L=R D_W(C).
+\] The constant and pure-coordinate monomials attain the local maxima
+defining this degree.
+
+Replace the logarithm in (G3) by a polynomial truncation whose first
+omitted term has \(t\)-weight larger than every relevant \(v_i\). This
+leaves the weighted filtration and branch contacts unchanged. At center
+\(j\), form the finite-colength ideal \[
+I_j=(t^{R/v_0},(u'_1)^{R/v_1},\ldots,(u'_m)^{R/v_m}).
+\] These ideals give a coherent ideal \(I\), equal to the unit ideal
+away from the centers.
+
+On the ordinary blowup, write \(I\mathcal O=\mathcal O(-E)\) and
+\(A=\pi^*L\). The source constructs the actual curve models and proves,
+for noncontracted affine curves, \[
+A\cdot C=RD_W(C),\qquad E\cdot C=RS(C).
+\] Affine curves with \(Y\equiv0\) meet none of the prescribed centers,
+so \(S(C)=0\) and their curve estimate is automatic. Together with (G4)
+for curves meeting \(Y\ne0\), this makes \(A-(1+\sigma)E\) nef. Boundary
+curves avoid \(E\); on contracted curves \(A\) has degree zero and
+\(-E\) is positive by relative ampleness.
+
+For a sufficiently large integer \(r>1\), \(rA-E\) is ample. The exact
+identity \[
+A-E=
+\frac{r-1}{r(1+\sigma)-1}\,[A-(1+\sigma)E]
++\frac{\sigma}{r(1+\sigma)-1}\,[rA-E]
+\tag{G6}
+\] has positive coefficients, and supplies ampleness together with a
+uniform positive curve margin. This step does not infer ampleness from
+strict nefness alone.
+
+For all sufficiently large \(n\), the ordinary blowup has \[
+\pi_*\mathcal O(-nE)=I^n,\qquad R^q\pi_*\mathcal O(-nE)=0\quad(q>0).
+\] These are eventual identities for ordinary powers of \(I\); they are
+not assertions about integral closures or about every small \(n\). Serre
+vanishing for \(A-E\), followed by the projection formula and Leray,
+yields \[
+H^1(X,I^nL^n)=0.
+\] Sections therefore surject onto the local quotients. The monomials
+generating \(I_j^n\) have weighted order at least \(nR\), so this
+surjection prescribes all packets below \(H=nR\). Completion does not
+change these finite-colength quotients.
+
+Finally, eventual polynomial generation for the projective embedding
+expresses sections of \(L^n\) as degree-\(n\) homogeneous polynomials in
+its coordinates. On the affine chart their \(W\)-degree is at most
+\(nR\). This last step is essential: a Chinese remainder theorem without
+a degree bound would not give our interpolation statement.
+
+\section{4. The actual matrix}\label{the-actual-matrix}
+
+Fix the data in (2) and an exponent \(\nu>2\). Assume for contradiction
+that there are approximations \(p/q\) with arbitrarily large positive
+integer denominators and \[
+|\xi-p/q|\le q^{-\nu}.
+\] Choose finitely many of them, denoted \(r_i=p_i/q_i\), whose
+denominators will be taken very large and successively separated in §7.
+Set \[
+w_i=\lceil\log q_i\rceil,\qquad v_i=w_i/\theta\quad(1\le i\le m),
+\] with rational \(0<\theta<1\). Use the multiplicative centers
+\(y_j=\alpha^j\) and additive centers \(c_{ji}=ijr_i\), for
+\(0\le j<K\). Here the isolated symbol \(i\) before \(jr_i\) denotes the
+imaginary unit; subscripts index the chosen approximants. Equivalently,
+the additive center in coordinate \(k\) is \(\sqrt{-1}\,j p_k/q_k\).
+
+Choose \(F_0>2/\theta\), and define \[
+T_i=\lceil F_0w_i/v_0\rceil,\qquad
+G_i(t)=\sum_{1\le k<T_i}\frac{(-1)^{k+1}t^k}{k}.
+\] The omitted tail starts at order \(T_i\), whose weight satisfies
+\(T_iv_0\ge F_0w_i>v_i\). It therefore preserves the jet packets in §3.
+
+Columns are monomials \(Y^hX^\gamma\) with \(w_0h+w\gamma\le H\). Rows
+are triples \((j,s,\beta)\) with \[
+0\le j<K,\qquad v_0s+w\beta/\theta<H.
+\] The entry in the actual matrix is \[
+[t^su^\beta]\,\bigl(\alpha^j(1+t)\bigr)^h
+\prod_i\bigl(\sqrt{-1}\,jr_i+G_i(t)+u_i\bigr)^{\gamma_i}.
+\tag{5}
+\] The exponential factor \(\alpha^{jh}\) is retained. All entries lie
+in \(\mathbb Q(i)\).
+
+The interpolation theorem supplies full row rank at cofinal heights
+\(H=nR\). Select a square nonzero minor \(\Delta_H\) containing every
+row. Let \(M_H\) be the number of rows, and write \[
+b_H=\frac{\sum_{\text{rows}}w\beta}{M_HH},\qquad 0\le b_H\le\theta.
+\] Weighted lattice counting gives \[
+M_H\sim\frac{K\theta^mH^{m+1}}{(m+1)!v_0\prod_iw_i}.
+\tag{6}
+\] Both determinant bounds below concern this same minor, and are
+uniform in the selected columns.
+
+\section{5. Gaussian arithmetic and the row
+savings}\label{gaussian-arithmetic-and-the-row-savings}
+
+Let \[
+L_i=\operatorname{lcm}(1,\ldots,T_i),\qquad
+E_H=\prod_iL_i^{\lfloor H/w_i\rfloor}.
+\] Multiply column \((h,\gamma)\) by \(D^{Kh}\prod_iq_i^{\gamma_i}\),
+row \((j,s,\beta)\) by \(\prod_iq_i^{-\beta_i}\), and every entry by
+\(E_H\). The row factors are essential; discarding them loses the
+leading saving in (8).
+
+When \(\beta\le\gamma\), the cleared entry is \[
+E_H U^{jh}D^{(K-j)h}\binom{\gamma}{\beta}
+[t^s](1+t)^h
+\prod_i\bigl(\sqrt{-1}\,jp_i+q_iG_i(t)\bigr)^{\gamma_i-\beta_i}.
+\tag{7}
+\] Otherwise it is zero. The identity
+\(D^{Kh}\alpha^{jh}=U^{jh}D^{(K-j)h}\) uses \(j\le K\). Each
+\(\gamma_i-\beta_i\le\lfloor H/w_i\rfloor\), so the displayed lcm powers
+clear all coefficient denominators. Thus the cleared entries, and their
+determinant, lie in \(\mathbb Z[i]\).
+
+All scaling factors are nonzero. Since \(\Delta_H\ne0\), its cleared
+determinant is a nonzero Gaussian integer \(Z\). Consequently \(|Z|^2\)
+is a positive integer and \(|Z|\ge1\). This does not introduce a
+degree-two multiplier: the two complex embeddings give the same absolute
+value, and the lower bound is already in the chosen complex absolute
+value.
+
+Put \(\Lambda=4+\log4\) and \(w_* =\min_iw_i\). The inherited
+conservative lcm estimate is \(\log L_i\le\Lambda T_i\). Column degree,
+\(T_i\le F_0w_i/v_0+1\), and \(w_i-1\le\log q_i\le w_i\) give \[
+\frac{\log|\Delta_H|}{M_HH}\ge -(1-b_H)-E_{\rm ar},
+\tag{8}
+\] where \[
+E_{\rm ar}=\frac{\Lambda F_0m}{v_0}
++\Lambda\sum_i\frac1{w_i}+\frac{\theta}{w_*}
++\frac{K\log D}{w_0}.
+\tag{9}
+\] Indeed, the common clearing factor costs at most the first two terms.
+The selected columns cost at most \(M_HH(1+K\log D/w_0)\). The row
+logarithms save at least \(M_HH(b_H-\theta/w_*)\). Combining these three
+inequalities yields (8). The Gaussian numerator needs no further
+clearing factor and contributes no additional lower-bound cost.
+
+\section{6. Complex analytic expansion and collision
+saving}\label{complex-analytic-expansion-and-collision-saving}
+
+Set \(\omega=i\xi\) and \(\rho=100\max(1,|\xi|)\). For a column monomial
+\(P=Y^hX^\gamma\) and multi-index \(b\), define the entire function \[
+f_{b,P}(z)=[u^b]P(e^z,z+u_1,\ldots,z+u_m)
+=\binom{\gamma}{b}e^{hz}z^{|\gamma|-|b|},
+\] with value zero if \(b\not\le\gamma\). On \(|t|<1\), put \[
+z_j(t)=j\omega+\log(1+t).
+\] Since \(e^{j\omega}=\alpha^j\), we have \(e^{z_j(t)}=\alpha^j(1+t)\).
+The additive arguments in (5) become \[
+z_j(t)+u_i+e_{ji}+\tau_i(t),\quad
+e_{ji}=\sqrt{-1}\,j(r_i-\xi),\quad
+\tau_i=G_i-\log(1+t).
+\tag{10}
+\] No step replaces \(j\omega\) by the principal value of
+\(\log(\alpha^j)\). Such a replacement would be invalid when the powers
+wind around the unit circle; it is absent from both the argument and the
+formalization.
+
+Expanding (10) gives a finite linear combination of row vectors \[
+\bigl([t^\ell]f_{b,P}(z_j(t))\bigr)_P,
+\] with \(b\ge\beta\), \(wb\le H\), and coefficients independent of the
+selected column. The rotation has modulus one, so the approximation
+error satisfies \[
+|e_{ji}|=j|r_i-\xi|\le 2K e^\nu e^{-\nu w_i}.
+\] Each tail starts at \(T_i\). A term using tail multiplicities \(e_i\)
+can contribute only if \(\sum_i e_iT_i\le s\), whence
+\(\sum_iw_ie_i<H/F_0\). On the circle \(|t|=1/2\), the inherited
+coefficient and binomial estimates bound its scalar by \[
+\exp\{-\nu w(b-\beta)+HE_{\rm tr}\},\qquad
+E_{\rm tr}=\frac\nu{F_0}+\frac{\log2}{v_0}
++\frac{\log4+\log(2K)+\nu}{w_*}.
+\tag{11}
+\] This accounts for the approximate additive centers; replacing them by
+exact exponential centers would omit this term.
+
+On \(|z|\le\rho K\), the entire functions are bounded by \[
+\exp\left\{H\left(\frac{\rho K}{w_0}
++\frac{\log(2\rho K)}{w_*}\right)\right\}.
+\] The center estimate \(|j\omega|+3/4\le\rho K/2\) places \(z_j(t)\)
+within the smaller disc when \(|t|=1/2\). Taylor expansion in
+\(z/(\rho K)\) is therefore absolutely convergent with a geometric
+majorant. If two rows use the same transverse index \(b\) and the same
+Taylor order, that determinant term is zero. Among \(n_b\) rows with a
+common \(b\), the Taylor orders of a surviving term have sum at least
+\(\binom{n_b}{2}\).
+
+The inherited collision determinant estimate, with conservative constant
+\(c=\log2/4\), gives \[
+|\det B|\le\exp\left\{-c\sum_bn_b^2
++M_HH\bigl(E_{\rm hol}+o(1)\bigr)\right\},
+\] where \[
+E_{\rm hol}=\frac{\rho K}{w_0}+\frac{\log2}{v_0}
++\frac{\log(2\rho K)}{w_*},\qquad E_{\rm an}=E_{\rm tr}+E_{\rm hol}.
+\tag{12}
+\] The estimate also holds for singular test matrices. Its proof expands
+the determinant of the entire-function row tests, uses the
+repeated-order cancellation just described, and bounds the remaining
+absolutely convergent geometric sums and factorial factors. The formal
+source applies the existing theorem for arbitrary complex \(\omega\),
+retaining the factor \(\exp(j\omega)^h=\alpha^{jh}\).
+
+Choose \(A>\theta\) and \(0<\eta<1\). Let \(N_A(H)\) count multi-indices
+with \(wb\le AH\), and set \[
+c_H=\frac{c\eta^2M_H}{H N_A(H)}.
+\] If at least \(\eta M_H\) rows use those low indices, Cauchy--Schwarz
+gives \(\sum_bn_b^2\ge\eta^2M_H^2/N_A(H)\), hence the normalized saving
+\(-c_H\). Otherwise more than \((1-\eta)M_H\) rows have \(wb>AH\), and
+the product of scalar factors in (11) gives the saving
+\(-\nu(A(1-\eta)-b_H)\).
+
+For fixed parameters, the finite expansion has at most \[
+Q_H=(\lfloor H\rfloor+1)^{2m}(\lfloor H/v_0\rfloor+1)
+\] choices per row. Determinant multilinearity introduces at most
+\(Q_H^{M_H}\) choices, adding only \(\log Q_H/H=o(1)\) after
+normalization. Together with the normalized factorial remainder, this
+proves \[
+\frac{\log|\Delta_H|}{M_HH}
+\le E_{\rm an}+o(1)+
+\max\{-c_H,-\nu(A(1-\eta)-b_H)\}.
+\tag{13}
+\] All parameters and approximations are fixed before \(H\) tends to
+infinity. Lattice counting also gives \[
+c_H\longrightarrow c_\infty=
+\frac{c\eta^2K\theta^m}{(m+1)v_0A^m}.
+\tag{14}
+\]
+
+\section{7. Parameter choice and
+contradiction}\label{parameter-choice-and-contradiction}
+
+Fix \(\xi,U,D,\nu\) first. The quantities \(\rho\) and \(\delta=\log D\)
+are fixed. Choose positive rational \(\theta,A,B,C\) such that \[
+0<\theta<A<B<1,\quad
+\nu(A-\theta)>1-\theta,\quad
+C>1,\quad CB<1,\quad B<C\theta<1.
+\tag{15}
+\] These inequalities are compatible precisely with the required range
+\(\nu>2\) in this construction: choose rational \(b\in(1/2,1-1/\nu)\)
+and small rational \(s>0\), then set \(\theta=1-s\), \(A=1-bs\). The
+approximation gap is positive and \(A^2<\theta\) for sufficiently small
+\(s\). Take \(C\in(A/\theta,1/A)\), then \(B\in(A,\min(1/C,C\theta))\).
+
+Take small rational \(\eta>0\) with \[
+g=\nu(A(1-\eta)-\theta)-(1-\theta)>0,
+\qquad \epsilon=\min(g/2,1/2).
+\] Choose \(F_0>2/\theta\) with \(\nu/F_0<\epsilon/3\). Now increase
+\(m\), setting \[
+K=\lfloor C^m\rfloor,\quad w_0=B^{-m},\quad
+v_0=2K\theta^mw_0.
+\] The ambient interpolation mass is \(1/2\), while \[
+K/w_0\le(CB)^m\to0,\quad
+v_0\sim2(C\theta/B)^m\to\infty,\quad m/v_0\to0,
+\] and \[
+c_\infty=\frac{c\eta^2(B/A)^m}{2(m+1)}\to\infty.
+\] Choose one finite \(m\ge1\) for which \[
+\frac{\Lambda F_0m+2\log2}{v_0}
++\frac{(\rho+\delta)K}{w_0}<\epsilon/3,
+\qquad c_\infty>2.
+\tag{16}
+\] Then fix these parameters. Since \(K\theta^m<1\), choose a small
+positive rational \(\sigma\) with \[
+(1+3\sigma)^{m+1}/2<1,\quad
+(1+3\sigma)^mK\theta^m<1,\quad
+(1+\sigma)\theta<1.
+\] Only now choose the finitely many approximations. Arbitrarily large
+denominators permit all weights to be large and successively separated,
+meeting the product comparisons in §3 and \[
+\Lambda\sum_i\frac1{w_i}+
+\frac{\theta+\log4+\log(2K)+\nu+\log(2\rho K)}{w_*}<\epsilon/3.
+\tag{17}
+\] There are finitely many product comparisons. Common factors cancel
+because \(v_i=w_i/\theta\) for positive indices, and increasing the next
+denominator meets each remaining comparison. The interpolation threshold
+may depend on the chosen centers; that causes no circularity, since the
+centers are fixed before the final limit in \(H\).
+
+Equations (9), (11), (12), (16), and (17) imply \[
+E_{\rm ar}+E_{\rm an}<\epsilon<g,\qquad
+c_\infty>1+E_{\rm ar}+E_{\rm an}.
+\tag{18}
+\] In particular the denominator cost \(K\log D/w_0\) and complex radius
+cost \(\rho K/w_0\) both tend to zero at the dimension-selection stage.
+There is no unaccounted conjugate term.
+
+For sufficiently large cofinal \(H=nR\), choose the nonzero minor
+furnished by interpolation. If the maximum in (13) is the collision
+alternative, compatibility with (8) requires \[
+c_H\le1-b_H+E_{\rm ar}+E_{\rm an}+o(1)
+\le1+E_{\rm ar}+E_{\rm an}+o(1),
+\] contradicting (14) and (18). In the other alternative, compatibility
+requires \[
+\nu(A(1-\eta)-b_H)-(1-b_H)
+\le E_{\rm ar}+E_{\rm an}+o(1).
+\] The left side is at least \(g\), since it decreases with \(b_H\) and
+\(b_H\le\theta\). This contradicts (18) as well. Thus arbitrarily large
+approximations of the assumed quality cannot exist, proving the angle
+statement (2).
+
+\section{8. Scaling, the exceptional cases, and the
+exponent}\label{scaling-the-exceptional-cases-and-the-exponent}
+
+We use an explicit transport of the approximation bound. Suppose \(x\)
+satisfies (1) and \(n\) is a positive integer. Fix \(\nu>2\), and choose
+\(\mu=(\nu+2)/2\), so \(2<\mu<\nu\). For sufficiently large \(q\), the
+bound for \(x\) and \(q^{\nu-\mu}\ge n\) give \[
+\left|\frac xn-\frac pq\right|
+=\frac1n\left|x-\frac{np}{q}\right|
+\ge\frac1n q^{-\mu}\ge q^{-\nu}.
+\tag{19}
+\] Negation preserves the same statement by replacing \(p\) with \(-p\).
+These are formal lemmas on the fully quantified eventual bound; no
+invariance under algebraic scaling is presumed.
+
+For \(r\notin\{0,1,-1\}\), §2 gives the data (2) for \(x=2\arctan r\),
+and (19) with \(n=2\) proves (1). The dedicated \(r=1/2\) path uses (4).
+For \(r=\pm1\), apply (19) with \(x=\pi,n=4\), using OpenAI's certified
+\(\pi\) bound, and use negation for \(-1\). This proves (1) for every
+rational \(r\ne0\).
+
+Finally, if \(\arctan r=u/v\) were rational, the unreduced fractions
+\(ku/(kv)\) would violate (1) at arbitrarily large denominators. Hence
+it is irrational. Dirichlet approximation supplies infinitely many
+reduced approximants of exponent 2, while (1) excludes every larger
+exponent. Therefore its irrationality exponent is exactly 2.
+
+\section{9. Formal boundary, verification, and
+attribution}\label{formal-boundary-verification-and-attribution}
+
+The endpoint source is
+\href{lean/Arctangent/Main.lean}{Arctangent/Main.lean}. The internal
+generic angle theorem retains the data in (2), but both public
+arctangent endpoints discharge them. The family endpoint has only the
+hypothesis \(r\ne0\).
+
+\begin{itemize}
+\tightlist
+\item
+  Specified angle and Gaussian rational base:
+  \href{lean/Arctangent/PeriodData.lean}{PeriodData}
+\item
+  Rational-coordinate roots of unity:
+  \href{lean/Arctangent/GaussianRoots.lean}{GaussianRoots}
+\item
+  Double-angle exponential, all rational inputs:
+  \href{lean/Arctangent/ArctanCenters.lean}{ArctanCenters}
+\item
+  Distinct-center interpolation geometry:
+  \href{lean/Logarithm/Interpolation.lean}{Inherited Interpolation},
+  \href{lean/Arctangent/GlobalMatrixInterpolation.lean}{GlobalMatrixInterpolation}
+\item
+  Gaussian clearing and exact row savings:
+  \href{lean/Arctangent/ScaledArithmetic.lean}{ScaledArithmetic}
+\item
+  Rotated approximation errors:
+  \href{lean/Arctangent/ScaledApproximationErrors.lean}{ScaledApproximationErrors}
+\item
+  Complex collision estimate:
+  \href{lean/Logarithm/ScaledCollision.lean}{Inherited ScaledCollision},
+  \href{lean/Arctangent/LiteralAnalyticSummand.lean}{LiteralAnalyticSummand}
+\item
+  Full determinant expansion and upper bound:
+  \href{lean/Arctangent/AnalyticAggregate.lean}{AnalyticAggregate}
+\item
+  All parameter costs and final contradiction:
+  \href{lean/Logarithm/AdmissibleParameters.lean}{Inherited
+  AdmissibleParameters},
+  \href{lean/Arctangent/Parameters.lean}{Parameters},
+  \href{lean/Arctangent/DeterminantContradiction.lean}{DeterminantContradiction}
+\item
+  Division and negation transport:
+  \href{lean/Arctangent/Scaling.lean}{Scaling}
+\item
+  Inherited normal comparison:
+  \href{lean/OAI/NumberTheory/PiExponent/Approximation/PersistentWeightComparison.lean}{PersistentWeightComparison},
+  \href{lean/OAI/NumberTheory/PiExponent/Jets/TransverseSliceComparison.lean}{TransverseSliceComparison}
+\end{itemize}
+
+The new Lean sources are separate from the preceding audited
+rational-logarithm bundle. The source manifest, compiler and checker
+pins, reproduction commands, hashes, verification results, and negative
+controls are summarized in \href{lean/VERIFICATION.md}{VERIFICATION.md}.
+Those records distinguish the initial Lean build, transitive axiom
+audits, independent exported-proof checking, and replay through a second
+stock Lean kernel. They do not claim that a human referee has
+reconstructed the proof or that the priority search is exhaustive.
+
+The mathematical framework and original library are credited to
+\href{https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a}{OpenAI/math,
+commit adc7f1241b42e322a6451854ab7e4b4c146bf78a}. Our preceding
+positive-rational-logarithm package supplies the distinct-center
+geometric generalization and generic complex analytic interfaces used
+here. We make no exhaustive priority or novelty claim.
+
+\textbf{AI use disclosure.} Ryan Matthew Casper initiated and directed
+the investigation. OpenAI coding agents contributed substantially to
+assessing the Gaussian extension, developing the mathematical argument,
+adapting and writing the Lean proofs, running verification and automated
+checks, and drafting this exposition. The work reuses OpenAI's method
+and released library, Mathlib, and the author's preceding AI-assisted
+rational-logarithm formalization. Automated review and kernel-checking
+results are evidence about the specified formal statements; they are not
+external human peer review. No external referee was contacted in
+preparing this package.
+
+The central new checks are the exact Gaussian clearing identity (7),
+preservation of the row savings, the imaginary approximation-center
+error (10), the retained exponential factor in the analytic matrix, all
+fixed-base costs in (16), and the explicit treatment of torsion and
+scaling. The inherited geometric comparison and ordinary-power
+interpolation remain substantial parts of the argument and should be
+included in any mathematical review.
+\end{document}

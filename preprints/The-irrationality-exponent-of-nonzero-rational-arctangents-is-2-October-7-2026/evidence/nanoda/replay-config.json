@@ -1,0 +1,26 @@
+{
+  "use_stdin": true,
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "unsafe_permit_all_axioms": false,
+  "num_threads": 4,
+  "nat_extension": true,
+  "string_extension": true,
+  "print_success_message": true,
+  "print_axioms": true,
+  "pp_to_stdout": true,
+  "pp_declars": [
+    "OAI.Arctangent.arctan_half_irrationalityExponent_eq_two",
+    "OAI.Arctangent.arctan_half_explicit_bound",
+    "OAI.Arctangent.rational_arctan_irrationalityExponent_eq_two",
+    "OAI.Arctangent.rational_arctan_integer_eventualLowerBound",
+    "OAI.Arctangent.rational_arctan_explicit_bound"
+  ],
+  "pp_options": {
+    "proofs": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "accepted",
+  "leanVersion": "4.34.0",
+  "leanCommit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+  "arenaCommit": "b83254de5146ef34147ab82a48edbe1856b0edcc",
+  "parserCommit": "076e8e57707e813375e8f9da8bf989799ace9680",
+  "stockMainSha256": "556dd7ff4498ab19fecfa3c268d48090b2e7e723abd59f43d8e513c9769d8e5c",
+  "checkerBinarySha256": "f18020ea3525ee1058788decc2169480cc9ed371a990f4081170c82c186053f9",
+  "exportSha256": "f02fa59112a93d2d82077fe5d39ac171e914b31dcaf1fa93e8b301b76594702c",
+  "exportDeclarations": 118572,
+  "reportedAcceptedDeclarations": 118569,
+  "regeneratedQuotientDeclarations": [
+    "Quot.mk",
+    "Quot.lift",
+    "Quot.ind"
+  ],
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "unsafeDeclarations": 0,
+  "partialDeclarations": 0,
+  "trustLevel": 0,
+  "parseOnly": false,
+  "startUtc": "2026-10-08T00:44:44Z",
+  "finishUtc": "2026-10-08T00:56:09Z",
+  "elapsedSeconds": 685.0,
+  "userSeconds": 679.17,
+  "maximumResidentSetKiB": 2317932,
+  "exitCode": 0,
+  "positiveControlAcceptedDeclarations": 2,
+  "negativeControlParseOnlySucceeded": true,
+  "negativeControlKernelExitCode": 1,
+  "negativeControlError": "(kernel) declaration type mismatch",
+  "method": "Unmodified official Lean Kernel Arena checker, previously compiled under the pinned stock Lean4.34.0 distribution; fresh replay of the final arctangent export into an empty trust-level-zero kernel environment."
+}
