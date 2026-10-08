@@ -1,0 +1,10 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "unsafe": [],
+  "partial": [],
+  "declarations": 117830
+}

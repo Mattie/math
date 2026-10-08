@@ -1,0 +1,26 @@
+{
+  "use_stdin": true,
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "unsafe_permit_all_axioms": false,
+  "num_threads": 4,
+  "nat_extension": true,
+  "string_extension": true,
+  "print_success_message": true,
+  "print_axioms": true,
+  "pp_to_stdout": true,
+  "pp_declars": [
+    "OAI.RealNorm.period_irrationalityExponent_eq_two",
+    "OAI.RealNorm.normalized_log_sqrt_two_eventualLowerBound",
+    "OAI.RealNorm.normalized_log_sqrt_two_irrationalityExponent_eq_two",
+    "OAI.RealNorm.normalized_log_sqrt_two_integer_eventualLowerBound",
+    "OAI.RealNorm.normalized_log_sqrt_two_explicit_bound"
+  ],
+  "pp_options": {
+    "proofs": false
+  }
+}
