@@ -18,8 +18,7 @@ Casper's [rational-logarithm paper](../../The-irrationality-exponent-of-positive
 proves an irrationality-exponent result for numbers like this. Its argument uses
 polynomials whose degree must stay within a specified limit.
 
-Ryan Matthew Casper's [*All-power weighted degree bounds for monomial
-compactifications*](../paper.pdf) revisits that limit. The earlier ingredient
+Ryan Matthew Casper's [*The weighted degree bound for monomial compactifications holds at every power*](../paper.pdf) revisits that limit. The earlier ingredient
 established it only after a sufficiently large power. This note gets the same
 limit at every power. The [manuscript](../build/manuscript.md) contains the exact
 statement; we'll start with the algebra that makes it possible.

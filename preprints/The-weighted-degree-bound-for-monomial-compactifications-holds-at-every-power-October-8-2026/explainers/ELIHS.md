@@ -18,8 +18,7 @@ The [earlier logarithm paper](../../The-irrationality-exponent-of-positive-ratio
 studies how good these approximations can keep getting as the denominators grow.
 The decimals here just help us recognize the number; printing them isn't a proof.
 
-This companion explains Ryan Matthew Casper's [*All-power weighted degree bounds
-for monomial compactifications*](../paper.pdf). It settles one polynomial rule
+This companion explains Ryan Matthew Casper's [*The weighted degree bound for monomial compactifications holds at every power*](../paper.pdf). It settles one polynomial rule
 used inside that earlier argument. You can follow the main trick with the
 polynomials you already know.
 

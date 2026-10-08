@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "Please cite the reference note when using this formal strengthening."
 type: article
-title: "All-power weighted degree bounds for monomial compactifications"
+title: "The weighted degree bound for monomial compactifications holds at every power"
 authors:
   - family-names: Casper
     given-names: Ryan Matthew
 date-released: 2026-10-08
 license: CC-BY-4.0
-url: "https://github.com/Mattie/math/tree/main/preprints/All-power-weighted-degree-bounds-for-monomial-compactifications-October-8-2026"
+url: "https://github.com/Mattie/math/tree/main/preprints/The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026"
 keywords:
   - algebraic geometry
   - weighted polynomial degree

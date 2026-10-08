@@ -4,7 +4,7 @@ set -euo pipefail
 package=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
 build="$package/.verification"
 mkdir -p "$build"
-case "$(lean --version)" in
+case "$(cd -- "$package/lean" && lean --version)" in
   'Lean (version 4.34.1,'*) ;;
   *) printf '%s\n' 'Use Lean 4.34.1 (the lean/lean-toolchain pin).' >&2; exit 1 ;;
 esac

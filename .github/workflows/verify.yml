@@ -25,7 +25,7 @@ jobs:
       fail-fast: false
       matrix:
         preprint:
-          - All-power-weighted-degree-bounds-for-monomial-compactifications-October-8-2026
+          - The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026
           - The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026
           - The-irrationality-exponent-of-arctan-sqrt2-over-sqrt2-is-2-October-7-2026
           - The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026
@@ -44,7 +44,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - preprint: All-power-weighted-degree-bounds-for-monomial-compactifications-October-8-2026
+          - preprint: The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026
             verify_script: lean/verify.sh
           - preprint: The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026
             verify_script: lean/verify.sh

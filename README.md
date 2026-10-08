@@ -4,7 +4,7 @@ Preprints and accompanying formal AI-assisted proofs by Ryan Matthew Casper.
 
 ## Preprints
 
-- **October 8, 2026:** [All-power weighted degree bounds for monomial compactifications](preprints/All-power-weighted-degree-bounds-for-monomial-compactifications-October-8-2026/README.md) — a separate reference note strengthening the shared degree-bound lemma, with Lean source and verification materials.
+- **October 8, 2026:** [The weighted degree bound for monomial compactifications holds at every power](preprints/The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026/README.md) — a separate reference note strengthening the shared degree-bound lemma, with Lean source and verification materials.
 - **October 7, 2026:** [The irrationality exponent of log(3 + 2√2)/√2 is 2](preprints/The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026/README.md) — manuscript, Lean formalization, verification materials, and audience explainers.
 - **October 7, 2026:** [The irrationality exponent of arctan(√2)/√2 is 2](preprints/The-irrationality-exponent-of-arctan-sqrt2-over-sqrt2-is-2-October-7-2026/README.md) — manuscript, Lean formalization, verification materials, and audience explainers.
 - **October 7, 2026:** [The irrationality exponent of nonzero rational arctangents is 2](preprints/The-irrationality-exponent-of-nonzero-rational-arctangents-is-2-October-7-2026/README.md) — manuscript, Lean formalization, and verification materials.

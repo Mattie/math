@@ -1,8 +1,7 @@
 # Weighted degree bounds for global sections
 
 If your doctoral work is outside algebraic geometry, the notation in Ryan
-Matthew Casper's [*All-power weighted degree bounds for monomial
-compactifications*](../paper.pdf) can conceal how little new geometry the main
+Matthew Casper's [*The weighted degree bound for monomial compactifications holds at every power*](../paper.pdf) can conceal how little new geometry the main
 argument needs. The substantial geometric input is inherited. The strengthening
 comes from taking powers and keeping track of degree exactly.
 

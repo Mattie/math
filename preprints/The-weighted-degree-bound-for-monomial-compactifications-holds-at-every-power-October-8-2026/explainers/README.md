@@ -1,7 +1,6 @@
 # Explanations of the all-power degree bound
 
-These accompany Ryan Matthew Casper's [*All-power weighted degree bounds for
-monomial compactifications*](../paper.pdf), dated October 8, 2026. Choose the
+These accompany Ryan Matthew Casper's [*The weighted degree bound for monomial compactifications holds at every power*](../paper.pdf), dated October 8, 2026. Choose the
 background closest to yours; each version explains the same result.
 
 | Version | Starting point |

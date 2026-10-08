@@ -1,4 +1,4 @@
-# All-power weighted degree bounds for monomial compactifications
+# The weighted degree bound for monomial compactifications holds at every power
 
 **Ryan Matthew Casper · October 8, 2026**
 

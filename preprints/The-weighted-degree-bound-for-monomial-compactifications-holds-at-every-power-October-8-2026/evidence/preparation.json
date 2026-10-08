@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "package_state": "prepared locally; unstaged; not committed or uploaded",
+  "package_state": "Publication files prepared with verified review remedy and title update",
   "native_overlay_rebuild": {
     "passed": true,
     "fresh_modules": 5,
@@ -16,12 +16,12 @@
   "manuscript": {
     "pdf_pages": 4,
     "pdf_author": "Ryan Matthew Casper",
-    "pdf_sha256": "d08c54df8c556b8756747b0828590ba0e01188889a478b9a6d0731be3f1aae88",
+    "pdf_sha256": "0030069fdc0df6b190af94c611fe66236c1a3e9987b13bfc1e88526d4808532a",
     "compiler": "Tectonic 0.17.0",
     "layout_warnings": 0,
     "all_pages_visually_inspected": true,
     "pdf_text_and_metadata_scan_passed": true,
-    "differences_from_reviewed_note": "Publication label and formatting; one verification prose sentence."
+    "differences_from_reviewed_note": "Publication title, labels and formatting; one verification prose sentence."
   },
   "preservation": {
     "earlier_lean_and_tex_files_checked": 3758,
@@ -56,5 +56,20 @@
     "parser_license": "Apache-2.0 at the pinned lean4export revision",
     "changes": "Corrected parser license description and filename; removed duplicate reader attribution",
     "proof_sources_and_manuscripts_changed": false
+  },
+  "review_remedy": {
+    "script": "lean/verify.sh",
+    "change": "Run the first Lean version check in the pinned lean directory, preserving caller-relative dependency paths",
+    "regression_environment": "Fresh elan 4.2.4 configuration with no default toolchain; linked pinned Lean 4.34.1",
+    "preprint_root_lean_invocation_failed_as_expected": true,
+    "corrected_root_script_rebuilt_modules": 5,
+    "dependency_cache_reused": true,
+    "proof_sources_changed": false,
+    "caller_relative_dependency_path_tested": true
+  },
+  "title_update": {
+    "title": "The weighted degree bound for monomial compactifications holds at every power",
+    "explainer_references_updated": 5,
+    "mathematical_content_changed": false
   }
 }

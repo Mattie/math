@@ -80,6 +80,10 @@ Use Bash, Python 3.11 or later, Git, and Lean 4.34.1 with Lake. From this packag
 bash verify.sh
 ```
 
+From the package root, the equivalent command is `bash lean/verify.sh`. The first
+Lean invocation selects `lean/lean-toolchain` even when elan has no default
+toolchain. Caller-relative dependency paths retain their usual meaning.
+
 With no `LEAN_DEPENDENCY_ROOT` set, the command fetches the public dependency
 project at commit `0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd`, obtains the pinned
 Mathlib cache, and builds that project. Its source and configuration identities

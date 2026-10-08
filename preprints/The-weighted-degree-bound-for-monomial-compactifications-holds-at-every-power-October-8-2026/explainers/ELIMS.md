@@ -19,8 +19,7 @@ studies the possible rate of improvement in such approximations. Its proof
 depends on interpolation: construct polynomials with prescribed local data,
 control their degree, and use them in a determinant argument.
 
-Ryan Matthew Casper's [*All-power weighted degree bounds for monomial
-compactifications*](../paper.pdf) strengthens the degree-control step. It turns
+Ryan Matthew Casper's [*The weighted degree bound for monomial compactifications holds at every power*](../paper.pdf) strengthens the degree-control step. It turns
 an eventual bound into a bound at every bundle power. The main proof is short
 once the older geometric theorem is available, and it's worth seeing exactly
 where that older theorem enters.
