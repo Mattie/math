@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-08T02:39:17.696583+00:00",
+  "module": "Imaginary.FormalConjectures",
+  "theorem": "OAI.Imaginary.normalized_arctan_sqrt_two_irrationality_and_bound",
+  "source_sha256": "2b7bfcbf09145d0bfc6525a8f807e09102e2d377dc1218345cdafca789e7c248",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "warnings_as_errors": true,
+  "auto_implicit": false,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "frozen_dependency_sources_verified": true,
+  "retained_export_includes_this_module": false,
+  "independent_export_replay_rerun": false
+}

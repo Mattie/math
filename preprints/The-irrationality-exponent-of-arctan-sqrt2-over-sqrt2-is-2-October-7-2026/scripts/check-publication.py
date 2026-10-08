@@ -11,6 +11,15 @@ for row in manifest:
         errors.append(f"Source identity failed: {row['path']}")
 actual = {str(p.relative_to(root / 'lean')).replace('\\', '/') for p in (root/'lean').rglob('*.lean') if '.lake' not in p.parts and p.name != 'lakefile.lean'}
 expected = {r['path'] for r in manifest}
+supplement = {}
+for line in (root/'lean/formal-conjectures-sources.sha256').read_text().splitlines():
+    digest, name = line.split(maxsplit=1)
+    supplement[name] = digest
+    if hashlib.sha256((root/'lean'/name).read_bytes()).hexdigest() != digest:
+        errors.append(f'Supplementary source identity failed: {name}')
+if set(supplement) != {'Imaginary/FormalConjectures.lean'}:
+    errors.append('Unexpected supplementary proof inventory')
+expected.update(supplement)
 if actual != expected:
     errors.append('Proof source inventory differs from the manifest')
 for path in root.rglob('*.md'):
@@ -32,4 +41,4 @@ if archive.exists():
     if archive.stat().st_size != asset['compressed_bytes'] or hashlib.file_digest(archive.open('rb'),'sha256').hexdigest() != asset['compressed_sha256']:
         errors.append('Compressed export identity failed')
 if errors: raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(manifest)} proof files, local Markdown links, source scan, and available export identity')
+print(f'PASS: {len(manifest)} frozen proof files and {len(supplement)} supplementary module, local Markdown links, source scan, and available export identity')

@@ -5,7 +5,7 @@ Ryan Matthew Casper · October 7, 2026
 This preprint proves that the normalized value arctan(√2)/√2 has rational irrationality exponent 2. The generic formal theorem treats non-torsion normalized periods in Q(√−2); it does not establish the corresponding result for all imaginary quadratic fields or for the unnormalized arctangent.
 
 - [Paper](paper.pdf) and [editable manuscript](build/manuscript.md)
-- [Lean proof](lean/Imaginary/Main.lean), [verification summary](lean/VERIFICATION.md), and [reproduction](VERIFY.md)
+- [Lean proof](lean/Imaginary/Main.lean), [catalogue statement](lean/Imaginary/FormalConjectures.lean), [verification summary](lean/VERIFICATION.md), and [reproduction](VERIFY.md)
 - Explanations: [PhD](explainers/ELIPHD.md), [master's](explainers/ELIMS.md), [bachelor's](explainers/ELIBS.md), and [high school](explainers/ELIHS.md)
 - [Licenses and attribution](LICENSES.md), [NOTICE](NOTICE), and [citation metadata](CITATION.cff)
 

@@ -10,7 +10,7 @@ cd lean
 bash verify.sh
 ```
 
-The package pins Lean 4.34.1 and Mathlib in `lean-toolchain` and `lake-manifest.json`. `verify.sh` checks every proof hash, fetches the pinned Mathlib cache, and builds `Imaginary.EndpointAudit`. The recorded final build used an existing native cache with source equality checks; publication preparation did not repeat a fresh network bootstrap.
+The package pins Lean 4.34.1 and Mathlib in `lean-toolchain` and `lake-manifest.json`. `verify.sh` checks the frozen and supplementary proof hashes, fetches the pinned Mathlib cache, and builds `Imaginary.EndpointAudit` and `Imaginary.FormalConjectures`. It also audits the catalogue theorem's axioms. The supplementary module is not part of the retained export. The recorded final build used an existing native cache with source equality checks; publication preparation did not repeat a fresh network bootstrap.
 
 ## Independent checks
 
