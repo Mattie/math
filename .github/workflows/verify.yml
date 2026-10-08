@@ -10,16 +10,21 @@ on:
         type: boolean
         default: false
 
-defaults:
-  run:
-    working-directory: preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026
-
 permissions:
   contents: read
 
 jobs:
   integrity:
     runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        preprint:
+          - The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026
+          - The-irrationality-exponent-of-nonzero-rational-arctangents-is-2-October-7-2026
+    defaults:
+      run:
+        working-directory: preprints/${{ matrix.preprint }}
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - run: python3 scripts/check-publication.py
@@ -27,6 +32,17 @@ jobs:
     if: github.event_name == 'workflow_dispatch' && inputs.rebuild_proof
     runs-on: ubuntu-24.04
     timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - preprint: The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026
+            verify_script: scripts/verify.sh
+          - preprint: The-irrationality-exponent-of-nonzero-rational-arctangents-is-2-October-7-2026
+            verify_script: lean/verify.sh
+    defaults:
+      run:
+        working-directory: preprints/${{ matrix.preprint }}
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - name: Install elan
@@ -35,4 +51,4 @@ jobs:
           sh /tmp/elan-init.sh -y --no-modify-path --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - name: Build and audit the proof
-        run: bash scripts/verify.sh
+        run: bash ${{ matrix.verify_script }}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the preprint and the exact repository commit or release tag."
+type: software
+title: "The irrationality exponent of nonzero rational arctangents is 2"
+authors:
+  - family-names: Casper
+    given-names: Ryan Matthew
+abstract: >-
+  Preprint and Lean formalization proving irrationality exponent two for the
+  arctangent of every nonzero rational number.
+keywords:
+  - irrationality exponent
+  - arctangents
+  - Lean
+  - formal verification
+license:
+  - MIT
+  - Apache-2.0
+  - CC-BY-4.0
+repository-code: "https://github.com/Mattie/math"
