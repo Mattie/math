@@ -49,9 +49,23 @@ The October 8 records and their runtime hashes remain historical evidence.
 A new successful run validates the current runner separately, including its
 configuration-snapshot guard; it never replaces or relabels those old records.
 
-## First public replay
+## Verified public replays
 
-The [first public replay](https://github.com/Mattie/math/actions/runs/37931856963)
-was dispatched at `d77a7a2`. This records the attempt, not a successful result.
-No successful public replay is claimed until the job finishes and its uploaded
-receipt is inspected.
+Both public replays completed successfully on October 9, 2026. Their downloaded
+receipts and all 55 command logs per run were inspected: all four cases and seven
+controls passed, each Comparator target was accepted, and Nanoda checked each
+corresponding export. The recorded case inputs match the committed pins, and the
+runtime hash matches the current portable runner.
+
+| Run | Commit | Receipt SHA-256 |
+| --- | --- | --- |
+| [First replay](https://github.com/Mattie/math/actions/runs/37931856963) | `d77a7a262e004953ddc2850be6f61d138afd4525` | `9548a8a42fbd6b9db862367074fd51208f2a694e76bf79cd354dd5efa00a85e6` |
+| [Replay with capacity gate](https://github.com/Mattie/math/actions/runs/37936794898) | `c1395ef07adb11b83b0a3019dfdf072e10eac246` | `d698d3ee2e2d71bf583dbbf2f9218cb47021522d91ae487440c768ad48da2f48` |
+
+The second run took about 64 minutes. Its capacity gate recorded 92,290,232,320
+free bytes before setup, above the 35 GiB requirement; no SDK cleanup was needed.
+Its artifact is `independent-proof-evidence-c1395ef07adb11b83b0a3019dfdf072e10eac246-1`,
+and its receipt is `runs/20261009T132608Z-omoycypu/receipt.json` within that artifact.
+The first artifact uses the first commit in the same naming convention, with
+receipt `runs/20261009T124304Z-j50o6l8b/receipt.json`.
+These new receipts supplement the unchanged October 8 historical records.
