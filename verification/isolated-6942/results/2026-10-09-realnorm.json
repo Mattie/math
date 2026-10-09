@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "record_type": "summary_of_audited_hosted_run",
+  "run": {
+    "url": "https://github.com/Mattie/math/actions/runs/37981268179",
+    "id": "37981268179",
+    "attempt": "1",
+    "commit": "e8230f0ff4da0695fd1b0cadf9201fc1f9199640",
+    "workflow": ".github/workflows/isolated-6942.yml",
+    "status": "passed",
+    "verification_started_utc": "2026-10-09T19:35:49Z",
+    "verification_finished_utc": "2026-10-09T20:32:22Z"
+  },
+  "target": {
+    "case": "realnorm",
+    "module": "RealNorm.FormalConjectures",
+    "theorem": "OAI.RealNorm.normalized_log_sqrt_two_irrationality_and_bound"
+  },
+  "host": {
+    "ImageOS": "ubuntu24",
+    "ImageVersion": "20261004.327.1",
+    "RUNNER_ENVIRONMENT": "github-hosted",
+    "XDG_RUNTIME_DIR": "/run/user/1001"
+  },
+  "checks": {
+    "tools": "passed",
+    "isolation": "passed",
+    "valid": "passed",
+    "mismatch": "passed",
+    "axiom": "passed",
+    "dependencies": "passed",
+    "realnorm": "passed"
+  },
+  "boundary_probe_errno": {
+    "allowed": 0,
+    "challenge": 13,
+    "config": 13,
+    "tool": 13,
+    "outside": 13,
+    "symlink": 13,
+    "unix_stream": 97,
+    "unix_dgram": 97
+  },
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "tool_pins": {
+    "schema_version": 1,
+    "audited_revision": "3f4e514444214e562eababb4eecc5b6ffb818002",
+    "lean_version": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "lean_archive_sha256": "3013aba02bb8bf31b1cf8c9d956d60fb95bb1c10920dfe91abcaa59cb461ddac",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "rust": "1.99.0",
+    "exporter": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "comparator": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "go": "1.25.12"
+  },
+  "input_identities": {
+    "pins_file_sha256": "187d40141e389efc7c941e7392d2824f7aea8be9ea128af91050cb96ece3abca",
+    "verification_runner_sha256": "061475aa32588afce34d68e16e19763b5ec086602235e088f3f47874be183b47",
+    "preflight_inputs": {
+      "preflight.py": "b6149c3a2265533769fdf3eade0c56b1bcd94c8ad3d128570ce1eca7eefbd1f8",
+      "boundary_probe.c": "1cf5105b89fa6207d4b5f8cc8d6c4b57370e91263abe82c81ed29c159fdd32ab"
+    },
+    "challenge_sha256": "c8447effa575f6047b60af0b683b00e325bd518ac4c97b739d9788b03e3fdcd4",
+    "dependency_lock_sha256": "58fcebdffec6fc39c5aa08f61637cc3f86e7676624ec8424e47f7251be53159b",
+    "dependency_inventory_sha256": "d8352b327c2d1da12528114b2c4e7792bb687a5b79a5949b5f8964144fcc49fd",
+    "frozen_case_sha256": "1fc764ce73ddf3018c8c3daad63e1b8aee4bc1a172595b9060a9721af6ecea67",
+    "candidate_inventory_sha256": "a2c5c4eb4fe5cba6f873bc2d454dea374a902779b36ef1be8251be99f8663012"
+  },
+  "service_limits": {
+    "unix_sockets": "RestrictAddressFamilies=~AF_UNIX",
+    "runtime_seconds": 7200,
+    "memory_max": "12G",
+    "cpu_quota": "400%"
+  },
+  "artifact": {
+    "url": "https://github.com/Mattie/math/actions/runs/37981268179/artifacts/11642779708",
+    "id": 11642779708,
+    "name": "isolated-6942-e8230f0ff4da0695fd1b0cadf9201fc1f9199640-1",
+    "archive_sha256": "b2ad78dfb6a6110241b0f87c1d0a5a22768e9626c3e7cac6222a6351353553ad",
+    "size_bytes": 6376299,
+    "files": 84,
+    "receipt_sha256": "3c28f6cf46c21d59d412a4f655a2d8ccd9538af9b93570f281db15ed294d7a8c",
+    "reported_expires_at": "2027-01-07T19:35:33Z"
+  },
+  "key_command_logs": [
+    {
+      "label": "valid-comparator",
+      "exit_code": 0,
+      "log": "logs/30-valid-comparator.log",
+      "log_sha256": "1a33dfd5fe1bdce9362f7d5d28e4ab6d86a868b6f47c085a1650888827d12e88"
+    },
+    {
+      "label": "mismatch-comparator",
+      "exit_code": 1,
+      "log": "logs/32-mismatch-comparator.log",
+      "log_sha256": "3966b093b7cfd83c088057df154710dfaecded2bc5a573fac0c7f8e69d2c0e7f"
+    },
+    {
+      "label": "axiom-comparator",
+      "exit_code": 1,
+      "log": "logs/34-axiom-comparator.log",
+      "log_sha256": "14d68b201bc8599ee9a722dc1f0c98869d35ddb56801ab44169a59947ed1a51b"
+    },
+    {
+      "label": "realnorm-comparator",
+      "exit_code": 0,
+      "log": "logs/55-realnorm-comparator.log",
+      "log_sha256": "00575ba4f25d395ef6a63f3acfaa8a744a202617d16aebd6064f09950175ba86"
+    }
+  ],
+  "local_archive_audit": {
+    "date": "2026-10-09",
+    "archive_digest_matches_published_digest": true,
+    "command_log_hashes_verified": 56,
+    "retained_file_hashes_verified": 24,
+    "dependency_revisions_verified": 9,
+    "nanoda_result": "accepted",
+    "lean_default_kernel_result": "accepted",
+    "negative_control_diagnostics": "expected statement mismatch and forbidden axiom"
+  },
+  "scope": "The named realnorm theorem and exercised isolation checks; existing proofs, pins, exports, and historical receipts are unchanged.",
+  "evidence_limitations": [
+    "This index summarizes the original receipt; full logs and inputs are in the separately retained Actions archive.",
+    "No new standalone proof export was retained by Comparator."
+  ]
+}
