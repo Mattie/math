@@ -1,0 +1,44 @@
+name: Isolated FC 6942 verification
+
+# Manual only. Preparation/publication does not authorize a proof run.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: isolated-fc-6942
+  cancel-in-progress: false
+
+jobs:
+  realnorm:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Initialize diagnostic directory
+        run: |
+          mkdir -p "$RUNNER_TEMP/isolated-6942/evidence"
+          printf 'Verification has not completed.\n' > "$RUNNER_TEMP/isolated-6942/evidence/started.txt"
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: '1.25.12'
+          cache: false
+      - name: Check isolation and verify frozen FC 6942 source
+        run: |
+          set -euo pipefail
+          python3 -B verification/isolated-6942/verify.py \
+            --work-dir "$RUNNER_TEMP/isolated-6942" \
+            2>&1 | tee "$RUNNER_TEMP/isolated-6942/evidence/console.log"
+      - name: Retain evidence, including failure diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: isolated-6942-${{ github.sha }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/isolated-6942/evidence/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90
