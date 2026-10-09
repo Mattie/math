@@ -19,3 +19,5 @@ Each preprint includes its own citation metadata, license notices, and AI-use di
 ## Formalization contributions
 
 - [Flint Hills and Cookson Hills](formalizations/FlintCooksonHills/README.md) — a short Cookson convergence proof and catalogue endpoints, using OpenAI's existing formal Flint theorem.
+
+Research notes: [Effective approximation — certificates and open questions](research-notes/effective-approximation/README.md).
