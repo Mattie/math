@@ -1,0 +1,40 @@
+name: Isolated proof preflight
+
+# Preparation only: publishing or dispatching this workflow needs separate authorization.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preflight:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Initialize diagnostic directory
+        run: |
+          mkdir -p "$RUNNER_TEMP/isolated-proof-preflight/evidence"
+          printf 'Preflight has not completed.\n' > "$RUNNER_TEMP/isolated-proof-preflight/evidence/started.txt"
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: '1.25.12'
+          cache: false
+      - name: Prepare tools and exercise isolated tiny proofs
+        run: |
+          set -euo pipefail
+          python3 verification/isolated-preflight/preflight.py \
+            --work-dir "$RUNNER_TEMP/isolated-proof-preflight" \
+            2>&1 | tee "$RUNNER_TEMP/isolated-proof-preflight/evidence/console.log"
+      - name: Retain preflight evidence, including failure diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: isolated-preflight-${{ github.sha }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/isolated-proof-preflight/evidence/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90
