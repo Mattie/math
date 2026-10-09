@@ -14,6 +14,14 @@ permissions:
   contents: read
 
 jobs:
+  verification-tools:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+      - run: python3 verification/publication/test_verification.py
+      - run: python3 verification/publication/check-upstream.py
   small-proofs:
     runs-on: ubuntu-24.04
     steps:
@@ -25,6 +33,7 @@ jobs:
       fail-fast: false
       matrix:
         preprint:
+          - The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026
           - The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026
           - The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026
           - The-irrationality-exponent-of-arctan-sqrt2-over-sqrt2-is-2-October-7-2026
@@ -39,11 +48,13 @@ jobs:
   proof:
     if: github.event_name == 'workflow_dispatch' && inputs.rebuild_proof
     runs-on: ubuntu-24.04
-    timeout-minutes: 180
+    timeout-minutes: 240
     strategy:
       fail-fast: false
       matrix:
         include:
+          - preprint: The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026
+            verify_script: lean/verify.sh
           - preprint: The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026
             verify_script: lean/verify.sh
           - preprint: The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026
@@ -64,5 +75,21 @@ jobs:
           curl --fail --location --silent --show-error https://elan.lean-lang.org/elan-init.sh -o /tmp/elan-init.sh
           sh /tmp/elan-init.sh -y --no-modify-path --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Exercise axiom rejection controls
+        run: |
+          cd lean
+          bash ../../../verification/publication/lean-controls.sh ../scripts/check-axioms.py
       - name: Build and audit the proof
-        run: bash ${{ matrix.verify_script }}
+        run: |
+          mkdir -p .verification
+          set -o pipefail
+          /usr/bin/time -v bash ${{ matrix.verify_script }} 2>&1 | tee .verification/verification.log
+      - name: Check publication after build
+        run: python3 scripts/check-publication.py
+      - name: Retain fresh verification logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: verification-${{ matrix.preprint }}
+          path: preprints/${{ matrix.preprint }}/.verification/*.log
+          if-no-files-found: error

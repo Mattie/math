@@ -12,8 +12,10 @@ if [[ -z "${LEAN_DEPENDENCY_ROOT:-}" ]]; then
   LEAN_DEPENDENCY_ROOT=$(python3 "$package/scripts/fetch-dependency.py" "$build/dependency")
   export LEAN_DEPENDENCY_ROOT
   python3 "$package/scripts/check-sources.py" "$LEAN_DEPENDENCY_ROOT"
-  # The fetched project pins its complete Lake dependency closure.
-  (cd "$LEAN_DEPENDENCY_ROOT"; lake exe cache get; lake build)
+  # The pinned project has no default targets; build the actual inherited imports.
+  target_list=$(python3 "$package/scripts/dependency-targets.py")
+  mapfile -t dependency_targets <<< "$target_list"
+  (cd "$LEAN_DEPENDENCY_ROOT"; lake exe cache get; lake build "${dependency_targets[@]}")
 fi
 dependency=$(cd -- "$LEAN_DEPENDENCY_ROOT" && pwd)
 python3 "$package/scripts/check-sources.py" "$dependency"
@@ -28,5 +30,6 @@ cd "$package/lean"
       -i "$build/lib/Degree/$module.ilean" "Degree/$module.lean"
   done
 } 2>&1 | tee "$build/build.log"
+python3 "$package/scripts/check-axioms.py" "$build/build.log" --source "Degree/Audit.lean"
 python3 "$package/scripts/check-sources.py" "$dependency"
 printf '%s\n' 'Five new modules rebuilt; dependency sources verified.'

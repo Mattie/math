@@ -48,7 +48,7 @@
     "lean/reference-reader/Main.lean": "e24f12e0eb56b8ae6522de96930161f2276bd34df7c45e3ed1a111d044781125",
     "lean/reference-reader/parser/Export/Parse.lean": "1f943b5cc776eece6d528937b976509c8bd57d10bc69a39b1c119bfb6d664286",
     "lean/reference-reader/parser/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "lean/verify.sh": "1a3019e5ee66877253fad79e61fb58aaa76818e94a5ac4de8d8322a313d09629",
+    "lean/verify.sh": "6d068478b9f09393cf4d49fe271665bb0b640de9f01cafd4ce7bdff117db5db2",
     "LICENSE": "30ddd1d710f28d9977b9055d560ff893cf7591cb5563b59430ad4e67b0123b2d",
     "licenses/CC-BY-4.0.txt": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
     "licenses/Lean-Apache-2.0.txt": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e",
@@ -70,6 +70,7 @@
     "scripts/prepare-manuscript.py": "59e33f993f3dccd337373939d7bfe354e1d70e8b13bccf53c24cc9f877dd85de",
     "scripts/replay.sh": "7858c972c87cc1f488d2ed565178921b98437444270a2dc853200cefd04894d0",
     "VERIFY.md": "7a611b378f1b3521c785c3898343257677e6b17cbecc37fabd40cd0008ebe7fc",
-    "scripts/test-fetch-dependency.py": "91f09f2132157ddd989dcff5cf51b2916d4bdd06d8e9383015d6f2672e6085a2"
+    "scripts/test-fetch-dependency.py": "91f09f2132157ddd989dcff5cf51b2916d4bdd06d8e9383015d6f2672e6085a2",
+    "scripts/check-axioms.py": "be3f5c512718e02bbc3019079b72edb0f5f4c379c922ed0401c81374a27035ec"
   }
 }
