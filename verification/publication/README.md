@@ -80,3 +80,8 @@ validation run. Its original export identity is preserved. This seventh archive
 is planned for the same release; it does not replace `realnorm-main.ndjson.gz`.
 Use `--inventory verification/publication/wrapper-release-assets.json` with the
 same download checker to validate it separately.
+
+For a fresh public run of the independent checking route, use the optional
+[`independent_proofs` CI job](../irrationality-exponents/CI.md). It retains new
+complete receipts and logs for the four selected final statements, separately
+from the historical evidence and the six-package Lean build matrix.
