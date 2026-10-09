@@ -27,6 +27,7 @@ jobs:
       - run: python3 verification/publication/check-frozen.py
       - run: python3 verification/publication/test_verification.py
       - run: python3 verification/irrationality-exponents/test_verify.py
+      - run: python3 verification/publication/test_runner_capacity.py
       - run: python3 verification/publication/check-wrapper-evidence.py
       - run: python3 verification/publication/check-upstream.py
         env:
@@ -115,6 +116,11 @@ jobs:
           persist-credentials: false
       - name: Set isolated working directory
         run: echo "PROOF_WORK=$RUNNER_TEMP/independent-proof-verification" >> "$GITHUB_ENV"
+      - name: Reserve disk for tools, builds, and retained exports
+        run: |
+          mkdir -p "$PROOF_WORK"
+          set -o pipefail
+          bash verification/publication/prepare-independent-runner.sh 2>&1 | tee "$PROOF_WORK/capacity.log"
       - name: Check frozen proof inputs and recorded evidence
         run: |
           python3 verification/publication/check-frozen.py
@@ -133,6 +139,7 @@ jobs:
           name: independent-proof-evidence-${{ github.sha }}-${{ github.run_attempt }}
           path: |
             ${{ env.PROOF_WORK }}/console.log
+            ${{ env.PROOF_WORK }}/capacity.log
             ${{ env.PROOF_WORK }}/runs/*/receipt.json
             ${{ env.PROOF_WORK }}/runs/*/logs/*.log
             ${{ env.PROOF_WORK }}/runs/*/configuration/*

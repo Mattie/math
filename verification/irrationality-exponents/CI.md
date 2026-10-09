@@ -21,7 +21,17 @@ Mathlib-only challenges, exercises the seven acceptance/rejection controls, and
 runs Comparator and Nanoda against the same solution exports. It uses a new
 working directory without a persistent CI cache; the portable runner still uses
 the official Mathlib dependency cache. No dependency-from-source bootstrap or
-hostile-code sandbox is claimed. The job has a four-hour timeout; the earlier
+hostile-code sandbox is claimed. Before tool setup, the job requires at least 35 GiB free on the build filesystem.
+The retained successful local run used about 20 GiB for its builds/exports plus
+about 5.5 GiB for tools and caches. The threshold leaves room for transient build
+files. If necessary, the job removes only unused Android, .NET, GHC, and hosted
+tool-cache directories on the disposable GitHub-hosted Ubuntu 24.04 VM. It refuses
+that cleanup elsewhere, never deletes proof exports, and fails before expensive
+setup if capacity remains insufficient. `capacity.log` records the before/after
+measurements; an early capacity failure has this diagnostic log rather than a
+portable-runner receipt because that runner has not started.
+
+The job has a four-hour timeout; the earlier
 local four-case run took about 53 minutes on its particular machine.
 
 Each invocation creates a new receipt. The artifact named
