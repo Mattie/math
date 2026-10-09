@@ -3,6 +3,7 @@
 from pathlib import Path
 import hashlib
 import json
+import os
 import subprocess
 import urllib.request
 
@@ -23,7 +24,11 @@ def upstream_tree():
         url = 'https://api.github.com/repos/openai/math/git/trees/' + sha
         if recursive:
             url += '?recursive=1'
-        request = urllib.request.Request(url, headers={'User-Agent':'math-publication-verification'})
+        headers = {'User-Agent': 'math-publication-verification'}
+        token = os.environ.get('GITHUB_TOKEN')
+        if token:
+            headers['Authorization'] = 'Bearer ' + token
+        request = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(request, timeout=60) as response:
             data = json.load(response)
         if data.get('truncated'):

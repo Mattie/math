@@ -23,6 +23,8 @@ jobs:
       - run: python3 verification/publication/check-frozen.py
       - run: python3 verification/publication/test_verification.py
       - run: python3 verification/publication/check-upstream.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
   small-proofs:
     runs-on: ubuntu-24.04
     steps:
