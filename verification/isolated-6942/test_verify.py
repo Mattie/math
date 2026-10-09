@@ -1,11 +1,12 @@
 """Local preparation tests: no downloads, tool builds, or proof execution."""
 import hashlib
+import io
 import json
 from pathlib import Path
 import tempfile
 from types import SimpleNamespace
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 import verify
 
@@ -151,6 +152,48 @@ class PreparationTests(unittest.TestCase):
                        "--property=MemoryMax=12G", "--property=CPUQuota=400%"):
             self.assertIn(option, args)
         self.assertEqual(args[-4:], [str(Path("/lean/bin/lake")), "env", str(Path("/comparator")), "config.json"])
+
+    def test_insufficient_or_unreadable_capacity_stops_before_setup(self):
+        for label, usage in (("low", SimpleNamespace(free=14 * 1024**3)),
+                             ("unreadable", OSError("disk measurement unavailable"))):
+            work = self.root / label
+            with self.subTest(label=label), \
+                    patch.dict(verify.os.environ, {"RUNNER_TEMP": str(self.root)}), \
+                    patch.object(verify.sys, "argv", ["verify.py", "--work-dir", str(work)]), \
+                    patch.object(verify.sys, "stderr", io.StringIO()), \
+                    patch.object(verify.shutil, "disk_usage", side_effect=[usage]), \
+                    patch.object(verify.Preflight, "setup") as setup, \
+                    patch.object(verify, "prepare_dependencies") as dependencies:
+                self.assertEqual(verify.main(), 1)
+                setup.assert_not_called()
+                dependencies.assert_not_called()
+            receipt = json.loads((work / "evidence/receipt.json").read_text())
+            self.assertEqual(receipt["status"], "failed")
+            if label == "low":
+                self.assertIn("35 GiB", receipt["error"])
+                self.assertEqual(receipt["resources"]["free_bytes_before_setup"], 14 * 1024**3)
+            else:
+                self.assertIn("disk measurement unavailable", receipt["error"])
+
+    def test_capacity_thresholds_and_measurements_are_retained(self):
+        run = SimpleNamespace(work=self.root, receipt={}, flush=Mock())
+        for phase, required in (("setup", 35), ("proof", 10)):
+            with self.subTest(phase=phase), \
+                    patch.object(verify.shutil, "disk_usage",
+                                 return_value=SimpleNamespace(free=required * 1024**3)):
+                verify.check_capacity(run, phase, required)
+        self.assertEqual(run.receipt["resources"]["free_bytes_before_setup"], 35 * 1024**3)
+        self.assertEqual(run.receipt["resources"]["required_bytes_before_proof"], 10 * 1024**3)
+
+    def test_low_capacity_stops_before_candidate_build(self):
+        for free in (5 * 1024**3, 10 * 1024**3 - 1):
+            run = SimpleNamespace(work=self.root, receipt={}, flush=Mock(), command=Mock())
+            with self.subTest(free=free), \
+                    patch.object(verify.shutil, "disk_usage", return_value=SimpleNamespace(free=free)):
+                with self.assertRaisesRegex(RuntimeError, "10 GiB free before proof"):
+                    verify.run_proof(run, self.root / "candidate", {}, self.root / "deps", {})
+            run.command.assert_not_called()
+            self.assertEqual(run.receipt["resources"]["free_bytes_before_proof"], free)
 
     def test_existing_pins_and_exact_case_are_still_valid(self):
         pins, case, _ = verify.check_inputs()

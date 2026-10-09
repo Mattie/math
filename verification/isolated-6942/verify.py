@@ -31,6 +31,8 @@ BASELINE = {
     "verification/isolated-preflight/boundary_probe.c": "1cf5105b89fa6207d4b5f8cc8d6c4b57370e91263abe82c81ed29c159fdd32ab",
 }
 RUNTIME = 7200
+SETUP_GIB = 35
+PROOF_GIB = 10
 
 
 def save_json(path: Path, value) -> None:
@@ -173,12 +175,20 @@ def prepare_candidate(run: Preflight, pins: dict, case: dict, source: Path, pack
     return path, protected
 
 
+def check_capacity(run: Preflight, phase: str, required_gib: int) -> None:
+    """Record available scratch space and fail before the next expensive stage."""
+    free = shutil.disk_usage(run.work).free
+    resources = run.receipt.setdefault("resources", {})
+    resources[f"free_bytes_before_{phase}"] = free
+    resources[f"required_bytes_before_{phase}"] = required_gib * 1024**3
+    run.flush()
+    require(free >= required_gib * 1024**3, f"Less than {required_gib} GiB free before {phase}")
+
+
 def run_proof(run: Preflight, path: Path, protected: dict, packages: Path, dependencies: dict) -> None:
     """Let the stock frontend build/export the challenge before the candidate."""
-    free = shutil.disk_usage(run.work).free
-    run.receipt["resources"] = {"free_bytes_before_proof": free, "runtime_seconds": RUNTIME,
-                                "memory_max": "12G", "cpu_quota": "400%"}
-    require(free >= 5 * 1024**3, "Less than 5 GiB free before proof build")
+    check_capacity(run, "proof", PROOF_GIB)
+    run.receipt["resources"].update(runtime_seconds=RUNTIME, memory_max="12G", cpu_quota="400%")
     code, output = run.command("realnorm-comparator", proof_command(run, path),
                                cwd=path, allow_failure=True, timeout=RUNTIME + 60)
     check_comparator("valid", code, output)
@@ -230,6 +240,7 @@ def main() -> int:
     run.flush()
     try:
         pins, case, source = check_inputs()
+        check_capacity(run, "setup", SETUP_GIB)
         run.setup()
         for fixture in ("valid", "mismatch", "axiom"):
             run.fixture(fixture)

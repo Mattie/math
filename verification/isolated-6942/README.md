@@ -61,11 +61,20 @@ unprivileged account on GitHub-hosted `ubuntu-24.04`. It is manual only, has rea
 repository permissions, does not persist checkout credentials, and reuses no prior
 candidate build or Actions cache. Runs are serialized.
 
+Before installing Go, the workflow reuses the existing hosted-only
+[`prepare-independent-runner.sh`](../publication/prepare-independent-runner.sh)
+to reclaim unused SDKs when needed and require 35 GiB free on the build filesystem.
+That cleanup uses `sudo` only on the disposable hosted VM; proof verification runs
+under its ordinary unprivileged account. The runner checks for 35 GiB again before
+tool setup or dependency downloads, then requires 10 GiB before the proof build.
+The latter leaves headroom above the observed 5.50 GiB project output. Cleanup
+diagnostics and both runner measurements are retained, including on failure.
+
 The proof service has a two-hour limit, a 12 GiB memory cap, and a four-CPU quota.
-The job allows four hours including trusted setup and evidence upload, and requires
-at least 5 GiB free before the proof build. These are initial pilot budgets, not a
-claim that the full target fits. Timeout, memory exhaustion, or a sandbox failure
-leaves verification incomplete rather than proving the mathematical statement false.
+The job allows four hours including trusted setup and evidence upload. These are
+initial pilot budgets, not a claim that the full target fits. Timeout, disk or
+memory exhaustion, or a sandbox failure leaves verification incomplete rather
+than proving the mathematical statement false.
 
 The `evidence` artifact contains the receipt, exact generated checking configuration,
 trusted challenge, selected frozen manifest entry, dependency/file identities, and
