@@ -41,5 +41,7 @@ configuration-snapshot guard; it never replaces or relabels those old records.
 
 ## First public replay
 
-The first run will be linked here after dispatch. No successful public replay is
-claimed until the job finishes and its uploaded receipt is inspected.
+The [first public replay](https://github.com/Mattie/math/actions/runs/37931856963)
+was dispatched at `d77a7a2`. This records the attempt, not a successful result.
+No successful public replay is claimed until the job finishes and its uploaded
+receipt is inspected.
