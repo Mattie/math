@@ -28,6 +28,9 @@ jobs:
           set -euo pipefail
           bash verification/publication/prepare-independent-runner.sh \
             2>&1 | tee "$RUNNER_TEMP/isolated-6942/evidence/capacity.log"
+          # Cleanup can remove this root; setup-go must recreate its contents as the runner.
+          sudo install -d -o "$(id -u)" -g "$(id -g)" -m 0755 /opt/hostedtoolcache
+          test -w /opt/hostedtoolcache
       - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
         with:
           go-version: '1.25.12'
