@@ -94,3 +94,4 @@ jobs:
           name: verification-${{ matrix.preprint }}
           path: preprints/${{ matrix.preprint }}/.verification/*.log
           if-no-files-found: error
+          include-hidden-files: true
