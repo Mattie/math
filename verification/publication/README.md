@@ -59,13 +59,15 @@ The [distribution inventory](release-assets.json) records six transport archives
 and their original uncompressed identities. Five transports are unchanged;
 the quadratic-logarithm transport wraps its unchanged export in deterministic gzip.
 
-Publication is planned at [Recorded proof exports — October 8, 2026](https://github.com/Mattie/math/releases/tag/proof-exports-2026-10-08).
-Until the repair PR is merged and verification passes, this is a planned release
-location, not an available download. Existing historical receipts retain their
-original dates and scope; preparing or publishing these files does not constitute
-a new independent kernel replay.
+The archives are published at [Recorded proof exports — October 8, 2026](https://github.com/Mattie/math/releases/tag/proof-exports-2026-10-08),
+targeting merged repair commit `963b33a77dfaf5d7f98582893674b00cad1a3a9c`.
+The [download-verification record](release-verification-2026-10-09.json) confirms
+that all seven downloaded archives matched their compressed and original
+uncompressed identities. Both downloaded inventories matched the committed inventories.
+Existing historical receipts retain their dates and scope; publication and
+transport verification do not constitute a new independent kernel replay.
 
-After publication, download all six attachments to one directory and run:
+Download the six retained attachments to one directory and run:
 
 ```sh
 python3 verification/publication/check-release-assets.py /path/to/downloads
@@ -77,7 +79,7 @@ inventory. Applicable upstream licenses and notices remain in each preprint.
 The [additional wrapper inventory](wrapper-release-assets.json) separately records
 `realnorm-catalogue-20261008T144533Z.ndjson.gz`, prepared from the retained portable
 validation run. Its original export identity is preserved. This seventh archive
-is planned for the same release; it does not replace `realnorm-main.ndjson.gz`.
+is included in the same release; it does not replace `realnorm-main.ndjson.gz`.
 Use `--inventory verification/publication/wrapper-release-assets.json` with the
 same download checker to validate it separately.
 

@@ -1,0 +1,11 @@
+{
+  "release": "https://github.com/Mattie/math/releases/tag/proof-exports-2026-10-08",
+  "commit": "963b33a77dfaf5d7f98582893674b00cad1a3a9c",
+  "checked_utc": "2026-10-09T12:49:45.450756+00:00",
+  "inventories_sha256": {
+    "release-assets.json": "3e222eefa94df0c31931240190d6c6b571c6ab9bb8d99b9c913df78552174eb3",
+    "wrapper-release-assets.json": "cd422168f8314c1a7f651b6a6f66aa99511f9bb7896aaecb389ac7bf3438bcb4"
+  },
+  "archives": 7,
+  "result": "All downloaded compressed and uncompressed export identities match; both downloaded inventories exactly match the merged source inventories."
+}
