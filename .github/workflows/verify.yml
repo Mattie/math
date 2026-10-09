@@ -9,6 +9,10 @@ on:
         description: Rebuild and audit the complete Lean proof
         type: boolean
         default: false
+      independent_proofs:
+        description: Rebuild four final statements and check with Comparator and Nanoda
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -23,6 +27,7 @@ jobs:
       - run: python3 verification/publication/check-frozen.py
       - run: python3 verification/publication/test_verification.py
       - run: python3 verification/irrationality-exponents/test_verify.py
+      - run: python3 verification/publication/test_runner_capacity.py
       - run: python3 verification/publication/check-wrapper-evidence.py
       - run: python3 verification/publication/check-upstream.py
         env:
@@ -99,3 +104,46 @@ jobs:
           path: preprints/${{ matrix.preprint }}/.verification/*.log
           if-no-files-found: error
           include-hidden-files: true
+
+  independent-proof:
+    if: github.event_name == 'workflow_dispatch' && inputs.independent_proofs
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Set isolated working directory
+        run: echo "PROOF_WORK=$RUNNER_TEMP/independent-proof-verification" >> "$GITHUB_ENV"
+      - name: Reserve disk for tools, builds, and retained exports
+        run: |
+          mkdir -p "$PROOF_WORK"
+          set -o pipefail
+          bash verification/publication/prepare-independent-runner.sh 2>&1 | tee "$PROOF_WORK/capacity.log"
+      - name: Check frozen proof inputs and recorded evidence
+        run: |
+          python3 verification/publication/check-frozen.py
+          python3 verification/publication/check-wrapper-evidence.py
+      - name: Rebuild and independently check all four final statements
+        run: |
+          mkdir -p "$PROOF_WORK"
+          df -h "$RUNNER_TEMP"
+          set -o pipefail
+          /usr/bin/time -v bash verification/irrationality-exponents/run.sh \
+            --case all --work-dir "$PROOF_WORK" 2>&1 | tee "$PROOF_WORK/console.log"
+      - name: Retain complete receipts and checker logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: independent-proof-evidence-${{ github.sha }}-${{ github.run_attempt }}
+          path: |
+            ${{ env.PROOF_WORK }}/console.log
+            ${{ env.PROOF_WORK }}/capacity.log
+            ${{ env.PROOF_WORK }}/runs/*/receipt.json
+            ${{ env.PROOF_WORK }}/runs/*/logs/*.log
+            ${{ env.PROOF_WORK }}/runs/*/configuration/*
+            ${{ env.PROOF_WORK }}/runs/*/*/*.nanoda.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90

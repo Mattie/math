@@ -46,8 +46,8 @@ The portable wrapper export has uncompressed SHA-256
 and size 1,271,711,610 bytes. Its separate
 [distribution inventory](../publication/wrapper-release-assets.json) records
 its transport identity. The six old distribution entries remain unchanged.
-The planned release is `proof-exports-2026-10-08`; no download is claimed available
-until it is published and downloaded bytes are verified. After publication:
+The archive is available in the [published release](https://github.com/Mattie/math/releases/tag/proof-exports-2026-10-08).
+Its downloaded bytes matched both inventory identities. To check your download:
 
 ```sh
 python3 verification/publication/check-release-assets.py /path/to/downloads \
