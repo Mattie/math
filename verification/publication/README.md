@@ -21,9 +21,27 @@ Missing or malformed reports and imported `sorryAx` fail verification.
 CI runs publication checks and script regressions automatically. Full Lean builds
 are explicitly dispatched with `rebuild_proof=true`; their logs are retained as
 Actions artifacts. A green publication-only run is not a proof build.
-The [six-package reproduction run](https://github.com/Mattie/math/actions/runs/37868135214)
-checks repair commit `1adb547`. Its live status is authoritative; this link alone
-does not assert success. Later documentation-only changes do not change its inputs.
+The [successful six-package reproduction](https://github.com/Mattie/math/actions/runs/37872740986)
+checked commit `a1fdf2f3c6941d95dbce9f16b540856dbcd3899b`: all six builds,
+fresh axiom audits, post-build publication checks, and log uploads passed.
+Six log artifacts were retained. The [earlier run](https://github.com/Mattie/math/actions/runs/37868135214)
+also passed its proof steps, but failed to upload logs; it remains a distinct historical result.
+The separate [PR run](https://github.com/Mattie/math/actions/runs/37872739030)
+hit an anonymous GitHub API rate limit. Authenticated provenance checks passed in
+[the subsequent PR run](https://github.com/Mattie/math/actions/runs/37925371633)
+at `324b8388f658d97714a7d4172823e91a57ce67d0`. Later evidence/documentation additions
+do not change the proof inputs or six package verification entrypoints.
+
+## Independent catalogue-statement evidence
+
+The existing [portable four-statement workflow](../irrationality-exponents/README.md)
+and its [retained validation](../irrationality-exponents/validation/README.md)
+are included separately from the six-package Lean builds. Comparator compared
+compiled statements and definition closures; Nanoda checked the same solution
+exports. The [coverage note](../irrationality-exponents/COVERAGE.md) explains the
+exact normalized-logarithm wrapper and its correspondence with FC #6942.
+Run `python3 verification/publication/check-wrapper-evidence.py` to check pinned
+inputs and retained log identities. This command does not rerun either checker.
 
 ## Resources
 
@@ -55,3 +73,10 @@ python3 verification/publication/check-release-assets.py /path/to/downloads
 
 This checks both compressed bytes and streamed uncompressed bytes against the
 inventory. Applicable upstream licenses and notices remain in each preprint.
+
+The [additional wrapper inventory](wrapper-release-assets.json) separately records
+`realnorm-catalogue-20261008T144533Z.ndjson.gz`, prepared from the retained portable
+validation run. Its original export identity is preserved. This seventh archive
+is planned for the same release; it does not replace `realnorm-main.ndjson.gz`.
+Use `--inventory verification/publication/wrapper-release-assets.json` with the
+same download checker to validate it separately.

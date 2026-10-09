@@ -1,0 +1,412 @@
+{
+  "format": "portable-four-proof-validation-v1",
+  "status": "passed",
+  "run_id": "20261008T144533Z-0_9xwobs",
+  "started_utc": "2026-10-08T14:45:33.192463+00:00",
+  "finished_utc": "2026-10-08T15:38:04.272934+00:00",
+  "audited_revision": "3f4e514444214e562eababb4eecc5b6ffb818002",
+  "full_receipt_sha256": "659dac4658e834bbdac93faa832b04ae330f58b8917c8ce11db78e2959c7a2d6",
+  "runtime_sha256": {
+    "AuditNative.lean": "2cd7d848907939c4d5c72aedb7a483211744e7a5258d8496687673560ef6efdd",
+    "pins.json": "187d40141e389efc7c941e7392d2824f7aea8be9ea128af91050cb96ece3abca",
+    "run.sh": "dd8e62efe35f74bbeb6adf1aec03cb796bc3ce7d1c8d14f7659ef85f8ba8ced1",
+    "verify.py": "0842d42b891f2a1b9a592fceba116fc561a2c0333a4a0aeddb681910b1e1e821",
+    "challenges/arctan.lean": "170d7696b63d6dfd051749608358d16d8c6af1e170a4dd4fb819581b5c14030c",
+    "challenges/imaginary.lean": "9260cf81cb79ba50c26bc370c9cca14bf553c03363d0027dcc83ba87728f4fe6",
+    "challenges/log.lean": "37828e8eba5cdf9f748fab1a8aa3461a3392cee49f50724b9620f1bad1a647b6",
+    "challenges/realnorm.lean": "c8447effa575f6047b60af0b683b00e325bd518ac4c97b739d9788b03e3fdcd4",
+    "controls/FixtureChallenge.lean": "630edc59de00e02ee41d167938d9fb1cc5b6ea329c8ccba51490dc513a252e9b",
+    "controls/FixtureDefinitionMismatch.lean": "b5b3de30130b5d2ecc29080a022d484eb18b97d420b1e89c2336e0e54a3e2002",
+    "controls/FixtureForbiddenAxiom.lean": "ba4f2ea8e8cd10b6db9549f5687519ceeb136c14bccdcc481bff310e6601f74c",
+    "controls/FixturePositive.lean": "630edc59de00e02ee41d167938d9fb1cc5b6ea329c8ccba51490dc513a252e9b",
+    "controls/FixtureStatementMismatch.lean": "6983a2bd41c191ce81b34540717354a5df8557580efbbf6780cce8d6d083cc1c",
+    "controls/ill-typed.ndjson": "5639c72cb379e24fc076aa513a4f5bc6b3a65abed5469219a3d6afc5d3ab40e7",
+    "controls/positive.ndjson": "2f9f0647a14e217f3f254ec1bad66e72266084fc65d9e12b587b989920726f13"
+  },
+  "tool_pins": {
+    "schema_version": 1,
+    "audited_revision": "3f4e514444214e562eababb4eecc5b6ffb818002",
+    "lean_version": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "lean_archive_sha256": "3013aba02bb8bf31b1cf8c9d956d60fb95bb1c10920dfe91abcaa59cb461ddac",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "rust": "1.99.0",
+    "exporter": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "comparator": "d03acab154d269c06e60e4de7e4cc85deebff94b"
+  },
+  "tools": {
+    "lean": {
+      "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+    },
+    "exporter": {
+      "sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1"
+    },
+    "nanoda": {
+      "sha256": "febce798f5d98155cf69908c3221410e9083024184cb936565fd2d7621578d13"
+    },
+    "comparator": {
+      "sha256": "9575cd704107dec0539181cf7e5a909e3af15471beffdbdfabeb6d6638d6d0d3"
+    }
+  },
+  "dependencies": {
+    "version": "1.2.0",
+    "packagesDir": ".lake/packages",
+    "packages": [
+      {
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "type": "git",
+        "subDir": null,
+        "scope": "",
+        "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "name": "mathlib",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "inherited": false,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/plausible",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+        "name": "plausible",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/LeanSearchClient",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+        "name": "LeanSearchClient",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/import-graph",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "e928b72544873815af278d38681b31c0293588e3",
+        "name": "importGraph",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/ProofWidgets4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+        "name": "proofwidgets",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/aesop",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+        "name": "aesop",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/quote4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+        "name": "Qq",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/batteries",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+        "name": "batteries",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover/lean4-cli",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover",
+        "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+        "name": "Cli",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "v4.34.0",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      }
+    ],
+    "name": "LogarithmPort",
+    "lakeDir": ".lake",
+    "fixedToolchain": true
+  },
+  "cases": {
+    "log": {
+      "sha256": "2fb597a6523bcd4c43a5692258b24f645945881e2446f2278f94a5a8f3808dbc",
+      "bytes": 1270266242,
+      "declarations": 117722,
+      "target": "log_rational_challenge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unsafe": [],
+      "partial": [],
+      "metadata": {
+        "exporter": {
+          "name": "lean4export",
+          "version": "3.1.0"
+        },
+        "format": {
+          "version": "3.1.0"
+        },
+        "lean": {
+          "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+          "version": "4.34.1"
+        }
+      },
+      "status": "passed",
+      "challenge_sha256": "9697f98a7a50ebd9f3656836d01df85e8d3fb0072ff33e8c605ca6e5545e39d3"
+    },
+    "arctan": {
+      "sha256": "f0cf7c0a3a438d82f72e3e0b8781b2572df338ec65cd9ebf12383335c0c617c4",
+      "bytes": 1280555361,
+      "declarations": 118479,
+      "target": "OAI.Arctangent.rational_arctan_irrationality_and_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unsafe": [],
+      "partial": [],
+      "metadata": {
+        "exporter": {
+          "name": "lean4export",
+          "version": "3.1.0"
+        },
+        "format": {
+          "version": "3.1.0"
+        },
+        "lean": {
+          "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+          "version": "4.34.1"
+        }
+      },
+      "status": "passed",
+      "challenge_sha256": "b1b0605685da25565670ffb6e0e51968d5a6e50b78fe2c41087f6e4c17aac4de"
+    },
+    "imaginary": {
+      "sha256": "f19f54218859a2d81389d5b34d1cb41f2f07da0e38ea298025053c859ff66852",
+      "bytes": 1272173734,
+      "declarations": 117879,
+      "target": "OAI.Imaginary.normalized_arctan_sqrt_two_irrationality_and_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unsafe": [],
+      "partial": [],
+      "metadata": {
+        "exporter": {
+          "name": "lean4export",
+          "version": "3.1.0"
+        },
+        "format": {
+          "version": "3.1.0"
+        },
+        "lean": {
+          "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+          "version": "4.34.1"
+        }
+      },
+      "status": "passed",
+      "challenge_sha256": "bcd56cd8acbc77237e84e92b606b68b569a887705d79d696eae6dc6c1b511e75"
+    },
+    "realnorm": {
+      "sha256": "8c1e66f96e5e982442dcebceda1b1298d97079664bee14a40377080ac4fc12fe",
+      "bytes": 1271711610,
+      "declarations": 117787,
+      "target": "OAI.RealNorm.normalized_log_sqrt_two_irrationality_and_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unsafe": [],
+      "partial": [],
+      "metadata": {
+        "exporter": {
+          "name": "lean4export",
+          "version": "3.1.0"
+        },
+        "format": {
+          "version": "3.1.0"
+        },
+        "lean": {
+          "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+          "version": "4.34.1"
+        }
+      },
+      "status": "passed",
+      "challenge_sha256": "b82e84608dde2e94ecf1ed4660c290b309bc5f64aa177b0bef457e9537e7f0f3"
+    }
+  },
+  "controls": {
+    "FixturePositive": "passed",
+    "FixtureDefinitionMismatch": "passed",
+    "FixtureStatementMismatch": "passed",
+    "FixtureForbiddenAxiom": "passed",
+    "nanoda-positive": "passed",
+    "nanoda-ill-typed": "passed",
+    "nanoda-axiom": "passed"
+  },
+  "cache_provenance": {
+    "preexisting": {
+      "tools": true,
+      "cargo": true,
+      "rustup": true,
+      "mathlib-cache": true
+    },
+    "dependencies": "Fresh checkout per run; official Mathlib artifacts may be reused from work_directory/mathlib-cache",
+    "results": "Fresh run directory; prior results never used for acceptance",
+    "lean_num_threads": 4
+  },
+  "bootstrap_note": "The working directory was created for this task. This successful invocation reused only tools and official Mathlib cache acquired during earlier attempts in that directory. Solution sources and specifications were freshly compiled; no previous proof exports or acceptance results were reused.",
+  "earlier_attempts": [
+    {
+      "run_id": "20261008T140013Z-807s2kga",
+      "status": "failed",
+      "reason": "Interrupted during dependency setup to apply review fixes."
+    },
+    {
+      "run_id": "20261008T140814Z-8m3_8e8c",
+      "status": "failed",
+      "reason": "Missing Nanoda pretty-printer destination prevented a clean success report; fixed and fully rerun."
+    }
+  ],
+  "supplementary_validation": {
+    "failure_boundary_tests": 6,
+    "all_four_package_quick_checks": "passed",
+    "frozen_source_and_configuration_hashes_unchanged": 3755,
+    "consolidated_manuscript_hash_unchanged": true,
+    "local_documentation_links": "passed",
+    "git_diff_check": "passed"
+  },
+  "logs": {
+    "pin-nanoda": {
+      "file": "pin-nanoda.log",
+      "sha256": "000d4b6dbb65d8336c4d3b4f2cd3cb6a8afe417db3ac3e9d3822002d7e8db822",
+      "exit_code": 0
+    },
+    "build-nanoda": {
+      "file": "build-nanoda.log",
+      "sha256": "765f1396d07f30f3a451cd3f9d9cad4e83c92c8e0aecf955ffc09061a6cf1e02",
+      "exit_code": 0
+    },
+    "control-compare-FixturePositive": {
+      "file": "control-compare-FixturePositive.log",
+      "sha256": "7f86eb78689184201d15fde22c6d94d6d17a26f6a6a8397d065a44c907c11c67",
+      "exit_code": 0
+    },
+    "control-compare-FixtureDefinitionMismatch": {
+      "file": "control-compare-FixtureDefinitionMismatch.log",
+      "sha256": "11e85b12a8bd1c52449db88174061c19c15145365d7927eb6d9772b7802be701",
+      "exit_code": 1
+    },
+    "control-compare-FixtureStatementMismatch": {
+      "file": "control-compare-FixtureStatementMismatch.log",
+      "sha256": "f10f23f2175889d3f5a7778996336c8a03b6aa6ac6b688df34fe018d6442895d",
+      "exit_code": 1
+    },
+    "control-compare-FixtureForbiddenAxiom": {
+      "file": "control-compare-FixtureForbiddenAxiom.log",
+      "sha256": "c99dcfe7a7ca4e596c22d6429e25b3290affcfab02f9d07770bd2b86a40b114b",
+      "exit_code": 1
+    },
+    "control-nanoda-positive": {
+      "file": "control-nanoda-positive.log",
+      "sha256": "12b1707519947d66835885df60ceda075c73cbb71062245a6a7b1f73c6d5300d",
+      "exit_code": 0
+    },
+    "control-nanoda-ill-typed": {
+      "file": "control-nanoda-ill-typed.log",
+      "sha256": "58b1632b8c7082af7354b2214d2a5a58effcec527d8a4e865b22ba95dde4ad53",
+      "exit_code": 101
+    },
+    "control-nanoda-axiom": {
+      "file": "control-nanoda-axiom.log",
+      "sha256": "463c09146885543494978e40efc248310200fdd8bd60d7904f06b8d73eac9daf",
+      "exit_code": 1
+    },
+    "log-nanoda": {
+      "file": "log-nanoda.log",
+      "sha256": "93548de05bc642c274e948284242e9571aa1baded8ab564bb53fc548a1d33a94",
+      "exit_code": 0
+    },
+    "log-compare": {
+      "file": "log-compare.log",
+      "sha256": "9ffa3d1da27a60e7a361af2c74422df9609933dc3707ec708bb704ba140eca95",
+      "exit_code": 0
+    },
+    "arctan-nanoda": {
+      "file": "arctan-nanoda.log",
+      "sha256": "949193bd0b277dfbf9c936112607a6277883d51d4ea5b7625d0a1e68b088fb29",
+      "exit_code": 0
+    },
+    "arctan-compare": {
+      "file": "arctan-compare.log",
+      "sha256": "a7c7c499ed705850a6cb882fab4ce4299d5fa440c93f6446b50ca35a32f4180f",
+      "exit_code": 0
+    },
+    "imaginary-nanoda": {
+      "file": "imaginary-nanoda.log",
+      "sha256": "f857fe1e18b5d94e500866e0965c4fed22b13e4d493c7fb16fe8154c1d3cefb0",
+      "exit_code": 0
+    },
+    "imaginary-compare": {
+      "file": "imaginary-compare.log",
+      "sha256": "bb84e49ab6e77de44d6f70174e9b59a226d6933f0bd608dff740b0dfc667af00",
+      "exit_code": 0
+    },
+    "realnorm-nanoda": {
+      "file": "realnorm-nanoda.log",
+      "sha256": "88ef00b5f72fb98106c5e8a0824932fc3e89b300fea795c551d88159faea3a25",
+      "exit_code": 0
+    },
+    "realnorm-compare": {
+      "file": "realnorm-compare.log",
+      "sha256": "f63dfa2b30d286c7466e78eda9c8d691f1428ce2269cb61a205f7899c00c00cc",
+      "exit_code": 0
+    }
+  },
+  "scope": "Frozen source inputs; official dependency caches allowed; no hostile-code sandbox or full dependency rebuild."
+}

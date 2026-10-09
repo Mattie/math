@@ -1,0 +1,3 @@
+Error: export file declares unpermitted axiom "forbiddenAuditAssumption"
+
+run with `-h` or `--help` for help

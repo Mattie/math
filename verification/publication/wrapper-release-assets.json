@@ -1,0 +1,15 @@
+{
+  "release_tag": "proof-exports-2026-10-08",
+  "scope": "Separate transport of the previously checked catalogue-wrapper export; not a replacement for any retained core export.",
+  "assets": [
+    {
+      "file": "realnorm-catalogue-20261008T144533Z.ndjson.gz",
+      "compressed_bytes": 189673623,
+      "compressed_sha256": "270ba5a105770564dec3463bf471f3fcedc5170c3e60ef51e7e1376427da8d10",
+      "uncompressed_bytes": 1271711610,
+      "uncompressed_sha256": "8c1e66f96e5e982442dcebceda1b1298d97079664bee14a40377080ac4fc12fe",
+      "target": "OAI.RealNorm.normalized_log_sqrt_two_irrationality_and_bound",
+      "validation_run": "20261008T144533Z-0_9xwobs"
+    }
+  ]
+}

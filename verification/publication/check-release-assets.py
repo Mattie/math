@@ -28,10 +28,14 @@ def verify(directory, assets):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('directory',type=Path)
+    parser.add_argument('--inventory', type=Path, help='Separate inventory for additional checked exports.')
     args=parser.parse_args()
-    inventory=json.loads(Path(__file__).with_name('release-assets.json').read_text())
-    if len(inventory['assets']) != 6 or len({a['file'] for a in inventory['assets']}) != 6:
-        raise ValueError('Expected six distinct release assets.')
+    inventory=json.loads((args.inventory or Path(__file__).with_name('release-assets.json')).read_text())
+    assets=inventory['assets']
+    if not assets or len({a['file'] for a in assets}) != len(assets):
+        raise ValueError('Expected distinct release assets.')
+    if args.inventory is None and len(assets) != 6:
+        raise ValueError('Expected six retained release assets.')
     verify(args.directory,inventory['assets'])
 
 if __name__ == '__main__':

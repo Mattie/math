@@ -61,3 +61,13 @@ The [release location](https://github.com/Mattie/math/releases/tag/proof-exports
 is planned; publication awaits the repair PR's merge and successful verification.
 After publication, use the existing replay commands with the downloaded export.
 Publishing a retained export does not claim a new kernel-check run.
+
+## Supplementary catalogue-wrapper evidence
+
+The [independent wrapper evidence](https://github.com/Mattie/math/blob/main/verification/irrationality-exponents/COVERAGE.md)
+records Comparator and Nanoda checking of
+`OAI.RealNorm.normalized_log_sqrt_two_irrationality_and_bound`, including its
+correspondence with the submitted catalogue statement. This is a separately
+identified export and retained validation run. The historical `realnorm-main`
+export does not include that supplementary wrapper; its identity and scope are
+unchanged. The linked reproduction workflow creates fresh evidence when run.

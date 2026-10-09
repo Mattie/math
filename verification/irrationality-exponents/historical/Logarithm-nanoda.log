@@ -1,0 +1,18 @@
+theorem log_rational_challenge (a : Rat) (ha : LT.lt (OfNat.ofNat 0) a) (ha_ne_one : Ne a (OfNat.ofNat 1)) :
+  And (Irrational (Real.log (Rat.cast a)))
+    (forall (ε : Real),
+    LT.lt (OfNat.ofNat 0) ε → Exists
+      (fun (Q : Nat) =>
+      And (LE.le (OfNat.ofNat 2) Q)
+        (forall (p : Int) (q : Nat),
+        LE.le Q q → LE.le (Real.rpow (Nat.cast q) (Neg.neg (HAdd.hAdd (OfNat.ofNat 2) ε)))
+          (abs (HSub.hSub (Real.log (Rat.cast a)) (HDiv.hDiv (Int.cast p) (Nat.cast q))))))) :=
+  _
+
+axiom propext {a b : Sort 0} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Sort 0} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 117718 declarations with no errors

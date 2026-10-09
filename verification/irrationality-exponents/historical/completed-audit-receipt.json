@@ -1,0 +1,131 @@
+{
+  "source_commit": "3f4e514444214e562eababb4eecc5b6ffb818002",
+  "scope": "Fresh final-wrapper compilation/export, Nanoda proof acceptance, and maintained structural comparison; cached dependencies, no hardened isolation or full source bootstrap claim.",
+  "exports": {
+    "Logarithm": {
+      "sha256": "cbb45cc2d95c8509d3c4acdb1a36b3e8d39f951f4b4d1bf9a1f528379c5556bd",
+      "bytes": 1270265285,
+      "metadata": {
+        "exporter": {
+          "name": "lean4export",
+          "version": "3.1.0"
+        },
+        "format": {
+          "version": "3.1.0"
+        },
+        "lean": {
+          "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+          "version": "4.34.1"
+        }
+      },
+      "declarations": 117718,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unsafe": [],
+      "partial": [],
+      "exact_final_targets": [
+        "log_rational_challenge"
+      ],
+      "nanoda": "accepted"
+    },
+    "Arctangent": {
+      "sha256": "1aecbd6b834581dea7a39cd1c9db26538935b128d2a56eb5bddbf0111b2938d6",
+      "bytes": 1280554404,
+      "metadata": {
+        "exporter": {
+          "name": "lean4export",
+          "version": "3.1.0"
+        },
+        "format": {
+          "version": "3.1.0"
+        },
+        "lean": {
+          "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+          "version": "4.34.1"
+        }
+      },
+      "declarations": 118475,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unsafe": [],
+      "partial": [],
+      "exact_final_targets": [
+        "OAI.Arctangent.rational_arctan_irrationality_and_bound"
+      ],
+      "nanoda": "accepted"
+    },
+    "Imaginary": {
+      "sha256": "9ec2e7e3cb68f780ad1ff9f205d8dfb77d274b8d95572678154d30c832afb58c",
+      "bytes": 1272172774,
+      "metadata": {
+        "exporter": {
+          "name": "lean4export",
+          "version": "3.1.0"
+        },
+        "format": {
+          "version": "3.1.0"
+        },
+        "lean": {
+          "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+          "version": "4.34.1"
+        }
+      },
+      "declarations": 117875,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unsafe": [],
+      "partial": [],
+      "exact_final_targets": [
+        "OAI.Imaginary.normalized_arctan_sqrt_two_irrationality_and_bound"
+      ],
+      "nanoda": "accepted"
+    },
+    "RealNorm": {
+      "sha256": "9718e5c568e9259e1e6d955e72c89234d0bf20bbb8ba808426cd7302c6cd46b3",
+      "bytes": 1271710650,
+      "metadata": {
+        "exporter": {
+          "name": "lean4export",
+          "version": "3.1.0"
+        },
+        "format": {
+          "version": "3.1.0"
+        },
+        "lean": {
+          "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+          "version": "4.34.1"
+        }
+      },
+      "declarations": 117783,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unsafe": [],
+      "partial": [],
+      "exact_final_targets": [
+        "OAI.RealNorm.normalized_log_sqrt_two_irrationality_and_bound"
+      ],
+      "nanoda": "accepted"
+    }
+  },
+  "structural_comparison_logs": {
+    "original_logarithm_blind_bridge": "OriginalLog-priority-compare.log",
+    "additional_logarithm_integer_formulation": "Log-compare.log",
+    "rational_arctangent_catalogue": "Arctan-compare.log",
+    "imaginary_quadratic_catalogue": "Imaginary-compare.log",
+    "real_quadratic_catalogue": "RealNorm-compare.log"
+  },
+  "full_stock_kernel_replay_of_new_exports": false,
+  "public_proof_source_modified": false
+}
