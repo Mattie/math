@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this preprint when using the quadratic logarithm bound."
+type: article
+title: "The irrationality exponent of positive quadratic logarithms is at most 4"
+authors:
+  - family-names: Casper
+    given-names: Ryan Matthew
+date-released: 2026-10-08
+license: CC-BY-4.0
+keywords:
+  - Diophantine approximation
+  - irrationality exponent
+  - algebraic logarithms
+  - Lean

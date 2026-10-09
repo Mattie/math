@@ -1,0 +1,7 @@
+.verification/
+.lake/
+release-assets/*.gz
+build/*.log
+build/*.aux
+build/*.out
+__pycache__/

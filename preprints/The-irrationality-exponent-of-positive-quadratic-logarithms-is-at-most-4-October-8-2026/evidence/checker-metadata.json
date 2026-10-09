@@ -1,0 +1,63 @@
+{
+  "export_sha256": "89b54aab3386cfd9b006cc247aeaf3ea2d2943140ee56578faf9cd5410d6c0f4",
+  "endpoints": [
+    "OAI.AlgebraicLog.quadratic_log_explicit_bound",
+    "OAI.AlgebraicLog.quadratic_log_irrational",
+    "OAI.AlgebraicLog.quadratic_log_irrationalityExponent_le_four",
+    "OAI.AlgebraicLog.Examples.first_sample_bound",
+    "OAI.AlgebraicLog.Examples.second_sample_bound"
+  ],
+  "export_header": {
+    "meta": {
+      "exporter": {
+        "name": "lean4export",
+        "version": "3.1.0"
+      },
+      "format": {
+        "version": "3.1.0"
+      },
+      "lean": {
+        "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+        "version": "4.34.1"
+      }
+    }
+  },
+  "lean4export_commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+  "lean4export_binary_sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1",
+  "nanoda_commit": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+  "nanoda_binary_sha256": "a58f6590e9561bd296b7b187d75515fb3e6920defcaeac3582417579210e062d",
+  "export_size_bytes": 1277821261,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_files": {
+    "AlgebraicLog/AdmissibleParameters.lean": "c10d98ca66695f0cef07a8a32b813d875aa2dfc0791bd5c4133a974c651505ed",
+    "AlgebraicLog/AnalyticAggregate.lean": "91a02f48de3efbb883f72aedd1c291c8ac377ea940ac30b53ee0445047135339",
+    "AlgebraicLog/AnalyticData.lean": "0de017ae10c3f0350a1a012c40a022fe79427990f6e62cd001ece184d7b884b3",
+    "AlgebraicLog/ApproximationGeometry.lean": "6a5b9261605c58573ebc79c6fcc28728d5f52d667002e7266e8f9d1b6f8494c4",
+    "AlgebraicLog/ArithmeticBounds.lean": "b06a486152a89f1effc562b46535e7b31fc83b3aa383a82f9a15597c19329080",
+    "AlgebraicLog/AxiomAudit.lean": "053795b0841b67f0ec6e03cc8fac183a5818a2849deeb5f7d6598408a554f2db",
+    "AlgebraicLog/ConjugateAggregate.lean": "f72cd33d0c47207b0dfe4dd80219d3bc596611d27272c4d61832d0d10a4bebc8",
+    "AlgebraicLog/ConjugateBound.lean": "d6da76408230d207949baaef6b19dd9b548643447a65bfb1d9e53d837ba452a7",
+    "AlgebraicLog/ConjugateDeterminant.lean": "ff17e6a090d75192038722987b6de32a98234688ca721ce38ab6757f47021518",
+    "AlgebraicLog/ContradictionNumerics.lean": "9a460d6160281d7443bf88f60e4105920952ea176971de1100a288c2e76065b0",
+    "AlgebraicLog/CurveWeights.lean": "4e4b8c937b42b60c928a86df59fe8a1a74e726bd21a6b2aae38e9ffea3bb3961",
+    "AlgebraicLog/DeterminantContradiction.lean": "1a3d023a5007d79c249735e0502fd1c09c9fd5b58f52042f3b28861b512764f7",
+    "AlgebraicLog/DeterminantData.lean": "f37653b0baeb14ef5dd1cd0819467af05774fa9680231eb9918efa6effc846ff",
+    "AlgebraicLog/DimensionBudget.lean": "f1afb91f1c10ef74178fd953db5d19af512300c1a4cc71061a16fd77670eac76",
+    "AlgebraicLog/EmbeddingBudget.lean": "93f5d61114d2bd80b802b11b9773bfed0f49518a22c680143559dbc31c407fec",
+    "AlgebraicLog/Examples.lean": "04d8b18ac8d6fef680a427aded6ddae1a95e70b886b35e4105b8ebe01986c566",
+    "AlgebraicLog/ExponentConsequence.lean": "e6d9c503691d7d4f71aab6da7a19ba340539f0c0eb0fba51c9fab2dc1391a3dc",
+    "AlgebraicLog/FieldRealization.lean": "14c0ca52a12c0b041fb89c56d1c049c96a30b92602150c0741a66215c3bd8963",
+    "AlgebraicLog/GlobalMatrixInterpolation.lean": "44fd1b3a677bf57526c1b263db67eefa6bc2107894cea69524e6fd0f76cfd2fd",
+    "AlgebraicLog/IntegerClearing.lean": "434464afa8c2499bfc403db17d01d35b083f7c30c0f0d799ebf4e37b3410b67b",
+    "AlgebraicLog/LiteralAnalyticSummand.lean": "4b283ef7d1ffa747ad94fe800bc30a2586574352fe6953ffb8e337e617a5118e",
+    "AlgebraicLog/Main.lean": "a8100063f4132339901978108ff5d6508c6ccb123b69822bc282128a69900a8d",
+    "AlgebraicLog/MatrixArithmetic.lean": "dfec89b80988ceac1c0afd778915601b3475f8ce956a566b0b5900e0d57b6984",
+    "AlgebraicLog/ParameterShape.lean": "5b17580886859d1ab8b62491bdff3620069bb8f2ad8c5f9b490dcfee944c5855",
+    "AlgebraicLog/QuadraticNorm.lean": "aed24bcbb3d65e5fdcfb67fde90add474312ebc66aa03784a5079ea2389b2022",
+    "AlgebraicLog/SelectedArithmetic.lean": "a56d82f534a80d99739d7e77323dbf55e1c6cccd989f95ddfb8b61d4075ae20b"
+  }
+}

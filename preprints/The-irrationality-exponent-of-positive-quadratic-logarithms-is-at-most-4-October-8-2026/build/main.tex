@@ -1,0 +1,584 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={The irrationality exponent of positive quadratic logarithms is at most 4},pdfauthor={Ryan Matthew Casper}}
+\setlength{\emergencystretch}{3em}
+\setcounter{secnumdepth}{0}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title{The irrationality exponent of\\positive quadratic logarithms is at most 4}
+\author{Ryan Matthew Casper}
+\date{October 8, 2026}
+\begin{document}
+\maketitle
+\section{Abstract}\label{abstract}
+
+For every positive real algebraic number of degree two other than one,
+we prove that its logarithm has irrationality exponent at most four. The
+argument extends weighted logarithmic interpolation and determinant
+estimates to the original quadratic field. Integer clearing, the field
+norm, and a separate bound at the other embedding accommodate
+nonintegral inputs and negative conjugates. The denominator threshold is
+not made effective. A Lean formalization accompanies the proof.
+
+\section{1. Target, conventions, and algebraic
+setup}\label{target-conventions-and-algebraic-setup}
+
+Let \(a\in\mathbb R\) satisfy \(a>0\), \(a\ne1\), and
+\([\mathbb Q(a):\mathbb Q]=2\). Put \(\xi=\log a\). The target is \[
+\forall\nu>4\;\exists Q\in\mathbb N\;\forall p\in\mathbb Z\;\forall q\in\mathbb N,
+\quad q\ge Q\Longrightarrow
+\left|\xi-\frac pq\right|\ge q^{-\nu}.                 \tag{1}
+\] We may and will require \(Q\ge2\). The threshold may depend on
+\(a,\nu\); no effectivity or uniformity in \(a\) is asserted. Fractions
+need not be reduced. With the usual irrationality exponent defined using
+errors \(|\xi-p/q|<q^{-\nu}\), (1) implies \(\mu(\xi)\le4\).
+
+Write \(L=\mathbb Q(a)\subset\mathbb R\). Its other embedding is real:
+if the monic minimal polynomial is \(X^2+tX+u\), its other root is
+\(a'=-t-a\in\mathbb R\). Irreducibility makes \(a'\ne a\) and gives the
+nontrivial field automorphism \(\tau:L\to L\), \(\tau(a)=a'\). No
+positivity assumption is made on \(a'\). Choose an integer \(d\ge1\) for
+which \(da\) is an algebraic integer. Such a choice follows, for
+example, by taking the absolute value of a nonzero leading coefficient
+of an integer polynomial for \(a\).
+
+For a nonzero algebraic integer \(z\in L\), \[
+z\tau(z)=N_{L/\mathbb Q}(z)\in\mathbb Z\setminus\{0\},
+\qquad |z|\,|\tau(z)|\ge1.                           \tag{2}
+\] These are standard quadratic-field facts. They are not consequences
+of an absolute-value lower bound at either embedding separately.
+
+We argue by contradiction for a fixed \(\nu>4\). If (1) fails, there are
+approximants with arbitrarily large denominators and \[
+|\xi-p/q|\le q^{-\nu}.                              \tag{3}
+\] Set \(R=|\xi|+1\) and \(\rho=100\max(1,|\xi|)\). Every chosen
+approximant with \(q\ge2\) has \(|p/q|\le R\). Since \(\xi\ne0\),
+sufficiently large denominators also ensure \(p\ne0\), if that
+convenient extra condition is required by a wrapper.
+
+\section{2. Exact inherited inputs}\label{exact-inherited-inputs}
+
+All source paths in this section are relative to the pinned
+rational-logarithm dependency project. The namespace prefix \path{OAI}
+is suppressed below where unambiguous. These statements have no
+hypothesis that the multiplicative centres or the target logarithm are
+rational.
+
+\subsection{2.1 Interpolation}\label{interpolation}
+
+Fix integers \(m,K\ge1\), positive rational degree weights
+\(W=(w_0,w_1,\ldots,w_m)\), positive rational jet weights
+\(V=(v_0,w_1/\theta,\ldots,w_m/\theta)\), \(0<\theta<1\), and rational
+\(\sigma>0\). Require \[
+K(1+3\sigma)^{m+1}\frac{\prod W_i}{\prod V_i}<1,
+\qquad (1+\sigma)\theta<1,                           \tag{4}
+\] and the separated-product inequalities in
+\path{Logarithm.GeometryData.curve_separated_weight_products}: for
+equal-size subsets \(I,J\subseteq\{0,\ldots,m\}\), if their largest
+differing index is positive and belongs to \(I\), \[
+\mathcal C(m,\sigma)\prod_{j\in J}V_j<\prod_{i\in I}W_i,
+\quad
+\mathcal C(m,\sigma)=
+\operatorname{comparisonConstant}(m,\sigma).
+                                                               \tag{5}
+\] We use the actual source constant; only its finiteness and
+independence from the centres matter here.
+
+For arbitrary distinct nonzero \(y_j\in\mathbb C\) and arbitrary
+\(c_{ji}\in\mathbb C\), the coefficient packets \[
+[t^su^\beta]\,P\bigl(y_j(1+t),c_{j1}+u_1+\log(1+t),\ldots,
+c_{jm}+u_m+\log(1+t)\bigr),\quad v_0s+w\beta/\theta<H,
+\] can all be prescribed by polynomials of \(W\)-degree at most \(H\),
+for all sufficiently large \(H=n\mathcal R\). The positive rational
+scale \(\mathcal R\) depends only on the weights; the eventual threshold
+may depend on the fixed centres.
+
+\textbf{Declaration:}
+\path{Logarithm.eventually_weighted_logarithmic_interpolation} in
+\path{Logarithm/Interpolation.lean}, applied to the concrete
+\path{GeometryData}. Its conclusion is the surjectivity of
+\path{GeometricInterpolation.packetMap};
+\path{GeometricInterpolation.WeightedPolynomials} supplies the degree
+bound. Replacing each logarithm by a truncation \(G_i\) is allowed when
+\(T_iv_0\ge w_i/\theta\), by
+\path{eventually_weighted_truncated_interpolation}. The conversion to
+the literal matrix is
+\path{Logarithm.ScaledMatrix.truncatedLogMatrix_surjective_of_formalLog_packets}
+in \path{ScaledMatrix.lean}.
+
+The substantial geometric proof---curve inequality, blowup ampleness,
+eventual jet restriction, and polynomial section degree bound---is
+inherited through these declarations. This manuscript does not replace
+it by a dimension count.
+
+\subsection{2.2 Generic analytic determinant
+ingredients}\label{generic-analytic-determinant-ingredients}
+
+The following declarations are used with \(\omega=\xi\in\mathbb C\),
+rational additive centres \(r_i=p_i/q_i\), and the entry factor
+\(a^{jh}\).
+
+\begin{itemize}
+\tightlist
+\item
+  Finite row expansion with the centre factor retained:
+  \path{Logarithm.ScaledTranslation.det_matrix_translation},
+  \path{Logarithm/ScaledTranslation.lean}
+\item
+  Error \(j(r_i-\xi)\) in exponential weight form:
+  \path{Logarithm.ScaledApproximationErrors.actual_error_exp},
+  \path{Logarithm/ScaledApproximationErrors.lean}
+\item
+  Translation scalar estimate:
+  \path{PiExponent.MatrixTranslationBounds.norm_rowScalar_exp_weight_difference},
+  \path{OAI/NumberTheory/PiExponent/Approximation/MatrixTranslationBounds.lean}
+\item
+  Generic collision estimate:
+  \path{Logarithm.ScaledCollision.formal_scaled_collision_bound},
+  \path{Logarithm/ScaledCollision.lean}
+\item
+  Conversion of formal period coefficients to analytic row tests:
+  \path{Logarithm.ScaledPeriodAnalytic.scaled_periodMonomial_coeff_eq_rowTest},
+  \path{Logarithm/ScaledPeriodAnalytic.lean}
+\item
+  Two alternatives and finite summation:
+  \path{PiExponent.DeterminantAnalyticBound.translated_summand_bound}
+  and \path{log_norm_sum_le},
+  \path{OAI/NumberTheory/PiExponent/Analysis/DeterminantAnalyticBound.lean}
+\item
+  Row and low-index lattice asymptotics:
+  \path{PiExponent.MatrixCounting.tendsto_rowCount_normalized},
+  \path{tendsto_lowIndexCount_normalized},
+  \path{tendsto_collisionRatio},
+  \path{OAI/NumberTheory/PiExponent/Approximation/MatrixCounting.lean}
+\end{itemize}
+
+The rational wrappers \path{LiteralAnalytic.actual_minor_analytic_bound}
+and \path{GlobalMatrixInterpolation.cofinal_actualMatrix} \textbf{cannot
+be applied directly} to \(a\). Sections 3 and 5 below reassemble their
+generic ingredients and discharge the hypotheses. No new analytic
+theorem is being silently assumed.
+
+\section{3. Parameters are chosen before
+approximants}\label{parameters-are-chosen-before-approximants}
+
+Let \(\Lambda=4+\log4\), \(c=\log2/4\). Choose rational \(\theta,A,B,C\)
+and real \(\eta\) satisfying \[
+0<\theta<A<B<1,\quad C>1,\quad CB<1,\quad B<C\theta<1,
+\quad0<\eta<1,
+\] \[
+g:=\nu\bigl(A(1-\eta)-\theta\bigr)-2(1-\theta)>0.     \tag{6}
+\] This follows directly from
+\texttt{PiExponent.exists\_parameters (nu/2)} since \(\nu/2>2\):
+multiply its final gap by two. For an explicit elementary construction,
+choose rational \(b\in(1/2,1-2/\nu)\), put \(\theta=1-s\), \(A=1-bs\)
+with sufficiently small rational \(s>0\), use \(A^2<\theta\) to choose
+\(C\in(A/\theta,1/A)\), and then choose \(A<B<\min(C\theta,1/C)\). A
+sufficiently small positive \(\eta\) preserves the strict gap.
+
+Fix \(0<\varepsilon<\min(g,1)\). Choose \(F>2/\theta\) such that
+\(\nu/F<\varepsilon/3\). Set \[
+K=\lfloor C^m\rfloor,\quad w_0=B^{-m},\quad
+v_0=2K\theta^mw_0,
+\quad L'=\log\max(1,|a'|),\quad \delta=\log d.        \tag{7}
+\] All \(w_0,v_0\) are positive rational numbers, and \[
+K(w_0/v_0)\theta^m=1/2,\qquad K\theta^m<1.
+\] As \(m\to\infty\), \(K/w_0\to0\), \(1/w_0\to0\), \(m/v_0\to0\), while
+\[
+c_\infty:=\frac{c\eta^2K\theta^m}{(m+1)v_0A^m}
+=\frac{c\eta^2(B/A)^m}{2(m+1)}\longrightarrow\infty. \tag{8}
+\] The floor in \(K\) causes no problem: \(\lfloor C^m\rfloor/C^m\to1\).
+These are also the identities underlying \path{exists_dimension_margin}
+in the inherited parameter machinery.
+
+Choose one finite \(m\ge1\) for which \(c_\infty>3\) and \[
+\frac{2\Lambda Fm+3\log2}{v_0}
++\frac{(\rho+2\delta+L')K+\log(3/2)}{w_0}
+<\varepsilon/3.                                    \tag{9}
+\] Freeze \(m,K,w_0,v_0\). Choose rational \(\sigma>0\) sufficiently
+small that (4) holds; one may also impose the inherited optional
+condition \((1+3\sigma)^mK\theta^m<1\).
+
+Only now choose \(m\) approximants from (3), successively, with
+\(q_i\ge2\) and integer weights \(w_i=\lceil\log q_i\rceil\).
+Arbitrarily large denominators allow the \(w_i\) to be as large as
+desired. They can satisfy (5): cancel common factors in each product
+comparison and solve for its largest differing weight, whose index
+belongs to the degree-weight side; all remaining factors have smaller
+indices and are already fixed. There are finitely many such comparisons
+at each step. These thresholds depend on previously chosen weights, not
+on the centre locations.
+
+Also make \(w_*:=\min_iw_i\) large enough that \[
+2\Lambda\sum_i\frac1{w_i}
++\frac{2\theta+\log4+\log(2K)+\nu+\log(2\rho K)+\log(KR+2)}{w_*}
+<\varepsilon/3.                                    \tag{10}
+\] This is possible because the finite numerator in (10) was fixed
+before choosing the approximants, and \(\sum_i1/w_i\le m/w_*\).
+
+Finally set \[
+T_i=\lceil Fw_i/v_0\rceil,\qquad
+G_i(t)=\sum_{1\le k<T_i}\frac{(-1)^{k+1}t^k}{k}.
+\] Thus \(T_iv_0\ge Fw_i>w_i/\theta\). All parameters, approximants,
+truncations, and centres are now frozen. The only remaining limit is
+\(H\to\infty\).
+
+\section{4. One selected algebraic minor and its arithmetic
+bound}\label{one-selected-algebraic-minor-and-its-arithmetic-bound}
+
+Take \(y_j=a^j\), \(c_{ji}=jr_i\), \(0\le j<K\). The \(y_j\) are
+distinct and nonzero because \(a>0\), \(a\ne1\). The generic
+interpolation input therefore gives full row rank at every sufficiently
+large admissible height \(H=n\mathcal R\).
+
+Rows are \((j,s,\beta)\) with \(v_0s+w\beta/\theta<H\); columns are
+\((h,\gamma)\) with \(w_0h+w\gamma\le H\). All indices are nonnegative
+integers. The entry is \[
+E_{(j,s,\beta),(h,\gamma)}
+=[t^su^\beta]\;a^{jh}(1+t)^h\prod_i(jr_i+G_i(t)+u_i)^{\gamma_i}\in L. \tag{11}
+\] Choose a full-row square minor \(\Delta_H\ne0\), with \(M_H\) rows.
+This selection is fixed in every estimate at that height. Its conjugate
+is the same selection with \(a\) replaced by \(a'\); it is nonzero
+because \(\tau\) is injective.
+
+Define \[
+b_H=\frac{\sum_{\rm rows}w\beta}{M_HH},\qquad0\le b_H\le\theta.
+\] There is at least one row for \(H>0\), so \(M_HH>0\). Let
+\(L_i=\operatorname{lcm}(1,\ldots,T_i)\) and \[
+D_H=\prod_iL_i^{\lfloor H/w_i\rfloor}.
+\] Multiply each entry by \(D_H\), its row factor
+\(\prod_iq_i^{-\beta_i}\), and its column factor
+\(d^{Kh}\prod_iq_i^{\gamma_i}\). If \(\beta\not\le\gamma\), the entry is
+zero. Otherwise it becomes \[
+D_H(da)^{jh}d^{(K-j)h}\binom\gamma\beta
+[t^s](1+t)^h\prod_i(jp_i+q_iG_i(t))^{\gamma_i-\beta_i}. \tag{12}
+\] Every coefficient of \(L_iG_i\) is an integer. Since
+\(\gamma_i-\beta_i\le\gamma_i\le\lfloor H/w_i\rfloor\), the factor
+\(D_H\) clears all polynomial coefficient denominators in (12). Thus
+(12) is an algebraic integer in \(L\), not merely in \(L(i)\). The
+determinant of the scaled matrix is \[
+Z_H=C_H\Delta_H,\quad
+C_H=D_H^{M_H}
+\prod_{\rm selected\ columns}\left(d^{Kh}\prod_iq_i^{\gamma_i}\right)
+\prod_{\rm rows}\prod_iq_i^{-\beta_i}>0.              \tag{13}
+\] The positive rational number \(C_H\) need not be integral. The scaled
+entries and their determinant are integral, which is what (2) needs.
+Consequently \[
+1\le C_H^2|\Delta_H|\,|\tau\Delta_H|.               \tag{14}
+\]
+
+For completeness, the clearing cost is \[
+\frac{\log C_H}{M_HH}\le1-b_H+E_{\rm ar},
+\quad E_{\rm ar}=
+\frac{\Lambda Fm}{v_0}+\Lambda\sum_i\frac1{w_i}
++\frac\theta{w_*}+\frac{K\delta}{w_0}.               \tag{15}
+\] Indeed \(\log L_i\le\Lambda T_i\), \(T_i\le Fw_i/v_0+1\), and
+\(\lfloor H/w_i\rfloor\le H/w_i\), giving the first two terms. A
+selected column satisfies
+\(\sum_i\gamma_i\log q_i\le\sum_i\gamma_iw_i\le H\), and \(h\le H/w_0\),
+giving \(1+K\delta/w_0\). For each row, \(\log q_i\ge w_i-1\) and
+\(\sum_i\beta_i\le w\beta/w_*\le\theta H/w_*\). Thus its subtracted cost
+is at least \(w\beta-\theta H/w_*\), proving (15). This exact row
+subtraction is preserved twice in (14).
+
+The lcm estimate is \path{PiExponent.Arithmetic.log_lcmUpto_le}; the
+column and row inequalities are \path{column_log_cost_le} and
+\path{row_log_cost_lower} in \path{Approximation/Arithmetic.lean}, or
+their matrix wrappers. The new ordinary-integer version of (12) is the
+isolated module \path{AlgebraicLog/IntegerClearing.lean}; the inherited
+Gaussian clearing endpoint is deliberately not used to infer integrality
+in \(L\).
+
+\section{5. Distinguished analytic bound, with all
+substitutions}\label{distinguished-analytic-bound-with-all-substitutions}
+
+Put \[
+f_{b,h,\gamma}(z)=[u^b]e^{hz}\prod_i(z+u_i)^{\gamma_i}
+=\binom\gamma b e^{hz}z^{|\gamma|-|b|}
+\] when \(b\le\gamma\), and zero otherwise. These are entire functions.
+At row centre \(j\), write \(z_j(t)=j\xi+\log(1+t)\). Since
+\(e^{\xi}=a\), \(e^{z_j(t)}=a^j(1+t)\) for \(|t|<1\). The additive
+coordinates in (11) are \[
+z_j(t)+u_i+e_{ji}+\tau_i(t),\qquad
+e_{ji}=j(r_i-\xi),\quad \tau_i=G_i-\log(1+t).
+\] The finite row expansion in the source list above therefore applies
+literally. A row choice consists of a transverse multi-index \(b\) with
+\(wb\le H\), a distribution of error/tail factors, and a coefficient
+order \(k\le s\). The scalar is independent of the selected column.
+Nonzero scalar terms have \(b\ge\beta\).
+
+From (3) and \(w_i-1\le\log q_i\), \(|e_{ji}|\le Ke^\nu e^{-\nu w_i}\).
+The tails begin in order \(T_i\). Apply
+\path{norm_rowScalar_exp_weight_difference} with its error constant
+\(\log(2K)+\nu\), weights \(w_i\), scale \(F\), lower weight \(w_*\),
+and \(k\le s<H/v_0\). Its hypotheses hold because \(T_i\ge1\),
+\(Fw_i\le v_0T_i\), and the approximation bound just proved. It gives
+the scalar bound \[
+\exp\{-\nu(wb-w\beta)+H E_{\rm tr}\},\qquad
+E_{\rm tr}=\frac\nu F+\frac{\log2}{v_0}
++\frac{\log4+\log(2K)+\nu}{w_*}.                   \tag{16}
+\]
+
+Apply \path{formal_scaled_collision_bound} with row label \(j\), row
+order \(\ell=s-k\), transverse grouping \(b\), column exponents
+\(h,\gamma\), \(\omega=\xi\), and \(\rho\) chosen above. All its
+hypotheses follow from \(0\le j<K\), the column degree budget,
+\(\sum\ell\le M_HH/v_0\), \(\rho\ge100\), and \(\rho\ge100|\xi|\). Its
+centre factor \(e^{j\xi h}\) equals exactly \(a^{jh}\). For \(n_b\) rows
+in each group, the resulting determinant is at most \[
+\exp\left\{-c\sum_bn_b^2+M_HH(E_{\rm hol}+o(1))\right\},
+\quad E_{\rm hol}=\frac{\rho K}{w_0}+\frac{\log2}{v_0}
++\frac{\log(2\rho K)}{w_*}.                         \tag{17}
+\] The source writes the last logarithm as
+\(\log(200K)+\log(\rho/100)\), which is equal. The \(o(1)\) is
+\texttt{Collision.collisionRemainder M\_H H}; its convergence follows
+from the positive row-count asymptotic below and
+\path{tendsto_collisionRemainder_of_normalized_pow}.
+
+Let \(N_A(H)=\#\{b:wb\le AH\}\) and \[
+c_H=\frac{c\eta^2M_H}{H N_A(H)}.
+\] If at least \(\eta M_H\) rows use low indices, Cauchy--Schwarz gives
+\(\sum n_b^2\ge\eta^2M_H^2/N_A(H)\). Otherwise the total index weight is
+at least \(A(1-\eta)M_HH\). Also \(\sum wb\ge\sum w\beta=M_HHb_H\) for
+every nonzero scalar product. Applying \path{translated_summand_bound}
+gives exactly these two alternatives.
+
+There are at most
+\(Q_H=(\lfloor H\rfloor+1)^{2m}(\lfloor H/v_0\rfloor+1)\) choices per
+row, as in \path{MatrixTranslation.row_term_count}; \(w_i\ge1\) and
+\(s\le H/v_0\) discharge its hypotheses. Sum the at most \(Q_H^{M_H}\)
+terms using \path{log_norm_sum_le}. Since \(\log Q_H/H\to0\), we obtain,
+uniformly in the selected columns, \[
+\frac{\log|\Delta_H|}{M_HH}\le
+E_{\rm an}+o(1)+\max\{-c_H,-\nu(A(1-\eta)-b_H)\},
+\quad E_{\rm an}=E_{\rm tr}+E_{\rm hol}.             \tag{18}
+\]
+
+The rational positive weights and \(q_i\ge2\) allow the lattice-counting
+declarations in the table to be applied, giving \[
+M_H\sim\frac{K\theta^mH^{m+1}}{(m+1)!v_0\prod_iw_i},
+\quad N_A(H)\sim\frac{A^mH^m}{m!\prod_iw_i},
+\quad c_H\longrightarrow c_\infty.                 \tag{19}
+\] Thus every normalized error in (18) tends to zero after all other
+data have been fixed.
+
+\section{6. The other embedding: a new coarse
+bound}\label{the-other-embedding-a-new-coarse-bound}
+
+Apply the same coefficient formula (11) with \(a'\) in place of \(a\).
+On \(|t|=1/2\), \(|G_i(t)|\le\sum_{k\ge1}2^{-k}/k=\log2\). On the
+additional circles \(|u_i|=1\), \[
+|jr_i+G_i(t)+u_i|\le KR+\log2+1<KR+2.
+\] Repeated one-variable Cauchy coefficient bounds therefore give \[
+|\tau E_{(j,s,\beta),(h,\gamma)}|
+\le 2^s\max(1,|a'|)^{Kh}(3/2)^h(KR+2)^{|\gamma|}.
+\] The \(u\)-circle radii equal one, so no additional
+\(\beta\)-dependent cost appears. This estimate already includes all
+binomial coefficients. Use \(s<H/v_0\), \(h\le H/w_0\), and
+\(|\gamma|\le H/w_*\) to bound every entry by \(e^{HU}\), where \[
+U=\frac{\log2}{v_0}+\frac{KL'+\log(3/2)}{w_0}
++\frac{\log(KR+2)}{w_*}.                            \tag{20}
+\] The permutation formula for the determinant then gives \[
+\frac{\log|\tau\Delta_H|}{M_HH}\le
+U+\frac{\log(M_H!)}{M_HH}=U+o(1).                   \tag{21}
+\] Indeed \(M_H=O(H^{m+1})\), so \(\log(M_H!)/(M_HH)\le\log M_H/H\to0\).
+This proof is uniform in the selected minor. It uses neither
+\(\log a'\), an approximation to it, nor any relation between \(a'\) and
+\(a^{-1}\).
+
+Combining (14), (15), and (21) proves the new arithmetic lower bound \[
+\frac{\log|\Delta_H|}{M_HH}
+\ge-2(1-b_H)-2E_{\rm ar}-U-o(1).                  \tag{22}
+\]
+
+\subsection{6.1 Conservative coefficient bound used by the Lean
+development}\label{conservative-coefficient-bound-used-by-the-lean-development}
+
+The module \path{ConjugateBound.lean} instead uses the convenient
+one-variable estimate \(|G_i(t)|\le2\), obtained from the inherited
+bounds for \(\log(1+t)\) and its tail. Bounding
+\(\binom\gamma\beta\le2^{|\gamma|}\) then replaces \(KR+2\) in (20) by
+\(2(KR+2)\). This proves a slightly weaker bound
+\(\widetilde U=U+\log2/w_*\). For exact agreement with that
+implementation, replace \(\log(KR+2)\) in (10) and the total error below
+by \(\log(2(KR+2))\), and use \(\widetilde U\) in (21)--(22). All
+parameter choices and the final argument are unchanged: the additional
+fixed numerator is chosen before \(w_*\). This variant avoids a
+multivariate Cauchy formalization and still gives exponent four.
+
+\subsection{6.2 A fixed bound for every
+embedding}\label{a-fixed-bound-for-every-embedding}
+
+The formal parameter construction uses the slightly larger constant \[
+\kappa=\sum_{\sigma:L\hookrightarrow\mathbb C}\log\max(1,|\sigma(a)|)
+\] in place of \(L'\). Every summand is nonnegative, so this constant
+bounds the required other-embedding cost. It is fixed before the
+dimension is chosen, and hence the same dimension limit absorbs it. The
+norm argument runs over all complex embeddings of the actual field
+\(\mathbb Q(a)\). Since its degree is two, removing the distinguished
+embedding leaves exactly one term. This avoids choosing a named
+conjugate or assuming its sign, while preserving the exact coefficient
+two on the rational clearing factor.
+
+\section{7. Contradiction and
+endpoint}\label{contradiction-and-endpoint}
+
+Let \(E=2E_{\rm ar}+U+E_{\rm an}\). Expanding (15)--(17) and (20) yields
+exactly \[
+\begin{aligned}
+E={}&\frac\nu F+
+\frac{2\Lambda Fm+3\log2}{v_0}
++\frac{(\rho+2\delta+L')K+\log(3/2)}{w_0}
+\\
+&+2\Lambda\sum_i\frac1{w_i}
++\frac{2\theta+\log4+\log(2K)+\nu+\log(2\rho K)+\log(KR+2)}{w_*}.
+\end{aligned}
+\] By our choices, \(E<\varepsilon<\min(g,1)\) and \(c_\infty>3>2+E\).
+Comparing (18) and (22) forces at least one of \[
+c_H\le2(1-b_H)+E+o(1),                             \tag{23}
+\] \[
+\nu(A(1-\eta)-b_H)\le2(1-b_H)+E+o(1).              \tag{24}
+\] The first is impossible for all sufficiently large \(H\), since
+\(b_H\ge0\) and \(c_H\to c_\infty>2+E\). For the second, \[
+\nu(A(1-\eta)-b_H)-2(1-b_H)
+=g+(\nu-2)(\theta-b_H)\ge g>E,
+\] so it too is impossible for all sufficiently large \(H\). The
+\(o(1)\) terms are uniform in the selected columns and \(b_H\); take a
+fixed margin smaller than both strict gaps. Interpolation supplies
+arbitrarily large admissible \(H\), completing the contradiction.
+
+Thus (1) holds. Moreover \(\xi\) is irrational: if \(\xi=u/v\), the
+unreduced fractions \(ku/(kv)\) violate (1) for arbitrarily large
+denominators. Therefore the usual exponent is defined on an irrational
+real and is at most four. Its defining exponent set is nonempty by
+Dirichlet and bounded above by four; if using a real supremum in Lean,
+those facts must be supplied explicitly. We have not proved the endpoint
+estimate with exponent exactly four and a fixed constant.
+
+\section{8. Nonvacuity and checked
+declarations}\label{nonvacuity-and-checked-declarations}
+
+The first example is \[
+a_1=(1+\sqrt2)/2,\quad a_1'=(1-\sqrt2)/2,\quad N(a_1)=-1/4.
+\] It is positive, not one, quadratic, and nonintegral; \(d=2\) gives
+\(2a_1=1+\sqrt2\), an algebraic integer. Here \(|a_1'|<1\), so \(L'=0\).
+A stronger arithmetic-cost test is \[
+a_2=(1+3\sqrt2)/2,\quad a_2'=(1-3\sqrt2)/2,\quad N(a_2)=-17/4.
+\] Again \(d=2\) works, while \(a_2'<-1\) and
+\(L'=\log((3\sqrt2-1)/2)>0\). Neither test has norm one; the second
+exercises the nonzero conjugate-growth cost. Their integer polynomials
+are \(4X^2-4X-1\) and \(4X^2-4X-17\), respectively. Irreducibility
+follows from irrationality of \(\sqrt2\).
+
+The accompanying source directory is \path{lean/AlgebraicLog/}. All
+names in the following list have prefix \path{OAI.AlgebraicLog}.
+
+\begin{itemize}
+\tightlist
+\item
+  Ordinary integer coefficient clearing:
+  \path{IntegerClearing.entry_truncatedLog_cleared_int}
+\item
+  One integral minor and the same determinant at every embedding:
+  \path{MatrixArithmetic.exists_integral_minor_det_lift}
+\item
+  Actual quadratic norm inequality:
+  \path{QuadraticNorm.quadratic_literal_minor_log_bound}
+\item
+  Normalized arithmetic bound with the row saving doubled:
+  \path{SelectedArithmetic.normalized_selected_lower}
+\item
+  Actual conjugate determinant bound and vanishing remainder:
+  \path{ConjugateAggregate.complexMinor_log_bound},
+  \path{tendsto_conjugateRemainder}
+\item
+  Full numerical parameters from actual-\(\nu\) approximants:
+  \path{exists_admissible_parameters}
+\item
+  Distinguished analytic bound:
+  \path{LiteralAnalytic.actual_minor_analytic_bound}
+\item
+  Cofinal interpolation of the actual matrix:
+  \path{GlobalMatrixInterpolation.cofinal_actualMatrix}
+\item
+  Contradiction for actual algebraic data:
+  \path{DeterminantContradiction.no_fixed_data}
+\item
+  Actual rational adjunction and integer clearing:
+  \path{FieldRealization.realField_finrank},
+  \path{exists_positive_integral_multiple}
+\item
+  Literal quantified endpoint (1): \path{quadratic_log_explicit_bound}
+\item
+  Conventional irrationality-exponent consequence:
+  \path{quadratic_log_irrationalityExponent_le_four}
+\item
+  Both nontrivial test inputs: \path{Examples.first_sample_bound},
+  \path{Examples.second_sample_bound}
+\end{itemize}
+
+The final endpoint uses the standard hypotheses
+\texttt{IsAlgebraic Q alpha} and
+\texttt{(minpoly Q alpha).natDegree = 2}, not a custom data record. The
+parameter record is constructed inside the proof from a hypothetical
+failure of (1). The real-supremum consequence proves irrationality from
+the unreduced lower bound, uses Dirichlet to supply a nonempty exponent
+set, and proves that every member is at most four. The two examples'
+algebraicity and degree are also proved, rather than assumed.
+
+The accompanying audit prints the final statements and axiom lists and
+checks the explicit target proposition. The verification record
+describes native builds, exported-proof checks, and automated reviews,
+together with their dependency trust boundaries. See
+\href{VERIFY.md}{verification and reproduction}.
+
+No invariant has been transported through multiplication by an
+irrational algebraic number. No norm-one theorem, Galois averaging of
+approximation estimates, or auxiliary field extension is used.
+Mathematical novelty and external human verification remain separate
+questions from this development.
+
+\section{AI use}\label{ai-use}
+
+The author initiated and directed an investigation of extending OpenAI's
+irrationality-exponent method to logarithms of positive quadratic
+algebraic numbers. OpenAI coding agents contributed substantially to
+developing the candidate argument, producing the Lean formalization, and
+conducting automated adversarial reviews. The construction builds on
+OpenAI's published manuscript and released Lean library, the preceding
+rational-logarithm extension, and Mathlib. Automated checking and model
+review are distinct from independent human mathematical review.
+
+\section{References and attribution}\label{references-and-attribution}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  OpenAI, \emph{The irrationality exponent of \(\pi\) is 2}, manuscript
+  dated September 24, 2026, and
+  \href{https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026}{released
+  \(\pi\) library}. The weighted interpolation and analytic determinant
+  framework comes from this development.
+\item
+  Ryan Matthew Casper, \emph{The irrationality exponent of positive
+  rational logarithms is 2}, October 7, 2026,
+  \href{https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd/preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026}{pinned
+  manuscript and formalization}. This supplies the inherited
+  moving-centre interpolation and logarithmic matrix interfaces used
+  here.
+\item
+  The mathlib Community,
+  \href{https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612}{Mathlib},
+  pinned revision used by the formalization.
+\end{enumerate}
+
+The proposed contribution is the general quadratic upper bound and its
+formal extension. Irrationality of the logarithm of a nontrivial
+positive algebraic number is classical. This paper makes no exhaustive
+novelty or priority claim.
+\end{document}

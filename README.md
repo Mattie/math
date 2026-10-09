@@ -4,6 +4,7 @@ Preprints and formal AI-researched proofs driven by Ryan Matthew Casper.
 
 ## Preprints
 
+- **October 8, 2026:** [The irrationality exponent of positive quadratic logarithms is at most 4](preprints/The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026/README.md) — manuscript, Lean formalization, and verification materials for the general quadratic upper bound.
 - **October 7, 2026:** [The irrationality exponent of log(3 + 2√2)/√2 is 2](preprints/The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026/README.md) — manuscript, Lean formalization, verification materials, and audience explainers.
 - **October 7, 2026:** [The irrationality exponent of arctan(√2)/√2 is 2](preprints/The-irrationality-exponent-of-arctan-sqrt2-over-sqrt2-is-2-October-7-2026/README.md) — manuscript, Lean formalization, verification materials, and audience explainers.
 - **October 7, 2026:** [The irrationality exponent of nonzero rational arctangents is 2](preprints/The-irrationality-exponent-of-nonzero-rational-arctangents-is-2-October-7-2026/README.md) — manuscript, Lean formalization, and verification materials.
