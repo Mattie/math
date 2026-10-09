@@ -1,3 +1,10 @@
-# Proof export
+# Retained proof export
 
-The large `realnorm-main.ndjson.gz` export is excluded from Git. Its exact size and SHA-256 hashes are recorded in [the asset manifest](../evidence/release-assets.json). No release download is claimed here. A locally retained copy can be checked with the replay scripts; a fresh export can be generated from the frozen Lean source as described in [VERIFY.md](../VERIFY.md).
+The export remains outside Git. Its frozen identity is recorded in the package's
+historical evidence. The [distribution inventory](https://github.com/Mattie/math/blob/main/verification/publication/release-assets.json)
+adds transport hashes without replacing that evidence.
+
+The [planned release](https://github.com/Mattie/math/releases/tag/proof-exports-2026-10-08)
+will supply the package's attachment after the verification repair is merged and
+the required checks pass. It is not yet claimed as an available download.
+See [VERIFY.md](../VERIFY.md) for replay instructions and license scope.

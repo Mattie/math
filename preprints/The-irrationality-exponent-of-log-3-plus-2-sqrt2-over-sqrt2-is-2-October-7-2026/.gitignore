@@ -20,3 +20,4 @@ build/main.pdf
 *.olean
 *.ilean
 *.o
+.verification/

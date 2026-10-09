@@ -17,6 +17,7 @@ for group,count in manifest['counts'].items():
     additions=sum(name.startswith(group+'/') for name in supplement)
     assert len(list((root/'lean'/group).rglob('*.lean')))==count+additions,group
 for path in root.rglob('*.md'):
+    if any(part in {'.lake', '.verification', '__pycache__'} for part in path.relative_to(root).parts): continue
     text=path.read_text(encoding='utf-8')
     text=re.sub(r'\\\[.*?\\\]|\\\(.*?\\\)', '', text, flags=re.S)
     for target in re.findall(r'\[[^\]\n]+\]\(([^)]+)\)',text):

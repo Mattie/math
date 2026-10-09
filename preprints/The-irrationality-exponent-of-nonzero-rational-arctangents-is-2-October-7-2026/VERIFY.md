@@ -50,3 +50,22 @@ bash scripts/build-paper.sh
 
 This converts build/manuscript.md to build/main.tex and paper.pdf, using the
 same 11pt article, Latin Modern font, and 1.08-inch margins as the preceding preprint.
+
+## Verification and distribution update
+
+Verification scripts enforce the three-axiom allowlist on fresh output and reject
+missing reports. Frozen dependency style warnings remain visible; catalogue
+wrappers are compiled separately with warnings treated as errors. Publication
+checks exclude generated dependency/build directories. Historical receipts and
+all proof sources retain their original identities.
+
+The [repository verification guide](https://github.com/Mattie/math/blob/main/verification/publication/README.md)
+records the six-package build run, resource observations, and the distinction
+between publication checks and full Lean builds. The build run's live status,
+not a publication-only green check, determines whether reproduction succeeded.
+
+The retained export is listed in the [distribution inventory](https://github.com/Mattie/math/blob/main/verification/publication/release-assets.json).
+The [release location](https://github.com/Mattie/math/releases/tag/proof-exports-2026-10-08)
+is planned; publication awaits the repair PR's merge and successful verification.
+After publication, use the existing replay commands with the downloaded export.
+Publishing a retained export does not claim a new kernel-check run.

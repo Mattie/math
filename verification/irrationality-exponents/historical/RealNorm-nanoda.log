@@ -1,0 +1,24 @@
+theorem OAI.RealNorm.normalized_log_sqrt_two_irrationality_and_bound :
+  And
+    (Irrational
+      (HDiv.hDiv (Real.log (HAdd.hAdd (OfNat.ofNat 3) (HMul.hMul (OfNat.ofNat 2) (Real.sqrt (OfNat.ofNat 2)))))
+        (Real.sqrt (OfNat.ofNat 2))))
+    (forall (nu : Real),
+    LT.lt (OfNat.ofNat 2) nu → Exists
+      (fun (Q : Int) =>
+      And (LE.le (OfNat.ofNat 2) Q)
+        (forall (p q : Int),
+        LE.le Q q → LE.le (HPow.hPow (Int.cast q) (Neg.neg nu))
+          (abs
+            (HSub.hSub
+              (HDiv.hDiv (Real.log (HAdd.hAdd (OfNat.ofNat 3) (HMul.hMul (OfNat.ofNat 2) (Real.sqrt (OfNat.ofNat 2)))))
+                (Real.sqrt (OfNat.ofNat 2))) (HDiv.hDiv (Int.cast p) (Int.cast q))))))) :=
+  _
+
+axiom propext {a b : Sort 0} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Sort 0} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 117783 declarations with no errors

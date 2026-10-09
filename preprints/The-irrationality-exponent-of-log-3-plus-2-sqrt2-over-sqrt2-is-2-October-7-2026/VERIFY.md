@@ -42,3 +42,32 @@ bash scripts/build-paper.sh
 ```
 
 The editable source is `build/manuscript.md`; the generated LaTeX is `build/main.tex`. The checked-in PDF was built with Pandoc 3.6.4 and Tectonic. License scope is described in [LICENSES.md](LICENSES.md).
+
+## Verification and distribution update
+
+Verification scripts enforce the three-axiom allowlist on fresh output and reject
+missing reports. Frozen dependency style warnings remain visible; catalogue
+wrappers are compiled separately with warnings treated as errors. Publication
+checks exclude generated dependency/build directories. Historical receipts and
+all proof sources retain their original identities.
+
+The [repository verification guide](https://github.com/Mattie/math/blob/main/verification/publication/README.md)
+records the six-package build run, resource observations, and the distinction
+between publication checks and full Lean builds. The build run's live status,
+not a publication-only green check, determines whether reproduction succeeded.
+
+The retained export is listed in the [distribution inventory](https://github.com/Mattie/math/blob/main/verification/publication/release-assets.json).
+The [release location](https://github.com/Mattie/math/releases/tag/proof-exports-2026-10-08)
+is planned; publication awaits the repair PR's merge and successful verification.
+After publication, use the existing replay commands with the downloaded export.
+Publishing a retained export does not claim a new kernel-check run.
+
+## Supplementary catalogue-wrapper evidence
+
+The [independent wrapper evidence](https://github.com/Mattie/math/blob/main/verification/irrationality-exponents/COVERAGE.md)
+records Comparator and Nanoda checking of
+`OAI.RealNorm.normalized_log_sqrt_two_irrationality_and_bound`, including its
+correspondence with the submitted catalogue statement. This is a separately
+identified export and retained validation run. The historical `realnorm-main`
+export does not include that supplementary wrapper; its identity and scope are
+unchanged. The linked reproduction workflow creates fresh evidence when run.

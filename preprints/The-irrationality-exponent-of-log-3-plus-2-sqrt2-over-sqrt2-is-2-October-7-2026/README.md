@@ -12,3 +12,5 @@ This preprint proves that log(3 + 2√2)/√2 has rational irrationality exponen
 Lean 4.34.1 compiled the proof and its 29 declaration audits. Nanoda and a separate stock Lean 4.34.0 replay checked the frozen export's 117,830 declarations. The verification summary records the exact statements, hashes, and checker results. Formal checks are not external human peer review.
 
 The work builds on OpenAI's released weighted interpolation library, Mathlib, and Casper's preceding logarithm and quadratic-period adaptations. OpenAI coding agents contributed substantially to the research, mathematical adaptation, formalization, checking, and exposition under Casper's direction. The paper includes the full disclosure and makes no exhaustive priority claim.
+
+[Verification status and retained-export downloads](VERIFY.md#verification-and-distribution-update).

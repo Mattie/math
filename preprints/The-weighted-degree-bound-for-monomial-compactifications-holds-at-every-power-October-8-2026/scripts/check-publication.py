@@ -37,7 +37,7 @@ private = re.compile(r'(?i)([CD]:[/\\](?:Users|Dev|Temp)[/\\]|/mnt/[cd]/|/home/m
                      r'<analysis>|<assistant>|api[_-]?key\s*=)')
 for path in package.rglob('*'):
     relative = path.relative_to(package)
-    if '.verification' in relative.parts or not path.is_file():
+    if any(part in {'.verification', '.lake', '__pycache__'} for part in relative.parts) or not path.is_file():
         continue
     if relative.parts[0] == 'release-assets' and path.name != 'README.md':
         continue

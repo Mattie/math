@@ -1,0 +1,53 @@
+{
+  "release_tag": "proof-exports-2026-10-08",
+  "assets": [
+    {
+      "package": "The-irrationality-exponent-of-arctan-sqrt2-over-sqrt2-is-2-October-7-2026",
+      "file": "imaginary-main.ndjson.gz",
+      "compressed_bytes": 202031176,
+      "compressed_sha256": "a726e9e6f9ff30e1844b9c79abe14d225a3dad8f77c07cebb528f81399b4f0fc",
+      "uncompressed_bytes": 1273418143,
+      "uncompressed_sha256": "1aeffb0545974663a19694c8810d0bb8eb9110dc77f0aa9bf76d39a404f7c0dd"
+    },
+    {
+      "package": "The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026",
+      "file": "realnorm-main.ndjson.gz",
+      "compressed_bytes": 201949720,
+      "compressed_sha256": "ba956b96b984af6ca2ed76875df1dcefc841eb5dbe5017d010f2abc3c0cc1207",
+      "uncompressed_bytes": 1272939363,
+      "uncompressed_sha256": "cc979a7171672356f72344b7c1771b3344fb19a0601ce5fdff050da60ffbff56"
+    },
+    {
+      "package": "The-irrationality-exponent-of-nonzero-rational-arctangents-is-2-October-7-2026",
+      "file": "arctangent-main.ndjson.gz",
+      "compressed_bytes": 203187347,
+      "compressed_sha256": "695453c9039fd6b88c066d7893e4c1b9d9de7c9ad51e873c5e374dab895a87dd",
+      "uncompressed_bytes": 1281816054,
+      "uncompressed_sha256": "f02fa59112a93d2d82077fe5d39ac171e914b31dcaf1fa93e8b301b76594702c"
+    },
+    {
+      "package": "The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026",
+      "file": "algebraic-main.ndjson.gz",
+      "compressed_bytes": 190602876,
+      "compressed_sha256": "050af451af40166fb01807f37083f61252d2d27fbd54340f09348243585c3259",
+      "uncompressed_bytes": 1277821261,
+      "uncompressed_sha256": "89b54aab3386cfd9b006cc247aeaf3ea2d2943140ee56578faf9cd5410d6c0f4"
+    },
+    {
+      "package": "The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026",
+      "file": "logarithm-main.ndjson.gz",
+      "compressed_bytes": 251779698,
+      "compressed_sha256": "fdb74704ed1bc0fa9bf3a142eb3ae676d65da86832eed51bb91be8870e052206",
+      "uncompressed_bytes": 1270835163,
+      "uncompressed_sha256": "031249e63ebd33862c73b090a60faefeb1131ead9e07c32d0952cb45b80d71b3"
+    },
+    {
+      "package": "The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026",
+      "file": "degree-main.ndjson.gz",
+      "compressed_bytes": 116267572,
+      "compressed_sha256": "05830f26dd3dbec2ae87fe3cb675bee6c83b76e3d8ea065150ea60f31b294334",
+      "uncompressed_bytes": 730631418,
+      "uncompressed_sha256": "e0d80c6854703682a764bc601cd35b971bf383ea2715b3997323174e3f16dd89"
+    }
+  ]
+}

@@ -40,3 +40,5 @@ The author initiated and directed the investigation of simplifying the degree-bo
 
 
 See [citation metadata](CITATION.cff), [license scope](LICENSES.md), and [notices](NOTICE).
+
+[Verification status and retained-export downloads](VERIFY.md#verification-and-distribution-update).

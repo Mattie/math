@@ -19,3 +19,5 @@ OpenAI coding agents contributed substantially to the argument, proofs,
 verification, and exposition under Casper's direction. The manuscript credits
 the inherited OpenAI and rational-logarithm work and discusses the scope of the
 result. Automated checking is not external human peer review.
+
+[Verification status and retained-export downloads](VERIFY.md#verification-and-distribution-update).
