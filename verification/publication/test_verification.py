@@ -15,6 +15,7 @@ def load(path):
 
 audit = load(PACKAGES[0]/'scripts/check-axioms.py')
 upstream = load(Path(__file__).with_name('check-upstream.py'))
+assets = load(Path(__file__).with_name('check-release-assets.py'))
 
 class VerificationTests(unittest.TestCase):
     def test_helpers_identical(self):
@@ -51,6 +52,18 @@ class VerificationTests(unittest.TestCase):
             result=subprocess.run([sys.executable,str(PACKAGES[0]/'scripts/check-axioms.py'),str(p),'--expect','target'],capture_output=True)
             self.assertNotEqual(result.returncode,0)
             self.assertIn(b'sorryAx',result.stderr)
+
+    def test_export_identity_checks(self):
+        import gzip, hashlib
+        with tempfile.TemporaryDirectory() as temporary:
+            root=Path(temporary);p=root/'proof.gz';raw=b'known export bytes'
+            data=gzip.compress(raw,mtime=0);p.write_bytes(data)
+            row={'file':p.name,'compressed_bytes':len(data),'compressed_sha256':hashlib.sha256(data).hexdigest(),
+                 'uncompressed_bytes':len(raw),'uncompressed_sha256':hashlib.sha256(raw).hexdigest()}
+            assets.verify(root,[row])
+            with self.assertRaises(ValueError):assets.verify(root,[row|{'uncompressed_sha256':'bad'}])
+            p.write_bytes(data+b'changed')
+            with self.assertRaises(ValueError):assets.verify(root,[row])
 
     def test_generated_markdown_is_ignored(self):
         import sys

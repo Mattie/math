@@ -1,3 +1,10 @@
-# Proof export
+# Retained proof export
 
-The large `imaginary-main.ndjson.gz` is distributed separately from Git. Place it in this directory to run the retained-export verification commands in [VERIFY.md](../VERIFY.md). Its compressed and uncompressed hashes and sizes are recorded in [release-assets.json](../evidence/release-assets.json). The export includes upstream dependency declarations; the applicable notices in [LICENSES.md](../LICENSES.md) accompany this package.
+The export remains outside Git. Its frozen identity is recorded in the package's
+historical evidence. The [distribution inventory](https://github.com/Mattie/math/blob/main/verification/publication/release-assets.json)
+adds transport hashes without replacing that evidence.
+
+The [planned release](https://github.com/Mattie/math/releases/tag/proof-exports-2026-10-08)
+will supply the package's attachment after the verification repair is merged and
+the required checks pass. It is not yet claimed as an available download.
+See [VERIFY.md](../VERIFY.md) for replay instructions and license scope.

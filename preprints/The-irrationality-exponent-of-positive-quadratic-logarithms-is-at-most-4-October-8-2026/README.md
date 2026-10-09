@@ -13,3 +13,5 @@ The [Lean endpoint](lean/AlgebraicLog/Main.lean) and examples accompany the pape
 The author initiated and directed an investigation of extending OpenAI’s irrationality-exponent method to logarithms of positive quadratic algebraic numbers. OpenAI coding agents contributed substantially to developing the candidate argument, producing the Lean formalization, and conducting automated adversarial reviews. The construction builds on OpenAI’s published manuscript and released Lean library, the preceding rational-logarithm extension, and Mathlib. Automated checking and model review are distinct from independent human mathematical review.
 
 See [citation metadata](CITATION.cff), [license scope](LICENSES.md), and [notices](NOTICE).
+
+[Verification status and retained-export downloads](VERIFY.md#verification-and-distribution-update).

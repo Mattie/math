@@ -37,3 +37,5 @@ The author initiated and directed an investigation of extending OpenAI’s irrat
 
 The internal reviews are automated; external human peer review and a complete
 priority review have not been claimed.
+
+[Verification status and retained-export downloads](VERIFY.md#verification-and-distribution-update).

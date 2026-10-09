@@ -58,8 +58,8 @@
     "LICENSES.md": "044150d802fa50904e82696071bc980b9c6b2734f65a8c132e916c1a4a601b08",
     "NOTICE": "3f835e1442799c7a62c56e78b2bf4cd716f74a0a367791df54e469e394cc47da",
     "paper.pdf": "bcde8bdadf8891637952ae84e8d13aec3e2e3df7b41699d9b6c520718ec87f25",
-    "README.md": "b2cb585c69c6ff18e662daf1f1984661cfc899a87be47440cde0fb26b4ea0246",
-    "release-assets/README.md": "4f45f1460cc54d5f80ddba75fe60881eee10896f0f754af5e037ce912538ef01",
+    "README.md": "48a00dc6d18480a94241cd392b10399617c5970ffc98f21762dfaeef7bf29158",
+    "release-assets/README.md": "e7b971cb79ea683b276ea4ffb9ddc63577dd4ab6eb38a4f98d7cda0eb00a3d94",
     "scripts/build-paper.sh": "7ec0b503b7cca79759027b904c98c32104012ac73c2163c4811ada9f9a44fbe7",
     "scripts/check-export.py": "bb92a29696214b60efabf60d4f62ecafd495ea2027dae2e4c7829877873d3f31",
     "scripts/check-publication.py": "ec470689019790d8c3a04d8c225ae2207be35ac4366d7c1a24dcaa4932ff9d5a",
@@ -69,7 +69,7 @@
     "scripts/fetch-dependency.py": "e01f6afa8b851e09c2339cea785a9dd3d25e1625635acc99d5616dfadcc52d4d",
     "scripts/prepare-manuscript.py": "59e33f993f3dccd337373939d7bfe354e1d70e8b13bccf53c24cc9f877dd85de",
     "scripts/replay.sh": "7858c972c87cc1f488d2ed565178921b98437444270a2dc853200cefd04894d0",
-    "VERIFY.md": "7a611b378f1b3521c785c3898343257677e6b17cbecc37fabd40cd0008ebe7fc",
+    "VERIFY.md": "96653a26aa3c4246340580798a9cd54ba9377ae9fafd1d728e56ae4154403e7b",
     "scripts/test-fetch-dependency.py": "91f09f2132157ddd989dcff5cf51b2916d4bdd06d8e9383015d6f2672e6085a2",
     "scripts/check-axioms.py": "be3f5c512718e02bbc3019079b72edb0f5f4c379c922ed0401c81374a27035ec"
   }

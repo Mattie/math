@@ -1,5 +1,10 @@
-# Selected proof export
+# Retained proof export
 
-The uncompressed selected export is 1,277,821,261 bytes. It is deliberately excluded from Git. Regenerate it using `scripts/export.sh` and check its identity using `scripts/check-export.py`.
+The export remains outside Git. Its frozen identity is recorded in the package's
+historical evidence. The [distribution inventory](https://github.com/Mattie/math/blob/main/verification/publication/release-assets.json)
+adds transport hashes without replacing that evidence.
 
-No release has been created and no download URL is asserted. A transport archive can be attached separately when publishing; preserve the uncompressed identity in `evidence/checker-metadata.json`.
+The [planned release](https://github.com/Mattie/math/releases/tag/proof-exports-2026-10-08)
+will supply the package's attachment after the verification repair is merged and
+the required checks pass. It is not yet claimed as an available download.
+See [VERIFY.md](../VERIFY.md) for replay instructions and license scope.

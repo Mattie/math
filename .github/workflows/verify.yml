@@ -20,6 +20,7 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           fetch-depth: 0
+      - run: python3 verification/publication/check-frozen.py
       - run: python3 verification/publication/test_verification.py
       - run: python3 verification/publication/check-upstream.py
   small-proofs:

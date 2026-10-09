@@ -42,8 +42,8 @@
     "licenses/OpenAI-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "NOTICE": "7abd50fa9f884437e00cdb390bed45c7bfc92c9d05a066281a588f2126ec41eb",
     "paper.pdf": "0030069fdc0df6b190af94c611fe66236c1a3e9987b13bfc1e88526d4808532a",
-    "README.md": "ccb3eb2a1e09aac2aa2f0d9bf1b18aa367000b5282e2e2aaf245e314cb91d9f7",
-    "release-assets/README.md": "5087f4604c603d7d8521ae6221e3c116a73532aa713173fd2bd8527d5a7a8022",
+    "README.md": "6d700ed0f39cc0c79f2e48378e7e3034ef2f1451dc6687dcf07ec3e3cc4431c4",
+    "release-assets/README.md": "e7b971cb79ea683b276ea4ffb9ddc63577dd4ab6eb38a4f98d7cda0eb00a3d94",
     "scripts/build-paper.sh": "31bc0991bef84da6e0915e609957916c22f2bdc9cdb362835dc545ade316b330",
     "scripts/check-export.py": "bb92a29696214b60efabf60d4f62ecafd495ea2027dae2e4c7829877873d3f31",
     "scripts/check-publication.py": "e0dffc83ce32805ee0e0e7ad29ff87bce01811285526ecc69cbf6fc0be38c5f7",
@@ -51,7 +51,7 @@
     "scripts/export.sh": "ad35919893dd475a29d8927637dd4d4d14f9306002754352e6a6fcfe0773068c",
     "scripts/fetch-dependency.py": "6bf7795960df711df370879c630825a1d08a4e7803e234204beaf56721688c88",
     "scripts/replay.sh": "7858c972c87cc1f488d2ed565178921b98437444270a2dc853200cefd04894d0",
-    "VERIFY.md": "686b89e1dd3b127ddc7f6cfdc126448c06e7f51d732ab0d42a042998715cccbb",
+    "VERIFY.md": "5d75d7e919d1eea614786b72d33c265576eaaf1babf819165ff49e73d6ab5b7d",
     "scripts/check-axioms.py": "be3f5c512718e02bbc3019079b72edb0f5f4c379c922ed0401c81374a27035ec",
     "scripts/dependency-targets.py": "483e4c54a6c3d83f1cfba36f12cca42521519bbcd366e693b5f7cd6f1c782f51"
   }
