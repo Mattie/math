@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "record_type": "summary_of_audited_hosted_run",
+  "run": {
+    "url": "https://github.com/Mattie/math/actions/runs/38008467996",
+    "id": "38008467996",
+    "attempt": "1",
+    "commit": "4aa817179b5a81358dcdefeb1d454a31ab2f2c27",
+    "workflow": ".github/workflows/isolated-irrationality.yml",
+    "status": "passed",
+    "verification_started_utc": "2026-10-10T01:56:43Z",
+    "verification_finished_utc": "2026-10-10T02:43:23Z"
+  },
+  "target": {
+    "case": "imaginary",
+    "module": "Imaginary.FormalConjectures",
+    "theorem": "OAI.Imaginary.normalized_arctan_sqrt_two_irrationality_and_bound"
+  },
+  "host": {
+    "ImageOS": "ubuntu24",
+    "ImageVersion": "20261004.327.1",
+    "RUNNER_ENVIRONMENT": "github-hosted",
+    "XDG_RUNTIME_DIR": "/run/user/1001"
+  },
+  "checks": {
+    "tools": "passed",
+    "isolation": "passed",
+    "valid": "passed",
+    "mismatch": "passed",
+    "axiom": "passed",
+    "dependencies": "passed",
+    "imaginary": "passed"
+  },
+  "boundary_probe_errno": {
+    "allowed": 0,
+    "challenge": 13,
+    "config": 13,
+    "tool": 13,
+    "outside": 13,
+    "symlink": 13,
+    "unix_stream": 97,
+    "unix_dgram": 97
+  },
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "tool_pins": {
+    "schema_version": 1,
+    "audited_revision": "3f4e514444214e562eababb4eecc5b6ffb818002",
+    "lean_version": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "lean_archive_sha256": "3013aba02bb8bf31b1cf8c9d956d60fb95bb1c10920dfe91abcaa59cb461ddac",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "rust": "1.99.0",
+    "exporter": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "comparator": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "go": "1.25.12"
+  },
+  "input_identities": {
+    "pins_file_sha256": "187d40141e389efc7c941e7392d2824f7aea8be9ea128af91050cb96ece3abca",
+    "verification_runner_sha256": "7b4d86c1658b412e5ac2b305206d5d8fea466c92381e15fa9603a145468f0d5f",
+    "preflight_inputs": {
+      "preflight.py": "b6149c3a2265533769fdf3eade0c56b1bcd94c8ad3d128570ce1eca7eefbd1f8",
+      "boundary_probe.c": "1cf5105b89fa6207d4b5f8cc8d6c4b57370e91263abe82c81ed29c159fdd32ab"
+    },
+    "challenge_sha256": "9260cf81cb79ba50c26bc370c9cca14bf553c03363d0027dcc83ba87728f4fe6",
+    "dependency_lock_sha256": "be14038575fa7d67970f80275a503ff5c09527cb6dfd9ca679f8c6708fa2f88d",
+    "dependency_inventory_sha256": "44a59c0557727688b617ff6caaa1aa443c19cdfe288f6b23b81ed63140d2003c",
+    "frozen_case_sha256": "f7582bd8c446e18fe76c59d77f18dbe34fd0f5ef0dc932c3689a33d3a25ace16",
+    "candidate_inventory_sha256": "be219ee771e581291f9717c02211a327a85bd2a54283801ed0e2cd0600dbd2b7"
+  },
+  "service_limits": {
+    "unix_sockets": "RestrictAddressFamilies=~AF_UNIX",
+    "runtime_seconds": 7200,
+    "memory_max": "12G",
+    "cpu_quota": "400%"
+  },
+  "artifact": {
+    "url": "https://github.com/Mattie/math/actions/runs/38008467996/artifacts/11657410395",
+    "id": 11657410395,
+    "name": "isolated-irrationality-imaginary-4aa817179b5a81358dcdefeb1d454a31ab2f2c27-1",
+    "archive_sha256": "b0f3123f4d2dbc47327858fc51fd1caab1bafc79a313801d12fb3078628abe00",
+    "size_bytes": 6375405,
+    "files": 84,
+    "receipt_sha256": "95e7ad7f4d94c82883269f48a1d46c56f14902e7c4a01bd9b590ac9bde53a4a8",
+    "reported_expires_at": "2027-01-08T00:18:23Z"
+  },
+  "key_command_logs": [
+    {
+      "label": "valid-comparator",
+      "exit_code": 0,
+      "log": "logs/30-valid-comparator.log",
+      "log_sha256": "b6221f1610c93b5d2e08dfce4e0e803211b82f185bd85242dda1ff1c7101a4ac"
+    },
+    {
+      "label": "mismatch-comparator",
+      "exit_code": 1,
+      "log": "logs/32-mismatch-comparator.log",
+      "log_sha256": "2a924640bfb8e0b3c9b4e9f4428b267d4a73d7ffb3dd723b30c8f29e2276b543"
+    },
+    {
+      "label": "axiom-comparator",
+      "exit_code": 1,
+      "log": "logs/34-axiom-comparator.log",
+      "log_sha256": "47b7a4efbc826067eb45fe5dd4b1e6e14e06c4c7fbde4edcbd04855e127f0452"
+    },
+    {
+      "label": "imaginary-comparator",
+      "exit_code": 0,
+      "log": "logs/55-imaginary-comparator.log",
+      "log_sha256": "460a9bb1d4a0a5cbeb3eedf758f723d73416a531dbe874cfdd724902bdd8a422"
+    }
+  ],
+  "local_archive_audit": {
+    "date": "2026-10-10",
+    "archive_digest_matches_published_digest": true,
+    "archive_members_match_extracted_bytes": true,
+    "command_log_hashes_verified": 56,
+    "retained_file_hashes_verified": 24,
+    "dependency_revisions_verified": 9,
+    "frozen_source_files_verified": 943,
+    "candidate_inventory_entries_verified": 945,
+    "nanoda_result": "accepted",
+    "lean_default_kernel_result": "accepted",
+    "comparator_result": "accepted",
+    "negative_control_diagnostics": "expected statement mismatch and forbidden axiom",
+    "dependency_and_binary_preservation": "Enforced by the reviewed runner before its passed receipt; dependency inventory and recorded binary identities retained."
+  },
+  "scope": "The named theorem and exercised isolation checks; existing proofs, pins, exports, and historical receipts are unchanged.",
+  "evidence_limitations": [
+    "The archive retains receipt, logs, checking inputs and inventories; it does not retain all compiled dependency bytes or tool binaries.",
+    "No new standalone proof export was retained by Comparator."
+  ]
+}

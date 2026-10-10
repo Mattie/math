@@ -60,9 +60,9 @@ reused. Runs of this workflow are serialized.
 Capacity cleanup runs before Go installation and restores ownership of the tool
 cache directory. The Python runner requires 35 GiB free before setup and 10 GiB
 before checking the proof. The proof service has a two-hour limit, a 12 GiB memory
-cap, and a four-CPU quota; the full job allows four hours. These inherited budgets
-have not yet been validated for these three targets. Resource exhaustion leaves
-the verification incomplete.
+cap, and a four-CPU quota; the full job allows four hours. All three recorded runs
+completed within these budgets. Resource exhaustion in a future run leaves the
+verification incomplete.
 
 The always-uploaded artifact includes the receipt, commands and logs, exact target,
 tool identities, generated checking inputs, frozen manifest entry, and dependency
@@ -86,4 +86,8 @@ python3 -B verification/isolated-irrationality/test_verify.py
 These checks exercise selection, frozen input validation, bridge handling,
 byte-preserving preparation, scratch boundaries, capacity gates, and checking
 configuration without downloading tools, compiling proofs, or starting a sandbox.
-The full hosted runs remain pending.
+All three hosted source-verification runs passed, and their evidence was audited:
+[rational logarithms](results/2026-10-10-log.md),
+[rational arctangents](results/2026-10-10-arctan.md), and
+[normalized quadratic arctangent](results/2026-10-10-imaginary.md).
+Reuse these records for unchanged inputs; they do not contain standalone proof exports.
