@@ -1,0 +1,10 @@
+{
+  "status": "locally-retained-not-publicly-distributed",
+  "filename": "compare-solution-export-20261009.ndjson.zst",
+  "compressed_bytes": 209505900,
+  "compressed_sha256": "e31213df03b832c8932e091dc8d2db3e73d128c42282cbb157f1f8b2dd866829",
+  "uncompressed_bytes": 1281232401,
+  "uncompressed_sha256": "c012401cc4c8562cf23538934c25cc25d5c54e9c811eeced7150d3349610d2ec",
+  "public_url": null,
+  "public_download_test": "not performed; no public URL"
+}

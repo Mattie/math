@@ -1,0 +1,103 @@
+{
+  "evidence_class": "fresh execution; cached local compilation and enforced axiom audit",
+  "completed_utc": "2026-10-10T00:40:03.803731+00:00",
+  "source_manifest_sha256": "ae7d619051118d539d98679954ce4d4a6e97a5740b2550295f5a9241237f31bb",
+  "compiler_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "modules": [
+    {
+      "module": "StandardBridge",
+      "source_sha256": "8416e69a981358017b4ba6ce4dc0a40ce13bd201d0333343f8cfe8842368c91a",
+      "command": "lean -DautoImplicit=false -DwarningAsError=true -o OUTPUT/StandardBridge.olean StandardBridge.lean",
+      "exit": 0,
+      "log_sha256": "ba4001842b7dc554e489cf76a525f0c23e509d94f66bc766cffba6a58691eab1",
+      "warnings": "none"
+    },
+    {
+      "module": "Combined",
+      "source_sha256": "83ec5f46f531b6cff9798622cebad463feaf1cb511fad539e79fd4e52910f219",
+      "command": "lean -DautoImplicit=false -o OUTPUT/Combined.olean Combined.lean",
+      "exit": 0,
+      "log_sha256": "aff4f3137f9b20680e8b547e0d372ea2bfc18cf37dca1814b443db78d002c8e7",
+      "warnings": "Inherited push_neg deprecation and letI style warning retained."
+    },
+    {
+      "module": "Solution",
+      "source_sha256": "74c402007b5275e90968854d77c1acaec1ebe1c7ccfb5d9127f896a94cabefd1",
+      "command": "lean -DautoImplicit=false -DwarningAsError=true -o OUTPUT/Solution.olean Solution.lean",
+      "exit": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": "none"
+    },
+    {
+      "module": "Audit",
+      "source_sha256": "dfd319d3b27f9a2bfc6b494dda11b7c98e374696e7a13dbeac53014b45891bde",
+      "command": "lean -DautoImplicit=false -DwarningAsError=true -o OUTPUT/Audit.olean Audit.lean",
+      "exit": 0,
+      "log_sha256": "5e16829251b17eedcc6bf442212d13ff7ca184d55af1ee0ae887f20c250fc62f",
+      "warnings": "none"
+    }
+  ],
+  "targets": [
+    "CompareChallenge.pi_sqrt_exponent_two",
+    "CompareChallenge.pi_sqrt_eventual_bound",
+    "CompareChallenge.quadratic_log_exponent_two",
+    "CompareChallenge.quadratic_log_eventual_bound",
+    "CompareChallenge.imaginary_quadratic_exponent_two",
+    "CompareChallenge.imaginary_quadratic_eventual_bound"
+  ],
+  "axiom_reports": {
+    "CompareChallenge.pi_sqrt_exponent_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompareChallenge.pi_sqrt_eventual_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompareChallenge.quadratic_log_exponent_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompareChallenge.quadratic_log_eventual_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompareChallenge.imaginary_quadratic_exponent_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompareChallenge.imaginary_quadratic_eventual_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_policy": "Require all six names; only propext, Classical.choice, Quot.sound permitted.",
+  "axiom_gate_command": "python3 ../scripts/check-axioms.py Audit.log --source Audit.lean",
+  "axiom_gate_exit": 0,
+  "controls": {
+    "command": "bash verification/publication/lean-controls.sh PACKAGE/scripts/check-axioms.py",
+    "exit": 0,
+    "positive": "accepted",
+    "forbidden_axiom": "rejected with extraControl diagnostic",
+    "imported_sorry": "rejected with sorryAx diagnostic",
+    "log_sha256": "d1aa040e718f9856adea9b4d1ac4537a04248baa1ffe1ccdbba9b73e166c1e6e"
+  },
+  "limits": [
+    "Compatible inherited compiled dependency cache reused; not a clean source rebuild.",
+    "Ordinary local WSL compilation, without an isolation claim.",
+    "No fresh independent comparator/export/kernel replay for the scoped derivative.",
+    "The specification has intentional placeholders and is excluded from accepted proof compilation."
+  ],
+  "diagnostics": [
+    "A preliminary strict compile rejected the specification placeholders as expected.",
+    "A preliminary strict Combined compile rejected inherited push_neg deprecation and letI style warnings; source was preserved and compiled with ordinary warnings.",
+    "After successful module builds and audit, a CRLF in the local driver final log-display command caused that driver to exit nonzero; the display issue was fixed and the controls driver was separately rerun successfully. Individual compilation and audit results below are separate from that driver exit."
+  ]
+}

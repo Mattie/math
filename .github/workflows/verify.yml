@@ -44,6 +44,7 @@ jobs:
       fail-fast: false
       matrix:
         preprint:
+          - The-irrationality-exponent-of-real-and-imaginary-quadratic-periods-is-2-October-9-2026
           - The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026
           - The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026
           - The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026
@@ -64,6 +65,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - preprint: The-irrationality-exponent-of-real-and-imaginary-quadratic-periods-is-2-October-9-2026
+            verify_script: lean/verify.sh
           - preprint: The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026
             verify_script: lean/verify.sh
           - preprint: The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026

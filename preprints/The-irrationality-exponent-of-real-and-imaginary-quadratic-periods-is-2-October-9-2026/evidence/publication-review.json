@@ -1,0 +1,103 @@
+{
+  "evidence_class": "local publication preparation and separate automated reviews",
+  "completed_utc": "2026-10-10T00:44:37.474972+00:00",
+  "manuscript_sha256": "a07ead8dac966002aca1b8a6a0cad53fe1e717ac237f085db1bedaa9f4125eac",
+  "source_manifest_sha256": "ae7d619051118d539d98679954ce4d4a6e97a5740b2550295f5a9241237f31bb",
+  "pdf_sha256": "edf7a9374440e113f161aed692b9bd0c5ca215757f16f41e4a9618ca20a5a79e",
+  "pdf_pages": 14,
+  "pdf_checks": {
+    "build": "Pandoc 3.6.4 and Tectonic 0.17.0; build exited zero. One inherited underfull-paragraph warning remains; no overfull boxes.",
+    "visual": "Latest PDF rendered; changed pages 2, 7 and 8 inspected. All other pages have identical text and character positions to the previously inspected PDF. No material layout defect found.",
+    "privacy": "Text, author/title metadata, five expected links, and attachment inventory checked; no unintended private paths or attachments."
+  },
+  "source_and_package_checks": {
+    "source_config_identities": 1033,
+    "provenance_records": 1028,
+    "checks": [
+      "Source inventory and SHA-256 identities",
+      "Complete local imports",
+      "Local Markdown links",
+      "Public text path scan",
+      "Root workflow matrix integration",
+      "Existing preprints unchanged"
+    ]
+  },
+  "automated_review": {
+    "mathematical": "Written argument assessed before Lean source; decisive geometry contracts, exact degree budgets, common minor, arithmetic/analytic estimates and family reductions checked against frozen source. No substantive defect identified.",
+    "specification_and_evidence": "Standard targets and nonvacuity assessed before assurance records; elaborated endpoints, frozen source/provenance, scoped transformations, retained logs, comparator source and export identities inspected. No material defect identified.",
+    "separation": "Fresh separate model contexts, instruction-based separation; no filesystem sandbox. No sibling verdicts used. The evidence reviewer encountered high-level checking paragraphs in the manuscript before inspecting detailed evidence.",
+    "scientific_projection_sha256": "eaa8e3970cac484a487ec749134a17b8d0ae4b795e074bcc0a1de3a8bb246dc2",
+    "projection_note": "Administrative and prior-assurance paragraphs were removed from the mathematical review projection. Its References heading lost a paragraph break during removal; the original manuscript and PDF were unaffected."
+  },
+  "limits": [
+    "Lean, Mathlib and checking-tool binaries remain trusted inputs; this is not a source bootstrap of the toolchain or all upstream dependencies.",
+    "Nanoda and Lean replay share the lean4export input and Comparator frontend.",
+    "Controls establish the observed cases, not universal sandbox or checker soundness.",
+    "Exact retained checker exports have no public download; no public retrieval test was performed.",
+    "Formal acceptance does not establish novelty, manuscript correspondence, or human peer review.",
+    "Model reviews are not human peer review or an exhaustive novelty search."
+  ],
+  "reviewed_manuscript_sha256": "5e7709b9ba454768d670fe7f8ffc72190a101822b265ba1ab1a6dff9cbecc8c8",
+  "title_revision": {
+    "completed_utc": "2026-10-10T00:50:48.221871+00:00",
+    "scope": "User-selected title applied to manuscript, PDF metadata, citation, package folder, navigation and explainers.",
+    "scientific_body": "Byte-identical to the reviewed manuscript after the title line.",
+    "source_manifest": "Unchanged; all source identities rechecked by the publication gate.",
+    "pdf_validation": "Rebuilt without TeX warnings; first page rendered and visually inspected; all text and character positions on pages 2 through 14 exactly match the previously inspected PDF."
+  },
+  "prose_revision": {
+    "completed_utc": "2026-10-10T01:36:16.260569+00:00",
+    "before_manuscript_sha256": "963feaff778a3fbd563752772f7e4bf372e0ad042d1ffea262336538f8c33375",
+    "after_manuscript_sha256": "403c1dcb92c8d7ca2bd876f797f615814f033593c3c39838accadd1a2b0e5440",
+    "scope": "Approved result-first abstract and corresponding prose revision throughout the paper.",
+    "preserved": "All 81 displayed equations, Theorem 1, all 39 code-span contents, bibliography and frozen proof sources.",
+    "targeted_review": "Separate automated reviewer compared the prose changes and found no lost hypothesis, mathematical weakening or unsupported verification claim. Earlier mathematical and evidence reviews reused for unchanged artifacts.",
+    "limits": "Targeted prose review, not a new foundational review, proof build or kernel replay."
+  },
+  "verification_revision": {
+    "completed_utc": "2026-10-10T04:54:48.828537+00:00",
+    "before_manuscript_sha256": "403c1dcb92c8d7ca2bd876f797f615814f033593c3c39838accadd1a2b0e5440",
+    "before_pdf_sha256": "65cda5bfc720e490210f39bb2ea3f88a849eb661ced7f7f069986ab819835d92",
+    "previous_verification_limits": [
+      "Model reviews are not human peer review, an exhaustive novelty search, or a reconstruction of all inherited foundations.",
+      "No fresh independent six-target comparator/export/kernel replay.",
+      "No clean rebuild of all inherited sources; dependency caches reused.",
+      "Historical export retained locally, without a public download."
+    ],
+    "scope": "Only the two checking paragraphs in section 8 changed; all mathematics, 81 displayed equations, bibliography and frozen proof sources are unchanged.",
+    "fresh_verification_receipt": "fresh-verification.json",
+    "fresh_verification_receipt_sha256": "8265f902ed37891e296c68786cff802f6b30cf8b934fbe62ca2a8545e7f7a1f5",
+    "verification": "All 1,028 packaged proof modules built from an initially empty candidate build directory; six standard targets accepted by the maintained comparator, Nanoda and Lean default-kernel replay; strict axiom audit passed.",
+    "review": "Separate automated evidence reviewer inspected original logs, source and export identities, proof-body controls and the supplementary build continuation. Earlier mathematical reviews cover the unchanged argument."
+  },
+  "restrained_prose_revision": {
+    "completed_utc": "2026-10-10T12:29:07.830010+00:00",
+    "before_manuscript_sha256": "f49b6688f0ad4a54ab3d1d8f91417aa4804fdf2ac7ba047febd23dee215a68c2",
+    "after_manuscript_sha256": "d451f55d7f2992a3d22277dc8e6f6bad68cbd0bfa606dd42547b6cbcd7fa809e",
+    "before_pdf_sha256": "f823d6ad23ceaf1b42c952d770ca280559e0e881531d2181adbd21ff7973e037",
+    "after_pdf_sha256": "41b0f6a30ae4dac12304c9b6157b29293c420a4a7a3e6664bb3a7f745bb393e7",
+    "scope": "Nine approved local prose replacements: abstract phrasing, normalization limitation, repeated qualifications, branch explanation, verification wording, and consolidated AI attribution.",
+    "preserved": "Theorem 1, all 81 displayed equations, Sections 2 through 6, bibliography, existing source anchors, and all frozen proof/configuration identities.",
+    "verification_scope": "Earlier accepted source reconstruction and six-target comparator/kernel results reused unchanged. The prose now explicitly names the three foundational axioms already present in the verification evidence.",
+    "validation": "Exact before/after comparison, mechanical preservation checks, full source/package gate, and visual inspection of all fourteen rebuilt pages.",
+    "limits": "Local prose review only; no new independent mathematical review, proof build, or kernel replay."
+  },
+  "abstract_credit_revision": {
+    "completed_utc": "2026-10-10T12:39:41.293885+00:00",
+    "before_manuscript_sha256": "d451f55d7f2992a3d22277dc8e6f6bad68cbd0bfa606dd42547b6cbcd7fa809e",
+    "before_pdf_sha256": "41b0f6a30ae4dac12304c9b6157b29293c420a4a7a3e6664bb3a7f745bb393e7",
+    "scope": "User-supplied abstract wording credits the OpenAI foundation and our intermediate extension to distinct multiplicative centres. All other manuscript text is unchanged.",
+    "validation": "Rebuilt fourteen-page PDF; first page visually inspected; text and character positions on pages 2 through 14 exactly match the previously inspected PDF. Source inventory and accepted verification evidence unchanged."
+  },
+  "current_prose_correspondence_review": {
+    "completed_utc": "2026-10-10T12:52:36.372524+00:00",
+    "reviewer": "Fresh GPT-6 Astra subagent; no helpers",
+    "reviewed_manuscript_sha256": "37c40c3b4f7ccf852c5497bef3754a3a830a2fe7565f347d318a06feed500dd4",
+    "scientific_projection_sha256": "6953833916a3f1e12cee5a83d7a2dc15ebb36f6eb8ff2dc81867aafd9715f573",
+    "final_manuscript_sha256": "a07ead8dac966002aca1b8a6a0cad53fe1e717ac237f085db1bedaa9f4125eac",
+    "procedure": "Initial mathematical assessment recorded before Lean inspection; prior reviewer verdicts withheld. Every substantive section mapped to the frozen Lean sources and decisive inherited interfaces. Relevant archived execution evidence consulted after the mathematical/source assessment.",
+    "result": "No substantive mathematical discrepancy found. Three local prose clarifications applied and separately confirmed by the same reviewer: embedding labels, weaker-bound wording, and precise attribution of the general bound to Q4.",
+    "preserved": "Theorem statements, all displayed formulas, frozen proof sources and accepted verification artifacts unchanged.",
+    "limits": "Source/interface correspondence review and archived evidence inspection, not an exhaustive audit of all transitive foundations, fresh proof build, kernel replay, or human peer review."
+  }
+}

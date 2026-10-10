@@ -1,0 +1,11 @@
+{
+  "status": "locally-retained-not-publicly-distributed",
+  "filename": "quadratic-family-six-target-export-20261010.ndjson.zst",
+  "compressed_bytes": 209292318,
+  "compressed_sha256": "dfdfb837e927dfd72e7249ade14d199c6ba38410627f3329918e160e4a523442",
+  "uncompressed_bytes": 1279948787,
+  "uncompressed_sha256": "bf413eeb013b7443f9444d6a3bf2c8d6428ce2fe04d8217172e789a6ba4f6b70",
+  "compression": "Zstandard -T1 -3; full decompression identity checked",
+  "public_url": null,
+  "public_download_test": "not performed; no public URL"
+}

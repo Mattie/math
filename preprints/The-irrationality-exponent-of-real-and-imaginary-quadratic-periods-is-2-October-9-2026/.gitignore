@@ -1,0 +1,9 @@
+.lake/
+*.olean
+*.ilean
+*.trace
+__pycache__/
+build/*.log
+build/main.tex
+lean/verification-output/
+.verification/

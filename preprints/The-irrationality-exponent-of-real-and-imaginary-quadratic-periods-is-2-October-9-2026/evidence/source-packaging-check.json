@@ -1,0 +1,23 @@
+{
+  "evidence_class": "fresh source identity and textual derivative inspection",
+  "completed_utc": "2026-10-10T00:36:56.755086+00:00",
+  "source_manifest_sha256": "ae7d619051118d539d98679954ce4d4a6e97a5740b2550295f5a9241237f31bb",
+  "source_config_entries": 1033,
+  "provenance_entries": 1028,
+  "quadratic_frozen_manifest_entries_matched": 44,
+  "upstream_openai_module_count": 869,
+  "local_import_graph": "complete",
+  "scoped_theorem_text": "All six declaration texts match original first six exactly after text newline decoding.",
+  "checks": [
+    "Complete source/config inventory and SHA-256 identity",
+    "Every provenance file hash matches",
+    "Every one of the 44 quadratic frozen final manifest entries matches",
+    "Both scoped files retain all six original theorem texts",
+    "No missing local imported module"
+  ],
+  "limits": [
+    "This is not a Lean build or kernel replay.",
+    "Manuscript/PDF publication checks are recorded separately.",
+    "No complete inherited source-to-cache reconstruction."
+  ]
+}
