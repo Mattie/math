@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "record_type": "summary_of_audited_hosted_run",
+  "run": {
+    "url": "https://github.com/Mattie/math/actions/runs/38073797841",
+    "id": "38073797841",
+    "attempt": "1",
+    "commit": "3eea91146884ffcc6aa23a51b9c4eaad65cf7393",
+    "workflow": ".github/workflows/isolated-irrationality.yml",
+    "status": "passed",
+    "verification_started_utc": "2026-10-10T17:57:08Z",
+    "verification_finished_utc": "2026-10-10T18:46:34Z"
+  },
+  "target": {
+    "case": "quadratic-periods",
+    "module": "Solution",
+    "theorems": [
+      "CompareChallenge.pi_sqrt_exponent_two",
+      "CompareChallenge.pi_sqrt_eventual_bound",
+      "CompareChallenge.quadratic_log_exponent_two",
+      "CompareChallenge.quadratic_log_eventual_bound",
+      "CompareChallenge.imaginary_quadratic_exponent_two",
+      "CompareChallenge.imaginary_quadratic_eventual_bound"
+    ]
+  },
+  "host": {
+    "ImageOS": "ubuntu24",
+    "ImageVersion": "20261004.327.1",
+    "RUNNER_ENVIRONMENT": "github-hosted",
+    "XDG_RUNTIME_DIR": "/run/user/1001"
+  },
+  "checks": {
+    "tools": "passed",
+    "isolation": "passed",
+    "valid": "passed",
+    "mismatch": "passed",
+    "axiom": "passed",
+    "axiom_policy_controls": "passed",
+    "dependencies": "passed",
+    "comparison_and_kernels": "passed",
+    "all_packaged_modules_built": 1028,
+    "six_target_axiom_audit": "passed",
+    "protected_inputs_and_dependencies": "unchanged"
+  },
+  "boundary_probe_errno": {
+    "allowed": 0,
+    "challenge": 13,
+    "config": 13,
+    "tool": 13,
+    "outside": 13,
+    "symlink": 13,
+    "unix_stream": 97,
+    "unix_dgram": 97
+  },
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "tool_pins": {
+    "schema_version": 1,
+    "audited_revision": "3f4e514444214e562eababb4eecc5b6ffb818002",
+    "lean_version": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "lean_archive_sha256": "3013aba02bb8bf31b1cf8c9d956d60fb95bb1c10920dfe91abcaa59cb461ddac",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "rust": "1.99.0",
+    "exporter": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "comparator": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "go": "1.25.12"
+  },
+  "input_identities": {
+    "pins_file_sha256": "187d40141e389efc7c941e7392d2824f7aea8be9ea128af91050cb96ece3abca",
+    "verification_runner_sha256": "5dcd026a8d85b8150c948d7d2c6d723a03b40cf04c84e73a96c40136a07e4a7c",
+    "preflight_inputs": {
+      "preflight.py": "b6149c3a2265533769fdf3eade0c56b1bcd94c8ad3d128570ce1eca7eefbd1f8",
+      "boundary_probe.c": "1cf5105b89fa6207d4b5f8cc8d6c4b57370e91263abe82c81ed29c159fdd32ab"
+    },
+    "supporting_scripts": {
+      "verification/isolated-quadratic-periods/quadratic.py": "5dcd026a8d85b8150c948d7d2c6d723a03b40cf04c84e73a96c40136a07e4a7c",
+      "preprints/The-irrationality-exponent-of-real-and-imaginary-quadratic-periods-is-2-October-9-2026/scripts/check-axioms.py": "be3f5c512718e02bbc3019079b72edb0f5f4c379c922ed0401c81374a27035ec",
+      "verification/publication/lean-controls.sh": "f140df12410a0e398315d6911bc4299999e9cd44c0e9bbca02252d1e6538239e",
+      "verification/isolated-irrationality/verify.py": "7b4d86c1658b412e5ac2b305206d5d8fea466c92381e15fa9603a145468f0d5f"
+    },
+    "source_manifest_sha256": "ae7d619051118d539d98679954ce4d4a6e97a5740b2550295f5a9241237f31bb",
+    "dependency_lock_sha256": "33a5aeaa4a8f12d1cc3c1154038248cd7d4754bcf708cf4cd1851dcf61ec9e33",
+    "dependency_inventory_sha256": "44a59c0557727688b617ff6caaa1aa443c19cdfe288f6b23b81ed63140d2003c",
+    "candidate_inventory_sha256": "cf43de15861034c27876fa5e8ac92cb42bef88c3edc6e6b8423e772899181048",
+    "built_module_inventory_sha256": "d7fc5e1eb23120b68d402abc9fe919ce4e7a70b4a9b50df61a7254c902e91e87"
+  },
+  "service_limits": {
+    "unix_sockets": "RestrictAddressFamilies=~AF_UNIX",
+    "runtime_seconds": 14400,
+    "supplemental_build_seconds": 3600,
+    "memory_max": "12G",
+    "cpu_quota": "400%"
+  },
+  "artifact": {
+    "url": "https://github.com/Mattie/math/actions/runs/38073797841/artifacts/11679381885",
+    "id": 11679381885,
+    "name": "isolated-irrationality-quadratic-periods-3eea91146884ffcc6aa23a51b9c4eaad65cf7393-1",
+    "archive_sha256": "c0d4d603b9bf5beaa658907edcda1b92de150af1d8c4ea8772ea9d9f413931c5",
+    "size_bytes": 6506453,
+    "files": 91,
+    "receipt_sha256": "81145c1a6e08809c756277c1acbbfb4a20abcb67fb73e574c4729dbfa858b1f8",
+    "reported_expires_at": "2027-01-08T17:56:54Z"
+  },
+  "key_command_logs": [
+    {
+      "label": "valid-comparator",
+      "exit_code": 0,
+      "log": "logs/30-valid-comparator.log",
+      "log_sha256": "cf55473ae336d3eea4f1ecd8954bdb5e2da0a22848c080aeb04facbc67810ffc"
+    },
+    {
+      "label": "mismatch-comparator",
+      "exit_code": 1,
+      "log": "logs/32-mismatch-comparator.log",
+      "log_sha256": "15a8b82b6ea5c37eeca48ad7a38b1b100842bfea575a4a3a065b31d4a6c08024"
+    },
+    {
+      "label": "axiom-comparator",
+      "exit_code": 1,
+      "log": "logs/34-axiom-comparator.log",
+      "log_sha256": "111e8001ab0dfe8a0f01b8f8de8d0610c6d774614327133ca93d8b5af9de2e4d"
+    },
+    {
+      "label": "axiom-policy-controls",
+      "exit_code": 0,
+      "log": "logs/35-axiom-policy-controls.log",
+      "log_sha256": "d1aa040e718f9856adea9b4d1ac4537a04248baa1ffe1ccdbba9b73e166c1e6e"
+    },
+    {
+      "label": "six-target-comparator",
+      "exit_code": 0,
+      "log": "logs/56-six-target-comparator.log",
+      "log_sha256": "2fd4d9a4a5dd4026f04655e582d78fa1c42afd6ab0de85e813319861d7374c0d"
+    },
+    {
+      "label": "all-packaged-modules",
+      "exit_code": 0,
+      "log": "logs/57-all-packaged-modules.log",
+      "log_sha256": "26d45891279609dd23862a2b0e6aa129a48363a8713349c281c4c3ee9a05c8fe"
+    },
+    {
+      "label": "six-axiom-audit",
+      "exit_code": 0,
+      "log": "logs/58-six-axiom-audit.log",
+      "log_sha256": "340c798a664f1c7356b2b8bc8737dde905d9cd913fcced8ed9723d389215638b"
+    },
+    {
+      "label": "six-axiom-gate",
+      "exit_code": 0,
+      "log": "logs/59-six-axiom-gate.log",
+      "log_sha256": "d45b952e3315073a20618958b5283c73476e8930df9ddf85776f44fe6cc0d806"
+    }
+  ],
+  "local_archive_audit": {
+    "status": "passed",
+    "archive_sha256": "c0d4d603b9bf5beaa658907edcda1b92de150af1d8c4ea8772ea9d9f413931c5",
+    "receipt_sha256": "81145c1a6e08809c756277c1acbbfb4a20abcb67fb73e574c4729dbfa858b1f8",
+    "files": 91,
+    "commands": 60,
+    "retained_files": 27,
+    "built_modules": 1028,
+    "source_inventory_entries": 1033,
+    "candidate_inventory_entries": 1033,
+    "boundary_probe_errno": {
+      "allowed": 0,
+      "challenge": 13,
+      "config": 13,
+      "tool": 13,
+      "outside": 13,
+      "symlink": 13,
+      "unix_stream": 97,
+      "unix_dgram": 97
+    },
+    "dependency_revisions_verified": 9,
+    "supporting_script_identities_verified": true,
+    "unrestricted_boundary_baseline_verified": true,
+    "retained_axiom_log_gate": "passed",
+    "checked_tool_pins": true,
+    "service_limits_verified": true,
+    "comparator_result": "accepted",
+    "nanoda_result": "accepted",
+    "lean_default_kernel_result": "accepted"
+  },
+  "scope": "Fresh compilation of all 1,028 packaged proof modules, six-target standard comparison, Nanoda and Lean default-kernel acceptance, strict axiom audit, and exercised isolation controls.",
+  "evidence_limitations": [
+    "Lean and upstream Mathlib artifacts are trusted inputs. Both kernels share the exporter and comparator frontend.",
+    "The archive retains receipts, logs, checking inputs and inventories; it does not retain every compiled dependency or tool binary.",
+    "Protected byte preservation was enforced by the reviewed runner before its passed receipt; the local archive audit checks the retained identities and diagnostics.",
+    "No standalone proof export was retained by this hosted run. The existing published export and its historical verification remain separate and unchanged.",
+    "Exercised isolation controls are evidence for the observed cases, not universal sandbox soundness."
+  ]
+}
