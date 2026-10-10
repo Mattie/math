@@ -2,7 +2,9 @@
 
 Select `quadratic-periods` in the existing **Isolated irrationality verification**
 manual workflow, on the reviewed branch or commit. This case checks the published
-six-target package. A prepared workflow is not a completed proof run.
+six-target package. The [2026-10-10 hosted run passed](results/2026-10-10.md):
+all 1,028 packaged proof modules built, all six targets passed both kernels, and
+the retained evidence archive passed the local audit.
 
 The runner reuses the established hosted preflight, pinned tools, generated Lake
 configuration, dependency inventory, and sandbox invocation. The original `log`,
