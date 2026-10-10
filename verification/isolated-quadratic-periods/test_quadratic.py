@@ -1,11 +1,13 @@
 """Exercise new hosted-case boundaries without compiling or rechecking old proofs."""
 import io
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
 import sys
 import tempfile
+import textwrap
 from types import SimpleNamespace
 import unittest
 from unittest.mock import Mock, patch
@@ -20,6 +22,35 @@ class HostedFamilyTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.config = {"challenge_module": "Challenge", "solution_module": "Solution",
                        "theorem_names": list(q.TARGETS), "permitted_axioms": q.AXIOMS, "enable_nanoda": True}
+
+    def test_workflow_checks_capacity_script_before_execution(self):
+        workflow = (q.REPO / ".github/workflows/isolated-irrationality.yml").read_text()
+        step = workflow.split("      - name: Reserve disk before installing tools\n", 1)[1].split("      - uses:", 1)[0]
+        self.assertIn("VERIFICATION_CASE: ${{ inputs.case }}", step)
+        # Exercise the actual shell prefix through helper execution, before SDK ownership repair.
+        prefix = textwrap.dedent(step.split("        run: |\n", 1)[1].split("          # Cleanup", 1)[0])
+        name = "verification/publication/prepare-independent-runner.sh"
+        original = (q.REPO / name).read_bytes()
+        for changed in (False, True):
+            with self.subTest(changed=changed):
+                root = self.root / str(changed)
+                helper = root / name
+                helper.parent.mkdir(parents=True)
+                helper.write_bytes(original + (b"\n# unreviewed change\n" if changed else b""))
+                evidence = root / "isolated-irrationality/evidence"
+                evidence.mkdir(parents=True)
+                binary = root / "bin"
+                binary.mkdir()
+                # Replace only helper execution; real sha256sum and shell failure handling run.
+                (binary / "bash").write_text('#!/bin/bash\nprintf executed > "$EXECUTION_MARKER"\n')
+                (binary / "bash").chmod(0o755)
+                marker = root / "executed"
+                env = dict(os.environ, PATH=str(binary) + os.pathsep + os.environ["PATH"],
+                           RUNNER_TEMP=str(root), VERIFICATION_CASE="quadratic-periods", EXECUTION_MARKER=str(marker))
+                result = subprocess.run(["/bin/bash", "-c", prefix], cwd=root, env=env, capture_output=True, text=True)
+                self.assertEqual(result.returncode == 0, not changed, result.stderr)
+                self.assertEqual(marker.exists(), not changed)
+                self.assertIn("FAILED" if changed else "OK", (evidence / "capacity-input.log").read_text())
 
     def test_config_requires_all_six_targets_and_both_kernel_policy(self):
         q.check_configuration(self.config)

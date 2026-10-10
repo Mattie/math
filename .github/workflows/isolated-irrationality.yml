@@ -35,8 +35,15 @@ jobs:
           mkdir -p "$RUNNER_TEMP/isolated-irrationality/evidence"
           printf 'Verification has not completed.\n' > "$RUNNER_TEMP/isolated-irrationality/evidence/started.txt"
       - name: Reserve disk before installing tools
+        env:
+          VERIFICATION_CASE: ${{ inputs.case }}
         run: |
           set -euo pipefail
+          if [[ "$VERIFICATION_CASE" == quadratic-periods ]]; then
+            printf '%s\n' '3de51c75b00b595d30816bb643e61e7219ab9d611b39375762d0aa8855ed511c  verification/publication/prepare-independent-runner.sh' \
+              | sha256sum --check --strict - \
+              | tee "$RUNNER_TEMP/isolated-irrationality/evidence/capacity-input.log"
+          fi
           bash verification/publication/prepare-independent-runner.sh \
             2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/capacity.log"
           # Cleanup can remove this root; setup-go must recreate its contents as the runner.

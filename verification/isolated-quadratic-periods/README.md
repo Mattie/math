@@ -13,6 +13,8 @@ hosted pins come from `verification/irrationality-exponents/pins.json`; they are
 recorded as this run's tools, separately from the earlier local verification.
 Supporting Python and shell helpers must match committed reviewed hashes before
 import or execution. Their identities are checked again before a run can pass.
+The workflow separately checks the disk-preparation script before its first
+execution, retaining the hash-check diagnostic in `capacity-input.log`.
 
 The complete case requires:
 
