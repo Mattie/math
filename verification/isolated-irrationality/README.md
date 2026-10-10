@@ -9,11 +9,14 @@ requires separate authorization, including publication of its diagnostics.
 | `log` | Logarithms of positive rational numbers other than one | `log_rational_challenge` |
 | `arctan` | Arctangents of nonzero rational numbers | `OAI.Arctangent.rational_arctan_irrationality_and_bound` |
 | `imaginary` | `arctan(sqrt(2))/sqrt(2)` | `OAI.Imaginary.normalized_arctan_sqrt_two_irrationality_and_bound` |
+| `quadratic-periods` | Three quadratic-period families, six standard endpoints | [`Solution` and all packaged modules](../isolated-quadratic-periods/README.md) |
 
-Each target includes irrationality and the eventual rational-approximation lower
-bound expressing irrationality exponent two. The exact statements are the existing
+The original three targets include irrationality and the eventual rational-approximation
+lower bound expressing irrationality exponent two. Their exact statements are the
 Mathlib-only files in [`challenges`](../irrationality-exponents/challenges).
-The workflow requires a case selection and has no all-cases option.
+The workflow requires a case selection and has no all-cases option. The new
+`quadratic-periods` case uses its own runner and complete-module audit, described
+in the linked guide. The sequence and budgets below describe the original three cases.
 
 ## Frozen inputs and isolation
 
