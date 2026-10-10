@@ -12,6 +12,7 @@ on:
           - log
           - arctan
           - imaginary
+          - quadratic-periods
 
 permissions:
   contents: read
@@ -24,7 +25,7 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-24.04
-    timeout-minutes: 240
+    timeout-minutes: ${{ inputs.case == 'quadratic-periods' && 360 || 240 }}
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
@@ -50,10 +51,16 @@ jobs:
           VERIFICATION_CASE: ${{ inputs.case }}
         run: |
           set -euo pipefail
-          python3 -B verification/isolated-irrationality/verify.py \
-            --case "$VERIFICATION_CASE" \
-            --work-dir "$RUNNER_TEMP/isolated-irrationality" \
-            2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
+          if [[ "$VERIFICATION_CASE" == quadratic-periods ]]; then
+            python3 -B verification/isolated-quadratic-periods/quadratic.py \
+              --work-dir "$RUNNER_TEMP/isolated-irrationality" \
+              2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
+          else
+            python3 -B verification/isolated-irrationality/verify.py \
+              --case "$VERIFICATION_CASE" \
+              --work-dir "$RUNNER_TEMP/isolated-irrationality" \
+              2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
+          fi
       - name: Retain evidence, including failure diagnostics
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
