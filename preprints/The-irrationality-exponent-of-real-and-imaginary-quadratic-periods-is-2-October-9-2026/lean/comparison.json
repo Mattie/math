@@ -1,0 +1,18 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "CompareChallenge.pi_sqrt_exponent_two",
+    "CompareChallenge.pi_sqrt_eventual_bound",
+    "CompareChallenge.quadratic_log_exponent_two",
+    "CompareChallenge.quadratic_log_eventual_bound",
+    "CompareChallenge.imaginary_quadratic_exponent_two",
+    "CompareChallenge.imaginary_quadratic_eventual_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

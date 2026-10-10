@@ -1,0 +1,19 @@
+Running as unit: run-p18496-i3136.service; invocation ID: 75bf363c8ee4408291a6c653221224fc
+Building Challenge
+Build completed successfully (3 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, validation_control, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+Build completed successfully (3 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, validation_control, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running Lean default kernel on solution.
+Lean default kernel rejects the solution
+uncaught exception: while replaying declaration 'validation_control':
+(kernel) declaration type mismatch, 'validation_control' has type
+  Prop
+but it is expected to have type
+  True
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1.304s
+             CPU time consumed: 1.157s
+                   Memory peak: 116.5M (swap: 0B)

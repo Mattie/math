@@ -1,0 +1,118 @@
+{
+  "date_utc": "2026-10-09T19:41:02.4784801Z",
+  "comparator_exit": 0,
+  "nanoda": "accepted",
+  "lean_kernel_replay": "accepted",
+  "boundary_controls": "passed",
+  "semantic_controls": {
+    "simple_match": 0,
+    "simple_axiom_issue": 1,
+    "simple_mismatch": 1
+  },
+  "input_files_verified": 138494,
+  "export_sha256": "c012401cc4c8562cf23538934c25cc25d5c54e9c811eeced7150d3349610d2ec",
+  "export_bytes": 1281232401,
+  "structured_axiom_inventory": [
+    [
+      [
+        "str",
+        "propext"
+      ]
+    ],
+    [
+      [
+        "str",
+        "Quot"
+      ],
+      [
+        "str",
+        "sound"
+      ]
+    ],
+    [
+      [
+        "str",
+        "Classical"
+      ],
+      [
+        "str",
+        "choice"
+      ]
+    ]
+  ],
+  "evidence_class": "earlier receipt inspected; sanitized public derivative",
+  "original_receipt_sha256": "329a7a5895856c5345cc2d3ae9d5a3bc26adfd51a52fa28b354a5d46fe2876a4",
+  "original_target_count": 9,
+  "public_scoped_targets": [
+    "CompareChallenge.pi_sqrt_exponent_two",
+    "CompareChallenge.pi_sqrt_eventual_bound",
+    "CompareChallenge.quadratic_log_exponent_two",
+    "CompareChallenge.quadratic_log_eventual_bound",
+    "CompareChallenge.imaginary_quadratic_exponent_two",
+    "CompareChallenge.imaginary_quadratic_eventual_bound"
+  ],
+  "omitted_target_count": 3,
+  "original_scope": "The original bundle additionally contained three integral obligations; no integral source is packaged here.",
+  "limits": [
+    "Reused dependency caches; no full source bootstrap.",
+    "The six-target derivative has no new independent export replay.",
+    "Original export retained locally; no public download.",
+    "No human peer review, novelty certificate, or exhaustive checker audit."
+  ],
+  "tools": {
+    "lean": "4.34.1",
+    "lean_githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "comparator": "ca04cfc72b550331658ec314bf47685281bfd4bf",
+    "lean4export": "05d43a2bc773b40ecfdebb32294192a5ef756951",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"
+  },
+  "original_file_identities": [
+    {
+      "path": "project/Challenge.lean",
+      "bytes": 4058,
+      "sha256": "a81478560f30f71733850d14786bbc1416595935a1bf3a2fec904ddc22db4582"
+    },
+    {
+      "path": "project/StandardBridge.lean",
+      "bytes": 1743,
+      "sha256": "8416e69a981358017b4ba6ce4dc0a40ce13bd201d0333343f8cfe8842368c91a"
+    },
+    {
+      "path": "project/Solution.lean",
+      "bytes": 5271,
+      "sha256": "e4c866cf4573fe7ea828d2768a576f74f95921017c0a55f09f80b5f3459029a5"
+    },
+    {
+      "path": "project/Combined.lean",
+      "bytes": 2214,
+      "sha256": "83ec5f46f531b6cff9798622cebad463feaf1cb511fad539e79fd4e52910f219"
+    },
+    {
+      "path": "tools/lean/bin/lean",
+      "bytes": 9024,
+      "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+    },
+    {
+      "path": "tools/lean/bin/comparator",
+      "bytes": 122488776,
+      "sha256": "afa65e57a1770f5961efe7681626a9a1cd99705262421658abd30b705f66e4a2"
+    },
+    {
+      "path": "tools/lean/bin/lean4export",
+      "bytes": 233952032,
+      "sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1"
+    },
+    {
+      "path": "tools/nanoda_bin",
+      "bytes": 1352504,
+      "sha256": "a58f6590e9561bd296b7b187d75515fb3e6920defcaeac3582417579210e062d"
+    },
+    {
+      "path": "tools/landrun-bin",
+      "bytes": 7360080,
+      "sha256": "3974b08f5b912d3a6396dfddc2071b7cd3b932ac13800703d2547d3f06ccc5eb"
+    }
+  ]
+}

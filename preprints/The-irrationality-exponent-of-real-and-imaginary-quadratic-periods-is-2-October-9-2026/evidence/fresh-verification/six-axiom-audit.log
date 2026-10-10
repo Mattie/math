@@ -1,0 +1,12 @@
+Running as unit: run-p41238-i42497.service; invocation ID: 21154705a81e4d0d8d01b3e5f3e93e72
+'CompareChallenge.pi_sqrt_exponent_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompareChallenge.pi_sqrt_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompareChallenge.quadratic_log_exponent_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompareChallenge.quadratic_log_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompareChallenge.imaginary_quadratic_exponent_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompareChallenge.imaginary_quadratic_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 8.154s
+             CPU time consumed: 7.212s
+                   Memory peak: 864.9M (swap: 0B)

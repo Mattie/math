@@ -1,0 +1,19 @@
+Running as unit: run-p15288-i10429.service; invocation ID: 904e253d84d544d392b4ff50419823d0
+Building Challenge
+✔ [2/3] Built Challenge (352ms)
+Build completed successfully (3 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, preflight, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+✔ [2/3] Built Solution (1.1s)
+Build completed successfully (3 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, preflight, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 4.445s
+             CPU time consumed: 4.590s
+                   Memory peak: 451.3M (swap: 0B)

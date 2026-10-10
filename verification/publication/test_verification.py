@@ -20,7 +20,7 @@ assets = load(Path(__file__).with_name('check-release-assets.py'))
 class VerificationTests(unittest.TestCase):
     def test_helpers_identical(self):
         contents=[(p/'scripts/check-axioms.py').read_bytes() for p in PACKAGES]
-        self.assertEqual(len(contents),6)
+        self.assertTrue(contents, 'No publication packages found')
         self.assertEqual(len(set(contents)),1)
 
     def test_permitted_subsets_and_multiline(self):

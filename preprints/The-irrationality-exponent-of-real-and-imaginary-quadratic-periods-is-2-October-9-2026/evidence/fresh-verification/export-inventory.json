@@ -1,0 +1,78 @@
+{
+  "sha256": "bf413eeb013b7443f9444d6a3bf2c8d6428ce2fe04d8217172e789a6ba4f6b70",
+  "bytes": 1279948787,
+  "axiom_names_structured": [
+    [
+      [
+        "str",
+        "propext"
+      ]
+    ],
+    [
+      [
+        "str",
+        "Quot"
+      ],
+      [
+        "str",
+        "sound"
+      ]
+    ],
+    [
+      [
+        "str",
+        "Classical"
+      ],
+      [
+        "str",
+        "choice"
+      ]
+    ]
+  ],
+  "allowed_names_structured": [
+    [
+      [
+        "str",
+        "propext"
+      ]
+    ],
+    [
+      [
+        "str",
+        "Classical"
+      ],
+      [
+        "str",
+        "choice"
+      ]
+    ],
+    [
+      [
+        "str",
+        "Quot"
+      ],
+      [
+        "str",
+        "sound"
+      ]
+    ]
+  ],
+  "exact_three_standard_axioms": true,
+  "expected_targets": [
+    "CompareChallenge.pi_sqrt_exponent_two",
+    "CompareChallenge.pi_sqrt_eventual_bound",
+    "CompareChallenge.quadratic_log_exponent_two",
+    "CompareChallenge.quadratic_log_eventual_bound",
+    "CompareChallenge.imaginary_quadratic_exponent_two",
+    "CompareChallenge.imaginary_quadratic_eventual_bound"
+  ],
+  "found_targets": {
+    "CompareChallenge.pi_sqrt_exponent_two": "thm",
+    "CompareChallenge.pi_sqrt_eventual_bound": "thm",
+    "CompareChallenge.quadratic_log_exponent_two": "thm",
+    "CompareChallenge.quadratic_log_eventual_bound": "thm",
+    "CompareChallenge.imaginary_quadratic_exponent_two": "thm",
+    "CompareChallenge.imaginary_quadratic_eventual_bound": "thm"
+  },
+  "recognized_declaration_records": 114588
+}

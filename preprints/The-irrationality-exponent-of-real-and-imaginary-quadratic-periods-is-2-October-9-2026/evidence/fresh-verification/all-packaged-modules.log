@@ -1,0 +1,1284 @@
+Running as unit: run-p40140-i42356.service; invocation ID: 668cd19588cf428fbe7ac547f5afaa9c
+⚠ [9110/9945] Replayed PeriodicFamily.Arithmetic
+warning: PeriodicFamily/Arithmetic.lean:158:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.Arithmetic.lcm_mul_log_coeff_quadratic`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/Arithmetic.lean:186:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.Arithmetic.quadratic_C_mem`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/Arithmetic.lean:205:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.Arithmetic.cleared_polynomial_power_mem`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ℹ [9111/9945] Replayed StandardBridge
+info: StandardBridge.lean:42:0: 'CompareChallenge.standard_exponent_two_of_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9729/9957] Replayed Logarithm.ScaledApproximationErrors
+info: Logarithm/ScaledApproximationErrors.lean:36:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9730/9957] Built OAI.NumberTheory.PiExponent.Analysis.DyadicSummation (2.0s)
+✔ [9746/9957] Built OAI.NumberTheory.PiExponent.Analysis.DyadicPowers (4.1s)
+✔ [9761/9957] Built OAI.NumberTheory.PiExponent.Analysis.FlintHills (4.1s)
+⚠ [9771/9957] Replayed PeriodicFamily.PeriodData
+warning: PeriodicFamily/PeriodData.lean:31:15: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [omega, norm_rotation, Complex.norm_real, Real.norm_eq_abs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9772/9957] Built Imaginary.Order (7.5s)
+✔ [9782/9957] Built Logarithm.DeterminantData (18s)
+✔ [9783/9957] Built OAI.NumberTheory.PiExponent.Analysis.FiniteSpacing (18s)
+⚠ [9784/9957] Replayed Quadratic.Contexts
+warning: Quadratic/Contexts.lean:14:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Quadratic/Contexts.lean:33:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9787/9957] Replayed PeriodicFamily.ScaledArithmetic
+warning: PeriodicFamily/ScaledArithmetic.lean:13:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledArithmetic.integer_center_cast`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/ScaledArithmetic.lean:74:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledArithmetic.quadratic_power_cleared`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/ScaledArithmetic.lean:106:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledArithmetic.columnScale_pos`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/ScaledArithmetic.lean:112:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledArithmetic.log_columnScale`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/ScaledArithmetic.lean:184:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledArithmetic.column_log_cost_le`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9792/9957] Built OAI.NumberTheory.PiExponent.Approximation.AdmissibleMatrixInterpolation (19s)
+✔ [9796/9957] Built OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveImage (20s)
+⚠ [9802/9957] Replayed PeriodicFamily.DeterminantData
+warning: PeriodicFamily/DeterminantData.lean:59:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.DeterminantData.finiteDenominators_two_le`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/DeterminantData.lean:62:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.DeterminantData.logWeights_eq`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9803/9957] Replayed PeriodicFamily.ScaledApproximationErrors
+warning: PeriodicFamily/ScaledApproximationErrors.lean:8:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledApproximationErrors.actual_error_exp`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9813/9957] Built Logarithm.LogarithmParameters (17s)
+⚠ [9831/9957] Replayed Quadratic.LiteralAnalyticSummand
+warning: Quadratic/LiteralAnalyticSummand.lean:112:102: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Quadratic/LiteralAnalyticSummand.lean:113:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9837/9957] Replayed PeriodicFamily.LiteralAnalyticSummand
+warning: PeriodicFamily/LiteralAnalyticSummand.lean:114:102: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: PeriodicFamily/LiteralAnalyticSummand.lean:115:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9839/9957] Replayed PeriodicFamily.Parameters
+warning: PeriodicFamily/Parameters.lean:8:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.exists_period_parameters`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9840/9957] Replayed QuadraticReal3.LiteralAnalyticSummand
+warning: QuadraticReal3/LiteralAnalyticSummand.lean:111:102: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuadraticReal3/LiteralAnalyticSummand.lean:112:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9843/9957] Replayed QuadraticImag5.LiteralAnalyticSummand
+warning: QuadraticImag5/LiteralAnalyticSummand.lean:111:102: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuadraticImag5/LiteralAnalyticSummand.lean:112:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [9852/9957] Built OAI.NumberTheory.PiExponent.Analysis.LiteralAnalyticSummand (28s)
+✔ [9853/9957] Built Imaginary.Arithmetic (15s)
+⚠ [9861/9957] Built PeriodicGeometry.Nonvacuity (35s)
+warning: PeriodicGeometry/Nonvacuity.lean:26:52: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [9862/9957] Built OAI.NumberTheory.PiExponent.Analysis.DyadicSpacing (21s)
+✔ [9885/9957] Built OAI.NumberTheory.PiExponent.Jets.AdmissibleJetPackets (20s)
+✔ [9890/9957] Built OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveCoordinates (21s)
+⚠ [9897/9957] Replayed PeriodicFamily.Main
+warning: PeriodicFamily/Main.lean:21:19: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: PeriodicFamily/Main.lean:21:19: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: PeriodicFamily/Main.lean:35:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: PeriodicFamily/Main.lean:67:19: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: PeriodicFamily/Main.lean:67:19: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: PeriodicFamily/Main.lean:88:19: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: PeriodicFamily/Main.lean:88:19: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: PeriodicFamily/Main.lean:103:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ℹ [9902/9957] Replayed QuadraticAudit
+info: QuadraticAudit.lean:41:0: 'QuadraticPilotSpecification.real3_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:42:0: 'QuadraticPilotSpecification.imag5_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:43:0: 'QuadraticPilotSpecification.real3_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:44:0: 'QuadraticPilotSpecification.imag5_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:45:0: 'QuadraticPilotSpecification.real3_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:46:0: 'QuadraticPilotSpecification.imag5_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:47:0: def OAI.PiExponent.EventualLowerBound : ℝ → Prop :=
+fun x => ∀ (ν : ℝ), 2 < ν → ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-ν) ≤ |x - ↑p / ↑q|
+info: QuadraticAudit.lean:48:0: def OAI.PiExponent.irrationalityExponent : ℝ → ℝ :=
+fun x => sSup (OAI.PiExponent.ApproximationExponents x)
+info: QuadraticAudit.lean:49:0: structure OAI.QuadraticReal3.PeriodData : Type
+number of parameters: 0
+fields:
+  OAI.QuadraticReal3.PeriodData.num : OAI.QuadraticReal3.RealInt
+  OAI.QuadraticReal3.PeriodData.den : ℕ
+  OAI.QuadraticReal3.PeriodData.den_pos : 0 < self.den
+  OAI.QuadraticReal3.PeriodData.angle : ℝ
+  OAI.QuadraticReal3.PeriodData.angle_ne_zero : self.angle ≠ 0
+  OAI.QuadraticReal3.PeriodData.exp_angles : ∀ (s : Bool),
+      Complex.exp (OAI.QuadraticReal3.rotation s * ↑self.angle) =
+        (OAI.QuadraticReal3.RealInt.embedding s) self.num / ↑self.den
+  OAI.QuadraticReal3.PeriodData.powers_injective : ∀ (s : Bool),
+      Function.Injective fun n => ((OAI.QuadraticReal3.RealInt.embedding s) self.num / ↑self.den) ^ n
+  OAI.QuadraticReal3.PeriodData.sign : Bool
+constructor:
+  OAI.QuadraticReal3.PeriodData.mk (num : OAI.QuadraticReal3.RealInt) (den : ℕ) (den_pos : 0 < den) (angle : ℝ)
+    (angle_ne_zero : angle ≠ 0)
+    (exp_angles :
+      ∀ (s : Bool),
+        Complex.exp (OAI.QuadraticReal3.rotation s * ↑angle) = (OAI.QuadraticReal3.RealInt.embedding s) num / ↑den)
+    (powers_injective :
+      ∀ (s : Bool), Function.Injective fun n => ((OAI.QuadraticReal3.RealInt.embedding s) num / ↑den) ^ n)
+    (sign : Bool) : OAI.QuadraticReal3.PeriodData
+info: QuadraticAudit.lean:50:0: structure OAI.QuadraticImag5.PeriodData : Type
+number of parameters: 0
+fields:
+  OAI.QuadraticImag5.PeriodData.num : OAI.QuadraticImag5.QuadraticImag5Int
+  OAI.QuadraticImag5.PeriodData.den : ℕ
+  OAI.QuadraticImag5.PeriodData.den_pos : 0 < self.den
+  OAI.QuadraticImag5.PeriodData.angle : ℝ
+  OAI.QuadraticImag5.PeriodData.angle_ne_zero : self.angle ≠ 0
+  OAI.QuadraticImag5.PeriodData.exp_angle : Complex.exp (OAI.QuadraticImag5.rotation * ↑self.angle) =
+      OAI.QuadraticImag5.QuadraticImag5Int.toComplex self.num / ↑self.den
+  OAI.QuadraticImag5.PeriodData.powers_injective : Function.Injective fun n =>
+      (OAI.QuadraticImag5.QuadraticImag5Int.toComplex self.num / ↑self.den) ^ n
+constructor:
+  OAI.QuadraticImag5.PeriodData.mk (num : OAI.QuadraticImag5.QuadraticImag5Int) (den : ℕ) (den_pos : 0 < den)
+    (angle : ℝ) (angle_ne_zero : angle ≠ 0)
+    (exp_angle :
+      Complex.exp (OAI.QuadraticImag5.rotation * ↑angle) = OAI.QuadraticImag5.QuadraticImag5Int.toComplex num / ↑den)
+    (powers_injective : Function.Injective fun n => (OAI.QuadraticImag5.QuadraticImag5Int.toComplex num / ↑den) ^ n) :
+    OAI.QuadraticImag5.PeriodData
+⚠ [9904/9957] Replayed Combined
+warning: Combined.lean:18:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Combined.lean:36:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Combined.lean:49:0: 'OAI.Applications.imaginary_quadratic_all_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Combined.lean:50:0: 'OAI.Applications.imaginary_quadratic_all_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9906/9957] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupMargin (18s)
+ℹ [9907/9957] Replayed QuadraticFamilyAudit
+info: QuadraticFamilyAudit.lean:52:0: 'QuadraticFamilySpecification.real_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticFamilyAudit.lean:53:0: 'QuadraticFamilySpecification.imaginary_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticFamilyAudit.lean:54:0: 'QuadraticFamilySpecification.real_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticFamilyAudit.lean:55:0: 'QuadraticFamilySpecification.imaginary_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticFamilyAudit.lean:56:0: 'QuadraticFamilySpecification.golden_squared_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticFamilyAudit.lean:57:0: structure OAI.Quadratic.Context : Type
+number of parameters: 0
+fields:
+  OAI.Quadratic.Context.radicand : ℤ
+  OAI.Quadratic.Context.generator : ℂ
+  OAI.Quadratic.Context.generator_sq : self.generator * self.generator = ↑self.radicand
+  OAI.Quadratic.Context.no_int_square : ∀ (n : ℤ), n * n ≠ self.radicand
+  OAI.Quadratic.Context.bound : ℝ
+  OAI.Quadratic.Context.one_le_bound : 1 ≤ self.bound
+  OAI.Quadratic.Context.norm_generator_le : ‖self.generator‖ ≤ self.bound
+constructor:
+  OAI.Quadratic.Context.mk (radicand : ℤ) (generator : ℂ) (generator_sq : generator * generator = ↑radicand)
+    (no_int_square : ∀ (n : ℤ), n * n ≠ radicand) (bound : ℝ) (one_le_bound : 1 ≤ bound)
+    (norm_generator_le : ‖generator‖ ≤ bound) : OAI.Quadratic.Context
+info: QuadraticFamilyAudit.lean:58:0: OAI.Quadratic.real_quadratic_eventualLowerBound : ∀ (d : ℕ),
+  1 < d →
+    Squarefree d →
+      ∀ (A B : ℚ),
+        A ^ 2 - ↑d * B ^ 2 = 1 →
+          0 < ↑A + ↑B * √↑d → ↑A + ↑B * √↑d ≠ 1 → OAI.PiExponent.EventualLowerBound (Real.log (↑A + ↑B * √↑d) / √↑d)
+info: QuadraticFamilyAudit.lean:59:0: OAI.Quadratic.imaginary_quadratic_eventualLowerBound : ∀ (d : ℕ),
+  0 < d →
+    ∀ (x : ℝ) (A B : ℚ),
+      Complex.exp (Complex.I * ↑√↑d * ↑x) = ↑A + ↑B * (Complex.I * ↑√↑d) →
+        (∀ (n : ℕ), 0 < n → (↑A + ↑B * (Complex.I * ↑√↑d)) ^ n ≠ 1) → OAI.PiExponent.EventualLowerBound x
+✔ [9910/9957] Built Logarithm.LiteralAnalyticSummand (26s)
+ℹ [9912/9957] Replayed Audit
+info: Audit.lean:3:0: 'CompareChallenge.pi_sqrt_exponent_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:4:0: 'CompareChallenge.pi_sqrt_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:5:0: 'CompareChallenge.quadratic_log_exponent_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:6:0: 'CompareChallenge.quadratic_log_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:7:0: 'CompareChallenge.imaginary_quadratic_exponent_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:8:0: 'CompareChallenge.imaginary_quadratic_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9914/9957] Built OAI.NumberTheory.PiExponent.Analysis.FlintSine (45s)
+✔ [9915/9957] Built OAI.NumberTheory.PiExponent.Analysis.AnalyticAggregate (17s)
+✔ [9916/9957] Built Periodic.PeriodData (16s)
+✔ [9917/9957] Built Imaginary.PeriodData (14s)
+ℹ [9918/9957] Built PeriodicFamily.Audit (13s)
+info: PeriodicFamily/Audit.lean:9:0: theorem OAI.PeriodicFamily.rational_scaled_pi_explicit_bound : ∀ (r : Rat),
+  @LT.lt.{0} Rat Rat.instLT (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0))) r →
+    ∀ (nu : Real),
+      @LT.lt.{0} Real Real.instLT
+          (@OfNat.ofNat.{0} Real (nat_lit 2) (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast ⋯)) nu →
+        ∃ Q,
+          And (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) Q)
+            (∀ (p : Int) (q : Nat),
+              @LE.le.{0} Nat instLENat Q q →
+                @LE.le.{0} Real Real.instLE
+                  (@HPow.hPow.{0, 0, 0} Real Real Real (@instHPow.{0, 0} Real Real Real.instPow)
+                    (@Nat.cast.{0} Real Real.instNatCast q) (@Neg.neg.{0} Real Real.instNeg nu))
+                  (@abs.{0} Real Real.lattice Real.instAddGroup
+                    (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                      (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                        (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid)) Real.pi
+                        (@Rat.cast.{0} Real Real.instRatCast r).sqrt)
+                      (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                        (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                        (@Int.cast.{0} Real Real.instIntCast p) (@Nat.cast.{0} Real Real.instNatCast q))))) :=
+fun r hr nu hnu => OAI.PeriodicFamily.rational_scaled_pi_eventualLowerBound r hr nu hnu
+info: PeriodicFamily/Audit.lean:10:0: theorem OAI.PeriodicFamily.rational_scaled_pi_integer_explicit_bound : ∀ (r : Rat),
+  @LT.lt.{0} Rat Rat.instLT (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0))) r →
+    ∀ (nu : Real),
+      @LT.lt.{0} Real Real.instLT
+          (@OfNat.ofNat.{0} Real (nat_lit 2) (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast ⋯)) nu →
+        ∃ Q,
+          And (@LE.le.{0} Int Int.instLEInt (@OfNat.ofNat.{0} Int (nat_lit 2) (@instOfNat (nat_lit 2))) Q)
+            (∀ (p q : Int),
+              @LE.le.{0} Int Int.instLEInt Q q →
+                @LE.le.{0} Real Real.instLE
+                  (@HPow.hPow.{0, 0, 0} Real Real Real (@instHPow.{0, 0} Real Real Real.instPow)
+                    (@Int.cast.{0} Real Real.instIntCast q) (@Neg.neg.{0} Real Real.instNeg nu))
+                  (@abs.{0} Real Real.lattice Real.instAddGroup
+                    (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                      (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                        (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid)) Real.pi
+                        (@Rat.cast.{0} Real Real.instRatCast r).sqrt)
+                      (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                        (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                        (@Int.cast.{0} Real Real.instIntCast p) (@Int.cast.{0} Real Real.instIntCast q))))) :=
+fun r hr nu hnu =>
+  @Iff.mp
+    (OAI.PiExponent.EventualLowerBound
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        Real.pi (@Rat.cast.{0} Real Real.instRatCast r).sqrt))
+    (OAI.PiExponent.IntegerEventualLowerBound
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        Real.pi (@Rat.cast.{0} Real Real.instRatCast r).sqrt))
+    (OAI.PiExponent.eventualLowerBound_iff_integer
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        Real.pi (@Rat.cast.{0} Real Real.instRatCast r).sqrt))
+    (OAI.PeriodicFamily.rational_scaled_pi_eventualLowerBound r hr) nu hnu
+info: PeriodicFamily/Audit.lean:11:0: theorem OAI.PeriodicFamily.rational_scaled_pi_irrationalityExponent_eq_two : ∀ (r : Rat),
+  @LT.lt.{0} Rat Rat.instLT (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0))) r →
+    @Eq.{1} Real
+      (OAI.PiExponent.irrationalityExponent
+        (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+          Real.pi (@Rat.cast.{0} Real Real.instRatCast r).sqrt))
+      (@OfNat.ofNat.{0} Real (nat_lit 2) (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast ⋯)) :=
+fun r hr =>
+  @OAI.LogarithmExtension.exponent_eq_two_of_eventualLowerBound
+    (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+      Real.pi (@Rat.cast.{0} Real Real.instRatCast r).sqrt)
+    (OAI.PeriodicFamily.rational_scaled_pi_eventualLowerBound r hr)
+info: PeriodicFamily/Audit.lean:12:0: theorem OAI.PeriodicFamily.nat_scaled_pi_irrationalityExponent_eq_two : ∀ (rad : Nat),
+  @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) rad →
+    @Eq.{1} Real
+      (OAI.PiExponent.irrationalityExponent
+        (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+          Real.pi (@Nat.cast.{0} Real Real.instNatCast rad).sqrt))
+      (@OfNat.ofNat.{0} Real (nat_lit 2) (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast ⋯)) :=
+fun rad hrad =>
+  @OAI.LogarithmExtension.exponent_eq_two_of_eventualLowerBound
+    (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+      Real.pi (@Nat.cast.{0} Real Real.instNatCast rad).sqrt)
+    (OAI.PeriodicFamily.nat_scaled_pi_eventualLowerBound rad hrad)
+info: PeriodicFamily/Audit.lean:13:0: structure OAI.PeriodicFamily.PeriodData (rad : Nat) : Type
+number of parameters: 1
+fields:
+  OAI.PeriodicFamily.PeriodData.num : OAI.PeriodicFamily.Integral rad
+  OAI.PeriodicFamily.PeriodData.den : Nat
+  OAI.PeriodicFamily.PeriodData.den_pos : @LT.lt.{0} Nat instLTNat
+      (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) (@OAI.PeriodicFamily.PeriodData.den rad self)
+  OAI.PeriodicFamily.PeriodData.angle : Real
+  OAI.PeriodicFamily.PeriodData.angle_ne_zero : @Ne.{1} Real (@OAI.PeriodicFamily.PeriodData.angle rad self)
+      (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+  OAI.PeriodicFamily.PeriodData.exp_angle : @Eq.{1} Complex
+      (Complex.exp
+        (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+          (OAI.PeriodicFamily.rotation rad) ↑(@OAI.PeriodicFamily.PeriodData.angle rad self)))
+      (@HDiv.hDiv.{0, 0, 0} Complex Complex Complex
+        (@instHDiv.{0} Complex (@DivInvMonoid.toDiv.{0} Complex Complex.instDivInvMonoid))
+        (@DFunLike.coe.{1, 1, 1}
+          (@RingHom.{0, 0} (OAI.PeriodicFamily.Integral rad) Complex
+            (@Semiring.toNonAssocSemiring.{0} (OAI.PeriodicFamily.Integral rad)
+              (@Zsqrtd.instSemiring (@Neg.neg.{0} Int Int.instNegInt (@Nat.cast.{0} Int instNatCastInt rad))))
+            (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+          (OAI.PeriodicFamily.Integral rad) (fun x => Complex)
+          (@RingHom.instFunLike.{0, 0} (OAI.PeriodicFamily.Integral rad) Complex
+            (@Semiring.toNonAssocSemiring.{0} (OAI.PeriodicFamily.Integral rad)
+              (@Zsqrtd.instSemiring (@Neg.neg.{0} Int Int.instNegInt (@Nat.cast.{0} Int instNatCastInt rad))))
+            (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+          (@OAI.PeriodicFamily.Integral.toComplex rad) (@OAI.PeriodicFamily.PeriodData.num rad self))
+        (@Nat.cast.{0} Complex Complex.instNatCast (@OAI.PeriodicFamily.PeriodData.den rad self)))
+  OAI.PeriodicFamily.PeriodData.value_eq_one : @Eq.{1} Complex
+      (@HDiv.hDiv.{0, 0, 0} Complex Complex Complex
+        (@instHDiv.{0} Complex (@DivInvMonoid.toDiv.{0} Complex Complex.instDivInvMonoid))
+        (@DFunLike.coe.{1, 1, 1}
+          (@RingHom.{0, 0} (OAI.PeriodicFamily.Integral rad) Complex
+            (@Semiring.toNonAssocSemiring.{0} (OAI.PeriodicFamily.Integral rad)
+              (@Zsqrtd.instSemiring (@Neg.neg.{0} Int Int.instNegInt (@Nat.cast.{0} Int instNatCastInt rad))))
+            (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+          (OAI.PeriodicFamily.Integral rad) (fun x => Complex)
+          (@RingHom.instFunLike.{0, 0} (OAI.PeriodicFamily.Integral rad) Complex
+            (@Semiring.toNonAssocSemiring.{0} (OAI.PeriodicFamily.Integral rad)
+              (@Zsqrtd.instSemiring (@Neg.neg.{0} Int Int.instNegInt (@Nat.cast.{0} Int instNatCastInt rad))))
+            (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+          (@OAI.PeriodicFamily.Integral.toComplex rad) (@OAI.PeriodicFamily.PeriodData.num rad self))
+        (@Nat.cast.{0} Complex Complex.instNatCast (@OAI.PeriodicFamily.PeriodData.den rad self)))
+      (@OfNat.ofNat.{0} Complex (nat_lit 1) (@One.toOfNat1.{0} Complex Complex.instOne))
+constructor:
+  OAI.PeriodicFamily.PeriodData.mk {rad : Nat} (num : OAI.PeriodicFamily.Integral rad) (den : Nat)
+    (den_pos : @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) den)
+    (angle : Real)
+    (angle_ne_zero : @Ne.{1} Real angle (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)))
+    (exp_angle :
+      @Eq.{1} Complex
+        (Complex.exp
+          (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+            (OAI.PeriodicFamily.rotation rad) ↑angle))
+        (@HDiv.hDiv.{0, 0, 0} Complex Complex Complex
+          (@instHDiv.{0} Complex (@DivInvMonoid.toDiv.{0} Complex Complex.instDivInvMonoid))
+          (@DFunLike.coe.{1, 1, 1}
+            (@RingHom.{0, 0} (OAI.PeriodicFamily.Integral rad) Complex
+              (@Semiring.toNonAssocSemiring.{0} (OAI.PeriodicFamily.Integral rad)
+                (@Zsqrtd.instSemiring (@Neg.neg.{0} Int Int.instNegInt (@Nat.cast.{0} Int instNatCastInt rad))))
+              (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+            (OAI.PeriodicFamily.Integral rad) (fun x => Complex)
+            (@RingHom.instFunLike.{0, 0} (OAI.PeriodicFamily.Integral rad) Complex
+              (@Semiring.toNonAssocSemiring.{0} (OAI.PeriodicFamily.Integral rad)
+                (@Zsqrtd.instSemiring (@Neg.neg.{0} Int Int.instNegInt (@Nat.cast.{0} Int instNatCastInt rad))))
+              (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+            (@OAI.PeriodicFamily.Integral.toComplex rad) num)
+          (@Nat.cast.{0} Complex Complex.instNatCast den)))
+    (value_eq_one :
+      @Eq.{1} Complex
+        (@HDiv.hDiv.{0, 0, 0} Complex Complex Complex
+          (@instHDiv.{0} Complex (@DivInvMonoid.toDiv.{0} Complex Complex.instDivInvMonoid))
+          (@DFunLike.coe.{1, 1, 1}
+            (@RingHom.{0, 0} (OAI.PeriodicFamily.Integral rad) Complex
+              (@Semiring.toNonAssocSemiring.{0} (OAI.PeriodicFamily.Integral rad)
+                (@Zsqrtd.instSemiring (@Neg.neg.{0} Int Int.instNegInt (@Nat.cast.{0} Int instNatCastInt rad))))
+              (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+            (OAI.PeriodicFamily.Integral rad) (fun x => Complex)
+            (@RingHom.instFunLike.{0, 0} (OAI.PeriodicFamily.Integral rad) Complex
+              (@Semiring.toNonAssocSemiring.{0} (OAI.PeriodicFamily.Integral rad)
+                (@Zsqrtd.instSemiring (@Neg.neg.{0} Int Int.instNegInt (@Nat.cast.{0} Int instNatCastInt rad))))
+              (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+            (@OAI.PeriodicFamily.Integral.toComplex rad) num)
+          (@Nat.cast.{0} Complex Complex.instNatCast den))
+        (@OfNat.ofNat.{0} Complex (nat_lit 1) (@One.toOfNat1.{0} Complex Complex.instOne))) :
+    OAI.PeriodicFamily.PeriodData rad
+info: PeriodicFamily/Audit.lean:14:0: @[reducible] def OAI.PeriodicFamily.Integral : Nat → Type :=
+fun rad => Zsqrtd (@Neg.neg.{0} Int Int.instNegInt (@Nat.cast.{0} Int instNatCastInt rad))
+info: PeriodicFamily/Audit.lean:15:0: def OAI.PeriodicFamily.slopeBound : Nat → Real :=
+fun rad =>
+  @max.{0} Real Real.instMax
+    (@OfNat.ofNat.{0} Real (nat_lit 2)
+      (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast OAI.PeriodicFamily.slopeBound._proof_1))
+    (@Nat.cast.{0} Real Real.instNatCast rad).sqrt
+info: PeriodicFamily/Audit.lean:16:0: def OAI.PeriodicFamily.slopeCost : Nat → Real :=
+fun rad => Real.log (OAI.PeriodicFamily.slopeBound rad)
+info: PeriodicFamily/Audit.lean:18:0: 'OAI.PeriodicFamily.Integral.intCast_real_norm' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+info: PeriodicFamily/Audit.lean:19:0: 'OAI.PeriodicFamily.Arithmetic.quadratic_norm_one_le' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+info: PeriodicFamily/Audit.lean:20:0: 'OAI.PeriodicFamily.ScaledArithmetic.entry_truncatedLog_cleared_quadratic' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+info: PeriodicFamily/Audit.lean:21:0: 'OAI.PeriodicFamily.ScaledApproximationErrors.actual_error_exp' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+info: PeriodicFamily/Audit.lean:22:0: 'OAI.PeriodicFamily.GlobalMatrixInterpolation.cofinal_actualMatrix' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+info: PeriodicFamily/Audit.lean:23:0: 'OAI.PeriodicFamily.DeterminantContradiction.period_eventualLowerBound' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+info: PeriodicFamily/Audit.lean:24:0: 'OAI.PeriodicFamily.rationalRadicand_sqrt' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+info: PeriodicFamily/Audit.lean:25:0: 'OAI.PeriodicFamily.exp_rationalAngle' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+info: PeriodicFamily/Audit.lean:26:0: 'OAI.PeriodicFamily.rational_scaled_pi_explicit_bound' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+info: PeriodicFamily/Audit.lean:27:0: 'OAI.PeriodicFamily.rational_scaled_pi_irrationalityExponent_eq_two' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+✔ [9919/9957] Built Logarithm.GlobalMatrixInterpolation (14s)
+✔ [9920/9957] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupPolarization (13s)
+✔ [9921/9957] Built Logarithm.AnalyticAggregate (13s)
+✔ [9922/9957] Built Periodic.ScaledArithmetic (18s)
+✔ [9923/9957] Built Imaginary.Endpoint (16s)
+✔ [9924/9957] Built Imaginary.ScaledArithmetic (18s)
+ℹ [9925/9957] Built Logarithm.AxiomAudit (12s)
+info: Logarithm/AxiomAudit.lean:13:0: 'OAI.Logarithm.ScaledFormalJet.formalJet_polynomialFrameWord_vanishing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:14:0: 'OAI.Logarithm.eventually_exists_formalJet_auxiliaryPolynomial_nat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:15:0: 'OAI.Logarithm.logarithmic_coordinate_eq_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:16:0: 'OAI.Logarithm.logWord_field_order_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:17:0: 'OAI.Logarithm.no_excess_of_constant_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:18:0: 'OAI.Logarithm.distinct_Y_curve_inequality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:19:0: 'OAI.Logarithm.weighted_curve_inequality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:20:0: 'OAI.Logarithm.JetIdeals.radical_powerIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:21:0: 'OAI.Logarithm.JetIdeals.packet_zero_of_mem_polynomialIdeal_pow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:22:0: 'OAI.Logarithm.JetPackets.formalJet_packets_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:23:0: 'OAI.Logarithm.JetPackets.packets_surjective_of_polynomialIdeal_quotient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:24:0: 'OAI.Logarithm.rational_power_centers_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:25:0: 'OAI.Logarithm.exp_log_rational_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:26:0: 'OAI.Logarithm.JetProductLocalization.map_polynomialIdeal_eq_selected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:27:0: 'OAI.Logarithm.map_powerIdeal_eq_top_of_transcendental' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:28:0: 'OAI.Logarithm.polynomialIdeal_colength_eq_logContact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:29:0: 'OAI.Logarithm.JetCenterIdentification.centered_of_closedPoint_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:30:0: 'OAI.Logarithm.CompactIdeal.support_compactIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:31:0: 'OAI.Logarithm.CompactIdeal.restrict_compactIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:32:0: 'OAI.Logarithm.CompactIdeal.compactIdeal_isFinitePresentation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:33:0: 'OAI.LogarithmExtension.irrational_of_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:34:0: 'OAI.LogarithmExtension.exponent_eq_two_of_eventualLowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:35:0: 'OAI.Logarithm.blowup_exceptional_degree_eq_neg_contact_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:36:0: 'OAI.Logarithm.BlowupGeometry.interpolationBundle_ample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:37:0: 'OAI.Logarithm.eventually_weighted_logarithmic_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:38:0: 'OAI.Logarithm.eventually_weighted_truncated_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:39:0: 'OAI.Logarithm.ScaledMatrix.truncatedLogMatrix_surjective_of_formalLog_packets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:40:0: 'OAI.Logarithm.ScaledPeriodAnalytic.rational_scaled_periodMonomial_coeff_eq_rowTest' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:41:0: 'OAI.Logarithm.ScaledArithmetic.selectedMinor_arithmetic_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:42:0: 'OAI.Logarithm.ScaledApproximationErrors.actual_error_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:43:0: 'OAI.Logarithm.ScaledCollision.formal_scaled_collision_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:44:0: 'OAI.Logarithm.ScaledTranslation.det_matrix_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:45:0: 'OAI.Logarithm.LiteralAnalytic.actual_minor_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:46:0: 'OAI.Logarithm.LiteralAnalytic.actual_minor_analytic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:47:0: 'OAI.Logarithm.LiteralAnalytic.tendsto_analyticRemainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9926/9957] Built Logarithm.DeterminantContradiction (16s)
+✔ [9927/9957] Built OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveModel (18s)
+✔ [9928/9957] Built Periodic.ScaledApproximationErrors (11s)
+✔ [9929/9957] Built Imaginary.ScaledApproximationErrors (12s)
+✔ [9930/9957] Built Periodic.DeterminantData (14s)
+✔ [9931/9957] Built Logarithm.Main (8.8s)
+✔ [9932/9957] Built OAI.NumberTheory.PiExponent.Analysis.FlintConsequence (39s)
+✔ [9933/9957] Built Imaginary.DeterminantData (15s)
+✔ [9934/9957] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleCurveModelDegrees (11s)
+✔ [9935/9957] Built Periodic.Parameters (12s)
+ℹ [9936/9957] Built Logarithm.EndpointAudit (13s)
+info: Logarithm/EndpointAudit.lean:2:0: theorem OAI.Logarithm.rational_log_irrationalityExponent_eq_two : ∀ (a : ℚ),
+  0 < a → a ≠ 1 → OAI.PiExponent.irrationalityExponent (Real.log ↑a) = 2 :=
+fun a ha ha1 =>
+  OAI.LogarithmExtension.exponent_eq_two_of_eventualLowerBound
+    (OAI.Logarithm.DeterminantContradiction.rational_log_eventualLowerBound a ha ha1)
+info: Logarithm/EndpointAudit.lean:3:0: theorem OAI.Logarithm.rational_log_explicit_bound : ∀ (a : ℚ),
+  0 < a → a ≠ 1 → ∀ (ν : ℝ), 2 < ν → ∃ Q, 2 ≤ Q ∧ ∀ (p q : ℤ), Q ≤ q → ↑q ^ (-ν) ≤ |Real.log ↑a - ↑p / ↑q| :=
+fun a ha ha1 ν hν => OAI.Logarithm.rational_log_integer_eventualLowerBound a ha ha1 ν hν
+info: Logarithm/EndpointAudit.lean:4:0: 'OAI.Logarithm.GlobalMatrixInterpolation.cofinal_actualMatrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/EndpointAudit.lean:5:0: 'OAI.Logarithm.DeterminantContradiction.no_fixed_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/EndpointAudit.lean:6:0: 'OAI.Logarithm.DeterminantContradiction.rational_log_eventualLowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/EndpointAudit.lean:7:0: 'OAI.Logarithm.rational_log_irrationalityExponent_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/EndpointAudit.lean:8:0: 'OAI.Logarithm.log_two_irrationalityExponent_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/EndpointAudit.lean:9:0: 'OAI.Logarithm.log_three_irrationalityExponent_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/EndpointAudit.lean:10:0: 'OAI.Logarithm.rational_log_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9937/9957] Built OAI.NumberTheory.PiExponent.Approximation.InterpolationConsequence (13s)
+✔ [9938/9957] Built Imaginary.Parameters (13s)
+✔ [9939/9957] Built Periodic.GlobalMatrixInterpolation (16s)
+✔ [9940/9957] Built Imaginary.GlobalMatrixInterpolation (14s)
+⚠ [9941/9957] Built Periodic.LiteralAnalyticSummand (19s)
+warning: Periodic/LiteralAnalyticSummand.lean:113:102: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Periodic/LiteralAnalyticSummand.lean:114:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [9942/9957] Built OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveDegreeData (8.4s)
+⚠ [9943/9957] Built Imaginary.LiteralAnalyticSummand (16s)
+warning: Imaginary/LiteralAnalyticSummand.lean:111:102: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Imaginary/LiteralAnalyticSummand.lean:112:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [9944/9957] Built Periodic.AnalyticAggregate (6.7s)
+✔ [9945/9957] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupAmple (5.9s)
+✔ [9946/9957] Built Imaginary.AnalyticAggregate (6.7s)
+✔ [9947/9957] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleJetAmpleness (5.8s)
+✔ [9948/9957] Built Periodic.DeterminantContradiction (6.0s)
+✔ [9949/9957] Built Imaginary.DeterminantContradiction (6.9s)
+✔ [9950/9957] Built OAI.NumberTheory.PiExponent.Jets.AdmissibleJetSurjectivity (5.8s)
+✔ [9951/9957] Built Periodic.Main (6.1s)
+✔ [9952/9957] Built Imaginary.Main (5.9s)
+✔ [9953/9957] Built OAI.NumberTheory.PiExponent.Approximation.AdmissibleMatrixGeometry (5.9s)
+ℹ [9954/9957] Built Periodic.Audit (5.8s)
+info: Periodic/Audit.lean:7:0: theorem OAI.Periodic.scaled_pi_explicit_bound : ∀ (nu : Real),
+  @LT.lt.{0} Real Real.instLT
+      (@OfNat.ofNat.{0} Real (nat_lit 2) (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast ⋯)) nu →
+    ∃ Q,
+      And (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) Q)
+        (∀ (p : Int) (q : Nat),
+          @LE.le.{0} Nat instLENat Q q →
+            @LE.le.{0} Real Real.instLE
+              (@HPow.hPow.{0, 0, 0} Real Real Real (@instHPow.{0, 0} Real Real Real.instPow)
+                (@Nat.cast.{0} Real Real.instNatCast q) (@Neg.neg.{0} Real Real.instNeg nu))
+              (@abs.{0} Real Real.lattice Real.instAddGroup
+                (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                  (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                    (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid)) Real.pi
+                    (Real.sqrt
+                      (@OfNat.ofNat.{0} Real (nat_lit 2)
+                        (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast ⋯))))
+                  (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                    (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                    (@Int.cast.{0} Real Real.instIntCast p) (@Nat.cast.{0} Real Real.instNatCast q))))) :=
+fun nu hnu => OAI.Periodic.scaled_pi_eventualLowerBound nu hnu
+info: Periodic/Audit.lean:8:0: theorem OAI.Periodic.scaled_pi_integer_explicit_bound : ∀ (nu : Real),
+  @LT.lt.{0} Real Real.instLT
+      (@OfNat.ofNat.{0} Real (nat_lit 2) (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast ⋯)) nu →
+    ∃ Q,
+      And (@LE.le.{0} Int Int.instLEInt (@OfNat.ofNat.{0} Int (nat_lit 2) (@instOfNat (nat_lit 2))) Q)
+        (∀ (p q : Int),
+          @LE.le.{0} Int Int.instLEInt Q q →
+            @LE.le.{0} Real Real.instLE
+              (@HPow.hPow.{0, 0, 0} Real Real Real (@instHPow.{0, 0} Real Real Real.instPow)
+                (@Int.cast.{0} Real Real.instIntCast q) (@Neg.neg.{0} Real Real.instNeg nu))
+              (@abs.{0} Real Real.lattice Real.instAddGroup
+                (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                  (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                    (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid)) Real.pi
+                    (Real.sqrt
+                      (@OfNat.ofNat.{0} Real (nat_lit 2)
+                        (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast ⋯))))
+                  (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                    (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                    (@Int.cast.{0} Real Real.instIntCast p) (@Int.cast.{0} Real Real.instIntCast q))))) :=
+fun nu hnu =>
+  @Iff.mp
+    (OAI.PiExponent.EventualLowerBound
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        Real.pi
+        (Real.sqrt
+          (@OfNat.ofNat.{0} Real (nat_lit 2)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+              (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+                (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))))))))
+    (OAI.PiExponent.IntegerEventualLowerBound
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        Real.pi
+        (Real.sqrt
+          (@OfNat.ofNat.{0} Real (nat_lit 2)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+              (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+                (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))))))))
+    (OAI.PiExponent.eventualLowerBound_iff_integer
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        Real.pi
+        (Real.sqrt
+          (@OfNat.ofNat.{0} Real (nat_lit 2)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+              (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+                (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))))))))
+    OAI.Periodic.scaled_pi_eventualLowerBound nu hnu
+info: Periodic/Audit.lean:9:0: theorem OAI.Periodic.scaled_pi_irrationalityExponent_eq_two : @Eq.{1} Real
+  (OAI.PiExponent.irrationalityExponent
+    (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+      Real.pi
+      (Real.sqrt (@OfNat.ofNat.{0} Real (nat_lit 2) (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast ⋯)))))
+  (@OfNat.ofNat.{0} Real (nat_lit 2) (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast ⋯)) :=
+@OAI.LogarithmExtension.exponent_eq_two_of_eventualLowerBound
+  (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid)) Real.pi
+    (Real.sqrt
+      (@OfNat.ofNat.{0} Real (nat_lit 2)
+        (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+          (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+            (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))))))
+  OAI.Periodic.scaled_pi_eventualLowerBound
+info: Periodic/Audit.lean:10:0: def OAI.PiExponent.irrationalityExponent : Real → Real :=
+fun x => @sSup.{0} Real Real.instSupSet (OAI.PiExponent.ApproximationExponents x)
+info: Periodic/Audit.lean:11:0: def OAI.PiExponent.EventualLowerBound : Real → Prop :=
+fun x =>
+  ∀ (ν : Real),
+    @LT.lt.{0} Real Real.instLT
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast OAI.PiExponent.EventualLowerBound._proof_1))
+        ν →
+      ∃ Q,
+        And (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) Q)
+          (∀ (p : Int) (q : Nat),
+            @LE.le.{0} Nat instLENat Q q →
+              @LE.le.{0} Real Real.instLE
+                (@HPow.hPow.{0, 0, 0} Real Real Real (@instHPow.{0, 0} Real Real Real.instPow)
+                  (@Nat.cast.{0} Real Real.instNatCast q) (@Neg.neg.{0} Real Real.instNeg ν))
+                (@abs.{0} Real Real.lattice Real.instAddGroup
+                  (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub) x
+                    (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                      (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                      (@Int.cast.{0} Real Real.instIntCast p) (@Nat.cast.{0} Real Real.instNatCast q)))))
+info: Periodic/Audit.lean:12:0: structure OAI.Periodic.PeriodData : Type
+number of parameters: 0
+fields:
+  OAI.Periodic.PeriodData.num : OAI.Imaginary.ImaginaryInt
+  OAI.Periodic.PeriodData.den : Nat
+  OAI.Periodic.PeriodData.den_pos : @LT.lt.{0} Nat instLTNat
+      (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) self.den
+  OAI.Periodic.PeriodData.angle : Real
+  OAI.Periodic.PeriodData.angle_ne_zero : @Ne.{1} Real self.angle
+      (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+  OAI.Periodic.PeriodData.exp_angle : @Eq.{1} Complex
+      (Complex.exp
+        (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul) OAI.Imaginary.rotation
+          ↑self.angle))
+      (@HDiv.hDiv.{0, 0, 0} Complex Complex Complex
+        (@instHDiv.{0} Complex (@DivInvMonoid.toDiv.{0} Complex Complex.instDivInvMonoid))
+        (@DFunLike.coe.{1, 1, 1}
+          (@RingHom.{0, 0} OAI.Imaginary.ImaginaryInt Complex
+            (@Semiring.toNonAssocSemiring.{0} OAI.Imaginary.ImaginaryInt
+              (@Zsqrtd.instSemiring
+                (@Neg.neg.{0} Int Int.instNegInt (@OfNat.ofNat.{0} Int (nat_lit 2) (@instOfNat (nat_lit 2))))))
+            (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+          OAI.Imaginary.ImaginaryInt (fun x => Complex)
+          (@RingHom.instFunLike.{0, 0} OAI.Imaginary.ImaginaryInt Complex
+            (@Semiring.toNonAssocSemiring.{0} OAI.Imaginary.ImaginaryInt
+              (@Zsqrtd.instSemiring
+                (@Neg.neg.{0} Int Int.instNegInt (@OfNat.ofNat.{0} Int (nat_lit 2) (@instOfNat (nat_lit 2))))))
+            (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+          OAI.Imaginary.ImaginaryInt.toComplex self.num)
+        (@Nat.cast.{0} Complex Complex.instNatCast self.den))
+  OAI.Periodic.PeriodData.value_eq_one : @Eq.{1} Complex
+      (@HDiv.hDiv.{0, 0, 0} Complex Complex Complex
+        (@instHDiv.{0} Complex (@DivInvMonoid.toDiv.{0} Complex Complex.instDivInvMonoid))
+        (@DFunLike.coe.{1, 1, 1}
+          (@RingHom.{0, 0} OAI.Imaginary.ImaginaryInt Complex
+            (@Semiring.toNonAssocSemiring.{0} OAI.Imaginary.ImaginaryInt
+              (@Zsqrtd.instSemiring
+                (@Neg.neg.{0} Int Int.instNegInt (@OfNat.ofNat.{0} Int (nat_lit 2) (@instOfNat (nat_lit 2))))))
+            (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+          OAI.Imaginary.ImaginaryInt (fun x => Complex)
+          (@RingHom.instFunLike.{0, 0} OAI.Imaginary.ImaginaryInt Complex
+            (@Semiring.toNonAssocSemiring.{0} OAI.Imaginary.ImaginaryInt
+              (@Zsqrtd.instSemiring
+                (@Neg.neg.{0} Int Int.instNegInt (@OfNat.ofNat.{0} Int (nat_lit 2) (@instOfNat (nat_lit 2))))))
+            (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+          OAI.Imaginary.ImaginaryInt.toComplex self.num)
+        (@Nat.cast.{0} Complex Complex.instNatCast self.den))
+      (@OfNat.ofNat.{0} Complex (nat_lit 1) (@One.toOfNat1.{0} Complex Complex.instOne))
+constructor:
+  OAI.Periodic.PeriodData.mk (num : OAI.Imaginary.ImaginaryInt) (den : Nat)
+    (den_pos : @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) den)
+    (angle : Real)
+    (angle_ne_zero : @Ne.{1} Real angle (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)))
+    (exp_angle :
+      @Eq.{1} Complex
+        (Complex.exp
+          (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul) OAI.Imaginary.rotation
+            ↑angle))
+        (@HDiv.hDiv.{0, 0, 0} Complex Complex Complex
+          (@instHDiv.{0} Complex (@DivInvMonoid.toDiv.{0} Complex Complex.instDivInvMonoid))
+          (@DFunLike.coe.{1, 1, 1}
+            (@RingHom.{0, 0} OAI.Imaginary.ImaginaryInt Complex
+              (@Semiring.toNonAssocSemiring.{0} OAI.Imaginary.ImaginaryInt
+                (@Zsqrtd.instSemiring
+                  (@Neg.neg.{0} Int Int.instNegInt (@OfNat.ofNat.{0} Int (nat_lit 2) (@instOfNat (nat_lit 2))))))
+              (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+            OAI.Imaginary.ImaginaryInt (fun x => Complex)
+            (@RingHom.instFunLike.{0, 0} OAI.Imaginary.ImaginaryInt Complex
+              (@Semiring.toNonAssocSemiring.{0} OAI.Imaginary.ImaginaryInt
+                (@Zsqrtd.instSemiring
+                  (@Neg.neg.{0} Int Int.instNegInt (@OfNat.ofNat.{0} Int (nat_lit 2) (@instOfNat (nat_lit 2))))))
+              (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+            OAI.Imaginary.ImaginaryInt.toComplex num)
+          (@Nat.cast.{0} Complex Complex.instNatCast den)))
+    (value_eq_one :
+      @Eq.{1} Complex
+        (@HDiv.hDiv.{0, 0, 0} Complex Complex Complex
+          (@instHDiv.{0} Complex (@DivInvMonoid.toDiv.{0} Complex Complex.instDivInvMonoid))
+          (@DFunLike.coe.{1, 1, 1}
+            (@RingHom.{0, 0} OAI.Imaginary.ImaginaryInt Complex
+              (@Semiring.toNonAssocSemiring.{0} OAI.Imaginary.ImaginaryInt
+                (@Zsqrtd.instSemiring
+                  (@Neg.neg.{0} Int Int.instNegInt (@OfNat.ofNat.{0} Int (nat_lit 2) (@instOfNat (nat_lit 2))))))
+              (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+            OAI.Imaginary.ImaginaryInt (fun x => Complex)
+            (@RingHom.instFunLike.{0, 0} OAI.Imaginary.ImaginaryInt Complex
+              (@Semiring.toNonAssocSemiring.{0} OAI.Imaginary.ImaginaryInt
+                (@Zsqrtd.instSemiring
+                  (@Neg.neg.{0} Int Int.instNegInt (@OfNat.ofNat.{0} Int (nat_lit 2) (@instOfNat (nat_lit 2))))))
+              (@Semiring.toNonAssocSemiring.{0} Complex Complex.instSemiring))
+            OAI.Imaginary.ImaginaryInt.toComplex num)
+          (@Nat.cast.{0} Complex Complex.instNatCast den))
+        (@OfNat.ofNat.{0} Complex (nat_lit 1) (@One.toOfNat1.{0} Complex Complex.instOne))) :
+    OAI.Periodic.PeriodData
+info: Periodic/Audit.lean:13:0: structure OAI.PiExponent.PeriodicGeometryData : Type
+number of parameters: 0
+fields:
+  OAI.PiExponent.PeriodicGeometryData.m : Nat
+  OAI.PiExponent.PeriodicGeometryData.m_pos : @LT.lt.{0} Nat instLTNat
+      (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) self.m
+  OAI.PiExponent.PeriodicGeometryData.K : Nat
+  OAI.PiExponent.PeriodicGeometryData.curveDegreeWeights : Fin
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+      Rat
+  OAI.PiExponent.PeriodicGeometryData.curveJetWeights : Fin
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+      Rat
+  OAI.PiExponent.PeriodicGeometryData.curveDegreeWeights_pos : ∀
+      (i :
+        Fin
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))),
+      @LT.lt.{0} Rat Rat.instLT (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0)))
+        (self.curveDegreeWeights i)
+  OAI.PiExponent.PeriodicGeometryData.curveJetWeights_pos : ∀
+      (i :
+        Fin
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))),
+      @LT.lt.{0} Rat Rat.instLT (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0))) (self.curveJetWeights i)
+  OAI.PiExponent.PeriodicGeometryData.sigma : Rat
+  OAI.PiExponent.PeriodicGeometryData.sigma_pos : @LT.lt.{0} Real Real.instLT
+      (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+      (@Rat.cast.{0} Real Real.instRatCast self.sigma)
+  OAI.PiExponent.PeriodicGeometryData.curveCenters : Fin self.K → Fin self.m → Complex
+  OAI.PiExponent.PeriodicGeometryData.curveCenters_injective : ∀ (i : Fin self.m),
+      @Function.Injective.{1, 1} (Fin self.K) Complex fun j => self.curveCenters j i
+  OAI.PiExponent.PeriodicGeometryData.curve_volume : @LT.lt.{0} Real Real.instLT
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@Nat.cast.{0} Real Real.instNatCast self.K)
+            (@HPow.hPow.{0, 0, 0} Real Nat Real
+              (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+              (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+                (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                  (@OfNat.ofNat.{0} Real (nat_lit 3) (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast ⋯))
+                  (@Rat.cast.{0} Real Real.instRatCast self.sigma)))
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+          (∏ i, @Rat.cast.{0} Real Real.instRatCast (self.curveDegreeWeights i)))
+        (∏ i, @Rat.cast.{0} Real Real.instRatCast (self.curveJetWeights i)))
+      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+  OAI.PiExponent.PeriodicGeometryData.curve_fibre_volume : @LT.lt.{0} Real Real.instLT
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@Nat.cast.{0} Real Real.instNatCast self.K)
+            (@HPow.hPow.{0, 0, 0} Real Nat Real
+              (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+              (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+                (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                  (@OfNat.ofNat.{0} Real (nat_lit 3) (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast ⋯))
+                  (@Rat.cast.{0} Real Real.instRatCast self.sigma)))
+              self.m))
+          (∏ i, @Rat.cast.{0} Real Real.instRatCast (self.curveDegreeWeights (@Fin.succ self.m i))))
+        (∏ i, @Rat.cast.{0} Real Real.instRatCast (self.curveJetWeights (@Fin.succ self.m i))))
+      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+  OAI.PiExponent.PeriodicGeometryData.curve_coordinate_ratio : ∀ (i : Fin self.m),
+      @LT.lt.{0} Real Real.instLT
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+            (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+            (@Rat.cast.{0} Real Real.instRatCast self.sigma))
+          (@Rat.cast.{0} Real Real.instRatCast (self.curveDegreeWeights (@Fin.succ self.m i))))
+        (@Rat.cast.{0} Real Real.instRatCast (self.curveJetWeights (@Fin.succ self.m i)))
+  OAI.PiExponent.PeriodicGeometryData.curve_separated_weight_products : ∀
+      (A B :
+        Finset.{0}
+          (Fin
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))),
+      @Eq.{1} Nat
+          (@Finset.card.{0}
+            (Fin
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            A)
+          (@Finset.card.{0}
+            (Fin
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            B) →
+        ∀
+          (i :
+            Fin
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))),
+          @Ne.{1}
+              (Fin
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              i
+              (@OfNat.ofNat.{0}
+                (Fin
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (nat_lit 0)
+                (@Fin.instOfNat
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                  ⋯ (nat_lit 0))) →
+            @Membership.mem.{0, 0}
+                (Fin
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (Finset.{0}
+                  (Fin
+                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                (@SetLike.instMembership.{0, 0}
+                  (Finset.{0}
+                    (Fin
+                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                  (Fin
+                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (@Finset.instSetLike.{0}
+                    (Fin
+                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))))
+                A i →
+              i ∉ B →
+                (∀
+                    (j :
+                      Fin
+                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))),
+                    @LT.lt.{0}
+                        (Fin
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (@instLTFin
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        i j →
+                      Iff
+                        (@Membership.mem.{0, 0}
+                          (Fin
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                          (Finset.{0}
+                            (Fin
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                          (@SetLike.instMembership.{0, 0}
+                            (Finset.{0}
+                              (Fin
+                                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                            (Fin
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                            (@Finset.instSetLike.{0}
+                              (Fin
+                                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))))
+                          A j)
+                        (@Membership.mem.{0, 0}
+                          (Fin
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                          (Finset.{0}
+                            (Fin
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                          (@SetLike.instMembership.{0, 0}
+                            (Finset.{0}
+                              (Fin
+                                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                            (Fin
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                            (@Finset.instSetLike.{0}
+                              (Fin
+                                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) self.m
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))))
+                          B j)) →
+                  @LT.lt.{0} Real Real.instLT
+                    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                      (OAI.PiExponent.PersistentWeightComparison.comparisonConstant self.m
+                        (@Rat.cast.{0} Real Real.instRatCast self.sigma))
+                      (∏ j ∈ B, @Rat.cast.{0} Real Real.instRatCast (self.curveJetWeights j)))
+                    (∏ j ∈ A, @Rat.cast.{0} Real Real.instRatCast (self.curveDegreeWeights j))
+constructor:
+  OAI.PiExponent.PeriodicGeometryData.mk (m : Nat)
+    (m_pos : @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) m) (K : Nat)
+    (curveDegreeWeights curveJetWeights :
+      Fin
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+        Rat)
+    (curveDegreeWeights_pos :
+      ∀
+        (i :
+          Fin
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))),
+        @LT.lt.{0} Rat Rat.instLT (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0)))
+          (curveDegreeWeights i))
+    (curveJetWeights_pos :
+      ∀
+        (i :
+          Fin
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))),
+        @LT.lt.{0} Rat Rat.instLT (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0))) (curveJetWeights i))
+    (sigma : Rat)
+    (sigma_pos :
+      @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+        (@Rat.cast.{0} Real Real.instRatCast sigma))
+    (curveCenters : Fin K → Fin m → Complex)
+    (curveCenters_injective : ∀ (i : Fin m), @Function.Injective.{1, 1} (Fin K) Complex fun j => curveCenters j i)
+    (curve_volume :
+      @LT.lt.{0} Real Real.instLT
+        (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+              (@Nat.cast.{0} Real Real.instNatCast K)
+              (@HPow.hPow.{0, 0, 0} Real Nat Real
+                (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+                (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                  (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+                  (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                    (@OfNat.ofNat.{0} Real (nat_lit 3) (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast ⋯))
+                    (@Rat.cast.{0} Real Real.instRatCast sigma)))
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+            (∏ i, @Rat.cast.{0} Real Real.instRatCast (curveDegreeWeights i)))
+          (∏ i, @Rat.cast.{0} Real Real.instRatCast (curveJetWeights i)))
+        (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+    (curve_fibre_volume :
+      @LT.lt.{0} Real Real.instLT
+        (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+              (@Nat.cast.{0} Real Real.instNatCast K)
+              (@HPow.hPow.{0, 0, 0} Real Nat Real
+                (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+                (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                  (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+                  (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                    (@OfNat.ofNat.{0} Real (nat_lit 3) (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast ⋯))
+                    (@Rat.cast.{0} Real Real.instRatCast sigma)))
+                m))
+            (∏ i, @Rat.cast.{0} Real Real.instRatCast (curveDegreeWeights (@Fin.succ m i))))
+          (∏ i, @Rat.cast.{0} Real Real.instRatCast (curveJetWeights (@Fin.succ m i))))
+        (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+    (curve_coordinate_ratio :
+      ∀ (i : Fin m),
+        @LT.lt.{0} Real Real.instLT
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+              (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+              (@Rat.cast.{0} Real Real.instRatCast sigma))
+            (@Rat.cast.{0} Real Real.instRatCast (curveDegreeWeights (@Fin.succ m i))))
+          (@Rat.cast.{0} Real Real.instRatCast (curveJetWeights (@Fin.succ m i))))
+    (curve_separated_weight_products :
+      ∀
+        (A B :
+          Finset.{0}
+            (Fin
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))),
+        @Eq.{1} Nat
+            (@Finset.card.{0}
+              (Fin
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              A)
+            (@Finset.card.{0}
+              (Fin
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              B) →
+          ∀
+            (i :
+              Fin
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))),
+            @Ne.{1}
+                (Fin
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                i
+                (@OfNat.ofNat.{0}
+                  (Fin
+                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (nat_lit 0)
+                  (@Fin.instOfNat
+                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                    ⋯ (nat_lit 0))) →
+              @Membership.mem.{0, 0}
+                  (Fin
+                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (Finset.{0}
+                    (Fin
+                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                  (@SetLike.instMembership.{0, 0}
+                    (Finset.{0}
+                      (Fin
+                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                    (Fin
+                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                    (@Finset.instSetLike.{0}
+                      (Fin
+                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))))
+                  A i →
+                i ∉ B →
+                  (∀
+                      (j :
+                        Fin
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))),
+                      @LT.lt.{0}
+                          (Fin
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                          (@instLTFin
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                          i j →
+                        Iff
+                          (@Membership.mem.{0, 0}
+                            (Fin
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                            (Finset.{0}
+                              (Fin
+                                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                            (@SetLike.instMembership.{0, 0}
+                              (Finset.{0}
+                                (Fin
+                                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                              (Fin
+                                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                              (@Finset.instSetLike.{0}
+                                (Fin
+                                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))))
+                            A j)
+                          (@Membership.mem.{0, 0}
+                            (Fin
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                            (Finset.{0}
+                              (Fin
+                                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                            (@SetLike.instMembership.{0, 0}
+                              (Finset.{0}
+                                (Fin
+                                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                              (Fin
+                                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                              (@Finset.instSetLike.{0}
+                                (Fin
+                                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) m
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))))
+                            B j)) →
+                    @LT.lt.{0} Real Real.instLT
+                      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                        (OAI.PiExponent.PersistentWeightComparison.comparisonConstant m
+                          (@Rat.cast.{0} Real Real.instRatCast sigma))
+                        (∏ j ∈ B, @Rat.cast.{0} Real Real.instRatCast (curveJetWeights j)))
+                      (∏ j ∈ A, @Rat.cast.{0} Real Real.instRatCast (curveDegreeWeights j))) :
+    OAI.PiExponent.PeriodicGeometryData
+info: Periodic/Audit.lean:15:0: 'OAI.PiExponent.PeriodicGeometryData.exact_weighted_curve_inequality' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+info: Periodic/Audit.lean:16:0: 'OAI.PiExponent.PeriodicBlowupGeometry.interpolationBundle_ample' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+info: Periodic/Audit.lean:17:0: 'OAI.PiExponent.PeriodicInterpolation.eventual_packets' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+info: Periodic/Audit.lean:18:0: 'OAI.Periodic.GlobalMatrixInterpolation.cofinal_actualMatrix' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+info: Periodic/Audit.lean:19:0: 'OAI.Periodic.DeterminantContradiction.period_eventualLowerBound' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+info: Periodic/Audit.lean:20:0: 'OAI.Periodic.scaled_pi_explicit_bound' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+info: Periodic/Audit.lean:21:0: 'OAI.Periodic.scaled_pi_irrationalityExponent_eq_two' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+info: Periodic/Audit.lean:22:0: 'OAI.PiExponent.PeriodicNonvacuity.sample' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+ℹ [9955/9957] Built Imaginary.EndpointAudit (5.5s)
+info: Imaginary/EndpointAudit.lean:3:0: theorem OAI.Imaginary.normalized_arctan_sqrt_two_irrationalityExponent_eq_two : OAI.PiExponent.irrationalityExponent
+    (Real.arctan √2 / √2) =
+  2 :=
+OAI.LogarithmExtension.exponent_eq_two_of_eventualLowerBound OAI.Imaginary.normalized_arctan_sqrt_two_eventualLowerBound
+info: Imaginary/EndpointAudit.lean:4:0: OAI.Imaginary.normalized_arctan_sqrt_two_explicit_bound (nu : ℝ) (hnu : 2 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p q : ℤ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.arctan √2 / √2 - ↑p / ↑q|
+info: Imaginary/EndpointAudit.lean:5:0: 'OAI.Imaginary.rotation_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:6:0: 'OAI.Imaginary.ImaginaryInt.intCast_real_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:7:0: 'OAI.Imaginary.ImaginaryInt.toComplex_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:8:0: 'OAI.Imaginary.Arithmetic.quadratic_norm_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:9:0: 'OAI.Imaginary.Arithmetic.shifted_truncation_product_coeff_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Imaginary/EndpointAudit.lean:10:0: 'OAI.Imaginary.ScaledArithmetic.entry_truncatedLog_cleared_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Imaginary/EndpointAudit.lean:11:0: 'OAI.Imaginary.ScaledArithmetic.selectedMinor_entries_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Imaginary/EndpointAudit.lean:12:0: 'OAI.Imaginary.ScaledArithmetic.selectedMinor_arithmetic_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Imaginary/EndpointAudit.lean:13:0: 'OAI.Imaginary.ScaledApproximationErrors.actual_error_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:14:0: 'OAI.Imaginary.DeterminantData.actual_minor_arithmetic_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Imaginary/EndpointAudit.lean:15:0: 'OAI.Imaginary.GlobalMatrixInterpolation.cofinal_actualMatrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Imaginary/EndpointAudit.lean:16:0: 'OAI.Imaginary.LiteralAnalytic.norm_choiceScalar_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:17:0: 'OAI.Imaginary.LiteralAnalytic.norm_choiceMatrix_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:18:0: 'OAI.Imaginary.LiteralAnalytic.actual_minor_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:19:0: 'OAI.Imaginary.LiteralAnalytic.actual_minor_analytic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:20:0: 'OAI.Imaginary.exists_period_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:21:0: 'OAI.Imaginary.DeterminantContradiction.no_fixed_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:22:0: 'OAI.Imaginary.DeterminantContradiction.period_eventualLowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Imaginary/EndpointAudit.lean:23:0: 'OAI.Imaginary.exp_normalizedAngle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:24:0: 'OAI.Imaginary.alpha_no_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:25:0: 'OAI.Imaginary.alpha_powers_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:26:0: 'OAI.Imaginary.eventualLowerBound_div_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:27:0: 'OAI.Imaginary.period_irrationalityExponent_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:28:0: 'OAI.Imaginary.normalized_arctan_sqrt_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Imaginary/EndpointAudit.lean:29:0: 'OAI.Imaginary.normalized_arctan_sqrt_two_irrationalityExponent_eq_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Imaginary/EndpointAudit.lean:30:0: 'OAI.Imaginary.normalized_arctan_sqrt_two_integer_eventualLowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Imaginary/EndpointAudit.lean:31:0: 'OAI.Imaginary.normalized_arctan_sqrt_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9956/9957] Built Imaginary.FormalConjectures (5.9s)
+✔ [9957/9957] Built OAI.NumberTheory.PiExponent.Main (5.6s)
+Build completed successfully (9957 jobs).
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 2min 26.416s
+             CPU time consumed: 12min 28.719s
+                   Memory peak: 5.1G (swap: 0B)

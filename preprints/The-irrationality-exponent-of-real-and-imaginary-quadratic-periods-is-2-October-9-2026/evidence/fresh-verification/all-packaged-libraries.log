@@ -1,0 +1,353 @@
+Running as unit: run-p39178-i46016.service; invocation ID: 98de8caefe584dbc9f482538124f31ad
+✖ [1/82] Running OAI
+error: no such file or directory (error code: 2)
+  file: <verification-root>/run/project/OAI.lean
+✖ [3/82] Running Logarithm
+error: no such file or directory (error code: 2)
+  file: <verification-root>/run/project/Logarithm.lean
+✖ [5/82] Running Imaginary
+error: no such file or directory (error code: 2)
+  file: <verification-root>/run/project/Imaginary.lean
+✖ [7/82] Running Periodic
+error: no such file or directory (error code: 2)
+  file: <verification-root>/run/project/Periodic.lean
+✖ [9/82] Running PeriodicGeometry
+error: no such file or directory (error code: 2)
+  file: <verification-root>/run/project/PeriodicGeometry.lean
+✖ [11/82] Running PeriodicFamily
+error: no such file or directory (error code: 2)
+  file: <verification-root>/run/project/PeriodicFamily.lean
+✖ [13/82] Running Quadratic
+error: no such file or directory (error code: 2)
+  file: <verification-root>/run/project/Quadratic.lean
+✖ [15/82] Running QuadraticReal3
+error: no such file or directory (error code: 2)
+  file: <verification-root>/run/project/QuadraticReal3.lean
+✖ [17/82] Running QuadraticImag5
+error: no such file or directory (error code: 2)
+  file: <verification-root>/run/project/QuadraticImag5.lean
+✖ [9124/9914] Running job computation
+error: OAI: some modules have bad imports or could not be read
+error: Logarithm: some modules have bad imports or could not be read
+error: Imaginary: some modules have bad imports or could not be read
+error: Periodic: some modules have bad imports or could not be read
+error: PeriodicGeometry: some modules have bad imports or could not be read
+error: PeriodicFamily: some modules have bad imports or could not be read
+error: Quadratic: some modules have bad imports or could not be read
+error: QuadraticReal3: some modules have bad imports or could not be read
+error: QuadraticImag5: some modules have bad imports or could not be read
+⚠ [9129/9914] Replayed PeriodicFamily.Arithmetic
+warning: PeriodicFamily/Arithmetic.lean:158:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.Arithmetic.lcm_mul_log_coeff_quadratic`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/Arithmetic.lean:186:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.Arithmetic.quadratic_C_mem`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/Arithmetic.lean:205:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.Arithmetic.cleared_polynomial_power_mem`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ℹ [9130/9914] Replayed StandardBridge
+info: StandardBridge.lean:42:0: 'CompareChallenge.standard_exponent_two_of_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9749/9914] Replayed Logarithm.ScaledApproximationErrors
+info: Logarithm/ScaledApproximationErrors.lean:36:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9842/9914] Replayed Quadratic.Contexts
+warning: Quadratic/Contexts.lean:14:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Quadratic/Contexts.lean:33:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9847/9914] Replayed Quadratic.LiteralAnalyticSummand
+warning: Quadratic/LiteralAnalyticSummand.lean:112:102: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Quadratic/LiteralAnalyticSummand.lean:113:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9868/9914] Replayed PeriodicFamily.PeriodData
+warning: PeriodicFamily/PeriodData.lean:31:15: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [omega, norm_rotation, Complex.norm_real, Real.norm_eq_abs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9869/9914] Replayed PeriodicFamily.ScaledArithmetic
+warning: PeriodicFamily/ScaledArithmetic.lean:13:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledArithmetic.integer_center_cast`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/ScaledArithmetic.lean:74:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledArithmetic.quadratic_power_cleared`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/ScaledArithmetic.lean:106:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledArithmetic.columnScale_pos`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/ScaledArithmetic.lean:112:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledArithmetic.log_columnScale`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/ScaledArithmetic.lean:184:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledArithmetic.column_log_cost_le`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9870/9914] Replayed PeriodicFamily.DeterminantData
+warning: PeriodicFamily/DeterminantData.lean:59:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.DeterminantData.finiteDenominators_two_le`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: PeriodicFamily/DeterminantData.lean:62:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.DeterminantData.logWeights_eq`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9872/9914] Replayed PeriodicFamily.ScaledApproximationErrors
+warning: PeriodicFamily/ScaledApproximationErrors.lean:8:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.ScaledApproximationErrors.actual_error_exp`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9873/9914] Replayed PeriodicFamily.LiteralAnalyticSummand
+warning: PeriodicFamily/LiteralAnalyticSummand.lean:114:102: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: PeriodicFamily/LiteralAnalyticSummand.lean:115:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9875/9914] Replayed PeriodicFamily.Parameters
+warning: PeriodicFamily/Parameters.lean:8:0: automatically included section variable(s) unused in theorem `OAI.PeriodicFamily.exists_period_parameters`:
+  [Fact (0 < rad)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (0 < rad)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9877/9914] Replayed PeriodicFamily.Main
+warning: PeriodicFamily/Main.lean:21:19: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: PeriodicFamily/Main.lean:21:19: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: PeriodicFamily/Main.lean:35:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: PeriodicFamily/Main.lean:67:19: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: PeriodicFamily/Main.lean:67:19: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: PeriodicFamily/Main.lean:88:19: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: PeriodicFamily/Main.lean:88:19: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: PeriodicFamily/Main.lean:103:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9878/9914] Replayed Combined
+warning: Combined.lean:18:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Combined.lean:36:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Combined.lean:49:0: 'OAI.Applications.imaginary_quadratic_all_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Combined.lean:50:0: 'OAI.Applications.imaginary_quadratic_all_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9882/9914] Built QuadraticReal3.Order (27s)
+✔ [9883/9914] Built QuadraticImag5.Order (27s)
+✔ [9884/9914] Built QuadraticImag5.Arithmetic (5.7s)
+ℹ [9885/9914] Built Audit (47s)
+info: Audit.lean:3:0: 'CompareChallenge.pi_sqrt_exponent_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:4:0: 'CompareChallenge.pi_sqrt_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:5:0: 'CompareChallenge.quadratic_log_exponent_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:6:0: 'CompareChallenge.quadratic_log_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:7:0: 'CompareChallenge.imaginary_quadratic_exponent_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:8:0: 'CompareChallenge.imaginary_quadratic_eventual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9887/9914] Built QuadraticImag5.PeriodData (18s)
+✔ [9888/9914] Built QuadraticReal3.PeriodData (23s)
+✔ [9889/9914] Built QuadraticImag5.Scaling (51s)
+✔ [9890/9914] Built QuadraticReal3.Arithmetic (25s)
+ℹ [9891/9914] Built QuadraticFamilyAudit (52s)
+info: QuadraticFamilyAudit.lean:52:0: 'QuadraticFamilySpecification.real_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticFamilyAudit.lean:53:0: 'QuadraticFamilySpecification.imaginary_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticFamilyAudit.lean:54:0: 'QuadraticFamilySpecification.real_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticFamilyAudit.lean:55:0: 'QuadraticFamilySpecification.imaginary_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticFamilyAudit.lean:56:0: 'QuadraticFamilySpecification.golden_squared_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticFamilyAudit.lean:57:0: structure OAI.Quadratic.Context : Type
+number of parameters: 0
+fields:
+  OAI.Quadratic.Context.radicand : ℤ
+  OAI.Quadratic.Context.generator : ℂ
+  OAI.Quadratic.Context.generator_sq : self.generator * self.generator = ↑self.radicand
+  OAI.Quadratic.Context.no_int_square : ∀ (n : ℤ), n * n ≠ self.radicand
+  OAI.Quadratic.Context.bound : ℝ
+  OAI.Quadratic.Context.one_le_bound : 1 ≤ self.bound
+  OAI.Quadratic.Context.norm_generator_le : ‖self.generator‖ ≤ self.bound
+constructor:
+  OAI.Quadratic.Context.mk (radicand : ℤ) (generator : ℂ) (generator_sq : generator * generator = ↑radicand)
+    (no_int_square : ∀ (n : ℤ), n * n ≠ radicand) (bound : ℝ) (one_le_bound : 1 ≤ bound)
+    (norm_generator_le : ‖generator‖ ≤ bound) : OAI.Quadratic.Context
+info: QuadraticFamilyAudit.lean:58:0: OAI.Quadratic.real_quadratic_eventualLowerBound : ∀ (d : ℕ),
+  1 < d →
+    Squarefree d →
+      ∀ (A B : ℚ),
+        A ^ 2 - ↑d * B ^ 2 = 1 →
+          0 < ↑A + ↑B * √↑d → ↑A + ↑B * √↑d ≠ 1 → OAI.PiExponent.EventualLowerBound (Real.log (↑A + ↑B * √↑d) / √↑d)
+info: QuadraticFamilyAudit.lean:59:0: OAI.Quadratic.imaginary_quadratic_eventualLowerBound : ∀ (d : ℕ),
+  0 < d →
+    ∀ (x : ℝ) (A B : ℚ),
+      Complex.exp (Complex.I * ↑√↑d * ↑x) = ↑A + ↑B * (Complex.I * ↑√↑d) →
+        (∀ (n : ℕ), 0 < n → (↑A + ↑B * (Complex.I * ↑√↑d)) ^ n ≠ 1) → OAI.PiExponent.EventualLowerBound x
+✔ [9893/9914] Built QuadraticReal3.Endpoint (9.7s)
+✔ [9894/9914] Built QuadraticImag5.Endpoint (11s)
+✔ [9895/9914] Built QuadraticImag5.ScaledArithmetic (12s)
+✔ [9896/9914] Built QuadraticReal3.ScaledArithmetic (11s)
+✔ [9897/9914] Built QuadraticImag5.ScaledApproximationErrors (6.8s)
+✔ [9898/9914] Built QuadraticReal3.ScaledApproximationErrors (6.7s)
+✔ [9899/9914] Built QuadraticImag5.DeterminantData (8.8s)
+✔ [9900/9914] Built QuadraticReal3.DeterminantData (9.2s)
+✔ [9901/9914] Built QuadraticImag5.Parameters (9.2s)
+✔ [9902/9914] Built QuadraticImag5.GlobalMatrixInterpolation (16s)
+✔ [9903/9914] Built QuadraticReal3.Parameters (15s)
+✔ [9904/9914] Built QuadraticReal3.GlobalMatrixInterpolation (16s)
+⚠ [9905/9914] Built QuadraticImag5.LiteralAnalyticSummand (18s)
+warning: QuadraticImag5/LiteralAnalyticSummand.lean:111:102: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuadraticImag5/LiteralAnalyticSummand.lean:112:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9906/9914] Built QuadraticReal3.LiteralAnalyticSummand (18s)
+warning: QuadraticReal3/LiteralAnalyticSummand.lean:111:102: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuadraticReal3/LiteralAnalyticSummand.lean:112:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [9907/9914] Built QuadraticImag5.AnalyticAggregate (6.4s)
+✔ [9908/9914] Built QuadraticReal3.AnalyticAggregate (6.3s)
+✔ [9909/9914] Built QuadraticImag5.DeterminantContradiction (6.5s)
+✔ [9910/9914] Built QuadraticReal3.DeterminantContradiction (7.1s)
+✔ [9911/9914] Built QuadraticImag5.Main (5.5s)
+✔ [9912/9914] Built QuadraticReal3.Main (5.4s)
+ℹ [9913/9914] Built QuadraticAudit (5.3s)
+info: QuadraticAudit.lean:41:0: 'QuadraticPilotSpecification.real3_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:42:0: 'QuadraticPilotSpecification.imag5_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:43:0: 'QuadraticPilotSpecification.real3_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:44:0: 'QuadraticPilotSpecification.imag5_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:45:0: 'QuadraticPilotSpecification.real3_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:46:0: 'QuadraticPilotSpecification.imag5_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuadraticAudit.lean:47:0: def OAI.PiExponent.EventualLowerBound : ℝ → Prop :=
+fun x => ∀ (ν : ℝ), 2 < ν → ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-ν) ≤ |x - ↑p / ↑q|
+info: QuadraticAudit.lean:48:0: def OAI.PiExponent.irrationalityExponent : ℝ → ℝ :=
+fun x => sSup (OAI.PiExponent.ApproximationExponents x)
+info: QuadraticAudit.lean:49:0: structure OAI.QuadraticReal3.PeriodData : Type
+number of parameters: 0
+fields:
+  OAI.QuadraticReal3.PeriodData.num : OAI.QuadraticReal3.RealInt
+  OAI.QuadraticReal3.PeriodData.den : ℕ
+  OAI.QuadraticReal3.PeriodData.den_pos : 0 < self.den
+  OAI.QuadraticReal3.PeriodData.angle : ℝ
+  OAI.QuadraticReal3.PeriodData.angle_ne_zero : self.angle ≠ 0
+  OAI.QuadraticReal3.PeriodData.exp_angles : ∀ (s : Bool),
+      Complex.exp (OAI.QuadraticReal3.rotation s * ↑self.angle) =
+        (OAI.QuadraticReal3.RealInt.embedding s) self.num / ↑self.den
+  OAI.QuadraticReal3.PeriodData.powers_injective : ∀ (s : Bool),
+      Function.Injective fun n => ((OAI.QuadraticReal3.RealInt.embedding s) self.num / ↑self.den) ^ n
+  OAI.QuadraticReal3.PeriodData.sign : Bool
+constructor:
+  OAI.QuadraticReal3.PeriodData.mk (num : OAI.QuadraticReal3.RealInt) (den : ℕ) (den_pos : 0 < den) (angle : ℝ)
+    (angle_ne_zero : angle ≠ 0)
+    (exp_angles :
+      ∀ (s : Bool),
+        Complex.exp (OAI.QuadraticReal3.rotation s * ↑angle) = (OAI.QuadraticReal3.RealInt.embedding s) num / ↑den)
+    (powers_injective :
+      ∀ (s : Bool), Function.Injective fun n => ((OAI.QuadraticReal3.RealInt.embedding s) num / ↑den) ^ n)
+    (sign : Bool) : OAI.QuadraticReal3.PeriodData
+info: QuadraticAudit.lean:50:0: structure OAI.QuadraticImag5.PeriodData : Type
+number of parameters: 0
+fields:
+  OAI.QuadraticImag5.PeriodData.num : OAI.QuadraticImag5.QuadraticImag5Int
+  OAI.QuadraticImag5.PeriodData.den : ℕ
+  OAI.QuadraticImag5.PeriodData.den_pos : 0 < self.den
+  OAI.QuadraticImag5.PeriodData.angle : ℝ
+  OAI.QuadraticImag5.PeriodData.angle_ne_zero : self.angle ≠ 0
+  OAI.QuadraticImag5.PeriodData.exp_angle : Complex.exp (OAI.QuadraticImag5.rotation * ↑self.angle) =
+      OAI.QuadraticImag5.QuadraticImag5Int.toComplex self.num / ↑self.den
+  OAI.QuadraticImag5.PeriodData.powers_injective : Function.Injective fun n =>
+      (OAI.QuadraticImag5.QuadraticImag5Int.toComplex self.num / ↑self.den) ^ n
+constructor:
+  OAI.QuadraticImag5.PeriodData.mk (num : OAI.QuadraticImag5.QuadraticImag5Int) (den : ℕ) (den_pos : 0 < den)
+    (angle : ℝ) (angle_ne_zero : angle ≠ 0)
+    (exp_angle :
+      Complex.exp (OAI.QuadraticImag5.rotation * ↑angle) = OAI.QuadraticImag5.QuadraticImag5Int.toComplex num / ↑den)
+    (powers_injective : Function.Injective fun n => (OAI.QuadraticImag5.QuadraticImag5Int.toComplex num / ↑den) ^ n) :
+    OAI.QuadraticImag5.PeriodData
+Some required targets logged failures:
+- OAI
+- Logarithm
+- Imaginary
+- Periodic
+- PeriodicGeometry
+- PeriodicFamily
+- Quadratic
+- QuadraticReal3
+- QuadraticImag5
+- job computation
+error: build failed
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2min 13.233s
+             CPU time consumed: 5min 18.552s
+                   Memory peak: 11.2G (swap: 0B)

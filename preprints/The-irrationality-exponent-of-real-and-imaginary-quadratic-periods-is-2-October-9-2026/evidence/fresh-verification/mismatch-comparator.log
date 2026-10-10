@@ -1,0 +1,15 @@
+Running as unit: run-p15411-i27102.service; invocation ID: a636a6c0c3fe4a9da7356a982275f486
+Building Challenge
+✔ [2/3] Built Challenge (293ms)
+Build completed successfully (3 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, preflight, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+✔ [2/3] Built Solution (291ms)
+Build completed successfully (3 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, preflight, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+uncaught exception: Challenge and solution theorem statement do not match: 'preflight'
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2.570s
+             CPU time consumed: 2.763s
+                   Memory peak: 374.2M (swap: 0B)
