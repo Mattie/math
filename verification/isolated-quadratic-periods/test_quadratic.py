@@ -2,6 +2,9 @@
 import io
 import json
 from pathlib import Path
+import shutil
+import subprocess
+import sys
 import tempfile
 from types import SimpleNamespace
 import unittest
@@ -28,6 +31,39 @@ class HostedFamilyTests(unittest.TestCase):
         for change in alternatives:
             with self.subTest(change=change), self.assertRaises(RuntimeError):
                 q.check_configuration({**self.config, **change})
+
+    def test_changed_supporting_scripts_fail_before_import_or_tool_setup(self):
+        runner = self.root / "verification/isolated-quadratic-periods/quadratic.py"
+        runner.parent.mkdir(parents=True)
+        shutil.copyfile(q.HERE / "quadratic.py", runner)
+        for name in q.REVIEWED_SUPPORT:
+            destination = self.root / name
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(q.REPO / name, destination)
+        with patch.object(q, "REPO", self.root):
+            q.check_supporting_scripts()
+        for index, name in enumerate(q.REVIEWED_SUPPORT):
+            with self.subTest(helper=name):
+                helper = self.root / name
+                original = helper.read_bytes()
+                marker = self.root / "unreviewed-helper-executed"
+                # An altered Python helper would create this marker if imported.
+                helper.write_bytes(original + f"\nfrom pathlib import Path\nPath({str(marker)!r}).touch()\n".encode())
+                result = subprocess.run([sys.executable, "-B", str(runner)], capture_output=True, text=True)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn(f"Reviewed supporting script changed: {name}", result.stderr)
+                self.assertFalse(marker.exists())
+                work = self.root / f"work-{index}"
+                with patch.object(q, "REPO", self.root), \
+                        patch.dict(q.os.environ, {"RUNNER_TEMP": str(self.root)}), \
+                        patch.object(q.sys, "argv", ["quadratic.py", "--work-dir", str(work)]), \
+                        patch.object(q.Preflight, "setup") as setup, patch.object(q.sys, "stderr", io.StringIO()):
+                    self.assertEqual(q.main(), 1)
+                setup.assert_not_called()
+                receipt = json.loads((work / "evidence/receipt.json").read_text())
+                self.assertEqual(receipt["status"], "failed")
+                self.assertIn(f"Reviewed supporting script changed: {name}", receipt["error"])
+                helper.write_bytes(original)
 
     def test_manifest_selects_source_modules_without_inventing_library_roots(self):
         sources = {name: "sha" for name in ("OAI/Nested/Proof.lean", "Solution.lean", "Audit.lean",

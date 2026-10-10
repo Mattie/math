@@ -11,6 +11,8 @@ configuration, dependency inventory, and sandbox invocation. The original `log`,
 `arctan`, and `imaginary` cases and their recorded results remain unchanged. The
 hosted pins come from `verification/irrationality-exponents/pins.json`; they are
 recorded as this run's tools, separately from the earlier local verification.
+Supporting Python and shell helpers must match committed reviewed hashes before
+import or execution. Their identities are checked again before a run can pass.
 
 The complete case requires:
 

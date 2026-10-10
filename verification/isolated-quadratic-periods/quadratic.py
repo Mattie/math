@@ -8,6 +8,7 @@ the fresh proof check and are not modified or republished.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -17,6 +18,26 @@ import time
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[1]
+REVIEWED_SUPPORT = {
+    "verification/isolated-irrationality/verify.py": "7b4d86c1658b412e5ac2b305206d5d8fea466c92381e15fa9603a145468f0d5f",
+    "verification/isolated-preflight/preflight.py": "b6149c3a2265533769fdf3eade0c56b1bcd94c8ad3d128570ce1eca7eefbd1f8",
+    "verification/publication/lean-controls.sh": "f140df12410a0e398315d6911bc4299999e9cd44c0e9bbca02252d1e6538239e",
+    "preprints/The-irrationality-exponent-of-real-and-imaginary-quadratic-periods-is-2-October-9-2026/scripts/check-axioms.py":
+        "be3f5c512718e02bbc3019079b72edb0f5f4c379c922ed0401c81374a27035ec",
+}
+
+
+def check_supporting_scripts() -> None:
+    """Reject unreviewed helpers before import or execution, using only the stdlib."""
+    for name, expected in REVIEWED_SUPPORT.items():
+        with (REPO / name).open("rb") as source:
+            actual = hashlib.file_digest(source, "sha256").hexdigest()
+        if actual != expected:
+            raise RuntimeError(f"Reviewed supporting script changed: {name}")
+
+
+# Importing verify executes its module body, so pin it before importing helpers.
+check_supporting_scripts()
 sys.path.insert(0, str(HERE.parent / "isolated-irrationality"))
 from verify import (BASELINE, PINS, check_capacity, project, regular, save_json,
                     tree_identity, validate_work_dir)
@@ -61,6 +82,7 @@ def proof_modules(sources: dict[str, str]) -> list[str]:
 
 def check_inputs() -> tuple[dict, dict[str, str]]:
     """Validate the frozen package and reused hosted machinery before execution."""
+    check_supporting_scripts()
     for name, sha in BASELINE.items():
         require(digest(regular(REPO, name)) == sha, f"Reviewed hosted input changed: {name}")
     manifest = regular(SOURCE, "source-manifest.json")
