@@ -45,7 +45,7 @@ Actual positive, theorem-statement mismatch, forbidden-axiom, and filesystem/Uni
 
 The initial supplementary library-name sweep failed on absent root files. Its failed receipt and log are retained; a reviewed continuation explicitly selected every frozen proof module and completed the sweep. The accepted comparison and export were preserved unchanged. The comparison CPU allowance was raised from four to six cores during the build, with memory and isolation settings unchanged. The first source run and supplementary continuation share the same initially empty candidate build state; they are not two separate clean rebuilds.
 
-Lean and Mathlib came from identified trusted compiled artifacts, including a fresh official Mathlib cache fetch. Nanoda and Lean replay share the exporter and comparator frontend. The supplementary source sweep covers every packaged module; the independent two-kernel check covers the six-target exported declaration closure. The [fresh export transport](evidence/fresh-export.json) is retained locally, with compression and decompression identities checked, but has no public download.
+Lean and Mathlib came from identified trusted compiled artifacts, including a fresh official Mathlib cache fetch. Nanoda and Lean replay share the exporter and comparator frontend. The supplementary source sweep covers every packaged module; the independent two-kernel check covers the six-target exported declaration closure. The [fresh export transport](evidence/fresh-export.json) is now [publicly available](release-assets/README.md). A separate [October 10 download receipt](evidence/fresh-export-download-20261010.json) records anonymous retrieval and matching compressed and uncompressed identities. The original export and verification receipts retain their pre-release availability statements as historical facts.
 
 ## Earlier independent checking
 
@@ -76,7 +76,7 @@ systemd-run --user --wait --pipe --collect \
 
 This command is only the final invocation, not a replacement for the protected setup or controls. A locally writable dependency cache or a failing boundary probe invalidates an isolation claim. The source rebuild command above does not need an isolation claim.
 
-The completed fresh run is recorded above under its own six-target export identity. Exact replay of either retained export additionally requires that artifact; see [asset availability](release-assets/README.md). No public-download replay was performed because no public download exists.
+The completed fresh run is recorded above under its own six-target export identity. The exact six-target export can now be downloaded; see [asset availability](release-assets/README.md). Its public download was decompressed and matched to the previously checked bytes, without a new kernel replay. The earlier nine-target export remains locally retained only.
 
 ## Paper and publication checks
 

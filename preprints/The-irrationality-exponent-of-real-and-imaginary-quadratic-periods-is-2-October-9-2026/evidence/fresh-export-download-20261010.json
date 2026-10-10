@@ -1,0 +1,34 @@
+{
+  "evidence_class": "Anonymous public download and decompression identity check",
+  "status": "passed",
+  "completed_utc": "2026-10-10T13:59:46.990605+00:00",
+  "release_url": "https://github.com/Mattie/math/releases/tag/proof-exports-2026-10-10",
+  "tag": "proof-exports-2026-10-10",
+  "target_commit": "ce265b9dfa4e9f686649d09b00ac11e880b7c483",
+  "public_url": "https://github.com/Mattie/math/releases/download/proof-exports-2026-10-10/quadratic-family-six-target-export-20261010.ndjson.zst",
+  "authentication": "none; no Authorization header or cookies",
+  "inventory_url": "https://github.com/Mattie/math/releases/download/proof-exports-2026-10-10/fresh-export-distribution.json",
+  "inventory_sha256": "373507029622a49faf5ea9c0dff09e3d2cf6350ef1046aee2a3a7dffc29b5cbf",
+  "checks": {
+    "file": "quadratic-family-six-target-export-20261010.ndjson.zst",
+    "compressed_bytes": 209292318,
+    "compressed_sha256": "dfdfb837e927dfd72e7249ade14d199c6ba38410627f3329918e160e4a523442",
+    "uncompressed_bytes": 1279948787,
+    "uncompressed_sha256": "bf413eeb013b7443f9444d6a3bf2c8d6428ce2fe04d8217172e789a6ba4f6b70",
+    "privacy_pattern_counts": {
+      "windows_profile": 0,
+      "unix_home": 0,
+      "private_key": 0,
+      "github_token": 0
+    },
+    "result": "passed",
+    "scope": "Transport, decompression identity and bounded privacy scan; no kernel replay"
+  },
+  "original_verification_receipt": "evidence/fresh-verification.json",
+  "original_verification_receipt_sha256": "8265f902ed37891e296c68786cff802f6b30cf8b934fbe62ca2a8545e7f7a1f5",
+  "kernel_replay_performed": false,
+  "limits": [
+    "Byte identity and retrieval establish distribution, not a new proof check.",
+    "The original six-target verification is reused unchanged; the earlier nine-target export is not distributed."
+  ]
+}
