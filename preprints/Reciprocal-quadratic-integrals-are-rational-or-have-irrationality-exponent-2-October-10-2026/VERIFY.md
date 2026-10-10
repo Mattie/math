@@ -25,6 +25,8 @@ A [fresh cached build](evidence/package-build.json) compiled all 20 integral pro
 
 Independent model reviews assessed the original mathematical text, statement correspondence and retained evidence. Subsequent abstract, prose and reference edits preserved the mathematical statements and proof bytes. Automated checks and model review are distinct from human mathematical peer review.
 
+The dedicated [GitHub isolated workflow](../../verification/isolated-reciprocal-quadratic/README.md) checks the same seven endpoints in two fresh candidate projects, then builds all packaged proof modules and audits the allowed axioms. It is prepared for manual execution; local preparation tests do not constitute a hosted proof result. The earlier evidence above remains unchanged.
+
 The latest [abstract sentence revision](evidence/abstract-sentence.json) replaces one explanatory sentence with the author's selected wording. The current [PDF inspection](evidence/pdf-check.json) covers all six pages. Earlier editorial and paper-build receipts identify their earlier artifact versions.
 
 The [repository integration](evidence/repository-integration.json) adds 24 unchanged upstream modules to retain the complete 869-module upstream inventory and adopts the repository's shared axiom checker. The integral sources and paper are unchanged. Earlier build receipts describe the preceding package inventory; no additional proof rebuild or replay is claimed.

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-10",
+  "status": "preparation-tested",
+  "scope": "Python and shell preparation tests only; no tools fetched, Lean builds, sandbox controls or kernel checks executed. No hosted verification result.",
+  "environment": "Linux Python 3.12.3 under WSL; package integrity also checked on Windows",
+  "files": {
+    "verification/isolated-reciprocal-quadratic/reciprocal.py": "4baa7066ff706e13b5d0c4960f46cd0c0cd63fd86cf73207a2f4dfc8dce072e8",
+    "verification/isolated-reciprocal-quadratic/test_reciprocal.py": "3ce6c80b8ffd478b72c40565cc6093b48695cbd3e464189290a9865c5cf0e718",
+    ".github/workflows/isolated-irrationality.yml": "28e6def4fb106e5aa6a548192d337af4a08ccb4e9011298d29719cafb643fee9",
+    ".github/workflows/verify.yml": "51172de70530409b45abf2850de05c4760fc695002f734ce1d601dc2ed7cbf04"
+  },
+  "test_suites": [
+    {
+      "path": "verification/isolated-reciprocal-quadratic/test_reciprocal.py",
+      "tests": 12,
+      "status": "passed"
+    },
+    {
+      "path": "verification/isolated-quadratic-periods/test_quadratic.py",
+      "tests": 11,
+      "status": "passed"
+    },
+    {
+      "path": "verification/isolated-irrationality/test_verify.py",
+      "tests": 17,
+      "status": "passed"
+    },
+    {
+      "path": "verification/publication/test_verification.py",
+      "tests": 8,
+      "status": "passed"
+    }
+  ],
+  "real_preparation": "Test invokes main in preparation-only mode with the real frozen package; both candidate trees are created, external dependency tree stays empty, no setup or commands occur, and reuse is rejected.",
+  "package_integrity": {
+    "source_files": 986,
+    "status": "passed",
+    "source_manifest_sha256": "ce50a6ddd737466e7354f7ee72699f03a14bd89bf330a78d6244bcffa8a7641e"
+  },
+  "independent_review": {
+    "result": "No remaining blockers in source/preparation review",
+    "report_sha256": "4045474802089761c354e3f6c536f883b18dbff6515eea23e4c5aef05806b0f2"
+  },
+  "next_step": "Publish reviewed branch and run reciprocal-quadratic on GitHub after authorization."
+}
