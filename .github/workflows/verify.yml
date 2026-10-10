@@ -67,6 +67,7 @@ jobs:
         include:
           - preprint: The-irrationality-exponent-of-real-and-imaginary-quadratic-periods-is-2-October-9-2026
             verify_script: lean/verify.sh
+            fetch_mathlib_cache: true
           - preprint: The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026
             verify_script: lean/verify.sh
           - preprint: The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026
@@ -89,6 +90,11 @@ jobs:
           curl --fail --location --silent --show-error https://elan.lean-lang.org/elan-init.sh -o /tmp/elan-init.sh
           sh /tmp/elan-init.sh -y --no-modify-path --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch pinned Mathlib cache
+        if: matrix.fetch_mathlib_cache == true
+        run: |
+          cd lean
+          lake exe cache get
       - name: Exercise axiom rejection controls
         run: |
           cd lean
