@@ -1,0 +1,23 @@
+{
+  "sha256": "f4d2a0e759e1ed81c7a82fb37292fdd613fcae36beed724322ffc8b5e831631e",
+  "pages": 6,
+  "metadata": {
+    "/Creator": "LaTeX with hyperref",
+    "/Title": "Reciprocal quadratic integrals are rational or have irrationality exponent 2",
+    "/Author": "Ryan Matthew Casper",
+    "/Producer": "xdvipdfmx (0.1)",
+    "/CreationDate": "D:20261010201432-00'00'"
+  },
+  "links": [
+    "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026",
+    "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026",
+    "https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd/preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026",
+    "https://github.com/Mattie/math/tree/a93fdbe5e5aef90a9d38d805848abb07a173bfb1/preprints/The-irrationality-exponent-of-real-and-imaginary-quadratic-periods-is-2-October-9-2026",
+    "https://github.com/Mattie/math/tree/a93fdbe5e5aef90a9d38d805848abb07a173bfb1/preprints/The-irrationality-exponent-of-arctan-sqrt2-over-sqrt2-is-2-October-7-2026",
+    "https://github.com/Mattie/math/tree/a93fdbe5e5aef90a9d38d805848abb07a173bfb1/preprints/The-irrationality-exponent-of-arctan-sqrt2-over-sqrt2-is-2-October-7-2026",
+    "https://github.com/Mattie/math/tree/a93fdbe5e5aef90a9d38d805848abb07a173bfb1/preprints/The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026",
+    "https://github.com/Mattie/math/tree/4aa817179b5a81358dcdefeb1d454a31ab2f2c27/preprints/The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026"
+  ],
+  "margin_flags": [],
+  "visual_review": "Coordinator inspected all six rendered pages after the abstract sentence replacement; no visual defects observed."
+}

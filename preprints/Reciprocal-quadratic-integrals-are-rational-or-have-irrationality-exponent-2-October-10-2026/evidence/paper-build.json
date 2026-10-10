@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "Portable paper build executed in a separate scratch directory with Python 3, Pandoc 3.6.4 and Tectonic 0.17.0. All six extracted page texts and decoded PDF page content streams match the visually inspected deliverable; metadata timestamps can differ.",
+  "checked_pdf_sha256": "44c79f5f5383e530f0f90bc57657b972aab8232cac10f680c405405a46d99774",
+  "rebuilt_pdf_sha256": "0462974c49c1b96513410bb87575739e2e43590ebdfec429ccc1cfe12a757107",
+  "scripts": {
+    "build-paper.sh": "433b5359712abd7cedf9413dcbb1c2467fc2be464f2ffa70c388ddebfb7c4cdd",
+    "prepare-manuscript.py": "7e9bb226ca95ee90c60bcbcaf39a016eef8df404e1e0a841f81481661e3a1806"
+  },
+  "historical_scope": "This receipt describes the bibliography revision before the later abstract sentence update; see abstract-sentence.json and pdf-check.json for the current manuscript and PDF."
+}

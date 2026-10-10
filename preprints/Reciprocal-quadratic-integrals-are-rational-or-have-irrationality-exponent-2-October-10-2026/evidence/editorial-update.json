@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-10",
+  "change": "Bibliography update to pinned public quadratic-period and individual normalized-value papers; unpublished combined-manuscript reference removed.",
+  "repository_revision": "a93fdbe5e5aef90a9d38d805848abb07a173bfb1",
+  "before_manuscript_sha256": "38cfb10fd442c2a8172c32680a59bfa4c48c7ef076f3628c4c61a050c37a3d94",
+  "after_manuscript_sha256": "4092056c4974ad3a9a06812936eafb3e3ef872893188a0e29d10586bbc20e24c",
+  "paper_sha256": "44c79f5f5383e530f0f90bc57657b972aab8232cac10f680c405405a46d99774",
+  "scope": "Abstract, mathematical exposition, theorem statements, Lean source and historical acceptance receipts unchanged. Coordinator editorial assessment; no new independent mathematical review or kernel replay.",
+  "historical_receipts": {
+    "positive-integralcheck": "a95d796e5e4fdb51305129392f1f1afcc23504340bc63b48de57160d40ee3524",
+    "classification-check": "7326c9d88e1b97460ddb8cab6c3d9a43c5d66b04a4b73fc8388c3acaa4fc846c"
+  },
+  "historical_scope": "This receipt describes the bibliography revision before the later abstract sentence update; see abstract-sentence.json and pdf-check.json for the current manuscript and PDF."
+}

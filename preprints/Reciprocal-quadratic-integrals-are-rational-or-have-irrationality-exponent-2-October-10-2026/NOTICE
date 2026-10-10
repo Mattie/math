@@ -1,0 +1,13 @@
+Reciprocal quadratic integrals are rational or have irrationality exponent 2
+Author: Ryan Matthew Casper
+
+Includes unchanged OpenAI/math PiExponent modules from commit
+adc7f1241b42e322a6451854ab7e4b4c146bf78a, under Apache 2.0.
+OpenAI's weighted interpolation and determinant method and released library,
+Casper's preceding logarithm and imaginary formalizations, and Mathlib are
+substantial foundations. See LICENSES.md and lean/source-manifest.json.
+
+OpenAI coding agents contributed substantially to mathematical development,
+formalization, verification, review, and writing under Casper's direction.
+No OpenAI authorship, sponsorship, endorsement, external human peer review,
+or exhaustive priority claim is asserted.

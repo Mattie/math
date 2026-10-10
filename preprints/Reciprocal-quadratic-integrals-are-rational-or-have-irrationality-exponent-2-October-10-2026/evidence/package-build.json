@@ -1,0 +1,171 @@
+{
+  "status": "passed",
+  "date_utc": "2026-10-10T17:45:15.311457+00:00",
+  "scope": "Rebuilt all 20 bundled integral proof, specification, control and audit modules using existing pinned inherited compiled dependencies.",
+  "lean_version": "4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_manifest_sha256": "0caf555eb68b83a7f8a715d0de00902a0cdc74c5846c0eb97415afdb7271c8c4",
+  "lakefile_sha256": "44f90b959c9293ffd74a1ea2b21ca58ba97c9ca4db51f5f62b0651b6b06bddde",
+  "lake_manifest_sha256": "4ce08aeac1f673a63d24240ba9173297719d02ad9facfddcf696163cc9bd24d6",
+  "configuration": {
+    "autoImplicit": false,
+    "candidate_warningAsError": false,
+    "audit_warningAsError": true,
+    "threads": 2
+  },
+  "warnings": "Six existing unnecessarySeqFocus style warnings across Negative, Positive and Coefficients; seven intentional specification placeholders in the two Challenge modules. Frozen Lean bytes preserved.",
+  "modules": [
+    {
+      "module": "Classification",
+      "source_sha256": "604e0c69ac29f22b87892a5a3ac7a7aba6d43c8ba4fe2acab78502244186e0b6",
+      "compiled_object_sha256": "9456c26c2565cda383f98d1cd632701c51f97932c01e308a2ad9b49054ae4d80",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ClassificationAudit",
+      "source_sha256": "ff741a0e57e635231f2d8ebf15a5cb6b45df781f955dfe1f4b12c7e9751ba55b",
+      "compiled_object_sha256": "dbbdf6d0b0e048dced9f6b868981bb4070df23a5bbbfaab7774c423808d0c263",
+      "build_log_sha256": "2b1e4e6f1a90132c0d42fcf27deca0867fa911ffccaedf7d9c1162898ea589cf"
+    },
+    {
+      "module": "ClassificationChallenge",
+      "source_sha256": "7180478c90574fa29308e251320bd1e233ebb40c42b4c910b0674e87f31fadda",
+      "compiled_object_sha256": "a43878a6fc9a9e51fa9138c4df61d435f05fe1614e049da3a4819fe28a035865",
+      "build_log_sha256": "4dac93d2625894109ae6293e95a214dd22b59fb2ebcccfde61e38acdd6381583"
+    },
+    {
+      "module": "ClassificationSolution",
+      "source_sha256": "139991988ea706700831f1b2a9efac0734a421922af82b3215d23d4b3fa7087c",
+      "compiled_object_sha256": "03dcea4ccd3c6a398432678c10f9a43b5b606b982e7041da6438f72f60f216d8",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "Coefficients",
+      "source_sha256": "94b6c5e72dc7736948eb4820c1bca019895739c2e53ca156a31ed0c3b2dfff30",
+      "compiled_object_sha256": "9ff05ababe80318b2cee0079fd59e96196983bb85b020d3c904f7ea44cffa8af",
+      "build_log_sha256": "1b2b0170f1391e313d492f28576f8c30be99a5d9751217e9ad7bfa02e36f9139"
+    },
+    {
+      "module": "Main",
+      "source_sha256": "ed59b04abae840d011a06e0fe08396090a6a5f41a9a23615014c06d976fd2043",
+      "compiled_object_sha256": "75579bf91ece79c72973fdc96e4823a71e257f6a823817c92a7dc23af9f3d6fa",
+      "build_log_sha256": "ead87906a3337ed19bc17778b28dd2b1bfc799a063459c128ef510ad5e6ec4a5"
+    },
+    {
+      "module": "Negative",
+      "source_sha256": "3ca8b1a682ac0293679a537baf1a790b735efae6dc04e4d3b87ae5f8a36cf7d1",
+      "compiled_object_sha256": "2fea3e424291bf513e58087679c50dd4e80b8ef59a1a7d95478fccfb3d7b11f2",
+      "build_log_sha256": "bc397bd67b8df953e3c69f7231fe55b1a8902719fa572656d0e6a7c6d1625a44"
+    },
+    {
+      "module": "Positive",
+      "source_sha256": "29e4f88f93d9531ea185e85990272efe18c248694a79ee4f95b3d99d15920c74",
+      "compiled_object_sha256": "3cdade23d8edd2bfbbc409aef407c660757c1d2ac383b6a638da950743cb6fa2",
+      "build_log_sha256": "ddec54b0cf7c31bde711ffa92c282edb3adccebac87d137fbb2b7e84589f7232"
+    },
+    {
+      "module": "PositiveAudit",
+      "source_sha256": "2fbc610fc9fc8ec1a7485906d130611e1ecd977f5d09f30d79f205e8063c4acf",
+      "compiled_object_sha256": "bbc70c375cbd7ee61b0e56821082293fe3c55c854d3fc4fac59560731ea0e40a",
+      "build_log_sha256": "077503c7799c26c5f1c994cbe896793f1168ebf230e1074b85110fa503fe3f0c"
+    },
+    {
+      "module": "PositiveChallenge",
+      "source_sha256": "aa90f57217a41fbab233c53d93ebb22ff409757dcb4cf66aacfe4df12ae951a1",
+      "compiled_object_sha256": "b612d4333cc919599e5a401bda366726bb563bba40e27118d8f93292b1dc836e",
+      "build_log_sha256": "c67a08942b62802c3f5c6fb5de5bf8c9d62705ff0b46e7fc8782e02939501de5"
+    },
+    {
+      "module": "PositiveControls",
+      "source_sha256": "3cdddf7db4a3b0994ab92784a1d406bb4d1e2b6f1e062ded0f636f6ce582396c",
+      "compiled_object_sha256": "7e249f5de87b196082c1711659c8b3245d227c8c6f7a9966c8ef4f065d6fdd72",
+      "build_log_sha256": "c85487d54f18bce1195afadd690eebfbdb377d86439ba922e7e7fb744b1d7475"
+    },
+    {
+      "module": "PositiveCrossRatio",
+      "source_sha256": "0fb24d2b3593aae4cf18512f3622a6a907c7690e1a91546813de1f1c27a5a1ae",
+      "compiled_object_sha256": "d48bff57e1af9c21cabc8b950138364abc1bd63de9c6177a4cccfadac46e4150",
+      "build_log_sha256": "a9a94152ddac85d4cf8167162254d91fd6cdf635f26fe41554c9f398fe7c5fff"
+    },
+    {
+      "module": "PositiveLogBridge",
+      "source_sha256": "10469bb7ffdb61f79acb9c5e69588d7715880e77d26711fc76f172ef40ec207c",
+      "compiled_object_sha256": "6a98f67d1eec8e69c82a889ed8e7b22b57ec043a2145ee957bbb254c4224ef62",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PositiveMain",
+      "source_sha256": "32c43743f82514925a99fd9c7e90feef87cbd2526a40849a77b16e9b331aab7a",
+      "compiled_object_sha256": "485329f61cbaebe8bc80396b5f30cc65c545ce68f5c51bae7e2da8725e787301",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PositiveNormCoefficients",
+      "source_sha256": "5bcd343ba0ae4799312fd305380d953c488f3f81771a7c1d54219a56dc4b9d94",
+      "compiled_object_sha256": "c79463c603b3dd6f9e5782fd1385bda61fe1d7e11d8d62b985ff7b3f42849840",
+      "build_log_sha256": "48bd8f3507592c7ff1e30c78952ff1b1e4df68850f6381c6f647eec39da47935"
+    },
+    {
+      "module": "PositiveScaling",
+      "source_sha256": "3cff0b00d32506d2baff802e35fcf66a4ced5e32085e96550ffb79e53c0ab570",
+      "compiled_object_sha256": "dd1c41c57478015291bc650033cfdb586d271ce2690db69cb8d18452446a7030",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PositiveSolution",
+      "source_sha256": "7ab9f83b73ec1532acb28be3f0d68a5ac0ac68e197d3ca5897e29ea1a1b35641",
+      "compiled_object_sha256": "1c0d5ee813bb66358cf77a745df1e47810a466aa9448705ac6700fa31dfaf323",
+      "build_log_sha256": "d17900b83c4f3de81731648b49093a0494d790a270d78c43622967599662466c"
+    },
+    {
+      "module": "PositiveSquareclass",
+      "source_sha256": "e6c596bb9967d3e6db84dd1f184e1ceb1ebc460e8f5b63ff7bda5ac5559b7401",
+      "compiled_object_sha256": "54d040989d186f298f8e1e369b9ff2f72827a54d1910ee132e694b2fea1cc69c",
+      "build_log_sha256": "f012727d902701f807d01fcadfec4a3eb176a44cfa7f6d2029addf74a4644507"
+    },
+    {
+      "module": "RepeatedRoot",
+      "source_sha256": "265be39bf4929a9e89813159ecd49ff2837b88b529a2e2aaa75c111caf22137c",
+      "compiled_object_sha256": "e17599d9f694acd0e62e7c85caaf3d9172667e44fee84272dfc4fc335f562ac9",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "StandardBridge",
+      "source_sha256": "8416e69a981358017b4ba6ce4dc0a40ce13bd201d0333343f8cfe8842368c91a",
+      "compiled_object_sha256": "1a3f8eaf61e66a698c586a001c26c1c751a11bad22d90d5bdbe967c5f2d8139f",
+      "build_log_sha256": "ba4001842b7dc554e489cf76a525f0c23e509d94f66bc766cffba6a58691eab1"
+    }
+  ],
+  "strict_audits": [
+    {
+      "module": "PositiveAudit",
+      "declarations": 18,
+      "exit_code": 0,
+      "log_sha256": "077503c7799c26c5f1c994cbe896793f1168ebf230e1074b85110fa503fe3f0c"
+    },
+    {
+      "module": "ClassificationAudit",
+      "declarations": 10,
+      "exit_code": 0,
+      "log_sha256": "2b1e4e6f1a90132c0d42fcf27deca0867fa911ffccaedf7d9c1162898ea589cf"
+    }
+  ],
+  "axiom_gate": {
+    "status": "passed",
+    "allowlist": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 28,
+    "negative_control": "Coordinator verified a synthetic sorryAx report is rejected with nonzero exit; this tests the report gate, not kernel soundness."
+  },
+  "lake_configuration_test": "Loaded the exact bundled lakefile and lockfile in a separate scratch directory with existing pinned dependency packages linked; lake env lean --version succeeded.",
+  "package_check": "962 source identities, import closure, both historical candidate identities and local documentation links passed.",
+  "limits": [
+    "Reused existing dependency objects; did not rebuild the 942 vendored inherited modules or bootstrap dependencies.",
+    "Did not execute the full portable Lake build from a clean checkout.",
+    "No new comparator execution, proof export or dual-kernel replay.",
+    "Compiled objects and raw logs are retained locally and not distributed in this package."
+  ]
+}
