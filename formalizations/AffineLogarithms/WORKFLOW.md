@@ -3,9 +3,9 @@
 Updated: October 11, 2026 (America/Chicago).
 
 **Current phase:** ✅ Hosted verification complete; ✅ Evidence audit passed;
-✅ Full manuscript drafted, reviewed and compiled; 🔄 Public rendering and
-retrieval checks. The 19-page preprint source and PDF now exist in the
-repository preprint layout; publication validation and delivery remain in progress.
+✅ Full manuscript drafted, reviewed and compiled; ✅ PDF/GitHub rendering,
+public downloads and source-archive integrity checked. The 19-page preprint,
+editable source and reproduction records are available in the existing PR.
 All fifteen comparison targets passed Lean and Rust Nanoda on fresh candidate
 compilation. The official Mathlib dependency cache remains trusted. See the
 [immutable hosted result](evidence/hosted-result-2026-10-11.json).
@@ -30,7 +30,7 @@ exponent-at-most-four results, with a common proof mechanism. The user prefers
 the result-focused working title **The irrationality exponents of log(2) + √2
 and √2 log(2) are at most 4**. The third result remains a main theorem:
 `mu(log(3 + 2*sqrt(2))/sqrt(2) + sqrt(3)) <= 4`, together with irrationality.
-It is omitted from this proposed title, not from the paper's mathematical scope.
+It is omitted from the title, not from the paper's mathematical scope.
 Existing preprint titles and layout were inspected on October 11. Mathematical
 priority remains unestablished; this limits claims, not preprint preparation.
 
@@ -50,9 +50,9 @@ hosted result, not a fresh run. The complete evidence archive was downloaded and
 its GitHub SHA-256 verified. Hosted artifacts expire January 9, 2027; anonymous
 artifact retrieval and durable public distribution remain unverified.
 
-**Next action:** reconcile the independent manuscript reviews, inspect final PDF
-pages and GitHub rendering, and verify published download paths. Reconcile the
-publication metadata and deliver the PDF, source, proofs, and verification links.
+**Next action:** author review of the completed preprint and [PR 22](https://github.com/Mattie/math/pull/22).
+No merge, release, external submission, or exhaustive priority claim follows from
+completion of the preparation and verification work.
 
 Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️ Deferred ·
 ➖ Not applicable · 🟡 Partial · 🔍 Needs review.
@@ -78,22 +78,22 @@ Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️
 | GitHub evidence audit | ✅ Complete | [Immutable result](evidence/hosted-result-2026-10-11.json): 95 indexed files, 58 command logs, 93 retained-file hashes, 13 protected repository inputs and 969 frozen inputs checked |
 | Independent mathematical/specification reviews | ✅ Complete | [REVIEW](REVIEW.md), with independent initial judgments and scope limits |
 | Proof-memo blind prose-first and correspondence review | ✅ Complete for the reviewed memo | Separately authored [ARGUMENT](ARGUMENT.md), reviewed before source inspection; [review identities](evidence/pre-pr/review.json). Does not cover a future manuscript; later memo edits corrected the truncation explanation and GitHub math markup without changing proof sources |
-| Reconciliation | 🟡 Partial | Proof and hosted evidence reconciled; manuscript, publication metadata and final reader-facing checks remain unfinished |
+| Reconciliation | ✅ Complete | [Review record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reviews.json): both manuscript reviewers checked the final hash and corrections; mathematical source bytes remain unchanged |
 | Publication scope and title | ✅ Complete | Result-focused title used consistently; all three results remain main theorems; no priority or exact-exponent claim |
 | Paper drafted | ✅ Complete | Full manuscript with all three main results, mathematical argument, limitations, references, and formalization appendix |
 | Independent manuscript review | ✅ Complete, model review | [Review record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reviews.json): fresh mathematical prose-first assessment, separate specification/evidence review, and both final-diff checks; no human-review claim |
 | Paper–formalization correspondence | ✅ Complete within recorded scope | [Review record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reviews.json) and theorem map cover three main results, twelve public declarations and fifteen comparison targets; wrapper wording corrected; no proof changes |
 | Preprint built | ✅ Complete | Editable single-file LaTeX and retained 19-page PDF; desktop compiler succeeds; reproducible Tectonic build has no layout warnings |
-| Reader-facing review | 🔄 In progress | GitHub memo at 0ddb456 has 32 rendered displays, intact strict inequalities and readable equation numbering after fixes; all 19 draft PDF pages inspected as contact sheets; final detail and public retrieval checks pending |
-| Publication package reconciled | ⏳ Pending | Align paper, README, citation metadata, theorem map, verification records and archive identities on title, claims, versions and status |
-| Final delivery | ⏳ Pending | Deliver direct links to reviewed PDF, manuscript source, proof sources and verification result; do not substitute the memo |
+| Reader-facing review | ✅ Complete for recorded files | [Reader record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reader-review.json): 19-page PDF inspected, actual GitHub README/VERIFY and memo checked, seven anonymous downloads matched, public source archive passed integrity checks |
+| Publication package reconciled | ✅ Complete | [Preprint](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/README.md), citation metadata, three-result theorem map, build/review identities and verification limits agree |
+| Final delivery | ✅ Ready | [PDF](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/paper.pdf), [manuscript](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/build/main.tex), [proofs](README.md), and [verification](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/VERIFY.md) available in PR 22 |
 | Catalogue integration | ➖ Not applicable to this assignment | Standalone package; no target-catalogue submission requested |
 | Provenance, licensing, authorship and disclosure | ✅ Complete | [PROVENANCE](PROVENANCE.md), [LICENSES](LICENSES.md), [README](README.md) |
-| Distribution identity, privacy, links and archive checks | 🟡 Partial | Revision-three documentation and checklist inventory, archive round trip, source-tamper/wrong-export rejection, private-path scan and relative links checked; earlier archives and receipts retained. Current publication files, rendered paper and final archive still require checks |
+| Distribution identity, privacy, links and archive checks | ✅ Complete for source publication | [Reader record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reader-review.json): actual public files and repository archive retrieved; privacy/metadata/URI/attachment and package checks passed; historical proof-export availability remains separate |
 | Narrow PR scope and staged-byte review | ✅ Complete for published branch | Package, focused CI checks, and new hosted verifier; unrelated working-tree changes must remain outside the PR |
 | Branch publication and verifier dispatch | ✅ Complete | Branch `codex/affine-logarithms-verifier` published; run 38139172013 dispatched. [PR 22](https://github.com/Mattie/math/pull/22) created; no release |
-| PR creation | ✅ Complete | [PR 22](https://github.com/Mattie/math/pull/22) contains the formalization and audited verifier; a completed preprint is not yet included |
-| PR review follow-up | ⏳ Pending | Review current diff and checks after preprint integration; do not imply reviewed-preprint readiness |
+| PR creation | ✅ Complete | [PR 22](https://github.com/Mattie/math/pull/22) includes the full preprint, formalization and audited verifier |
+| PR review follow-up | ✅ Scoped preparation checks passed | Staged inventory reviewed; publication CI [38156710562](https://github.com/Mattie/math/actions/runs/38156710562) passed at f439944; later receipt/checklist updates rechecked locally. Author review and merge remain separate |
 | Public release or external submission | ⏳ Pending, not authorized | Separate from preprint preparation; no merge, GitHub release or external submission performed |
 | Public evidence retrieval | 🟡 Partial | GitHub artifact downloaded with authentication and hash checked; complete archive retained locally; anonymous retrieval and durable public distribution pending |
 | Human peer review | ➖ Not applicable to current assignment | Model review is disclosed; no human-review claim |
