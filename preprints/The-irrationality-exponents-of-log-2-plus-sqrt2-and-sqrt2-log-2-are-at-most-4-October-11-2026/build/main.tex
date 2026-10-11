@@ -36,16 +36,21 @@ are at most \(4\)}
 \maketitle
 
 \begin{abstract}
-We prove that the rational irrationality exponents of \(\log 2+\sqrt2\),
-\(\sqrt2\log 2\), and \(\log(3+2\sqrt2)/\sqrt2+\sqrt3\) are at most
-four. For each of these numbers \(x\) and
+We prove that each of the numbers
+\[
+ \log2+\sqrt2,\qquad \sqrt2\log2,\qquad
+ \frac{\log(3+2\sqrt2)}{\sqrt2}+\sqrt3
+\]
+has irrationality exponent at most \(4\). For each of these numbers \(x\) and
 each real \(\nu>4\), the proof gives an eventual lower bound
 \(q^{-\nu}\le |x-p/q|\), uniformly in the integer numerator and positive
-integer denominator; the fractions need not be reduced. The common argument
-takes place in a number field of degree four. Two embeddings satisfy an
-affine exponential identity and receive a logarithmic collision estimate;
-the other two receive a coefficient estimate. All four evaluate the same
-cleared algebraic-integer determinant. Its norm supplies the arithmetic
+integer denominator; the fractions need not be reduced.
+We prove all three bounds using the same determinant argument. Working in
+a number field of degree four gives four conjugate versions of the
+determinant. Two satisfy an exponential identity that allows a strong
+analytic bound; the other two are controlled by simpler estimates on
+their coefficients. These four values come from the same cleared
+algebraic-integer determinant. Its norm supplies the arithmetic
 lower bound. A Lean formalization accompanies the proof.
 \end{abstract}
 
@@ -59,7 +64,7 @@ the determinant construction and prove the following three statements.
 
 Throughout the paper, \(\log\) denotes the natural real logarithm on
 positive arguments, and square roots denote positive real square roots.
-The symbol \(\mu\) denotes the rational irrationality exponent, with the
+The symbol \(\mu\) denotes the irrationality exponent, with the
 convention given in Section~\ref{sec:conventions}.
 
 \begin{mainthm}[An algebraic shift]\label{thm:shift}

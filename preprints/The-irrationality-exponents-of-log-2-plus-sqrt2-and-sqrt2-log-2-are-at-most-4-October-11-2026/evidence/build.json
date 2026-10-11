@@ -2,10 +2,10 @@
   "schema_version": 1,
   "date": "2026-10-11",
   "manuscript": "build/main.tex",
-  "manuscript_sha256": "d5697b2c4fbdcafafd9e1d4322ff3867eb8a4172c646a8c620a750eb3ddf2e2a",
+  "manuscript_sha256": "2f0ef84d37b7b15a5951413a559539f62a1e5cfc0fd2e8fcfeade3d26f1e133a",
   "pdf": "paper.pdf",
-  "pdf_sha256": "171080b802af09f451344cb2c91049b2b5ab1e9de048777c2429fb575efee7be",
-  "pdf_bytes": 161714,
+  "pdf_sha256": "e760b0c7c00ecd74a6866663c15d0be50778d2e8a1d41af46bba613689c74b09",
+  "pdf_bytes": 161492,
   "pages": 18,
   "compiler": {
     "name": "Tectonic",
@@ -17,10 +17,22 @@
   "platform": "Ubuntu via WSL",
   "result": "success",
   "tex_warnings": 0,
-  "build_log_sha256": "248463b465cf93f869e3faaf4d27e841d22a94bdaa4d005a3469581e5c4020af",
+  "build_log_sha256": "8fcae854cb7c57b50a79373e61734c80f9704162241b083295029efb21bfa572",
   "desktop_compiler": "Successful diagnostic compilation of the revised source; final prose edits built with Tectonic.",
   "reproducibility_limit": "Build command and compiler are identified. The TeX resource bundle is not vendored or pinned separately; other compiler/resource versions may produce different PDF bytes.",
   "proof_sources_changed": false,
   "editorial_revision": "evidence/editorial-revision.json",
-  "human_revision": "evidence/human-revision.json"
+  "human_revision": "evidence/human-revision.json",
+  "abstract_revision": {
+    "previous": {
+      "manuscript_sha256": "d5697b2c4fbdcafafd9e1d4322ff3867eb8a4172c646a8c620a750eb3ddf2e2a",
+      "pdf_sha256": "171080b802af09f451344cb2c91049b2b5ab1e9de048777c2429fb575efee7be"
+    },
+    "changes": [
+      "Used irrationality exponent without the redundant rational qualifier.",
+      "Displayed all three targets in the abstract.",
+      "Replaced specialized embedding and collision terminology in the abstract with the requested conjugate-determinant explanation."
+    ],
+    "scope": "Wording and layout only; theorem statements, numbered mathematical displays and Lean sources unchanged."
+  }
 }
