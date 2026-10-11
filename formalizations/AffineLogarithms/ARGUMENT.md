@@ -7,7 +7,7 @@ x_1=\log 2+\sqrt2,\qquad x_2=\sqrt2\log2,\qquad
 x_3=\frac{\log(3+2\sqrt2)}{\sqrt2}+\sqrt3.
 ```
 
-For each number, the conclusion is irrationality and irrationality exponent at most four. The quantitative statement proved is stronger than just the exponent assertion: for every real $`\nu>4`$, there exists an integer $`Q\ge2`$ such that
+For each number, the conclusion is irrationality and irrationality exponent at most four. The quantitative statement proved is stronger than just the exponent assertion: for every real $`\nu\gt 4`$, there exists an integer $`Q\ge2`$ such that
 
 ```math
 q^{-\nu}\le |x-p/q|\quad(p\in\mathbb Z,\ q\in\mathbb N,\ q\ge Q).
@@ -44,7 +44,7 @@ R=\sum_\sigma |\sigma(u)|(|x|+1+|\sigma(v)|),\quad R'=2R+2,
 
 These are fixed before selecting approximation data. They give nonnegative $`\kappa,R`$, $`\rho\ge100`$, $`100|x|\le\rho`$, and the separate bound $`100|\sigma(u)(x-\sigma(v))|\le\rho`$ at every embedding. The notation `proxy = exp x` in the source merely supplies $`\log(\mathrm{proxy})=x`$ to logarithmic data structures. It is not the algebraic base $`a`$, nor is it required to be algebraic.
 
-Fix $`\nu>4`$ and suppose, for contradiction, that approximations with
+Fix $`\nu\gt 4`$ and suppose, for contradiction, that approximations with
 
 ```math
 |x-p/q|\le q^{-\nu}
@@ -55,22 +55,22 @@ exist with unbounded positive denominators. All constants and finite approximati
 
 ## 2. Parameter construction and its precise margins
 
-Write $`\Lambda=\log4+4`$ and $`c=\log2/4`$. The first constant bounds logarithms of least common multiples; the second is the analytic collision constant. The interface `AlgebraicLog.exists_admissible_parameters` in `AlgebraicLog/AdmissibleParameters.lean` takes real $`x,\nu,\Lambda,c,\rho,\delta,\kappa,R'`$, with $`\nu>4`$, $`\Lambda,c>0`$, $`x\ne0`$, $`\rho\ge100`$, $`100|x|\le\rho`$, and $`\delta,\kappa,R'\ge0`$, together with precisely the unbounded-denominator hypothesis (4). Here $`\delta=0`$ because the algebraic base is integral.
+Write $`\Lambda=\log4+4`$ and $`c=\log2/4`$. The first constant bounds logarithms of least common multiples; the second is the analytic collision constant. The interface `AlgebraicLog.exists_admissible_parameters` in `AlgebraicLog/AdmissibleParameters.lean` takes real $`x,\nu,\Lambda,c,\rho,\delta,\kappa,R'`$, with $`\nu\gt 4`$, $`\Lambda,c\gt 0`$, $`x\ne0`$, $`\rho\ge100`$, $`100|x|\le\rho`$, and $`\delta,\kappa,R'\ge0`$, together with precisely the unbounded-denominator hypothesis (4). Here $`\delta=0`$ because the algebraic base is integral.
 
 Its construction first chooses rational shape parameters
 
 ```math
-0<\theta<A<B<1,\quad C>1,\quad B<1/C,\quad B<C\theta<1,
+0\lt \theta\lt A\lt B\lt 1,\quad C\gt 1,\quad B\lt 1/C,\quad B\lt C\theta\lt 1,
 ```
 
-and $`0<\eta<1`$, so that
+and $`0\lt \eta\lt 1`$, so that
 
 ```math
-g=\nu(A(1-\eta)-\theta)-2(1-\theta)>0.
+g=\nu(A(1-\eta)-\theta)-2(1-\theta)\gt 0.
 \qquad\text{(5)}
 ```
 
-This is `AlgebraicLog.ParameterShape.exists_quadratic_shape`, obtained by applying `PiExponent.exists_parameters` at exponent $`\nu/2>2`$; the approximations themselves retain exponent $`\nu`$. Choose $`0<\epsilon<g`$, $`\epsilon\le1/2`$; then choose $`F_0>2/\theta`$ sufficiently large that $`\nu/F_0<\epsilon/3`$. Next choose dimension $`m\ge1`$, and set
+This is `AlgebraicLog.ParameterShape.exists_quadratic_shape`, obtained by applying `PiExponent.exists_parameters` at exponent $`\nu/2\gt 2`$; the approximations themselves retain exponent $`\nu`$. Choose $`0\lt \epsilon\lt g`$, $`\epsilon\le1/2`$; then choose $`F_0\gt 2/\theta`$ sufficiently large that $`\nu/F_0\lt \epsilon/3`$. Next choose dimension $`m\ge1`$, and set
 
 ```math
 K=\lfloor C^m\rfloor,\quad w_0=B^{-m},\quad
@@ -78,15 +78,15 @@ v_0=2K\theta^m w_0.
 \qquad\text{(6)}
 ```
 
-Thus $`K(w_0/v_0)\theta^m=1/2`$, and $`K\theta^m<1`$. The dimension budget gives both a small error margin and a collision limit exceeding three. Small positive rational $`\sigma`$ is then chosen with
+Thus $`K(w_0/v_0)\theta^m=1/2`$, and $`K\theta^m\lt 1`$. The dimension budget gives both a small error margin and a collision limit exceeding three. Small positive rational $`\sigma`$ is then chosen with
 
 ```math
-(1+3\sigma)^{m+1}/2<1,\quad
-(1+3\sigma)^mK\theta^m<1,\quad(1+\sigma)\theta<1.
+(1+3\sigma)^{m+1}/2\lt 1,\quad
+(1+3\sigma)^mK\theta^m\lt 1,\quad(1+\sigma)\theta\lt 1.
 ```
 
 Only after this is a sufficiently large initial weight selected, and (4) supplies successive approximations with arbitrarily separated logarithmic weights. The first $`m`$ are denoted $`p_i/q_i`$, with $`q_i\ge2`$, $`p_i\ne0`$, and
-$`w_i=\lceil\log q_i\rceil\ge1`$. Set $`w_*=\min_i w_i>0`$. Separation can be imposed because (4) permits each next denominator to exceed any already determined threshold. The construction uses `Logarithm.exists_normalized_successive_approximations`; it does not infer separation from mere distinctness of denominators.
+$`w_i=\lceil\log q_i\rceil\ge1`$. Set $`w_*=\min_i w_i\gt 0`$. Separation can be imposed because (4) permits each next denominator to exceed any already determined threshold. The construction uses `Logarithm.exists_normalized_successive_approximations`; it does not infer separation from mere distinctness of denominators.
 
 The exact error quantities needed below are
 
@@ -110,28 +110,28 @@ J=\frac{\rho K}{w_0}+\frac{\log2}{v_0}
 The dimension and weight margins in `AdmissibleParameters` prove
 
 ```math
-2E+U(R')+V<g,\qquad
-2+2E+U(R')+V<C_\infty,
+2E+U(R')+V\lt g,\qquad
+2+2E+U(R')+V\lt C_\infty,
 \qquad\text{(8)}
 ```
 
 where
 
 ```math
-C_\infty=c\frac{\eta^2K\theta^m}{(m+1)v_0A^m}>3.
+C_\infty=c\frac{\eta^2K\theta^m}{(m+1)v_0A^m}\gt 3.
 ```
 
 These are `error_sum_lt_gap` and `collision_exceeds_error_sum`. They are genuine output inequalities of the parameter construction. In particular the order is shape, initial scale, dimension, rational slack, initial approximation weight, finite approximations, and finally height; no parameter is adjusted after a minor is selected.
 
-The dimension choice is supported by concrete limiting ratios, not by assuming that arbitrary errors can be made small simultaneously. With the shape fixed, $`K/w_0`$ tends to zero since $`CB<1`$, while $`v_0`$ grows exponentially since $`C\theta/B>1`$; the floor in $`K`$ does not change these limits. Thus the terms with denominators $`v_0,w_0`$, including $`F_0m/v_0`$, tend to zero. Meanwhile the collision limit simplifies to $`c\eta^2(B/A)^m/(2(m+1))`$, which tends to infinity because $`B>A`$. These are the competing requirements discharged by `AlgebraicLog.exists_quadratic_dimension_budget` in `AlgebraicLog/DimensionBudget.lean`. After dimension is fixed, the remaining terms in (7) are bounded by a constant times $`1/w_*`$, since $`\sum_i1/w_i\le m/w_*`$. The arbitrary initial denominator threshold in (4) makes this last error small. This explains why the dimension is chosen before the approximations, and why increasing height alone would not remove those fixed errors.
+The dimension choice is supported by concrete limiting ratios, not by assuming that arbitrary errors can be made small simultaneously. With the shape fixed, $`K/w_0`$ tends to zero since $`CB\lt 1`$, while $`v_0`$ grows exponentially since $`C\theta/B\gt 1`$; the floor in $`K`$ does not change these limits. Thus the terms with denominators $`v_0,w_0`$, including $`F_0m/v_0`$, tend to zero. Meanwhile the collision limit simplifies to $`c\eta^2(B/A)^m/(2(m+1))`$, which tends to infinity because $`B\gt A`$. These are the competing requirements discharged by `AlgebraicLog.exists_quadratic_dimension_budget` in `AlgebraicLog/DimensionBudget.lean`. After dimension is fixed, the remaining terms in (7) are bounded by a constant times $`1/w_*`$, since $`\sum_i1/w_i\le m/w_*`$. The arbitrary initial denominator threshold in (4) makes this last error small. This explains why the dimension is chosen before the approximations, and why increasing height alone would not remove those fixed errors.
 
 ## 3. The matrix and the inherited interpolation input
 
-For $`H>0`$, take columns $`(h,\gamma)\in\mathbb N\times\mathbb N^m`$ satisfying
-$`w_0h+\sum_iw_i\gamma_i\le H`$, and rows $`(j,s,\beta)`$ with $`0\le j<K`$ and
-$`v_0s+\sum_i(w_i/\theta)\beta_i<H`$. Let $`M`$ be the number of rows. Put
+For $`H\gt 0`$, take columns $`(h,\gamma)\in\mathbb N\times\mathbb N^m`$ satisfying
+$`w_0h+\sum_iw_i\gamma_i\le H`$, and rows $`(j,s,\beta)`$ with $`0\le j\lt K`$ and
+$`v_0s+\sum_i(w_i/\theta)\beta_i\lt H`$. Let $`M`$ be the number of rows. Put
 $`T_i=\lceil F_0w_i/v_0\rceil`$ and
-$`L_i(t)=\sum_{1\le k<T_i}(-1)^{k+1}t^k/k`$.
+$`L_i(t)=\sum_{1\le k\lt T_i}(-1)^{k+1}t^k/k`$.
 At embedding $`\sigma`$, define $`z_\sigma=\sigma(a)`$ and
 $`r_{\sigma i}=\sigma(u)(p_i/q_i-\sigma(v))`$. The matrix entry is
 
@@ -146,20 +146,20 @@ This is `PairedAffine.matrix` in `PairedAffine/Data.lean`, using the inherited `
 The decisive geometric input is `Logarithm.eventually_weighted_logarithmic_interpolation` in `Logarithm/Interpolation.lean`. Its input `GeometryData` is fully numerical except for centers: positive rational degree weights $`d_i`$, positive rational jet weights $`e_i`$, positive rational $`\sigma`$, distinct nonzero complex multiplicative centers $`Y_j`$, and arbitrary complex additive centers $`c_{ji}`$. Its hypotheses are
 
 ```math
-K(1+3\sigma)^{m+1}\frac{\prod_{i=0}^m d_i}{\prod_{i=0}^m e_i}<1,
-\qquad (1+\sigma)d_i<e_i\ (i>0),
+K(1+3\sigma)^{m+1}\frac{\prod_{i=0}^m d_i}{\prod_{i=0}^m e_i}\lt 1,
+\qquad (1+\sigma)d_i\lt e_i\ (i\gt 0),
 \qquad\text{(10)}
 ```
 
-and the following separated-product condition. For equal-cardinality subsets $`P,Q\subseteq\{0,\ldots,m\}`$, if $`i>0`$ belongs to $`P\setminus Q`$ and membership in $`P,Q`$ agrees above $`i`$, then
+and the following separated-product condition. For equal-cardinality subsets $`P,Q\subseteq\{0,\ldots,m\}`$, if $`i\gt 0`$ belongs to $`P\setminus Q`$ and membership in $`P,Q`$ agrees above $`i`$, then
 
 ```math
-D_m(\sigma)\prod_{j\in Q}e_j<\prod_{j\in P}d_j,
+D_m(\sigma)\prod_{j\in Q}e_j\lt \prod_{j\in P}d_j,
 \quad D_m(\sigma)=2(m+2)^{m+2}(1+(m+2)/\sigma)^{m+2}.
 \qquad\text{(11)}
 ```
 
-The conclusion is surjectivity, at all sufficiently large integers $`n`$, of the coefficient-packet map of polynomials of weighted degree at most $`n\mathcal R`$ onto all formal logarithmic jet packets of jet weight strictly below $`n\mathcal R`$ at those centers. Here $`\mathcal R>0`$ is the rational geometric scale constructed from the data. The formal coordinates are $`Y=Y_j(1+t)`$, $`X_i=c_{ji}+\log(1+t)+Z_i`$. This is a deep inherited theorem, obtained in the source through ampleness of an interpolation bundle and eventual jet restriction. Those foundations are invoked here, not established anew.
+The conclusion is surjectivity, at all sufficiently large integers $`n`$, of the coefficient-packet map of polynomials of weighted degree at most $`n\mathcal R`$ onto all formal logarithmic jet packets of jet weight strictly below $`n\mathcal R`$ at those centers. Here $`\mathcal R\gt 0`$ is the rational geometric scale constructed from the data. The formal coordinates are $`Y=Y_j(1+t)`$, $`X_i=c_{ji}+\log(1+t)+Z_i`$. This is a deep inherited theorem, obtained in the source through ampleness of an interpolation bundle and eventual jet restriction. Those foundations are invoked here, not established anew.
 
 Apply it with degree weights $`(w_0,w_i)`$, jet weights $`(v_0,w_i/\theta)`$, $`Y_j=b_0^j`$, and $`c_{ji}=jr_{\sigma_0i}`$. Positive $`b_0\ne1`$ makes these power centers distinct and nonzero. Equations (10)–(11) follow from the admissible volume, slack, and separated-weight construction (`AlgebraicLog/CurveWeights.lean`, `AlgebraicLog/ApproximationGeometry.lean`). Additive centers have no further hypothesis. Because $`T_iv_0\ge w_i/\theta`$, the substitution that replaces each formal logarithm by its truncation is invertible and preserves the weighted filtration. It therefore preserves surjectivity of the coefficient-packet map; individual coefficients need not be equal. This is `Logarithm.ScaledTruncation.formalLog_packets_surjective_iff_truncated`. The formal-to-matrix interface is `Logarithm.ScaledMatrix.truncatedLogMatrix_surjective_of_formalLog_packets`, used in `PairedAffine.Geometry.cofinal_matrix`.
 
@@ -178,7 +178,7 @@ For a selected column $`\gamma`$, set $`e_i=\lfloor H/w_i\rfloor`$, so $`\gamma_
 
 It need not be an integer. Define integral affine numerators
 $`n_i=u(p_i-q_iv)\in\mathcal O_F`$. For an entry with $`\beta\le\gamma`$, multiplication by its row and column factors replaces each shifted logarithm by the integral-coefficient polynomial
-$`D_i(jn_i+q_iL_i(t))`$, raised to exponent $`\gamma_i-\beta_i`$; spare powers of $`D_i`$ remain integral. Binomial coefficients and the factor $`a^{jh}`$ are integral. If some $`\beta_i>\gamma_i`$, the entry vanishes. Thus the scaled entries are embeddings of entries of one matrix over $`\mathcal O_F`$. Its determinant $`Z`$ satisfies
+$`D_i(jn_i+q_iL_i(t))`$, raised to exponent $`\gamma_i-\beta_i`$; spare powers of $`D_i`$ remain integral. Binomial coefficients and the factor $`a^{jh}`$ are integral. If some $`\beta_i\gt \gamma_i`$, the entry vanishes. Thus the scaled entries are embeddings of entries of one matrix over $`\mathcal O_F`$. Its determinant $`Z`$ satisfies
 
 ```math
 \sigma(Z)=\mathcal C\Delta_\sigma\quad\text{for every }\sigma.
@@ -211,7 +211,7 @@ $`1\le\prod_\sigma|\sigma(Z)|`$. By (13),
 \qquad\text{(15)}
 ```
 
-If the two good normalized logarithms are at most $`B_H`$ and the other two at most $`D_H`$, then (14)–(15), divided by $`2MH>0`$, give
+If the two good normalized logarithms are at most $`B_H`$ and the other two at most $`D_H`$, then (14)–(15), divided by $`2MH\gt 0`$, give
 
 ```math
 -2(1-b_H)-2E-D_H\le B_H.
@@ -233,7 +233,7 @@ $`e^{\omega_\sigma}=z_\sigma`$, $`100|\omega_\sigma|\le\rho`$, and
 
 Indeed $`r_{\sigma i}-\omega_\sigma=\sigma(u)(p_i/q_i-x)`$; use (4), $`|\sigma(u)|\le2`$, and $`\log q_i\ge w_i-1`$. The extra $`\log2`$ is not discarded.
 
-The analytic input `Logarithm.ScaledCollision.formal_scaled_collision_bound` in `Logarithm/ScaledCollision.lean` bounds the determinant of translated period-coefficient rows. For rows assigned transverse indices with multiplicities $`n_\alpha`$, row centers $`j\omega`$, derivative orders $`\ell_r`$, and columns of weighted degree at most $`H`$, its hypotheses are $`\rho\ge100`$, $`100|\omega|\le\rho`$, $`K,H,w_0,w_*>0`$, $`w_i\ge w_*`$, $`j<K`$, and $`\sum_r\ell_r\le MH/v_0`$. Its bound is
+The analytic input `Logarithm.ScaledCollision.formal_scaled_collision_bound` in `Logarithm/ScaledCollision.lean` bounds the determinant of translated period-coefficient rows. For rows assigned transverse indices with multiplicities $`n_\alpha`$, row centers $`j\omega`$, derivative orders $`\ell_r`$, and columns of weighted degree at most $`H`$, its hypotheses are $`\rho\ge100`$, $`100|\omega|\le\rho`$, $`K,H,w_0,w_*\gt 0`$, $`w_i\ge w_*`$, $`j\lt K`$, and $`\sum_r\ell_r\le MH/v_0`$. Its bound is
 
 ```math
 \exp\left(-c\sum_\alpha n_\alpha^2+MH(J+r_{\rm coll}(H))\right).
@@ -258,7 +258,7 @@ These two alternatives are combined by the maximum in the resulting bound (`Pair
 \qquad\text{(19)}
 ```
 
-More explicitly, consider one nonzero term of the row expansion and write $`W=\sum_r|\alpha_r|_w`$ for the total assigned transverse weight. The original total is $`MHb_H`$. If $`W\ge A(1-\eta)MH`$, the translation scalar gives at least the saving $`\nu(A(1-\eta)-b_H)MH`$; the nonpositive collision term may be omitted. If $`W<A(1-\eta)MH`$, fewer than $`(1-\eta)M`$ assigned indices can have weight greater than $`AH`$. Consequently at least $`\eta M`$ assignments belong to the set of $`N_H`$ low indices. Writing their multiplicities as $`n_\alpha`$, the inequality $`(\sum n_\alpha)^2\le N_H\sum n_\alpha^2`$ gives $`\sum n_\alpha^2\ge\eta^2M^2/N_H`$. Equation (18) supplies saving $`MHC_H`$. In this second case the translation saving may be omitted because $`W\ge MHb_H`$ for every nonzero scalar. Zero terms already satisfy either exponential upper bound. This proves the required termwise alternative, rather than requiring that every term satisfy both savings.
+More explicitly, consider one nonzero term of the row expansion and write $`W=\sum_r|\alpha_r|_w`$ for the total assigned transverse weight. The original total is $`MHb_H`$. If $`W\ge A(1-\eta)MH`$, the translation scalar gives at least the saving $`\nu(A(1-\eta)-b_H)MH`$; the nonpositive collision term may be omitted. If $`W\lt A(1-\eta)MH`$, fewer than $`(1-\eta)M`$ assigned indices can have weight greater than $`AH`$. Consequently at least $`\eta M`$ assignments belong to the set of $`N_H`$ low indices. Writing their multiplicities as $`n_\alpha`$, the inequality $`(\sum n_\alpha)^2\le N_H\sum n_\alpha^2`$ gives $`\sum n_\alpha^2\ge\eta^2M^2/N_H`$. Equation (18) supplies saving $`MHC_H`$. In this second case the translation saving may be omitted because $`W\ge MHb_H`$ for every nonzero scalar. Zero terms already satisfy either exponential upper bound. This proves the required termwise alternative, rather than requiring that every term satisfy both savings.
 
 The expansion is an identity of finite sums, so no interchange of an infinite determinant expansion and a limit is used. The polynomial count of choices per row produces an exponential bound with exponent $`M\log(\text{row-choice count})`$. Dividing by $`MH`$ explains the remainder in (19), independent of the embedding or the chosen columns. Likewise the determinant permutation count in the coarse estimate contributes $`\log(M!)/(MH)\le\log M/H`$, explaining (20) below. The source's counting limits hold for fixed positive weights; no uniformity as dimension or approximation denominators vary is used.
 
@@ -295,18 +295,18 @@ Let $`W_H=V+r_a(H)+\max\{-C_H,-\nu(A(1-\eta)-b_H)\}`$. Substitute (19)–(20) in
 
 By (8) and convergence, for every sufficiently large $`H`$, writing
 $`S_H=2E+U(R')+V+r_a(H)+r_c(H)`$, one has
-$`S_H<g`$ and $`2+S_H<C_H`$.
+$`S_H\lt g`$ and $`2+S_H\lt C_H`$.
 
 If the maximum in $`W_H`$ is its approximation term, (22) forces
 
 ```math
-\nu(A(1-\eta)-b_H)-2(1-b_H)\le S_H<g.
+\nu(A(1-\eta)-b_H)-2(1-b_H)\le S_H\lt g.
 ```
 
 But the left side equals $`g+(\nu-2)(\theta-b_H)\ge g`$, a contradiction. If the maximum is its collision term, (22) forces
 $`C_H\le2(1-b_H)+S_H\le2+S_H`$, again a contradiction. Equality between the two terms causes no problem; either argument applies. These are the branches of `AlgebraicLog.quadratic_determinant_bounds_inconsistent`.
 
-We have ruled out full row rank at all sufficiently large heights. Section 3 supplies it at a cofinal set of heights, contradiction. Therefore (4) cannot have unbounded denominators. For each $`\nu>4`$, its negation gives a threshold above which every error is strictly greater than $`q^{-\nu}`$; enlarging the threshold to at least two and weakening the strict inequality gives (1). This logical step is `AlgebraicLog.eventualLowerBoundFour_of_not_unbounded`.
+We have ruled out full row rank at all sufficiently large heights. Section 3 supplies it at a cofinal set of heights, contradiction. Therefore (4) cannot have unbounded denominators. For each $`\nu\gt 4`$, its negation gives a threshold above which every error is strictly greater than $`q^{-\nu}`$; enlarging the threshold to at least two and weakening the strict inequality gives (1). This logical step is `AlgebraicLog.eventualLowerBoundFour_of_not_unbounded`.
 
 ## 7. The three instantiations and the exponent convention
 
@@ -314,9 +314,9 @@ Use $`F=\mathbb Q(\sqrt3)(\sqrt2)`$, constructed in `PairedAffine/Field.lean`. I
 
 For $`x_1`$, choose $`a=2,u=1,v=\sqrt2`$, distinguished embedding $`\sigma_{+,+}`$, and good embeddings $`\sigma_{+,+},\sigma_{+,-}`$. Both have $`u(x_1-v)=\log2`$, so (2) holds, with scale one and distinguished base two. For $`x_2`$, choose $`a=4,u=\sqrt2,v=0`$ and the same good embeddings. Their affine exponent is $`\sqrt2(\sqrt2\log2)=2\log2`$, whose exponential is four; the scale is $`\sqrt2\le2`$. These are the two constructions in `PairedAffine/AffineExamples.lean`. The auxiliary square root of three makes two distinct good embeddings even though the defining data lie in a smaller field.
 
-For $`x_3`$, choose $`a=3+2\sqrt2,u=\sqrt2,v=\sqrt3`$, distinguished embedding $`\sigma_{+,+}`$, and good embeddings $`\sigma_{+,+},\sigma_{-,+}`$. Put $`b_0=3+2\sqrt2>1`$. At these embeddings the affine exponent is respectively $`\log b_0`$ and $`-\log b_0`$. Since
+For $`x_3`$, choose $`a=3+2\sqrt2,u=\sqrt2,v=\sqrt3`$, distinguished embedding $`\sigma_{+,+}`$, and good embeddings $`\sigma_{+,+},\sigma_{-,+}`$. Put $`b_0=3+2\sqrt2\gt 1`$. At these embeddings the affine exponent is respectively $`\log b_0`$ and $`-\log b_0`$. Since
 $`(3+2\sqrt2)(3-2\sqrt2)=1`$, their exponentials are precisely the corresponding images of $`a`$. Both scales are $`\sqrt2\le2`$. All three targets are positive, and all selected elements are integral. The identities are `PairedAffine.Concrete.compatible`, `PairedAffine.Concrete.scale_norm_le`, and `PairedAffine.shifted_period_eventualLowerBound` in `PairedAffine/Concrete.lean` and `PairedAffine/Main.lean`.
 
 For completeness, (1) implies irrationality without a separate transcendence input. If $`x=r/s`$ were rational, take an arbitrarily large multiple $`q=Ns`$, $`p=Nr`$. Its error is zero, contradicting the positive lower bound at, for example, $`\nu=5`$.
 
-The standard exponent in `OAI/NumberTheory/PiExponent/Statement.lean` is the supremum of positive real $`\nu`$ for which infinitely many distinct reduced rationals $`r`$, of denominator at least two, satisfy $`0<|x-r|<\mathrm{den}(r)^{-\nu}`$. For every $`\nu>4`$, (1) forces the denominator of such a rational below $`Q`$. Its error is less than one, so its numerator also lies in a bounded interval for each of these finitely many denominators. There are therefore only finitely many such rationals. For irrational $`x`$, the approximation-exponent set is nonempty (the inherited Dirichlet consequence `two_mem_approximationExponents` supplies exponent two), and all its members are at most four. Its supremum is at most four. The corresponding deductions are `AlgebraicLog.irrational_of_eventualLowerBoundFour` and `irrationalityExponent_le_four_of_eventualLowerBoundFour` in `AlgebraicLog/ExponentConsequence.lean`, applied separately to the three bounds above.
+The standard exponent in `OAI/NumberTheory/PiExponent/Statement.lean` is the supremum of positive real $`\nu`$ for which infinitely many distinct reduced rationals $`r`$, of denominator at least two, satisfy $`0\lt |x-r|\lt \mathrm{den}(r)^{-\nu}`$. For every $`\nu\gt 4`$, (1) forces the denominator of such a rational below $`Q`$. Its error is less than one, so its numerator also lies in a bounded interval for each of these finitely many denominators. There are therefore only finitely many such rationals. For irrational $`x`$, the approximation-exponent set is nonempty (the inherited Dirichlet consequence `two_mem_approximationExponents` supplies exponent two), and all its members are at most four. Its supremum is at most four. The corresponding deductions are `AlgebraicLog.irrational_of_eventualLowerBoundFour` and `irrationalityExponent_le_four_of_eventualLowerBoundFour` in `AlgebraicLog/ExponentConsequence.lean`, applied separately to the three bounds above.
