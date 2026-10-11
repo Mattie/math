@@ -1,0 +1,56 @@
+{
+  "audit_status": "passed",
+  "run_id": "38139172013",
+  "commit": "b15a6431eca8632a48c1cd84e5200edd30f0670c",
+  "attempt": "1",
+  "index_files_checked": 95,
+  "command_logs_checked": 58,
+  "retained_files_checked": 93,
+  "protected_repository_inputs_checked": 13,
+  "frozen_source_inputs_checked": 969,
+  "comparison_targets": 15,
+  "checks": {
+    "tools": "passed",
+    "isolation": "passed",
+    "valid": "passed",
+    "mismatch": "passed",
+    "axiom": "passed",
+    "imported-admission": "passed",
+    "dependencies": "passed",
+    "affine": "passed",
+    "protected-inputs": "passed"
+  },
+  "receipt_sha256": "34529025f79708f583b9cdac361c30a47abff4e9a39eda6d8391d78485c21cd2",
+  "evidence_index_sha256": "ed5306b826ee4d37342d6931986b5b527238057286b76f92c88a2045fd8a0775",
+  "comparison_log_sha256": "80f768e52f9fdef9520e707be97e60be6dbf84e62279c664bb078ffd55ab6c8c",
+  "started_utc": "2026-10-11T12:25:20Z",
+  "finished_utc": "2026-10-11T13:22:14Z",
+  "audit_note": "Linux EACCES=13/EAFNOSUPPORT=97 interpreted explicitly; Windows host errno constants differ",
+  "limits": [
+    "Official Mathlib dependency cache trusted; candidate closure rebuilt fresh",
+    "No new standalone export retained",
+    "Tool preservation supported by hashed executed runner and receipt; binaries not shipped in artifact",
+    "Systemd memory peak is not used as a measurement of full descendant workload",
+    "Bounded controls do not certify universal containment"
+  ],
+  "run_url": "https://github.com/Mattie/math/actions/runs/38139172013",
+  "artifact": {
+    "id": 11703935710,
+    "url": "https://github.com/Mattie/math/actions/runs/38139172013/artifacts/11703935710",
+    "sha256": "65532261016e34ef9a454896bb28cdfff2e3688486b2125c7d6ceb8d870d5b7a",
+    "size_bytes": 6390112,
+    "expires_utc": "2027-01-09T12:25:05Z",
+    "retrieval": "Authenticated download verified; anonymous retrieval not tested; complete archive retained locally."
+  },
+  "kernels": [
+    "Lean",
+    "Rust Nanoda"
+  ],
+  "candidate_build": "Fresh requested Solution dependency closure; 9849 Lake jobs",
+  "resource_limits": {
+    "memory_gib": 12,
+    "cpus": 4,
+    "lean_threads": 4,
+    "proof_timeout_seconds": 18000
+  }
+}

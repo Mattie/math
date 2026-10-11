@@ -1,9 +1,11 @@
 # Affine isolated source verifier setup
 
-Status: 🔄 [Run 38139172013](https://github.com/Mattie/math/actions/runs/38139172013)
-is in progress at commit `b15a6431eca8632a48c1cd84e5200edd30f0670c`. Branch
-publication and dispatch are complete; hosted acceptance and evidence audit remain pending. See the package's [workflow checklist](../../formalizations/AffineLogarithms/WORKFLOW.md)
-for proof position and the separate execution and evidence-audit milestones.
+Status: ✅ [Run 38139172013](https://github.com/Mattie/math/actions/runs/38139172013)
+passed at commit `b15a6431eca8632a48c1cd84e5200edd30f0670c`; its retained evidence
+was downloaded and audited. All 15 targets passed Lean and Rust Nanoda, and all
+required controls passed. The [immutable result](results/2026-10-11.json) records
+hashes, coverage, retention and trust limits. See the package's
+[workflow checklist](../../formalizations/AffineLogarithms/WORKFLOW.md).
 
 The manual [workflow](../../.github/workflows/isolated-affine.yml) checks all 15
 frozen `PairedAffineVerification` declarations from `Solution`, including the
@@ -53,8 +55,8 @@ export or claim byte-for-byte replay of the historical export.
 The initial disk/memory budget follows FC 6942: 35 GiB free before setup, 10 GiB
 before the proof, and 12 GiB memory with four CPUs and four Lean threads. The
 proof service gets five hours within a six-hour job because this route rebuilds
-the inherited candidate closure too. These are unvalidated limits, not measured
-affine hosted requirements; the job cap can terminate a long setup/proof earlier.
+the inherited candidate closure too. These limits supported the recorded successful run; they are not measured
+minimum affine requirements; the job cap can terminate a long setup/proof earlier.
 Disk cleanup runs only on the disposable GitHub-hosted VM before Go installation.
 No workstation cleanup or proof build is part of the preparation tests.
 
