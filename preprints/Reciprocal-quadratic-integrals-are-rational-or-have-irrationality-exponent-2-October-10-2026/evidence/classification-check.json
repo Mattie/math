@@ -1,0 +1,137 @@
+{
+  "status": "passed",
+  "date_utc": "2026-10-10T05:50:54.282263+00:00",
+  "targets": [
+    "ClassificationChallenge.repeated_root_evaluation",
+    "ClassificationChallenge.rational_iff_discriminant_zero",
+    "ClassificationChallenge.irrational_iff_discriminant_ne_zero"
+  ],
+  "comparator_exit": 0,
+  "nanoda": "accepted",
+  "lean_kernel_replay": "accepted",
+  "actual_frontend_preflight": "passed",
+  "protected_source_and_dependency_hashes": "passed",
+  "export_sha256": "ded045848c03beee539a74440fe09c4686b811935f48d16ed41929ccf6ca4b68",
+  "export_bytes": 1286420115,
+  "compressed_export_sha256": "8d2e1374c54af5a0118c64090bd27a30767f860768642b61398fd8620a1ba67f",
+  "structured_axioms": [
+    [
+      [
+        "str",
+        "propext"
+      ]
+    ],
+    [
+      [
+        "str",
+        "Classical"
+      ],
+      [
+        "str",
+        "choice"
+      ]
+    ],
+    [
+      [
+        "str",
+        "Quot"
+      ],
+      [
+        "str",
+        "sound"
+      ]
+    ]
+  ],
+  "limits": [
+    "Reused pinned inherited compiled dependencies; no full inherited-source or dependency bootstrap.",
+    "Protected backing cache files and final aliases were checked; no claim that transient alias shadowing is impossible.",
+    "Direct comparison covers three classification wrappers in standard definitions; earlier four nonzero-discriminant wrappers retain their separate receipt.",
+    "Controls test semantic mismatch, forbidden axioms and measured isolation; no new parsed ill-typed proof-body control claimed.",
+    "Existing upstream issue assessment reused; no exhaustive checker-soundness or novelty audit, public release or human peer review."
+  ],
+  "original_receipt_sha256": "7326c9d88e1b97460ddb8cab6c3d9a43c5d66b04a4b73fc8388c3acaa4fc846c",
+  "summary_kind": "Sanitized extraction; original receipt retained unchanged.",
+  "export_distribution": "Locally retained; no public download for this integral export is supplied.",
+  "candidate_sources": [
+    {
+      "path": "project/Classification.lean",
+      "bytes": 2558,
+      "sha256": "604e0c69ac29f22b87892a5a3ac7a7aba6d43c8ba4fe2acab78502244186e0b6"
+    },
+    {
+      "path": "project/ClassificationChallenge.lean",
+      "bytes": 1446,
+      "sha256": "7180478c90574fa29308e251320bd1e233ebb40c42b4c910b0674e87f31fadda"
+    },
+    {
+      "path": "project/ClassificationSolution.lean",
+      "bytes": 1827,
+      "sha256": "139991988ea706700831f1b2a9efac0734a421922af82b3215d23d4b3fa7087c"
+    },
+    {
+      "path": "project/Coefficients.lean",
+      "bytes": 3022,
+      "sha256": "94b6c5e72dc7736948eb4820c1bca019895739c2e53ca156a31ed0c3b2dfff30"
+    },
+    {
+      "path": "project/Main.lean",
+      "bytes": 3413,
+      "sha256": "ed59b04abae840d011a06e0fe08396090a6a5f41a9a23615014c06d976fd2043"
+    },
+    {
+      "path": "project/Negative.lean",
+      "bytes": 1609,
+      "sha256": "3ca8b1a682ac0293679a537baf1a790b735efae6dc04e4d3b87ae5f8a36cf7d1"
+    },
+    {
+      "path": "project/Positive.lean",
+      "bytes": 2093,
+      "sha256": "29e4f88f93d9531ea185e85990272efe18c248694a79ee4f95b3d99d15920c74"
+    },
+    {
+      "path": "project/PositiveCrossRatio.lean",
+      "bytes": 3398,
+      "sha256": "0fb24d2b3593aae4cf18512f3622a6a907c7690e1a91546813de1f1c27a5a1ae"
+    },
+    {
+      "path": "project/PositiveLogBridge.lean",
+      "bytes": 1221,
+      "sha256": "10469bb7ffdb61f79acb9c5e69588d7715880e77d26711fc76f172ef40ec207c"
+    },
+    {
+      "path": "project/PositiveMain.lean",
+      "bytes": 3812,
+      "sha256": "32c43743f82514925a99fd9c7e90feef87cbd2526a40849a77b16e9b331aab7a"
+    },
+    {
+      "path": "project/PositiveNormCoefficients.lean",
+      "bytes": 2292,
+      "sha256": "5bcd343ba0ae4799312fd305380d953c488f3f81771a7c1d54219a56dc4b9d94"
+    },
+    {
+      "path": "project/PositiveScaling.lean",
+      "bytes": 2782,
+      "sha256": "3cff0b00d32506d2baff802e35fcf66a4ced5e32085e96550ffb79e53c0ab570"
+    },
+    {
+      "path": "project/PositiveSolution.lean",
+      "bytes": 3423,
+      "sha256": "7ab9f83b73ec1532acb28be3f0d68a5ac0ac68e197d3ca5897e29ea1a1b35641"
+    },
+    {
+      "path": "project/PositiveSquareclass.lean",
+      "bytes": 1704,
+      "sha256": "e6c596bb9967d3e6db84dd1f184e1ceb1ebc460e8f5b63ff7bda5ac5559b7401"
+    },
+    {
+      "path": "project/RepeatedRoot.lean",
+      "bytes": 2206,
+      "sha256": "265be39bf4929a9e89813159ecd49ff2837b88b529a2e2aaa75c111caf22137c"
+    },
+    {
+      "path": "project/StandardBridge.lean",
+      "bytes": 1743,
+      "sha256": "8416e69a981358017b4ba6ce4dc0a40ce13bd201d0333343f8cfe8842368c91a"
+    }
+  ]
+}

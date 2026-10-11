@@ -1,0 +1,15 @@
+{
+  "authorization": "Author selected the exact replacement sentence.",
+  "before_manuscript_sha256": "4092056c4974ad3a9a06812936eafb3e3ef872893188a0e29d10586bbc20e24c",
+  "after_manuscript_sha256": "0f37ec68fa5573e82aadf56d1f4cbee385342c60a9c126ee395750a57e1c3c48",
+  "previous_scientific_sha256": "f2287f2ad8eedfc668556bf6d36ad57c86a76fa32fd0970f0d52ae31a21dac0a",
+  "changes": [
+    {
+      "before": "We show how they apply across the whole family, with the required scaling and signs accounted for.",
+      "after": "We apply these results to classify the integrals in this family.",
+      "in_scientific_projection": true
+    }
+  ],
+  "assessment": "One expository abstract sentence replaced. Mathematical statements and proof sources unchanged; no new independent review or proof check.",
+  "paper_sha256": "f4d2a0e759e1ed81c7a82fb37292fdd613fcae36beed724322ffc8b5e831631e"
+}

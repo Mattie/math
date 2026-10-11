@@ -1,0 +1,16 @@
+{
+  "challenge_module": "PositiveChallenge",
+  "solution_module": "PositiveSolution",
+  "theorem_names": [
+    "PositiveIntegralCheck.positive_bound",
+    "PositiveIntegralCheck.positive_exponent_two",
+    "PositiveIntegralCheck.nonzero_discriminant_bound",
+    "PositiveIntegralCheck.nonzero_discriminant_exponent_two"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

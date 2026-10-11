@@ -88,9 +88,9 @@ def main():
             continue
         compare(expected,actual);count+=1
         print('PASS:',package.name)
-    if count != 7:
-        raise ValueError('Expected seven publication packages.')
-    print('All seven packages trace to the unchanged 869-module upstream tree at '+UPSTREAM)
+    if count != 8:
+        raise ValueError('Expected eight publication packages.')
+    print('All eight packages trace to the unchanged 869-module upstream tree at '+UPSTREAM)
 
 if __name__ == '__main__':
     main()

@@ -1,0 +1,15 @@
+{
+  "challenge_module": "ClassificationChallenge",
+  "solution_module": "ClassificationSolution",
+  "theorem_names": [
+    "ClassificationChallenge.repeated_root_evaluation",
+    "ClassificationChallenge.rational_iff_discriminant_zero",
+    "ClassificationChallenge.irrational_iff_discriminant_ne_zero"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

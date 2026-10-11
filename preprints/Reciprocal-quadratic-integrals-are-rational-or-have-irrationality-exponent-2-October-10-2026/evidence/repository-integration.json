@@ -1,0 +1,40 @@
+{
+  "scope": "Local repository integration; no new proof or kernel replay.",
+  "base_commit": "f6823e6",
+  "added_unchanged_upstream_modules": [
+    "lean/OAI/NumberTheory/PiExponent/Main.lean",
+    "lean/OAI/NumberTheory/PiExponent/Ampleness/AdmissibleBlowupAmple.lean",
+    "lean/OAI/NumberTheory/PiExponent/Ampleness/AdmissibleBlowupMargin.lean",
+    "lean/OAI/NumberTheory/PiExponent/Ampleness/AdmissibleBlowupPolarization.lean",
+    "lean/OAI/NumberTheory/PiExponent/Ampleness/AdmissibleCurveModelDegrees.lean",
+    "lean/OAI/NumberTheory/PiExponent/Ampleness/AdmissibleJetAmpleness.lean",
+    "lean/OAI/NumberTheory/PiExponent/Analysis/AnalyticAggregate.lean",
+    "lean/OAI/NumberTheory/PiExponent/Analysis/DyadicPowers.lean",
+    "lean/OAI/NumberTheory/PiExponent/Analysis/DyadicSpacing.lean",
+    "lean/OAI/NumberTheory/PiExponent/Analysis/DyadicSummation.lean",
+    "lean/OAI/NumberTheory/PiExponent/Analysis/FiniteSpacing.lean",
+    "lean/OAI/NumberTheory/PiExponent/Analysis/FlintConsequence.lean",
+    "lean/OAI/NumberTheory/PiExponent/Analysis/FlintHills.lean",
+    "lean/OAI/NumberTheory/PiExponent/Analysis/FlintSine.lean",
+    "lean/OAI/NumberTheory/PiExponent/Analysis/LiteralAnalyticSummand.lean",
+    "lean/OAI/NumberTheory/PiExponent/Approximation/AdmissibleMatrixGeometry.lean",
+    "lean/OAI/NumberTheory/PiExponent/Approximation/AdmissibleMatrixInterpolation.lean",
+    "lean/OAI/NumberTheory/PiExponent/Approximation/InterpolationConsequence.lean",
+    "lean/OAI/NumberTheory/PiExponent/Geometry/AdmissibleCurveCoordinates.lean",
+    "lean/OAI/NumberTheory/PiExponent/Geometry/AdmissibleCurveDegreeData.lean",
+    "lean/OAI/NumberTheory/PiExponent/Geometry/AdmissibleCurveImage.lean",
+    "lean/OAI/NumberTheory/PiExponent/Geometry/AdmissibleCurveModel.lean",
+    "lean/OAI/NumberTheory/PiExponent/Jets/AdmissibleJetPackets.lean",
+    "lean/OAI/NumberTheory/PiExponent/Jets/AdmissibleJetSurjectivity.lean"
+  ],
+  "source_modules": 986,
+  "checker": "Adopted repository shared named-declaration axiom checker; earlier build receipts remain historical.",
+  "prepared_source_manifest_sha256": "0caf555eb68b83a7f8a715d0de00902a0cdc74c5846c0eb97415afdb7271c8c4",
+  "checks": [
+    "Eight publication regression tests passed",
+    "3890 frozen artifacts and protected manifest entries unchanged",
+    "All eight packages match the pinned 869-module OpenAI tree",
+    "986 source hashes/imports and historical candidate identities passed",
+    "Shared axiom checker accepted 10 classification and 18 positive-discriminant audit reports from the prior cached build"
+  ]
+}

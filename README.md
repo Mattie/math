@@ -4,6 +4,7 @@ Preprints and formal AI-researched proofs driven by Ryan Matthew Casper.
 
 ## Preprints
 
+- **October 10, 2026:** [Reciprocal quadratic integrals are rational or have irrationality exponent 2](preprints/Reciprocal-quadratic-integrals-are-rational-or-have-irrationality-exponent-2-October-10-2026/README.md) — classification for proper integrals with rational coefficients and endpoints; manuscript, Lean proofs, and verification materials.
 - **October 9, 2026:** [The irrationality exponent of real and imaginary quadratic periods is 2](preprints/The-irrationality-exponent-of-real-and-imaginary-quadratic-periods-is-2-October-9-2026/README.md) — general periodic and normalized quadratic logarithm families, including imaginary periods of every branch; manuscript, Lean proofs, verification materials, and audience explainers.
 - **October 8, 2026:** [The irrationality exponent of positive quadratic logarithms is at most 4](preprints/The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026/README.md) — manuscript, Lean formalization, and verification materials for the general quadratic upper bound.
 - **October 7, 2026:** [The irrationality exponent of log(3 + 2√2)/√2 is 2](preprints/The-irrationality-exponent-of-log-3-plus-2-sqrt2-over-sqrt2-is-2-October-7-2026/README.md) — manuscript, Lean formalization, verification materials, and audience explainers.
