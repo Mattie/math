@@ -3,9 +3,9 @@
 Updated: October 11, 2026 (America/Chicago).
 
 **Current phase:** ✅ Hosted verification complete; ✅ Evidence audit passed;
-🔄 Preprint drafting and publication preparation; ⏳ Manuscript review and PDF inspection.
-The major-proof assignment is not complete: no manuscript source and compiled
-`paper.pdf` have yet been delivered in the repository preprint layout.
+✅ Full manuscript drafted, reviewed and compiled; 🔄 Public rendering and
+retrieval checks. The 19-page preprint source and PDF now exist in the
+repository preprint layout; publication validation and delivery remain in progress.
 All fifteen comparison targets passed Lean and Rust Nanoda on fresh candidate
 compilation. The official Mathlib dependency cache remains trusted. See the
 [immutable hosted result](evidence/hosted-result-2026-10-11.json).
@@ -50,11 +50,9 @@ hosted result, not a fresh run. The complete evidence archive was downloaded and
 its GitHub SHA-256 verified. Hosted artifacts expire January 9, 2027; anonymous
 artifact retrieval and durable public distribution remain unverified.
 
-**Next action:** prepare the preprint from the proof memo under the preferred
-explicit title, retaining all three main results. Build and inspect the PDF,
-perform independent paper review and correspondence checks, then reconcile all
-publication metadata and delivery links. The checklist update itself does not
-establish preprint readiness.
+**Next action:** reconcile the independent manuscript reviews, inspect final PDF
+pages and GitHub rendering, and verify published download paths. Reconcile the
+publication metadata and deliver the PDF, source, proofs, and verification links.
 
 Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️ Deferred ·
 ➖ Not applicable · 🟡 Partial · 🔍 Needs review.
@@ -79,14 +77,14 @@ Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️
 | GitHub verifier execution | ✅ Complete — run 38139172013, attempt 1 | Exact commit `b15a643`; all fifteen targets accepted by Lean and Rust Nanoda; valid and rejection controls passed |
 | GitHub evidence audit | ✅ Complete | [Immutable result](evidence/hosted-result-2026-10-11.json): 95 indexed files, 58 command logs, 93 retained-file hashes, 13 protected repository inputs and 969 frozen inputs checked |
 | Independent mathematical/specification reviews | ✅ Complete | [REVIEW](REVIEW.md), with independent initial judgments and scope limits |
-| Proof-memo blind prose-first and correspondence review | ✅ Complete for the reviewed memo | Separately authored [ARGUMENT](ARGUMENT.md), reviewed before source inspection; [review identities](evidence/pre-pr/review.json). Does not cover a future manuscript; later memo edits changed math markup only |
+| Proof-memo blind prose-first and correspondence review | ✅ Complete for the reviewed memo | Separately authored [ARGUMENT](ARGUMENT.md), reviewed before source inspection; [review identities](evidence/pre-pr/review.json). Does not cover a future manuscript; later memo edits corrected the truncation explanation and GitHub math markup without changing proof sources |
 | Reconciliation | 🟡 Partial | Proof and hosted evidence reconciled; manuscript, publication metadata and final reader-facing checks remain unfinished |
-| Publication scope and title | 🟡 Partial | Existing result-focused titles inspected; user prefers EXPLICIT as recorded above. Final title and all metadata must be reconciled with the full three-result scope |
-| Paper drafted | 🔄 In progress | User authorized PAPER with the Mbang handoff and unreleased combined manuscript as style references; preparing the full manuscript with all three main results |
-| Independent manuscript review | ⏳ Pending | Freeze the scientific-text packet and obtain a fresh prose-first assessment; earlier proof/memo verdicts do not establish paper readiness |
-| Paper–formalization correspondence | ⏳ Pending | Map every manuscript main claim to the existing checked declarations and standard-definition bridges; identify inherited results; inspect hypotheses and strength |
-| Preprint built | ⏳ Pending | Create manuscript source and reproducible build in the established preprint layout; compile and retain `paper.pdf` |
-| Reader-facing review | 🔍 Needs review | GitHub ARGUMENT.md preview at 6ab6fa9 was opened after macro/delimiter fixes: rejected macros and raw display delimiters absent, but the captured first numbered equation appeared vertically compressed/stacked and final layout acceptance was not established. No paper PDF exists; PDF layout, final Markdown, links and download paths remain to be checked |
+| Publication scope and title | ✅ Complete | Result-focused title used consistently; all three results remain main theorems; no priority or exact-exponent claim |
+| Paper drafted | ✅ Complete | Full manuscript with all three main results, mathematical argument, limitations, references, and formalization appendix |
+| Independent manuscript review | ✅ Complete, model review | [Review record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reviews.json): fresh mathematical prose-first assessment, separate specification/evidence review, and both final-diff checks; no human-review claim |
+| Paper–formalization correspondence | ✅ Complete within recorded scope | [Review record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reviews.json) and theorem map cover three main results, twelve public declarations and fifteen comparison targets; wrapper wording corrected; no proof changes |
+| Preprint built | ✅ Complete | Editable single-file LaTeX and retained 19-page PDF; desktop compiler succeeds; reproducible Tectonic build has no layout warnings |
+| Reader-facing review | 🔄 In progress | GitHub memo at 0ddb456 has 32 rendered displays, intact strict inequalities and readable equation numbering after fixes; all 19 draft PDF pages inspected as contact sheets; final detail and public retrieval checks pending |
 | Publication package reconciled | ⏳ Pending | Align paper, README, citation metadata, theorem map, verification records and archive identities on title, claims, versions and status |
 | Final delivery | ⏳ Pending | Deliver direct links to reviewed PDF, manuscript source, proof sources and verification result; do not substitute the memo |
 | Catalogue integration | ➖ Not applicable to this assignment | Standalone package; no target-catalogue submission requested |

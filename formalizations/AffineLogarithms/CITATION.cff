@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Cite this local proof package by title, date, and archive SHA-256; it has not been published."
+message: "Cite this proof package by title, date, and repository revision; the accompanying preprint has separate article metadata."
 title: "Three affine logarithm irrationality-exponent bounds at four"
 type: software
 authors:

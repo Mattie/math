@@ -144,21 +144,24 @@ portable build or control test as a new full replay.
 
 ## Fresh GitHub verification
 
-The containing repository's `verification/isolated-affine/` runner and manual
-`.github/workflows/isolated-affine.yml` workflow prepare a fresh hosted verification
-of all fifteen final wrappers. They are repository infrastructure, separate from
-this standalone source archive. [WORKFLOW.md](WORKFLOW.md) tracks setup, actual
-execution, and evidence audit as separate milestones. No hosted success is claimed
-by the local evidence above.
+[Run 38139172013](https://github.com/Mattie/math/actions/runs/38139172013), attempt 1,
+passed at commit `b15a6431eca8632a48c1cd84e5200edd30f0670c`. It invoked the affine
+runner through the registered `isolated-irrationality.yml` workflow with
+`case=affine`. All fifteen final wrappers passed exact statement comparison and
+checking by Lean and Rust Nanoda, and all required controls passed. The downloaded
+evidence archive and its receipt, logs, protected identities and target coverage
+were audited in the [immutable hosted result](evidence/hosted-result-2026-10-11.json).
 
-The intended run prepares pinned tools and official upstream dependency caches in
-a trusted project, then copies the frozen candidate source into fresh build state.
-It uses the maintained Comparator with Landrun and the tested systemd restrictions,
-exercises acceptance, rejection, and boundary controls, and requires full-target
-comparison plus acceptance by Lean and Nanoda. Official dependency caches remain a
-declared trust input; this is not a from-source rebuild of every dependency.
+This run prepared pinned tools and official upstream dependency caches in a
+trusted project, then copied the frozen candidate source into fresh build state.
+It used the maintained Comparator with Landrun and the tested systemd restrictions.
+Official dependency caches remain a declared trust input; this was not a
+from-source rebuild of every dependency. It did not retain a new standalone export.
 
-The ordinary CI integrity check and audit of the retained build log do not execute
-this verifier. A completed hosted run must have its exact commit, run/attempt,
-receipt, logs, protected-input checks, and target coverage audited before its
-checklist entries can be marked complete.
+Later manuscript and documentation changes reuse this dated result because the
+969 frozen inputs and final targets remain unchanged. The ordinary CI integrity
+check does not repeat the hosted proof run. [WORKFLOW.md](WORKFLOW.md) tracks proof
+verification, the evidence audit and preprint readiness separately. The GitHub
+artifact expires January 9, 2027; authenticated download was tested and the complete
+archive retained locally. Anonymous artifact retrieval and durable public
+distribution of the complete archive remain unverified.

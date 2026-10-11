@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-11",
+  "manuscript": "build/main.tex",
+  "manuscript_sha256": "67fdc2aa46438bd4e85616739e4de6fc1984a8c7b89d9dbab46f422ecd7090ce",
+  "pdf": "paper.pdf",
+  "pdf_sha256": "a033317d7415f55d2d533dedbe09f37525730e48a234134a9f3cfd4a9797ab45",
+  "pdf_bytes": 162030,
+  "pages": 19,
+  "compiler": {
+    "name": "Tectonic",
+    "version": "0.15.0",
+    "binary_sha256": "f0b36e78c13dd75b821984830533f872c9a12c62957e51357bc16e65cdb71013"
+  },
+  "command": "bash scripts/build-paper.sh",
+  "source_date_epoch": 1791676800,
+  "platform": "Ubuntu via WSL",
+  "result": "success",
+  "tex_warnings": 0,
+  "build_log_sha256": "b1bbf884a8733ddee5bebfc76ca3ffd4979593a5515912a641740489bc8434ce",
+  "desktop_compiler": "Successful diagnostic compilation after adding mathrsfs and correcting identifier wrapping; final appendix wording subsequently built with Tectonic.",
+  "reproducibility_limit": "Build command and compiler are identified. The TeX resource bundle is not vendored or pinned separately; other compiler/resource versions may produce different PDF bytes.",
+  "proof_sources_changed": false
+}

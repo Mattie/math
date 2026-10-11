@@ -1,5 +1,9 @@
 # Three affine logarithm bounds at four
 
+The accompanying [preprint](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/README.md)
+is titled **The irrationality exponents of log(2) + √2 and √2 log(2) are at most 4**.
+It presents all three results below; this directory is its shared proof package.
+
 This standalone Lean source package proves $\mu(x)\le4$ and irrationality for
 
 | Number $x$ | Public declarations |

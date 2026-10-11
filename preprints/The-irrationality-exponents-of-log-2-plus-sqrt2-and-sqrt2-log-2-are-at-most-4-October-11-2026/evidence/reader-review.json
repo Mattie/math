@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-11",
+  "manuscript_sha256": "67fdc2aa46438bd4e85616739e4de6fc1984a8c7b89d9dbab46f422ecd7090ce",
+  "pdf_sha256": "a033317d7415f55d2d533dedbe09f37525730e48a234134a9f3cfd4a9797ab45",
+  "pdf_review": {
+    "pages": 19,
+    "renderer": "pypdfium2 5.13.0, scale 1.6",
+    "opened": "All pages as contact sheets; pages 1, 7, 11 and 16 individually at higher resolution; changed appendix and final reference pages inspected again after corrections.",
+    "observations": [
+      "Title, all three main results, mathematical displays and equation numbers are readable.",
+      "No clipped displays or source-map overflow observed.",
+      "Source table repeats its header across pages; references and explicit disclosure remain visible.",
+      "PDF text and metadata match the title and author; embedded fonts are Latin Modern, math symbols and rsfs, with no Arial.",
+      "No embedded file attachments. URI annotations point only to cited sources and repository/run pages."
+    ],
+    "layout_warnings": 0,
+    "metadata": {
+      "/Creator": "LaTeX with hyperref",
+      "/Title": "The irrationality exponents of log(2) + sqrt(2) and sqrt(2) log(2) are at most 4",
+      "/Subject": "Affine logarithms, rational approximation, and a degree-four norm argument",
+      "/Author": "Ryan Matthew Casper",
+      "/Producer": "xdvipdfmx (0.1)",
+      "/CreationDate": "D:20261011000000-00'00'"
+    },
+    "attachments": [],
+    "uri_links": [
+      "https://github.com/Mattie/math/actions/runs/38139172013",
+      "https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd",
+      "https://github.com/Mattie/math/tree/b15a6431eca8632a48c1cd84e5200edd30f0670c",
+      "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=8518&what=fullteng"
+    ]
+  },
+  "github_memo": {
+    "commit": "0ddb45657dd3e6fb7fb18fdf3f1f9bb0b6a5a998",
+    "path": "formalizations/AffineLogarithms/ARGUMENT.md",
+    "sha256": "5670776f604a26bc14bf3ea723624763a801db90ec7a31b240ecae6e84eb89a0",
+    "observations": [
+      "Opened the actual GitHub renderer.",
+      "32 display-math elements; no MathML error elements or labelled tables.",
+      "Strict-inequality parameter chains rendered in full after escaping less/greater-than signs.",
+      "Opening bound, parameter displays, integral clearing and norm comparison inspected visually."
+    ]
+  },
+  "preprint_github_rendering": "Pending publication of this initial paper commit.",
+  "public_download_check": "Pending publication of this initial paper commit."
+}

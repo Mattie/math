@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-11",
+  "final_manuscript_sha256": "67fdc2aa46438bd4e85616739e4de6fc1984a8c7b89d9dbab46f422ecd7090ce",
+  "initial_full_manuscript_sha256": "f462a14dade69f84ba58e59c162ade3079b203bf8d63fb55fdf75c5ed84ff455",
+  "scientific_projection_sha256": "2d6c911ffa5557d3b424ab4ba8ea979877571b768c8331a14283e84ffb00df9c",
+  "review_packet_changes": [
+    "Author-identifying administrative material removed from scientific projection.",
+    "Formalization, checking and preparation appendices removed from initial scientific projection.",
+    "Abstract checker sentence and closing formalization-introduction paragraph removed.",
+    "Mathematical hypotheses, caveats, argument, citations and bibliography retained."
+  ],
+  "separation": "Fresh reviewer contexts with instruction-based separation; not a filesystem sandbox. No sibling or previous verdicts read before initial assessments.",
+  "reviewers": [
+    {
+      "role": "Mathematical argument and source correspondence",
+      "model": "GPT-6 Astra",
+      "sequence": "Scientific proof assessed first and initial report saved; then actual inherited and endpoint declarations inspected. Final manuscript diff and hash inspected separately.",
+      "result": "No failed mathematical deduction or endpoint mismatch found within the reviewed scope.",
+      "limits": [
+        "Inherited geometric and analytic foundations were checked at their interfaces and applications, not independently reproved.",
+        "MathNet full-text retrieval failed in this review; quoted prior theorem not freshly authenticated.",
+        "No Lean build, checker replay, priority assessment or human peer review."
+      ]
+    },
+    {
+      "role": "Specification, standard definitions and retained evidence",
+      "model": "GPT-6 Astra",
+      "sequence": "Independent target/source assessment saved before manuscript and assurance records; then manuscript correspondence, pinned Mathlib definition and recorded evidence inspected. Final manuscript diff and hash inspected separately.",
+      "result": "No main-statement, quantifier, exponent-convention or nonvacuity defect found. All 969 frozen input hashes and all 58 retained command-log hashes matched.",
+      "limits": [
+        "Dated hosted evidence reused; no new Lean build or proof replay.",
+        "No current upstream soundness investigation, novelty assessment, or independent universal-containment claim."
+      ]
+    }
+  ],
+  "resolved_findings": [
+    {
+      "finding": "Appendix implied an equivalence of exponent definitions.",
+      "resolution": "Now states that the wrappers assert irrationality and exclude Mathlib LiouvilleWith nu x for every nu > 4."
+    },
+    {
+      "finding": "Appendix located comparison wrappers in StandardBridge.lean.",
+      "resolution": "Now locates target wrappers in Solution.lean and the supporting implication in StandardBridge.lean."
+    },
+    {
+      "finding": "Initial LaTeX lacked mathrsfs and long identifiers overflowed.",
+      "resolution": "Added package, breakable identifiers and ragged-right source table; final Tectonic log has no warnings."
+    }
+  ],
+  "final_delta": "Both reviewers inspected the exact final source hash and found only the resolved appendix wording and mechanical typesetting changes; mathematical statements and proof unchanged.",
+  "prior_art": "The earlier October 10 audit of the specified Luchin–Salikhov theorem is reused separately. Its two substitutions yield the stated 7.98101 comparison; this is not an exhaustive priority search.",
+  "private_report_sha256": {
+    "math-review/final-delta.md": "0999d8dd25e31a855972e95388f49ba5eb029e6455e90b6e9b5dc1bcb7cccd39",
+    "math-review/final.md": "1af3881d7174bd33514f42253ff98ee8788086e84dd0a5d03acfc43523a480a6",
+    "math-review/initial.md": "eeb80584b436ef7d0fb46884a2687baf7ba5364a7f7ec7266ef3ada3905a88d6",
+    "spec-review/final-delta.md": "5db28fb7b14ea24d862fc7151c345d7a00cb8faf1d9070f2a239667f9435965b",
+    "spec-review/initial-specification-assessment.md": "ac819555488d0f92886575ec9b4cf584837c1145b20c8a021d4e718bf4df24e8",
+    "spec-review/manuscript-v1-correspondence-review.md": "06da4bcdd75550dd38fa6de37cb8a0fa45768fd38274e397da284a07c7a0e2a3"
+  },
+  "publication_note": "Private review packets and raw reports are retained locally; this sanitized record does not publish them. Model reviews are not human peer review."
+}

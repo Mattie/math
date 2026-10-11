@@ -1,0 +1,15 @@
+{
+  ".gitignore": "3cba886152bff7a7f8618aaa079dbb9aeee4b0214d890efa7154838f2cf42ebb",
+  "build/main.tex": "67fdc2aa46438bd4e85616739e4de6fc1984a8c7b89d9dbab46f422ecd7090ce",
+  "CITATION.cff": "e2eb10ee6f58b811cd7025f30228ca59ee42a24b22f366e7b782a5162f589375",
+  "evidence/build.json": "56501babcf154c358a99e1000bf5ca58d5bb881461953ad086adfabb5036173c",
+  "evidence/reader-review.json": "813e25d6d28b871cf0b85a19f1869bc271e769ff2c2fd22a8f5782fa86e4d22f",
+  "evidence/reviews.json": "cbc036ece8e9ef85f6ec04af02bccb6cc0dd81e0680c994087a26df158ed9dec",
+  "LICENSES.md": "74750ad6256e9c33fd6ae33b9f8e15cab8d14e00e1f1f16c7a57e84794106cfb",
+  "paper.pdf": "a033317d7415f55d2d533dedbe09f37525730e48a234134a9f3cfd4a9797ab45",
+  "README.md": "5fac4591c21c0885d0a2f700bea062e557d6c741d00684c4cd1318586dd10a80",
+  "scripts/build-paper.sh": "753e320d64e12682d62d8c4d8857549312f593853e8fc62ae63a9d13c0029120",
+  "scripts/check-publication.py": "b6f7b945b63ea6c20c9dfe2edf1a998f9ecbbd2c9388c75f861ea5bb23843584",
+  "theorem-map.json": "96ba85b7bbc40496296c4e42033aba5de0ff4ad7bc7fb0db840f79d3ff9ff7b9",
+  "VERIFY.md": "6bb973c7726cdd37eec6137d0ee23c3205e8a4c96e80987120013059ead48e15"
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite the preprint with its date and repository revision."
+title: "The irrationality exponents of log(2) + sqrt(2) and sqrt(2) log(2) are at most 4"
+type: article
+authors:
+  - family-names: Casper
+    given-names: Ryan Matthew
+date-released: 2026-10-11
+version: 1.0.0
+license: CC-BY-4.0
