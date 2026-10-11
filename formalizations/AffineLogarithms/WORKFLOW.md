@@ -3,7 +3,7 @@
 Updated: October 11, 2026 (America/Chicago).
 
 **Current phase:** ✅ Hosted verification complete; ✅ Evidence audit passed;
-🔄 Publication scope and checklist reconciliation; ⏳ Required preprint unfinished.
+🔄 Preprint drafting and publication preparation; ⏳ Manuscript review and PDF inspection.
 The major-proof assignment is not complete: no manuscript source and compiled
 `paper.pdf` have yet been delivered in the repository preprint layout.
 All fifteen comparison targets passed Lean and Rust Nanoda on fresh candidate
@@ -36,9 +36,10 @@ priority remains unestablished; this limits claims, not preprint preparation.
 
 **Permissions and current assignment:** RUN authorized scoped branch publication,
 hosted verification and evidence audit; PR authorized [PR 22](https://github.com/Mattie/math/pull/22).
-The current request updates the checklist under the revised research workflow
-and clarifies the preferred title's scope. Preprint preparation is the remaining
-major-proof deliverable. No merge, release or external submission is authorized.
+The user authorized PAPER: prepare the complete preprint under the explicit
+title, using the supplied Mbang handoff and the unreleased combined paper as
+style references. Private voice references and the unreleased combined paper
+remain outside the publication package. No merge, release or external submission is authorized.
 A later GitHub approval gate requires separate explicit authorization.
 
 **Evidence reused:** [GitHub run 38139172013](https://github.com/Mattie/math/actions/runs/38139172013)
@@ -81,7 +82,7 @@ Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️
 | Proof-memo blind prose-first and correspondence review | ✅ Complete for the reviewed memo | Separately authored [ARGUMENT](ARGUMENT.md), reviewed before source inspection; [review identities](evidence/pre-pr/review.json). Does not cover a future manuscript; later memo edits changed math markup only |
 | Reconciliation | 🟡 Partial | Proof and hosted evidence reconciled; manuscript, publication metadata and final reader-facing checks remain unfinished |
 | Publication scope and title | 🟡 Partial | Existing result-focused titles inspected; user prefers EXPLICIT as recorded above. Final title and all metadata must be reconciled with the full three-result scope |
-| Paper drafted | ⏳ Pending | Proof memo exists; required abstract, main theorems, context/related work, paper exposition, limitations, references and disclosures have not been assembled as a manuscript |
+| Paper drafted | 🔄 In progress | User authorized PAPER with the Mbang handoff and unreleased combined manuscript as style references; preparing the full manuscript with all three main results |
 | Independent manuscript review | ⏳ Pending | Freeze the scientific-text packet and obtain a fresh prose-first assessment; earlier proof/memo verdicts do not establish paper readiness |
 | Paper–formalization correspondence | ⏳ Pending | Map every manuscript main claim to the existing checked declarations and standard-definition bridges; identify inherited results; inspect hypotheses and strength |
 | Preprint built | ⏳ Pending | Create manuscript source and reproducible build in the established preprint layout; compile and retain `paper.pdf` |

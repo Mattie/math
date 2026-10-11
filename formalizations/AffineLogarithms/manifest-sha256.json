@@ -1,7 +1,7 @@
 {
   ".gitattributes": "92c569cb24a4df5e6df3ec5ab6380fcd3229b300c7266c5b47954e3ca4928500",
   ".gitignore": "3cf5e660ddd7a118cce8882a7570ed6c5ad1d73c754baba26340c98564b81acb",
-  "ARGUMENT.md": "6fc53ee2588987697935fa755bb925ecaa60d55decfbba6f56fb2bb22b4bb5ab",
+  "ARGUMENT.md": "c20d88e3aed3db10c51ea2e2d82697c34b85ef33339341d77c4867a9c3991bdf",
   "AlgebraicLog/AdmissibleParameters.lean": "c10d98ca66695f0cef07a8a32b813d875aa2dfc0791bd5c4133a974c651505ed",
   "AlgebraicLog/AnalyticAggregate.lean": "91a02f48de3efbb883f72aedd1c291c8ac377ea940ac30b53ee0445047135339",
   "AlgebraicLog/AnalyticData.lean": "0de017ae10c3f0350a1a012c40a022fe79427990f6e62cd001ece184d7b884b3",
@@ -980,7 +980,7 @@
   "Solution.lean": "37ea3d216fdf8b11b9ad464170fecb95b8d412fa1b172002f765a39476176a8b",
   "StandardBridge.lean": "03177d690e4c37b56e28b0995a1bde961f56685a3a7a0d92af401b878f96c140",
   "VERIFY.md": "c8929667bccff3dfde3dbd4f07f2512e59b56290cc3d7b2facc6524183dc42e4",
-  "WORKFLOW.md": "e3650e9c792783284d1b6633c1c1d2489638bbb3e4de87e53e9cd545df4770a3",
+  "WORKFLOW.md": "188b8b91b9e7237000e0b1bd6153386247ef2d6222741c53c1d193731b0f4765",
   "config.json": "6b51bc6cd2a02f0f4891297e1872743dc9a8a1524dc1a209d060f131cde35e97",
   "controls/ill-typed.ndjson": "bd6be27b1f8e01147117e42dbb5b4c007ee2dec5c2f72b4f56187419896e45d7",
   "controls/positive.ndjson": "27f3cede3d4a16074bee8588a0969ebcdec5ad2d8af5af1ec8fc5e30143b71ad",

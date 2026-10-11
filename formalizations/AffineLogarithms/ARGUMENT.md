@@ -11,7 +11,7 @@ For each number, the conclusion is irrationality and irrationality exponent at m
 
 ```math
 q^{-\nu}\le |x-p/q|\quad(p\in\mathbb Z,\ q\in\mathbb N,\ q\ge Q).
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The fractions in (1) need not be reduced. The threshold can depend on the number and on $`\nu`$. No bound at $`\nu=4`$, explicit numerical threshold, or equality of the exponent with four is asserted.
@@ -25,7 +25,7 @@ Let $`F`$ be a number field of degree four. Let $`a,u,v\in F`$ be algebraic inte
 ```math
 \exp(\sigma(u)(x-\sigma(v)))=\sigma(a),\qquad
 |\sigma(u)|\le2\quad(\sigma\in G).
-\tag{2}
+\qquad\text{(2)}
 ```
 
 Then (1) holds for $`x`$. This is the statement of `PairedAffine.Endpoint.paired_eventualLowerBound` in `PairedAffine/Endpoint.lean`. The distinguished embedding need not be stipulated to lie in $`G`$. No compatibility identity is required at the other embeddings.
@@ -39,7 +39,7 @@ R=\sum_\sigma |\sigma(u)|(|x|+1+|\sigma(v)|),\quad R'=2R+2,
 
 ```math
 \rho=100\max\left(1,|x|,\sum_\sigma|\sigma(u)(x-\sigma(v))|\right).
-\tag{3}
+\qquad\text{(3)}
 ```
 
 These are fixed before selecting approximation data. They give nonnegative $`\kappa,R`$, $`\rho\ge100`$, $`100|x|\le\rho`$, and the separate bound $`100|\sigma(u)(x-\sigma(v))|\le\rho`$ at every embedding. The notation `proxy = exp x` in the source merely supplies $`\log(\mathrm{proxy})=x`$ to logarithmic data structures. It is not the algebraic base $`a`$, nor is it required to be algebraic.
@@ -48,7 +48,7 @@ Fix $`\nu>4`$ and suppose, for contradiction, that approximations with
 
 ```math
 |x-p/q|\le q^{-\nu}
-\tag{4}
+\qquad\text{(4)}
 ```
 
 exist with unbounded positive denominators. All constants and finite approximation data chosen next remain fixed when a later height $`H`$ tends to infinity.
@@ -67,7 +67,7 @@ and $`0<\eta<1`$, so that
 
 ```math
 g=\nu(A(1-\eta)-\theta)-2(1-\theta)>0.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 This is `AlgebraicLog.ParameterShape.exists_quadratic_shape`, obtained by applying `PiExponent.exists_parameters` at exponent $`\nu/2>2`$; the approximations themselves retain exponent $`\nu`$. Choose $`0<\epsilon<g`$, $`\epsilon\le1/2`$; then choose $`F_0>2/\theta`$ sufficiently large that $`\nu/F_0<\epsilon/3`$. Next choose dimension $`m\ge1`$, and set
@@ -75,7 +75,7 @@ This is `AlgebraicLog.ParameterShape.exists_quadratic_shape`, obtained by applyi
 ```math
 K=\lfloor C^m\rfloor,\quad w_0=B^{-m},\quad
 v_0=2K\theta^m w_0.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Thus $`K(w_0/v_0)\theta^m=1/2`$, and $`K\theta^m<1`$. The dimension budget gives both a small error margin and a collision limit exceeding three. Small positive rational $`\sigma`$ is then chosen with
@@ -104,7 +104,7 @@ T=\frac\nu{F_0}+\frac{\log2}{v_0}
  +\frac{\log4+\log(2K)+\nu}{w_*},\quad
 J=\frac{\rho K}{w_0}+\frac{\log2}{v_0}
  +\frac{\log(200K)+\log(\rho/100)}{w_*},\quad V=T+J.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 The dimension and weight margins in `AdmissibleParameters` prove
@@ -112,7 +112,7 @@ The dimension and weight margins in `AdmissibleParameters` prove
 ```math
 2E+U(R')+V<g,\qquad
 2+2E+U(R')+V<C_\infty,
-\tag{8}
+\qquad\text{(8)}
 ```
 
 where
@@ -138,7 +138,7 @@ $`r_{\sigma i}=\sigma(u)(p_i/q_i-\sigma(v))`$. The matrix entry is
 ```math
 z_\sigma^{jh}[t^s Z^\beta]
  (1+t)^h\prod_i(Z_i+jr_{\sigma i}+L_i(t))^{\gamma_i}.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 This is `PairedAffine.matrix` in `PairedAffine/Data.lean`, using the inherited `InterpolationMatrix.entry`. In particular the factor $`z_\sigma^{jh}`$ is part of the matrix.
@@ -148,7 +148,7 @@ The decisive geometric input is `Logarithm.eventually_weighted_logarithmic_inter
 ```math
 K(1+3\sigma)^{m+1}\frac{\prod_{i=0}^m d_i}{\prod_{i=0}^m e_i}<1,
 \qquad (1+\sigma)d_i<e_i\ (i>0),
-\tag{10}
+\qquad\text{(10)}
 ```
 
 and the following separated-product condition. For equal-cardinality subsets $`P,Q\subseteq\{0,\ldots,m\}`$, if $`i>0`$ belongs to $`P\setminus Q`$ and membership in $`P,Q`$ agrees above $`i`$, then
@@ -156,12 +156,12 @@ and the following separated-product condition. For equal-cardinality subsets $`P
 ```math
 D_m(\sigma)\prod_{j\in Q}e_j<\prod_{j\in P}d_j,
 \quad D_m(\sigma)=2(m+2)^{m+2}(1+(m+2)/\sigma)^{m+2}.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 The conclusion is surjectivity, at all sufficiently large integers $`n`$, of the coefficient-packet map of polynomials of weighted degree at most $`n\mathcal R`$ onto all formal logarithmic jet packets of jet weight strictly below $`n\mathcal R`$ at those centers. Here $`\mathcal R>0`$ is the rational geometric scale constructed from the data. The formal coordinates are $`Y=Y_j(1+t)`$, $`X_i=c_{ji}+\log(1+t)+Z_i`$. This is a deep inherited theorem, obtained in the source through ampleness of an interpolation bundle and eventual jet restriction. Those foundations are invoked here, not established anew.
 
-Apply it with degree weights $`(w_0,w_i)`$, jet weights $`(v_0,w_i/\theta)`$, $`Y_j=b_0^j`$, and $`c_{ji}=jr_{\sigma_0i}`$. Positive $`b_0\ne1`$ makes these power centers distinct and nonzero. Equations (10)–(11) follow from the admissible volume, slack, and separated-weight construction (`AlgebraicLog/CurveWeights.lean`, `AlgebraicLog/ApproximationGeometry.lean`). Additive centers have no further hypothesis. Because $`T_iv_0\ge w_i/\theta`$, truncating the logarithms does not alter the requested coefficients. The formal-to-matrix interface is `Logarithm.ScaledMatrix.truncatedLogMatrix_surjective_of_formalLog_packets`, used in `PairedAffine.Geometry.cofinal_matrix`.
+Apply it with degree weights $`(w_0,w_i)`$, jet weights $`(v_0,w_i/\theta)`$, $`Y_j=b_0^j`$, and $`c_{ji}=jr_{\sigma_0i}`$. Positive $`b_0\ne1`$ makes these power centers distinct and nonzero. Equations (10)–(11) follow from the admissible volume, slack, and separated-weight construction (`AlgebraicLog/CurveWeights.lean`, `AlgebraicLog/ApproximationGeometry.lean`). Additive centers have no further hypothesis. Because $`T_iv_0\ge w_i/\theta`$, the substitution that replaces each formal logarithm by its truncation is invertible and preserves the weighted filtration. It therefore preserves surjectivity of the coefficient-packet map; individual coefficients need not be equal. This is `Logarithm.ScaledTruncation.formalLog_packets_surjective_iff_truncated`. The formal-to-matrix interface is `Logarithm.ScaledMatrix.truncatedLogMatrix_surjective_of_formalLog_packets`, used in `PairedAffine.Geometry.cofinal_matrix`.
 
 Consequently, for every lower height bound there is a larger $`H=n\mathcal R`$ at which (9) for $`\sigma_0`$ has full row rank. Choose a nonzero full-row minor, hence one column selection $`s_H`$. Keep this exact selection at all embeddings and denote its determinants by $`\Delta_\sigma`$. No later estimate chooses a different minor.
 
@@ -173,7 +173,7 @@ For a selected column $`\gamma`$, set $`e_i=\lfloor H/w_i\rfloor`$, so $`\gamma_
 \mathcal C=\left(\prod_iD_i^{e_i}\right)^M
   \left(\prod_{\text{rows }r}\prod_iq_i^{-\beta_{ri}}\right)
   \left(\prod_{\text{selected columns }c}\prod_iq_i^{\gamma_{ci}}\right).
-\tag{12}
+\qquad\text{(12)}
 ```
 
 It need not be an integer. Define integral affine numerators
@@ -182,7 +182,7 @@ $`D_i(jn_i+q_iL_i(t))`$, raised to exponent $`\gamma_i-\beta_i`$; spare powers o
 
 ```math
 \sigma(Z)=\mathcal C\Delta_\sigma\quad\text{for every }\sigma.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 This is `PairedAffine.Arithmetic.exists_integral_entry_lift` in `PairedAffine/ArithmeticClearing.lean` and `PairedAffine.Arithmetic.exists_integral_selected_minor` in `PairedAffine/Arithmetic.lean`. Since $`\Delta_{\sigma_0}\ne0`$, $`Z\ne0`$; injectivity of every field embedding then gives $`\Delta_\sigma\ne0`$ for every $`\sigma`$. This is why all logarithms below are legitimate.
@@ -198,7 +198,7 @@ The inherited least-common-multiple estimate, column degree bound, and inverse r
 
 ```math
 \log\mathcal C\le MH(1-b_H+E).
-\tag{14}
+\qquad\text{(14)}
 ```
 
 The exact reference is `PairedAffine.Arithmetic.log_selectedScalar_le`, using `AlgebraicLog.SelectedArithmetic` with base denominator one. Dropping the inverse row factors would lose the $`-b_H`$ term and would not reproduce this argument.
@@ -208,14 +208,14 @@ $`1\le\prod_\sigma|\sigma(Z)|`$. By (13),
 
 ```math
 0\le4\log\mathcal C+\sum_\sigma\log|\Delta_\sigma|.
-\tag{15}
+\qquad\text{(15)}
 ```
 
 If the two good normalized logarithms are at most $`B_H`$ and the other two at most $`D_H`$, then (14)–(15), divided by $`2MH>0`$, give
 
 ```math
 -2(1-b_H)-2E-D_H\le B_H.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 This is `PairedAffine.Norm.paired_selected_normalized_bound`. There are four clearing costs, two good estimates, and two coarse estimates. The coefficient two is the ratio four divided by two, not an assertion that this is a quadratic field.
@@ -228,7 +228,7 @@ $`e^{\omega_\sigma}=z_\sigma`$, $`100|\omega_\sigma|\le\rho`$, and
 ```math
 |j(r_{\sigma i}-\omega_\sigma)|
 \le\exp(\log(2K)+\nu+\log2-\nu w_i).
-\tag{17}
+\qquad\text{(17)}
 ```
 
 Indeed $`r_{\sigma i}-\omega_\sigma=\sigma(u)(p_i/q_i-x)`$; use (4), $`|\sigma(u)|\le2`$, and $`\log q_i\ge w_i-1`$. The extra $`\log2`$ is not discarded.
@@ -237,7 +237,7 @@ The analytic input `Logarithm.ScaledCollision.formal_scaled_collision_bound` in 
 
 ```math
 \exp\left(-c\sum_\alpha n_\alpha^2+MH(J+r_{\rm coll}(H))\right).
-\tag{18}
+\qquad\text{(18)}
 ```
 
 The factor $`e^{j\omega h}`$ is included. The proof invokes holomorphic collision estimates on a disk of radius $`\rho K`$; its growth cost is exactly $`J`$ from (7).
@@ -255,7 +255,7 @@ These two alternatives are combined by the maximum in the resulting bound (`Pair
 \frac{\log|\Delta_\sigma|}{MH}
 \le V+\frac{\log2}{w_*}+r_a(H)
  +\max\{-C_H,-\nu(A(1-\eta)-b_H)\}.
-\tag{19}
+\qquad\text{(19)}
 ```
 
 More explicitly, consider one nonzero term of the row expansion and write $`W=\sum_r|\alpha_r|_w`$ for the total assigned transverse weight. The original total is $`MHb_H`$. If $`W\ge A(1-\eta)MH`$, the translation scalar gives at least the saving $`\nu(A(1-\eta)-b_H)MH`$; the nonpositive collision term may be omitted. If $`W<A(1-\eta)MH`$, fewer than $`(1-\eta)M`$ assigned indices can have weight greater than $`AH`$. Consequently at least $`\eta M`$ assignments belong to the set of $`N_H`$ low indices. Writing their multiplicities as $`n_\alpha`$, the inequality $`(\sum n_\alpha)^2\le N_H\sum n_\alpha^2`$ gives $`\sum n_\alpha^2\ge\eta^2M^2/N_H`$. Equation (18) supplies saving $`MHC_H`$. In this second case the translation saving may be omitted because $`W\ge MHb_H`$ for every nonzero scalar. Zero terms already satisfy either exponential upper bound. This proves the required termwise alternative, rather than requiring that every term satisfy both savings.
@@ -270,14 +270,14 @@ At every other embedding, $`|r_{\sigma i}|\le R`$: the approximation error is at
 ```math
 \frac{\log|\Delta_\sigma|}{MH}\le U(R)+r_c(H),\qquad
 r_c(H)=\log M/H\longrightarrow0.
-\tag{20}
+\qquad\text{(20)}
 ```
 
 This is `PairedAffine.AnalyticCoarse.minor_log_bound`; its only additional hypotheses are $`\log\max(1,|z_\sigma|)\le\kappa`$, nonnegative budgets, and nonzero determinant. Finally
 
 ```math
 U(R)+\log2/w_*\le U(2R+2)=U(R')
-\tag{21}
+\qquad\text{(21)}
 ```
 
 because $`K\ge1,R\ge0`$ and
@@ -290,7 +290,7 @@ Let $`W_H=V+r_a(H)+\max\{-C_H,-\nu(A(1-\eta)-b_H)\}`$. Substitute (19)–(20) in
 
 ```math
 -2(1-b_H)-2E-U(R')-r_c(H)\le W_H.
-\tag{22}
+\qquad\text{(22)}
 ```
 
 By (8) and convergence, for every sufficiently large $`H`$, writing
