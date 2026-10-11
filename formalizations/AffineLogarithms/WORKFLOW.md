@@ -2,7 +2,10 @@
 
 Updated: October 11, 2026 (America/Chicago).
 
-**Current phase:** ✅ Hosted verification complete; ✅ Evidence audit passed.
+**Current phase:** ✅ Hosted verification complete; ✅ Evidence audit passed;
+🔄 Publication scope and checklist reconciliation; ⏳ Required preprint unfinished.
+The major-proof assignment is not complete: no manuscript source and compiled
+`paper.pdf` have yet been delivered in the repository preprint layout.
 All fifteen comparison targets passed Lean and Rust Nanoda on fresh candidate
 compilation. The official Mathlib dependency cache remains trusted. See the
 [immutable hosted result](evidence/hosted-result-2026-10-11.json).
@@ -14,25 +17,50 @@ wrappers in [the target map](evidence/target-map.json). The
 is `88516799eccd19825089e8e71ef84ebacb87d8a16174c0069b4cabe114089cb1`.
 The retained export identity is recorded in [export-asset.json](evidence/export-asset.json).
 
-**Current assignment:** the user authorized RUN: publish the scoped verifier
-changes, dispatch fresh GitHub verification, and audit the resulting evidence.
-The intended assurance includes fresh isolated candidate compilation, exact final
-statement comparison, and Lean/Nanoda checking. A later GitHub approval gate, if
-one appears, still requires its own explicit authorization.
+**Final deliverable and completion criterion:** a preprint matching the existing
+`preprints/` layout, with manuscript source, reproducible build, compiled
+`paper.pdf`, accompanying formalization and verification evidence. Paper claims
+must match checked declarations, receive independent manuscript/correspondence
+review, and pass reader-facing PDF/Markdown/link checks. Deliver direct links to
+the PDF, manuscript, proofs and verification result. No alternative deliverable
+has been agreed; [ARGUMENT](ARGUMENT.md) is supporting material, not the preprint.
 
-**Next action:** the authorized RUN assignment is complete. A PR or release is
-a separate next step. [GitHub run 38139172013](https://github.com/Mattie/math/actions/runs/38139172013)
+**Contribution and publication scope:** three formalized irrationality and
+exponent-at-most-four results, with a common proof mechanism. The user prefers
+the result-focused working title **The irrationality exponents of log(2) + √2
+and √2 log(2) are at most 4**. The third result remains a main theorem:
+`mu(log(3 + 2*sqrt(2))/sqrt(2) + sqrt(3)) <= 4`, together with irrationality.
+It is omitted from this proposed title, not from the paper's mathematical scope.
+Existing preprint titles and layout were inspected on October 11. Mathematical
+priority remains unestablished; this limits claims, not preprint preparation.
+
+**Permissions and current assignment:** RUN authorized scoped branch publication,
+hosted verification and evidence audit; PR authorized [PR 22](https://github.com/Mattie/math/pull/22).
+The current request updates the checklist under the revised research workflow
+and clarifies the preferred title's scope. Preprint preparation is the remaining
+major-proof deliverable. No merge, release or external submission is authorized.
+A later GitHub approval gate requires separate explicit authorization.
+
+**Evidence reused:** [GitHub run 38139172013](https://github.com/Mattie/math/actions/runs/38139172013)
 verified commit `b15a6431eca8632a48c1cd84e5200edd30f0670c`; the proof run took
-56 minutes 54 seconds. The complete evidence archive was downloaded and its
-GitHub SHA-256 verified. Hosted artifacts expire January 9, 2027; anonymous
-retrieval and durable public distribution remain unverified.
+56 minutes 54 seconds. All 969 frozen inputs and final targets remain unchanged;
+later commits change documentation and records only. This is reuse of the dated
+hosted result, not a fresh run. The complete evidence archive was downloaded and
+its GitHub SHA-256 verified. Hosted artifacts expire January 9, 2027; anonymous
+artifact retrieval and durable public distribution remain unverified.
+
+**Next action:** prepare the preprint from the proof memo under the preferred
+explicit title, retaining all three main results. Build and inspect the PDF,
+perform independent paper review and correspondence checks, then reconcile all
+publication metadata and delivery links. The checklist update itself does not
+establish preprint readiness.
 
 Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️ Deferred ·
 ➖ Not applicable · 🟡 Partial · 🔍 Needs review.
 
 | Milestone | Status | Evidence or remaining action |
 | --- | --- | --- |
-| Assignment and completion criteria | ✅ Complete | Three scoped upper bounds; local setup requested; hosted success tracked separately below |
+| Assignment and completion criteria | ✅ Complete | Three scoped upper bounds; required preprint and concrete completion criterion recorded above; no memo-only exception |
 | Environment and provenance | ✅ Complete for local evidence | [VERIFY](VERIFY.md) records Lean 4.34.1, pinned dependencies, Linux build, and identified cache reuse; hosted resources are part of verifier setup |
 | Feasibility and decision to proceed | ✅ Complete | Concrete field constructions and deduction in [ARGUMENT](ARGUMENT.md) |
 | Exhaustive prior-art/priority assessment | ⏸️ Deferred by user | [PRIOR-ART](PRIOR-ART.md) retains the checked benchmark; no novelty claim |
@@ -50,14 +78,24 @@ Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️
 | GitHub verifier execution | ✅ Complete — run 38139172013, attempt 1 | Exact commit `b15a643`; all fifteen targets accepted by Lean and Rust Nanoda; valid and rejection controls passed |
 | GitHub evidence audit | ✅ Complete | [Immutable result](evidence/hosted-result-2026-10-11.json): 95 indexed files, 58 command logs, 93 retained-file hashes, 13 protected repository inputs and 969 frozen inputs checked |
 | Independent mathematical/specification reviews | ✅ Complete | [REVIEW](REVIEW.md), with independent initial judgments and scope limits |
-| Blind prose-first and correspondence review | ✅ Complete | Separately authored [ARGUMENT](ARGUMENT.md), reviewed before source inspection; [review identities](evidence/pre-pr/review.json) |
-| Reconciliation | ✅ Complete for authorized RUN | Prior review gaps resolved; hosted execution and retained-evidence audit passed |
+| Proof-memo blind prose-first and correspondence review | ✅ Complete for the reviewed memo | Separately authored [ARGUMENT](ARGUMENT.md), reviewed before source inspection; [review identities](evidence/pre-pr/review.json). Does not cover a future manuscript; later memo edits changed math markup only |
+| Reconciliation | 🟡 Partial | Proof and hosted evidence reconciled; manuscript, publication metadata and final reader-facing checks remain unfinished |
+| Publication scope and title | 🟡 Partial | Existing result-focused titles inspected; user prefers EXPLICIT as recorded above. Final title and all metadata must be reconciled with the full three-result scope |
+| Paper drafted | ⏳ Pending | Proof memo exists; required abstract, main theorems, context/related work, paper exposition, limitations, references and disclosures have not been assembled as a manuscript |
+| Independent manuscript review | ⏳ Pending | Freeze the scientific-text packet and obtain a fresh prose-first assessment; earlier proof/memo verdicts do not establish paper readiness |
+| Paper–formalization correspondence | ⏳ Pending | Map every manuscript main claim to the existing checked declarations and standard-definition bridges; identify inherited results; inspect hypotheses and strength |
+| Preprint built | ⏳ Pending | Create manuscript source and reproducible build in the established preprint layout; compile and retain `paper.pdf` |
+| Reader-facing review | 🔍 Needs review | GitHub ARGUMENT.md preview at 6ab6fa9 was opened after macro/delimiter fixes: rejected macros and raw display delimiters absent, but the captured first numbered equation appeared vertically compressed/stacked and final layout acceptance was not established. No paper PDF exists; PDF layout, final Markdown, links and download paths remain to be checked |
+| Publication package reconciled | ⏳ Pending | Align paper, README, citation metadata, theorem map, verification records and archive identities on title, claims, versions and status |
+| Final delivery | ⏳ Pending | Deliver direct links to reviewed PDF, manuscript source, proof sources and verification result; do not substitute the memo |
 | Catalogue integration | ➖ Not applicable to this assignment | Standalone package; no target-catalogue submission requested |
 | Provenance, licensing, authorship and disclosure | ✅ Complete | [PROVENANCE](PROVENANCE.md), [LICENSES](LICENSES.md), [README](README.md) |
-| Distribution identity, privacy, links and archive checks | ✅ Complete through revision three | Revision-three documentation and checklist inventory, archive round trip, source-tamper/wrong-export rejection, private-path scan and relative links checked; earlier archives and receipts retained |
+| Distribution identity, privacy, links and archive checks | 🟡 Partial | Revision-three documentation and checklist inventory, archive round trip, source-tamper/wrong-export rejection, private-path scan and relative links checked; earlier archives and receipts retained. Current publication files, rendered paper and final archive still require checks |
 | Narrow PR scope and staged-byte review | ✅ Complete for published branch | Package, focused CI checks, and new hosted verifier; unrelated working-tree changes must remain outside the PR |
-| Branch publication and verifier dispatch | ✅ Complete | Branch `codex/affine-logarithms-verifier` published; run 38139172013 dispatched. No PR or release created |
-| PR, release and review follow-up | ⏳ Pending | No PR or release created by this run; prepare reviewable evidence first |
+| Branch publication and verifier dispatch | ✅ Complete | Branch `codex/affine-logarithms-verifier` published; run 38139172013 dispatched. [PR 22](https://github.com/Mattie/math/pull/22) created; no release |
+| PR creation | ✅ Complete | [PR 22](https://github.com/Mattie/math/pull/22) contains the formalization and audited verifier; a completed preprint is not yet included |
+| PR review follow-up | ⏳ Pending | Review current diff and checks after preprint integration; do not imply reviewed-preprint readiness |
+| Public release or external submission | ⏳ Pending, not authorized | Separate from preprint preparation; no merge, GitHub release or external submission performed |
 | Public evidence retrieval | 🟡 Partial | GitHub artifact downloaded with authentication and hash checked; complete archive retained locally; anonymous retrieval and durable public distribution pending |
 | Human peer review | ➖ Not applicable to current assignment | Model review is disclosed; no human-review claim |
 
