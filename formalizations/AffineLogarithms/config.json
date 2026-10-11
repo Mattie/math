@@ -1,0 +1,28 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "PairedAffineVerification.shifted_period_eventualLowerBound",
+    "PairedAffineVerification.shifted_period_explicit_bound",
+    "PairedAffineVerification.shifted_period_irrational",
+    "PairedAffineVerification.shifted_period_irrationalityExponent_le_four",
+    "PairedAffineVerification.shifted_period_standard_exponent_le_four",
+    "PairedAffineVerification.log_two_add_sqrt_two_eventualLowerBound",
+    "PairedAffineVerification.log_two_add_sqrt_two_explicit_bound",
+    "PairedAffineVerification.log_two_add_sqrt_two_irrational",
+    "PairedAffineVerification.log_two_add_sqrt_two_irrationalityExponent_le_four",
+    "PairedAffineVerification.log_two_add_sqrt_two_standard_exponent_le_four",
+    "PairedAffineVerification.sqrt_two_mul_log_two_eventualLowerBound",
+    "PairedAffineVerification.sqrt_two_mul_log_two_explicit_bound",
+    "PairedAffineVerification.sqrt_two_mul_log_two_irrational",
+    "PairedAffineVerification.sqrt_two_mul_log_two_irrationalityExponent_le_four",
+    "PairedAffineVerification.sqrt_two_mul_log_two_standard_exponent_le_four"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}
+

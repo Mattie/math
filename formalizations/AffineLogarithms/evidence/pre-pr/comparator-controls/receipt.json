@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "scope": "Imported valid, admitted, and extra-axiom proofs through the original Comparator route",
+  "started_utc": "2026-10-11T04:23:46Z",
+  "finished_utc": "2026-10-11T04:23:58Z",
+  "original_receipt_sha256": "49c4de254a86d6957b5dfb991633971cd1e0185ebbaae835d3fc1268b05e14a1",
+  "pins": {
+    "lean_version": "4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "comparator": "ca04cfc72b550331658ec314bf47685281bfd4bf",
+    "exporter": "05d43a2bc773b40ecfdebb32294192a5ef756951",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"
+  },
+  "binary_sha256": {
+    "lean": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "lake": "6f53827dab18010d6c690d14c8401cacabc1db958edb3552a877ed4cf1dd995d",
+    "comparator": "afa65e57a1770f5961efe7681626a9a1cd99705262421658abd30b705f66e4a2",
+    "probe": "f580d4d2edfcabc34558829498306929a658cf018c113c00b27c31d65db6638f",
+    "COMPARATOR_LANDRUN": "3974b08f5b912d3a6396dfddc2071b7cd3b932ac13800703d2547d3f06ccc5eb",
+    "COMPARATOR_LEAN4EXPORT": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1",
+    "COMPARATOR_NANODA": "a58f6590e9561bd296b7b187d75515fb3e6920defcaeac3582417579210e062d"
+  },
+  "checks": {
+    "valid": "passed",
+    "admitted": "passed",
+    "extra-axiom": "passed"
+  },
+  "commands": [
+    {
+      "label": "valid-lake-update",
+      "exit_code": 0,
+      "log": "00-valid-lake-update.log",
+      "log_sha256": "e6351b387615c834f6048ce4e4f5de00374ae6fc1247161ca0498e2bd8ef2174",
+      "original_log_sha256": "f14e7d862eb5d2c9dc3b6eef44068d7e22813d88c91bfe7a8a872057a1e69f49"
+    },
+    {
+      "label": "valid-comparator",
+      "exit_code": 0,
+      "log": "01-valid-comparator.log",
+      "log_sha256": "05e50cfa6a6d0fc64b17fb90daabf503f36a5a07184d31454315dfb8b1574534",
+      "original_log_sha256": "f4106b2b6073a0f7387957dc4eb17bc029698b0cd4027246cd70d8ca50cc6f98"
+    },
+    {
+      "label": "admitted-lake-update",
+      "exit_code": 0,
+      "log": "02-admitted-lake-update.log",
+      "log_sha256": "e6351b387615c834f6048ce4e4f5de00374ae6fc1247161ca0498e2bd8ef2174",
+      "original_log_sha256": "f14e7d862eb5d2c9dc3b6eef44068d7e22813d88c91bfe7a8a872057a1e69f49"
+    },
+    {
+      "label": "admitted-comparator",
+      "exit_code": 1,
+      "log": "03-admitted-comparator.log",
+      "log_sha256": "9ac5682d5349c238d3419375d13563e13ca931f10a0bde838bff9088a0120bff",
+      "original_log_sha256": "2773991ad4b831f0e0ae9481d1f0c3b45acdd6eeee9ae43709c1694c7f9d0e1b"
+    },
+    {
+      "label": "extra-axiom-lake-update",
+      "exit_code": 0,
+      "log": "04-extra-axiom-lake-update.log",
+      "log_sha256": "e6351b387615c834f6048ce4e4f5de00374ae6fc1247161ca0498e2bd8ef2174",
+      "original_log_sha256": "f14e7d862eb5d2c9dc3b6eef44068d7e22813d88c91bfe7a8a872057a1e69f49"
+    },
+    {
+      "label": "extra-axiom-comparator",
+      "exit_code": 1,
+      "log": "05-extra-axiom-comparator.log",
+      "log_sha256": "5d71f0f6777ba68d6d5751bb50221df391ba73060b4242240a2ee865ea79236b",
+      "original_log_sha256": "2125d8eed122ce3dc947d55b9096baa77f5661f8a52eec1924eb067ff1db3780"
+    }
+  ],
+  "sanitization": "Removed machine paths from receipt and first systemd service line from logs; original digests retained."
+}

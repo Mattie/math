@@ -1,0 +1,85 @@
+#!/usr/bin/env python3
+"""Build the pinned proof project and axiom audits with Lean 4.34.1.
+
+Run from any directory. Python 3.11+, Git, and elan's Lean/Lake executables
+must be on PATH. Lake fetches locked upstream dependencies as needed.
+"""
+from pathlib import Path
+import argparse
+import json
+import subprocess
+import sys
+import time
+from check import ROOT, check_sources, digest
+
+
+def run(argv, log):
+    """Stream one command to the console and build log, failing on nonzero exit."""
+    print('+ ' + ' '.join(argv), flush=True)
+    with subprocess.Popen(argv, cwd=ROOT, stdout=subprocess.PIPE,
+                          stderr=subprocess.STDOUT, text=True, encoding='utf-8') as child:
+        for line in child.stdout:
+            print(line, end='', flush=True)
+            log.write(line)
+        if child.wait():
+            raise RuntimeError('Command failed: ' + ' '.join(argv))
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--skip-cache-download', action='store_true',
+                        help='Use already available upstream Mathlib caches.')
+    args = parser.parse_args()
+    check_sources()
+    work = ROOT / '.work'
+    work.mkdir(exist_ok=True)
+    receipt = {'status': 'running', 'started_utc': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
+               'source_manifest_sha256': digest(ROOT / 'evidence/source-sha256.json'),
+               'scope': 'Source compilation and axiom guards; not independent kernel replay.'}
+    try:
+        version = subprocess.check_output(['lean', '--version'], cwd=ROOT, text=True).strip()
+        if not version.startswith('Lean (version 4.34.1,'):
+            raise RuntimeError('Expected the pinned Lean 4.34.1 toolchain; got ' + version)
+        receipt['lean_version'] = version
+        with (work / 'build.log').open('w', encoding='utf-8') as log:
+            if not args.skip_cache_download:
+                run(['lake', 'exe', 'cache', 'get'], log)
+            run(['lake', 'build', '+Solution', '+PairedAffine.Audit', '+PairedAffine.AffineAudit'], log)
+            # The specification-only Challenge intentionally contains placeholders.
+            # Require warning-free elaboration of the actual solution and both audits.
+            for module in ('StandardBridge', 'Solution', 'PairedAffine/Audit', 'PairedAffine/AffineAudit'):
+                run(['lake', 'env', 'lean', '-DautoImplicit=false', '-DwarningAsError=true', module + '.lean'], log)
+        lock = json.loads((ROOT / 'lake-manifest.json').read_text())
+        for package in lock['packages']:
+            directory = ROOT / '.lake/packages' / package['name']
+            revision = subprocess.check_output(['git', '-C', str(directory), 'rev-parse', 'HEAD'], text=True).strip()
+            if revision != package['rev']:
+                raise RuntimeError('Dependency revision mismatch: ' + package['name'])
+            changed = subprocess.check_output(['git', '-C', str(directory), 'diff', '--name-only', 'HEAD'], text=True)
+            if changed.strip():
+                raise RuntimeError('Modified dependency source: ' + package['name'])
+        check_sources()
+        target_map = json.loads((ROOT / 'evidence/target-map.json').read_text())
+        policy = ROOT / 'scripts/audit_axioms.py'
+        checked = subprocess.run([sys.executable, str(policy), '--log', str(work / 'build.log'),
+                                  '--targets', str(ROOT / 'evidence/target-map.json')],
+                                 capture_output=True, text=True, encoding='utf-8')
+        (work / 'axiom-policy.log').write_text(checked.stdout + checked.stderr, encoding='utf-8')
+        if checked.returncode:
+            raise RuntimeError('Axiom policy rejected the build; see .work/axiom-policy.log')
+        receipt['axiom_policy_sha256'] = digest(policy)
+        receipt['axiom_policy_log_sha256'] = digest(work / 'axiom-policy.log')
+        receipt['public_axiom_reports_checked'] = len(target_map['public_declarations'])
+        receipt['status'] = 'passed'
+        receipt['log_sha256'] = digest(work / 'build.log')
+    except Exception as error:
+        receipt['status'] = 'failed'
+        receipt['error'] = str(error)
+        raise
+    finally:
+        receipt['finished_utc'] = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
+        (work / 'build-receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
+
+
+if __name__ == '__main__':
+    main()

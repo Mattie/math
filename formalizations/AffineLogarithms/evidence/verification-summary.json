@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "public_theorems": 12,
+  "comparison_targets": 15,
+  "fresh_affine_proof_modules": 13,
+  "export_bytes": 1280383670,
+  "export_sha256": "5f242493d0a285caaf5db6d0fa20eda5bd773f51fbd2c843544ac3b442abe5aa",
+  "structured_axiom_names": [
+    [
+      "propext"
+    ],
+    [
+      "Quot",
+      "sound"
+    ],
+    [
+      "Classical",
+      "choice"
+    ]
+  ],
+  "checks": {
+    "literal_statements": "passed",
+    "lean_4_34_1": "passed",
+    "nanoda": "passed",
+    "supplemental_lean_4_34_0": "passed",
+    "theorem_inventory": "passed",
+    "positive_negative_controls": "passed"
+  },
+  "receipts": {
+    "run-cached/evidence/receipt.json": "fce05dc480b2daac45386abd9d2f2abf2b78ba49866c2ae79382f69e02b1a6a5",
+    "stock/evidence-parallel/receipt.json": "8455d7f835703304283c269ba0331923e8b0fb4fa311ae9b26bcfa6400300d94",
+    "run-cached/evidence/export-inventory.json": "d9dbab39520740fb18097c51b90dbe24561dc8e990c9b0f460f5f60fda2e5993",
+    "run/evidence/receipt.json": "36eea9d5b7decf55e8e5029da16db88eace640496235c564bf7d000704fbec8e",
+    "body-controls-v2/receipt.json": "e8a582a116a84adc51b591b97d4fc63f660ea91384c72ff965e918ffa14ff46c"
+  },
+  "limits": "Identified inherited compiled caches; no exhaustive novelty claim. Older Lean replay is supplemental body checking in the same kernel family.",
+  "receipt_identity_note": "Hashes identify the privately retained original receipts. The files in this package are explicitly sanitized summaries."
+}

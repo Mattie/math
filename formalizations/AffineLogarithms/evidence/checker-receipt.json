@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "scope": "Three affine results: fresh affine modules, cached pinned inherited libraries, full exported proof replay",
+  "started_utc": "2026-10-11T01:34:21Z",
+  "finished_utc": "2026-10-11T02:02:08Z",
+  "original_receipt_sha256": "fce05dc480b2daac45386abd9d2f2abf2b78ba49866c2ae79382f69e02b1a6a5",
+  "original_log_sha256": "cfe304b842a5abc3e2e25383e253b5d0163f62b1cc4244c8e6c6d8a0b32a9a5c",
+  "exit_code": 0,
+  "pins": {
+    "lean_version": "4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "comparator": "ca04cfc72b550331658ec314bf47685281bfd4bf",
+    "exporter": "05d43a2bc773b40ecfdebb32294192a5ef756951",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"
+  },
+  "checks": {
+    "literal_comparison_lean_nanoda": "passed",
+    "protected_candidate": "unchanged"
+  },
+  "binary_sha256": {
+    "lean": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "lake": "6f53827dab18010d6c690d14c8401cacabc1db958edb3552a877ed4cf1dd995d",
+    "comparator": "afa65e57a1770f5961efe7681626a9a1cd99705262421658abd30b705f66e4a2",
+    "probe": "f580d4d2edfcabc34558829498306929a658cf018c113c00b27c31d65db6638f",
+    "COMPARATOR_LANDRUN": "3974b08f5b912d3a6396dfddc2071b7cd3b932ac13800703d2547d3f06ccc5eb",
+    "COMPARATOR_LEAN4EXPORT": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1",
+    "COMPARATOR_NANODA": "a58f6590e9561bd296b7b187d75515fb3e6920defcaeac3582417579210e062d"
+  },
+  "control_checks": {
+    "isolation": "passed",
+    "valid": "passed",
+    "mismatch": "passed",
+    "axiom": "passed"
+  },
+  "targets": [
+    "PairedAffineVerification.shifted_period_eventualLowerBound",
+    "PairedAffineVerification.shifted_period_explicit_bound",
+    "PairedAffineVerification.shifted_period_irrational",
+    "PairedAffineVerification.shifted_period_irrationalityExponent_le_four",
+    "PairedAffineVerification.shifted_period_standard_exponent_le_four",
+    "PairedAffineVerification.log_two_add_sqrt_two_eventualLowerBound",
+    "PairedAffineVerification.log_two_add_sqrt_two_explicit_bound",
+    "PairedAffineVerification.log_two_add_sqrt_two_irrational",
+    "PairedAffineVerification.log_two_add_sqrt_two_irrationalityExponent_le_four",
+    "PairedAffineVerification.log_two_add_sqrt_two_standard_exponent_le_four",
+    "PairedAffineVerification.sqrt_two_mul_log_two_eventualLowerBound",
+    "PairedAffineVerification.sqrt_two_mul_log_two_explicit_bound",
+    "PairedAffineVerification.sqrt_two_mul_log_two_irrational",
+    "PairedAffineVerification.sqrt_two_mul_log_two_irrationalityExponent_le_four",
+    "PairedAffineVerification.sqrt_two_mul_log_two_standard_exponent_le_four"
+  ],
+  "export": {
+    "bytes": 1280383670,
+    "sha256": "5f242493d0a285caaf5db6d0fa20eda5bd773f51fbd2c843544ac3b442abe5aa"
+  },
+  "sanitized": true
+}

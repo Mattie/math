@@ -1,0 +1,47 @@
+import Logarithm.CurveInequalityIntrinsic
+import Logarithm.JetPackets
+import Logarithm.RationalCenters
+import Logarithm.ContactIdealLength
+import Logarithm.JetCenterIdentification
+import Logarithm.CompactJetIdeal
+import Logarithm.ExponentConsequence
+import Logarithm.Interpolation
+import Logarithm.ScaledArithmetic
+import Logarithm.ScaledPeriodAnalytic
+import Logarithm.AnalyticAggregate
+
+#print axioms OAI.Logarithm.ScaledFormalJet.formalJet_polynomialFrameWord_vanishing
+#print axioms OAI.Logarithm.eventually_exists_formalJet_auxiliaryPolynomial_nat
+#print axioms OAI.Logarithm.logarithmic_coordinate_eq_center
+#print axioms OAI.Logarithm.logWord_field_order_lower
+#print axioms OAI.Logarithm.no_excess_of_constant_Y
+#print axioms OAI.Logarithm.distinct_Y_curve_inequality
+#print axioms OAI.Logarithm.weighted_curve_inequality
+#print axioms OAI.Logarithm.JetIdeals.radical_powerIdeal
+#print axioms OAI.Logarithm.JetIdeals.packet_zero_of_mem_polynomialIdeal_pow
+#print axioms OAI.Logarithm.JetPackets.formalJet_packets_surjective
+#print axioms OAI.Logarithm.JetPackets.packets_surjective_of_polynomialIdeal_quotient
+#print axioms OAI.Logarithm.rational_power_centers_injective
+#print axioms OAI.Logarithm.exp_log_rational_center
+#print axioms OAI.Logarithm.JetProductLocalization.map_polynomialIdeal_eq_selected
+#print axioms OAI.Logarithm.map_powerIdeal_eq_top_of_transcendental
+#print axioms OAI.Logarithm.polynomialIdeal_colength_eq_logContact
+#print axioms OAI.Logarithm.JetCenterIdentification.centered_of_closedPoint_eq
+#print axioms OAI.Logarithm.CompactIdeal.support_compactIdeal
+#print axioms OAI.Logarithm.CompactIdeal.restrict_compactIdeal
+#print axioms OAI.Logarithm.CompactIdeal.compactIdeal_isFinitePresentation
+#print axioms OAI.LogarithmExtension.irrational_of_eventualLowerBound
+#print axioms OAI.LogarithmExtension.exponent_eq_two_of_eventualLowerBound
+#print axioms OAI.Logarithm.blowup_exceptional_degree_eq_neg_contact_sum
+#print axioms OAI.Logarithm.BlowupGeometry.interpolationBundle_ample
+#print axioms OAI.Logarithm.eventually_weighted_logarithmic_interpolation
+#print axioms OAI.Logarithm.eventually_weighted_truncated_interpolation
+#print axioms OAI.Logarithm.ScaledMatrix.truncatedLogMatrix_surjective_of_formalLog_packets
+#print axioms OAI.Logarithm.ScaledPeriodAnalytic.rational_scaled_periodMonomial_coeff_eq_rowTest
+#print axioms OAI.Logarithm.ScaledArithmetic.selectedMinor_arithmetic_lower_bound
+#print axioms OAI.Logarithm.ScaledApproximationErrors.actual_error_exp
+#print axioms OAI.Logarithm.ScaledCollision.formal_scaled_collision_bound
+#print axioms OAI.Logarithm.ScaledTranslation.det_matrix_translation
+#print axioms OAI.Logarithm.LiteralAnalytic.actual_minor_expansion
+#print axioms OAI.Logarithm.LiteralAnalytic.actual_minor_analytic_bound
+#print axioms OAI.Logarithm.LiteralAnalytic.tendsto_analyticRemainder

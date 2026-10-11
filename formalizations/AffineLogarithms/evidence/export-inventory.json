@@ -1,0 +1,158 @@
+{
+  "status": "passed",
+  "export_sha256": "5f242493d0a285caaf5db6d0fa20eda5bd773f51fbd2c843544ac3b442abe5aa",
+  "declaration_records": 112870,
+  "public_declarations": 12,
+  "comparison_targets": 15,
+  "targets": {
+    "OAI.PairedAffine.shifted_period_eventualLowerBound": {
+      "kind": "thm",
+      "type": 22744820,
+      "value": 22745028
+    },
+    "PairedAffineVerification.shifted_period_eventualLowerBound": {
+      "kind": "thm",
+      "type": 22745040,
+      "value": 22745041
+    },
+    "OAI.PairedAffine.shifted_period_explicit_bound": {
+      "kind": "thm",
+      "type": 22745040,
+      "value": 22745045
+    },
+    "PairedAffineVerification.shifted_period_explicit_bound": {
+      "kind": "thm",
+      "type": 22745040,
+      "value": 22745046
+    },
+    "OAI.PairedAffine.shifted_period_irrational": {
+      "kind": "thm",
+      "type": 22746204,
+      "value": 22746207
+    },
+    "PairedAffineVerification.shifted_period_irrational": {
+      "kind": "thm",
+      "type": 22746204,
+      "value": 22746208
+    },
+    "OAI.PairedAffine.shifted_period_irrationalityExponent_le_four": {
+      "kind": "thm",
+      "type": 22754619,
+      "value": 22754622
+    },
+    "PairedAffineVerification.shifted_period_irrationalityExponent_le_four": {
+      "kind": "thm",
+      "type": 22754639,
+      "value": 22754640
+    },
+    "PairedAffineVerification.shifted_period_standard_exponent_le_four": {
+      "kind": "thm",
+      "type": 22755932,
+      "value": 22755939
+    },
+    "OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound": {
+      "kind": "thm",
+      "type": 22756439,
+      "value": 22756781
+    },
+    "PairedAffineVerification.log_two_add_sqrt_two_eventualLowerBound": {
+      "kind": "thm",
+      "type": 22756793,
+      "value": 22756794
+    },
+    "OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound": {
+      "kind": "thm",
+      "type": 22756793,
+      "value": 22756798
+    },
+    "PairedAffineVerification.log_two_add_sqrt_two_explicit_bound": {
+      "kind": "thm",
+      "type": 22756793,
+      "value": 22756799
+    },
+    "OAI.PairedAffine.log_two_add_sqrt_two_irrational": {
+      "kind": "thm",
+      "type": 22756800,
+      "value": 22756802
+    },
+    "PairedAffineVerification.log_two_add_sqrt_two_irrational": {
+      "kind": "thm",
+      "type": 22756800,
+      "value": 22756803
+    },
+    "OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four": {
+      "kind": "thm",
+      "type": 22756806,
+      "value": 22756808
+    },
+    "PairedAffineVerification.log_two_add_sqrt_two_irrationalityExponent_le_four": {
+      "kind": "thm",
+      "type": 22756825,
+      "value": 22756826
+    },
+    "PairedAffineVerification.log_two_add_sqrt_two_standard_exponent_le_four": {
+      "kind": "thm",
+      "type": 22756832,
+      "value": 22756838
+    },
+    "OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound": {
+      "kind": "thm",
+      "type": 22756840,
+      "value": 22757323
+    },
+    "PairedAffineVerification.sqrt_two_mul_log_two_eventualLowerBound": {
+      "kind": "thm",
+      "type": 22757335,
+      "value": 22757336
+    },
+    "OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound": {
+      "kind": "thm",
+      "type": 22757335,
+      "value": 22757340
+    },
+    "PairedAffineVerification.sqrt_two_mul_log_two_explicit_bound": {
+      "kind": "thm",
+      "type": 22757335,
+      "value": 22757341
+    },
+    "OAI.PairedAffine.sqrt_two_mul_log_two_irrational": {
+      "kind": "thm",
+      "type": 22757342,
+      "value": 22757344
+    },
+    "PairedAffineVerification.sqrt_two_mul_log_two_irrational": {
+      "kind": "thm",
+      "type": 22757342,
+      "value": 22757345
+    },
+    "OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four": {
+      "kind": "thm",
+      "type": 22757348,
+      "value": 22757350
+    },
+    "PairedAffineVerification.sqrt_two_mul_log_two_irrationalityExponent_le_four": {
+      "kind": "thm",
+      "type": 22757367,
+      "value": 22757368
+    },
+    "PairedAffineVerification.sqrt_two_mul_log_two_standard_exponent_le_four": {
+      "kind": "thm",
+      "type": 22757374,
+      "value": 22757380
+    }
+  },
+  "structured_axiom_names": [
+    [
+      "propext"
+    ],
+    [
+      "Quot",
+      "sound"
+    ],
+    [
+      "Classical",
+      "choice"
+    ]
+  ],
+  "pinned_dependency_sources": 924
+}

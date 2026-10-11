@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "date": "2026-10-10 America/Chicago",
+  "frozen_proof_and_specification_files": 969,
+  "source_identity": "Byte-identical to frozen original inputs and pinned inherited sources.",
+  "build": "Passed in a new Linux package directory, initially without affine/overlay compiled objects; identified OAI, Logarithm and upstream Mathlib caches reused.",
+  "initial_build_receipt": "package-build-initial.json",
+  "final_script_build_receipt": "package-build-final.json",
+  "public_axiom_reports_checked": 12,
+  "portable_replay_controls": "Passed for the new script using the previously verified checker binaries.",
+  "controls_receipt": "package-controls.json",
+  "exact_compressed_export_identity": "Uncompressed bytes verified against original accepted export.",
+  "full_replays": "Reused earlier successful proof replays; no changed proof inputs.",
+  "limits": [
+    "Network-only clean bootstrap not performed.",
+    "Windows build route not tested.",
+    "No public upload or download test.",
+    "No new priority or peer-review claim."
+  ]
+}

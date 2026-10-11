@@ -1,0 +1,2 @@
+'validation_control' depends on axioms: [sorryAx]
+'validation_control' depends on axioms: [propext, Classical.choice, Quot.sound]

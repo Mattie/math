@@ -1,0 +1,37 @@
+{
+  "status": "setup_complete",
+  "evidence_kind": "local preparation tests and source/configuration inspection",
+  "finished_utc": "2026-10-11T05:14:37.339542+00:00",
+  "hosted_execution": "not performed",
+  "hosted_evidence_audit": "pending",
+  "command": "python -B verification/isolated-affine/test_verify.py",
+  "exit_code": 0,
+  "tests_passed": 11,
+  "log": "hosted-setup.log",
+  "log_sha256": "bf91aa300664e0c287ba2daa0ef630bc140515e82322e49bf53343ad49ece176",
+  "repository_files_sha256": {
+    "verification/isolated-affine/verify.py": "7727ecce10bfa4c0631b46ffb817c55ff841f4745bbbb352daf088b3ec0330dd",
+    "verification/isolated-affine/test_verify.py": "f10f543889fe770e401a774dc58590d141c6f817e1084cd8311651c89dcd0902",
+    "verification/isolated-affine/pins.json": "262659620e2e43aef31a87cd95e824b93d3fe8b64d4f114cd42264f253ba75e9",
+    "verification/isolated-affine/README.md": "ab1095b68fb01621aece6e23ed45bd733a48c184d91ca965f648e334db449ba6",
+    ".github/workflows/isolated-affine.yml": "c512140845d5b55964e0fbb0ed71b0cd97d70b889644531e26babd6ce1da3dda",
+    ".github/workflows/verify.yml": "c8ccc633ead385adc163195d1ca0f4f2659cc64e873e5972c8e01c837dd3c188",
+    "verification/isolated-preflight/preflight.py": "b6149c3a2265533769fdf3eade0c56b1bcd94c8ad3d128570ce1eca7eefbd1f8",
+    "verification/isolated-preflight/boundary_probe.c": "1cf5105b89fa6207d4b5f8cc8d6c4b57370e91263abe82c81ed29c159fdd32ab",
+    "verification/isolated-6942/verify.py": "061475aa32588afce34d68e16e19763b5ec086602235e088f3f47874be183b47",
+    "verification/publication/prepare-independent-runner.sh": "3de51c75b00b595d30816bb643e61e7219ab9d611b39375762d0aa8855ed511c"
+  },
+  "additional_preparation_checks": [
+    "14 shared isolated-runner tests passed",
+    "7 shared preflight tests passed",
+    "Both workflow YAML files parsed; manual/read-only/credential/upload gates checked; inline evidence-index Python compiled"
+  ],
+  "unchanged_source_manifest_sha256": "88516799eccd19825089e8e71ef84ebacb87d8a16174c0069b4cabe114089cb1",
+  "limits": [
+    "No tools downloaded or fresh proof executed in this setup",
+    "Five-hour proof service within six-hour job is unvalidated for full fresh affine compilation",
+    "Official Mathlib dependency caches remain a declared trust input",
+    "No new standalone export retained by this hosted route",
+    "No branch push, workflow dispatch or PR performed"
+  ]
+}

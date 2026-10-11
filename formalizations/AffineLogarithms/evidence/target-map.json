@@ -1,0 +1,70 @@
+{
+  "public_declarations": [
+    {
+      "comparison_target": "PairedAffineVerification.shifted_period_eventualLowerBound",
+      "public_declaration": "OAI.PairedAffine.shifted_period_eventualLowerBound",
+      "expression": "Real.log (3 + 2 * Real.sqrt 2) / Real.sqrt 2 + Real.sqrt 3"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.shifted_period_explicit_bound",
+      "public_declaration": "OAI.PairedAffine.shifted_period_explicit_bound",
+      "expression": "Real.log (3 + 2 * Real.sqrt 2) / Real.sqrt 2 + Real.sqrt 3"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.shifted_period_irrational",
+      "public_declaration": "OAI.PairedAffine.shifted_period_irrational",
+      "expression": "Real.log (3 + 2 * Real.sqrt 2) / Real.sqrt 2 + Real.sqrt 3"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.shifted_period_irrationalityExponent_le_four",
+      "public_declaration": "OAI.PairedAffine.shifted_period_irrationalityExponent_le_four",
+      "expression": "Real.log (3 + 2 * Real.sqrt 2) / Real.sqrt 2 + Real.sqrt 3"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.log_two_add_sqrt_two_eventualLowerBound",
+      "public_declaration": "OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound",
+      "expression": "Real.log 2 + Real.sqrt 2"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.log_two_add_sqrt_two_explicit_bound",
+      "public_declaration": "OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound",
+      "expression": "Real.log 2 + Real.sqrt 2"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.log_two_add_sqrt_two_irrational",
+      "public_declaration": "OAI.PairedAffine.log_two_add_sqrt_two_irrational",
+      "expression": "Real.log 2 + Real.sqrt 2"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.log_two_add_sqrt_two_irrationalityExponent_le_four",
+      "public_declaration": "OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four",
+      "expression": "Real.log 2 + Real.sqrt 2"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.sqrt_two_mul_log_two_eventualLowerBound",
+      "public_declaration": "OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound",
+      "expression": "Real.sqrt 2 * Real.log 2"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.sqrt_two_mul_log_two_explicit_bound",
+      "public_declaration": "OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound",
+      "expression": "Real.sqrt 2 * Real.log 2"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.sqrt_two_mul_log_two_irrational",
+      "public_declaration": "OAI.PairedAffine.sqrt_two_mul_log_two_irrational",
+      "expression": "Real.sqrt 2 * Real.log 2"
+    },
+    {
+      "comparison_target": "PairedAffineVerification.sqrt_two_mul_log_two_irrationalityExponent_le_four",
+      "public_declaration": "OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four",
+      "expression": "Real.sqrt 2 * Real.log 2"
+    }
+  ],
+  "standard_endpoints": [
+    "PairedAffineVerification.shifted_period_standard_exponent_le_four",
+    "PairedAffineVerification.log_two_add_sqrt_two_standard_exponent_le_four",
+    "PairedAffineVerification.sqrt_two_mul_log_two_standard_exponent_le_four"
+  ]
+}
+

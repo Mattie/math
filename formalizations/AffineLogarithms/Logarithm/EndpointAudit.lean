@@ -1,0 +1,10 @@
+import Logarithm.Main
+#print OAI.Logarithm.rational_log_irrationalityExponent_eq_two
+#print OAI.Logarithm.rational_log_explicit_bound
+#print axioms OAI.Logarithm.GlobalMatrixInterpolation.cofinal_actualMatrix
+#print axioms OAI.Logarithm.DeterminantContradiction.no_fixed_data
+#print axioms OAI.Logarithm.DeterminantContradiction.rational_log_eventualLowerBound
+#print axioms OAI.Logarithm.rational_log_irrationalityExponent_eq_two
+#print axioms OAI.Logarithm.log_two_irrationalityExponent_eq_two
+#print axioms OAI.Logarithm.log_three_irrationalityExponent_eq_two
+#print axioms OAI.Logarithm.rational_log_explicit_bound
