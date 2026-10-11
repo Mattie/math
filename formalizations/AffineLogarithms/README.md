@@ -47,8 +47,8 @@ Allow substantial time for the inherited proof library on the first build.
 See [VERIFY.md](VERIFY.md) for precise verification scope and replay commands.
 The [proof memo](ARGUMENT.md) explains the mathematical deduction, and the
 [review summary](REVIEW.md) records the independent reviews and added controls.
-The maintained [workflow checklist](WORKFLOW.md) separates completed local evidence
-from the pending fresh GitHub run and its evidence audit.
+The maintained [workflow checklist](WORKFLOW.md) records completed local and hosted verification, the retained-evidence audit,
+and remaining publication steps.
 
 ## Included evidence
 
