@@ -2,7 +2,7 @@
 
 Updated: October 11, 2026 (America/Chicago).
 
-**Current phase:** ✅ Verifier setup complete; 🔄 Publishing the authorized hosted run. Local proof checking,
+**Current phase:** ✅ Verifier setup complete; 🔄 Hosted verification running; ⏳ Evidence audit pending. Local proof checking,
 independent model reviews, and distribution checks are complete within their
 recorded scopes. Hosted execution and its evidence audit remain pending.
 
@@ -19,9 +19,9 @@ The intended assurance includes fresh isolated candidate compilation, exact fina
 statement comparison, and Lean/Nanoda checking. A later GitHub approval gate, if
 one appears, still requires its own explicit authorization.
 
-**Next action:** publish this branch and dispatch the existing registered
-`isolated-irrationality.yml` workflow with `case=affine`. Audit the actual run
-receipts and artifacts before marking hosted verification complete.
+**Next action:** monitor [GitHub run 38139172013](https://github.com/Mattie/math/actions/runs/38139172013),
+started from commit `b15a643` through `isolated-irrationality.yml` with `case=affine`.
+Audit the actual run receipts and artifacts before marking hosted verification complete.
 
 Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️ Deferred ·
 ➖ Not applicable · 🟡 Partial · 🔍 Needs review.
@@ -43,7 +43,7 @@ Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️
 | Comparator admission and boundary controls | ✅ Complete for recorded local route | [New admission controls](evidence/pre-pr/comparator-controls/receipt.json) and original [checker receipt](evidence/checker-receipt.json); hosted boundary must be exercised anew |
 | Pinned checker assessment and trust limits | ✅ Complete for dated assessment | [CHECKERS](CHECKERS.md); supplemental older Lean is distinguished from primary Lean and Rust Nanoda |
 | GitHub verifier preparation | ✅ Complete, local setup | Repository workflow `.github/workflows/isolated-affine.yml` and runner `verification/isolated-affine/`; [setup receipt](evidence/hosted-setup.json) records eleven passing tests, fixed inputs and limits |
-| GitHub verifier execution | 🔄 In progress — publication preparation | RUN authorized; record commit, run and attempt plus full-target comparison and both-kernel acceptance |
+| GitHub verifier execution | 🔄 In progress — run 38139172013 | Dispatched at `b15a643`; record commit, run and attempt plus full-target comparison and both-kernel acceptance |
 | GitHub evidence audit | ⏳ Pending | Download artifacts; verify receipts, log hashes, controls, input/tool/dependency identities, scope and retention; write immutable result record |
 | Independent mathematical/specification reviews | ✅ Complete | [REVIEW](REVIEW.md), with independent initial judgments and scope limits |
 | Blind prose-first and correspondence review | ✅ Complete | Separately authored [ARGUMENT](ARGUMENT.md), reviewed before source inspection; [review identities](evidence/pre-pr/review.json) |
@@ -51,8 +51,8 @@ Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️
 | Catalogue integration | ➖ Not applicable to this assignment | Standalone package; no target-catalogue submission requested |
 | Provenance, licensing, authorship and disclosure | ✅ Complete | [PROVENANCE](PROVENANCE.md), [LICENSES](LICENSES.md), [README](README.md) |
 | Distribution identity, privacy, links and archive checks | ✅ Complete through revision three | Revision-three documentation and checklist inventory, archive round trip, source-tamper/wrong-export rejection, private-path scan and relative links checked; earlier archives and receipts retained |
-| Narrow PR scope and staged-byte review | 🔄 In progress | Package, focused CI checks, and new hosted verifier; unrelated working-tree changes must remain outside the PR |
-| Branch publication and verifier dispatch | 🔄 In progress | RUN authorizes the scoped branch and hosted check; actual verification remains pending until run and audit pass |
+| Narrow PR scope and staged-byte review | ✅ Complete for published branch | Package, focused CI checks, and new hosted verifier; unrelated working-tree changes must remain outside the PR |
+| Branch publication and verifier dispatch | ✅ Complete | Branch `codex/affine-logarithms-verifier` published; run 38139172013 dispatched. No PR or release created |
 | PR, release and review follow-up | ⏳ Pending | No PR or release created by this run; prepare reviewable evidence first |
 | Public evidence retrieval | ⏳ Pending | Local archives exist; no public download has been published or tested |
 | Human peer review | ➖ Not applicable to current assignment | Model review is disclosed; no human-review claim |

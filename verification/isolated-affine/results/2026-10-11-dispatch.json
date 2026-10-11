@@ -1,0 +1,13 @@
+{
+  "record_type": "authorized_workflow_dispatch",
+  "status": "dispatched; no acceptance claimed",
+  "run_id": "38139172013",
+  "url": "https://github.com/Mattie/math/actions/runs/38139172013",
+  "workflow": ".github/workflows/isolated-irrationality.yml",
+  "case": "affine",
+  "branch": "codex/affine-logarithms-verifier",
+  "commit": "b15a6431eca8632a48c1cd84e5200edd30f0670c",
+  "attempt": 1,
+  "monitoring": "Thread follow-up checks the run and audits retained evidence upon completion",
+  "proof_inputs": "Unchanged 969-entry frozen source/specification manifest"
+}

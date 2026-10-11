@@ -1,7 +1,8 @@
 # Affine isolated source verifier setup
 
-Status: RUN authorized; branch publication and dispatch are being prepared. No
-hosted affine result is claimed. See the package's [workflow checklist](../../formalizations/AffineLogarithms/WORKFLOW.md)
+Status: 🔄 [Run 38139172013](https://github.com/Mattie/math/actions/runs/38139172013)
+is in progress at commit `b15a6431eca8632a48c1cd84e5200edd30f0670c`. Branch
+publication and dispatch are complete; hosted acceptance and evidence audit remain pending. See the package's [workflow checklist](../../formalizations/AffineLogarithms/WORKFLOW.md)
 for proof position and the separate execution and evidence-audit milestones.
 
 The manual [workflow](../../.github/workflows/isolated-affine.yml) checks all 15
