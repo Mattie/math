@@ -44,7 +44,7 @@ resolved wording corrections, and limits. No new proof run is attributed to them
 [expository revision](evidence/human-revision.json) records a bounded mathematical
 review of the added shape construction and finite translation calculation.
 
-The [build record](evidence/build.json) identifies the 18-page PDF, manuscript,
+The [build record](evidence/build.json) identifies the 19-page PDF, manuscript,
 compiler, and warning-free Tectonic build. The [reader review](evidence/reader-review.json)
 records PDF inspection, actual GitHub rendering, and retrieval status separately.
 See the [workflow checklist](../../formalizations/AffineLogarithms/WORKFLOW.md)

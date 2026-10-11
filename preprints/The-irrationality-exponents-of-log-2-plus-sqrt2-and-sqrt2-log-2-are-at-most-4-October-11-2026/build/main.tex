@@ -254,6 +254,38 @@ The enlargement from \(R\) to \(R'\) absorbs the
 fixed multiplier in the affine approximation error.
 
 \section{Choosing the parameters}\label{sec:parameters}
+The proof proceeds as follows. This section chooses parameters with the
+two strict margins in \eqref{eq:twomargins}.
+Section~\ref{sec:geometry} then selects a nonzero minor, and
+Section~\ref{sec:arithmetic} clears its denominators to obtain the norm
+inequality. The same minor is estimated at the two good embeddings in
+Section~\ref{sec:analytic} and at the other embeddings in
+Section~\ref{sec:coarse}. Section~\ref{sec:contradiction} combines these
+estimates with the norm inequality; the two margins make them incompatible.
+
+The following table collects the notation used in these steps. The last
+column points to the definitions.
+\begin{center}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.54\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}@{}}
+\toprule
+Symbols & Meaning & Definition\\
+\midrule
+\(\kappa,R,R',\rho\) & Fixed bounds, uniform over the embeddings & \eqref{eq:budgets}\\[3pt]
+\(\theta,A,B,C,\eta;\ g\) & Shape parameters and the positive approximation margin & \eqref{eq:shape}--\eqref{eq:gap}\\[3pt]
+\(F_0,\zeta\) & Truncation parameter and geometric slack & Section~\ref{sec:parameters}\\[3pt]
+\(m,K;\ w_0,v_0\) & Number of approximations, number of centers, and weights in the first coordinate & \eqref{eq:dimension}\\[3pt]
+\(p_i/q_i,\ w_i,w_*\) & Chosen approximations, their logarithmic weights, and the smallest weight & \eqref{eq:approxdata}\\[3pt]
+\(E,U,T,J;\ V=T+J\) & Clearing, coarse, translation, and holomorphic error terms & \eqref{eq:errors}\\[3pt]
+\(H,M;\ \gamma,\beta\) & Matrix height, row count, and column and row multi-indices & \eqref{eq:indices}\\[3pt]
+\(\Delta_\sigma,\mathscr C_H,Z_H\) & Selected minor at \(\sigma\), clearing factor, and algebraic integer & \eqref{eq:clearing}, \eqref{eq:lift}\\[3pt]
+\(b_H\) & Mean transverse row weight, divided by \(H\) & \eqref{eq:mean}\\[3pt]
+\(\alpha,d,k\) & Assigned transverse index, tail powers, and tail coefficient order in a translation term & \eqref{eq:rowscalar}\\[3pt]
+\(N_H,C_H,C_\infty\) & Low-index count, collision rate, and its limit as \(H\to\infty\) & \eqref{eq:capacity}, \eqref{eq:collisionlimit}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
 There are two quite different limiting operations in the proof. First we
 choose a dimension and a finite set of good rational approximations.
 Then we hold them fixed and increase the matrix height \(H\). Keeping
@@ -1202,7 +1234,8 @@ the checker versions, test controls, and trust assumptions. Detailed
 verification records accompany the source.
 
 \section{Source availability and attribution}\label{app:attribution}
-The proof package builds on repository version
+The proof package builds on
+\href{https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd}{repository version}
 \path{0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd} in the
 \texttt{Mattie/math} repository. It incorporates OpenAI's
 \texttt{OAI.NumberTheory.PiExponent} library at revision
@@ -1211,6 +1244,16 @@ and quadratic-logarithm extensions supply mathematical constructions and
 estimates used throughout this paper. The original affine work extends
 that framework to the common integral affine data and the paired
 embedding argument.
+
+The rational-logarithm sources in that repository version are in
+\path{preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026/lean}.
+The quadratic-logarithm modules used here are included under
+\path{AlgebraicLog} in the affine package. The checked affine sources
+are in \path{formalizations/AffineLogarithms} at
+\href{https://github.com/Mattie/math/tree/b15a6431eca8632a48c1cd84e5200edd30f0670c}{repository version}
+\path{b15a6431eca8632a48c1cd84e5200edd30f0670c}; the package records
+the exact source files and their hashes. Appendix~\ref{app:formalization}
+describes the verification of this version.
 
 The package retains the OpenAI library's Apache~2.0 license and
 notices. Original \texttt{PairedAffine}, \texttt{AlgebraicLog}, and
@@ -1227,48 +1270,35 @@ manuscript preparation, and review.
 
 \bibitem{butler}
 L.~Butler,
-\emph{A proof of the Hermite--Lindemann theorem},
-28 May 2008, Section~2.
-\url{https://people.maths.bris.ac.uk/~malab/PDFs/HL.pdf}.
+\emph{\href{https://people.maths.bris.ac.uk/~malab/PDFs/HL.pdf}{A proof of the Hermite--Lindemann theorem}},
+expository note, 28 May 2008.
 
 \bibitem{luchin}
 M.~Yu.~Luchin and V.~Kh.~Salikhov,
-\emph{Approximating \(\ln2\) by numbers in the field \(\Q(\sqrt2)\)},
+\emph{\href{https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=8518&what=fullteng}{Approximating \(\ln2\) by numbers in the field \(\Q(\sqrt2)\)}},
 Izvestiya: Mathematics \textbf{82} (2018), no.~3, 549--577.
-Theorem~1, p.~549.
-\url{https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=8518&what=fullteng}.
 
 \bibitem{openai}
 OpenAI,
-\emph{\texttt{OAI.NumberTheory.PiExponent}: formal source library},
-revision \path{adc7f1241b42e322a6451854ab7e4b4c146bf78a}.
-\url{https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a}.
+\emph{\href{https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a}{\texttt{OAI.NumberTheory.PiExponent}}},
+Lean source library. Version used: Appendix~\ref{app:attribution}.
 
 \bibitem{rational}
 R.~M.~Casper,
 \emph{The irrationality exponent of positive rational logarithms is 2},
-preprint and Lean source package, 7 October 2026.
-Source snapshot at repository revision
-\path{0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd}, directory
-\path{preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026/lean}.
-\url{https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd}.
+preprint, 7 October 2026. Sources: Appendix~\ref{app:attribution}.
 
 \bibitem{quadratic}
 R.~M.~Casper,
 \emph{The irrationality exponent of positive quadratic logarithms is at most 4},
-preprint and Lean source package, 8 October 2026.
-The frozen \texttt{AlgebraicLog} modules used here are included in the
-affine package~\cite{affine} and identified by its source manifest.
+preprint, 8 October 2026. Sources: Appendix~\ref{app:attribution}.
 
 \bibitem{affine}
 R.~M.~Casper,
 \emph{AffineLogarithms: paired affine logarithms, proof sources and
-verification records}, October 2026.
-Directory \path{formalizations/AffineLogarithms} in
-\url{https://github.com/Mattie/math/tree/b15a6431eca8632a48c1cd84e5200edd30f0670c}.
-Frozen mathematical sources, statement map, and verification provenance;
-hosted verification run of 11 October 2026 cited in
-Appendix~\ref{app:formalization}.
+verification records}, Lean source package, October 2026.
+Sources and verification: Appendices~\ref{app:formalization}
+and~\ref{app:attribution}.
 
 \end{thebibliography}
 \end{document}

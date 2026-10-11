@@ -2,11 +2,11 @@
   "schema_version": 1,
   "date": "2026-10-11",
   "manuscript": "build/main.tex",
-  "manuscript_sha256": "49a6f6b4c0523dedc6a6530975201e43986326ec78e0334f897976ea6494cc67",
+  "manuscript_sha256": "c2239f370f4e807000c7dc0a1322990ec7a919b90ea4f1d6017fa4258ccdaaa2",
   "pdf": "paper.pdf",
-  "pdf_sha256": "b99f4baa56448935fc4f728f684ce764424fe5a8273f94a1a6b7f5befb5eb610",
-  "pdf_bytes": 161991,
-  "pages": 18,
+  "pdf_sha256": "7d808ba3112fbc86efcac313f1ace13db432b92ea4bff976ec8dc0b29e300159",
+  "pdf_bytes": 165107,
+  "pages": 19,
   "compiler": {
     "name": "Tectonic",
     "version": "0.15.0",
@@ -17,8 +17,8 @@
   "platform": "Ubuntu via WSL",
   "result": "success",
   "tex_warnings": 0,
-  "build_log_sha256": "65c4ddbfa4461a75f27b1747bd79609823c818a96f3e8d080fb3b4d375b3a04d",
-  "desktop_compiler": "Successful diagnostic compilation; final bibliography wording also rebuilt with Tectonic.",
+  "build_log_sha256": "0f0814643c42532b3e543e9b0fd90f60dfe13c3502495eb86b4e9adf068a0dca",
+  "desktop_compiler": "Earlier revision compiled in the desktop editor; this navigation and bibliography revision compiled with Tectonic.",
   "reproducibility_limit": "Build command and compiler are identified. The TeX resource bundle is not vendored or pinned separately; other compiler/resource versions may produce different PDF bytes.",
   "proof_sources_changed": false,
   "editorial_revision": "evidence/editorial-revision.json",
@@ -50,5 +50,18 @@
     ],
     "coordinator_delta_check": "Abstract, common theorem, lemmas, aligned displays and proposition bodies unchanged. All numbered equations unchanged except removal of the general Luchin-Salikhov display, replaced by its specialized consequences and identities. The three main results retain their exponent bounds. Lean sources unchanged.",
     "review_scope": "Coordinator editorial and mathematical correspondence check; no new independent review or proof run."
+  },
+  "navigation_revision": {
+    "previous": {
+      "manuscript_sha256": "49a6f6b4c0523dedc6a6530975201e43986326ec78e0334f897976ea6494cc67",
+      "pdf_sha256": "b99f4baa56448935fc4f728f684ce764424fe5a8273f94a1a6b7f5befb5eb610"
+    },
+    "changes": [
+      "Added a dependency roadmap and compact notation table with definition links at the start of Section 4.",
+      "Replaced long bibliography paths and visible revision hashes with conventional source entries and appendix references.",
+      "Retained exact source identities and links in Appendix B."
+    ],
+    "delta_check": "Abstract, theorem and lemma statements, proposition bodies, and numbered mathematical displays are unchanged. No Lean source changes.",
+    "scope": "Coordinator editorial and layout review; no new independent proof review."
   }
 }

@@ -4,7 +4,7 @@ Updated: October 11, 2026 (America/Chicago).
 
 **Current phase:** ✅ Hosted verification complete; ✅ Evidence audit passed;
 ✅ Full manuscript drafted, reviewed and compiled; ✅ PDF/GitHub rendering,
-public downloads and source-archive integrity checked. The 18-page preprint,
+public downloads and source-archive integrity checked. The 19-page preprint,
 editable source and reproduction records are available in the existing PR.
 All fifteen comparison targets passed Lean and Rust Nanoda on fresh candidate
 compilation. The official Mathlib dependency cache remains trusted. See the
@@ -85,8 +85,8 @@ Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️
 | Paper drafted | ✅ Complete | Full manuscript with all three main results, mathematical argument, limitations, references, and formalization appendix |
 | Independent manuscript review | ✅ Complete, model review | [Review record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reviews.json): fresh mathematical prose-first assessment, separate specification/evidence review, and both final-diff checks; no human-review claim |
 | Paper–formalization correspondence | ✅ Complete within recorded scope | [Review record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reviews.json) and theorem map cover three main results, twelve public declarations and fifteen comparison targets; wrapper wording corrected; no proof changes |
-| Preprint built | ✅ Complete | Editable single-file LaTeX and retained 18-page PDF; desktop compiler succeeds; reproducible Tectonic build has no layout warnings |
-| Reader-facing review | ✅ Complete for recorded files | [Reader record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reader-review.json): 18-page PDF inspected, actual GitHub README/VERIFY and memo checked, seven anonymous downloads matched, public source archive passed integrity checks |
+| Preprint built | ✅ Complete | Editable single-file LaTeX and retained 19-page PDF; desktop compiler succeeds; reproducible Tectonic build has no layout warnings |
+| Reader-facing review | ✅ Complete for recorded files | [Reader record](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/reader-review.json): 19-page PDF inspected, actual GitHub README/VERIFY and memo checked, seven anonymous downloads matched, public source archive passed integrity checks |
 | Publication package reconciled | ✅ Complete | [Preprint](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/README.md), citation metadata, three-result theorem map, build/review identities and verification limits agree |
 | Final delivery | ✅ Ready | [PDF](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/paper.pdf), [manuscript](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/build/main.tex), [proofs](README.md), and [verification](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/VERIFY.md) available in PR 22 |
 | Catalogue integration | ➖ Not applicable to this assignment | Standalone package; no target-catalogue submission requested |
