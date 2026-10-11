@@ -59,23 +59,29 @@ Adding an algebraic number to a logarithm, or multiplying the logarithm by
 one, changes the rational approximation problem. An approximation to
 \(\log 2+\sqrt2\) becomes an approximation to \(\log 2\) by an element
 of \(\Q(\sqrt2)\), rather than by a rational number. The same issue
-appears for \(\sqrt2\log2\). We keep that algebraic arithmetic inside
-the determinant construction and prove the following three statements.
+appears for \(\sqrt2\log2\). We construct the interpolation determinant
+over a number field to obtain the following bounds.
+All three numbers are transcendental by the Hermite--Lindemann
+theorem~\cite[Section~2]{butler}; our concern here is the quality of
+their rational approximations.
 
 Throughout the paper, \(\log\) denotes the natural real logarithm on
 positive arguments, and square roots denote positive real square roots.
-The symbol \(\mu\) denotes the irrationality exponent, with the
-convention given in Section~\ref{sec:conventions}.
+For an irrational real number \(x\), its irrationality exponent \(\mu(x)\)
+is the supremum of the real numbers \(\nu\) for which
+\(0<|x-p/q|<q^{-\nu}\) holds for infinitely many reduced fractions
+\(p/q\) with positive denominator. Section~\ref{sec:conventions}
+gives the conventions used in the proof.
 
 \begin{mainthm}[An algebraic shift]\label{thm:shift}
-The number \(x_1=\log2+\sqrt2\) is irrational and
+The number \(x_1=\log2+\sqrt2\) satisfies
 \[
  \mu(\log2+\sqrt2)\le4.
 \]
 \end{mainthm}
 
 \begin{mainthm}[An algebraic multiple]\label{thm:scale}
-The number \(x_2=\sqrt2\log2\) is irrational and
+The number \(x_2=\sqrt2\log2\) satisfies
 \[
  \mu(\sqrt2\log2)\le4.
 \]
@@ -86,17 +92,8 @@ The number
 \[
  x_3=\frac{\log(3+2\sqrt2)}{\sqrt2}+\sqrt3
 \]
-is irrational and \(\mu(x_3)\le4\).
+satisfies \(\mu(x_3)\le4\).
 \end{mainthm}
-
-All three numbers are classically known to be transcendental. The
-Hermite--Lindemann theorem implies that \(\log\alpha\) is transcendental
-for every positive algebraic \(\alpha\ne1\); see, for example,
-\cite[Section~2]{butler}. Adding an algebraic number or multiplying by
-a nonzero algebraic number preserves transcendence. Apply this with
-\(\alpha=2\) for \(x_1,x_2\), and with \(\alpha=3+2\sqrt2\) for
-\(x_3\). The contribution here is the quantitative bound
-\(\mu(x_i)\le4\) for each of these numbers.
 
 For each of the three numbers, we prove the more precise statement
 \begin{equation}\label{eq:eventual}
@@ -106,11 +103,36 @@ For each of the three numbers, we prove the more precise statement
 \end{equation}
 The threshold depends on \(x\) and \(\nu\), but not on the numerator
 or denominator. There is no coprimality condition in
-\eqref{eq:eventual}. This detail also lets the bound prove irrationality:
-an exact rational representation could otherwise be repeated at arbitrarily
-large denominators.
+\eqref{eq:eventual}.
 
-The three applications use a common theorem in a degree-four number field.
+\subsection{Comparison with earlier work}
+The first two bounds can be compared with Theorem~1 of Luchin and
+Salikhov~\cite{luchin} (2018) on approximation to \(\log2\) by elements
+of \(\Q(\sqrt2)\). Their theorem implies
+\[
+ \mu(\log2+\sqrt2)\le7.98101,\qquad
+ \mu(\sqrt2\log2)\le7.98101.
+\]
+Theorems~\ref{thm:shift} and~\ref{thm:scale} improve these bounds to
+\(4\). The comparison follows by writing
+\[
+ \left|\log2+\sqrt2-\frac pq\right|
+ =\left|\log2-\frac{p-q\sqrt2}{q}\right|
+\]
+and
+\[
+ \left|\sqrt2\log2-\frac pq\right|
+ =\sqrt2\left|\log2-\frac{p}{q\sqrt2}\right|.
+\]
+In both substitutions, their coefficient height is \(\max(|p|,q)\),
+which is comparable to \(q\) whenever the approximation error is less
+than one. The fixed factors are absorbed by an arbitrarily small
+increase in the exponent.
+
+\subsection{Proof overview}
+We extend the logarithmic determinant argument to algebraic shifts and
+multiples by estimating one algebraic determinant at all four embeddings
+of a number field.
 At two embeddings \(\sigma\), integral elements \(a,u,v\) satisfy
 \[
  \exp\bigl(\sigma(u)(x-\sigma(v))\bigr)=\sigma(a).
@@ -139,35 +161,6 @@ inputs, including their algebraic geometry and complex analysis.
 Sections~\ref{sec:geometry} and~\ref{sec:analytic} state the interpolation
 and collision theorems used below.
 
-\subsection{Comparison with earlier work}
-Luchin and Salikhov~\cite{luchin} prove that, for every
-\(s>7.98101\), sufficiently large coefficient height
-\(P=\max_i|p_i|\) gives
-\begin{equation}\label{eq:LS}
- \left|\log2-\frac{p_1\sqrt2+p_2}{p_3\sqrt2+p_4}\right|>P^{-s},
- \qquad (p_3,p_4)\ne(0,0),
-\end{equation}
-where the \(p_i\) are integers. This is Theorem~1 on page~549 of their
-paper. Two direct substitutions make the relation to our first two
-numbers precise.
-
-For \(x_1\), take \((p_1,p_2,p_3,p_4)=(-q,p,0,q)\). The left side of
-\eqref{eq:LS} is then \(|x_1-p/q|\). For \(x_2\), take
-\((p_1,p_2,p_3,p_4)=(0,p,q,0)\); the left side is
-\(|x_2-p/q|/\sqrt2\). In either case \(P=\max(|p|,q)\). If
-\(|x_j-p/q|<1\), then, since these two targets are positive,
-\[
- q\le P\le (|x_j|+1)q.
-\]
-Given \(\nu>7.98101\), choose \(7.98101<s<\nu\). The fixed
-multiplicative constants in \eqref{eq:LS} are absorbed by
-\(q^{\nu-s}\) for sufficiently large \(q\); errors at least one
-already satisfy the desired lower bound. Thus that theorem implies
-\(\mu(x_1),\mu(x_2)\le7.98101\).
-
-Theorems~\ref{thm:shift} and~\ref{thm:scale} improve this particular
-consequence to four.
-
 \section{Approximation conventions}\label{sec:conventions}
 For an irrational real number \(x\), let
 \[
@@ -178,8 +171,7 @@ For an irrational real number \(x\), let
  \end{array}\right\}.
 \]
 We use \(\mu(x)=\sup\mathcal A(x)\), allowing the value \(+\infty\).
-For the numbers considered here the set will be nonempty and bounded
-above, so the ordinary real supremum suffices. Dirichlet approximation
+Dirichlet approximation
 gives \(2\in\mathcal A(x)\) for irrational \(x\).
 
 \begin{lemma}\label{lem:exponent}
@@ -414,8 +406,8 @@ on, every quantity in \eqref{eq:errors} is fixed. Only \(H\), the
 matrix indices, and the selected minor will vary.
 
 \section{Weighted interpolation and the matrix}\label{sec:geometry}
-We first state the inherited interpolation input in a form that separates
-its numerical hypotheses from its conclusion. A polynomial in
+We use the weighted logarithmic interpolation theorem from
+\cite{rational}. A polynomial in
 \(Y,X_1,\ldots,X_m\) has weighted degree at most \(H\), with degree
 weights \(d_i\), if every monomial \(Y^hX^\gamma\) in its support
 satisfies \(d_0h+\sum_i d_i\gamma_i\le H\). A logarithmic jet packet
@@ -427,7 +419,7 @@ substitution
 \end{equation}
 Here the logarithm is the formal power series at zero.
 
-\begin{proposition}[Inherited weighted interpolation]\label{prop:interpolation}
+\begin{proposition}[Weighted logarithmic interpolation]\label{prop:interpolation}
 Let \(d_i,e_i\) be positive rational weights, \(\zeta>0\) rational,
 \(Y_0,\ldots,Y_{K-1}\) distinct nonzero complex numbers, and
 \(c_{ji}\) arbitrary complex numbers. Suppose
@@ -443,8 +435,9 @@ of weight strictly below \(n\mathcal R\) at all \(K\) centers is
 surjective.
 \end{proposition}
 
-This proposition is the weighted logarithmic interpolation theorem of the
-inherited source~\cite{rational}. Its proof passes through ampleness of
+The source declaration is
+\path{OAI.Logarithm.eventually_weighted_logarithmic_interpolation}
+in \cite{rational}. Its proof passes through ampleness of
 an interpolation bundle and eventual restriction to jets, using the
 weighted geometric results in~\cite{openai}. The additive centers
 in~\eqref{eq:formalcoords} are unrestricted.
@@ -475,9 +468,6 @@ Our matrix, with rows and columns from \eqref{eq:indices}, is
        (1+t)^h\prod_{i=1}^m
        \bigl(Z_i+jr_{\sigma i}+L_i(t)\bigr)^{\gamma_i}.
 \end{equation}
-The factor \(z_\sigma^{jh}\) is part of the matrix. It contributes to
-both the arithmetic and analytic estimates.
-
 \begin{lemma}\label{lem:cofinal}
 The matrix \(\mathcal M_{\sigma_0}(H)\) has full row rank for a cofinal
 set of heights \(H>0\).
@@ -589,7 +579,8 @@ For every \(H>0\) and selected full-row minor,
 \end{equation}
 \end{lemma}
 \begin{proof}
-The inherited elementary least-common-multiple estimate is
+The elementary least-common-multiple estimate
+(\cite{openai}, \path{OAI.PiExponent.Arithmetic.log_lcmUpto_le}) is
 \(\log D_i\le\Lambda T_i\). Since
 \(T_i\le F_0w_i/v_0+1\) and \(e_i^H\le H/w_i\),
 \[
@@ -623,7 +614,8 @@ and \eqref{eq:lift} yields
  0\le4\log\mathscr C_H+
               \sum_{\sigma\in\Emb(F)}\log|\Delta_\sigma|.
 \end{equation}
-All logarithms are legitimate by Lemma~\ref{lem:integral}.
+Lemma~\ref{lem:integral} gives \(\Delta_\sigma\ne0\) for every
+\(\sigma\).
 
 \begin{lemma}[Normalized comparison]\label{lem:normcomparison}
 Suppose \(\log|\Delta_\sigma|/(MH)\le B_H\) at the two good
@@ -655,7 +647,7 @@ centers satisfy
 \end{align}
 Indeed, \(|\sigma(u)|\le2\), the approximation error is at most
 \(q_i^{-\nu}\), and \(\log q_i\ge w_i-1\). We have retained a
-harmless factor two from the inherited approximation estimate, as well
+factor two from the approximation estimate in \cite{rational}, as well
 as the extra \(\log2\) due to \(u\). We will explicitly absorb the
 latter after combining the embeddings.
 
@@ -666,7 +658,7 @@ an integer \(j\), consider the formal coefficient
  e^{j\omega h}[t^\ell Z^\alpha]
  (1+t)^h\prod_i\bigl(Z_i+j\omega+\log(1+t)\bigr)^{\gamma_i}.
 \]
-These are the entries to which the inherited collision estimate applies.
+These are the entries to which the collision estimate applies.
 They are related to the entire functions
 \begin{equation}\label{eq:columnfunction}
  f_{h,\gamma,\alpha}(z)
@@ -679,7 +671,7 @@ coordinate is \(z=j\omega+\log(1+t)\). Repeated transverse
 indices cause the corresponding rows to use the same family of entire
 functions, which is the source of the collision saving.
 
-\begin{proposition}[Inherited scaled collision estimate]\label{prop:collision}
+\begin{proposition}[Scaled collision estimate]\label{prop:collision}
 Let a square matrix have \(M\ge1\) rows indexed by \(r\) and columns
 indexed by \(c\). Assign a transverse multi-index \(\alpha_r\), an
 integer \(0\le j_r<K\), and an order \(\ell_r\ge0\) to each row;
@@ -710,8 +702,10 @@ where \(J\) is given in \eqref{eq:errors} and
 \end{equation}
 \end{proposition}
 
-This is the scaled form of the inherited holomorphic collision estimate
-\cite{openai,rational}. Its analytic domain is a disk of radius \(\rho K\).
+This is the scaled form of the holomorphic collision estimate
+\cite{openai,rational}, stated as
+\path{OAI.Logarithm.ScaledCollision.formal_scaled_collision_bound}
+in \cite{rational}. Its analytic domain is a disk of radius \(\rho K\).
 The centers lie well inside this disk:
 \(\lvert j\omega\rvert+3/4\le\rho K/2\). On its boundary, the
 weighted degree of the columns bounds the entire functions in
@@ -914,7 +908,6 @@ Taking logarithms gives
  U(R)+\frac{\log2}{w_*}\le U(2R+2)=U(R').
 \end{equation}
 This is why the parameter construction used \(R'\) from the outset.
-The multiplier has a cost, and this inequality is where we pay it.
 
 \section{The determinant contradiction}\label{sec:contradiction}
 We can now complete the proof of Theorem~\ref{thm:common}. For a height
@@ -1061,33 +1054,38 @@ compatibility is needed at the embeddings that change the sign of the
 shift; their contribution has already been covered by the coarse bound.
 
 \section{Further questions}\label{sec:scope}
-The bounds \(2\le\mu(x_j)\le4\) leave a gap between the Dirichlet
-exponent and the upper bound obtained here. The determinant argument
-uses a strict margin at \(\nu>4\); an estimate at the endpoint
-\(\nu=4\) would require control of the terms absorbed by that margin.
-The threshold in \eqref{eq:eventual} is obtained through asymptotic
-parameter choices. Quantifying those choices would be needed to obtain
-a numerical threshold.
+The exact values of the three irrationality exponents remain
+undetermined by this argument: we obtain \(2\le\mu(x_j)\le4\).
+The proof gives no numerical value for the threshold \(Q(x,\nu)\)
+in \eqref{eq:eventual}. Can the parameter choices be made effective
+enough to give an explicit threshold?
 
-The balance between the field degree and the number of compatible
-embeddings also suggests a broader question. Here two compatible
-embeddings supply analytic savings, while the norm has four factors.
-Extending this balance to other degrees would require corresponding
-parameter and arithmetic estimates. For nonintegral affine data,
-denominator clearing would introduce additional costs.
+A stronger question at exponent four is whether, for each of the three
+numbers \(x\), there exists \(c_x>0\) such that
+\[
+ \left|x-\frac pq\right|\ge c_xq^{-4}
+\]
+for every integer \(p\) and all sufficiently large positive integers
+\(q\). The bound \(\mu(x)\le4\) does not imply this estimate.
+
+Here two compatible embeddings supply analytic savings, while the norm
+has four factors. What exponent bound can be obtained in a field of
+degree \(d\) with \(k\) compatible embeddings? A related question is
+how the bound changes when the affine data are not integral and require
+additional denominator clearing.
 
 \appendix
 \section{Formalization and verification}\label{app:formalization}
-The accompanying package is \path{formalizations/AffineLogarithms} in
-the source repository~\cite{affine}. The source inventory identifies the checked version.
-The common endpoint is
+The proof is formalized in Lean in the accompanying
+\path{formalizations/AffineLogarithms} package~\cite{affine}.
+Theorem~\ref{thm:common} is formalized as
 \begin{center}\small
 \path{OAI.PairedAffine.Endpoint.paired_eventualLowerBound}.
 \end{center}
 Its parameters are exactly the field elements, integrality proofs,
 degree, distinguished embedding, real target, and good-embedding
 conditions in Theorem~\ref{thm:common}. The implementation uses
-\(\exp x\) as a positive real proxy in an inherited data structure, so
+\(\exp x\) as a positive real proxy in the logarithmic approximation data, so
 that its logarithm is \(x\). This proxy is not the algebraic base
 \(a\), and no algebraicity is required of it.
 
@@ -1112,8 +1110,8 @@ The suffixes are \texttt{\_eventualLowerBound},
 \texttt{\_explicit\_bound}, \texttt{\_irrational}, and
 \path{_irrationalityExponent_le_four}. In the second suffix,
 ``explicit'' refers to an expanded quantified statement, not to an
-explicit numerical threshold. The file \texttt{evidence/target-map.json}
-records the literal expressions and comparison targets.
+explicit numerical threshold. The package records the full statements
+and their correspondence with Theorems~\ref{thm:shift}--\ref{thm:period}.
 
 The exponent convention is in
 \path{OAI/NumberTheory/PiExponent/Statement.lean}; its use in this
@@ -1123,7 +1121,7 @@ The Mathlib formulations are in \path{Solution.lean};
 bound to the exclusion of \texttt{LiouvilleWith}.
 
 \subsection{Where the main steps are checked}
-The following source map gives the principal interfaces. Paths are
+The following table locates the main parts of the formal proof. Paths are
 relative to the package root; declaration names below omit the initial
 \texttt{OAI.}.
 
@@ -1199,13 +1197,12 @@ The hosted verification of 11 October 2026,
 used repository commit \path{b15a6431eca8632a48c1cd84e5200edd30f0670c}.
 It rebuilt the formalization and its required local dependencies, using
 official Mathlib dependency caches. The package's \path{VERIFY.md} and
-\path{CHECKERS.md} give the
-reproduction instructions, retained export identities, checker revisions,
-rejection controls, and trust assumptions. The audit is recorded in
-\path{evidence/hosted-result-2026-10-11.json}.
+\path{CHECKERS.md} explain how to reproduce the checks and describe
+the checker versions, test controls, and trust assumptions. Detailed
+verification records accompany the source.
 
-\section{Source attribution and preparation}\label{app:attribution}
-The inherited source pin is
+\section{Source availability and attribution}\label{app:attribution}
+The proof package builds on repository version
 \path{0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd} in the
 \texttt{Mattie/math} repository. It incorporates OpenAI's
 \texttt{OAI.NumberTheory.PiExponent} library at revision
@@ -1215,15 +1212,16 @@ estimates used throughout this paper. The original affine work extends
 that framework to the common integral affine data and the paired
 embedding argument.
 
-OpenAI Codex agents assisted with mathematical exploration, formalization,
-manuscript preparation, and review.
-
-The package retains the inherited OpenAI library's Apache~2.0 license and
+The package retains the OpenAI library's Apache~2.0 license and
 notices. Original \texttt{PairedAffine}, \texttt{AlgebraicLog}, and
 \texttt{Logarithm} sources and associated original code are distributed
 under the MIT license; original explanatory prose is under CC~BY~4.0.
-Lean, Mathlib, and the other inherited tools retain their respective
+Lean, Mathlib, and the other dependencies retain their respective
 notices.
+
+\section*{Acknowledgements}
+OpenAI Codex agents assisted with mathematical exploration, formalization,
+manuscript preparation, and review.
 
 \begin{thebibliography}{9}
 
@@ -1250,7 +1248,7 @@ revision \path{adc7f1241b42e322a6451854ab7e4b4c146bf78a}.
 R.~M.~Casper,
 \emph{The irrationality exponent of positive rational logarithms is 2},
 preprint and Lean source package, 7 October 2026.
-Inherited source snapshot at repository revision
+Source snapshot at repository revision
 \path{0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd}, directory
 \path{preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026/lean}.
 \url{https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd}.

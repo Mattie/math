@@ -2,10 +2,10 @@
   "schema_version": 1,
   "date": "2026-10-11",
   "manuscript": "build/main.tex",
-  "manuscript_sha256": "0563e3cf10301e81d29eff12375553ed2d34c4174fc5e3ddc51a89618106e583",
+  "manuscript_sha256": "49a6f6b4c0523dedc6a6530975201e43986326ec78e0334f897976ea6494cc67",
   "pdf": "paper.pdf",
-  "pdf_sha256": "034ef7ce4df81ba21d5c6c5a563fa4445cbdf2451a4390e138f4a0a04e369746",
-  "pdf_bytes": 161503,
+  "pdf_sha256": "b99f4baa56448935fc4f728f684ce764424fe5a8273f94a1a6b7f5befb5eb610",
+  "pdf_bytes": 161991,
   "pages": 18,
   "compiler": {
     "name": "Tectonic",
@@ -17,8 +17,8 @@
   "platform": "Ubuntu via WSL",
   "result": "success",
   "tex_warnings": 0,
-  "build_log_sha256": "4e6c52af35892e3ff1873b734961b7035687a4bcc27c3bc82a90c65989582ba3",
-  "desktop_compiler": "Successful diagnostic compilation of the revised source; final prose edits built with Tectonic.",
+  "build_log_sha256": "65c4ddbfa4461a75f27b1747bd79609823c818a96f3e8d080fb3b4d375b3a04d",
+  "desktop_compiler": "Successful diagnostic compilation; final bibliography wording also rebuilt with Tectonic.",
   "reproducibility_limit": "Build command and compiler are identified. The TeX resource bundle is not vendored or pinned separately; other compiler/resource versions may produce different PDF bytes.",
   "proof_sources_changed": false,
   "editorial_revision": "evidence/editorial-revision.json",
@@ -35,5 +35,20 @@
       "Identified the three numbers as transcendental in the opening sentence."
     ],
     "scope": "Wording and layout only; theorem statements, numbered mathematical displays and Lean sources unchanged."
+  },
+  "focused_revision": {
+    "previous": {
+      "manuscript_sha256": "0563e3cf10301e81d29eff12375553ed2d34c4174fc5e3ddc51a89618106e583",
+      "pdf_sha256": "034ef7ce4df81ba21d5c6c5a563fa4445cbdf2451a4390e138f4a0a04e369746"
+    },
+    "changes": [
+      "Moved the Luchin-Salikhov comparison after the results and common lower bound, before the proof overview; retained both specialized numerical bounds and substitutions.",
+      "Defined irrationality exponent before the results and acknowledged classical transcendence near the opening. Main theorem statements now foreground only the exponent bounds.",
+      "Stated the affine determinant contribution directly and replaced inherited labels with source attribution and exact formal declarations.",
+      "Made the threshold, exponent-four constant, field-degree and integrality questions explicit.",
+      "Reduced repository terminology in the appendix and moved AI assistance to Acknowledgements."
+    ],
+    "coordinator_delta_check": "Abstract, common theorem, lemmas, aligned displays and proposition bodies unchanged. All numbered equations unchanged except removal of the general Luchin-Salikhov display, replaced by its specialized consequences and identities. The three main results retain their exponent bounds. Lean sources unchanged.",
+    "review_scope": "Coordinator editorial and mathematical correspondence check; no new independent review or proof run."
   }
 }

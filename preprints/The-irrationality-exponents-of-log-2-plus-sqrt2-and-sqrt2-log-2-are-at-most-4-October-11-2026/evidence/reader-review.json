@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-10-11",
-  "manuscript_sha256": "0563e3cf10301e81d29eff12375553ed2d34c4174fc5e3ddc51a89618106e583",
-  "pdf_sha256": "034ef7ce4df81ba21d5c6c5a563fa4445cbdf2451a4390e138f4a0a04e369746",
+  "manuscript_sha256": "49a6f6b4c0523dedc6a6530975201e43986326ec78e0334f897976ea6494cc67",
+  "pdf_sha256": "b99f4baa56448935fc4f728f684ce764424fe5a8273f94a1a6b7f5befb5eb610",
   "github_memo": {
     "commit": "0ddb45657dd3e6fb7fb18fdf3f1f9bb0b6a5a998",
     "path": "formalizations/AffineLogarithms/ARGUMENT.md",
@@ -145,12 +145,11 @@
   "pdf_review": {
     "pages": 18,
     "renderer": "pypdfium2 5.13.0, scale 1.6",
-    "opened": "All 18 pages as contact sheets; page 1 individually after the abstract revision.",
+    "opened": "All 18 pages as contact sheets; revised introduction and comparison on page 2 individually; final bibliography inspected after its wording adjustment.",
     "observations": [
-      "Displayed targets and rewritten abstract are readable.",
-      "No clipping or overflow observed after pagination changes.",
-      "Classical transcendence paragraph and source references retained.",
-      "Opening sentence now says transcendental numbers; the line fits without changing pagination."
+      "The main results and common lower bound precede the comparison, which precedes the proof overview.",
+      "The main results state the exponent bounds; the opening acknowledges classical transcendence.",
+      "No clipped displays, source-name overflow or table overflow observed."
     ],
     "layout_warnings": 0,
     "metadata": {
@@ -217,6 +216,39 @@
         "The parameter construction, finite row expansion, source map and references are readable.",
         "No clipped displays or source-table overflow observed.",
         "Centered title and consistent mathematical typography retained."
+      ],
+      "layout_warnings": 0,
+      "metadata": {
+        "/Creator": "LaTeX with hyperref",
+        "/Title": "The irrationality exponents of log(2) + sqrt(2) and sqrt(2) log(2) are at most 4",
+        "/Subject": "Affine logarithms, rational approximation, and a degree-four norm argument",
+        "/Author": "Ryan Matthew Casper",
+        "/Producer": "xdvipdfmx (0.1)",
+        "/CreationDate": "D:20261011000000-00'00'"
+      },
+      "attachments": [],
+      "uri_links": [
+        "https://github.com/Mattie/math/actions/runs/38139172013",
+        "https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd",
+        "https://github.com/Mattie/math/tree/b15a6431eca8632a48c1cd84e5200edd30f0670c",
+        "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+        "https://people.maths.bris.ac.uk/~malab/PDFs/HL.pdf",
+        "https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=8518&what=fullteng"
+      ]
+    }
+  },
+  "previous_focused_revision_pdf_review": {
+    "manuscript_sha256": "0563e3cf10301e81d29eff12375553ed2d34c4174fc5e3ddc51a89618106e583",
+    "pdf_sha256": "034ef7ce4df81ba21d5c6c5a563fa4445cbdf2451a4390e138f4a0a04e369746",
+    "review": {
+      "pages": 18,
+      "renderer": "pypdfium2 5.13.0, scale 1.6",
+      "opened": "All 18 pages as contact sheets; page 1 individually after the abstract revision.",
+      "observations": [
+        "Displayed targets and rewritten abstract are readable.",
+        "No clipping or overflow observed after pagination changes.",
+        "Classical transcendence paragraph and source references retained.",
+        "Opening sentence now says transcendental numbers; the line fits without changing pagination."
       ],
       "layout_warnings": 0,
       "metadata": {
