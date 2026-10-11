@@ -29,7 +29,7 @@ def main():
             raise ValueError("Paper file changed: " + name)
 
     for path in ROOT.rglob("*.md"):
-        if ".work" in path.relative_to(ROOT).parts:
+        if any(part in {".work", ".lake", "__pycache__"} for part in path.relative_to(ROOT).parts):
             continue
         for target in re.findall(r"\]\(([^\s)]+)\)", path.read_text(encoding="utf-8")):
             if "://" in target or target.startswith("#"):

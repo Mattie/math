@@ -7,19 +7,21 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 PACKAGES = sorted((ROOT/'preprints').iterdir())
+# Papers may instead link to an existing proof package in formalizations/.
+PROOF_PACKAGES = [p for p in PACKAGES if (p/'lean/lean-toolchain').is_file()]
 
 def load(path):
     spec=importlib.util.spec_from_file_location(path.stem,path)
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
     return module
 
-audit = load(PACKAGES[0]/'scripts/check-axioms.py')
+audit = load(PROOF_PACKAGES[0]/'scripts/check-axioms.py')
 upstream = load(Path(__file__).with_name('check-upstream.py'))
 assets = load(Path(__file__).with_name('check-release-assets.py'))
 
 class VerificationTests(unittest.TestCase):
     def test_helpers_identical(self):
-        contents=[(p/'scripts/check-axioms.py').read_bytes() for p in PACKAGES]
+        contents=[(p/'scripts/check-axioms.py').read_bytes() for p in PROOF_PACKAGES]
         self.assertTrue(contents, 'No publication packages found')
         self.assertEqual(len(set(contents)),1)
 
@@ -49,7 +51,7 @@ class VerificationTests(unittest.TestCase):
         import sys
         with tempfile.TemporaryDirectory() as temporary:
             p=Path(temporary)/'audit.log';p.write_text("'target' depends on axioms: [sorryAx]")
-            result=subprocess.run([sys.executable,str(PACKAGES[0]/'scripts/check-axioms.py'),str(p),'--expect','target'],capture_output=True)
+            result=subprocess.run([sys.executable,str(PROOF_PACKAGES[0]/'scripts/check-axioms.py'),str(p),'--expect','target'],capture_output=True)
             self.assertNotEqual(result.returncode,0)
             self.assertIn(b'sorryAx',result.stderr)
 

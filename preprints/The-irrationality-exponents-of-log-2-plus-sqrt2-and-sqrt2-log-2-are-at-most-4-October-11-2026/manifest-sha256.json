@@ -9,7 +9,7 @@
   "paper.pdf": "a033317d7415f55d2d533dedbe09f37525730e48a234134a9f3cfd4a9797ab45",
   "README.md": "5fac4591c21c0885d0a2f700bea062e557d6c741d00684c4cd1318586dd10a80",
   "scripts/build-paper.sh": "753e320d64e12682d62d8c4d8857549312f593853e8fc62ae63a9d13c0029120",
-  "scripts/check-publication.py": "b6f7b945b63ea6c20c9dfe2edf1a998f9ecbbd2c9388c75f861ea5bb23843584",
+  "scripts/check-publication.py": "98046a54b2d1003ad86d2b0bc57f8c1b1cea009b743443522cc8875dec301da2",
   "theorem-map.json": "96ba85b7bbc40496296c4e42033aba5de0ff4ad7bc7fb0db840f79d3ff9ff7b9",
   "VERIFY.md": "6bb973c7726cdd37eec6137d0ee23c3205e8a4c96e80987120013059ead48e15"
 }
