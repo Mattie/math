@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-10-11",
-  "manuscript_sha256": "2f0ef84d37b7b15a5951413a559539f62a1e5cfc0fd2e8fcfeade3d26f1e133a",
-  "pdf_sha256": "e760b0c7c00ecd74a6866663c15d0be50778d2e8a1d41af46bba613689c74b09",
+  "manuscript_sha256": "0563e3cf10301e81d29eff12375553ed2d34c4174fc5e3ddc51a89618106e583",
+  "pdf_sha256": "034ef7ce4df81ba21d5c6c5a563fa4445cbdf2451a4390e138f4a0a04e369746",
   "github_memo": {
     "commit": "0ddb45657dd3e6fb7fb18fdf3f1f9bb0b6a5a998",
     "path": "formalizations/AffineLogarithms/ARGUMENT.md",
@@ -149,7 +149,8 @@
     "observations": [
       "Displayed targets and rewritten abstract are readable.",
       "No clipping or overflow observed after pagination changes.",
-      "Classical transcendence paragraph and source references retained."
+      "Classical transcendence paragraph and source references retained.",
+      "Opening sentence now says transcendental numbers; the line fits without changing pagination."
     ],
     "layout_warnings": 0,
     "metadata": {

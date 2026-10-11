@@ -2,10 +2,10 @@
   "schema_version": 1,
   "date": "2026-10-11",
   "manuscript": "build/main.tex",
-  "manuscript_sha256": "2f0ef84d37b7b15a5951413a559539f62a1e5cfc0fd2e8fcfeade3d26f1e133a",
+  "manuscript_sha256": "0563e3cf10301e81d29eff12375553ed2d34c4174fc5e3ddc51a89618106e583",
   "pdf": "paper.pdf",
-  "pdf_sha256": "e760b0c7c00ecd74a6866663c15d0be50778d2e8a1d41af46bba613689c74b09",
-  "pdf_bytes": 161492,
+  "pdf_sha256": "034ef7ce4df81ba21d5c6c5a563fa4445cbdf2451a4390e138f4a0a04e369746",
+  "pdf_bytes": 161503,
   "pages": 18,
   "compiler": {
     "name": "Tectonic",
@@ -17,7 +17,7 @@
   "platform": "Ubuntu via WSL",
   "result": "success",
   "tex_warnings": 0,
-  "build_log_sha256": "8fcae854cb7c57b50a79373e61734c80f9704162241b083295029efb21bfa572",
+  "build_log_sha256": "4e6c52af35892e3ff1873b734961b7035687a4bcc27c3bc82a90c65989582ba3",
   "desktop_compiler": "Successful diagnostic compilation of the revised source; final prose edits built with Tectonic.",
   "reproducibility_limit": "Build command and compiler are identified. The TeX resource bundle is not vendored or pinned separately; other compiler/resource versions may produce different PDF bytes.",
   "proof_sources_changed": false,
@@ -31,7 +31,8 @@
     "changes": [
       "Used irrationality exponent without the redundant rational qualifier.",
       "Displayed all three targets in the abstract.",
-      "Replaced specialized embedding and collision terminology in the abstract with the requested conjugate-determinant explanation."
+      "Replaced specialized embedding and collision terminology in the abstract with the requested conjugate-determinant explanation.",
+      "Identified the three numbers as transcendental in the opening sentence."
     ],
     "scope": "Wording and layout only; theorem statements, numbered mathematical displays and Lean sources unchanged."
   }
