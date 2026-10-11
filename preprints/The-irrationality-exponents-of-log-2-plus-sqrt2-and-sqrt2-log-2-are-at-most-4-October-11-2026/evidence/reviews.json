@@ -58,5 +58,10 @@
     "spec-review/initial-specification-assessment.md": "ac819555488d0f92886575ec9b4cf584837c1145b20c8a021d4e718bf4df24e8",
     "spec-review/manuscript-v1-correspondence-review.md": "06da4bcdd75550dd38fa6de37cb8a0fa45768fd38274e397da284a07c7a0e2a3"
   },
-  "publication_note": "Private review packets and raw reports are retained locally; this sanitized record does not publish them. Model reviews are not human peer review."
+  "publication_note": "Private review packets and raw reports are retained locally; this sanitized record does not publish them. Model reviews are not human peer review.",
+  "subsequent_editorial_revision": {
+    "record": "editorial-revision.json",
+    "manuscript_sha256": "0d56854957f3a0af522e963ba97f95e39c383e9b6537899eb9cce4468630c1b9",
+    "scope": "Coordinator reviewed prose changes and verified unchanged theorem/proposition/lemma and displayed-equation environments. Original independent-review input hashes above are preserved."
+  }
 }

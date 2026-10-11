@@ -42,7 +42,7 @@ argument and the specification/evidence chain, then inspected the final source
 diff. Their [sanitized record](evidence/reviews.json) identifies the exact inputs,
 resolved wording corrections, and limits. No new proof run is attributed to them.
 
-The [build record](evidence/build.json) identifies the 19-page PDF, manuscript,
+The [build record](evidence/build.json) identifies the 18-page PDF, manuscript,
 compiler, and warning-free Tectonic build. The [reader review](evidence/reader-review.json)
 records PDF inspection, actual GitHub rendering, and retrieval status separately.
 See the [workflow checklist](../../formalizations/AffineLogarithms/WORKFLOW.md)

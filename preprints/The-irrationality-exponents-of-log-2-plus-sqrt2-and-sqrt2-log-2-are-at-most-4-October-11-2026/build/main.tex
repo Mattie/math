@@ -27,8 +27,9 @@
 \newcommand{\Emb}{\operatorname{Emb}}
 \DeclareMathOperator{\lcm}{lcm}
 \hypersetup{pdftitle={The irrationality exponents of log(2) + sqrt(2) and sqrt(2) log(2) are at most 4},pdfauthor={Ryan Matthew Casper},pdfsubject={Affine logarithms, rational approximation, and a degree-four norm argument}}
-\title{The irrationality exponents of\newline
-\(\log(2)+\sqrt2\) and \(\sqrt2\log(2)\)\newline are at most \(4\)}
+\title{The irrationality exponents of\\
+\(\log(2)+\sqrt2\) and \(\sqrt2\log(2)\)\\
+are at most \(4\)}
 \author{Ryan Matthew Casper}
 \date{11 October 2026\\\small Preprint working draft}
 \begin{document}
@@ -45,12 +46,7 @@ takes place in a number field of degree four. Two embeddings satisfy an
 affine exponential identity and receive a logarithmic collision estimate;
 the other two receive a coefficient estimate. All four evaluate the same
 cleared algebraic-integer determinant. Its norm supplies the arithmetic
-lower bound. We state the inherited weighted interpolation and collision
-inputs explicitly, explain the parameter choices and denominator clearing,
-and give both branches of the determinant contradiction. The accompanying
-Lean package includes the three concrete bounds, their irrationality and
-exponent consequences, and checked comparisons with the stated expressions.
-The conclusions are upper bounds; they do not determine the exact exponents.
+lower bound. A Lean formalization accompanies the proof.
 \end{abstract}
 
 \section{Introduction and main results}\label{sec:intro}
@@ -124,12 +120,11 @@ Our starting point is the weighted logarithmic interpolation and collision
 framework in OpenAI's \texttt{PiExponent} library~\cite{openai}, together
 with the rational-logarithm and quadratic-logarithm adaptations
 \cite{rational,quadratic}. The present argument uses those mathematical
-inputs, including their algebraic geometry and complex analysis. It does
-not provide a separate proof of their foundations. Sections~\ref{sec:geometry}
-and~\ref{sec:analytic} state the interfaces we need, so the dependence is
-visible before either input is applied.
+inputs, including their algebraic geometry and complex analysis.
+Sections~\ref{sec:geometry} and~\ref{sec:analytic} state the interpolation
+and collision theorems used below.
 
-\subsection{A targeted comparison with earlier work}
+\subsection{Comparison with earlier work}
 Luchin and Salikhov~\cite{luchin} prove that, for every
 \(s>7.98101\), sufficiently large coefficient height
 \(P=\max_i|p_i|\) gives
@@ -153,13 +148,10 @@ Given \(\nu>7.98101\), choose \(7.98101<s<\nu\). The fixed
 multiplicative constants in \eqref{eq:LS} are absorbed by
 \(q^{\nu-s}\) for sufficiently large \(q\); errors at least one
 already satisfy the desired lower bound. Thus that theorem implies
-\(\mu(x_1),\mu(x_2)\le7.98101\). There is no squaring of the
-denominator height in this substitution.
+\(\mu(x_1),\mu(x_2)\le7.98101\).
 
 Theorems~\ref{thm:shift} and~\ref{thm:scale} improve this particular
-consequence to four. This is a comparison with a specified theorem, not an
-exhaustive survey or a claim of priority. We make no corresponding
-best-known-bound claim for \(x_3\).
+consequence to four.
 
 \section{Approximation conventions}\label{sec:conventions}
 For an irrational real number \(x\), let
@@ -304,7 +296,7 @@ and simultaneously
  C_\infty:=\frac{c\eta^2K\theta^m}{(m+1)v_0A^m}>3.
 \end{equation}
 
-Why can these requirements be met together? With the shape fixed,
+With the shape fixed,
 \(K/w_0\le(CB)^m\to0\), while \(v_0\) grows exponentially because
 \(C\theta/B>1\). For example, once \(C^m\ge2\),
 \(K\ge C^m/2\), so \(v_0\ge(C\theta/B)^m\). Thus even
@@ -313,8 +305,7 @@ Why can these requirements be met together? With the shape fixed,
 \[
  C_\infty=\frac{c\eta^2}{2(m+1)}\left(\frac BA\right)^m,
 \]
-which tends to infinity. The floor in \(K\) causes no difficulty in
-either comparison.
+which tends to infinity.
 
 Choose a small positive rational \(\zeta\) such that
 \begin{equation}\label{eq:slack}
@@ -358,7 +349,7 @@ agrees at every index above \(i\), require
 After common indices are cancelled, the largest remaining index is on
 the right. Its weight can dominate the finitely many products of earlier
 weights. Successively increasing the next denominator therefore achieves
-these inequalities. Distinct denominators alone would not be enough.
+these inequalities.
 
 Finally choose the initial denominator threshold large enough to make the
 remaining inverse-weight errors small. Define
@@ -429,9 +420,8 @@ surjective.
 This proposition is the weighted logarithmic interpolation theorem of the
 inherited source~\cite{rational}. Its proof passes through ampleness of
 an interpolation bundle and eventual restriction to jets, using the
-weighted geometric results in~\cite{openai}. We use that theorem with
-its stated hypotheses. In particular, the arbitrary additive centers in
-\eqref{eq:formalcoords} do not carry a hidden Diophantine assumption.
+weighted geometric results in~\cite{openai}. The additive centers
+in~\eqref{eq:formalcoords} are unrestricted.
 
 \subsection{The finite matrix}
 For \(H>0\), define the column and row sets
@@ -460,7 +450,7 @@ Our matrix, with rows and columns from \eqref{eq:indices}, is
        \bigl(Z_i+jr_{\sigma i}+L_i(t)\bigr)^{\gamma_i}.
 \end{equation}
 The factor \(z_\sigma^{jh}\) is part of the matrix. It contributes to
-both the arithmetic and analytic estimates and cannot be omitted.
+both the arithmetic and analytic estimates.
 
 \begin{lemma}\label{lem:cofinal}
 The matrix \(\mathcal M_{\sigma_0}(H)\) has full row rank for a cofinal
@@ -596,9 +586,8 @@ Adding these three estimates in the logarithm of \eqref{eq:clearing}
 proves the claim.
 \end{proof}
 
-The inverse row factors are useful arithmetic, not just a normalization.
-They give the term \(-b_H\). Dropping them would lose the comparison
-with the transverse weight in the analytic estimate.
+The inverse row factors give the term \(-b_H\), which matches the
+transverse weight in the analytic estimate.
 
 \subsection{The norm inequality}
 The nonzero algebraic integer \(Z_H\) has nonzero integer norm. Thus
@@ -628,9 +617,8 @@ into \eqref{eq:norm}. The resulting upper bound on its right side is
 \end{proof}
 
 This is where the degree of the field and the number of good embeddings
-enter together. We have not bounded each \(|\sigma(Z_H)|\) below by
-one. Such a bound would generally be false. The product is the integer
-quantity.
+enter together. The lower bound one applies to the product of the four
+absolute values, the absolute norm of the nonzero algebraic integer.
 
 \section{The analytic estimates}\label{sec:analytic}
 Fix a good embedding \(\sigma\) and write
@@ -760,8 +748,7 @@ This bound follows by counting the transverse and auxiliary
 multi-indices and the tail order. We use it only as a polynomial bound
 for fixed parameters. Equations~\eqref{eq:rowbound}--\eqref{eq:choicecount}
 are the inherited finite translation interface, with the added affine
-error \(\log2\) from \eqref{eq:affineerror}. No infinite determinant
-expansion is being interchanged with a limit.
+error \(\log2\) from \eqref{eq:affineerror}.
 
 \subsection{Two ways for a translation term to be small}
 Define the low-index count and the collision rate by
@@ -796,8 +783,8 @@ multiplicities are \(n_\alpha\), Cauchy--Schwarz gives
 The collision saving is consequently at least \(MHC_H\). In this
 case we may discard the translation saving, since \(W-MHb_H\ge0\).
 
-Thus every term has one of two savings; we do not claim that every term
-has both. Taking the larger of their exponential upper bounds and using
+Each term therefore has either the translation saving or the collision
+saving. Taking the larger of the two exponential upper bounds and using
 the at most \(Q_H^M\) terms in \eqref{eq:detexpansion} proves
 \begin{proposition}[Bound at a good embedding]\label{prop:goodbound}
 For every good embedding and every nonzero selected minor,
@@ -830,8 +817,7 @@ asymptotics in \eqref{eq:counts} also gives
  C_H\longrightarrow
  \frac{c\eta^2K\theta^m}{(m+1)v_0A^m}=C_\infty.
 \end{equation}
-No uniformity in the dimension or approximation weights is needed; those
-choices have already been made.
+These limits are taken with the dimension and approximation weights fixed.
 
 \section{The remaining embeddings and the multiplier cost}\label{sec:coarse}
 At any embedding, including one outside \(G\),
@@ -994,9 +980,8 @@ Lemma~\ref{lem:exponent} gives Theorem~\ref{thm:scale}.
 
 In these first two constructions the algebraic data lie in the smaller
 field \(\Q(\sqrt2)\). The auxiliary \(\sqrt3\) supplies two distinct
-embeddings with the required values. Their repeated images do not erase
-them from the norm: they are still distinct embeddings of the degree-four
-field in which the common theorem is applied.
+embeddings with the required values. Each is a distinct embedding of the
+degree-four field and contributes a factor to the norm.
 
 \subsection{The shifted quadratic period}
 Put \(b=3+2\sqrt2>1\), and take \(a=3+2\sqrt2\),
@@ -1026,32 +1011,26 @@ coordinate while keeping the shift \(\sqrt3\) fixed. Identity
 compatibility is needed at the embeddings that change the sign of the
 shift; their contribution has already been covered by the coarse bound.
 
-\section{Scope of the conclusions}\label{sec:scope}
-For each of our three numbers, the conclusion is
-\(2\le\mu(x_j)\le4\). The proof does not assert \(\mu(x_j)=4\),
-and it gives no bound with exponent exactly four. It also gives no
-numerical value for the threshold in \eqref{eq:eventual}. We make no
-claim here about an algorithm for obtaining such a threshold.
+\section{Further questions}\label{sec:scope}
+The bounds \(2\le\mu(x_j)\le4\) leave a gap between the Dirichlet
+exponent and the upper bound obtained here. The determinant argument
+uses a strict margin at \(\nu>4\); an estimate at the endpoint
+\(\nu=4\) would require control of the terms absorbed by that margin.
+The threshold in \eqref{eq:eventual} is obtained through asymptotic
+parameter choices. Quantifying those choices would be needed to obtain
+a numerical threshold.
 
-The shared theorem has deliberately concrete hypotheses: degree four,
-integral \(a,u,v\), a positive distinguished base different from one, and two
-compatible embeddings with multipliers bounded by two. A more general
-degree-to-embedding ratio may suggest a similar calculation, but it would
-need its own parameter and arithmetic argument. Likewise, extending the
-statement to nonintegral affine data would introduce denominator costs
-that are absent here. Neither extension is asserted by the present paper.
-
-The formalization complements this argument by checking the specified
-theorems and the dependencies used to prove them. It does not establish
-priority, replace mathematical exposition, or certify statements outside
-the checked endpoints. The source and verification record are described
-next so that readers can identify the exact scope of those checks.
+The balance between the field degree and the number of compatible
+embeddings also suggests a broader question. Here two compatible
+embeddings supply analytic savings, while the norm has four factors.
+Extending this balance to other degrees would require corresponding
+parameter and arithmetic estimates. For nonintegral affine data,
+denominator clearing would introduce additional costs.
 
 \appendix
 \section{Formalization and verification}\label{app:formalization}
 The accompanying package is \path{formalizations/AffineLogarithms} in
-the source repository~\cite{affine}. The proof sources are frozen; this
-manuscript explains those sources rather than changing their statements.
+the source repository~\cite{affine}. The source inventory identifies the checked version.
 The common endpoint is
 \begin{center}\small
 \path{OAI.PairedAffine.Endpoint.paired_eventualLowerBound}.
@@ -1095,8 +1074,6 @@ package is justified by \path{AlgebraicLog/ExponentConsequence.lean}.
 The standard comparison wrappers are in \path{Solution.lean};
 \path{StandardBridge.lean} supplies the implication from the eventual
 bound to the exclusion of \texttt{LiouvilleWith}.
-In particular, the comparison is not merely between two names with a
-similar intended meaning.
 
 \subsection{Where the main steps are checked}
 The following source map gives the principal interfaces. Paths are
@@ -1162,44 +1139,24 @@ Concrete field and targets &
 \bottomrule
 \end{longtable}
 
-\subsection{Recorded checks and their limits}
-The primary toolchain is Lean~4.34.1, with Mathlib pinned to
-\path{d13f23b723b8a846827a245b89c10fc7d3f11612}. The package records
-source compilation, axiom inspection, literal statement comparison,
-export identity, and proof-body replay as distinct checks. The permitted
+\subsection{Verification}
+The formalization uses Lean~4.34.1 and Mathlib revision
+\path{d13f23b723b8a846827a245b89c10fc7d3f11612}. Its permitted
 foundational axioms are \texttt{propext}, \texttt{Classical.choice},
-and \texttt{Quot.sound}. The solution does not import the challenge
-file's statement placeholders.
+and \texttt{Quot.sound}. Fifteen comparison targets cover the twelve
+public declarations and the three Mathlib formulations described above.
+These targets passed exact statement comparison and proof checking with
+Lean and Rust Nanoda, an independently implemented kernel.
 
-The retained original export passed the fifteen statement comparisons,
-the Lean~4.34.1 checker, and Rust Nanoda. Nanoda supplies an independently
-implemented kernel. A supplemental Lean~4.34.0 reader also replayed that
-export; it belongs to the same kernel family as Lean and lacks the later
-runtime fixes in 4.34.1, so it is historical supplementary evidence rather
-than the primary Lean check.
-
-A fresh hosted run on 11 October 2026, run
-\href{https://github.com/Mattie/math/actions/runs/38139172013}{38139172013},
-attempt~1, used repository commit
-\path{b15a6431eca8632a48c1cd84e5200edd30f0670c}. The retained audit
-records all fifteen comparison targets as passed, with Lean and Rust
-Nanoda, a fresh build of the requested candidate dependency closure, and
-checks of the 969 frozen source/specification inputs. Official Mathlib
-dependency caches remained a declared trust input. The run did not retain
-a new standalone export; the earlier export and the fresh hosted results
-are separate evidence records.
-
-The checks include acceptance and rejection controls, including statement
-mismatch and imported-admission cases. These are bounded tests, not a
-proof that the tools have no bugs or that process isolation contains
-every hostile program. The package's \path{CHECKERS.md} discusses the
-selected checker revisions, including structured axiom-name checks
-needed around known Nanoda limitations. Its \path{VERIFY.md},
-\path{PROVENANCE.md}, and
-\path{evidence/hosted-result-2026-10-11.json} distinguish the original
-replay, package checks, and fresh hosted run. The verification claim here
-is acceptance of specified statements under that recorded toolchain and
-axiom policy, not human peer review.
+The hosted verification of 11 October 2026,
+\href{https://github.com/Mattie/math/actions/runs/38139172013}{run 38139172013},
+used repository commit \path{b15a6431eca8632a48c1cd84e5200edd30f0670c}.
+It rebuilt the requested candidate dependency closure and checked the
+969 source and specification inputs, using official Mathlib dependency
+caches. The package's \path{VERIFY.md} and \path{CHECKERS.md} give the
+reproduction instructions, retained export identities, checker revisions,
+rejection controls, and trust assumptions. The audit is recorded in
+\path{evidence/hosted-result-2026-10-11.json}.
 
 \section{Source attribution and preparation}\label{app:attribution}
 The inherited source pin is
@@ -1210,22 +1167,17 @@ The inherited source pin is
 and quadratic-logarithm extensions supply mathematical constructions and
 estimates used throughout this paper. The original affine work extends
 that framework to the common integral affine data and the paired
-embedding argument. We have stated the inherited interfaces explicitly
-to avoid presenting those foundations as if they were established here.
+embedding argument.
 
-AI assistance, including OpenAI Codex agents, was used in preparing the
-manuscript and accompanying formalization. The author is responsible for
-the submitted claims and their presentation. The formal verification
-results describe the checked proof artifacts; AI assistance itself is
-not evidence for a mathematical claim.
+OpenAI Codex agents assisted with mathematical exploration, formalization,
+manuscript preparation, and review.
 
 The package retains the inherited OpenAI library's Apache~2.0 license and
 notices. Original \texttt{PairedAffine}, \texttt{AlgebraicLog}, and
 \texttt{Logarithm} sources and associated original code are distributed
 under the MIT license; original explanatory prose is under CC~BY~4.0.
 Lean, Mathlib, and the other inherited tools retain their respective
-notices. The upstream authors and organizations are contributors to the
-dependencies, not endorsers of this paper.
+notices.
 
 \begin{thebibliography}{9}
 

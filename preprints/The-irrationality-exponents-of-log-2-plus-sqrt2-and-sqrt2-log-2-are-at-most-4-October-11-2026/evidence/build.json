@@ -2,11 +2,11 @@
   "schema_version": 1,
   "date": "2026-10-11",
   "manuscript": "build/main.tex",
-  "manuscript_sha256": "67fdc2aa46438bd4e85616739e4de6fc1984a8c7b89d9dbab46f422ecd7090ce",
+  "manuscript_sha256": "0d56854957f3a0af522e963ba97f95e39c383e9b6537899eb9cce4468630c1b9",
   "pdf": "paper.pdf",
-  "pdf_sha256": "a033317d7415f55d2d533dedbe09f37525730e48a234134a9f3cfd4a9797ab45",
-  "pdf_bytes": 162030,
-  "pages": 19,
+  "pdf_sha256": "fa495d80067d77cf96eddedca27e6c3c84bf4cc21836c2bf88999d9442d4a758",
+  "pdf_bytes": 158143,
+  "pages": 18,
   "compiler": {
     "name": "Tectonic",
     "version": "0.15.0",
@@ -17,8 +17,9 @@
   "platform": "Ubuntu via WSL",
   "result": "success",
   "tex_warnings": 0,
-  "build_log_sha256": "b1bbf884a8733ddee5bebfc76ca3ffd4979593a5515912a641740489bc8434ce",
+  "build_log_sha256": "6df0a803a0bea61975573df20c70eba9e11d70feca2958d1c433da610310373c",
   "desktop_compiler": "Successful diagnostic compilation after adding mathrsfs and correcting identifier wrapping; final appendix wording subsequently built with Tectonic.",
   "reproducibility_limit": "Build command and compiler are identified. The TeX resource bundle is not vendored or pinned separately; other compiler/resource versions may produce different PDF bytes.",
-  "proof_sources_changed": false
+  "proof_sources_changed": false,
+  "editorial_revision": "evidence/editorial-revision.json"
 }
