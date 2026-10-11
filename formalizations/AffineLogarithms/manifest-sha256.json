@@ -1,7 +1,7 @@
 {
   ".gitattributes": "92c569cb24a4df5e6df3ec5ab6380fcd3229b300c7266c5b47954e3ca4928500",
   ".gitignore": "3cf5e660ddd7a118cce8882a7570ed6c5ad1d73c754baba26340c98564b81acb",
-  "ARGUMENT.md": "0a6e0838a1c9be8866a9688f778b507e11d3aae269dcb58dcf669619d51cd93d",
+  "ARGUMENT.md": "eec2189cecce8ecc48f1e3bdefd367b83958a053390517fc1c087e0fe11cb28c",
   "AlgebraicLog/AdmissibleParameters.lean": "c10d98ca66695f0cef07a8a32b813d875aa2dfc0791bd5c4133a974c651505ed",
   "AlgebraicLog/AnalyticAggregate.lean": "91a02f48de3efbb883f72aedd1c291c8ac377ea940ac30b53ee0445047135339",
   "AlgebraicLog/AnalyticData.lean": "0de017ae10c3f0350a1a012c40a022fe79427990f6e62cd001ece184d7b884b3",

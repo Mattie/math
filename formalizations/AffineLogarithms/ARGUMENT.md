@@ -136,7 +136,7 @@ Consequently, for every lower height bound there is a larger $H=n\mathcal R$ at 
 
 ## 4. Integral clearing and the norm comparison
 
-For a selected column $\gamma$, set $e_i=\lfloor H/w_i\rfloor$, so $\gamma_i\le e_i$. Put $D_i=\operatorname{lcm}(1,\ldots,T_i)$. The positive rational clearing scalar is
+For a selected column $\gamma$, set $e_i=\lfloor H/w_i\rfloor$, so $\gamma_i\le e_i$. Put $D_i=\mathrm{lcm}(1,\ldots,T_i)$. The positive rational clearing scalar is
 $$
 \mathcal C=\left(\prod_iD_i^{e_i}\right)^M
   \left(\prod_{\text{rows }r}\prod_iq_i^{-\beta_{ri}}\right)
@@ -260,4 +260,4 @@ $(3+2\sqrt2)(3-2\sqrt2)=1$, their exponentials are precisely the corresponding i
 
 For completeness, (1) implies irrationality without a separate transcendence input. If $x=r/s$ were rational, take an arbitrarily large multiple $q=Ns$, $p=Nr$. Its error is zero, contradicting the positive lower bound at, for example, $\nu=5$.
 
-The standard exponent in `OAI/NumberTheory/PiExponent/Statement.lean` is the supremum of positive real $\nu$ for which infinitely many distinct reduced rationals $r$, of denominator at least two, satisfy $0<|x-r|<\operatorname{den}(r)^{-\nu}$. For every $\nu>4$, (1) forces the denominator of such a rational below $Q$. Its error is less than one, so its numerator also lies in a bounded interval for each of these finitely many denominators. There are therefore only finitely many such rationals. For irrational $x$, the approximation-exponent set is nonempty (the inherited Dirichlet consequence `two_mem_approximationExponents` supplies exponent two), and all its members are at most four. Its supremum is at most four. The corresponding deductions are `AlgebraicLog.irrational_of_eventualLowerBoundFour` and `irrationalityExponent_le_four_of_eventualLowerBoundFour` in `AlgebraicLog/ExponentConsequence.lean`, applied separately to the three bounds above.
+The standard exponent in `OAI/NumberTheory/PiExponent/Statement.lean` is the supremum of positive real $\nu$ for which infinitely many distinct reduced rationals $r$, of denominator at least two, satisfy $0<|x-r|<\mathrm{den}(r)^{-\nu}$. For every $\nu>4$, (1) forces the denominator of such a rational below $Q$. Its error is less than one, so its numerator also lies in a bounded interval for each of these finitely many denominators. There are therefore only finitely many such rationals. For irrational $x$, the approximation-exponent set is nonempty (the inherited Dirichlet consequence `two_mem_approximationExponents` supplies exponent two), and all its members are at most four. Its supremum is at most four. The corresponding deductions are `AlgebraicLog.irrational_of_eventualLowerBoundFour` and `irrationalityExponent_le_four_of_eventualLowerBoundFour` in `AlgebraicLog/ExponentConsequence.lean`, applied separately to the three bounds above.
