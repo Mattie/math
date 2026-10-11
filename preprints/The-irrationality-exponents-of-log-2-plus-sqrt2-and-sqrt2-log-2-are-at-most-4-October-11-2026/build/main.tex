@@ -36,9 +36,9 @@ are at most \(4\)}
 \maketitle
 
 \begin{abstract}
-We prove that \(\log 2+\sqrt2\), \(\sqrt2\log 2\), and
-\(\log(3+2\sqrt2)/\sqrt2+\sqrt3\) are irrational and have rational
-irrationality exponent at most four. For each of these numbers \(x\) and
+We prove that the rational irrationality exponents of \(\log 2+\sqrt2\),
+\(\sqrt2\log 2\), and \(\log(3+2\sqrt2)/\sqrt2+\sqrt3\) are at most
+four. For each of these numbers \(x\) and
 each real \(\nu>4\), the proof gives an eventual lower bound
 \(q^{-\nu}\le |x-p/q|\), uniformly in the integer numerator and positive
 integer denominator; the fractions need not be reduced. The common argument
@@ -84,6 +84,15 @@ The number
 is irrational and \(\mu(x_3)\le4\).
 \end{mainthm}
 
+All three numbers are classically known to be transcendental. The
+Hermite--Lindemann theorem implies that \(\log\alpha\) is transcendental
+for every positive algebraic \(\alpha\ne1\); see, for example,
+\cite[Section~2]{butler}. Adding an algebraic number or multiplying by
+a nonzero algebraic number preserves transcendence. Apply this with
+\(\alpha=2\) for \(x_1,x_2\), and with \(\alpha=3+2\sqrt2\) for
+\(x_3\). The contribution here is the quantitative bound
+\(\mu(x_i)\le4\) for each of these numbers.
+
 For each of the three numbers, we prove the more precise statement
 \begin{equation}\label{eq:eventual}
  \forall\nu>4\quad\exists Q\in\N,\ Q\ge2:\quad
@@ -111,10 +120,11 @@ The factor four in the final exponent comes from this comparison. There
 are four copies of the arithmetic clearing cost and two copies of the full
 analytic saving. After division by two, the leading arithmetic cost is
 \(2(1-b_H)\), where \(b_H\) is the mean transverse row weight. The
-parameters are chosen to defeat this cost at every exponent \(\nu>4\).
-The coarser estimates still have to be paid for; increasing the determinant
-height does not remove all of them. We therefore choose the dimension and
-the approximation denominators before letting that height grow.
+analytic estimate is stronger than this arithmetic bound when \(\nu>4\)
+and the parameters are chosen suitably. The coefficient estimates at the
+other embeddings contribute additional terms. We make those terms small
+by choosing the dimension and approximation denominators first, then let
+the determinant height grow.
 
 Our starting point is the weighted logarithmic interpolation and collision
 framework in OpenAI's \texttt{PiExponent} library~\cite{openai}, together
@@ -194,10 +204,7 @@ denominators for the opposite estimate. More precisely, for each fixed
 \end{equation}
 Its negation gives a threshold beyond which the error is strictly greater
 than \(q^{-\nu}\). Increasing that threshold to at least two and
-weakening the inequality gives \eqref{eq:eventual}. We use the non-strict
-inequality in \eqref{eq:bad} because it is convenient for selecting
-approximation data; the final exponent convention still uses a strict
-inequality.
+weakening the inequality gives \eqref{eq:eventual}.
 
 \section{The common degree-four theorem}\label{sec:common}
 For a number field \(F\), write \(\OO_F\) for its ring of integers and
@@ -245,8 +252,8 @@ All summands are nonnegative. Thus \(\kappa,R\ge0\),
  100|\sigma(u)(x-\sigma(v))|&\le\rho.
  \end{split}
 \end{equation}
-These deliberately generous bounds keep the later choices uniform over
-the embeddings. The enlargement from \(R\) to \(R'\) will pay for the
+These bounds keep the later choices uniform over the embeddings.
+The enlargement from \(R\) to \(R'\) absorbs the
 fixed multiplier in the affine approximation error.
 
 \section{Choosing the parameters}\label{sec:parameters}
@@ -269,10 +276,25 @@ and a real \(0<\eta<1\), so that
 \begin{equation}\label{eq:gap}
  g=\nu\bigl(A(1-\eta)-\theta\bigr)-2(1-\theta)>0.
 \end{equation}
-The inherited shape lemma supplies these parameters by applying its
-exponent-two construction to \(\nu/2>2\). Only the shape construction
-uses the rescaled exponent. Our rational approximations retain exponent
-\(\nu\).
+Here is a direct way to see that such a shape exists. Choose rational
+\(t<1\) sufficiently close to one that \(\nu t>2(1+t)\), and put
+\(\theta=t^2\). At \(A=t\) and \(\eta=0\), the expression in
+\eqref{eq:gap} is
+\((1-t)(\nu t-2(1+t))>0\). By continuity, we may choose rational
+\(\theta<A<B<t\) sufficiently close to \(t\), followed by a small
+positive \(\eta\), while keeping the gap positive. Choose rational
+\(C\) in the nonempty interval \((B/\theta,1/B)\). Then
+\eqref{eq:shape} holds, including \(C\theta<\theta/B<1\).
+
+The remaining choices have two purposes. The terms from denominator
+clearing, coarse coefficient bounds, and row translation must have sum
+less than \(g\). The collision estimate must also exceed the arithmetic
+bound when the translated indices have small total weight. These are the
+two inequalities in \eqref{eq:twomargins} below. We write their error
+terms as \(E\) for clearing, \(U\) for the coarse bound, and \(V=T+J\)
+for translation and holomorphic growth. Increasing the dimension makes
+the limiting collision rate large; increasing the approximation weights
+then makes the remaining errors small.
 
 Choose \(0<\epsilon<g\) with \(\epsilon\le1/2\), and then choose
 \(F_0>2/\theta\) such that \(\nu/F_0<\epsilon/3\). For a sufficiently
@@ -312,8 +334,7 @@ Choose a small positive rational \(\zeta\) such that
  \frac{(1+3\zeta)^{m+1}}2<1,\qquad
  (1+3\zeta)^mK\theta^m<1,\qquad (1+\zeta)\theta<1.
 \end{equation}
-We use \(\zeta\) for this slack to reserve \(\sigma\) for field
-embeddings. All three inequalities follow by taking \(\zeta\) close
+All three inequalities follow by taking \(\zeta\) close
 enough to zero, since their zero-slack versions are strict.
 
 \subsection{Successive approximation weights}
@@ -475,9 +496,7 @@ weighted filtration with weights \(v_0,w_i/\theta\). They induce
 inverse linear maps on the finite jet packet spaces. Applying this
 substitution to the truncated expression recovers the full logarithmic
 expression. Consequently the full and truncated packet maps are
-surjective at exactly the same heights. Individual coefficients can
-change; it is the invertible change of packet coordinates that preserves
-surjectivity.
+surjective at exactly the same heights.
 
 In the monomial bases, the truncated packet map has precisely the entries
 \eqref{eq:matrix}. Proposition~\ref{prop:interpolation} therefore gives
@@ -616,10 +635,6 @@ into \eqref{eq:norm}. The resulting upper bound on its right side is
 \(2MH>0\) and rearrange.
 \end{proof}
 
-This is where the degree of the field and the number of good embeddings
-enter together. The lower bound one applies to the product of the four
-absolute values, the absolute norm of the nonzero algebraic integer.
-
 \section{The analytic estimates}\label{sec:analytic}
 Fix a good embedding \(\sigma\) and write
 \[
@@ -703,9 +718,7 @@ weighted degree of the columns bounds the entire functions in
 The derivative-order budget supplies \(\log2/v_0\), and the identity
 \(\log(2\rho K)=\log(200K)+\log(\rho/100)\) gives exactly \(J\).
 The remaining collision calculation gives the coefficient \(c=\log2/4\)
-and remainder \eqref{eq:collisionremainder}. We retain the proposition
-as an inherited analytic input; these observations identify the growth
-quantities being passed to it.
+and remainder \eqref{eq:collisionremainder}.
 
 \subsection{Finite row translation}
 For each row \(r=(j,s,\beta)\), write
@@ -714,22 +727,54 @@ For each row \(r=(j,s,\beta)\), write
  =Z_i+j\omega+\log(1+t)
        +j(r_{\sigma i}-\omega)-\tau_i(t).
 \]
-Expand in the constant errors and tails, and extract \(t^sZ^\beta\).
-Only finitely many coefficients can contribute. A choice for that row
-has an assigned transverse index \(\alpha_r\), a remaining order
-\(\ell_r\le s\), and a scalar \(A_r\). The inherited translation
-identities and coefficient bounds give
+Put \(\varepsilon_{ri}=j(r_{\sigma i}-\omega)\). A translation term
+for this row is specified by
+\[
+ \alpha\in\N^m,\quad \alpha\ge\beta,\quad \wt\alpha\le H,
+ \qquad 0\le d_i\le\alpha_i-\beta_i,\qquad 0\le k\le s.
+\]
+Its remaining derivative order is \(\ell=s-k\), and its scalar is
+\begin{equation}\label{eq:rowscalar}
+ A_r(\alpha,d,k)=
+ \left(\prod_i\binom{\alpha_i}{\beta_i}
+                 \binom{\alpha_i-\beta_i}{d_i}
+                 \varepsilon_{ri}^{\alpha_i-\beta_i-d_i}\right)
+ [t^k]\prod_i(-\tau_i(t))^{d_i}.
+\end{equation}
+Indeed, expand a column first in \(Z\), about
+\(j\omega+\log(1+t)\), then expand each power of
+\(\varepsilon_{ri}-\tau_i(t)\). Extracting \(t^sZ^\beta\) gives
+the stated scalar times the \((\alpha,s-k)\) coefficient of the
+untranslated column. Indices of weight greater than \(H\) have zero
+coefficient by the column degree bound. This proves the row identity
+by the binomial theorem and the coefficient formula for a product of
+power series.
+
+Each scalar satisfies
 \begin{equation}\label{eq:rowbound}
- |A_r|\le\exp\left(-\nu(\wt{\alpha_r}-\wt{\beta_r})
+ |A_r(\alpha,d,k)|\le\exp\left(-\nu(\wt\alpha-\wt\beta)
                          +H\left(T+\frac{\log2}{w_*}\right)\right).
 \end{equation}
-A nonzero scalar has \(\alpha_r\ge\beta_r\) componentwise, hence
-\(\wt{\alpha_r}\ge\wt{\beta_r}\). The assigned indices can be
-restricted to \(\wt\alpha\le H\): larger indices have zero
-coefficients in every column by the column degree bound. The tail begins
-at \(T_i\), and \(v_0T_i\ge F_0w_i\) is the order budget used to
-obtain the \(\nu/F_0\) term in \(T\). The binomial and coefficient
-bounds give the other terms displayed in \eqref{eq:errors}.
+To verify this estimate, let \(C_0=\log(2K)+\nu+\log2\), so that
+\eqref{eq:affineerror} gives
+\(|\varepsilon_{ri}|\le\exp(C_0-\nu w_i)\). The binomial factors
+in \eqref{eq:rowscalar} have product at most \(4^{\sum_i\alpha_i}\).
+Each logarithmic tail has sum of absolute coefficients at \(t=1/2\)
+at most \(\log2<1\), hence
+\[
+ \left|[t^k]\prod_i(-\tau_i(t))^{d_i}\right|\le2^k.
+\]
+If this coefficient is nonzero, then \(\sum_iT_id_i\le k\).
+Since \(v_0T_i\ge F_0w_i\) and \(k\le s\le H/v_0\), this gives
+\(\wt d\le H/F_0\). Finally,
+\(\sum_i\alpha_i\le H/w_*\), and
+\[
+ \sum_i(\alpha_i-\beta_i-d_i)(C_0-\nu w_i)
+ \le \frac{C_0H}{w_*}-\nu(\wt\alpha-\wt\beta)
+                              +\frac{\nu H}{F_0}.
+\]
+Combining these bounds proves \eqref{eq:rowbound}, with exactly the
+value of \(T\) in \eqref{eq:errors}.
 
 More explicitly, multilinearity in the rows gives the finite identity
 \begin{equation}\label{eq:detexpansion}
@@ -744,11 +789,10 @@ choices per row is bounded by
  Q_H=(\lfloor H\rfloor+1)^{2m}
                     (\lfloor H/v_0\rfloor+1).
 \end{equation}
-This bound follows by counting the transverse and auxiliary
-multi-indices and the tail order. We use it only as a polynomial bound
-for fixed parameters. Equations~\eqref{eq:rowbound}--\eqref{eq:choicecount}
-are the inherited finite translation interface, with the added affine
-error \(\log2\) from \eqref{eq:affineerror}.
+Indeed, \(w_i\ge1\) implies \(\alpha_i\le\lfloor H\rfloor\),
+each \(d_i\) has at most \(\lfloor H\rfloor+1\) choices, and
+\(k\le s\le\lfloor H/v_0\rfloor\). Thus \(Q_H\) grows
+polynomially in \(H\) once the parameters have been fixed.
 
 \subsection{Two ways for a translation term to be small}
 Define the low-index count and the collision rate by
@@ -1043,13 +1087,11 @@ that its logarithm is \(x\). This proxy is not the algebraic base
 \(a\), and no algebraicity is required of it.
 
 \subsection{Statement correspondence}
-The twelve public declarations consist of four statements for each
-target: the packaged eventual bound, its expanded quantified form,
-irrationality, and the exponent upper bound. Three further comparison
-wrappers state irrationality and exclude Mathlib's \texttt{LiouvilleWith}
-\(\nu\,x\) for every \(\nu>4\), giving fifteen literal comparison targets.
-With the common namespace
-\texttt{OAI.PairedAffine}, the target stems are
+For each of the three targets, the formalization proves the eventual
+bound \eqref{eq:eventual}, irrationality, and the exponent upper bound.
+It also derives the exclusion of Mathlib's
+\texttt{LiouvilleWith} \(\nu\,x\) for every \(\nu>4\).
+In the namespace \texttt{OAI.PairedAffine}, the declaration stems are
 \begin{center}\small
 \begin{tabular}{@{}ll@{}}
 \toprule
@@ -1071,7 +1113,7 @@ records the literal expressions and comparison targets.
 The exponent convention is in
 \path{OAI/NumberTheory/PiExponent/Statement.lean}; its use in this
 package is justified by \path{AlgebraicLog/ExponentConsequence.lean}.
-The standard comparison wrappers are in \path{Solution.lean};
+The Mathlib formulations are in \path{Solution.lean};
 \path{StandardBridge.lean} supplies the implication from the eventual
 bound to the exclusion of \texttt{LiouvilleWith}.
 
@@ -1143,17 +1185,16 @@ Concrete field and targets &
 The formalization uses Lean~4.34.1 and Mathlib revision
 \path{d13f23b723b8a846827a245b89c10fc7d3f11612}. Its permitted
 foundational axioms are \texttt{propext}, \texttt{Classical.choice},
-and \texttt{Quot.sound}. Fifteen comparison targets cover the twelve
-public declarations and the three Mathlib formulations described above.
-These targets passed exact statement comparison and proof checking with
+and \texttt{Quot.sound}. The statements described above passed exact
+statement comparison and proof checking with
 Lean and Rust Nanoda, an independently implemented kernel.
 
 The hosted verification of 11 October 2026,
 \href{https://github.com/Mattie/math/actions/runs/38139172013}{run 38139172013},
 used repository commit \path{b15a6431eca8632a48c1cd84e5200edd30f0670c}.
-It rebuilt the requested candidate dependency closure and checked the
-969 source and specification inputs, using official Mathlib dependency
-caches. The package's \path{VERIFY.md} and \path{CHECKERS.md} give the
+It rebuilt the formalization and its required local dependencies, using
+official Mathlib dependency caches. The package's \path{VERIFY.md} and
+\path{CHECKERS.md} give the
 reproduction instructions, retained export identities, checker revisions,
 rejection controls, and trust assumptions. The audit is recorded in
 \path{evidence/hosted-result-2026-10-11.json}.
@@ -1180,6 +1221,12 @@ Lean, Mathlib, and the other inherited tools retain their respective
 notices.
 
 \begin{thebibliography}{9}
+
+\bibitem{butler}
+L.~Butler,
+\emph{A proof of the Hermite--Lindemann theorem},
+28 May 2008, Section~2.
+\url{https://people.maths.bris.ac.uk/~malab/PDFs/HL.pdf}.
 
 \bibitem{luchin}
 M.~Yu.~Luchin and V.~Kh.~Salikhov,

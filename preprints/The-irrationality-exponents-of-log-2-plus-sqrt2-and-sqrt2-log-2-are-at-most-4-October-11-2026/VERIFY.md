@@ -40,7 +40,9 @@ The [theorem map](theorem-map.json) identifies all three main results and their
 standard-definition bridges. Two independent model reviews assessed the written
 argument and the specification/evidence chain, then inspected the final source
 diff. Their [sanitized record](evidence/reviews.json) identifies the exact inputs,
-resolved wording corrections, and limits. No new proof run is attributed to them.
+resolved wording corrections, and limits. No new proof run is attributed to them. The later
+[expository revision](evidence/human-revision.json) records a bounded mathematical
+review of the added shape construction and finite translation calculation.
 
 The [build record](evidence/build.json) identifies the 18-page PDF, manuscript,
 compiler, and warning-free Tectonic build. The [reader review](evidence/reader-review.json)

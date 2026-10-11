@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-10-11",
-  "manuscript_sha256": "0d56854957f3a0af522e963ba97f95e39c383e9b6537899eb9cce4468630c1b9",
-  "pdf_sha256": "fa495d80067d77cf96eddedca27e6c3c84bf4cc21836c2bf88999d9442d4a758",
+  "manuscript_sha256": "d5697b2c4fbdcafafd9e1d4322ff3867eb8a4172c646a8c620a750eb3ddf2e2a",
+  "pdf_sha256": "171080b802af09f451344cb2c91049b2b5ab1e9de048777c2429fb575efee7be",
   "github_memo": {
     "commit": "0ddb45657dd3e6fb7fb18fdf3f1f9bb0b6a5a998",
     "path": "formalizations/AffineLogarithms/ARGUMENT.md",
@@ -145,12 +145,11 @@
   "pdf_review": {
     "pages": 18,
     "renderer": "pypdfium2 5.13.0, scale 1.6",
-    "opened": "All 18 pages as contact sheets and page 1 individually.",
+    "opened": "All 18 pages as contact sheets; pages 4, 11 and 16 individually.",
     "observations": [
-      "All three title lines share the page center.",
-      "Shortened abstract, mathematical displays, source map and references are readable.",
-      "No clipping or source-table overflow observed.",
-      "The earlier review missed the off-center title lines; this revision corrects them."
+      "The parameter construction, finite row expansion, source map and references are readable.",
+      "No clipped displays or source-table overflow observed.",
+      "Centered title and consistent mathematical typography retained."
     ],
     "layout_warnings": 0,
     "metadata": {
@@ -167,9 +166,43 @@
       "https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd",
       "https://github.com/Mattie/math/tree/b15a6431eca8632a48c1cd84e5200edd30f0670c",
       "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "https://people.maths.bris.ac.uk/~malab/PDFs/HL.pdf",
       "https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=8518&what=fullteng"
     ]
   },
   "editorial_revision": "editorial-revision.json",
-  "historical_retrieval_scope": "The public downloads and repository archive below identify the prior manuscript revision by exact hash."
+  "historical_retrieval_scope": "The public downloads and repository archive below identify the prior manuscript revision by exact hash.",
+  "previous_editorial_pdf_review": {
+    "manuscript_sha256": "0d56854957f3a0af522e963ba97f95e39c383e9b6537899eb9cce4468630c1b9",
+    "pdf_sha256": "fa495d80067d77cf96eddedca27e6c3c84bf4cc21836c2bf88999d9442d4a758",
+    "review": {
+      "pages": 18,
+      "renderer": "pypdfium2 5.13.0, scale 1.6",
+      "opened": "All 18 pages as contact sheets; pages 4, 11 and 16 individually.",
+      "observations": [
+        "The parameter construction, finite row expansion, source map and references are readable.",
+        "No clipped displays or source-table overflow observed.",
+        "Centered title and consistent mathematical typography retained."
+      ],
+      "layout_warnings": 0,
+      "metadata": {
+        "/Creator": "LaTeX with hyperref",
+        "/Title": "The irrationality exponents of log(2) + sqrt(2) and sqrt(2) log(2) are at most 4",
+        "/Subject": "Affine logarithms, rational approximation, and a degree-four norm argument",
+        "/Author": "Ryan Matthew Casper",
+        "/Producer": "xdvipdfmx (0.1)",
+        "/CreationDate": "D:20261011000000-00'00'"
+      },
+      "attachments": [],
+      "uri_links": [
+        "https://github.com/Mattie/math/actions/runs/38139172013",
+        "https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd",
+        "https://github.com/Mattie/math/tree/b15a6431eca8632a48c1cd84e5200edd30f0670c",
+        "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+        "https://people.maths.bris.ac.uk/~malab/PDFs/HL.pdf",
+        "https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=8518&what=fullteng"
+      ]
+    }
+  },
+  "human_revision": "human-revision.json"
 }
