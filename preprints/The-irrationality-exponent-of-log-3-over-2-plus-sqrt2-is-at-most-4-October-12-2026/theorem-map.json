@@ -3,9 +3,9 @@
   "namespace": "OAI.DenominatorAffine",
   "paper_claims": {
     "Theorem 1.1 literal pilot bound": "log_three_halves_add_sqrt_two_explicit_bound",
-    "Theorem 1.1 irrationality": "log_three_halves_add_sqrt_two_irrational",
+    "Section 4 and Appendix A irrationality consequence": "log_three_halves_add_sqrt_two_irrational",
     "Theorem 1.1 exponent upper bound": "log_three_halves_add_sqrt_two_irrationalityExponent_le_four",
-    "Theorem 2.1 general arbitrary-data bound": "Endpoint.paired_eventualLowerBound",
+    "Theorem 2.1 affine bound with integrality removed": "Endpoint.paired_eventualLowerBound",
     "Standard Mathlib exponent exclusion": "log_three_halves_add_sqrt_two_standard_exponent_le_four",
     "Common cleared selected minor": "Arithmetic.exists_denominator_selected_minor",
     "Additional transverse scalar cost": "Arithmetic.log_transverseScalar_le",
