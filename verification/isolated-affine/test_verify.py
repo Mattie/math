@@ -116,8 +116,20 @@ class PreparationTests(unittest.TestCase):
         with patch.dict(verify.os.environ, {"RUNNER_TEMP": str(self.root)}):
             self.assertEqual(verify.fresh_work(work), work.resolve())
             (work / "evidence").mkdir(parents=True)
-            (work / "evidence/capacity.log").write_text("measured")
+            for name in ("started.txt", "capacity.log", "capacity-input.log", "console.log"):
+                (work / "evidence" / name).write_text("bootstrap diagnostic")
             self.assertEqual(verify.fresh_work(work), work.resolve())
+            unexpected = work / "evidence/receipt.json"
+            unexpected.write_text("prior run")
+            with self.assertRaisesRegex(RuntimeError, "Unexpected preexisting evidence"):
+                verify.fresh_work(work)
+            unexpected.unlink()
+            allowed_directory = work / "evidence/capacity-input.log"
+            allowed_directory.unlink()
+            allowed_directory.mkdir()
+            with self.assertRaisesRegex(RuntimeError, "Unexpected preexisting evidence"):
+                verify.fresh_work(work)
+            allowed_directory.rmdir()
             (work / "affine").mkdir()
             with self.assertRaisesRegex(RuntimeError, "not fresh"):
                 verify.fresh_work(work)

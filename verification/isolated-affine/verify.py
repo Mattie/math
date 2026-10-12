@@ -252,7 +252,7 @@ def fresh_work(path: Path) -> Path:
         evidence = work / "evidence"
         if evidence.exists():
             require(not evidence.is_symlink() and all(p.is_file() and not p.is_symlink()
-                    and p.name in {"started.txt", "capacity.log", "console.log"} for p in evidence.iterdir()),
+                    and p.name in {"started.txt", "capacity.log", "capacity-input.log", "console.log"} for p in evidence.iterdir()),
                     "Unexpected preexisting evidence")
     return work
 

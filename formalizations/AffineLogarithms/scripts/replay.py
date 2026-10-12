@@ -4,14 +4,23 @@
 Provide binaries built from the documented pins. Acceptance/rejection controls
 run first. Each run gets a separate directory and receipt under .work.
 """
+import sys
+
+if __name__ == '__main__' and not sys.flags.isolated:
+    raise SystemExit('Run this replay with Python isolated mode: python3 -I scripts/replay.py')
+
 from pathlib import Path
 import argparse
+import importlib.util
 import gzip
 import json
 import shutil
 import subprocess
 import tempfile
-from check import ROOT, check_export, digest
+spec = importlib.util.spec_from_file_location('package_check', Path(__file__).with_name('check.py'))
+package_check = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(package_check)
+ROOT, check_export, digest = package_check.ROOT, package_check.check_export, package_check.digest
 
 
 def main():
@@ -23,6 +32,7 @@ def main():
     args = parser.parse_args()
     if not args.controls_only and not args.export:
         parser.error('--export is required unless --controls-only is set')
+    package_check.check_package()
     nanoda, reader = args.nanoda.resolve(), args.lean_reader.resolve()
     (ROOT / '.work').mkdir(exist_ok=True)
     work = Path(tempfile.mkdtemp(prefix='replay-', dir=ROOT / '.work'))

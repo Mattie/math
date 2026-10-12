@@ -136,7 +136,7 @@ assurance and read [the checker caveats](CHECKERS.md) before using the older rea
 cd replay-reader
 lake build
 cd ..
-python3 scripts/replay.py \
+python3 -I scripts/replay.py \
   --nanoda .work/nanoda/target/release/nanoda_bin \
   --lean-reader replay-reader/.lake/build/bin/kernel \
   --export release-assets/affine-proof-export.ndjson.gz

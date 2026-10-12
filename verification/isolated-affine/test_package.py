@@ -88,6 +88,40 @@ class PackageTests(unittest.TestCase):
                     finally:
                         path.write_bytes(original)
 
+    def test_replay_rejects_additions_before_import_or_checker_execution(self):
+        script = self.proof / 'scripts/replay.py'
+        marker = self.root / 'replay-shadow-import-executed'
+        for name in ['unexpected.txt', 'scripts/json.py']:
+            injected = self.proof / name
+            injected.write_text('from pathlib import Path\nPath(' + repr(str(marker)) + ').touch()\n')
+            try:
+                args = ['--controls-only', '--nanoda', 'missing-nanoda', '--lean-reader', 'missing-reader']
+                result = self.command(script, *args)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn('inventory mismatch', result.stdout + result.stderr)
+                unsafe = subprocess.run([sys.executable, str(script), *args], cwd=self.root,
+                                        capture_output=True, text=True)
+                self.assertNotEqual(unsafe.returncode, 0)
+                self.assertIn('isolated mode', unsafe.stdout + unsafe.stderr)
+                self.assertFalse(marker.exists())
+            finally:
+                injected.unlink()
+
+    def test_replay_rejects_changed_control_before_checker_execution(self):
+        replay = load('affine_replay_test', PROOF / 'scripts/replay.py')
+        fixture = self.proof / 'controls/positive.ndjson'
+        original = fixture.read_bytes()
+        try:
+            fixture.write_bytes(original + b'\nchanged\n')
+            with patch.object(replay.package_check, 'ROOT', self.proof), \
+                    patch.object(sys, 'argv', ['replay.py', '--controls-only', '--nanoda', 'missing', '--lean-reader', 'missing']), \
+                    patch.object(replay.subprocess, 'run') as command:
+                with self.assertRaisesRegex(RuntimeError, 'Package file changed: controls/positive.ndjson'):
+                    replay.main()
+                command.assert_not_called()
+        finally:
+            fixture.write_bytes(original)
+
     def test_updated_manifests_cannot_reuse_a_stale_axiom_log(self):
         paths = [self.proof / name for name in
                  ['PairedAffine/Main.lean', 'evidence/source-sha256.json', 'manifest-sha256.json']]
