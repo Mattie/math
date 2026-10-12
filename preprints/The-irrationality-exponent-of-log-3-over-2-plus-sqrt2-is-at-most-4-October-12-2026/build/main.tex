@@ -25,18 +25,24 @@
 \maketitle
 \begin{abstract}
 We prove that $\log(3/2)+\sqrt2$ has irrationality exponent at most four.
-More generally, we extend the affine logarithm theorem in a degree-four
-number field to arbitrary algebraic data with two compatible embeddings.
-The proof clears the fixed algebraic denominators by multiplying each
-column of the interpolation matrix by a positive integer. The resulting
-determinant is an algebraic integer whose norm supplies the arithmetic
-lower bound. The additional cost can be made small through the dimension
-and approximation weights, so the preceding interpolation and analytic
-estimates still give the bound four. A Lean formalization accompanies
-the proof.
+More generally, we remove the algebraic-integrality hypothesis from our
+previous affine theorem while retaining its other hypotheses.
+Additional column factors clear the fixed algebraic denominators in
+the preceding determinant construction. Together with the original row
+and column factors, they give an algebraic-integer determinant whose
+norm supplies the arithmetic lower bound. Their normalized logarithmic
+cost can be made arbitrarily small through the parameter choices, so
+the interpolation and analytic estimates from our previous proof still
+give the bound four. A Lean formalization accompanies the proof.
 \end{abstract}
 
 \section{Introduction and main result}
+The number $\log(3/2)+\sqrt2$ is transcendental by the
+Hermite--Lindemann theorem \cite{lindemann}: $\log(3/2)$ is
+transcendental, and adding the algebraic number $\sqrt2$ preserves
+transcendence. We study the quality of its rational approximations
+and prove that its irrationality exponent is at most four.
+
 For an irrational real number $x$, its irrationality exponent $\mu(x)$
 is the supremum of the positive real $\nu$ for which
 $0<|x-p/q|<q^{-\nu}$ holds for infinitely many reduced fractions
@@ -48,25 +54,28 @@ For every real $\nu>4$, there is an integer $Q\ge2$ such that
  q^{-\nu}\le \left|\log(3/2)+\sqrt2-\frac pq\right|
  \qquad(p\in\Z,\ q\in\N,\ q\ge Q).
 \end{equation}
-Consequently $\log(3/2)+\sqrt2$ is irrational and
-$\mu(\log(3/2)+\sqrt2)\le4$.
+Consequently, $\mu(\log(3/2)+\sqrt2)\le4$.
 \end{theorem}
 
 The threshold depends on $\nu$ and is uniform in $p,q$. Fractions in
 \eqref{eq:pilot} need not be reduced.
 
-Our preceding affine theorem \cite{affine} applies to algebraic-integer
+Our previous affine theorem \cite{affine} applies to algebraic-integer
 data in a degree-four field with two compatible embeddings. The base
 $3/2$ introduces a denominator into the interpolation matrix. Clearing
 it costs a factor that grows with the matrix height, so we must account
 for that factor when choosing the earlier parameters.
 
-We prove that the same construction works for arbitrary fixed algebraic
-data. A column factor clears their denominators, and its normalized
-logarithmic cost tends to zero as the dimension and the approximation weights
-increase. We then apply the interpolation and analytic estimates from
-the OpenAI library and the preceding logarithmic extensions
-\cite{openai,affine}. Sections~\ref{sec:common}--\ref{sec:absorption}
+We remove the algebraic-integrality hypothesis from our previous theorem
+while retaining its other hypotheses, including the two compatible
+embeddings and the slope bound. Additional column factors clear the
+fixed algebraic denominators alongside the row and column factors of
+our previous construction. Their normalized logarithmic cost can be
+made arbitrarily small by choosing the dimension and approximation
+weights. We then use the interpolation and analytic estimates from our
+previous proof \cite{affine}, which builds on OpenAI's determinant
+method \cite{openai} and our logarithmic extensions
+\cite{rational,quadratic}. Sections~\ref{sec:common}--\ref{sec:absorption}
 give the general argument, followed by the specialization to
 $\log(3/2)+\sqrt2$.
 
@@ -109,7 +118,8 @@ elements simultaneously. These choices depend only on the fixed
 algebraic data, not on any approximating fractions or matrix height.
 
 \subsection{Interpolation and determinant estimates}
-We recall the interpolation and determinant estimates from \cite{affine}.
+We recall the interpolation and determinant estimates used to prove
+our previous affine theorem \cite{affine}.
 For a fixed $\nu>4$, suppose there are approximations
 $|x-p/q|<q^{-\nu}$ with arbitrarily large $q$. Choose finitely many
 $p_i/q_i$ with $q_i\ge2$ and $p_i\ne0$, and put
@@ -131,7 +141,8 @@ v_0=2K\theta^m w_0.
 \end{equation}
 The finitely many weights $w_i$ are then chosen successively large
 enough to satisfy the weight-separation hypotheses of weighted
-logarithmic interpolation in \cite[Sections 4--5]{affine}. These
+logarithmic interpolation in our previous paper
+\cite[Sections 4--5]{affine}. These
 hypotheses compare finitely many products of earlier weights; an
 arbitrarily large next denominator suffices. The strict volume ratio is
 $Kw_0\theta^m/v_0=1/2$.
@@ -178,8 +189,8 @@ are selected. Put $\Lambda=\log4+4$ and $c=\log2/4$, and define
  V&=\frac\nu{F_0}+\frac{2\log2}{v_0}+\frac{\rho K}{w_0}
  +\frac{\log4+\log(2K)+\nu+\log(200K)+\log(\rho/100)}{w_*}.\notag
 \end{align}
-The inherited estimates \cite[Sections 7--8]{affine} assert that
-there are remainders $r_a(H),r_c(H)\to0$ and a collision rate
+Our previous estimates \cite[Sections 7--8]{affine} give
+remainders $r_a(H),r_c(H)\to0$ and a collision rate
 $C_H\to C_\infty$, where
 \begin{equation}\label{eq:collision}
 C_\infty=\frac{c\eta^2K\theta^m}{(m+1)v_0A^m}
@@ -404,14 +415,10 @@ The factor two comes from the quadratic growth of coefficient height.
 \section{Further questions}
 Dirichlet's theorem and Theorem~\ref{thm:pilot} give
 $2\le\mu(\log(3/2)+\sqrt2)\le4$. Can the upper bound be reduced
-to two? The proof gives an eventual threshold for each
-$\nu>4$; obtaining an explicit threshold or a lower bound at the
-critical exponent four would require further estimates.
-
-The denominator argument applies whenever the affine theorem has the
-two compatible embeddings in Theorem~\ref{thm:general}. It is natural
-to ask how the number of compatible embeddings relative to the field
-degree affects the exponent in a more general version of this method.
+to two? Our argument leaves this question unresolved. It gives an
+eventual threshold for each $\nu>4$; obtaining an explicit threshold
+or a lower bound at the critical exponent four would require further
+estimates.
 
 \appendix
 \section{Formalization}\label{sec:formalization}
@@ -422,13 +429,18 @@ determinant maps to the positive scalar multiple in \eqref{eq:lift}
 at every embedding. The parameter construction uses $\log d_a$ for
 the base-denominator cost and $\widehat R$ for the coarse bound.
 
-The formalization also proves irrationality. For each $\nu>4$, it proves
-$\neg\texttt{LiouvilleWith}(\nu,x)$ using Mathlib's definition.
+The formalization derives irrationality and the standard
+\texttt{LiouvilleWith} consequence from the approximation bound:
+$\neg\texttt{LiouvilleWith}(\nu,x)$ for every $\nu>4$.
 We absorb the constant in that definition by applying the approximation
 bound at $\nu'=(4+\nu)/2$ and using the smaller-exponent approximations
 supplied by Mathlib.
 
-Six statements were compared with independently written specifications.
+The general affine bound and its specialization were compared with
+independently written specifications. For $\log(3/2)+\sqrt2$, the
+comparison covers the eventual and explicit-threshold bounds, irrationality,
+the irrationality exponent, and the \texttt{LiouvilleWith} consequence.
+
 Comparator's two kernel checks and a separate stock Lean 4.34.1 replay
 accepted the proofs. The export uses only \texttt{propext},
 \texttt{Classical.choice}, and \texttt{Quot.sound} as axioms.
@@ -450,17 +462,30 @@ Companion preprint and \texttt{AffineLogarithms} formalization in the
 \texttt{Mattie/math} repository.
 
 \bibitem{openai}
-OpenAI, \emph{\texttt{OAI.NumberTheory.PiExponent}}, Lean source library,
-revision \path{adc7f1241b42e322a6451854ab7e4b4c146bf78a},
-\url{https://github.com/openai/math}.
-The rational-logarithm extensions are inherited through the
-\texttt{Mattie/math} revision
-\path{0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd}; the
-\texttt{AffineLogarithms} package records their exact provenance.
+OpenAI, \emph{\href{https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026}{The irrationality exponent of $\pi$ is $2$}},
+September 24, 2026. Manuscript and accompanying
+\texttt{OAI.NumberTheory.PiExponent} Lean library, revision
+\path{adc7f1241b42e322a6451854ab7e4b4c146bf78a}.
 
 \bibitem{marcovecchio}
 R. Marcovecchio, \emph{The Rhin--Viola method for $\log2$},
 Acta Arithmetica \textbf{139} (2009), no.~2, 147--184.
 \href{https://doi.org/10.4064/aa139-2-5}{doi:10.4064/aa139-2-5}.
+
+\bibitem{lindemann}
+\emph{\href{https://encyclopediaofmath.org/wiki/Lindemann_theorem}{Lindemann theorem}},
+Encyclopedia of Mathematics, accessed October 12, 2026.
+
+\bibitem{rational}
+R. M. Casper,
+\emph{\href{https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd/preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026}{The irrationality exponent of positive rational logarithms is 2}},
+October 7, 2026. Manuscript and accompanying Lean formalization;
+the \texttt{AffineLogarithms} package records the inherited source versions.
+
+\bibitem{quadratic}
+R. M. Casper,
+\emph{\href{https://github.com/Mattie/math/tree/4aa817179b5a81358dcdefeb1d454a31ab2f2c27/preprints/The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026}{The irrationality exponent of positive quadratic logarithms is at most 4}},
+October 8, 2026. Manuscript and accompanying Lean formalization;
+the \texttt{AffineLogarithms} package records the inherited source versions.
 \end{thebibliography}
 \end{document}
