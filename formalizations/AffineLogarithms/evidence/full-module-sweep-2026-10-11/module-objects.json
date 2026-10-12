@@ -1,0 +1,3870 @@
+{
+  "AlgebraicLog.AdmissibleParameters": {
+    "bytes": 1464848,
+    "sha256": "26436a86f8d9edff4772482c2332b9f10bd073937809b23f8e37a4e67227b1be"
+  },
+  "AlgebraicLog.AnalyticAggregate": {
+    "bytes": 302792,
+    "sha256": "c7b798e993c005f0fc922ee8d78f590698b858fee3509f4ddb18d70890a362d9"
+  },
+  "AlgebraicLog.AnalyticData": {
+    "bytes": 193616,
+    "sha256": "a562b00942eca24428308227708996362ff5dece58d97dcb2669ade711e6eb41"
+  },
+  "AlgebraicLog.ApproximationGeometry": {
+    "bytes": 46584,
+    "sha256": "e4faf023a6cce0d98dee084cafc898e92f189d172270ad1abfd64b72624b97c3"
+  },
+  "AlgebraicLog.ArithmeticBounds": {
+    "bytes": 307328,
+    "sha256": "d9e06ad46269e37e007af16772a7aaa7b05f6c76e1af5e9b341630ac667de8a6"
+  },
+  "AlgebraicLog.AxiomAudit": {
+    "bytes": 3352,
+    "sha256": "957618c672eb2498ffa3789a51e940fe37a0bdfaab150d20d18f66ba7809e5df"
+  },
+  "AlgebraicLog.ConjugateAggregate": {
+    "bytes": 583000,
+    "sha256": "ec6f49e2619d95cb41a5ca40da7e147c5e331c74d2f096c1f3e213a2d3d8e692"
+  },
+  "AlgebraicLog.ConjugateBound": {
+    "bytes": 348008,
+    "sha256": "2c885c5adf0af061469828b20858bdaab3bd0ce88af5c6546f88419d98a416ee"
+  },
+  "AlgebraicLog.ConjugateDeterminant": {
+    "bytes": 126536,
+    "sha256": "a942f6df9cb06647464acf08c3f42785f686d58fd8272c31ac7a8152946c6146"
+  },
+  "AlgebraicLog.ContradictionNumerics": {
+    "bytes": 123584,
+    "sha256": "ec4083c17aa97c3f6d6c20673869225944d0d8e46b2d66e97c5b601be94d932b"
+  },
+  "AlgebraicLog.CurveWeights": {
+    "bytes": 347384,
+    "sha256": "039c6b7f187924fdf61e43098d2fe1f393408060c404ba530b1a8ea29fafe273"
+  },
+  "AlgebraicLog.DeterminantContradiction": {
+    "bytes": 582848,
+    "sha256": "e1f70a6e25a548a678b208f10dae2b3d3bb9a061f0348ed225189c226e73cca9"
+  },
+  "AlgebraicLog.DeterminantData": {
+    "bytes": 72152,
+    "sha256": "7bd50e6d9eb8a2c1466174d662c1e64c0cf99a468f4586b20c7edf64d9777eec"
+  },
+  "AlgebraicLog.DimensionBudget": {
+    "bytes": 345344,
+    "sha256": "0c4d11c09be82ad6442cc7689d6844f71519b33f693428ab960df6c371a2eebd"
+  },
+  "AlgebraicLog.EmbeddingBudget": {
+    "bytes": 63568,
+    "sha256": "4b614a5e6938bf4e19adaebb36a767881ffebeefd186f87135ddf98caa75598a"
+  },
+  "AlgebraicLog.Examples": {
+    "bytes": 349704,
+    "sha256": "4530c9d5bbb9be7cdedcc5a32379d1c90ed085827f947b90d65de8d340342061"
+  },
+  "AlgebraicLog.ExponentConsequence": {
+    "bytes": 211784,
+    "sha256": "60e786d3b07e6bc05c959453de9a35fcae9c482978f7dd2333293b7a6384e95a"
+  },
+  "AlgebraicLog.FieldRealization": {
+    "bytes": 121520,
+    "sha256": "362d6a177385ce21fb151cf52ec54aae0f753f6bd44b3404b577dd346b09d0c7"
+  },
+  "AlgebraicLog.GlobalMatrixInterpolation": {
+    "bytes": 230392,
+    "sha256": "f95c949cf29f3f4d1a2bb51b863a6f52c57087bb0b329a1d7f9c19f73a9212e2"
+  },
+  "AlgebraicLog.IntegerClearing": {
+    "bytes": 317608,
+    "sha256": "dae0c7b958a0490ed0dad3478ef2f239fabc42b379e8901f4d50f6a11d049171"
+  },
+  "AlgebraicLog.LiteralAnalyticSummand": {
+    "bytes": 608184,
+    "sha256": "a6f201b6b5c7695764fc9fa73a1f4b2b39c809717090e4ec4ba5e0bd92e631ca"
+  },
+  "AlgebraicLog.Main": {
+    "bytes": 122656,
+    "sha256": "98a353d100e260e907e54eeddee8398423f578d0a480c8b7b3ab3eda854416a6"
+  },
+  "AlgebraicLog.MatrixArithmetic": {
+    "bytes": 291592,
+    "sha256": "6a91448af6af6e1d5b7044f068f0a634809c07c017d415eeba0934f5728bcb63"
+  },
+  "AlgebraicLog.ParameterShape": {
+    "bytes": 180120,
+    "sha256": "e2fd6eb3002cd3244ec36190b764877662957a956f7211f90544053d88741c18"
+  },
+  "AlgebraicLog.QuadraticNorm": {
+    "bytes": 300696,
+    "sha256": "2bafb277c49fd9c6a589a511a4cedca31549a7663081386d68e15077e939b8df"
+  },
+  "AlgebraicLog.SelectedArithmetic": {
+    "bytes": 493400,
+    "sha256": "549b0a2e80acfbed712d3eda731884801633615e0895d7b146b4de16e36de27e"
+  },
+  "Logarithm.AdmissibleParameters": {
+    "bytes": 1427584,
+    "sha256": "f1b894579579af4c6d0c750970ee1568476647116d77df0eae1909e28ab65393"
+  },
+  "Logarithm.AnalyticAggregate": {
+    "bytes": 306368,
+    "sha256": "b4c842e9cdc477e3fe9b267c435835e59964d73c2bb7ad330e985410f280ea00"
+  },
+  "Logarithm.ApproximationGeometry": {
+    "bytes": 25240,
+    "sha256": "1d4c06fb6c541eb756f1eac6ed86a0d46cc55a46cea984fb578505f48006b986"
+  },
+  "Logarithm.ApproximationSelection": {
+    "bytes": 103600,
+    "sha256": "e968d550302837858600d5ea902693e6d51f06477583480cc11b6f32dd036de3"
+  },
+  "Logarithm.AuxiliaryJet": {
+    "bytes": 202560,
+    "sha256": "ae1c23b231ea0929e5a43f212a8f9fac0b58edfc82639de92d751b1fffa3b6b0"
+  },
+  "Logarithm.AxiomAudit": {
+    "bytes": 2768,
+    "sha256": "2352a4efcf46ccd131404421c27f26464979a7cc42e2c73d766655f59c1bab4e"
+  },
+  "Logarithm.BlowupExceptionalDegree": {
+    "bytes": 114392,
+    "sha256": "a35a0535fdaaff37407307ca92cd88725953df571015eb21de4695f30b4e07bb"
+  },
+  "Logarithm.BlowupGeometry": {
+    "bytes": 257280,
+    "sha256": "350c363575dc05d5d5985491553a8d6ad053222a14f07c9297daf910c47ee9af"
+  },
+  "Logarithm.BlowupMargin": {
+    "bytes": 195816,
+    "sha256": "ec2ebf1703fb7fded44baf35a41e322a9cfb27f48c7fcd3e515bc887dc6772a2"
+  },
+  "Logarithm.BlowupPolarization": {
+    "bytes": 38536,
+    "sha256": "1ccbb3283ab99070c4b238ce5f1ec4ca5ba0e7faad2bd308933132af37f85b83"
+  },
+  "Logarithm.BranchOrder": {
+    "bytes": 162672,
+    "sha256": "783516deb135f692418761741c9e7cdeccc0a5554a943b819b6713f2cd547155"
+  },
+  "Logarithm.CompactJetIdeal": {
+    "bytes": 161288,
+    "sha256": "497751713a7bc8f09b03d6fc84a62c1bb2431bae2130b8f61f65b2e6b8a3350e"
+  },
+  "Logarithm.ConstantFiber": {
+    "bytes": 294760,
+    "sha256": "f8fa710980565ecef4c5955e34e97d19002a82fa0d8c43e88ad14d418ab76d2f"
+  },
+  "Logarithm.ContactFamily": {
+    "bytes": 215248,
+    "sha256": "c3a99e4bb7bf9e472d89eb7819fa896bed77b9e74cf36264abe00972decf1230"
+  },
+  "Logarithm.ContactIdealLength": {
+    "bytes": 160192,
+    "sha256": "cdceaa656efebf28d05afcdf08d4d62da5e09bd250db5bb1a03e3ab87e228c22"
+  },
+  "Logarithm.CurveCoordinates": {
+    "bytes": 157904,
+    "sha256": "624dd791132c83598a12c1708a1e295985faca3d7327be9b88b11b34e58077e4"
+  },
+  "Logarithm.CurveImage": {
+    "bytes": 108576,
+    "sha256": "6620342dbf3d436adb34ea6f092f7b40af505cb4f7a3b0d9febb225d13e4fa82"
+  },
+  "Logarithm.CurveInequality": {
+    "bytes": 170528,
+    "sha256": "328504fe727ecd9fabf1ffb516e278e7b0bfbe0b49c16dccddf3216ff9d7043f"
+  },
+  "Logarithm.CurveInequalityIntrinsic": {
+    "bytes": 54024,
+    "sha256": "40c1430af5831a2cc186788440d50f1316416b415d67af496c8cd0fe9060438b"
+  },
+  "Logarithm.CurveMargin": {
+    "bytes": 127696,
+    "sha256": "8b990c79e14770826819918c184228bdfa4f36d1265184127f9dcdd6070da48b"
+  },
+  "Logarithm.CurveModel": {
+    "bytes": 442912,
+    "sha256": "54babec2232cbb7bb55f18d6f2188f8a8714cb605f9db17182ce19a70d7ed3d7"
+  },
+  "Logarithm.CurveModelDegrees": {
+    "bytes": 119912,
+    "sha256": "bfd6d5bfa353e21c89476b6896717653b65e27afbb63668c2fb53ef69bb8e32c"
+  },
+  "Logarithm.CurveRigidity": {
+    "bytes": 132864,
+    "sha256": "eca1eda736c346282de2521ba4ff5ee512812fc02614345179fd06be0ed44c09"
+  },
+  "Logarithm.CurveWeights": {
+    "bytes": 327368,
+    "sha256": "bed4a2698a42e1ecabd07a5ff829cfd8360fb2ac42f0fea6b1a8cbfe5ae61b74"
+  },
+  "Logarithm.DerivativeVanishing": {
+    "bytes": 230280,
+    "sha256": "983d2dee8a860ba6680c716d970a77b25fe57200d2b278b5972303be3b149de9"
+  },
+  "Logarithm.DeterminantContradiction": {
+    "bytes": 317952,
+    "sha256": "c4ae4587c38b6069262756ccb8466623ab8715b714b4ef7ce289377ebfd1db45"
+  },
+  "Logarithm.DeterminantData": {
+    "bytes": 125128,
+    "sha256": "9b3ec9824f301ffa7237880628acb43c19d3a59b1fbb6aae59bac4012addaf95"
+  },
+  "Logarithm.EndpointAudit": {
+    "bytes": 1576,
+    "sha256": "45f6150678394a8ed16fbfbd84ade30e321ec0a197d653dc1f7c70665b4db652"
+  },
+  "Logarithm.ExceptionalCurveDegree": {
+    "bytes": 386424,
+    "sha256": "8f404457a87090300e68070b587423eb72a767f4c9291fd1067be92cd64fd785"
+  },
+  "Logarithm.ExponentConsequence": {
+    "bytes": 159368,
+    "sha256": "18e8bdf722b3227ab966c33c112e6ac56267c3e61c20a1402c72d63d8ab674cb"
+  },
+  "Logarithm.GeneralizedCenters": {
+    "bytes": 181240,
+    "sha256": "5dd99a6c1e61f580a6519d7bdffe831fb3c110aa228e6912948540042d04b803"
+  },
+  "Logarithm.GeometricInterpolation": {
+    "bytes": 165144,
+    "sha256": "d4f388b295c4d5ff406b42a73b0edcc9280e612e4afb4246ceb1a7a1faa55a22"
+  },
+  "Logarithm.GeometryAmple": {
+    "bytes": 30056,
+    "sha256": "e40b5a3231ffea2585b7a9ef50bd020964440ef2b0efa0b80c6efe8f65d45a26"
+  },
+  "Logarithm.GeometryData": {
+    "bytes": 169032,
+    "sha256": "6a15404f631b9021516e7ee5c50cd1a3ca90f9c5e260b90e940bb7acf04886c9"
+  },
+  "Logarithm.GlobalMatrixInterpolation": {
+    "bytes": 208560,
+    "sha256": "536f1c8f2a310c47ca729fabdd9a787ed763de2c3a908a4252efdd2b752fb53e"
+  },
+  "Logarithm.Interpolation": {
+    "bytes": 47912,
+    "sha256": "9988502f439bf5fe608d2a31f9ea50ee79a6d5790bb3427704cc426284a81278"
+  },
+  "Logarithm.JetCenterIdentification": {
+    "bytes": 185512,
+    "sha256": "7eb7ddd7b51e5552b1433f7e386610edacb9c534bed2a856d81a8280d3d4b8f9"
+  },
+  "Logarithm.JetIdeals": {
+    "bytes": 186080,
+    "sha256": "f8e04ee1f55195f0d3a6e7e1e5760f8ad01cde3885370528ea8550fa5022189b"
+  },
+  "Logarithm.JetPackets": {
+    "bytes": 150440,
+    "sha256": "c27cda1c2cb3d57c426b33abb9fec62fda03036b7033145104e0674c7e45dc7e"
+  },
+  "Logarithm.JetProductLocalization": {
+    "bytes": 168632,
+    "sha256": "b0178171902606a3ca1e8609405fffa296849a52d463be0fb5d77c36f7d6ec87"
+  },
+  "Logarithm.LiteralAnalyticSummand": {
+    "bytes": 618240,
+    "sha256": "d1ea3d50d214fa2484497d8dbdca6ad8630c095cefcabaa0620fb3424b25d29b"
+  },
+  "Logarithm.LogarithmParameters": {
+    "bytes": 87736,
+    "sha256": "85eb7f295b6b17c33ca0e18fb035a2a72fa6c51351ada6a1602e54d3722dd68f"
+  },
+  "Logarithm.Main": {
+    "bytes": 31632,
+    "sha256": "f19f21d04a7ef4b808bc5d3d0aabe38a1660a6965d21965ea4a5c952ae787469"
+  },
+  "Logarithm.RationalCenters": {
+    "bytes": 47376,
+    "sha256": "d5cc31007de00d835de62e2381af4bf63d69da72908dd12e3de815c3360ddd52"
+  },
+  "Logarithm.ScaledApproximationErrors": {
+    "bytes": 176632,
+    "sha256": "66823e58681ca8499a43c52693732f715580d3ed24037f84ec5349b29f40e975"
+  },
+  "Logarithm.ScaledArithmetic": {
+    "bytes": 682968,
+    "sha256": "537d055a2941a04ec8d5076ca8a846d776e8ed121bd71958f15b67466b69070d"
+  },
+  "Logarithm.ScaledCollision": {
+    "bytes": 313408,
+    "sha256": "fb55ab243a4d13e990ff33c1124f928a02a83aa1137800664d8cad2b98a77ba9"
+  },
+  "Logarithm.ScaledFormalJet": {
+    "bytes": 265480,
+    "sha256": "7036ea3199eedbc1e2b9396f98b310c3eda4c90a6be0457c8b2eb2d6a61213f4"
+  },
+  "Logarithm.ScaledMatrix": {
+    "bytes": 217440,
+    "sha256": "10c55519dac419c3b67d21da95011cfcdd7518ead8f15ce0e6b27d55f51b747d"
+  },
+  "Logarithm.ScaledPeriodAnalytic": {
+    "bytes": 172448,
+    "sha256": "8a98ca3c8a09eaa73d9e1ef51c0d2065884a1aa3001dda1e680ff86bf4402dd9"
+  },
+  "Logarithm.ScaledTranslation": {
+    "bytes": 101832,
+    "sha256": "cb05b009a90efcdbe79c3129a6c92215df656bb1044625850205a245e1b108f7"
+  },
+  "Logarithm.ScaledTruncation": {
+    "bytes": 64336,
+    "sha256": "9dd9b43361f5d3c580d06bf29c6a438b8b24a4327b73ec93337dd9922b1213bb"
+  },
+  "Logarithm.Scaling": {
+    "bytes": 292304,
+    "sha256": "436f38fa3e20a91f24025fdef3617ef5123d415b41200e7a1c77c503ba0f2736"
+  },
+  "Logarithm.ScalingMonomials": {
+    "bytes": 96096,
+    "sha256": "5cee01535861d4c166ab191746b14a79ff62cb084a88b5cbda88a9739b736f9a"
+  },
+  "Logarithm.SuccessiveApproximations": {
+    "bytes": 200440,
+    "sha256": "6a399c5e6575b374c6a683339212cea228e713c8b2e48ae399dba78f202755f0"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupAmple": {
+    "bytes": 8944,
+    "sha256": "a8cfe11e4b2dfaa374028ccf927434ae3e5ae212f4eabdf5fe3becf296006dc8"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupGeometry": {
+    "bytes": 288360,
+    "sha256": "fe46ca35e837935d88ba604eb2231bdee0574cee58e273a14d43a2f5bb950314"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupMargin": {
+    "bytes": 282600,
+    "sha256": "d35fb6b5c86e3efa3664a29a14326fe7845a55118d44855930c7721def3c8915"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupPolarization": {
+    "bytes": 45344,
+    "sha256": "b2608f06795195096677de6d920c30c5f4453bb109f6f97340471189f8f40a50"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AdmissibleCurveModelDegrees": {
+    "bytes": 182960,
+    "sha256": "250055e0f82448e7f0e2a4f5f4c6ebee5e95117b239a52fd67d195a615488fc4"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AdmissibleJetAmpleness": {
+    "bytes": 9952,
+    "sha256": "4e412073d7e7410715481517e58c0a901c8e1d6a91a23ba607ee400dfba6f839"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AffineBlowupUniversal": {
+    "bytes": 205504,
+    "sha256": "6a44d769986b897b3f841a9eef86c20aa80581c706df72f7abc8118528308797"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AffineFunctionFieldCompatibility": {
+    "bytes": 225752,
+    "sha256": "90d4700baf152f10543b4995bfc8b86abad2247a0f82c050d2a41fa62416ad19"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AffineReesCanonicalRecovery": {
+    "bytes": 68856,
+    "sha256": "09dc406fabc1d56ff2ea006ec1524fc139f180786d2c9d4f616a12022ef46b2d"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleAllPowersGeneration": {
+    "bytes": 344368,
+    "sha256": "4d301855263558a7c9ad901a34438ec9e1ed4c203d87ba163729b2dcb287e614"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleCommonDegree": {
+    "bytes": 120832,
+    "sha256": "9f113ffae3a7acc454833d7e497a3846ab580e4a03f9f090c5d70e4a73bc8270"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleCurveDegreePositive": {
+    "bytes": 296304,
+    "sha256": "708e85e135db70bbf2b8bb843a212962a345df59a77f7d3e59373ae39c3f92ce"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleDivisorDimension": {
+    "bytes": 188968,
+    "sha256": "abff910ccb5742690bf12dfabe5370000998fe0d912d696085b127d4320117f9"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleDivisorDimensionBase": {
+    "bytes": 111768,
+    "sha256": "1056e6dc7676ef65b913de6a6ec6233a46ade24b580a1c69410136dbc543ace6"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleFiniteProjectiveEmbedding": {
+    "bytes": 113344,
+    "sha256": "79bd1b5698987f180ba8a926cfe7451626bfc12127be17375d2c7caf8650877f"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleFromCover": {
+    "bytes": 162768,
+    "sha256": "794f453a3de4b363cdacd4373ac7a6e939df00d553aa887cc56f3c22826e6a2d"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleGeneratedTensor": {
+    "bytes": 176344,
+    "sha256": "d86bf0e35cbf23b75fe1528057a696396d4baa95bd8d89ee39361b149d70e8e7"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleGlobalGeneration": {
+    "bytes": 821104,
+    "sha256": "6132a8c19c0555e6705c95bc2acc9b953daa60393d8333dcbb1461f451af69d9"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleIso": {
+    "bytes": 66712,
+    "sha256": "dc83f4131bcba16b3e8f02c39e44554cc02d2e09646bcdf1408126cc58cabc60"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmplePositiveTwist": {
+    "bytes": 232528,
+    "sha256": "fa1f9f062221874b6bd5e9faf8e8f73a0796efdb7e9ba6c2ba54412ba429b39d"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleProjectiveSections": {
+    "bytes": 526800,
+    "sha256": "8b3a60c34c2639c6ddde09bd9bba147983b19ea43af999c4fb78c3c411c27aac"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleSlopeAlgebra": {
+    "bytes": 170168,
+    "sha256": "be35209485444b05e75f65e4b1c30602186b76202df3d5c02981aa1ae1dfdf5e"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleSlopeTopology": {
+    "bytes": 108888,
+    "sha256": "1fb28c701817a16b29cd8cb0090aa78f55c5b55ac373b1491472b9d4bdf33139"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.AmpleThresholdPolynomial": {
+    "bytes": 333824,
+    "sha256": "969df4146bc714b36ac139dadc8c27313da172a1ae0812442751fb67ecff2e31"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupAffineSections": {
+    "bytes": 61720,
+    "sha256": "236ee95ff194fa586a75e5929cbc8bdae616d8e3aa5c0970d6dc8bd05025faba"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupAmpleTwist": {
+    "bytes": 159032,
+    "sha256": "8011adc5325192858b4b4b5e7f69a2a3a5d6843cc30e2e499008d54933ac6252"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupComplement": {
+    "bytes": 115976,
+    "sha256": "f64f2fc8372673d4b2048acdbc1e1857e99525f1a3018da84ff8cf60a6a407fe"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupCurveMargin": {
+    "bytes": 315432,
+    "sha256": "7c904b34d66aa2e45b700f60f9b5d1cb44f96897f210b3f0718011d15e0b3a90"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupIdeal": {
+    "bytes": 803432,
+    "sha256": "ea398327e290ba4616f1a7789ca2535df6b66a09051f502e2e5697daf492294a"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupJetReesReduction": {
+    "bytes": 84192,
+    "sha256": "bcef57ebcda96a37570c1dbeaf9c7298fde974db19a53c5cab8503c33f5c05fc"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupJetSurjectivity": {
+    "bytes": 145768,
+    "sha256": "8e7eb3813f83fad0fbc8387b624dcb297764a380c7ad854f6fbfc70f95f44ac0"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupJetSurjectivityComplete": {
+    "bytes": 19152,
+    "sha256": "511ac93106471c9b72f7a4e51a9ab93469bce0245e6a75fe17b7cefa601aaf32"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupPresentationRestriction": {
+    "bytes": 120800,
+    "sha256": "5c9383e66c408fdc49d35604e9098602b05705525516a1f5f1cadb3749e19511"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupProperIntegral": {
+    "bytes": 425352,
+    "sha256": "1e298c18f0b34c469b2451d97069ee69ae81f37d70ce1532ea5e0dc443ae25d8"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupSchemeExt": {
+    "bytes": 219760,
+    "sha256": "cce419b1b6345a75156e90ca31c795aeea6438dc26827540165d93d1486de785"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.BlowupUniversalBaseChange": {
+    "bytes": 186752,
+    "sha256": "a0ddf195bdd3d8b618a1824bbde1c3fcd047096e39a6f94820f818ceea23a463"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ClosedAmpleBaseChange": {
+    "bytes": 46856,
+    "sha256": "7e4a415d0c49b2cd5a5c479d659735c0e822a6ac58898834af6db9afca090449"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ClosedAmpleRestriction": {
+    "bytes": 142832,
+    "sha256": "da578184b7111be08ff60ea799a38591b704e24d57b0475b1505132743636043"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.CoherentAffineFinite": {
+    "bytes": 1451248,
+    "sha256": "61e02bfcddc53b44d725fcb4428d1b6077101fc6addb1e3696bc5d1ac07d02c5"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescent": {
+    "bytes": 169016,
+    "sha256": "61a23dff09ea8aea6a76f21c8d24e1c41616d911b75b99901d260537d91e78ce"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentCover": {
+    "bytes": 263904,
+    "sha256": "6b357866787e0e3d23cf84e473bb8a9227397da4051756fb6fbdd23de9debed7"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentIdeal": {
+    "bytes": 117320,
+    "sha256": "313306a4d6e794a750489cb6a82b14e23d65844bdbca2ba82391a737cfe9e9f4"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentLocal": {
+    "bytes": 125664,
+    "sha256": "29c9990386cfd26077ff906c0e3124daa6de4a0364a7ed6d44ae8ecdf0c35ab6"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentSupported": {
+    "bytes": 92168,
+    "sha256": "22e41a3499d7eae863f3ab9f5411ec0539bbd0fdcf9a0cb075ef52de005bb53e"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.CurveBlowupImage": {
+    "bytes": 126360,
+    "sha256": "d3f30d2ab91bbc23483f015c523dfe3dd776c8fb11bd30913998d596506208b8"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.CurveBlowupImageBase": {
+    "bytes": 125032,
+    "sha256": "596f869ca8988e4fab49c57353af7bd120cc26b118e175a217ec0db84addab89"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.CurveNormalizationPolarization": {
+    "bytes": 83576,
+    "sha256": "3cbfa4ed4ab0c08f1953206f811be3cc99b76ed49cb7492d30a0e7b32923c491"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalAffineChart": {
+    "bytes": 359792,
+    "sha256": "90a45c9b954fe690c7dd9e7303080808b0499b2b4d52d03bff0fe1a379304035"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalAffineChartRestriction": {
+    "bytes": 409136,
+    "sha256": "b9101b3d6dfc5b6ebeb4379480c69edbd7282cbfcf3eae54f9561877b706c64e"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalChartPullbackValue": {
+    "bytes": 127856,
+    "sha256": "260e3122b74b0adef54ec2ad65016c334e03984748adb2ba2da2df1c1214bf4c"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalCurveDegree": {
+    "bytes": 1057568,
+    "sha256": "2f527093b3455ba89e395a438276cda0bf6ffbbf58784d1bb3b4f1ed67aaaed6"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalPowerPresentation": {
+    "bytes": 225552,
+    "sha256": "6030abe8d4d42bbd5b243da4ce0051532b76910fadab96b95614bde96ec54f74"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalPowerSections": {
+    "bytes": 449088,
+    "sha256": "f5ba6f2fe97e6163dd5b9c05e4c7dc33a725018759a0b724a1da14389b628aef"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRecoveryMap": {
+    "bytes": 85728,
+    "sha256": "f0916331fa157fcb3fa014bce0cb534f74fae756609983b7aafaf7f73238c2fe"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRecoveryTwist": {
+    "bytes": 74216,
+    "sha256": "d6b67068edacd0246015459e7aac270d76ebee5a1838116636b27ae8dd611de7"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRepresentedOpaque": {
+    "bytes": 64456,
+    "sha256": "3114c1882ffff20ec9f25aa2d075f553f194e827085abb613ef56166fdc21998"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRepresentedTypes": {
+    "bytes": 59440,
+    "sha256": "de9601254a1695eb3192cf0fdf780812b992be6d2ab038b7e31d0ad7184db082"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRepresentedValue": {
+    "bytes": 65368,
+    "sha256": "0c73e939b5a73f7d275a82e524111c7ce903c573b48b0f4be618a85361dfd33f"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalTypedRestriction": {
+    "bytes": 99704,
+    "sha256": "f511ff05e42b03af342b02c2f16951a1404f8e890e0f27194f65719ba23e7976"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalTypedTransport": {
+    "bytes": 92544,
+    "sha256": "7e0b3971a42d8d5d55be562dda60f62ad840078de32ea4cb45007f0823094390"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalTypedTransportNaturality": {
+    "bytes": 140576,
+    "sha256": "68e6b91233e8feef274c5fe5cfb09bf706f514879b6735c7b5332af5f95fabfe"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.FiniteAffineFrames": {
+    "bytes": 75304,
+    "sha256": "b742f920f87f25ea92fa283fe63b1d852d2a97b45394975791b246b5c62026f6"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.FinitePullbackAmple": {
+    "bytes": 100112,
+    "sha256": "547bfa6cbd4dc02c013ea82bc7d0267c7307e479365d001c59690d654f4b30ad"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.FiniteReesComparison": {
+    "bytes": 181392,
+    "sha256": "c0b5298a0e96568f8604ffd2cf54ab5ac76cec39dc1b3376179f8d7955ccea84"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupAffineSquare": {
+    "bytes": 92248,
+    "sha256": "ec7035d9aab99cd1204fd41b4be377abfb0db4f4af296648d728c320ea8f5286"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupGluing": {
+    "bytes": 280824,
+    "sha256": "5ac05af645ef55dff8ec0451e3860cd604721e297e4b25976f915e998baa2af6"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupJetSurjectivity": {
+    "bytes": 36704,
+    "sha256": "79a03e777adb4585a3e10f14c761fa7776921928ce73284d26c1f8d1b3af32b2"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupRestriction": {
+    "bytes": 50304,
+    "sha256": "feafb6dc115c6b4dbfe47632c47b27a3d4619f28fadf6154b5b5ea1d97afe906"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.GlobalExceptionalComparison": {
+    "bytes": 110728,
+    "sha256": "573cfc104001a4bffc937dcd0152b7c1158aefac0e3fc71c4b089691041d12eb"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.GlobalReesCanonicalRecovery": {
+    "bytes": 46840,
+    "sha256": "0895faab2f17f21ea620a48ef09b5d6f8b8249d66a80c004d1da4b5d8c25ee64"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.GlobalReesRecoveryComparison": {
+    "bytes": 115504,
+    "sha256": "994a0e1aba46cb231d744760d4f94794c71808ec6bfc19926bb1f4745bb0f7bb"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.IntegralComponentAmple": {
+    "bytes": 42040,
+    "sha256": "c8869f3626804bbcae07962d324d0cda5ca4ba8fc8ba7b4a8bc9962a5ef44b28"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.LineAmpleOperations": {
+    "bytes": 126160,
+    "sha256": "fead6831c2be69ae7786e56915c1a8c679dd637434b6a9c1723ba4882dd3ad8f"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.LocalHomogeneousDegrees": {
+    "bytes": 118896,
+    "sha256": "2d117ee3fbce4337aa67f92bf59d9800828228a59bc1cbe1d559432bbcfdac28"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NakaiAmpleFromSections": {
+    "bytes": 169152,
+    "sha256": "e2a3a6018f87ab7445989b3c6910f356b1110886404566eb5349c05863f38d16"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NakaiBasepointFree": {
+    "bytes": 142808,
+    "sha256": "a91f3acefcc97f867f9b117040358425404463f3ae818e4c1fb939571a3b23a8"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NakaiCartier": {
+    "bytes": 109416,
+    "sha256": "5c74b927d7b01d2146aa3c5572366129f57606ec03a9ae1783d1988b1fd8901b"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NakaiDivisorAmple": {
+    "bytes": 130320,
+    "sha256": "b09e3796e13ff4bb53ad12e994e2655c87bfce46e9310e76b0aa3a3a6b07f2b2"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NakaiEffectivity": {
+    "bytes": 281664,
+    "sha256": "ce77513681582d6490c7393910a49e4db29526ec2d30140149f184f066e5181e"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NakaiInductionStep": {
+    "bytes": 91432,
+    "sha256": "aa57af5e925d1c49b231bdae9195f96e1d7e7ece4319f868d472bed54b2a5b2c"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NakaiSectionLifting": {
+    "bytes": 152520,
+    "sha256": "33670f411a85c527c15b6b970e2410d303d10c97139346db75a20d5e30b5225e"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NakaiStationarity": {
+    "bytes": 171512,
+    "sha256": "60370acde78b3687bd6ca712d461654ccce3bde58f5a90d2c0f6d19f7f5ee796"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NefAmple": {
+    "bytes": 347864,
+    "sha256": "0b24168c08388e0b94a5e64d4ea8a2e914904577a98abca308a17d8e9aebe423"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NilpotentAmpleDescent": {
+    "bytes": 157208,
+    "sha256": "73fb21cd6e0d16106147467188d75f1bd6e0b3de4f62613ed58b326a7919283f"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NoetherianAmpleProjectiveSections": {
+    "bytes": 438160,
+    "sha256": "6b5900ac10ba24a912f09a356a993e2e71947fa369797ef3342c54c698ded389"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NumericalAmpleness": {
+    "bytes": 202728,
+    "sha256": "5a52f9bdb6df22f8832f045a531568e0adc3fd868725a86fe6bd0d2dc6ae955c"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.NumericalAmplenessTheorem": {
+    "bytes": 74488,
+    "sha256": "12cfc97471062512863439cadad645755d27c0fd225140a9996eda391b13fd0e"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ProjectiveO1Ample": {
+    "bytes": 15008,
+    "sha256": "19a1e6843bbd2a3921c6ddacc4813ddbfce4a02619e0998b28279141fe2d54eb"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ProperAmpleFiniteDimension": {
+    "bytes": 148760,
+    "sha256": "3f8dc1fc70d816b74d875c987fe6e1c4ec2760d328072bcbeb2aea23c097a313"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReducedComponentAmple": {
+    "bytes": 147624,
+    "sha256": "0e2cc47ce6bebb2341aad512d308002abea230724c79d24dc3e911d3aad65d22"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesExceptional": {
+    "bytes": 356424,
+    "sha256": "d17c9efa90a3a0390148261a07529696bf9d03389bfabae49d002b17c464253c"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesExceptionalSheaf": {
+    "bytes": 9024,
+    "sha256": "326f1d6de1d4ae01808a3d9842d820cea554dd74a959577b96b88d68280338f1"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesFiniteCover": {
+    "bytes": 136920,
+    "sha256": "3256e2c11b68b0a08743e15001a94cd806122109533799c2b51a72570a9427a0"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesFixedChart": {
+    "bytes": 101992,
+    "sha256": "708ecf59a19c5d3ed3585e1c47fe52f72e02d82cabc2fdc844b822c896e64039"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesFixedFrames": {
+    "bytes": 29016,
+    "sha256": "0e3fada71b488906ffd51dd052a8e3b7a7094a00c0a9469e0147f27acf85138a"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesFixedPower": {
+    "bytes": 202208,
+    "sha256": "77fa01f985d341cf688f380a8d6bbd3e536a0656f5f706ef8f1cedd227b12228"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesFixedPowerRestriction": {
+    "bytes": 244968,
+    "sha256": "8c364e42089ca9d54c04bf23e9058bcb69ece9f18e3164c1f7a18bfb2df3d909"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesFixedRestriction": {
+    "bytes": 159320,
+    "sha256": "71a1d8b836102794763d0c7f98cd9229e87a29eca5619e0157f7c46b0c4b54ea"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesGradedModule": {
+    "bytes": 190456,
+    "sha256": "db87674980d45bf62d45934fd8541deb5617a5f7522bede22630f6007c05b9e2"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesLocalizedChart": {
+    "bytes": 715160,
+    "sha256": "2931fce88e3ead4461a470b3e9518017f14c6f6a6f217eb79ac609539df1590f"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesLocalizedIntersections": {
+    "bytes": 680832,
+    "sha256": "20686c25e8aa161b6284c14c2b2fd02125cf8ea2dbf5801a188313e09a30dc22"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesPolynomialPresentation": {
+    "bytes": 350000,
+    "sha256": "9f6a3f56f2281d23b813e1e1fb9804d5b78cbf32374b71c53355e53483404ed4"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesPrincipalLift": {
+    "bytes": 524720,
+    "sha256": "ef2eb5f0b912c3ba8efa22496773ead8a3dd9f44102f1788e55a7a1f49b25a49"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesProductAugmentation": {
+    "bytes": 217736,
+    "sha256": "7c9968d69a9661f081a29556bacc903fc092a0154bfc9142afe44241b8ab5b2e"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesProductChart": {
+    "bytes": 531160,
+    "sha256": "4798ebf3a16c89ad364f654e46c9380677a10ebf5f7b5f981a03d4993a20003d"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesProductFrames": {
+    "bytes": 37600,
+    "sha256": "f29484ebcf7f03e5036c56b01e613f39cd8393569e19df0bedb343491f7a0c2e"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesProductPower": {
+    "bytes": 613544,
+    "sha256": "4ef8c4488223ad2572d2cdd6f1a45ea9533051ba9644e38e23298418cf6bfa64"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesProductRestriction": {
+    "bytes": 513704,
+    "sha256": "e05fc255d8930406db12224449c23cc75086aa6899370aced08c4d03f75c9d53"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesProductSchemeChart": {
+    "bytes": 236936,
+    "sha256": "a932fa92f3d03a70659d1362f283afba897b0bca2f6b173b22028ff5332f4f57"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesProductSchemeRestriction": {
+    "bytes": 78328,
+    "sha256": "f4f8292537e3eec8fadb6ea02a68b12e1ac45af9d491cf3feb9e34d0b43e4341"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesPushdown": {
+    "bytes": 1171784,
+    "sha256": "79cb6197aa8b8f779a50fc83d98668c057bc68dcacd75a3338494a0431c8cc32"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesRelativeSections": {
+    "bytes": 471520,
+    "sha256": "86c3eba4f0db8ec43c2a0b48ad2cebc98eac42eea687e1eb0c4714978669daf3"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesSectionInclusion": {
+    "bytes": 379520,
+    "sha256": "e559750e84cc5aed3c193615be3873a3fb859c73c91913f7220c6cf73712cfc4"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesSheafCanonicalValue": {
+    "bytes": 85024,
+    "sha256": "45532269fd431d9c4f8d52c0a1245e5d5853138321640ec238790252c32d044b"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ReesUniversalUniqueness": {
+    "bytes": 575728,
+    "sha256": "eeb86549789117d3acfaf60f0ddc75dd4932f67dbf502c471979314806c5f180"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.RelativeAffineSectionAmple": {
+    "bytes": 138680,
+    "sha256": "20acd41ed3e3c531803bd6b1cc6c92b4b5c748e2452fb6c04dc312ce29cee7d1"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.WeightedAffineFrame": {
+    "bytes": 52376,
+    "sha256": "e0c35c661f8124ee7a21e43098b12d136dcb57d48399f3ba00d799c4101073c4"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.WeightedProjectiveAmple": {
+    "bytes": 22248,
+    "sha256": "676a7d3c3586a127538faf172b05bb5cb9540542a205095d7bc546f95c1ffba3"
+  },
+  "OAI.NumberTheory.PiExponent.Ampleness.ZeroDimensionalAmple": {
+    "bytes": 66752,
+    "sha256": "76a80a5445e3ddcb62b52c1043b942ca7a53990a33e40afc67e0a23728b0834a"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.AlgebraicLogarithmicObstruction": {
+    "bytes": 371800,
+    "sha256": "4b33847dc32545745024b2085dd95bc9508375df56a752b923bbefc609f5ab56"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.AnalyticAggregate": {
+    "bytes": 322216,
+    "sha256": "3398e4edc6eec78ccf82951e13f290a92371319b51df660f95188a6cf52ecaf9"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.AnalyticCollision": {
+    "bytes": 553040,
+    "sha256": "540020076ac56ddf4062411d712fdf6dcdfa7173eccc5ef45b62f490f640e78c"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.AnalyticDeterminantCollision": {
+    "bytes": 76384,
+    "sha256": "ff33338892b669cb657c492ab19c128f89842a6e2334893fb5f87c72a86d18ac"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.AnalyticRowSeries": {
+    "bytes": 239096,
+    "sha256": "6d7ae70bfc4f2bb8637a5146ff950e90eb6a351e8a3775f5cce12e5a612d23a0"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.Collision": {
+    "bytes": 211904,
+    "sha256": "87aa7e336d122bf7cf923b8de21269c532f138649b8f224e999f58c37094b873"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.CollisionCombinatorics": {
+    "bytes": 257008,
+    "sha256": "1a7283249f1aedbdd565ec26f33668cffa7fc5c4ea2d4f5eacd63614103599ae"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.CollisionExponential": {
+    "bytes": 392528,
+    "sha256": "e352beefeeac7845d39d22ec23bcc1c5e52893bb9f58844aa0d05f21438cdc13"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.CollisionGeometricSum": {
+    "bytes": 93224,
+    "sha256": "fa24f2584363f06a09fe9727f30a34a0d9be38eb370cba4ef897bd251e770f3a"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.CollisionLimit": {
+    "bytes": 63224,
+    "sha256": "18ec7bcfe3b098445b96bf7a50824bbb05d6327f1825a58920727eacf7d0a1e7"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.CollisionOccupancy": {
+    "bytes": 66952,
+    "sha256": "d50a65aabc7c4a79606086e09e79adc6a10183b955e28d6a23a14daac9c98df0"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.ColonSeriesTelescope": {
+    "bytes": 153384,
+    "sha256": "72c8304067d573a63330b4af5ccffec0f99e7d55c5b0a7d52055577c279a14b6"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.DeterminantAnalyticBound": {
+    "bytes": 592736,
+    "sha256": "e954b22ac3999c518f3f2b2cf0f6cd95d1be1067f7a9bd988a53066cbafb3320"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.DimensionLimits": {
+    "bytes": 52648,
+    "sha256": "5846d2285c02c27002b2506ef435cdd16d689db9acbe75d8ab1ca67a9785dfd2"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.DyadicPowers": {
+    "bytes": 164048,
+    "sha256": "8ed87f546fc957134be4112227032e53066e361a874f55eb75a1e7d9b325511f"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.DyadicSpacing": {
+    "bytes": 289192,
+    "sha256": "060a19e7ad756e47aeba33e4d513f9d4b0ee7f896f4c334f2d2571429fc5ac0f"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.DyadicSummation": {
+    "bytes": 63872,
+    "sha256": "e01a79cf65af548bdf6df00b8a7b11b57c9872024cb706d8a3a3784d01a66c79"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.FiniteDeterminantCollision": {
+    "bytes": 243792,
+    "sha256": "ccef30a956da14665b2212f6952f67dd1637da37ec06ff5e561844d91fdb9241"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.FiniteSpacing": {
+    "bytes": 318336,
+    "sha256": "16d37b3065a3b656d2c4f9f820ffb4a93331a74f198c2b320158f8663db6208d"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.FlintConsequence": {
+    "bytes": 46536,
+    "sha256": "3ed95c7a6e3447f0a78f2dcf1e5c3c7b4d81051156609b4f7906eac574e5792e"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.FlintHills": {
+    "bytes": 156648,
+    "sha256": "08d72c08ed2dbf07f66b70e2c6ee38fbb688788bc260d5494bb4fe46f7729237"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.FlintSine": {
+    "bytes": 584104,
+    "sha256": "a3462dda0a777925b929448281bcf0dfa9f892ac4c2af49c5564025e88e77098"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.FormalLogTailOrder": {
+    "bytes": 106720,
+    "sha256": "43e44f4cb9656296f30ab8ffb97c2ffd26a73423c7a4456ab25dae089088e3be"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.FormalLogTruncation": {
+    "bytes": 669328,
+    "sha256": "0e429bbb37c91944615be8dce255baa249aadd95cf252be249ec8b10d08a4c63"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.HilbertSeries": {
+    "bytes": 120184,
+    "sha256": "5b114059244be061f95c6a8d7152181a30abe9add25e6e1be03580959b419a12"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.LiteralAnalyticSummand": {
+    "bytes": 573112,
+    "sha256": "050676252d1795aff129136db339c63df13863f4b989b089046742572a570aaf"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.LogTailAnalytic": {
+    "bytes": 553352,
+    "sha256": "588cdcbdb0aebf16ae1719727a55dae8b5a519f00dd5ede2ba9242211fcbb916"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.LogarithmicContactIdeal": {
+    "bytes": 192664,
+    "sha256": "1f44dfb03cf6f66737bd03df85db527b9c64400b12bb3383fc95e2808ca92adb"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.LogarithmicObstruction": {
+    "bytes": 771208,
+    "sha256": "377855324fc765405731eaf9339397ad34b33dad85acd13646b0bc85c98139f9"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.PeriodAnalytic": {
+    "bytes": 359592,
+    "sha256": "e02247b413a92d037a2d62f544bf71ac6a4d9a4bbf6cb37ed64db0d2a66094ab"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.RegularSequenceSeries": {
+    "bytes": 148136,
+    "sha256": "43e4dd1f3d0bee00f9655f930c28f45a77ac69cc37fd59a994a808bce85b1216"
+  },
+  "OAI.NumberTheory.PiExponent.Analysis.TranslationCountLimit": {
+    "bytes": 86112,
+    "sha256": "3763a5001c1d554eaffd6551c1a41dddc552705abd6089884d8c44031ecf6d5d"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.AddEquivSignedSum": {
+    "bytes": 42104,
+    "sha256": "1e2369f37ba2e0b9031d682d5ead73a4c77a0da3d0386b47561d2c67f0fdc1c4"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.AdditiveKernelTransport": {
+    "bytes": 213816,
+    "sha256": "19ed4c2eff656648346e30c34a4ebb0bdf0eae47f2e4ae872547951796ee98b9"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.AdmissibleMatrixFrame": {
+    "bytes": 39992,
+    "sha256": "f3fa165a0f9c5c46bf1ce9da55af1f65d3f10ea76a722deb471dce5d2ae49720"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.AdmissibleMatrixGeometry": {
+    "bytes": 61112,
+    "sha256": "0481b23b602e41cafd9cd0d69008bfef9f7b6c56388f24b3ead4a85e36faf658"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.AdmissibleMatrixInterpolation": {
+    "bytes": 189120,
+    "sha256": "038dff4692559d97854849a2d44efb7a14f771fe4abe2a480f4d454156ddfc16"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.AdmissibleParameters": {
+    "bytes": 1192600,
+    "sha256": "b62a07553b83cd60cfd5c84b17e856a99428575ad790efb74c4c19b7bf79c08b"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.AffineClosedAnnihilatedDescent": {
+    "bytes": 303056,
+    "sha256": "fccb56695fd69936afb2c4ea55079d9a4d11173dcd7d272c8a011e49590b5665"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.AffineThickeningCriterion": {
+    "bytes": 170296,
+    "sha256": "f96fa956d35f0747f1f8efa1d822551ec836f3ff1fa2e85ab3dda9d329e3527d"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ApproximationCenters": {
+    "bytes": 247424,
+    "sha256": "4e6d0a0b7c9d92c42b36d89ee2e4ca39c2628e1a79c95526842291eb2023dad2"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ApproximationSelection": {
+    "bytes": 105520,
+    "sha256": "007ea02d5efa3e46686dec8a2604ab1cf6339219c383049663e0fbbd09300b15"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.Arithmetic": {
+    "bytes": 682576,
+    "sha256": "7b52db32624b1c0670023c8545824dc52b00f52ceb7a60dc05a0caaf862ced6b"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.CanonicalAffineRecovery": {
+    "bytes": 159912,
+    "sha256": "56a6e5b8e97e1a399a748b077f7b7c024b19c28f6794ea2722919ae088d6f625"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedAnnihilatedDescent": {
+    "bytes": 270448,
+    "sha256": "91b6803dc214784dc4ddae2fab69e536f2113e9577745bee09bc45ae7ecfd2d5"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedImmersionModules": {
+    "bytes": 354760,
+    "sha256": "cf7d3bc50f965cdf9538ac88161365c702061ea7e97b5c726bfc36d3a64d213a"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedImmersionSerreTransfer": {
+    "bytes": 171056,
+    "sha256": "059104e3d391c12d2d30954eed63f08fe8b5afe45a50c9b64328c1d98acd3a8d"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedPowerSectionLifting": {
+    "bytes": 77424,
+    "sha256": "9880f41e0f038ecdd78ebfc3b198211b53d0460e5cff8e890ddeefbdacf79657"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedPullbackUnit": {
+    "bytes": 356616,
+    "sha256": "07f1dce0e52a46391a9c01da95329d08e045c60cb1d9eaa2d9cfeab5247b63c8"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedPullbackUnitRestriction": {
+    "bytes": 115768,
+    "sha256": "7facbf94d7af98e9ec97bfd2374c0557fff89c3add232722a4698e7ee8bdab2b"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedPushforwardAffine": {
+    "bytes": 489032,
+    "sha256": "ce9c197173cb3df7cb457c39fd712ca4e8b93a3d3574574cee37c923d526b017"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedPushforwardCoherent": {
+    "bytes": 515096,
+    "sha256": "9dd7849350d650d86442e8926317b33a9564f26c901b4c2bd76cef88d715cc55"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedPushforwardLinear": {
+    "bytes": 259904,
+    "sha256": "37211adba2a1138ffe5b4aa286cd76d181a44e7dea285eb873df79c7209d17b6"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedRestrictionTensor": {
+    "bytes": 385176,
+    "sha256": "98e6db299b054c77a79697960ad2b3aa9d3a6b68f9d9778c04fe5d1f06358af3"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedSectionLifting": {
+    "bytes": 34584,
+    "sha256": "4e7f6e5476a6f5b5ec756e7f4e308f1ceaf831f5fcca02d343ed7a0939d41eab"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedSupportedSerre": {
+    "bytes": 118160,
+    "sha256": "6faa336bc32eac54b6edb1b49026d155921750779e83d124363fcd5f0780c0fb"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedThickeningSections": {
+    "bytes": 103368,
+    "sha256": "04744e0557aa49bb0737c5e33b95ac4ad20ea5f195ad8f307cbabf860db50118"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ClosedUnitKernel": {
+    "bytes": 168296,
+    "sha256": "8ac3ddf40bd21bd84c55901a589a85d783e170f359c74a8d3036fb48f3e0b277"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.CocycleTensor": {
+    "bytes": 1234480,
+    "sha256": "615fb9c99bf331e6001b76d023fbbae6d68b90bd05e00939b6e268377a202847"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.CocycleTensorIso": {
+    "bytes": 196928,
+    "sha256": "4e68b285c1055d18e7bc1e56ede465bd1f9e2478d7d472a3a7acdc2ca621a075"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.CoherentCokernels": {
+    "bytes": 791408,
+    "sha256": "abb87e150ec62e6eac45a553371957e9781a16267ba40a0707fcec9585585314"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.CoherentTwistPresentation": {
+    "bytes": 969360,
+    "sha256": "a85580c156c9c401e28003fdca0a65687b00be09b0e53d4673e6588960599c9b"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.Comparison": {
+    "bytes": 237928,
+    "sha256": "a78ca205973640f11a320c98e0f9a7fe70004ee5e7f075719cab41cec1d424d1"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.CompositePullbackFrame": {
+    "bytes": 149912,
+    "sha256": "914cfb0a16e0f32db61caaff84efc524f44db2731301c2235226133fd7991547"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ConstantPullbackDegree": {
+    "bytes": 85184,
+    "sha256": "7e507afd057bbbf24eb196d3824895b65ec1d68fc43c76e9c3a106cd27818996"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.CoordinateFrameIdentification": {
+    "bytes": 157624,
+    "sha256": "e901cb78edd088d3cc8e55aa4822724c3be86009d33d320da11283b4cdbb042f"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.CoordinateSliceComparison": {
+    "bytes": 523784,
+    "sha256": "c03f2e7a7f4a46542bce8044403f79df9738cadd270b462a2cf589cf2bf9b9b5"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.DeterminantContradiction": {
+    "bytes": 404536,
+    "sha256": "b9e3da40f16275a4b18a04cf0f13740d4bd67fa157df0503be83be566caa9a40"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.Exponent": {
+    "bytes": 294312,
+    "sha256": "e38349ad380dee110fed024b875fa9ee369af0ea81e07a217196cb57d8857ef0"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FibreNormalRigidity": {
+    "bytes": 278640,
+    "sha256": "1f54362fc77aef797853e593a0f9d5d6ef93f4799766fe45069b95e7f944d7d0"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FibreWeightSeparation": {
+    "bytes": 48008,
+    "sha256": "f522afe34aab2645399e3b1659389ebc91a623beec96a7fee9f6a43a0b77b6ad"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FormalMatrixBridge": {
+    "bytes": 308072,
+    "sha256": "395b85f8ebe68625d50c0b5408fe1e890993763b0243fe86473229b931741f07"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FormalMatrixSurjectivity": {
+    "bytes": 127992,
+    "sha256": "1f0f15b098ff18990abb039e72599d7b174a11f546a6f94aafa4330c16a5b9fd"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FrameEquationFamily": {
+    "bytes": 155808,
+    "sha256": "c690694eb355f39019271abc0566b8d42f80b94445555d2321d080e54d555f93"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FrameResidueDirections": {
+    "bytes": 94544,
+    "sha256": "beeb6df67f23a7c579dcdd6ac950f3621b11789b9d54f87c55df2c2a1791c316"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FrameSections": {
+    "bytes": 682136,
+    "sha256": "b93c8f1bbbce76d66ba0b1d4ea06032731efc797d4a67a0bab389f778eccb3d9"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FrameSubopens": {
+    "bytes": 115104,
+    "sha256": "d106feac13cc1d53111dbef0d8e9e26629fa4cc6c4807ac8f6a0cfee37094c37"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FrameSubopensCoherence": {
+    "bytes": 370104,
+    "sha256": "50f9ef6c18cb44c28e3a5fe2cce21d85501d8e846ddf5b568b24d903f6fae4a1"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FrameTensorPowers": {
+    "bytes": 237200,
+    "sha256": "7540bdd73118bbe814033668894c6de914d9c3a0db6cf42632ada665b435d52f"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FramedPullback": {
+    "bytes": 198200,
+    "sha256": "554f9c01a69efdd3377bfbd950c4aa987997afb4e1d78ee19465067e9f06d699"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.FullSupportNilpotence": {
+    "bytes": 92512,
+    "sha256": "64d3235037e2a0232c8d3b69d6d74b1e56d5a8727540f06847e193cfdab820d7"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.GeneratorsSectionCover": {
+    "bytes": 633736,
+    "sha256": "c5b89cc6cd2af87b49ddc2b8f3bb8490cd445bd40ea371756e0413be3cb92773"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.GenericFibreRigidity": {
+    "bytes": 231544,
+    "sha256": "3e8ab2a0abab7ea48bf359cc9dc9a996e6d12769e0d59683724522c553fd9ee4"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.GenericNormalRigidity": {
+    "bytes": 226120,
+    "sha256": "bf8aaa870470df2b86c6c438c6b64285f41ba634018bc96ec474ad39b24367bf"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.GlobalClosedAnnihilatedDescent": {
+    "bytes": 133688,
+    "sha256": "b5e3f08e7e63370db5c0c7e104a5ca5d69d6bbf34bbdfa737a2b99c0614231bc"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.GlobalSectionClearing": {
+    "bytes": 1503352,
+    "sha256": "86aec48affd86ca11c5778fb7ff9118acb2bf3d66be5034724e649ec6f7d6f7f"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.GlueGlobalGenerators": {
+    "bytes": 528664,
+    "sha256": "7669799d643407f951c2b840fd0a5f08930d3c370cecef3f7106e1b04ac8d060"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.IntegralLineSections": {
+    "bytes": 605056,
+    "sha256": "10fd64438d38f05ff513f0f8b95ee2f6a05a553ad05176b7487dc84a5640dd02"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.InterpolationConsequence": {
+    "bytes": 16816,
+    "sha256": "86b1fbfedbbe15b24fd9907c5cf0382fece0972bddd9758fbb0ff4193ffe766d"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.InterpolationMatrix": {
+    "bytes": 289864,
+    "sha256": "2c0a544d8403bbf400dc3504b40e3ad1bd2263595b55f8a902e08104c7750bde"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.InverseDualRestriction": {
+    "bytes": 94120,
+    "sha256": "fa85ca95f17ab359f44482e739820ee79b54a1e9c0cac4b78e9529fdf46738c6"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.InverseFrameRestriction": {
+    "bytes": 294648,
+    "sha256": "8227b4b3a1e5b9f4d3a21b832187b179128cbd3b6288bd9ae5065aa65cd967e0"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.InverseFrames": {
+    "bytes": 244128,
+    "sha256": "787f738cad74e30a3ec2fa951b78cc1c8c3159c262ece387b3f3e66ffcf9db9c"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.LineClosedUnit": {
+    "bytes": 194064,
+    "sha256": "79161602abd6a03a6c1371f5e1010c4201dd035b6ef444d798f1c6f4f6eb393a"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.LinePowerLaws": {
+    "bytes": 536448,
+    "sha256": "2a06e438b0f652581392808122b305fb93caef4537b60c47481ee99b8ba4734d"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.LinePullback": {
+    "bytes": 93288,
+    "sha256": "9027d1d6e61165b59649fb9f7d5fb4078400c33bf81cef7a0120747e3a091513"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.LinePullbackPowers": {
+    "bytes": 449296,
+    "sha256": "93b99c5971d64f30efe77f54f7449e507d2988615428a9b0a59f6cfc20ce2c11"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.MatrixArithmetic": {
+    "bytes": 774768,
+    "sha256": "708cb3de898c955d8727416d8e68cd22fefc651f91ce5d1ab523356d81fd8580"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.MatrixCounting": {
+    "bytes": 386280,
+    "sha256": "624c1e02a67ecfae4ef67855ada130100c27cd91c4c6ed753c303ea5857dca95"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.MatrixTranslation": {
+    "bytes": 539440,
+    "sha256": "903496e8cd767281d5f01d61b39d76d44a18084f72827e2a721d5078fd888961"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.MatrixTranslationBounds": {
+    "bytes": 532864,
+    "sha256": "d4f8d96317dce3f4fa5e57f29961fbb3fe79df72c1e9a2ccd2a1e1887a86cfcd"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.MixedFrameExtension": {
+    "bytes": 139744,
+    "sha256": "c2cb04df3cfd7b71f5b5aa5870afe417db044ce3d656e5ee5b02e29dca292e8a"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.MixedSectionExtension": {
+    "bytes": 548560,
+    "sha256": "0eb9073143483d6bd650e2d2e29741fe96ba3b93b226c644f5db2f6a1e384f8c"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.MixedSectionOpenExtension": {
+    "bytes": 140032,
+    "sha256": "a09c29144877e9bfa9ff6c2416ab3915572efb534101684fb0642e21c66f6de4"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ModuleLinePowerLaws": {
+    "bytes": 474960,
+    "sha256": "ea0eb36c8dd895882503404d9b902d49f97b9a0e93da3cb1f1551c2cca88beef"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ModulePullbackCoherent": {
+    "bytes": 367320,
+    "sha256": "8f80850c516b20c562a6032c96d5377e0eb5427635006e4f382d50c4865db435"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.NegativeTwistPresentations": {
+    "bytes": 305856,
+    "sha256": "2cb94d7e75960afca0b95272d8622c6809a4c0b4b2df65758bcd08df6ad66001"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.NoetherianPowerExtension": {
+    "bytes": 233480,
+    "sha256": "ac57803a76d27ef5693366bd8a21abf30d37e3f568944d6f635e9e6d375f9973"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.NumericalMarginRestriction": {
+    "bytes": 101072,
+    "sha256": "c81a9503bc2a8a11093039dacddb3e91f1e79df5832f88ce1df1cbbfa665fe9c"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.NumericalSlopeInduction": {
+    "bytes": 73128,
+    "sha256": "c74dbd69d57b8f64f87ecfb8726cd5d95058ff396136add7222cd48ce16ec930"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.NumericalThresholdStep": {
+    "bytes": 104120,
+    "sha256": "acb337514869b521a11b55ca5196bfbc312f0dc185322f3c90022cc18e17f3e3"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.OpenBaseChange": {
+    "bytes": 82920,
+    "sha256": "bd9864316a46745ca63451451ec050a1b83037d2d03f418b8a58478d7130c4c5"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.OpenPullbackUnit": {
+    "bytes": 1936,
+    "sha256": "bf4e98b3f09c01da41c743e421b37bbfd6ef1df9481747177f8943bcf97d2317"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.OrdinaryComponentRigidity": {
+    "bytes": 208384,
+    "sha256": "83ca268b4377099bb9ddee18c202b56bdec8bc41623b84b0180f522d3bef4459"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.OrdinarySliceComparison": {
+    "bytes": 125256,
+    "sha256": "cde7a168ae6a3abb28e45c79a68174222f8cd53bdc62a18de392a5fa17d87406"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.Parameters": {
+    "bytes": 594696,
+    "sha256": "9e57a7698c8d4b4b5732d65e5fd95834981560eaf1c8264f31a934fce6a0cf10"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.PersistentComponents": {
+    "bytes": 327192,
+    "sha256": "a7a5092a858a3b5bf4c26f66d8216b35d4730a760c9f9c1cb5ad23b45bd13b3b"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.PersistentWeightComparison": {
+    "bytes": 326680,
+    "sha256": "c784c3d68b19879dc4a5bbbbe8f0d5e8f2a75ddc5fc2731e9af660086465096a"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.PowerSectionExtension": {
+    "bytes": 752760,
+    "sha256": "8fbb550158410e5763b992e2cb732ec1f20d6548359296a0e79b77ef7c89dce7"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.ProjectionFormula": {
+    "bytes": 360096,
+    "sha256": "6e1cdc4c52815432ceca505d4d7fb12621ddea373c6bc8ba151bcc02601b6c01"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.PushforwardOpenSections": {
+    "bytes": 231320,
+    "sha256": "1125ab8fd7dbaebd6cf3c5a1eb019a1a10c9e401456087043a182955d9ee4a84"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.PushforwardSectionComparison": {
+    "bytes": 150000,
+    "sha256": "baafe722d88820d3dfca2f030a91b414d82cf8d78697d969ac29e090c19bef5c"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.PushforwardTensor": {
+    "bytes": 268192,
+    "sha256": "5eaa10c4f5dfd754091f834e0490b25dcc311e1c785b29409e3b0fdc55782148"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.RectangularVolume": {
+    "bytes": 137848,
+    "sha256": "5ed0f6a51bfb9ea59bad961449621ef29c9aa3e095a38ecb0b0b0616938ea669"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.RegularComponentSection": {
+    "bytes": 236056,
+    "sha256": "49f764ac554dfb2054691ca70d2716d90bdfdfcae368348f184c122cd4b3637a"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.RegularSectionChoice": {
+    "bytes": 340128,
+    "sha256": "dff6f3960b6f876d04c31c4b8a303c93fab1b46510f89247239c04547a9b3d31"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.RegularSectionMono": {
+    "bytes": 152208,
+    "sha256": "f9744a935694731e5fd6593aa58861c77e11ffcbec27b8feda25e97785bfc35d"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.RowTranslation": {
+    "bytes": 791384,
+    "sha256": "2f53ee1b004ef8269df7fc004b15473e9ed7cd0502a3b7663b5f6a62f14d94ac"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SectionDivision": {
+    "bytes": 323944,
+    "sha256": "57573deb0995476748c0db18f3b950c7175f193856279b0c7a907eac755365c6"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SectionImageSupport": {
+    "bytes": 259968,
+    "sha256": "cdcfc0a534a3a43cc7bc1f6df1dcf8e0cd4c3e874a2e92fa0e53d702cdcf63e4"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SectionOpens": {
+    "bytes": 283872,
+    "sha256": "b18d902789fa82a1b576d85a857b9097e5c50d6602d74abdc56ad7e26d75f72b"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SectionPowerFrames": {
+    "bytes": 208112,
+    "sha256": "88d7bbce576343cb8c2c2c75520e170cc5c15f84c62c5ca9ff64d078d8e2e4d1"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SectionPowerOpens": {
+    "bytes": 96216,
+    "sha256": "b14c4bf93d3e75e456b6b817c4fe9e6f111ea30d27733fd8041f6cf13a2551fd"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SectionPullback": {
+    "bytes": 122488,
+    "sha256": "c348d72b052bed0d392118477442d00df330424d5afeb46c5ed3f1f5a0d4a695"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SectionZeroSupport": {
+    "bytes": 107576,
+    "sha256": "31cf53c1f1677c75dcc6d28a37b553437253d7e4bb1c4689cc2afbe23672ebf7"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SerreAssembly": {
+    "bytes": 279304,
+    "sha256": "730ba8c3a708dce9708c8f9c7150ee20928d398b1c9210017c236d79f78432d3"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SerrePowerDescent": {
+    "bytes": 151280,
+    "sha256": "e7fafa678ef95ba3816c810d6d5aef6cc8ae6c7dee769475f4f6c1889ab0240e"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SerreSectionLifting": {
+    "bytes": 88856,
+    "sha256": "ea9700d6f8082faa7111eae2c962654fa749976f5fcd5894d0d5106c2dbdbed7"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.Sigma": {
+    "bytes": 65264,
+    "sha256": "5ad5d1a3881d824fc8826c8f68e304301d0cc6d8b668133adaf33dc4f523e6d9"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.SuccessiveApproximations": {
+    "bytes": 198088,
+    "sha256": "755c91dbd97db856aab85be1644046ed2d351a2af84471258620112acdd1e0c2"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TensorMixedSection": {
+    "bytes": 405384,
+    "sha256": "281a3b1f00ada607ffbe531f805615173e95397a2126822c82d13c0af51cbc37"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TensorOpenBaseChange": {
+    "bytes": 386600,
+    "sha256": "df1bd8f0a5fb5cf568da44bf35c077836cbd0081d9b6dd6434fe4423cce9b63d"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TensorPowerRestriction": {
+    "bytes": 150840,
+    "sha256": "829c8ccb100b538959c4229fa606a262d5b6542c51d903baf22bff89861d6be2"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TensorPure": {
+    "bytes": 701928,
+    "sha256": "402fcbb528bf96267194be2e2630dd4d038c0bb49f8ea1d9d2119e7070a2b6a2"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TensorSectionOpen": {
+    "bytes": 191936,
+    "sha256": "08ca8385af07c81d4cacda39d1a63c6eef33b22030abaf1893ee11ee067b2137"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TwistGlobalExtension": {
+    "bytes": 545664,
+    "sha256": "6db19fb5d9ff7bf6a29ba90ee5455d64cd9880fb8db428096e1a25b294c3160e"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TwistPowerSection": {
+    "bytes": 240224,
+    "sha256": "e9fe1dff72748288b4f13f123ee4ee9eccefd440cefb4a18988702501816c665"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TwistPresentations": {
+    "bytes": 400880,
+    "sha256": "bdfa191bc563d577b547f5ade3eae6e86055089e18f30bcc5c333e653b9d899f"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TwistSectionClearing": {
+    "bytes": 560392,
+    "sha256": "0b3d44df15bc0b3a9489dbb89027a60e9bb422c3bfda01001a08c0b4d11881b1"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TwistSectionScalars": {
+    "bytes": 390904,
+    "sha256": "8313e4a80435724f7144aa12d9bd21b5f59ef1653428d2557103a3444efb18f9"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.TwistSections": {
+    "bytes": 111296,
+    "sha256": "318c8165a32b4b1f91a88554187425f3708c3d4c853de2daef534bc1380499cf"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightErrorMargin": {
+    "bytes": 92632,
+    "sha256": "aa423e4c13db2f6dde91ae9995c3e9561fd6460c02ecaa54adee7689f713d28d"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightSeparation": {
+    "bytes": 150480,
+    "sha256": "c953b2ec712a7560806a3b3649091c6ad0f6ad0da1cbeae0abc7b519098caf0c"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightSeparationConstant": {
+    "bytes": 129024,
+    "sha256": "99549736a87c913280a44243c65eccde23f556d0127522b2f7f21563a87e4859"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightSeparationProducts": {
+    "bytes": 52136,
+    "sha256": "628c8c243259a5cad1e93b074c3d590711d3b7c47f4bc31282c7f285ce6d8b39"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightedAffineParametrization": {
+    "bytes": 332232,
+    "sha256": "ace07f6f0d983574eea4e1c76ee9a0eda3957c35825c629e27f6c8a1b39b1721"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightedCompactification": {
+    "bytes": 421192,
+    "sha256": "0791505f5a9415b0f8e9806a103d6e6a891a81a3bcf243e889387e62b0a85e2a"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightedCompactificationGeometry": {
+    "bytes": 146424,
+    "sha256": "0a0e7996940d9fdf494dfa22e074b92d48d472ea7792e140d27fd49a5cfe2355"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightedCompactificationImmersion": {
+    "bytes": 186328,
+    "sha256": "8d4e76f591d6f263186539b9d5eaeb188f87ff423695cc5e3da8c7226c3d7dad"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightedFrameDegree": {
+    "bytes": 69064,
+    "sha256": "0aa6b13ad0a91016109e8e22b4f3cc824ff33b2a2e0ef8f490de341ba6fd6c98"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightedGeometryScale": {
+    "bytes": 300896,
+    "sha256": "43cd371efcf173ce07fcc9ba07ffc2664382612d23f5e11aae2c35d7d031b746"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightedGlobalSectionBound": {
+    "bytes": 64776,
+    "sha256": "f053701e7f59654fb797c3a30281ae1c9d914fe5fb6a0fc1a49cd2c2c740e7ce"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightedPullbackDegree": {
+    "bytes": 134424,
+    "sha256": "431c80a3fa84206a22fc9591e53787dd6d7d9d1e8503e96c77bf0d947fa883c7"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightedSectionOrder": {
+    "bytes": 435368,
+    "sha256": "70d68292821bd6a907d2c2e19a5bb0b42356ac22ebd852ddf344c074935b71d5"
+  },
+  "OAI.NumberTheory.PiExponent.Approximation.WeightedSliceDegree": {
+    "bytes": 398856,
+    "sha256": "1bc5544e62f0febd8139a3f651843e4ab6c07cd7620b52a2fe0e638ea884618f"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.AmpleCohomologyFinite": {
+    "bytes": 140480,
+    "sha256": "ef6a8429b0d49c8a85b680f432b9682816e00fd227fccf1d64c1d38e41f2266b"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.AmpleLineCohomology": {
+    "bytes": 79768,
+    "sha256": "8c959ac71c46e4bf26f34633445c14ae5c4e4cee7539cdf85d2c45bc8c056c59"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CartierEulerDifference": {
+    "bytes": 149984,
+    "sha256": "39c092e8b920644490ffea6e6bf2a0352639f362e26a132564c9d8f55b36528f"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CartierEulerPair": {
+    "bytes": 276504,
+    "sha256": "5e92938c278671b942ce9d60ef199821a36f29166bf0c7257bab26bc3a8a1912"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CartierMixedEuler": {
+    "bytes": 304408,
+    "sha256": "c2d59b68121537a26f7e63e6b26c8e7db7d9f11a6a1c315e81c77480c2f72f12"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CechExtFinite": {
+    "bytes": 951536,
+    "sha256": "b7a8f9c9f179a0dcc97f978d1bd9236d2896a9bb1127261a74278955b76ec584"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CechH1Transfer": {
+    "bytes": 738000,
+    "sha256": "21dfe2d964ad8d17355c4ca2f2dd09561cf83bed1074fcf083a86722edd24a4e"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CechHigher": {
+    "bytes": 920960,
+    "sha256": "66006914e3f82270073a5d1780a9309e67c0f40ea7bb0594e1dc1ec1ea0259b2"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CechLinear": {
+    "bytes": 494624,
+    "sha256": "030526a819abf21f1e6d52d12957483a388e9bad8cc50f5657e80df24dd7d44a"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CechOne": {
+    "bytes": 559848,
+    "sha256": "b340b69136e98eabbad21a93437417e8a1aeb6e9fc28096370c93e98fd322817"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CechOneConverse": {
+    "bytes": 220592,
+    "sha256": "0227f96e1908e2e2db643e459d6498c2f2b93b19279dc5247d0cb204ceb63c11"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CechZero": {
+    "bytes": 227896,
+    "sha256": "f9edb9096f18aa084ca5039e37182c85e437eae8a78a8ec7789497e2ee53da69"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CechZeroAdditive": {
+    "bytes": 157960,
+    "sha256": "7fd88f2725fe8a5844864464a7bb9c483a0cb75e83b43150bc80320cdc49a4dc"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CohomologyFinite": {
+    "bytes": 76384,
+    "sha256": "1ac2c9b0bc2af2785f1f976839ffcdbb517421e79f9991a8de238cb3d32b1758"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CohomologyIso": {
+    "bytes": 99264,
+    "sha256": "9fc01a96499c34d64ff7e6db069062235029a5bbf4654478c2df2093bed1e273"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CurveCycleEuler": {
+    "bytes": 210344,
+    "sha256": "e69b8e6eb847f0b56e629c6df74036daa299cd5b7a27e2a25a03d10a5ebcd200"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CurveDerivativeVanishing": {
+    "bytes": 282896,
+    "sha256": "047bba0314b3f5d5f54d4c3f86851cc02b16b8047a234d2f62cf9031cc2003a5"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CurveEuler": {
+    "bytes": 497120,
+    "sha256": "7a8edb819bb2b87f73bd8e51788fdeb66bb606954ff727821394feb909336083"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CurveFinitePushforwardCohomology": {
+    "bytes": 603056,
+    "sha256": "c6c5868e0a0a6706e356c8943422a40cf0393d673cc510c81ac886f55097da5e"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CurveNormalizationCohomology": {
+    "bytes": 198168,
+    "sha256": "c7495e564bb7628296b5c7ee7b50191655b26417994be8cdc1daf15942488ff9"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CurveNormalizationEuler": {
+    "bytes": 252376,
+    "sha256": "0d06c647af699a682db71c68f7d6d22b07f67f37a354b78cf31fb91881c62fad"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CurveRegularEuler": {
+    "bytes": 86216,
+    "sha256": "05d76e341463594abb5b1cc0c69dfcb6eeefb13c0838f13ecf328316900a27ae"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CurveTensorEuler": {
+    "bytes": 108936,
+    "sha256": "051d6f5bce2c5482297601469b60e4aa1d0e38d284973278e9df9b45d3e8b29e"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CurveTwoAffineVanishing": {
+    "bytes": 114744,
+    "sha256": "ca41b126e00cc0ac022ddeb96b94083c703eb6c956e8584c3c2074f5e3b9cde8"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.CurveZeroEuler": {
+    "bytes": 191104,
+    "sha256": "c15e27bf70704707ab941e9297e8b49451d7b83bbd9d12db80a2be573c468423"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EndomorphismEulerAdditivity": {
+    "bytes": 671840,
+    "sha256": "e59d19a99f3c78b04cf96606b6659c53400f9b92bb85cd58b992ad43d9cf1c80"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EulerCutoff": {
+    "bytes": 64712,
+    "sha256": "5527598b08e2cc89674b878d8e1979299c2499e9c414992614791d3732762b40"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EulerDifferencePolynomial": {
+    "bytes": 306848,
+    "sha256": "1e8f7692b25eb754fe16b8c9ae7ad7226688c420cd722d431f06e3e7bcf3d1ed"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EulerExact": {
+    "bytes": 618240,
+    "sha256": "c2c7b9be00ffc8f088c03a377515bde27397191b2249e36cce71e50118e709fd"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EulerPolynomialDegree": {
+    "bytes": 195072,
+    "sha256": "cabd3b69d03fdeea6382712f5e1bc04f58370a54b2f5163667e733d18c09eb96"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EulerPolynomialInterpolation": {
+    "bytes": 65592,
+    "sha256": "4ece487777204ac94aeb0b73213fb872c24a4f4f71341ea1f7fcff25611e8466"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EulerRegularSections": {
+    "bytes": 156032,
+    "sha256": "cbcc35ccef481d19b5ff70ce28f521984deabdd20c11d65ef4fb8df72ceb3019"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EulerRegularTwists": {
+    "bytes": 171928,
+    "sha256": "c8339558260cef60d90145ca27de07de660937c3eed2944381f3a03e027de8aa"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EulerSupportDimension": {
+    "bytes": 250864,
+    "sha256": "6bba444587994c3ea54de2f519ebca840d4d6040ce342473c08db4e589d25b02"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EulerTwistTransport": {
+    "bytes": 47904,
+    "sha256": "bef2696fc37848fd42cad452ea03fe9a275888c892a366ed93a1916f1df95555"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.EulerZeroDimensional": {
+    "bytes": 46160,
+    "sha256": "1c55634a52e8e05a710920cee03d47c24b3843c9b5c43b64a5ca1496669be6f0"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.FiniteCoverCohomology": {
+    "bytes": 3654928,
+    "sha256": "dc368c9266aea7dd7dfc67a3241f75fbe7206a34e3ffa80b3f8b34ee25d2a7a3"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.FiniteLineEuler": {
+    "bytes": 375216,
+    "sha256": "c4a0f8d2fd71382ac4fd9b0fa8a842be7326b5e740e188f56ec4dba9f124591e"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.FiniteSupportCohomology": {
+    "bytes": 352216,
+    "sha256": "85a3d42e1be7e08080332a091e9dcbe692509bd43fac4726f12c950230abd529"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.FiniteZeroEuler": {
+    "bytes": 107136,
+    "sha256": "ec2b42c881ea38a5d13fa1ca3520fa1f674071c16f54c615bf75bb46bc688815"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.FreeCechResolution": {
+    "bytes": 662152,
+    "sha256": "d693db5edc666de030bff74e877c532a04c03fb6e0946d5ebb09c9247d38ab95"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.FreeCechSections": {
+    "bytes": 623408,
+    "sha256": "32e2775f463dcec924b57f79b2218fe827b156c2673c28e58c1852b2cb65800d"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.GradedCech": {
+    "bytes": 2016968,
+    "sha256": "b6b094d0e66112632f0aa5ba35f9329bf68514ab6e707cdeddd472e45161c67a"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.GradedCechBound": {
+    "bytes": 505616,
+    "sha256": "ceabb54177a87a95a9596be588347be7068a76b0ac301337097c118493153167"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.GradedCechExactness": {
+    "bytes": 488920,
+    "sha256": "fe80b6c03aed9b3cf1ad71181120e72c3d2a5b2e21d250077c0a5315bb7d4720"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.GradedCechRecovery": {
+    "bytes": 184248,
+    "sha256": "39a1420c053030f31ec10f6eb8831f859afde388c5a2e081a83842c940fb9e55"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.GradedFreeCech": {
+    "bytes": 960640,
+    "sha256": "b4830fb45d9b7fd4dae1337c91c5b4a33f470240c95e0cc520dd4fb8f1f16a31"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.GradedH0": {
+    "bytes": 399112,
+    "sha256": "6d3094fc0a800c5716348c1b305315edc6dfdd93c220bdec3fad7ccd9d730054"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.GradedPolynomialCech": {
+    "bytes": 745456,
+    "sha256": "77560d73bc36841eae2379b1ec2d9be1e0c731dce78f4400ec8433af843e0362"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.GradedPolynomialLaurent": {
+    "bytes": 761208,
+    "sha256": "27cd3a690f5ff6b3c6d3f424a302ac5763eb95cef0b3460ecd70f0b72087a26a"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.GradedSerreVanishing": {
+    "bytes": 502736,
+    "sha256": "b80543f2c5193c5307e46e031124a2c236016521c84c93e515702d68670a759d"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.IdealPowerCohomology": {
+    "bytes": 110432,
+    "sha256": "dca44d28532f36f85ae9ad5011f7299381734ce20dca109e404deb531d78a5f3"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.LaurentCechFinite": {
+    "bytes": 441808,
+    "sha256": "103cb89f26af90512fbe9f1a392c2a6caa3dd23e6f1ba10bf81cae43a76506ae"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.LaurentExtFinite": {
+    "bytes": 198024,
+    "sha256": "9637c9c44abc10b335247089cdfdb416fcf586de03af2df5ae47887ec9acafed"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.LineCohomologyDimension": {
+    "bytes": 272808,
+    "sha256": "dfb043353613518c87fc88b439217f92b10536833bc6c308d209b0b822103544"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.LocalIntersectionEulerFiltration": {
+    "bytes": 210232,
+    "sha256": "aec44813c65abfd28d468a1dcca3a4fb5791ba4bc987c38b5ddd01c500e9dc64"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.LocalIntersectionRegularEuler": {
+    "bytes": 275464,
+    "sha256": "8074aa90a5144303589a158f44b324c32ab46d7761053f6980ea063be6c42670"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerAlgebra": {
+    "bytes": 196984,
+    "sha256": "4ca51316835591dbd1df74249a3f35e44a9bf43d1699f65a17af612b172c2e3b"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerAmpleDimension": {
+    "bytes": 143672,
+    "sha256": "70d8fb28d32e92f2326ba9f1a842b728385cef65453d89157ab751688027a9d6"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerCartier": {
+    "bytes": 61616,
+    "sha256": "887787a9014bab1058794c50c03351f6ccd602009ad569e26cd04abaf12f106b"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerCartierAmple": {
+    "bytes": 73168,
+    "sha256": "3b3d07b7927e0d21ce2e1cb76922ef04a8054f4648c0d56b3cb23b616000ab01"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerCurveMargin": {
+    "bytes": 158096,
+    "sha256": "a3c428b3834ee8a66471be74aa4c37f05bbf83518535c620dd4ec07657287157"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerDimension": {
+    "bytes": 126824,
+    "sha256": "45ed8b0bb8fffb150bcf31ac6b0cd8988cbe9b14726cacc31e156b4fed6b5a0d"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerPolarization": {
+    "bytes": 547432,
+    "sha256": "c040373e8607649a20983764f79eb84e78555774d14246bfcbfc496fb825b088"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerPositivity": {
+    "bytes": 150024,
+    "sha256": "8f0996b18ae1478511bbf3cf7ff708bff1d894cccd47ea5c3cfdca5bcae514e1"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerRestriction": {
+    "bytes": 136776,
+    "sha256": "6fd83d008088f0aa5275c19a81d515d4122b94c9bae863744082252ba2ee2a9a"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerSlope": {
+    "bytes": 228312,
+    "sha256": "4b00d08356258f9d04fd36fc62593a2048cd3ee91ef72306d1838c9312be2183"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerTop": {
+    "bytes": 80472,
+    "sha256": "b1013566e06c203f7fb7dd506c8902d23e24d957ba8c5cb2530aa9d5b1d5d3c7"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.NakaiCohomology": {
+    "bytes": 299160,
+    "sha256": "0bb934666aa6b41441c62a85df342e41de4f6f12bdff3c8339d87122e64f177d"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.NakaiEulerGrowth": {
+    "bytes": 178680,
+    "sha256": "d3f414eb4cc2bdc322f7212214b4c9fd80dbe5f908a78b0b9e6bef0247132a25"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.NilpotentIdealVanishing": {
+    "bytes": 93216,
+    "sha256": "29a814e54a48fd2339d24495cd0202f1baaba9269c34b2f7384e41dbfa99f959"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.NoetherianAmpleSerreVanishing": {
+    "bytes": 258720,
+    "sha256": "aba83b036e8da372f5ae38899bd0ba36af8237a60ded1fe507f032a0e8b80eac"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.NumericalEulerSlopeInputs": {
+    "bytes": 238000,
+    "sha256": "e17daf1f6d82017d2826d9a423ce4d58f825cd766753171df71fb90709e91c09"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomology": {
+    "bytes": 652344,
+    "sha256": "7ff192348483b680ab4ed91d0896438d4c5030c44aa2a8146b62c7a3285c9846"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyCech": {
+    "bytes": 1002008,
+    "sha256": "ffe6fd3c8e36e72d64833b43c78e60dbb6af82f1b13ecc4b72262d0476096527"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyCharts": {
+    "bytes": 587368,
+    "sha256": "5359289eb3d6d5d90da44562c88771bbcbf2e820237eadb41ae7187152dd4f0a"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyFiniteCharts": {
+    "bytes": 514048,
+    "sha256": "631ca6b4a186c3af4aa9a0509c9b0ce4f45a38dc68c9486123d009799ef278b0"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyLaurent": {
+    "bytes": 1459416,
+    "sha256": "0b6c71b937accfc1c93f10f43a818f7f4959d56773e7e63a4ffe9647ca098aa5"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyPencil": {
+    "bytes": 429384,
+    "sha256": "52958ec7c9c86ece6d36879042d5ca30891a3f30c22953b42c5977049c6c08ba"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologySections": {
+    "bytes": 794648,
+    "sha256": "6f8e2b6db2303436680c90c7fd1327392fccf0f1f801afcaf2cf051ffbfdb296"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveCoordinateAcyclicity": {
+    "bytes": 218424,
+    "sha256": "bbd518471287aa3a1a86b8049f4da2b1a5037a69080479cce5d2c1674ddb3c8f"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveEmbeddingCohomologyBound": {
+    "bytes": 148304,
+    "sha256": "9599b372d673a2655262fc6b12c841e56166e60d056061fa4c2386f4660909eb"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveFramedCech": {
+    "bytes": 245952,
+    "sha256": "ede78a894caa3e03c51bbbb9dc82cf3f9b3cbc5e4deb53617002fa2fd7f98471"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveLaurentTransitions": {
+    "bytes": 547504,
+    "sha256": "7b85a4f5d88c37c781995749cbe9c07c4dbacca41c77bd28334cd1fc2e87271f"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveLaurentVertex": {
+    "bytes": 868840,
+    "sha256": "aa8575a4432fab725bab597db5f5152ff7a29a554c6f77cacee420342fc8e4f9"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveLineLaurent": {
+    "bytes": 71808,
+    "sha256": "d53ff59623d26b0fa19af097da8400e3d8c44b014826d5102771a72a40d1228c"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveMonomialCech": {
+    "bytes": 100792,
+    "sha256": "0921696b1d677e973b46558ad8a1ea624ab0f4fec1d8ec3eabe4b4c493c72d0d"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveMonomialCechHigher": {
+    "bytes": 340936,
+    "sha256": "09f3c0c1ce3a3b5188bd86e857c6582e7e417570d01faa0529661847c9fe23d7"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveMonomialCohomology": {
+    "bytes": 527288,
+    "sha256": "e58e205431a7bf0d700663e55e0072554dfbb8ea197b12d7fd7b860e0446e7a2"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveTwistAcyclicity": {
+    "bytes": 749400,
+    "sha256": "5f884d28d1d56e8113f9f0275977d1764feb65cb69e60cb7d93fd3d8c94c4a71"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveTwistCech": {
+    "bytes": 341480,
+    "sha256": "2c1ba3f559bd881bee870f56ce3eaff0dcd9001844261208e36000914bb32e50"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ReesCechInjectivity": {
+    "bytes": 358240,
+    "sha256": "6eaba9111902788899b4a42d5e7dbed0da424bdea4f67f6951ba0a12005257db"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ReesCechRecovery": {
+    "bytes": 346048,
+    "sha256": "92938a66713c73e07c061da00eef641908576c4b36e8b2bb1a8b5b4317b08b53"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ReesCohomologySetup": {
+    "bytes": 49616,
+    "sha256": "fd6308243adc6a1364a1eebeaade6f35ec49348e0b3990d49707cccb7ac56228"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ReesSheafCechBase": {
+    "bytes": 424152,
+    "sha256": "5a8babbf78612686de364013010298bdc7ebb0ea09144235ef2faa89474a68ef"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ReesSheafCechNaturality": {
+    "bytes": 361072,
+    "sha256": "39bc86f59ee092ab43a7971d6525f6d058fc74a537200838343bd31c97672441"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.ReesSheafCechRecovery": {
+    "bytes": 761960,
+    "sha256": "ae63dca1135013e81406af49f10b9c6aa76b60c15916c34617b17806614d494b"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.SerreVanishing": {
+    "bytes": 107016,
+    "sha256": "d60f64a1e2157327a363072accce52ee933d4d0cb0799de880482d1d15d56376"
+  },
+  "OAI.NumberTheory.PiExponent.Cohomology.TupleCechBound": {
+    "bytes": 222080,
+    "sha256": "050726eafe5c3ec89e37d80566ba17c2f8d913aa519cf09de842b7b1d7e87ec5"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveCoordinates": {
+    "bytes": 180920,
+    "sha256": "f5f973a210e74275cfd25e39868f1d55a74a909060921f000d8ec2cc1b1c325b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveDegreeData": {
+    "bytes": 30688,
+    "sha256": "f4d57e00fe99b707a3e72a614642ba85eb55621d8ace1e86671ee07414720d9b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveImage": {
+    "bytes": 118768,
+    "sha256": "312e22ab9eb193362c7fa8921f1598eebf0d9a89b2c7d5d63cb60dd9bf55b10f"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveInequality": {
+    "bytes": 89624,
+    "sha256": "4903994879b949cfc30eb37eeb4113536b6de981d13f2e1642acc1fbc420c97b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveModel": {
+    "bytes": 515960,
+    "sha256": "71d7ddfa4c20135c60984a032b0ccb7f3a96de7efa20d85e9c64b0596df02bad"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveWeights": {
+    "bytes": 313504,
+    "sha256": "7195f1651c2091bf4bb7e65bd4dd1e38491c3eb0aff82537c89b0c8339fedcd8"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.BirationalOpenIso": {
+    "bytes": 145328,
+    "sha256": "526342e265493f3c0db0404949fb54d37e24ab90137d0aa1320e3e9428f9f00d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.BirationalValuationStalk": {
+    "bytes": 169352,
+    "sha256": "03446b8ea95a8ee3c04a8d048a68f046138eb25c0e95947597a0828e0d71b13c"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CanonicalRecoveryProperties": {
+    "bytes": 60720,
+    "sha256": "682d859ef8cb8fbbcc085499f7bf0871a5c976cd2688577689096d3d66dd0420"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CartierDegreeLength": {
+    "bytes": 88472,
+    "sha256": "5b067a951a835190c705d7128767bdda813a07c0b6c2e08d905701ba15dfb0bf"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CartierPowerFrames": {
+    "bytes": 198888,
+    "sha256": "ce57d24f44e8a922128d6b049ed79351f0f58d9d966d589b6964ac7af24d316d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CartierSequence": {
+    "bytes": 404360,
+    "sha256": "1028ea433c3884a0d3515c1dabf0197b7b84bb9ced55d07f93cb459a21007fa6"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CoherentProjectiveFinite": {
+    "bytes": 162488,
+    "sha256": "db9bd3ea0cf11a3b749fac24606b0103fd086808bd09e75abfd73d6344464069"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ConePrimeProperties": {
+    "bytes": 220600,
+    "sha256": "725d599e1daca7dff555776cd8bfd1e8036e8c835ef9e29e83084be70e3e168a"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveCenters": {
+    "bytes": 163488,
+    "sha256": "05779f9edb48bb7d41212221848cef7849b7885c96afba6fa9dbdb451b88a237"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveChartFunctionField": {
+    "bytes": 154952,
+    "sha256": "9afe6814cebaad8c369a51dee2e3eefd0ec7836a6f93cc628ce9ecb21ebda5e5"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveComponentCutLengths": {
+    "bytes": 129640,
+    "sha256": "0ec49cb6fb5597a09b64eacf48fec58fcf7737a48fd22ed691c257a34887fc33"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveComponentIncidence": {
+    "bytes": 171376,
+    "sha256": "4da2e61bfb7673cc655937b033aa296668110c6a78ab94a6dbeb22a0d4352407"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveComponentLocalLengths": {
+    "bytes": 135784,
+    "sha256": "b7f8c33bdeee50a43e1e3fecf8fbaec0102a17699701cdec4b1611a75ba0def9"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveComponentMultiplicity": {
+    "bytes": 115024,
+    "sha256": "8dfe426475f06ed9417a9bc11117059e541b8a8fc627179bac50d47ea8424a78"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveComponentRigidity": {
+    "bytes": 242696,
+    "sha256": "d9c5e45d72ea12d2dfd325e2876eeaef19ba8232bed1102ae28b6550c5e00537"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveComponentStalks": {
+    "bytes": 186536,
+    "sha256": "9e5db49a1ee2e53b53713f620e6d4d17e802517a8a5fc9df67b76ff0408d3a2b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveComponentZeroPoints": {
+    "bytes": 97552,
+    "sha256": "eaaa83eb8d405883d1485a7357ae6c89bb71347d63e2e577fecd355cc8dcf65b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveComponentsDimension": {
+    "bytes": 70704,
+    "sha256": "bad3b450baf35262187efb7f284e0dca93ab6bdeddfde0eb6fefd6be908ef645"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveContact": {
+    "bytes": 289648,
+    "sha256": "a25fc23649fcd5d58dd0b864f74279fceee5a6090da94698cc576e1f3d48f805"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveContactFamily": {
+    "bytes": 255000,
+    "sha256": "4db5bf3aa9a64f8905e73888fbba83c6c2b8a1218933e399c64abcb5b39df62c"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveContactSum": {
+    "bytes": 465592,
+    "sha256": "5848ea09136cf165a68a155a5fc7849cefe33bbca5ee917c97a51644cffaf7d4"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveCutQuotient": {
+    "bytes": 117360,
+    "sha256": "7a2ec94b56c6b445eeb2866ebdf5769c5daf8554cc8b4aa83aa907f3351918ed"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveCycleLengths": {
+    "bytes": 134656,
+    "sha256": "e0221f2f2399a613902c2b24aa1258db6407f47b9260a1b3738ae7a2a1c47f2d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveCycleNumerical": {
+    "bytes": 114552,
+    "sha256": "deac2c532355b0a1a2feb15c19b792aa22b19c50474bd588e13858a436562cc8"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveDegreeAdditivity": {
+    "bytes": 552328,
+    "sha256": "d02b43b237fa6b09b60e99be6fc21433976d7ea64734bd187caf567e0f7d9e81"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveDegreeLaws": {
+    "bytes": 124208,
+    "sha256": "bd15c08537b287ca884e075cd54bd399b518326e9c2858c4b4809740bd1aa421"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveEffectiveTwist": {
+    "bytes": 354760,
+    "sha256": "01db88677ca66e07d3075b963d62aea1d7e54c7e366cdf0c9125937f0bc1cd9d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveFieldRigidity": {
+    "bytes": 211512,
+    "sha256": "e7a4b1b5573553d0c764b9107366e960cb14565d6f8913e0e44b292e721ee84d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveFinitePushforwardCoherent": {
+    "bytes": 305872,
+    "sha256": "034f99e41b92d43169d13500c5a1ac4cdb4f323ab25dd37254930020eadb1336"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveFunctionFieldCompatibility": {
+    "bytes": 101088,
+    "sha256": "9b82951e43793598778e9b9f8953004a91390c065b5d783b2db8188111319339"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveGeometricFunctionField": {
+    "bytes": 220728,
+    "sha256": "1ad56fb0d4547906b1a5ff80adf0f6af98d722af0513a4d85e75c16c044309cc"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveGlobalCoordinateOrder": {
+    "bytes": 178200,
+    "sha256": "61258450190dd5e75ca90cdfb3fc3a91245a784d7592416371137dcbd2bc8634"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveGlobalMonomial": {
+    "bytes": 109592,
+    "sha256": "208897a33b1dd6522ba7631b9472a376d3532b9703a404a4a64e309d6f15fe72"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveGlobalMonomialLocal": {
+    "bytes": 344176,
+    "sha256": "db7326b2775b43557ae4fe2de1b0559c35cbcd29b951eb4419cbded6d7442ae8"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveImageAffineChart": {
+    "bytes": 77136,
+    "sha256": "16e6a395e954b04d06f24aa63650778ae505b1b42e0c845cff4f8d8b1596eae2"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveImageAffineCoordinates": {
+    "bytes": 213336,
+    "sha256": "78f79b5c45abf6c0f9d048a4ea4e2b9023538616c9d412140209760d5a6db587"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveImageOpenLocus": {
+    "bytes": 88072,
+    "sha256": "c292f10ba7f215bc1b68928d0753902a74f31859a78bdb6a363c4707bffa0194"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveInequality": {
+    "bytes": 364352,
+    "sha256": "27f9d708adf4841844857752d215f215314ab219090e5545fdb13dc4cb11fc6e"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveInequalityIntrinsic": {
+    "bytes": 125000,
+    "sha256": "4dcff0778b4009805dc1a3ad7e68f85841fe07c4c8d5073195d1b34978d8fcb7"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveLocalAssociativity": {
+    "bytes": 125576,
+    "sha256": "3041f13ee7036ef74433b230eb8c0257a980be072cc1a29c54169535552d41da"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveLocalMultiplicity": {
+    "bytes": 83184,
+    "sha256": "ae284a67f58607210c5115fc56b440a86f012c74b4ae56705962ce2912321b6f"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveLocalOrder": {
+    "bytes": 265768,
+    "sha256": "bbb8a99ca625ded5926442095d0b74aebe6e6a0a534e1072e206ec189264093f"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveModelFieldEmbedding": {
+    "bytes": 220392,
+    "sha256": "5d9c0946c635bdd6e5e74b5609e8a65253adb1ef2337fbf22eb4989b995ab5de"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveModelGenericPoint": {
+    "bytes": 185864,
+    "sha256": "105dd15ea0a89b70d6615b285e3c32df43e7ba35f739d1b013d7e412bb577db5"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveModelInfinityGenericPoint": {
+    "bytes": 112920,
+    "sha256": "821c6fdea7e3c5b87cfc6a4acc0e6ba93a241ed23836b2788e7c00d54fd4abca"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveModelLocalOrder": {
+    "bytes": 446888,
+    "sha256": "4d397e485e0d937a690f586262a6a52edd084e546da90bcc16c0798c26e12b77"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveModelPlaces": {
+    "bytes": 848096,
+    "sha256": "81944d5e2814dcd42b8f21aa837a86dff586b7283b8468d8c641554ce6610864"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveMonomialMap": {
+    "bytes": 175912,
+    "sha256": "7d8e1e40566fadc731acdaa49ea6623cf52dd9ed6d7c4d868933ff3a543167af"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveMorphismFinite": {
+    "bytes": 103032,
+    "sha256": "6a853096597226c89b9df542a5ae75e94ee848f567321f693a21d80e133ab146"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationDegree": {
+    "bytes": 308048,
+    "sha256": "ccf83abe2243cf5c3fa38ff000c242ee1f31c6270a5b4cddc9ec1b1d774ce086"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationDimension": {
+    "bytes": 269648,
+    "sha256": "aeeb42e80c9f2d594b224c98fa7749b32b3b03882235ad1e0b60d5489ff3e78c"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationInvariance": {
+    "bytes": 222928,
+    "sha256": "703163cf3e88a13bda932286109a588e61aa7f5405f9a94d1e15c81a8ed05cbb"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationLocalRing": {
+    "bytes": 164176,
+    "sha256": "8e7dda0f89eccbb5a9eb755954cc61d4bbced6ceee6dcf16e58fc27aa0b724a7"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationModel": {
+    "bytes": 672488,
+    "sha256": "543442afd328a8dd912944f6d231645a95da4431bf34e84240837accf70b7553"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationMorphism": {
+    "bytes": 226368,
+    "sha256": "90c8d326a1087e9a2702b89f92253f60e5eb2f044b9cf19150c6c5605aa69faa"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationNonaffine": {
+    "bytes": 70104,
+    "sha256": "98a235ac4e096c86423c312b663603879e7ee91ca949f968912d17b41cc6faba"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationOverlap": {
+    "bytes": 402144,
+    "sha256": "cbe7e826c82c68200a10d715f00bb276abf899eee16f3860001fb4fe17277ac0"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationProjective": {
+    "bytes": 301136,
+    "sha256": "f399b9b1c8961c9a778f917c4d7b8abf607ea6f1cb786dc941b52f2c4f1156d8"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationProper": {
+    "bytes": 307984,
+    "sha256": "5d93c861b8889ef4fffef25fc5010300be521d5567930227f3c1c328545d7e87"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationUnit": {
+    "bytes": 119352,
+    "sha256": "be660bde01c0d07589abf636454938b095aca6c6d98fd47bd8e2fd1532a25844"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizedDegreeTransfer": {
+    "bytes": 127448,
+    "sha256": "f8953261f6cbd5416eae5402f815f7186ee2ea4a01d5140a35f0ece5e2771e87"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveParameterFinite": {
+    "bytes": 52768,
+    "sha256": "1d218cc7f30599150cb6c44d2ff927463bedd2a979fd6347a385d210582e4e50"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurvePlaceCenter": {
+    "bytes": 186080,
+    "sha256": "67bfb9bb80c14fa3b3c9d73861b214b049524b5b4a581c6d7f5786d71b9dd989"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurvePlaceCenterStalk": {
+    "bytes": 104424,
+    "sha256": "79a9e1d8f93f4cfa9f19644b66e9b46ede7875df76dfca759974362f809f30c9"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurvePlaceSectionDivisor": {
+    "bytes": 106568,
+    "sha256": "e93224634e50f8af73f36864bfefbb4848ea84fbc046a6124b91b769579ceabf"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurvePlaceSectionOrder": {
+    "bytes": 82224,
+    "sha256": "8b106a9abea35b6467c5a083a7c1039c8c3d6a550f72f0cd6c900b74dc996a06"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurvePrimeHeight": {
+    "bytes": 221064,
+    "sha256": "d6fe7d892a5369b7f1468b23d96cf5f91f8c2b1c82b36809c55d31447e061d55"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveProductFormula": {
+    "bytes": 297016,
+    "sha256": "5a780b844d39fdc383af96c370872b6e6614b2103159314a9ac4433d4c09a34d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveProperExtension": {
+    "bytes": 123544,
+    "sha256": "12d617a31ab84596b97b79679ff8f19bac824f3c83fd0d7d83038b5b9d3e576a"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveProperImageDimension": {
+    "bytes": 105896,
+    "sha256": "c50dab710534e3628cb8fbfe49abf04f51f6785e19611e4fd99bc26c5f2f0bf3"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveSectionDegree": {
+    "bytes": 245552,
+    "sha256": "7e9a56cfb4fdd155f53b00ba1832c4f6aca20742b89e19ecf07e64abd30737a2"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveStalkGluing": {
+    "bytes": 172976,
+    "sha256": "c983f3d06781a29710f482a374ef4792612ac4b055ab56e5866343bbaecf8cfd"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveValuationCenter": {
+    "bytes": 823504,
+    "sha256": "a186f10e67c442d3ed326a2cc65cfde6364a0bf508db9272f356c99812320d05"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.CurveZeroPole": {
+    "bytes": 793952,
+    "sha256": "e553aafed130d7693338020fc08c3591ed279a5442cd724aa8ecfd57efa88462"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.FiniteCurveZeros": {
+    "bytes": 316272,
+    "sha256": "34803d45fadbb761152eecd47fd0a5586a219df2e1b222ee5e7aa2c170d21b2a"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.FiniteNormalizationGrowth": {
+    "bytes": 699024,
+    "sha256": "ff97f9f5c61f21b32aa6a623c54303525e4403302373c45b788034eec6bc4199"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.FiniteOfNoContractedCurves": {
+    "bytes": 92080,
+    "sha256": "26302389e9dff43fc6328ed661e5fdf5c127ce00171f03a0b5d9f32bfb10c433"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.FromSpecStalkLocalIso": {
+    "bytes": 122680,
+    "sha256": "7ac97871436a0a97579af0a55b3ce2860fb3dff2041f28c89a1f9a6e9310afe5"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.GeneralCartierDegreeLength": {
+    "bytes": 198976,
+    "sha256": "b41bfad3848370adcc97aa669ec5f573c078ea44be7ec1ff5f0d35e2b5f6a5ae"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.IdealSheafPowers": {
+    "bytes": 112952,
+    "sha256": "b0dcc5abd9c8fa05402d34706668443295242b28784298f852f83b6cafacf3e2"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.IntegralCurveExistence": {
+    "bytes": 234864,
+    "sha256": "9378dbb1c2da6c1b268a39990a9898611fd77b83f45ae69fcdd36a6399df5091"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.LineBundleCoherent": {
+    "bytes": 122024,
+    "sha256": "ad80c8ed01042e45afd8ddc9537971fe2bf5b5cd479b2b82004596d97ba0e7ff"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.LineBundleFrameCocycle": {
+    "bytes": 768032,
+    "sha256": "a4b62af9b933f15d079bb8b30b49e7097b16fb8057f7522328cb16dba6af0da6"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.LineBundleGluing": {
+    "bytes": 1280536,
+    "sha256": "4028d9f9da63cee40aa292550450fc5ba58473adbdd86e508f59eb5d0cf760b5"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.LineBundleGluingSections": {
+    "bytes": 574360,
+    "sha256": "892900ad1db83cd18dcd2588bbba335044b11b7141117721342930460a16ff2e"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.LineBundleGluingTransitions": {
+    "bytes": 338712,
+    "sha256": "77c58b4046e1cc86694232531a5f9a98b3f3295a2a91ed0b4d470396b1afef54"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.LineBundleInverse": {
+    "bytes": 44704,
+    "sha256": "0ea34a81edc97c0a1b6527f291305bd9ec1580385e96c5cb5b2631a6c6881a64"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.LineBundleProduct": {
+    "bytes": 160184,
+    "sha256": "ef4978fb2376f513ea965c00eab58a2a60aacff6a11942d6da7593ca5ed2387a"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.LineBundleTensor": {
+    "bytes": 1237824,
+    "sha256": "da4248365cfca0763dd0228ed7b5831c9afee2b277dffc439992379dc2444347"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.NormalizationGrowth": {
+    "bytes": 242264,
+    "sha256": "42d346445050239ddad65d64ac486b150e3b284ed3fa66b4b9fe85d485b955fd"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.PlaceCenteredBranch": {
+    "bytes": 381320,
+    "sha256": "7d2acaffcfcba26258d2edb29f35ca64917a90168f8d64450c2196569535fc54"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.PlaceLocalRing": {
+    "bytes": 88880,
+    "sha256": "474739ce2c9cdcf642c6233e3bed1cee039e9b012d0bd4fdd47af5ddb6314e9b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.PlaceParameterModel": {
+    "bytes": 404328,
+    "sha256": "588fa61e5276137db17b8ad6b5169f736414fdca924e3054d049bf469abfb566"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.PlaceValuationRing": {
+    "bytes": 170056,
+    "sha256": "e6688548e040665b4be9cd847ab4fc535d3a0ffb4aebd10494d6acec81420e55"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.PolynomialProjectiveStructure": {
+    "bytes": 101592,
+    "sha256": "0afeb23d6c65410fe07107f9e74814e461947a28fbc147e9747099458ba1e7ee"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.PrincipalCartierSequence": {
+    "bytes": 151240,
+    "sha256": "893e2cc8956a078085171447ef70b5be90ae6c7e2911efdc2873eaa9baee7199"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartOverlaps": {
+    "bytes": 278032,
+    "sha256": "bc83318ac233a1bddfb0c873c32afb086469f00505238fbc592e9566873aeb36"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartRingNaturality": {
+    "bytes": 288016,
+    "sha256": "7ad5fdc53385c73c5d173ff72261e2a7dc80289952184d6ddde835efab629ac4"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartRingNaturalityCore": {
+    "bytes": 426384,
+    "sha256": "c0b74904ead3851855f06a74d0367809ffe966797a374ec7e764f9e20ea789c2"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartSections": {
+    "bytes": 207360,
+    "sha256": "956d49ed147e3e88e0d66ff510adc43cfbd61c161caaaf67289c488b8808d9dd"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCharts": {
+    "bytes": 527208,
+    "sha256": "28cffd3e37b022e0dac8aa501a257dd26b8e36db3c1043aca88be2fbdac183b0"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoefficientBound": {
+    "bytes": 83208,
+    "sha256": "4b83ede9e6b5ac3a0cf091cb6227aa91d64cf8f665fad2e00322ee0ea262524b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateChartMap": {
+    "bytes": 188368,
+    "sha256": "9bf98ab1ade42f420b1b7af1374a4164b79e9b12a19d110eb3b0a1a41157ef3b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateConstants": {
+    "bytes": 317760,
+    "sha256": "59557d7978efa716b036f652920731e08e4424d1a41612e7ca07a29e36054bc6"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateFinite": {
+    "bytes": 129296,
+    "sha256": "4e305b00e8a973d07a4e0fdf88a6a8c61d1b781b2fe7a2ef7339742fbb0f88c4"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateFiniteSections": {
+    "bytes": 170448,
+    "sha256": "e666d7affe0778f489f3306d9e9241aff3f0031074524452392013d49c480fd8"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateFiniteValues": {
+    "bytes": 279024,
+    "sha256": "47d1ebd079257b8f18ae974b6b6c1f67c3d1a6a1049c4b0f65f200ce9fd5b3ca"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateOverlapNaturality": {
+    "bytes": 176544,
+    "sha256": "6a0859b6c0cb3a3abff54655e3b1ed99da3f59163fa04be328cae35425e2054e"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinatePullback": {
+    "bytes": 159048,
+    "sha256": "a782c90f7ffc73e84e827583a6974aab82c17ae7e2e2ea0da97938dd1220bce1"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateRatios": {
+    "bytes": 326888,
+    "sha256": "21370ac290f7cd78ac92446d22bd6862b3471cd28adcc6212dfc6ba3d7d10b0d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateRingNaturality": {
+    "bytes": 273896,
+    "sha256": "ed8d2fdb9b10072779b9b011a990cd79d2ab314336079fad82268e7aa183bc40"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateScalars": {
+    "bytes": 272760,
+    "sha256": "93b08e17481a1ea7e3006e27790db50eb7f83a28ee0f3f0c6a1bd9e20c49eed8"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateSections": {
+    "bytes": 268464,
+    "sha256": "79fa5d5d644e4643bdc1c8895b250847f96470ae2254bd3b6f5031c3248ab936"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateTransitions": {
+    "bytes": 231584,
+    "sha256": "c444c0a42f32f423dcf14a125039d93db9ad98c0666d224f0ce47b98fb6d5cdb"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateValues": {
+    "bytes": 224768,
+    "sha256": "bf6dca28d7ad8195394ce398202cf315167b4b342b1252e072ab98a3552b9af0"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinates": {
+    "bytes": 1346392,
+    "sha256": "b9e87c2b90910b494bf74ce4c276027291a6a51bfdd8d2b750d3a3aff2bb06e7"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCurveTwoAffine": {
+    "bytes": 220224,
+    "sha256": "8b826b05003206c91d73df19b59f09748fe75bc701ee264bc53c4f8e9f8817d3"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveDenseChart": {
+    "bytes": 134456,
+    "sha256": "56b7e41e6156374f97f909d21748a2614bbe022635a59656160acf47a6672200"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveEmbeddingCharts": {
+    "bytes": 452848,
+    "sha256": "5f6d92a6ce47747de2c0bbfef865a43d792f1e73f92065a6b6806d241e7789b6"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveFiniteCoordinates": {
+    "bytes": 140168,
+    "sha256": "809c9cdcc1117eb29cd04c7943bcf8157be61444d10518c780a0eec81139109e"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveFinitePencil": {
+    "bytes": 92976,
+    "sha256": "d719d2ac89ba6e94340c94a5dadf7014f5d3bf18d362babd6d3793231ecab0f5"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveFrameNaturality": {
+    "bytes": 265408,
+    "sha256": "67d951c9058632c78ea4f96555fb21b2b3bb7d4f445521bc434e0ade5fe54b22"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveFramedAtlas": {
+    "bytes": 243920,
+    "sha256": "866245d94715ae0d59e92f49bccf501aba2165e3b5436bb13b254168023767e7"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveFramedSections": {
+    "bytes": 435264,
+    "sha256": "bec1f94495fe67567c96bb961aa177b001b0f4bd2beaf8194516b601f487c176"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveGlobalPolynomialAlgebra": {
+    "bytes": 336608,
+    "sha256": "33a1f0dcd86a509afb3f2b7298d97cd04ad4761a018c31564a677db73605e296"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveGlobalPolynomials": {
+    "bytes": 430240,
+    "sha256": "df54db049eef0727601e0599f41df9dcbb392750af45789182ae8be16925bb5c"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveIntrinsicCoefficientLaw": {
+    "bytes": 263624,
+    "sha256": "63bba1beba9a7e4664503005ec572b2c48d9ed67eba5d097d044d3fed2875d57"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLatticeOrder": {
+    "bytes": 118360,
+    "sha256": "b8a8d152e8e41be1c19332b103f2e4d3845bad9bf07320875356649f6b608e0d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLatticePullback": {
+    "bytes": 145216,
+    "sha256": "258d83136272fe7726269f10b39ce738331e90cba5c40961c98c50828f91c9f0"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLineCharts": {
+    "bytes": 304672,
+    "sha256": "4feb4fb7c637b2fe54e631f22dafea60b94d970db60c58fb120325091189ac67"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLineProper": {
+    "bytes": 121016,
+    "sha256": "b22790982c25b44c66dbba1364c12a5b8e6f4301be52ef8348f2d8c6c4ebf923"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLineReciprocal": {
+    "bytes": 199160,
+    "sha256": "c1dff88769f04f8944ecbd791cc5b5665212e4e428f0b30aad47530deb6c66ce"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLocalCoefficients": {
+    "bytes": 298424,
+    "sha256": "b55fece7b4dd6d5f4a0cec436e6b113ccb7ad25f2f8c020914c47beed99a6278"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveMonomialFinite": {
+    "bytes": 216704,
+    "sha256": "af306d0952611c16ddeb52bfcdb329ac8e21458f4d88dcd31e2bed3facf292ca"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeCoordinates": {
+    "bytes": 182880,
+    "sha256": "5528faf4c3f405978b9559b09309851d2171d6cc0eebad51d33155fad433362d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeFrames": {
+    "bytes": 114360,
+    "sha256": "1963cdb3f414ae37c809c5aa1a70a3f7f7804ad37f1ed474c12246f84fc771bd"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeScalars": {
+    "bytes": 320464,
+    "sha256": "4cad36c8bc05bcc45855082afc92da1b1981465a3f331bcd9a0b1b62f372e2ce"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeTransitions": {
+    "bytes": 170288,
+    "sha256": "5e91c34737b727ce366c04bc140c0b83bfb5ed7528fb5fa7089c6093ba3a74c4"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1ChartMap": {
+    "bytes": 396856,
+    "sha256": "d644826fe5d4ac6abc1632d7d01097029ab8995c6ee765674f0a53af31d42c4b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1Identity": {
+    "bytes": 13688,
+    "sha256": "ffe58b7f4d0e7b5d35690e281e6aeffe96ed46d16e000cb67c8597452393c8b6"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1LocalIdentity": {
+    "bytes": 40552,
+    "sha256": "8b3c1d64c1ae6a6df894c78a776b794c20132d3e9e8ec4a973fbccaece2c0c05"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1Morphism": {
+    "bytes": 63624,
+    "sha256": "03fe0b06aabcab6dd75da5f8f23396c2e6a95acd9183cfc9278dd6a8f1ad35f9"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1Sections": {
+    "bytes": 150752,
+    "sha256": "1a56aaede8eeb27f9960f7e87e2f59e2426c290aaa61fdfa7141fb7496e61583"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectivePencilScalars": {
+    "bytes": 96008,
+    "sha256": "37f3e5d083658c4e38fc9f739189f169e880bc29a8cb2f9967a461c6f72fbe84"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectivePullbackFrames": {
+    "bytes": 123608,
+    "sha256": "1e8f555956520c7cf3b6a1815efb380db5044db3b579af96cd0018e1f774f6d7"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveRatioCocycle": {
+    "bytes": 256336,
+    "sha256": "852847be5d0b36bd592cdb40f42413ef369e25084038fbfa2ee2ae88f611db3a"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveRepresentedCoefficient": {
+    "bytes": 157088,
+    "sha256": "0a5027cd6c27d99c41173208b83d46c1f8043cb5a5c20f087d441dff4cf9fd96"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionExtension": {
+    "bytes": 141472,
+    "sha256": "1f1cc4b92114a302699b51ed7ad11ed64239f08003bfd09beaee917ed2be7ecd"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionInterface": {
+    "bytes": 94656,
+    "sha256": "b7f13164bee48bf2da54d0d8b1188a6101528fb1c2e75dfa2d3915bcea3b2631"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionPullback": {
+    "bytes": 119464,
+    "sha256": "5e9b48a9c46b1ab67a4560a546a15aba933b7e858a6b5b393fa076f34b133aa1"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionReindex": {
+    "bytes": 474856,
+    "sha256": "9a0c4c90061a2bd49f20da8fa6393c029ae76ca570e095eef8c1efc74c043679"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionsPullback": {
+    "bytes": 341432,
+    "sha256": "e0ee75862a9e2a93ad13762e86b6f45ffe9a9dc12b06877134fbf970fcaddea3"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSerreTransfer": {
+    "bytes": 154360,
+    "sha256": "2d1db65eb7f7b73e99d81ef06a472138039e7edb29115e663e960cf113baa4be"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceBasics": {
+    "bytes": 44976,
+    "sha256": "65b367c729674952690e9820b1e0bfdfc05e8a9dc88daf7fb8e09df1052ea37c"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceFinite": {
+    "bytes": 105320,
+    "sha256": "7ad92cdf2a0ce50848010f817dabe1d42391161cd429b04c5e53d6e9ebfd9225"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceIntegral": {
+    "bytes": 49208,
+    "sha256": "13a8179ed1c3cf729a375f367b72a42e034eb1556acc3dcd919f3c2a0d2b299d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceSerre": {
+    "bytes": 73800,
+    "sha256": "dc9482b30e9d96a9773c203c9d69d24f2c39eef5e0de26b5bff6e162a07ddb98"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveTupleCharts": {
+    "bytes": 371568,
+    "sha256": "ad25613187984e0cd9258d3183114c9cd76c1b182afd570471256fd020b5e758"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProjectiveVertexCompatibility": {
+    "bytes": 147992,
+    "sha256": "b45df1c61ef7f29e391d14af98ce61b3f049c12c93093c3c841abdb1c618142c"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ProperHypersurfaceHilbert": {
+    "bytes": 186760,
+    "sha256": "1aefec6025fc1cbf29044219c5ba5cfd3ac46de8498fad17f4becd3b60671ae2"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.ReducedComponentStalk": {
+    "bytes": 184960,
+    "sha256": "db5389694cfdd38273a022024aa578c4847bf21120561d9cf377fb484f24b18d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.SectionCartierPower": {
+    "bytes": 208120,
+    "sha256": "557db5e1d0bc9c3b6333b5c77e8cf1e7a4705afd4d50ffdc51953045d042ac8d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.SectionCartierRegular": {
+    "bytes": 86544,
+    "sha256": "c5ae9211125bd267437848e01e0ededcca239064fb357b541701e4dc3a6cac86"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.SectionOrderDivisor": {
+    "bytes": 189176,
+    "sha256": "441259442686b50c1d2cada2ab84bb23beac76a011340397c234364d08795254"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.SectionZeroStalk": {
+    "bytes": 280368,
+    "sha256": "2e6f143aa13d67bd0d0a6c4721754cd6edfe259b90d82d41770a286a49636115"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.SheafSectionGluing": {
+    "bytes": 281416,
+    "sha256": "f618b84e033662a94a674314a79ecdb483348306c4e44e987ea30af7d17a635b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.SheafificationUnitIso": {
+    "bytes": 66912,
+    "sha256": "babe30b3603b0e63889743fa9d0824e236853f49e49148ee526818bc4a3e60b4"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.SupportedSheaf": {
+    "bytes": 169968,
+    "sha256": "6aa7432ca38ccf3908014a4407524f90747527a46582f31305bfd49465b11eea"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.WeightedCurveDegree": {
+    "bytes": 452312,
+    "sha256": "c570009e8c6bccadfb36efd2ddfcd5f31ca3c4117fada186eb46c10935f30eb4"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.WeightedCurveRigidity": {
+    "bytes": 182368,
+    "sha256": "0fd56fca2954783b027d85d49db13f80817d4fe718ff0cf0f78e6a0e2bd02794"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.WeightedLocalSheaf": {
+    "bytes": 311728,
+    "sha256": "c02d487332bd301f836a6412ecb890b016269cb2c08c9f66d9c50e51eec73f88"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveCurveDegree": {
+    "bytes": 249200,
+    "sha256": "24395ca929a96ce3b4aa5e65deadecb7d3aa62ef28f5ac689008153b5a0ae15b"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveEmbedding": {
+    "bytes": 97560,
+    "sha256": "7f5873b4c1c5d1b88e87fa78bdce5aa8563438f5b853b6caeb4546d093b5cbda"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveLineBundle": {
+    "bytes": 136488,
+    "sha256": "eee7edd1d62b3dd37d28020a6b6ab255c1ff80a12f7ad6fd4db08975af5bf93d"
+  },
+  "OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveStructure": {
+    "bytes": 60392,
+    "sha256": "d261f511f691cf6562b8bb6ab3217e3ec8812f94eabef274edb2316a04908439"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AdmissibleJetPackets": {
+    "bytes": 94248,
+    "sha256": "93d17e5fd883d6190e8aba64ada98f2e48568c872409cf581b13e974b9317429"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AdmissibleJetSurjectivity": {
+    "bytes": 28464,
+    "sha256": "75e7ff15a48aaccca5407647b229cc2f6fb826d83a14d926330f1c5c089f8242"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AffineJetCoefficientFrame": {
+    "bytes": 189896,
+    "sha256": "ead9e77a31062c0ac9d00296722b8ba9a0c2d9117800c101ab32f14ec177a490"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AffineJetCoefficientInterface": {
+    "bytes": 21576,
+    "sha256": "d31108f38eda2763ecef3463857aa39499f63630d97250162fe4cf54517c1a0d"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AffineJetFramedPackets": {
+    "bytes": 43928,
+    "sha256": "e48e67053fe073b7366e4ded3291f5b7613512c3b704b981f72345d962f171d3"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AffineJetPackets": {
+    "bytes": 114600,
+    "sha256": "8ba1d02c98cd7edca0eedc8d3e792dfa713119969d5179f2cbaca88be8273b45"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AffineJetPolynomial": {
+    "bytes": 201608,
+    "sha256": "b961748d85b46a24d983ca930115b55d6cde9e0c80bd335e81891e3008ece915"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AffineJetQuotient": {
+    "bytes": 255200,
+    "sha256": "c415d0b6b2a02f2c07a2a575fb247374219279e4fe12db4bf20c2a05e3417b21"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AffineJetSupport": {
+    "bytes": 207840,
+    "sha256": "3c051cbe7de03c004a5c3257ad9560102a6e611e49cf4632647f1657beb634ed"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AlgebraicJetPackets": {
+    "bytes": 374656,
+    "sha256": "f18e64976401b5ad589e0131f4eb1c4b86543569ccdd6a3b7acf7f8699a6b74c"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.AuxiliaryJetMap": {
+    "bytes": 206080,
+    "sha256": "c453b2a736f23492300c82d467dca0deabf02e70984236afb6342dba69fc2b2d"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.BranchContact": {
+    "bytes": 146976,
+    "sha256": "1230c04cf5f3f520349bfec2d99cf0cb486722847ee2a5b01544adb89356a396"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.BranchContactIdeal": {
+    "bytes": 277088,
+    "sha256": "cc3a2f0801d74140e00719db8beb273c312872ef0c01ffdbbe7d8488149a2f71"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.CommutingTaylor": {
+    "bytes": 697488,
+    "sha256": "f412b427f849e0baa783183bcc0a7ec5ac459e37afe9bcf449d8f138d3e845c9"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.CompactJetIdeal": {
+    "bytes": 104776,
+    "sha256": "b2d668f99aff0c1a08b750b1a3894844558cf8d2038c417daa6f5958963fc761"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.CompactJetIdealCoherent": {
+    "bytes": 86256,
+    "sha256": "208aa2cac3506bb6877f198222f6f3f89175aae5a1ea221d637de9ca2022f0b0"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.CompactJetPolynomial": {
+    "bytes": 388040,
+    "sha256": "0111381ba06a793375b62edcfa9de2154f2944c24c10d512967b208c4d5819f3"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.CompactLogJetIdeal": {
+    "bytes": 212144,
+    "sha256": "73844e3ddab2b4f9b652553137514e6e7cd56dbe8f4a1b080f3655797cc56ae4"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.ConormalPairing": {
+    "bytes": 127296,
+    "sha256": "2b2cdc18b637c835a604e041d759b094f51119fa7169078d33784129cf83ea53"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.CotangentGeneration": {
+    "bytes": 172648,
+    "sha256": "970a90f051a820bb12dbbca860d5ae636eb3aed150c17f9b1e6e1c7b970a3cc1"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.DVRBranch": {
+    "bytes": 81448,
+    "sha256": "fdf26d574218ef67a063b7b4ceadfe1638dddfea33723d7c15e243f3b79791ed"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.DVRBranchExpansion": {
+    "bytes": 485056,
+    "sha256": "c10c574e20169557421be38b65349c40a7f94bde9a1089f97c4a292a433d483a"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.DVRBranchJet": {
+    "bytes": 217704,
+    "sha256": "7d2be89eefe790030495f30e6aa4a4c463af76e41aa7f3eb6919229cc167b277"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.DVRBranchOrder": {
+    "bytes": 147632,
+    "sha256": "0f7dcbe471f417d37d9a1d81cb4aea017a1ff053c543600e29b5dba6c8210045"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.DerivativeIdeals": {
+    "bytes": 318960,
+    "sha256": "85f15403519c85fe2d413a4f9cfbfeaa2af722b00e99c512f6afef27596714e0"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.DifferentialConstant": {
+    "bytes": 54208,
+    "sha256": "df9c99bd14adee09f201b81478f3f278616fe68bf28248ceababa63259695c3e"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FilteredLength": {
+    "bytes": 219232,
+    "sha256": "f920894c7844506b361bdf40f8bb0ab225661afa536ad6669e2221b897dbf91c"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FormalAuxiliaryJet": {
+    "bytes": 201192,
+    "sha256": "6c019cc922d07acc406fc4fd5cd6cbb86ab49b727157f8a8e107750ec8d4efc4"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FormalBranchContact": {
+    "bytes": 50936,
+    "sha256": "24bd8cec1b814d819b934c433f4c13079036a9d757ebd81fb35b6d6789f5ff50"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FormalBranchCoordinates": {
+    "bytes": 106568,
+    "sha256": "ec5f1ec17209dba910454dac9de629c94888d643c58b0c2381cfe97fd5d6c786"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FormalBranchEvaluation": {
+    "bytes": 182192,
+    "sha256": "589457b0fe6194dd31e657049aa02735f35fa55ee7392875d9837acdf41319b5"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FormalBranchOrder": {
+    "bytes": 135728,
+    "sha256": "c927dd95bfc30336cff4d41019825db080e92dede0124f34338b338c9e4ad2fb"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FormalBranchOrderRational": {
+    "bytes": 177888,
+    "sha256": "e4d76c0224c21a3dc5b277519ac05aa7da31912962783d084ca447c583d739d1"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FormalJetDerivatives": {
+    "bytes": 170664,
+    "sha256": "19b27ac719b8aec1580f5e9ebad3109a592d21901f487f5649e087dcf47fb0f7"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FormalJetIndices": {
+    "bytes": 163472,
+    "sha256": "f68f57f859ada5c94e39cfce6e379d76f389b2d472cd1789000bbc5f0bc09871"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FormalLogJet": {
+    "bytes": 397328,
+    "sha256": "b176a26159f03e85078a5a7579d2c371dd15c1cbd23381f057104b0ce83decf4"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.FrameTransverseMultiplicity": {
+    "bytes": 130512,
+    "sha256": "87d65549e6431b2a2367ca5b33e3460a97cd3c90d8f3a54a4051f565bdef6d7e"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.GradedGeneration": {
+    "bytes": 456184,
+    "sha256": "71e98c1a8a11dcac319aafa1838092e72c5a82f40f8933d1819c799f2ca464d5"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.IntrinsicLength": {
+    "bytes": 186296,
+    "sha256": "4a197505f3fd307bcf62fa0b9b7d02fe8d3885042f644af66e362cc86c11061e"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.JetCenterIdentification": {
+    "bytes": 186952,
+    "sha256": "4817fd332a169ec0d93278c30cfa680d2717d901a2f34b7389cf7b5a21a3944d"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.JetGeometry": {
+    "bytes": 485840,
+    "sha256": "01070f3969cbd493ff9c5316a144c7a38a88e6b091256fd871b988e27c406286"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.JetPowerIdealCoprime": {
+    "bytes": 85520,
+    "sha256": "2f1c90194aecc92502f6d20e1a1612b33e6f9574e5b36ff62a8b00cf5bd0d1b6"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.JetProductLocalization": {
+    "bytes": 177272,
+    "sha256": "662bc72258bbe1f3b7aeb80cdf1a44e77a634bc0f74104f51b0eea6a03fca242"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.KoszulTopDifferential": {
+    "bytes": 200936,
+    "sha256": "50567640ce96c2ae9d50d5af2cb4cb809cab290efb739bd8b3f8c01bbc0eab31"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.NormalBasisProducts": {
+    "bytes": 215536,
+    "sha256": "e2e45ffab690560ce69018631478c57a03180b8aa0aa360f31b098a073782165"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.NormalBasisRigidity": {
+    "bytes": 255440,
+    "sha256": "621a20b360afe8c1f928c6d6b47696bb14e2f3f42c719aaf6e2b1bfe5b5217b6"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.NormalFrameBasis": {
+    "bytes": 487184,
+    "sha256": "fd05570da213da0cbde794b8b011c85837cba988b005151cbbd32237f9c03a93"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.OrdinaryAuxiliaryJet": {
+    "bytes": 241192,
+    "sha256": "0426f709c5bd86de225d66c733e4b531d3929f06b7575ebd47ebffcb30008869"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.OrdinaryBranchEvaluation": {
+    "bytes": 112000,
+    "sha256": "796690e00fcb5491451a9faff32b701fc4449d0b8b6ecb37492383ed8d954729"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.OrdinaryDVRBranchJet": {
+    "bytes": 156920,
+    "sha256": "14527792502b67b5e165a1715e3addafe9ad3123398502174fbe6113b9082bf2"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.OrdinaryDerivativeIdeals": {
+    "bytes": 190664,
+    "sha256": "6e56bdf8669d8c6001bc7ebfc6b158abcf77f4fbff676ec246868423b8e2aabb"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.OrdinaryJetDerivatives": {
+    "bytes": 145320,
+    "sha256": "328eadcba0fcef9ce7764627513e0229edf5746a17087efb475f78f86e70c304"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.OrdinaryTaylor": {
+    "bytes": 222128,
+    "sha256": "1ef8c86eeb98d4cf1a2c3c8c7404b62417e34cbf2f4c41f505d39e21a9327852"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.PolynomialJetPackets": {
+    "bytes": 63016,
+    "sha256": "a3b979f0d40e61ff54e7cb6cedd90d1cf3ab58c87da7f335f08734674e15cdb3"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.PolynomialTangentDifferential": {
+    "bytes": 435152,
+    "sha256": "51ebdf4c7e9d485fec859c73fe5143afc71c4e5b905e4dc9ce842f8bfc398015"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.PrimeNormalCotangent": {
+    "bytes": 625096,
+    "sha256": "52b6dfd7562012fb33bdfe136a336a149c7dad7bed66f7a9853c0fcbd66df27e"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.PrimeTaylorCotangent": {
+    "bytes": 319184,
+    "sha256": "e4354f53d3032aacd012ee87fb00ac1dcd8cd0e8108a930d14c583d6c7cc9abf"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.RectangularCotangent": {
+    "bytes": 540160,
+    "sha256": "f80ba40dfe20c3b3b1d6b5a5ac7b84919aeb03422e1f8385baf96a6e75936a02"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.ResidueConormalPairing": {
+    "bytes": 138104,
+    "sha256": "7e13828021f102282d415f5d415817b5af911b2247f79a0c930d65009980b03e"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.TaylorRectangular": {
+    "bytes": 415248,
+    "sha256": "ef07383af12180dfbebc2c4c9a7989773daa5d138bf293690089f65a3c8410e6"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.TransverseMultiplicity": {
+    "bytes": 788784,
+    "sha256": "58b58ef3681d3870b9eae720e6dfe6d1cd7d5b319fcccfb4baa33469209d9d36"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.TransverseSliceComparison": {
+    "bytes": 213064,
+    "sha256": "94652e95c7135ad788deb0ec3c0bb5e80aeba2b40cf20d4673cc0c80c5e7e47b"
+  },
+  "OAI.NumberTheory.PiExponent.Jets.TransverseWeightedMultiplicity": {
+    "bytes": 166512,
+    "sha256": "9e2d7ad1edc01363420d2ce71ad8658340b1a189291f438561fbcfe2f31905d1"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.AffineClosedPointLocalization": {
+    "bytes": 547464,
+    "sha256": "fe992420ec06a27759214ac71f95024b78555545946f10c5131065151b52fda6"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.AffineIdealSections": {
+    "bytes": 197392,
+    "sha256": "d3e185bc9fef137ce6c365143017f78ed9496e7707186f7a7000afbcbe9a4ced"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.AffineLocalRegularBezout": {
+    "bytes": 234688,
+    "sha256": "d33de404d5f2a3fb8cfecb2e66799349be743fe0b11d1ed14c0b67cfcff70ee9"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.AffinePrimeDimensionBridge": {
+    "bytes": 65440,
+    "sha256": "b08f6149e568db74d47ae4460d9e0e9ac01d58eef3fb8037702ba6f4c6db93c0"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.AffineResidueTranscendence": {
+    "bytes": 120728,
+    "sha256": "c54c55e83cd76e11133d5a6a8f2763789b41abf4208fd0e1ca95d0fa6159cc9e"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.AffineTranscendenceDimension": {
+    "bytes": 143880,
+    "sha256": "414ba6354fb27d2e2502382fc88aad15a38e7d3f41ea31e5de04a79cef7dd539"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.AssociatedPrimeAvoidance": {
+    "bytes": 108960,
+    "sha256": "e25e6e2f1788d7bb3414b9cf7734a7730bf187b7e503371238bd6a73a0b8b752"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ClosedPointLocalDimension": {
+    "bytes": 117968,
+    "sha256": "709e464a1f3fd690ba4b133a647a1823ad19ded4ebc564a2c6e67ef679a287fa"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CoherentExtFiniteness": {
+    "bytes": 786344,
+    "sha256": "c878c296bdee80b4a942ab2d04b231d6572768e10db4accf22d4d89c2fd9511b"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CoherentInverseFinite": {
+    "bytes": 102952,
+    "sha256": "d2acb7c0cb4204f6244e92366a844dd2dc2fa0a0c3030b9029485f47934ab3c9"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ColonHilbertStep": {
+    "bytes": 366792,
+    "sha256": "d3d1a7435159803de7b0bf2a9f3bd06d8935fab5294ffd73b285569b9fe27b25"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CompleteIntersectionComponentBound": {
+    "bytes": 277408,
+    "sha256": "5d82288359fe0d48df672ba8fb32140c1eb93cd145751170601c0cffbbde331c"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CompleteIntersectionHilbert": {
+    "bytes": 153328,
+    "sha256": "0c08ab505797840a81dd3dfc919d2a52d5236f76c3c27eb780ad46f477f41575"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ComponentMultiplicityBound": {
+    "bytes": 329080,
+    "sha256": "d31d94e1c491dcf0f5d855caf0f2125ae6204975172eb1c8a04aa69ccbc2a1d5"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ComponentMultiplicitySum": {
+    "bytes": 340136,
+    "sha256": "b34a69c030bbe30cadfa68da3ad380098ed7dbd2f8dfde7066ad06d1bc3d973d"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ConeComplex": {
+    "bytes": 165208,
+    "sha256": "8306649c456ed4c77f7fd87f10e2b65835f8151dcf1958ea3aca3f6826745661"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ConeEquationLength": {
+    "bytes": 222384,
+    "sha256": "fa2d1db61ca19e9106ec9d5134a414216d244d900f21e01e522cdcda99b5a25e"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ConeLocalLength": {
+    "bytes": 363864,
+    "sha256": "93600e79df28613b556e988af8ac4e47383aca4e8da55ae9af433e9cff8f8ad3"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ConePrimeLocalization": {
+    "bytes": 142936,
+    "sha256": "19b0b038993a12a5bb39fedfcfc4c1ba16ce37171d8d467927bac40b0e53531b"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ConeQuotientAugmentation": {
+    "bytes": 220984,
+    "sha256": "7ffd02750776f1c7094e29b14f5a9f9c1395ec298166bbffe9a4e2dc7b022fe9"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ConeRegularSequence": {
+    "bytes": 258368,
+    "sha256": "d3126eeb6c3d207bcbc1e6da69cded83bbc394f084190d3da987c1a207ef2ed0"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateBasisSplitting": {
+    "bytes": 154968,
+    "sha256": "45093c88a99cd97bb594bdc0d32c6c575e724003d50268ed90d98149635e5e6e"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateContactBound": {
+    "bytes": 211328,
+    "sha256": "751eb0ebb01829ff91317366a262900a41999fccc691f5f031b35052575be014"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateFiniteSlice": {
+    "bytes": 198584,
+    "sha256": "0e7cf7546a70cad2d4556f2c9800a3433f7d8a04c6bdfb0a43003572b3286e28"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateSliceLength": {
+    "bytes": 542800,
+    "sha256": "316475d284a41caad06e1af47eedf37df716d1a7d02456b5fd0a8b7ee366665a"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateTranscendenceBasis": {
+    "bytes": 1283632,
+    "sha256": "45499514bf546414d1d20ea4de1415e56e2350ce7bac183508ac343b708e7dba"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateTranscendenceLocalization": {
+    "bytes": 201560,
+    "sha256": "1850e35ebdf42d0ed8a09fe5f5cfa70fcf02431eeba90b19dbdabe8049f5a21b"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CumulativeHilbertSections": {
+    "bytes": 142104,
+    "sha256": "2be4b4e7a74ce6e19e2ca12c7345a1d9b8d59c9eae8fe9ce3842765a7ff969f2"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.CyclicPrimeFactor": {
+    "bytes": 175352,
+    "sha256": "77999d26bcafacf7506ef00127a9c745c23e20e158f626a38a09f1e2f9514142"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.DVRValuationUnique": {
+    "bytes": 335600,
+    "sha256": "c5f059bcba64b67b2c2aff3270e453daae26e5d2cd329c454ada654c07e2cb6e"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.Dimension": {
+    "bytes": 351824,
+    "sha256": "d2357ac9eaf5a4b32fe9b9f9a0c5549f7438be47f6ba3503fd5b5e1e082640e2"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.EquidimensionalRetainedCut": {
+    "bytes": 133928,
+    "sha256": "d813e3887a54bff0a595a5fa962d5b37c7e0bed528c1ddfd3af11e65b9be9503"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.FibreContact": {
+    "bytes": 208640,
+    "sha256": "2060f99a2be3238f08c820b011077d7f9fc931383c3c72100213104d5be17f92"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.FiltrationLength": {
+    "bytes": 68384,
+    "sha256": "3abc47bf4f6cf8ce2af0512c96e5f22c72e28dd10448fdfa5af5c63d78a83fb1"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteFreeExtTransfer": {
+    "bytes": 112856,
+    "sha256": "81ee42ef64a3ac49093a21cb697c85b867b3d22e36351526daec2693e2707351"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteFreeResolutionExt": {
+    "bytes": 237944,
+    "sha256": "6a32db88eceb19faecb5059ab70acade29213689dc16e35e6742afddd4bcf459"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteFromClosedFibers": {
+    "bytes": 60776,
+    "sha256": "f96c8c5ccc5bdccaae8b7dd281d9c495ee7f3f32b99c36f8bcc5b862e5c428b8"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteGlobalPresentation": {
+    "bytes": 2467568,
+    "sha256": "9bc08910259e6f5a19aacb5dd5f437bc2e313a91d8ecfc4d24c4af1309d74b4d"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteSupportLocalIso": {
+    "bytes": 407144,
+    "sha256": "92b41c88c4b209255b4f3a7ae6177e3e81312e43e4f450b61ab1230cc97b693c"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.FinsuppCandidates": {
+    "bytes": 51264,
+    "sha256": "a0379dc0d567ab7b82461474bae77f077d6dd8e2c6719b0dc79b0dfd5ef87ddc"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.FlatLocalLength": {
+    "bytes": 169856,
+    "sha256": "487ac5c663d2f20ae91e8d55e352baae97b27b9486ba3d705db035439d037454"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.FreeResolutionAssociatedHeight": {
+    "bytes": 132568,
+    "sha256": "0926c145c568cbdfe820535aa7dbc32a0e6a7c27ac3cad68a8653ec3bff0399b"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.GenericCombination": {
+    "bytes": 102056,
+    "sha256": "2c055b9f5a6c744c146ccc51822d13f41293641acfb15036adf986b9a345daf1"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.GlobalInvertibleIdeal": {
+    "bytes": 520192,
+    "sha256": "6844429bdad646f2388cb9425678b9e320d0d9c0308b1c71f3c064e8cf553b97"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertDenominatorReduction": {
+    "bytes": 133720,
+    "sha256": "6cbe3f920e91ac014db5e4ab4470d6938dc31e75d537b55f5497fb48c2f7301c"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertDifferenceDegree": {
+    "bytes": 185872,
+    "sha256": "23d6cf3d02ea57b4a687b98fa92087ced80108bb98ffa084109a251d457e8c06"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertGrowthComparison": {
+    "bytes": 55888,
+    "sha256": "5ec00b2b96fed142183addfa24ac89004b6431b9c7963932ee8caf02939fa9c9"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertMultiplicityFiltration": {
+    "bytes": 136344,
+    "sha256": "8ee1e3d195a3b07915c8eaff9c04bff635eed869418a084c25e53f64d73bce5b"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertZeroVariables": {
+    "bytes": 104344,
+    "sha256": "697572beb74e09da4cf220daa93ea5ae42577166803a5fb4193c9dd125aa2c12"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealFiniteGenerators": {
+    "bytes": 28280,
+    "sha256": "7c24ba7a4ea77eac19fb1b7c9f66f7ad61102ddc1669bdb0d345af20809ec26b"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealModule": {
+    "bytes": 751712,
+    "sha256": "fd01170c8f0506a5533b16e2a74fb15de29c12058965193c7d9ca037edd49012"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealModuleRestriction": {
+    "bytes": 181792,
+    "sha256": "19124ef4d19728ebc8ab8e4200907673e399eb6f9cb19068e2e8a6649545d275"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerAnnihilator": {
+    "bytes": 243216,
+    "sha256": "0aa090b82e3d1e0003bae0c47aff3b4bef99636a5a13639085f49f51153a0a5f"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerDescent": {
+    "bytes": 120904,
+    "sha256": "36e2c2b2313ec2fa669ee9c1fbdeb93200eb753f511a99e864cfa80a741aa959"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerFiltration": {
+    "bytes": 258216,
+    "sha256": "ef0a9b63b7d60a05d80a1cf3eb5d4681cb7e032f77bc972c6c4d6d1b7ccad041"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerRestriction": {
+    "bytes": 239968,
+    "sha256": "3372d548dce5fcaf77b51c2d97b11a8459d6064a4a2fcd987a00f555cbb849ce"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPullbackMap": {
+    "bytes": 159336,
+    "sha256": "cfa015a58d86d41581d91ac587160181a7bf2b255cf274d63bd8765ddd5689ba"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPullbackOpenSquare": {
+    "bytes": 192424,
+    "sha256": "7ba035303a70d93b2dd72ae5d157f5c6ecb88dc5e177778538f857004e248dbe"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealSectionRestriction": {
+    "bytes": 246992,
+    "sha256": "129593989e0c010da5f647c8cf21587192d3144de91a43b9d713b5c6d953420b"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealTensorPowers": {
+    "bytes": 210056,
+    "sha256": "afc08ce54d4b4cdca748d2b093fd35610711ff42104fd0618550772544f74a77"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IntegralAffineOpenDimension": {
+    "bytes": 140168,
+    "sha256": "876831d4c3c15b4a6136339ab9ee84ffa1576cfdd248716047d70e76e29fea76"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.InvertibleIdealAway": {
+    "bytes": 185280,
+    "sha256": "d6624cc23672e2e8da49c40c9fe323cbd7a26c292664e9113bdfef4d5f2766d5"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.InvertibleIdealLocal": {
+    "bytes": 446464,
+    "sha256": "f1e850f71a1d5e624069f15aa41ee2bc8cd8ac3b078463914451886bfbf3832c"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IsolatedIntersectionSteps": {
+    "bytes": 264936,
+    "sha256": "1b80224fd1233061c3d68f4e0046ff79796bf89069c57ee5eb1cbed52b71d5f1"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.IteratedKoszulExactness": {
+    "bytes": 493728,
+    "sha256": "b8b3fa699cbae599b64a3d937c2a4493b1fa5c5be773f20a2f5e7fd5b764141f"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulBounded": {
+    "bytes": 96520,
+    "sha256": "3421603fdaec20b907383b9f99ab9f3e5209e429a5bcfcfe3248d32fb9911fc5"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualBottom": {
+    "bytes": 494248,
+    "sha256": "c2fe5f3317fae70f0197be67d7e6227c27e8f0fd0537f4b6de8f2e265e42f280"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualCone": {
+    "bytes": 452576,
+    "sha256": "15e57ea7c10f4d04ad44064c79cae7e3d27ccddb1ab183bd0fb7e92e9a55a194"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualEndpoint": {
+    "bytes": 318920,
+    "sha256": "4660c07f7c694ea23d59c82b23667be7588b8f737ac8b90e42a9ea4fdcc95249"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualInitial": {
+    "bytes": 260944,
+    "sha256": "aabf9fa4bc2d144607f4198b38e150e39ce32b15a589fa03af427106c0ed98b7"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualStep": {
+    "bytes": 377888,
+    "sha256": "2c83abaeb8cb096029dff26b9aea06f2cff90c957437c27d31a974d8da0cf717"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualTransport": {
+    "bytes": 239624,
+    "sha256": "7a7d79f10b16b211882f1c7fcdd81dde06fa9e09e903247d6010c75763ee1bd3"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulFiniteFree": {
+    "bytes": 133584,
+    "sha256": "ef644da983e0abc432c06bcbfa1f685011b820cafc4ffeaaf856a78c66191738"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulTopAugmentation": {
+    "bytes": 268280,
+    "sha256": "3f03727f6bb34736a52ff94205f78e1ce36b9d2c6f6014df7d07892e622c8b10"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulTopTerm": {
+    "bytes": 163280,
+    "sha256": "4523edb4016c9339e515cb3ac4f2ac3f808a14fc2e4078d29fbc87634a459488"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalBezout": {
+    "bytes": 166896,
+    "sha256": "781f92ff6cbef86275a246dfcb56cc072fd16f068e9a7c0e5354d0e7f35a6fa1"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalComponentDegree": {
+    "bytes": 134592,
+    "sha256": "be4fb1d46c04b937e8fc514d3383e85140ad21f2e45932496678764dd34744d4"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionDimensionOne": {
+    "bytes": 68904,
+    "sha256": "1125449b2d936023ddd72b7dad14e33383869cf636afed91d7e44830e613c733"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionExactStep": {
+    "bytes": 211264,
+    "sha256": "be92e303fd40441b83f1e9e161980e2b3323199880b7f8f576ad393997f5491e"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionFormula": {
+    "bytes": 155616,
+    "sha256": "717985376be653d974189049bced577e5851c1f07e14977e6fcd06ee341f7116"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionLength": {
+    "bytes": 234112,
+    "sha256": "2b23a01e84c92874d4314d571007346c44273d9b0daddd8225a86a5fc8fa3d79"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionMinimalSum": {
+    "bytes": 203480,
+    "sha256": "80fc57c71d7f529e9a1e5f21e246a87c682d059fbb6e233ea8c824e45a6cb2ba"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionPrimeFactors": {
+    "bytes": 102072,
+    "sha256": "f625c243c44f57292ce9aa4f65305b7d3e029ad85175b292613c6e4ccfcb17d0"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionPrimeFiltration": {
+    "bytes": 254528,
+    "sha256": "0f5fb3657596ee52cc1469f4824c8b5ba3f836308d28cc77db3021b19ff8b8e4"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionQuotientTransport": {
+    "bytes": 181368,
+    "sha256": "427e0453dad49dd47de5a506b53964e6c83289f4e5d5f373422fe470e1024114"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionTransport": {
+    "bytes": 250848,
+    "sha256": "121f5b87131bd2c53f635e877699e73cf69f5ce2c7cd70251bcc8e53ed84dfd6"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalLength": {
+    "bytes": 36672,
+    "sha256": "4f4aab0687f7786ec946664ec325fc9f2b4ed809cbe382a46a0b504f35921dbd"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalLengthTransport": {
+    "bytes": 65720,
+    "sha256": "2181c0b979ba901b9ed8161304c7f7a8405da1eab443dc09dba077efad34dbec"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalPrefixCutDimension": {
+    "bytes": 138744,
+    "sha256": "34efbadae5956f2a981de9ccbba1294261b8994ea90765fab6121d18ebd4d755"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalPrimeTower": {
+    "bytes": 67776,
+    "sha256": "1dc33236f7e605141d37f0af9e8aaf86caefb81d9fc938a3949fed3f831a2ad6"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalPullbackSectionOrder": {
+    "bytes": 253032,
+    "sha256": "ea03ee081b0c0c954ec60d9b75d5a251f33b7c27d6e5c5751d3864e44f4b30a0"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalSectionOrder": {
+    "bytes": 152496,
+    "sha256": "3bea93617a03339ca4463b143111aa9d8f1bca247ae511326857b77a91d65fa6"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizationQuotientParameters": {
+    "bytes": 328704,
+    "sha256": "28951326a1b2ffdbabebc5d03602a7b206ff17d5238eb60fa03238ca9193191d"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedAlgebraEvaluation": {
+    "bytes": 411032,
+    "sha256": "2779f36c1d2f13cd5fa92c4d7a4fce92078f55352843710599c7ed92bdb14888"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedComponent": {
+    "bytes": 40192,
+    "sha256": "8275b030e7311e3937f5d8b84534211742a5ac80c3a6d34ccf63cc5e9222fd63"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedCyclicFactor": {
+    "bytes": 139688,
+    "sha256": "129394cb9ac9e81604a256eb68fbcd4ab71e0e9c831082a2a4f6345724d275b7"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedFiltrationLength": {
+    "bytes": 112712,
+    "sha256": "cb7fb4f9f702e29022d1be029337b91cb3fb87e36da176e72601bf79994e58b8"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedLengthEquivalence": {
+    "bytes": 98664,
+    "sha256": "1bcab6fac3e430e279edc85fad5afb41ff71e0cd90aecad0cedee5368d51e359"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedMinimalPrimeFamily": {
+    "bytes": 101304,
+    "sha256": "f9dc6a8b96502267617382d76274c48e2a6fae8e47163ecc4eadc84a0e497cce"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedOneCutPropagation": {
+    "bytes": 133024,
+    "sha256": "e42d8c8326f565357f4a51a2bc488fb7ce7f022699a1bd0e3c569b97d5a4e415"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedRadical": {
+    "bytes": 63912,
+    "sha256": "d6b15447c128e589b575d5dee5196d35fe1ffbec0060942eaa4733d8705548ed"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.MultiplicityCycles": {
+    "bytes": 304880,
+    "sha256": "440b1517e4a21b24ee8b41fe1f4ac6e9872aa7ee5646ef41a0cd23b38cd9a3de"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.NaturalMultiplicityPropagation": {
+    "bytes": 266488,
+    "sha256": "2e13e6aede6e17a8330c6a8b2e96d7399ef6b9bed0891c6ff9ba9936a7c832f0"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.OpenIsoFunctionField": {
+    "bytes": 70056,
+    "sha256": "e8ffe8e897457c6369fb745accf6174fffa45d766e3f55c91436214307be258e"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.OrdinaryMultiplicity": {
+    "bytes": 214280,
+    "sha256": "607cb699c86d7d4006afe00816cb93205f008ab6198af154ff7b6ac17e534f1f"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PairResolutionShortComplex": {
+    "bytes": 121824,
+    "sha256": "8d54975abe968699c0ce18bb803ca69c4091cef026cfecb78828c012fedb137d"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ParameterCombinations": {
+    "bytes": 51840,
+    "sha256": "7c5bd915f1e6ae949885a58124e51d8793a290eb93ba48acf43b732cfb060f74"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ParameterKilledFiniteLength": {
+    "bytes": 119376,
+    "sha256": "3824b6bd7c4d957d783dcef958727e09a5dbf04824464edc1d600f094a65a88f"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.ParameterResidueField": {
+    "bytes": 122528,
+    "sha256": "258186c7a5eea525171aacf2dfa952f3868340da30e243d26a520b656bb589cc"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PointLengthEquiv": {
+    "bytes": 112632,
+    "sha256": "829bd7733527d47e0c39b57fd0180e7008b56a02e2dea6dc86cd44c1f33b0173"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PositiveCoherentExtFiniteness": {
+    "bytes": 484024,
+    "sha256": "05d55775d85dd23d89a0ef521456dc0f28d9d7249e19b010c3a52e4f9fabe702"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PositiveDimensionalHilbert": {
+    "bytes": 243512,
+    "sha256": "1875455f616db3f262fda462118be0d84b28c5b141f7af9cdac96026a0fb4f31"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PresentedIdealIso": {
+    "bytes": 339560,
+    "sha256": "41d865ad40e814d466791b73d95ec93b123f466502cd9d1896abe690a463e9e2"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeCutBudget": {
+    "bytes": 390608,
+    "sha256": "370309c20aad8c07adbba73ec179399e9b117b08c7d53b978ea702bf682f33a8"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeDegreeExistence": {
+    "bytes": 112320,
+    "sha256": "aba41887c8597601603e99e558125d890fee5d722205d61b7bd545c879c7bedd"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeFrameMultiplicity": {
+    "bytes": 170792,
+    "sha256": "64ff81cb6e3d6c87360977a70a7fb30800d47702c170776ce76ef2a4b2c6971e"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertComparison": {
+    "bytes": 392472,
+    "sha256": "a784bcdad855baa4f5b34091393062eacf2ee79e3fa328c50d92f57d47af4b1c"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertDegree": {
+    "bytes": 197016,
+    "sha256": "1ee3b7102691927215754d2de10924ec0db42b30dfbcf1699a6fe1dd7017fcba"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertDimension": {
+    "bytes": 173664,
+    "sha256": "594d6264f0e8d0a888b5525ce79138ff29daaefc378f4e1814816a3b9006ea2f"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHypersurfaceDimension": {
+    "bytes": 117824,
+    "sha256": "627a5bc270470d46d328eb0bd10b1d6f4f868ca6ff01be9ce1649a25a645c7a3"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHypersurfaceEquidimension": {
+    "bytes": 83032,
+    "sha256": "ef149287b26a2f3d7743fdcb0bc07354100387258cc39c5e7c7b15891b0b7c17"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeNormalKernel": {
+    "bytes": 289448,
+    "sha256": "88a4a5f6b3921750830acfad117ca22567685210b94d31bf30448ec65f9e2cbc"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeNormalRigidity": {
+    "bytes": 259048,
+    "sha256": "fd5fddbe63f920bb7b4b9f4de2b16570ed23dfbc6e55c92ff39e05fea9ff30f0"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeResidueAlgebraEquiv": {
+    "bytes": 141384,
+    "sha256": "d5bc68792b2353ca78933d41fafe56c6810f6a5290a4a13641465b1f0756c2f1"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeWeightedBezout": {
+    "bytes": 144040,
+    "sha256": "5e34e446a8834cfcfaeb7571d0a5d9f58f55e18146ff6e659e0ecc6e3c4b7f59"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.PrincipalQuotientDimension": {
+    "bytes": 43136,
+    "sha256": "c9a2bdb9bff12155f41da0b28ef1de223387a1f02cbeccd1597bd4b62b301d74"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientLengthEquivalence": {
+    "bytes": 74096,
+    "sha256": "00b74ef483aa6e861aa0d3cde3d1dd0d2c0031bf58b5c734d0a432aa25053a52"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientLocalizedLength": {
+    "bytes": 91080,
+    "sha256": "85a787fbb65dd5600b05d2fc5f8d5f2c6428d8db0545d99541bf7bdc6b0f9d07"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientPrimeResidueBasis": {
+    "bytes": 136216,
+    "sha256": "4ed4ff90132859b0143272364971f47b6aa7dd91104c6164f67a8c801337ebdc"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientSections": {
+    "bytes": 211920,
+    "sha256": "83e20a48f2dcb0b475b75bd1b9441e5997dff86b5b4db6252b3afcc4781072f7"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedLocalLength": {
+    "bytes": 132200,
+    "sha256": "f2f9e8d0479209696044204b697f6d18c31d0c124c443286f8a931459b45fcd4"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedLocalization": {
+    "bytes": 145864,
+    "sha256": "432133b59850e292afafda8cd6f8d8518a270d77ae40352238884e4ba5f70447"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedPointMap": {
+    "bytes": 109608,
+    "sha256": "6ef4b26bf7f28dc776bf0ef98aaf7623dd5a744e38bec9030ab5649b2c35d772"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedPowerLength": {
+    "bytes": 352032,
+    "sha256": "eda151f6e9803a3e3185ef000cfca47dbad3ae5fc091e738ba5b84f5d467fee5"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularCutHistory": {
+    "bytes": 666336,
+    "sha256": "d2947145a280b1b4022e1f9cba521e0c2b895b921877b186219a03c2a439767e"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularDegreePositivity": {
+    "bytes": 142536,
+    "sha256": "64b8419bbc24bd3f719ce82dc76399e4f7a2177cc76b9f2a46fbcbc458396272"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularHilbertStep": {
+    "bytes": 465184,
+    "sha256": "64b3a093e4ea669270f1da7e77a16df661c94268f04ed4def1f1c1ded1ca00e1"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularPairExtObstruction": {
+    "bytes": 47736,
+    "sha256": "9cd3911d78249cd98bfc18383d69fb75b6cfe39430f3cc18d88a62e0690cf9cb"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularParameterAvoidance": {
+    "bytes": 134432,
+    "sha256": "50087a780cc7f15b64703d5de845eba2cdd3d0794f1ec668866acea0848e3dd7"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularParameterSelection": {
+    "bytes": 305840,
+    "sha256": "df8c8273216490fb5a4434c3c6d4b382c7d6bf8620f5001c50695b390c6ab217"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularParameterSelection2": {
+    "bytes": 163064,
+    "sha256": "ed86105c06767b257cf76728b38cb9081144c3ff4cf719912c5a0dc0a3d3c03f"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularPrefixLocalization": {
+    "bytes": 116160,
+    "sha256": "622dbc907192f8278368c307d9e8bcef9b496c2f935fa46c01d2b32166fdff17"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularPrefixes": {
+    "bytes": 147952,
+    "sha256": "1dc5adc08114626ae03c1b5f1026e256b373c56c578dd82ffdc5ccf689c27d5b"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceAugmentation": {
+    "bytes": 120912,
+    "sha256": "3055e51b4784acac9545864eab7456620b09e26a0d370539550ccac1034d43dc"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceDualExactness": {
+    "bytes": 384360,
+    "sha256": "52c9242e41bcfee150866e912b1d9a25ba9b24a3790ca5071d6b97ddc1755263"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceExt": {
+    "bytes": 188400,
+    "sha256": "83529a6630a0447aa9f4a12863f8eccf3ca6a26cae8ad693d7a02c20b0abbea8"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceExtObstruction": {
+    "bytes": 268432,
+    "sha256": "0f457abdbe1601a83b0aa9896bf27c786d9e887dd2b38e0a231984db50ef2190"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceHomZero": {
+    "bytes": 88824,
+    "sha256": "1abb294fc65131b7ae53922315c5f071438d1949bd904153beed8c8cd6847736"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceLowExt": {
+    "bytes": 54048,
+    "sha256": "d99df6b67b17cd193ce3bac4fe3fb9fce1b1bd68d00842acd25a60e11457170f"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceQuotientTail": {
+    "bytes": 167272,
+    "sha256": "ebd3ec8f015527486a9c3674b9daa89351753f2b678417d45e5b3eac79210771"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceResolution": {
+    "bytes": 429664,
+    "sha256": "e1be3c83be1fa8680ce110fd980f30207dc706f8351a3cb6741e8b96fa772530"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RetainedIntersectionCycles": {
+    "bytes": 674592,
+    "sha256": "e9891aad29a1b116e019e5d3f2ede6a581def1d0bd1597515e775562577c8ce9"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.RetainedMinimalPrimeFamily": {
+    "bytes": 213528,
+    "sha256": "73163f0c05bf5c96b8efeebf9be6d5d1821e4d640a0077a9a03a843758835053"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.SectionImageIdeal": {
+    "bytes": 517000,
+    "sha256": "c60886e96a5f28a788b708a4df6b85cc0a4c9bb63f5bb935a51d34422e1eab35"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.SectionZeroIdeal": {
+    "bytes": 200824,
+    "sha256": "a791e5684d880f6408580a5bf9ce4447fa328b2d92c181efc2d0858437b06a9b"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.SeparablePointLength": {
+    "bytes": 319400,
+    "sha256": "9ad0fff444942b8f6060dd352253705edb89518fa00565ac7c9f409fb3a6e182"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.SerreDimensionShift": {
+    "bytes": 386888,
+    "sha256": "051d8ea2f5dfca22b4123426d25a9f8edcbe4d0ffce7c9e09b3a292ee4951846"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.SplitClosedPointCompatibility": {
+    "bytes": 195640,
+    "sha256": "3ea71c5b0a5bd502e5593f818418d51d839a52b07a64fbac947452c9b6a99563"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.SplitCoordinateClosedPoint": {
+    "bytes": 175864,
+    "sha256": "a5f0c71b19c0e50bae4ebff139871cef7adeaa6589fccc1585d94acf9b1ff483"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.StabilizedColonPowers": {
+    "bytes": 155288,
+    "sha256": "c9821ebd1e1b3281bdddb257e9ef78722da27bb9034217d37e64e6ae6fad4963"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.SubquotientLength": {
+    "bytes": 133768,
+    "sha256": "ed47f887255d668faa849dd2de761b88f314954079d023e0e93f149897665035"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.TensorIdealInclusion": {
+    "bytes": 252536,
+    "sha256": "b936e630ec0ce1b3fa0cd2ed7b704d42c0650c82b3be3fcaf1089cf3f3055bf7"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.TranscendenceBasisReduction": {
+    "bytes": 155824,
+    "sha256": "b629d886703c0f7f6a06cc1227fa443ab26a3372558fb2f0818dc507293da19d"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.TriangularLocalParameters": {
+    "bytes": 363640,
+    "sha256": "607880f11cbb0f37be0f2105d3e3ddb1058f7e40c4d45663eae25ffc5545e47b"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.TriangularLocalParametersAssembly": {
+    "bytes": 192976,
+    "sha256": "fbc8163f937be4fc147a9e8db4a8af859d09d3368ca1599dc1ddde13f0b87817"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.TriangularLocalParametersTransport": {
+    "bytes": 74824,
+    "sha256": "fce95f4b0421811be18dcef3fe19cbf68c5c01503aee23cecdbe30d4166ee968"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.TwistLocalExtension": {
+    "bytes": 203432,
+    "sha256": "a3999b4439d436492302145b33f486b75cfc3b2b7dfebb59eae13c36a3ba61b0"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.TwistLocalSections": {
+    "bytes": 91992,
+    "sha256": "f0d05efd6923b2f898a6c258a292ff34304b859b2bd169f8cf230b718b258b73"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedBezout": {
+    "bytes": 434520,
+    "sha256": "8e817a286260589e764ef56df0c0af4b9b368f3ff877a1497573066f92ab7411"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedBezoutBound": {
+    "bytes": 279184,
+    "sha256": "decb976eed272fe2d15d778e103759514c2360ba2f9acf22059a7e7dacbf5736"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedChartRingEvaluation": {
+    "bytes": 343640,
+    "sha256": "962eb0f4dc833e3a5515cda3c157f749040a4806d8357e4d4d6b37313862b7f8"
+  },
+  "OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedLocalLattice": {
+    "bytes": 357016,
+    "sha256": "29fbb17cc0d1317013caceaf22a73fab9bdde5f0a3d8d8cadb97766f7aa75746"
+  },
+  "OAI.NumberTheory.PiExponent.Main": {
+    "bytes": 28376,
+    "sha256": "06284911dd53e72c4032f01f457b5ee53486bb0b245898ef69a9b68fea6cf762"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.AuxiliaryPolynomial": {
+    "bytes": 397688,
+    "sha256": "bc7e4354abf9fc1961a440ad528961420ba3a14241fa4da0269775b527807e03"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.CoefficientLocalizationMaximal": {
+    "bytes": 56280,
+    "sha256": "e70e08e2a8cc02be156c9fee62569b66536e1fbf97c964236cff36e2b57a583f"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.ColonHilbertPolynomial": {
+    "bytes": 198960,
+    "sha256": "c72354afc33d87cb98cebdbabda32d6884a19727cd23c163dbe1efa63ed9db9a"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.CompositePullbackCoefficient": {
+    "bytes": 47368,
+    "sha256": "c919d82fd0e374bfe8bb02eeb8337a31132f6be10de02e050d1af47852e288f5"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.ConeHomogeneousEquations": {
+    "bytes": 192592,
+    "sha256": "44e4748611868712f04bfccfa47567801028b84a09b23770dd720ac3dc4af424"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.CoordinateQuotientGrading": {
+    "bytes": 730424,
+    "sha256": "324bc6f39c11b586413ed6987e357d9f415dd767ca4f6c474387d074ff250dbe"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.FrameCoefficientLaws": {
+    "bytes": 127976,
+    "sha256": "219daa999ecbf1bd832b8befdedf342f0e6fcbf5fc9d8625633164ab38d6249e"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.FrameCoefficients": {
+    "bytes": 368624,
+    "sha256": "541f861c457a03dc953d280a9371089c92afb33b19779f6ad87830ef06e12f0a"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.GlobalPolynomialCoefficientLaw": {
+    "bytes": 126624,
+    "sha256": "32ae28365c85134f4a73aa6088eda4b93386e47e38327af1245d73eb2f936f63"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.GlobalPolynomialWeightedBound": {
+    "bytes": 73112,
+    "sha256": "c4d0f1dbbad97bc19161eec14fa27be3755e9b44e04e6e3209d9c563ab520555"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.GradedLocalizationExact": {
+    "bytes": 2007616,
+    "sha256": "cb503ddc9f2af5b366998c134a8a3ac9c40c282a31f52a73a5179951f4c618a7"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.GradedLocalizationFree": {
+    "bytes": 940720,
+    "sha256": "f114e901e147a14683c0f642914633a2b5b2dea30ee3cbb70f40cbbcced4d346"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.GradedSerre": {
+    "bytes": 1054904,
+    "sha256": "0226c6382d35591a234d6fb0cad07cb139f3f1c25dafd751175befaddc94f740"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.GradedSerreStep": {
+    "bytes": 540152,
+    "sha256": "781e2041ee2953b657838702305194d4c27c481675a0998652044836931e955f"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.GradedSubring": {
+    "bytes": 157656,
+    "sha256": "12a26b6290a12970d29d722bc8c6d19834effa3c7b6661fbbef9d6ae48239433"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HilbertPolynomial": {
+    "bytes": 257904,
+    "sha256": "822e0391eec38b486c4503af164ba82f29a4bd61e2588a686c5e773c678663f8"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HilbertPolynomialBase": {
+    "bytes": 182632,
+    "sha256": "8974599379e46d56c321011fd8fa885b7009652511db86aa3bab8ee2e2d1515e"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousComponentLength": {
+    "bytes": 300544,
+    "sha256": "464ed6861c3b3c166003f8839c64a5c3ce0983b0a94dabd60342ca004d964c0d"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousHilbertExistence": {
+    "bytes": 158568,
+    "sha256": "5147f9378decaa1418889253247b32049dc5a0d3a744ec740261b67d6fc22752"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousHilbertPolynomial": {
+    "bytes": 84808,
+    "sha256": "0d09dfcd9d1a05e621a7f203074f03a2a54d46e060f6105eb73164c570f48228"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousIdealStep": {
+    "bytes": 136456,
+    "sha256": "1b5936d521ed4a154bbbc0652fcab24193df218eac9eb1d689c1563fca9eed81"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousListHistory": {
+    "bytes": 518864,
+    "sha256": "43ff2caa7a9663b2c38e749cb3f5aa526c5666f42dfeb3f0a36d465dd13f39e3"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousPrimeFactor": {
+    "bytes": 171592,
+    "sha256": "020a538f275f75f716300508bb7b2e705a567852a243f18807840e36b2191e69"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousPrimeFiltration": {
+    "bytes": 195200,
+    "sha256": "022190c090a7fa64c306e908bc21f4ddea2126606838572026353569d880b270"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousQuotientDimension": {
+    "bytes": 301928,
+    "sha256": "5ed5df176c020c89835bfa4db5ed9f802ff397341b37342c1199186dab1dfd79"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousSections": {
+    "bytes": 134384,
+    "sha256": "d5f2cb2689917c35f81d9bed4b76688a3bd9f95ca749c36c88c41873e92dcedb"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousSubmoduleGrading": {
+    "bytes": 405304,
+    "sha256": "7297e00e34aaa984bee6e0379a6caf84ab22564837269f1b349931fd889dbae6"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.Homogenization": {
+    "bytes": 132832,
+    "sha256": "e0c2cbcde2861e904c70c62817f45980d09da7e937d9bae0a9f014f03f822c97"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.MixedSlopePolynomial": {
+    "bytes": 201456,
+    "sha256": "9b653a80f387d22ba8c0c6a1e3aa9c2d36834fa3ded95aeeadebc2455bf75ed5"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.NatToIntGrading": {
+    "bytes": 372320,
+    "sha256": "1e6068465bc0ce6ef33a6acd228631e9f88563389c851b86a17e48ac02e54c55"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.NestedPolynomialSwap": {
+    "bytes": 212984,
+    "sha256": "d95f0c8d545908adaba68b4d81899043cfad411739192205fcdd9dcbf12c7a2a"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialAssociatedLocalization": {
+    "bytes": 151392,
+    "sha256": "88fd29075dc03c745001f71595682d7899b424b10d35879600d59a92c738f3f6"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialCoefficientLocalization": {
+    "bytes": 310016,
+    "sha256": "7b2deee0a940247c9f7ba2bc23eae82e03b6c7b70cef196af3569802b6c0b670"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialCoordinateMinpolyQuotient": {
+    "bytes": 200720,
+    "sha256": "e17c748662b621944430afb78ed9d1143a303f4010f72438c0aee8515a26f3e3"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialCumulative": {
+    "bytes": 216416,
+    "sha256": "4be09fb361836c529fb7f6af0b29987100596bf53de01aa8a9f0d7a0051f8f8a"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialFrame": {
+    "bytes": 225320,
+    "sha256": "01db4eb1e4a9baefeee0258e85bb860aa2b5d0eb8e39e78deaaf0adfbe77851b"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialFrameDegree": {
+    "bytes": 162952,
+    "sha256": "ee7fac9f6b31cc00bb5814eee1315d56b1a55452151a3baf277f0fefe1f1cac5"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialGrowthRanks": {
+    "bytes": 237816,
+    "sha256": "a7b0e6df350f4d5713b402dd8d2fb763cb217558682b888b8c805fd01d2e665a"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalLowExt": {
+    "bytes": 84512,
+    "sha256": "b4af03d0582d9b520aef9899cde2531e6cc13af90bd5bdabe76eeaa0203286fa"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalRegularParameters": {
+    "bytes": 167312,
+    "sha256": "1546abdc6252dcf1677caceb63629f9282d8caf3b4454ceeb3c2391e08aeecd8"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalResidueResolution": {
+    "bytes": 195864,
+    "sha256": "1e86dc3b72298f3a70d8a63d470af75df53613d3ed9824bdb067e0e557b52956"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalUnmixedness": {
+    "bytes": 421560,
+    "sha256": "ffc722fa3b5a4488277c8e323c5bb7fddb3f5c652dcd46ba1c4770abaf088685"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialMaximalHeight": {
+    "bytes": 105208,
+    "sha256": "a926244661b7e49a61193f597d157d7a833ff9bdc63be397c95152e802ebcade"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialNormalNonzero": {
+    "bytes": 320056,
+    "sha256": "197dad0f706d7d5932504eb4b0bdb6f160febbe5baf66cfac41f3154a7db9810"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialPoleBound": {
+    "bytes": 190616,
+    "sha256": "900c5023a4f5c7307e92e2e9d6481987f20e4ca97d84ab0388925d45a1decbf7"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialPrimeClosedPointEquiv": {
+    "bytes": 115088,
+    "sha256": "a52d741a1a2e3544d73ce70a0e7b1ae32ef6335122d5d3befcef8a97ea2ab4dc"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PolynomialPrimeDimension": {
+    "bytes": 394648,
+    "sha256": "48693d44e6a892dd2bb9105e57fe07443bfb8523c3571ef5e1ece67e9425cb35"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PowerCoverBasis": {
+    "bytes": 299872,
+    "sha256": "2bbf59a1b086d442bb3331f1cad632d04c645e3544b722be23387ca7c3b099ff"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PowerCoverExponents": {
+    "bytes": 118104,
+    "sha256": "aa3d60374b5774e6616d856b97b57361204b16ba26e10b6c6095242bdc5c7ad0"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PowerCoverSubstitution": {
+    "bytes": 89704,
+    "sha256": "ef6f2d92cb580894a55b6ee3317711816b2aa5481d81ce13f41231fca534fac4"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.PullbackFrameCoefficient": {
+    "bytes": 113936,
+    "sha256": "b60d2306143364fc57dcec663b943fdee6dcb2c71dc76860e82b320cfa7fe1ac"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.RationalResidueCoefficientField": {
+    "bytes": 193920,
+    "sha256": "7846928022404fbe02391e11c53528df076ec57b70f42aaf69485c94d5efbe44"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.ShiftedFreeGrading": {
+    "bytes": 333056,
+    "sha256": "deed40a8b4d1448b9b2b88c863ac066566d543bd7d03aed82c0eae72748ea907"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.SimplexCounting": {
+    "bytes": 515496,
+    "sha256": "dc78247488cc30ae8ae3ab7fc028020eb98e4d79b93a308ef2a640f450db076d"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.SimplexFloor": {
+    "bytes": 175424,
+    "sha256": "fb3813fd796572c9bf3f08d95b6dbe05aa475e4de27d754420394bacf76afcd9"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.SimplexLog": {
+    "bytes": 120008,
+    "sha256": "6d5937c8340f54f23c0a1ec851c6f4b843808c10e041cae3903d6dd07ed63329"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.SimplexRational": {
+    "bytes": 114112,
+    "sha256": "1e13bb505167479881ad06fdcd5f4a814f719d3115bd5c67fd2db94ea4ca03a1"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.SimplexRationalWeights": {
+    "bytes": 131920,
+    "sha256": "640c8118588d6c4b584dc52fdf025db689c99be981d96044024f650abe39e13d"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.SimplexUnweighted": {
+    "bytes": 309696,
+    "sha256": "f98c15bafacea0784db88a28feccaf550d64c01ac0eb1a2e60e0db57d467641b"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.SurjectiveGradedMap": {
+    "bytes": 157464,
+    "sha256": "858a8cb64b345fea54ffd98f16c235bf2e7ab0cb46a395e5c4744f14486d88dc"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.TranslatedPowerCover": {
+    "bytes": 241376,
+    "sha256": "20f66b1febca9e5567db83b815e4303e4fe0c085c6aad6b729438b590c253225"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.WeightedHomogeneousSubstitution": {
+    "bytes": 202904,
+    "sha256": "cac988e5f3638481deb2d897c93ed52853f8c70928eb00ebf67a548159e65d56"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialFamilyLattice": {
+    "bytes": 178272,
+    "sha256": "82b3dd2d0f0eb2153bac5ffc99c849e1dfc80c88a9c945c008b9668995cfb7cc"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialImage": {
+    "bytes": 287176,
+    "sha256": "6ddb29305ddaae98d331ba05015437ef8343db861f02e14c10a48092295370ab"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialLattice": {
+    "bytes": 95792,
+    "sha256": "d154de536b3fc2c2945f4f0a3d7ee605dddeeddba58b7df9a4fc739f16f145f8"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialMap": {
+    "bytes": 131576,
+    "sha256": "30d43b7b0715ea3348fd6a8b797aa4b4b0c3df7bd06a3427fa6c2a0e424c20de"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialPole": {
+    "bytes": 308064,
+    "sha256": "b9f1e8fbade8663c2fbfa69fa9b0ab59c67c862c660505bc03e6ea5ab3bb506c"
+  },
+  "OAI.NumberTheory.PiExponent.Polynomials.WeightedPolynomialPole": {
+    "bytes": 121624,
+    "sha256": "43bdb3d4a163d9a10a17f1e8caa3fec79aaa0c8b558e063071a0e44517dfc980"
+  },
+  "OAI.NumberTheory.PiExponent.Statement": {
+    "bytes": 22248,
+    "sha256": "ca11bc64b9c55935e1ea5bd86b516620c957e140885034ac7aaab7234c250f38"
+  },
+  "PairedAffine.AffineAudit": {
+    "bytes": 1584,
+    "sha256": "9b0352ed9d953036b3a3fbbe54d4e53c5c5293a02aea71cbdbe1fb417c4ffdf6"
+  },
+  "PairedAffine.AffineExamples": {
+    "bytes": 155744,
+    "sha256": "2c77153c1b44755651378bdf494599d72258ac09f2da0a37fe864caad7433d7e"
+  },
+  "PairedAffine.Analytic": {
+    "bytes": 751344,
+    "sha256": "58f030bccf956aff0fbfac496f2a311addc020b07e2aab2c2a4404d52a3633b3"
+  },
+  "PairedAffine.AnalyticCoarse": {
+    "bytes": 379568,
+    "sha256": "f0fdf1326e273441272465240282937aadafc27a74b6d4c06db634563f990501"
+  },
+  "PairedAffine.Arithmetic": {
+    "bytes": 506104,
+    "sha256": "93be2f479f4c0994c0231d5a8e9f1d0fc5a6283610a27e6c543ab3a6ba5fdc40"
+  },
+  "PairedAffine.ArithmeticClearing": {
+    "bytes": 628760,
+    "sha256": "4eb588928b25dbbf8e16780e8ef62be2fdd9150abe7c6d5b00a6a421bddc1221"
+  },
+  "PairedAffine.Audit": {
+    "bytes": 22592,
+    "sha256": "b545ad2a03d1a3d61a6cd667bc41049a405f3ce02248d80599562b4a51fd446b"
+  },
+  "PairedAffine.Concrete": {
+    "bytes": 253368,
+    "sha256": "c64643cba87b0ea921a85d968afedf462d0ba7231503968186d40accd3200088"
+  },
+  "PairedAffine.Data": {
+    "bytes": 47480,
+    "sha256": "8f4b7fbc4c6cca1428407f3e11324904f51193bae4124acc0de7f0465cc9b662"
+  },
+  "PairedAffine.Endpoint": {
+    "bytes": 669424,
+    "sha256": "9af4661512227948016de36f2698b798a7673b1f0fa504fcc2c07ec7a0cd9a9b"
+  },
+  "PairedAffine.Field": {
+    "bytes": 360872,
+    "sha256": "5dd9fe64d8ca49c7463647ddeca9c0270f062e83b4210fd1bc2db22a008ab9c9"
+  },
+  "PairedAffine.Geometry": {
+    "bytes": 159776,
+    "sha256": "89346e38e1f1a63615f0c2596a665c2b077fd3dfb7a9d39062872bf7f2ec44bf"
+  },
+  "PairedAffine.Main": {
+    "bytes": 57744,
+    "sha256": "4bbd12dedbe252546ea1c0bfd895f0f27e3188b790073d82c97b68cb23cb780e"
+  },
+  "PairedAffine.Norm": {
+    "bytes": 255800,
+    "sha256": "af94c0ff8029eac42663cbe787c23770c6a2e5038d92c91a45297bda292f1f6c"
+  },
+  "PairedAffine.NormSelected": {
+    "bytes": 175544,
+    "sha256": "f9bd4bf5c7cc1ecec8af02474227675dc8d592f07fc04184e8e55d2d119278fb"
+  },
+  "Solution": {
+    "bytes": 34264,
+    "sha256": "a71bbf2a9f615b714beb65cc622e3f7941cbbb4779df4600c89f664e4d639a8f"
+  },
+  "StandardBridge": {
+    "bytes": 89440,
+    "sha256": "849944d5047a257bacb61a466b7502c22b9d9fa455bbe893bcac5b4c9abb57f7"
+  }
+}

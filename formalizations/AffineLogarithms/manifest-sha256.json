@@ -979,8 +979,8 @@
   "REVIEW.md": "4d40690829b0aec2d975b765fa5b400ec9a8bf01263c155d6c27419122a7ed20",
   "Solution.lean": "37ea3d216fdf8b11b9ad464170fecb95b8d412fa1b172002f765a39476176a8b",
   "StandardBridge.lean": "03177d690e4c37b56e28b0995a1bde961f56685a3a7a0d92af401b878f96c140",
-  "VERIFY.md": "3e438eb4e1da86034aaab110aac4266598819c1b61696b5de41a4d3c682d6799",
-  "WORKFLOW.md": "e91c5b4578a03071f633cdf63601b2ca0a796d91266ad414d7addc85528ab298",
+  "VERIFY.md": "eadc2e9282d3b50eca5f91d9fad85ea5f6804e89bf299b870d8e2ee4af7c4404",
+  "WORKFLOW.md": "8527246a884797b1d74781d9cc647847e3334065a2878ae45bf00319940812e6",
   "config.json": "6b51bc6cd2a02f0f4891297e1872743dc9a8a1524dc1a209d060f131cde35e97",
   "controls/ill-typed.ndjson": "bd6be27b1f8e01147117e42dbb5b4c007ee2dec5c2f72b4f56187419896e45d7",
   "controls/positive.ndjson": "27f3cede3d4a16074bee8588a0969ebcdec5ad2d8af5af1ec8fc5e30143b71ad",
@@ -1053,7 +1053,13 @@
   "replay-reader/lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
   "scripts/audit_axioms.py": "e65d52eceb7aaf90d287796010f8fb2a7cc0ae81907080455fd5d341fa24c137",
   "scripts/audit_controls.py": "54a65791de305b1d4e2952e3ba022256c4ba87dbab1c61a34a59e679907bc4cb",
-  "scripts/build.py": "5f535b36d720ef7b267697946812b7179b1d6b562426851764417b303b854c67",
+  "scripts/build.py": "65bdfc2801ed74fa816ef25bb9473cba3f2c452c38353a4d573ee175b4ebd964",
   "scripts/check.py": "3703aa22e2914a923071dfdb74bd2375b4a7f6707636b14c27b8638e0fcbd389",
-  "scripts/replay.py": "635b4c8c2d3c23b1c3a9b9b9362d6b4484c3510de891a525fc2ae60208694b9a"
+  "scripts/replay.py": "635b4c8c2d3c23b1c3a9b9b9362d6b4484c3510de891a525fc2ae60208694b9a",
+  "evidence/release-distribution.json": "6938e405506f1e2ed9a5255aed1ae69ca069537f6b87b53d971a897770d956e8",
+  "evidence/full-module-sweep-2026-10-11/axiom-policy.log": "685aea73c59cbeaecbcda916c2c438a30c83ba4d7cb8dbf83162014600652d72",
+  "evidence/full-module-sweep-2026-10-11/build.log": "2b91b761ec60611496179de78e73b167dd8b7ac5f9c5ef29795d59979439b961",
+  "evidence/full-module-sweep-2026-10-11/module-objects.json": "788acdd65c018db8af6b3ae8ab0695c30a99bc12dd4c400ff72f8302a2ff17d8",
+  "evidence/full-module-sweep-2026-10-11/receipt.json": "1bf527cafa9170fbafdd3be6a6654983a391c21631a6ccde2b7f311e32d1a37a",
+  "evidence/full-module-sweep-2026-10-11/summary.json": "c1b32a2d39ee67219ba377e5968aa99c7c9137eb451babfc6bafb113508058e6"
 }

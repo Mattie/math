@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-12T00:54:04Z",
+  "finished_utc": "2026-10-12T01:31:57Z",
+  "command": "python3 -I scripts/build.py --all-modules --skip-cache-download",
+  "environment": "Linux; Lean 4.34.1; LEAN_NUM_THREADS=4",
+  "candidate_initial_state": "New extracted candidate source with initially empty candidate build/config output; only the pinned upstream package directory was linked into .lake.",
+  "dependencies": "Reused identified pinned dependency caches. Lean and upstream compiled dependencies remain trusted inputs; this was not a bootstrap from upstream source.",
+  "scope": "Explicit compilation of every manifest-listed proof module, followed by the fifteen endpoint axiom audit. Ordinary source build, not an isolated Comparator run or a new independent kernel replay.",
+  "source_manifest_sha256": "88516799eccd19825089e8e71ef84ebacb87d8a16174c0069b4cabe114089cb1",
+  "target_map_sha256": "bd61b46aeb036305d438c1030de6ea71a2d95a035a48edbbef484552133df5f5",
+  "builder_sha256": "65bdfc2801ed74fa816ef25bb9473cba3f2c452c38353a4d573ee175b4ebd964",
+  "input_archive_sha256": "c8396d91ffe568fa41b48b6d99bcb4340bf75ff33ee5c1bc83655aad8eeea5b1",
+  "proof_modules_selected": 967,
+  "compiled_objects_present_and_hashed": 967,
+  "excluded_specification": "Challenge.lean",
+  "endpoint_axiom_reports": 15,
+  "admission_warnings": 0,
+  "records": {
+    "receipt.json": {
+      "sha256": "1bf527cafa9170fbafdd3be6a6654983a391c21631a6ccde2b7f311e32d1a37a",
+      "bytes": 65334
+    },
+    "build.log": {
+      "sha256": "2b91b761ec60611496179de78e73b167dd8b7ac5f9c5ef29795d59979439b961",
+      "bytes": 109058
+    },
+    "axiom-policy.log": {
+      "sha256": "685aea73c59cbeaecbcda916c2c438a30c83ba4d7cb8dbf83162014600652d72",
+      "bytes": 2105
+    },
+    "module-objects.json": {
+      "sha256": "788acdd65c018db8af6b3ae8ab0695c30a99bc12dd4c400ff72f8302a2ff17d8",
+      "bytes": 165710
+    }
+  },
+  "unchanged_mathematics": "All 969 frozen proof/specification inputs, manuscript and PDF remain unchanged. The earlier fifteen-target hosted comparison and kernel result is reused under its original identity."
+}

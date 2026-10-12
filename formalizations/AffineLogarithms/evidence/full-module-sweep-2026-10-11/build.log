@@ -1,0 +1,1268 @@
+✔ [8923/8936] Built OAI.NumberTheory.PiExponent.Approximation.WeightSeparationProducts (1.8s)
+✔ [8924/8936] Built OAI.NumberTheory.PiExponent.Approximation.WeightSeparationConstant (2.1s)
+✔ [8925/8936] Built OAI.NumberTheory.PiExponent.Analysis.DimensionLimits (2.4s)
+✔ [8926/8937] Built OAI.NumberTheory.PiExponent.Approximation.ApproximationSelection (6.2s)
+✔ [8927/8937] Built OAI.NumberTheory.PiExponent.Approximation.WeightErrorMargin (6.2s)
+✔ [8928/8937] Built OAI.NumberTheory.PiExponent.Approximation.Sigma (6.2s)
+✔ [8929/8937] Built OAI.NumberTheory.PiExponent.Approximation.WeightSeparation (2.1s)
+✔ [8930/8939] Built OAI.NumberTheory.PiExponent.LocalAlgebra.Dimension (2.7s)
+✔ [8931/8943] Built OAI.NumberTheory.PiExponent.Jets.JetGeometry (3.1s)
+✔ [8932/8943] Built Logarithm.ApproximationSelection (6.6s)
+✔ [8933/8943] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialFrameDegree (2.3s)
+✔ [8934/8943] Built OAI.NumberTheory.PiExponent.Approximation.SuccessiveApproximations (7.1s)
+✔ [8935/8944] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialFrame (2.5s)
+✔ [8936/8944] Built OAI.NumberTheory.PiExponent.Jets.FormalJetDerivatives (6.6s)
+✔ [8937/8948] Built OAI.NumberTheory.PiExponent.Geometry.CurveParameterFinite (2.8s)
+✔ [8938/8951] Built Logarithm.SuccessiveApproximations (6.6s)
+✔ [8939/8951] Built OAI.NumberTheory.PiExponent.Approximation.Parameters (24s)
+✔ [8940/8951] Built OAI.NumberTheory.PiExponent.Jets.FormalLogJet (8.1s)
+✔ [8941/8955] Built OAI.NumberTheory.PiExponent.Geometry.WeightedCurveDegree (8.4s)
+✔ [8942/8955] Built OAI.NumberTheory.PiExponent.Jets.IntrinsicLength (7.5s)
+✔ [8943/8957] Built Logarithm.ScaledFormalJet (8.1s)
+✔ [8944/8957] Built OAI.NumberTheory.PiExponent.Jets.FormalBranchOrder (7.2s)
+✔ [8945/8960] Built OAI.NumberTheory.PiExponent.Geometry.CurveLocalOrder (7.6s)
+✔ [8946/8960] Built OAI.NumberTheory.PiExponent.Approximation.AdmissibleParameters (12s)
+✔ [8947/8960] Built OAI.NumberTheory.PiExponent.Jets.FormalBranchOrderRational (6.9s)
+✔ [8948/8960] Built OAI.NumberTheory.PiExponent.Jets.DVRBranchOrder (6.8s)
+✔ [8949/8964] Built OAI.NumberTheory.PiExponent.Jets.DVRBranchExpansion (8.4s)
+✔ [8950/8965] Built OAI.NumberTheory.PiExponent.LocalAlgebra.DVRValuationUnique (7.8s)
+✔ [8951/8965] Built OAI.NumberTheory.PiExponent.Jets.BranchContact (7.8s)
+✔ [8952/8965] Built OAI.NumberTheory.PiExponent.Analysis.FormalLogTruncation (10s)
+✔ [8953/8965] Built OAI.NumberTheory.PiExponent.Jets.DVRBranch (7.3s)
+✔ [8954/8965] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialPoleBound (6.8s)
+✔ [8955/8966] Built OAI.NumberTheory.PiExponent.Polynomials.WeightedPolynomialPole (6.0s)
+✔ [8956/8966] Built OAI.NumberTheory.PiExponent.Jets.FormalBranchEvaluation (6.8s)
+✔ [8957/8970] Built Logarithm.AdmissibleParameters (29s)
+✔ [8958/8970] Built OAI.NumberTheory.PiExponent.Jets.DVRBranchJet (6.8s)
+✔ [8959/8974] Built OAI.NumberTheory.PiExponent.Approximation.WeightedSliceDegree (7.3s)
+✔ [8960/8985] Built OAI.NumberTheory.PiExponent.Polynomials.SimplexFloor (6.3s)
+✔ [8961/8992] Built OAI.NumberTheory.PiExponent.Polynomials.SimplexRationalWeights (6.0s)
+✔ [8962/8992] Built OAI.NumberTheory.PiExponent.Polynomials.SimplexUnweighted (6.4s)
+✔ [8963/8997] Built OAI.NumberTheory.PiExponent.Approximation.PersistentComponents (6.8s)
+✔ [8964/8997] Built OAI.NumberTheory.PiExponent.Polynomials.NestedPolynomialSwap (7.6s)
+✔ [8965/8997] Built OAI.NumberTheory.PiExponent.Polynomials.SimplexCounting (8.8s)
+✔ [8966/8997] Built OAI.NumberTheory.PiExponent.Approximation.Arithmetic (5.3s)
+✔ [8967/9000] Built OAI.NumberTheory.PiExponent.Jets.DerivativeIdeals (7.4s)
+✔ [8968/9000] Built OAI.NumberTheory.PiExponent.Approximation.RowTranslation (9.8s)
+✔ [8969/9000] Built OAI.NumberTheory.PiExponent.Polynomials.SimplexRational (6.8s)
+✔ [8970/9000] Built OAI.NumberTheory.PiExponent.Approximation.InterpolationMatrix (8.6s)
+✔ [8971/9001] Built OAI.NumberTheory.PiExponent.Jets.OrdinaryDerivativeIdeals (6.9s)
+✔ [8972/9001] Built AlgebraicLog.ParameterShape (6.3s)
+✔ [8973/9005] Built OAI.NumberTheory.PiExponent.Approximation.MatrixArithmetic (9.5s)
+✔ [8974/9007] Built OAI.NumberTheory.PiExponent.Polynomials.AuxiliaryPolynomial (9.8s)
+✔ [8975/9007] Built OAI.NumberTheory.PiExponent.Geometry.CurveZeroPole (73s)
+✔ [8976/9007] Built AlgebraicLog.DimensionBudget (12s)
+✔ [8977/9007] Built OAI.NumberTheory.PiExponent.Analysis.AnalyticCollision (7.9s)
+✔ [8978/9007] Built OAI.NumberTheory.PiExponent.Jets.FormalJetIndices (7.1s)
+✔ [8979/9007] Built OAI.NumberTheory.PiExponent.Jets.AuxiliaryJetMap (6.8s)
+✔ [8980/9007] Built OAI.NumberTheory.PiExponent.Approximation.MatrixTranslation (10s)
+✔ [8981/9008] Built OAI.NumberTheory.PiExponent.Jets.OrdinaryAuxiliaryJet (8.8s)
+✔ [8982/9008] Built Logarithm.RationalCenters (5.8s)
+✔ [8983/9008] Built OAI.NumberTheory.PiExponent.Analysis.LogTailAnalytic (8.5s)
+✔ [8984/9010] Built OAI.NumberTheory.PiExponent.Jets.OrdinaryJetDerivatives (7.2s)
+✔ [8985/9010] Built OAI.NumberTheory.PiExponent.Approximation.FormalMatrixBridge (9.5s)
+✔ [8986/9010] Built OAI.NumberTheory.PiExponent.Analysis.AnalyticRowSeries (7.1s)
+✔ [8987/9010] Built OAI.NumberTheory.PiExponent.Jets.OrdinaryBranchEvaluation (7.7s)
+✔ [8988/9014] Built OAI.NumberTheory.PiExponent.Analysis.PeriodAnalytic (9.2s)
+✔ [8989/9017] Built OAI.NumberTheory.PiExponent.Analysis.CollisionCombinatorics (8.8s)
+✔ [8990/9017] Built OAI.NumberTheory.PiExponent.Geometry.CurveValuationCenter (26s)
+✔ [8991/9017] Built OAI.NumberTheory.PiExponent.Approximation.FormalMatrixSurjectivity (6.8s)
+✔ [8992/9017] Built OAI.NumberTheory.PiExponent.Jets.OrdinaryDVRBranchJet (7.5s)
+✔ [8993/9017] Built Logarithm.ScaledPeriodAnalytic (6.0s)
+✔ [8994/9019] Built OAI.NumberTheory.PiExponent.Analysis.CollisionGeometricSum (6.5s)
+✔ [8995/9019] Built OAI.NumberTheory.PiExponent.Analysis.CollisionExponential (6.7s)
+✔ [8996/9019] Built OAI.NumberTheory.PiExponent.Polynomials.SimplexLog (6.2s)
+✔ [8997/9021] Built OAI.NumberTheory.PiExponent.Geometry.PlaceValuationRing (7.4s)
+✔ [8998/9023] Built OAI.NumberTheory.PiExponent.Approximation.ApproximationCenters (6.8s)
+✔ [8999/9025] Built OAI.NumberTheory.PiExponent.Analysis.FiniteDeterminantCollision (7.5s)
+✔ [9000/9025] Built OAI.NumberTheory.PiExponent.Approximation.Comparison (2.5s)
+✔ [9001/9027] Built OAI.NumberTheory.PiExponent.Analysis.CollisionOccupancy (6.1s)
+✔ [9002/9028] Built OAI.NumberTheory.PiExponent.Approximation.MatrixCounting (7.2s)
+✔ [9003/9030] Built OAI.NumberTheory.PiExponent.Analysis.CollisionLimit (5.8s)
+✔ [9004/9030] Built OAI.NumberTheory.PiExponent.Statement (5.3s)
+✔ [9005/9030] Built Logarithm.ScaledTranslation (5.9s)
+✔ [9006/9030] Built OAI.NumberTheory.PiExponent.Analysis.AnalyticDeterminantCollision (6.1s)
+✔ [9007/9030] Built OAI.NumberTheory.PiExponent.Approximation.MatrixTranslationBounds (10s)
+✔ [9008/9032] Built OAI.NumberTheory.PiExponent.Analysis.TranslationCountLimit (5.9s)
+✔ [9009/9036] Built OAI.NumberTheory.PiExponent.Approximation.DeterminantContradiction (6.6s)
+✔ [9010/9036] Built OAI.NumberTheory.PiExponent.Analysis.Collision (6.2s)
+✔ [9011/9036] Built OAI.NumberTheory.PiExponent.Geometry.CurveContact (7.0s)
+✔ [9012/9038] Built OAI.NumberTheory.PiExponent.Analysis.LogarithmicObstruction (6.2s)
+✔ [9013/9039] Built OAI.NumberTheory.PiExponent.LocalAlgebra.TranscendenceBasisReduction (4.9s)
+✔ [9014/9039] Built Logarithm.ScaledCollision (7.2s)
+✔ [9015/9039] Built OAI.NumberTheory.PiExponent.Approximation.FrameEquationFamily (6.7s)
+✔ [9016/9044] Built OAI.NumberTheory.PiExponent.Analysis.AlgebraicLogarithmicObstruction (5.1s)
+✔ [9017/9044] Built OAI.NumberTheory.PiExponent.Jets.NormalBasisRigidity (7.2s)
+✔ [9018/9044] Built OAI.NumberTheory.PiExponent.Jets.DifferentialConstant (3.2s)
+✔ [9019/9048] Built OAI.NumberTheory.PiExponent.Analysis.DeterminantAnalyticBound (18s)
+✔ [9020/9048] Built OAI.NumberTheory.PiExponent.Jets.PolynomialTangentDifferential (6.2s)
+✔ [9021/9048] Built OAI.NumberTheory.PiExponent.Jets.ConormalPairing (2.4s)
+✔ [9022/9049] Built OAI.NumberTheory.PiExponent.Jets.ResidueConormalPairing (2.9s)
+✔ [9023/9049] Built OAI.NumberTheory.PiExponent.Geometry.CurveProductFormula (59s)
+✔ [9024/9049] Built OAI.NumberTheory.PiExponent.Jets.NormalFrameBasis (7.9s)
+✔ [9025/9055] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialNormalNonzero (11s)
+✔ [9026/9055] Built OAI.NumberTheory.PiExponent.Approximation.RectangularVolume (6.3s)
+✔ [9027/9058] Built OAI.NumberTheory.PiExponent.Jets.PrimeNormalCotangent (8.0s)
+✔ [9028/9059] Built OAI.NumberTheory.PiExponent.Geometry.CurveContactSum (8.5s)
+✔ [9029/9062] Built OAI.NumberTheory.PiExponent.Jets.FilteredLength (7.2s)
+✔ [9030/9062] Built OAI.NumberTheory.PiExponent.LocalAlgebra.FibreContact (7.0s)
+✔ [9031/9062] Built OAI.NumberTheory.PiExponent.Jets.CommutingTaylor (9.2s)
+✔ [9032/9062] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeNormalRigidity (12s)
+✔ [9033/9062] Built OAI.NumberTheory.PiExponent.Geometry.CurveCenters (7.8s)
+✔ [9034/9062] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeNormalKernel (5.8s)
+✔ [9035/9062] Built OAI.NumberTheory.PiExponent.Jets.GradedGeneration (8.4s)
+✔ [9036/9067] Built OAI.NumberTheory.PiExponent.Approximation.GenericNormalRigidity (7.2s)
+✔ [9037/9068] Built OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientLengthEquivalence (2.3s)
+✔ [9038/9068] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedLengthEquivalence (2.0s)
+✔ [9039/9068] Built OAI.NumberTheory.PiExponent.Jets.CotangentGeneration (6.9s)
+✔ [9040/9070] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalLengthTransport (2.9s)
+✔ [9041/9070] Built OAI.NumberTheory.PiExponent.Geometry.PlaceCenteredBranch (10s)
+✔ [9042/9070] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizationQuotientParameters (4.4s)
+✔ [9043/9070] Built OAI.NumberTheory.PiExponent.Approximation.FibreNormalRigidity (15s)
+✔ [9044/9070] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeResidueAlgebraEquiv (3.2s)
+✔ [9045/9070] Built OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedBezout (5.5s)
+✔ [9046/9070] Built Logarithm.GeneralizedCenters (6.8s)
+✔ [9047/9070] Built OAI.NumberTheory.PiExponent.Jets.TransverseMultiplicity (11s)
+✔ [9048/9073] Built OAI.NumberTheory.PiExponent.Approximation.GenericFibreRigidity (7.6s)
+✔ [9049/9073] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateFiniteSlice (8.5s)
+✔ [9050/9073] Built Logarithm.Scaling (8.3s)
+✔ [9051/9074] Built OAI.NumberTheory.PiExponent.LocalAlgebra.SeparablePointLength (11s)
+✔ [9052/9074] Built OAI.NumberTheory.PiExponent.Jets.TaylorRectangular (8.0s)
+✔ [9053/9074] Built OAI.NumberTheory.PiExponent.Jets.RectangularCotangent (10s)
+✔ [9054/9079] Built OAI.NumberTheory.PiExponent.Jets.TransverseWeightedMultiplicity (7.0s)
+✔ [9055/9079] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalResidueResolution (4.9s)
+✔ [9056/9080] Built OAI.NumberTheory.PiExponent.Approximation.OrdinaryComponentRigidity (7.4s)
+✔ [9057/9080] Built Logarithm.ScaledTruncation (6.3s)
+✔ [9058/9080] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialCoefficientLocalization (4.0s)
+✔ [9059/9080] Built Logarithm.ScalingMonomials (6.1s)
+✔ [9060/9082] Built OAI.NumberTheory.PiExponent.Jets.OrdinaryTaylor (6.0s)
+✔ [9061/9082] Built OAI.NumberTheory.PiExponent.Polynomials.RationalResidueCoefficientField (4.8s)
+✔ [9062/9082] Built OAI.NumberTheory.PiExponent.Jets.NormalBasisProducts (6.9s)
+✔ [9063/9082] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateTranscendenceLocalization (3.8s)
+✔ [9064/9082] Built OAI.NumberTheory.PiExponent.Jets.PrimeTaylorCotangent (9.5s)
+✔ [9065/9082] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PointLengthEquiv (4.1s)
+✔ [9066/9082] Built OAI.NumberTheory.PiExponent.Polynomials.CoefficientLocalizationMaximal (2.4s)
+✔ [9067/9082] Built Logarithm.ScaledMatrix (8.0s)
+✔ [9068/9082] Built OAI.NumberTheory.PiExponent.LocalAlgebra.SplitCoordinateClosedPoint (6.2s)
+✔ [9069/9088] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateTranscendenceBasis (12s)
+✔ [9070/9088] Built OAI.NumberTheory.PiExponent.LocalAlgebra.OrdinaryMultiplicity (11s)
+✔ [9071/9090] Built OAI.NumberTheory.PiExponent.LocalAlgebra.FlatLocalLength (4.6s)
+✔ [9072/9091] Built OAI.NumberTheory.PiExponent.LocalAlgebra.SplitClosedPointCompatibility (6.2s)
+✔ [9073/9091] Built Logarithm.ScaledArithmetic (9.6s)
+✔ [9074/9091] Built OAI.NumberTheory.PiExponent.Polynomials.Homogenization (2.3s)
+✔ [9075/9093] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalLength (2.4s)
+✔ [9076/9093] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ConeLocalLength (4.9s)
+✔ [9077/9093] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedComponent (2.2s)
+✔ [9078/9095] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialPrimeClosedPointEquiv (6.8s)
+ℹ [9079/9095] Built Logarithm.ScaledApproximationErrors (7.3s)
+info: Logarithm/ScaledApproximationErrors.lean:36:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9080/9097] Built AlgebraicLog.AnalyticData (6.3s)
+✔ [9081/9097] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedRadical (2.2s)
+✔ [9082/9097] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ConePrimeLocalization (4.1s)
+✔ [9083/9097] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularDegreePositivity (3.6s)
+✔ [9084/9097] Built OAI.NumberTheory.PiExponent.LocalAlgebra.GenericCombination (2.4s)
+✔ [9085/9097] Built AlgebraicLog.DeterminantData (6.8s)
+✔ [9086/9097] Built OAI.NumberTheory.PiExponent.Polynomials.ConeHomogeneousEquations (4.5s)
+✔ [9087/9098] Built OAI.NumberTheory.PiExponent.Ampleness.LocalHomogeneousDegrees (4.0s)
+✔ [9088/9100] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateSliceLength (13s)
+✔ [9089/9100] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IsolatedIntersectionSteps (2.9s)
+✔ [9090/9100] Built OAI.NumberTheory.PiExponent.Geometry.ConePrimeProperties (4.1s)
+✔ [9091/9100] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ConeEquationLength (4.3s)
+✔ [9092/9100] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CyclicPrimeFactor (3.2s)
+✔ [9093/9100] Built AlgebraicLog.AdmissibleParameters (19s)
+✔ [9094/9101] Built AlgebraicLog.LiteralAnalyticSummand (10s)
+✔ [9095/9102] Built OAI.NumberTheory.PiExponent.LocalAlgebra.SubquotientLength (2.6s)
+✔ [9096/9102] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ConeRegularSequence (4.8s)
+✔ [9097/9102] Built OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteFreeExtTransfer (2.8s)
+✔ [9098/9108] Built OAI.NumberTheory.PiExponent.Approximation.CoordinateSliceComparison (10s)
+✔ [9099/9112] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionLength (3.7s)
+✔ [9100/9130] Built AlgebraicLog.AnalyticAggregate (7.7s)
+✔ [9101/9130] Built OAI.NumberTheory.PiExponent.LocalAlgebra.FreeResolutionAssociatedHeight (3.5s)
+✔ [9102/9133] Built OAI.NumberTheory.PiExponent.Polynomials.HomogeneousSections (2.7s)
+✔ [9103/9140] Built OAI.NumberTheory.PiExponent.Polynomials.HomogeneousPrimeFactor (2.7s)
+✔ [9104/9140] Built OAI.NumberTheory.PiExponent.LocalAlgebra.StabilizedColonPowers (2.7s)
+✔ [9105/9140] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalUnmixedness (4.3s)
+✔ [9106/9140] Built OAI.NumberTheory.PiExponent.LocalAlgebra.FiltrationLength (2.3s)
+✔ [9107/9140] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedCyclicFactor (2.5s)
+✔ [9108/9143] Built OAI.NumberTheory.PiExponent.Polynomials.HomogeneousPrimeFiltration (2.5s)
+✔ [9109/9145] Built OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientSections (4.1s)
+✔ [9110/9146] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PairResolutionShortComplex (2.0s)
+✔ [9111/9146] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertDimension (2.6s)
+✔ [9112/9146] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalComponentDegree (3.4s)
+✔ [9113/9149] Built OAI.NumberTheory.PiExponent.Polynomials.CoordinateQuotientGrading (6.5s)
+✔ [9114/9149] Built OAI.NumberTheory.PiExponent.Polynomials.HomogeneousIdealStep (5.4s)
+✔ [9115/9149] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertDegree (5.5s)
+✔ [9116/9149] Built OAI.NumberTheory.PiExponent.Polynomials.HomogeneousQuotientDimension (6.1s)
+✔ [9117/9149] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularPairExtObstruction (2.9s)
+✔ [9118/9149] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialCumulative (3.6s)
+✔ [9119/9149] Built OAI.NumberTheory.PiExponent.Geometry.NormalizationGrowth (3.5s)
+✔ [9120/9149] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedFiltrationLength (3.3s)
+✔ [9121/9149] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialGrowthRanks (3.5s)
+✔ [9122/9150] Built OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertGrowthComparison (3.2s)
+✔ [9123/9150] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialAssociatedLocalization (3.5s)
+✔ [9124/9150] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularHilbertStep (6.9s)
+✔ [9125/9150] Built OAI.NumberTheory.PiExponent.Polynomials.HomogeneousComponentLength (3.6s)
+✔ [9126/9150] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CumulativeHilbertSections (5.5s)
+✔ [9127/9150] Built OAI.NumberTheory.PiExponent.Geometry.FiniteNormalizationGrowth (5.0s)
+✔ [9128/9152] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHypersurfaceDimension (3.6s)
+✔ [9129/9152] Built OAI.NumberTheory.PiExponent.Analysis.HilbertSeries (3.1s)
+✔ [9130/9154] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularPrefixLocalization (3.6s)
+✔ [9131/9154] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularPrefixes (3.2s)
+✔ [9132/9154] Built OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientLocalizedLength (2.7s)
+✔ [9133/9157] Built OAI.NumberTheory.PiExponent.Polynomials.HilbertPolynomialBase (3.1s)
+✔ [9134/9158] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ColonHilbertStep (3.9s)
+✔ [9135/9158] Built OAI.NumberTheory.PiExponent.LocalAlgebra.AffineTranscendenceDimension (4.4s)
+✔ [9136/9158] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalPrefixCutDimension (3.8s)
+✔ [9137/9161] Built OAI.NumberTheory.PiExponent.Analysis.RegularSequenceSeries (2.9s)
+✔ [9138/9161] Built OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertZeroVariables (2.8s)
+✔ [9139/9161] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialMaximalHeight (3.8s)
+✔ [9140/9161] Built OAI.NumberTheory.PiExponent.Analysis.ColonSeriesTelescope (3.1s)
+✔ [9141/9161] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateBasisSplitting (5.7s)
+✔ [9142/9161] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CompleteIntersectionHilbert (3.6s)
+✔ [9143/9161] Built OAI.NumberTheory.PiExponent.LocalAlgebra.AffineResidueTranscendence (4.2s)
+✔ [9144/9161] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ClosedPointLocalDimension (3.1s)
+✔ [9145/9161] Built OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientPrimeResidueBasis (3.0s)
+✔ [9146/9163] Built OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertDenominatorReduction (3.4s)
+✔ [9147/9168] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PositiveDimensionalHilbert (3.4s)
+✔ [9148/9168] Built OAI.NumberTheory.PiExponent.Polynomials.HomogeneousHilbertExistence (2.9s)
+✔ [9149/9168] Built OAI.NumberTheory.PiExponent.LocalAlgebra.AffinePrimeDimensionBridge (3.6s)
+✔ [9150/9168] Built OAI.NumberTheory.PiExponent.LocalAlgebra.AffineClosedPointLocalization (18s)
+✔ [9151/9168] Built OAI.NumberTheory.PiExponent.Polynomials.HomogeneousHilbertPolynomial (2.6s)
+✔ [9152/9168] Built OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertDifferenceDegree (3.3s)
+✔ [9153/9168] Built OAI.NumberTheory.PiExponent.Polynomials.ColonHilbertPolynomial (3.1s)
+✔ [9154/9168] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeDegreeExistence (3.8s)
+✔ [9155/9171] Built OAI.NumberTheory.PiExponent.Geometry.ProperHypersurfaceHilbert (4.4s)
+✔ [9156/9173] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertComparison (5.6s)
+✔ [9157/9173] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialPrimeDimension (6.2s)
+✔ [9158/9173] Built OAI.NumberTheory.PiExponent.Polynomials.HilbertPolynomial (4.2s)
+✔ [9159/9175] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionPrimeFiltration (2.9s)
+✔ [9160/9180] Built OAI.NumberTheory.PiExponent.Cohomology.EndomorphismEulerAdditivity (4.9s)
+✔ [9161/9180] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionTransport (4.4s)
+✔ [9162/9188] Built OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertMultiplicityFiltration (3.4s)
+✔ [9163/9188] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHypersurfaceEquidimension (3.5s)
+✔ [9164/9188] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionPrimeFactors (2.8s)
+✔ [9165/9188] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ParameterKilledFiniteLength (3.4s)
+✔ [9166/9188] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionExactStep (4.0s)
+✔ [9167/9190] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ComponentMultiplicitySum (4.6s)
+✔ [9168/9190] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalPrimeTower (3.1s)
+✔ [9169/9190] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ComponentMultiplicityBound (4.4s)
+✔ [9170/9190] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionDimensionOne (2.8s)
+✔ [9171/9192] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedMinimalPrimeFamily (2.3s)
+✔ [9172/9192] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ParameterCombinations (1.9s)
+✔ [9173/9192] Built OAI.NumberTheory.PiExponent.Cohomology.LocalIntersectionEulerFiltration (3.4s)
+✔ [9174/9192] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularParameterAvoidance (2.6s)
+✔ [9175/9193] Built OAI.NumberTheory.PiExponent.LocalAlgebra.FinsuppCandidates (1.9s)
+✔ [9176/9193] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeCutBudget (4.3s)
+✔ [9177/9193] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CompleteIntersectionComponentBound (5.1s)
+✔ [9178/9195] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularParameterSelection2 (3.1s)
+✔ [9179/9195] Built OAI.NumberTheory.PiExponent.Cohomology.LocalIntersectionRegularEuler (3.9s)
+✔ [9180/9215] Built OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteFreeResolutionExt (3.2s)
+✔ [9181/9215] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RetainedIntersectionCycles (5.2s)
+✔ [9182/9215] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceQuotientTail (3.1s)
+✔ [9183/9215] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionMinimalSum (3.0s)
+✔ [9184/9215] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceResolution (4.8s)
+✔ [9185/9215] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceHomZero (2.3s)
+✔ [9186/9215] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RetainedMinimalPrimeFamily (3.8s)
+✔ [9187/9223] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionQuotientTransport (4.7s)
+✔ [9188/9223] Built OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualCone (4.7s)
+✔ [9189/9223] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ConeComplex (3.3s)
+✔ [9190/9224] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ConeQuotientAugmentation (3.2s)
+✔ [9191/9224] Built OAI.NumberTheory.PiExponent.LocalAlgebra.EquidimensionalRetainedCut (3.6s)
+✔ [9192/9224] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionFormula (3.5s)
+✔ [9193/9224] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialCoordinateMinpolyQuotient (3.6s)
+✔ [9194/9224] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceAugmentation (2.8s)
+✔ [9195/9226] Built OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualEndpoint (4.4s)
+✔ [9196/9226] Built OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulFiniteFree (2.7s)
+✔ [9197/9226] Built OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualTransport (4.2s)
+✔ [9198/9226] Built OAI.NumberTheory.PiExponent.LocalAlgebra.TriangularLocalParameters (3.5s)
+✔ [9199/9226] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedOneCutPropagation (4.3s)
+✔ [9200/9226] Built OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulBounded (3.4s)
+✔ [9201/9226] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedLocalization (7.9s)
+✔ [9202/9234] Built OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualBottom (4.5s)
+✔ [9203/9234] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedLocalLength (7.7s)
+✔ [9204/9235] Built OAI.NumberTheory.PiExponent.LocalAlgebra.NaturalMultiplicityPropagation (4.6s)
+✔ [9205/9235] Built OAI.NumberTheory.PiExponent.LocalAlgebra.TriangularLocalParametersAssembly (5.3s)
+✔ [9206/9235] Built OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulTopTerm (3.7s)
+✔ [9207/9235] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IteratedKoszulExactness (5.7s)
+✔ [9208/9235] Built OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualStep (4.2s)
+✔ [9209/9235] Built OAI.NumberTheory.PiExponent.Polynomials.PowerCoverExponents (6.5s)
+✔ [9210/9235] Built OAI.NumberTheory.PiExponent.LocalAlgebra.MultiplicityCycles (5.2s)
+✔ [9211/9235] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedPointMap (7.5s)
+✔ [9212/9236] Built OAI.NumberTheory.PiExponent.LocalAlgebra.TriangularLocalParametersTransport (2.5s)
+✔ [9213/9236] Built OAI.NumberTheory.PiExponent.Geometry.CurveComponentRigidity (7.4s)
+✔ [9214/9241] Built OAI.NumberTheory.PiExponent.Jets.KoszulTopDifferential (4.3s)
+✔ [9215/9241] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceExt (4.4s)
+✔ [9216/9241] Built OAI.NumberTheory.PiExponent.Polynomials.PowerCoverSubstitution (6.2s)
+✔ [9217/9241] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalRegularParameters (4.4s)
+✔ [9218/9241] Built OAI.NumberTheory.PiExponent.Approximation.FrameResidueDirections (6.4s)
+✔ [9219/9241] Built OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulTopAugmentation (4.2s)
+✔ [9220/9241] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularCutHistory (9.6s)
+✔ [9221/9241] Built OAI.NumberTheory.PiExponent.Jets.FrameTransverseMultiplicity (6.7s)
+✔ [9222/9242] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceExtObstruction (4.2s)
+✔ [9223/9242] Built OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualInitial (4.3s)
+✔ [9224/9242] Built OAI.NumberTheory.PiExponent.Polynomials.HomogeneousListHistory (5.6s)
+✔ [9225/9242] Built OAI.NumberTheory.PiExponent.Polynomials.PowerCoverBasis (9.8s)
+✔ [9226/9244] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeFrameMultiplicity (8.1s)
+✔ [9227/9244] Built Logarithm.AuxiliaryJet (6.0s)
+✔ [9228/9247] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceDualExactness (4.6s)
+✔ [9229/9251] Built OAI.NumberTheory.PiExponent.LocalAlgebra.AffineLocalRegularBezout (5.0s)
+✔ [9230/9252] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceLowExt (3.2s)
+✔ [9231/9252] Built Logarithm.BranchOrder (6.2s)
+✔ [9232/9253] Built OAI.NumberTheory.PiExponent.Polynomials.TranslatedPowerCover (8.0s)
+✔ [9233/9253] Built OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalLowExt (3.0s)
+✔ [9234/9253] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateContactBound (6.5s)
+✔ [9235/9255] Built Logarithm.ContactFamily (7.4s)
+✔ [9236/9257] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RegularParameterSelection (5.4s)
+✔ [9237/9257] Built OAI.NumberTheory.PiExponent.Approximation.FibreWeightSeparation (6.4s)
+✔ [9238/9258] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalBezout (4.1s)
+✔ [9239/9258] Built OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedPowerLength (12s)
+✔ [9240/9258] Built Logarithm.ConstantFiber (8.0s)
+✔ [9241/9266] Built OAI.NumberTheory.PiExponent.Geometry.CurveContactFamily (8.6s)
+✔ [9242/9266] Built OAI.NumberTheory.PiExponent.Geometry.CurvePrimeHeight (4.2s)
+✔ [9243/9270] Built OAI.NumberTheory.PiExponent.Jets.FormalAuxiliaryJet (6.9s)
+✔ [9244/9270] Built OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedBezoutBound (7.1s)
+✔ [9245/9270] Built OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedLocalLattice (7.6s)
+✔ [9246/9270] Built OAI.NumberTheory.PiExponent.LocalAlgebra.ParameterResidueField (10s)
+✔ [9247/9271] Built AlgebraicLog.IntegerClearing (8.1s)
+✔ [9248/9272] Built AlgebraicLog.QuadraticNorm (5.1s)
+✔ [9249/9275] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeWeightedBezout (6.9s)
+✔ [9250/9275] Built AlgebraicLog.MatrixArithmetic (6.9s)
+✔ [9251/9275] Built OAI.NumberTheory.PiExponent.Jets.BranchContactIdeal (7.3s)
+✔ [9252/9275] Built OAI.NumberTheory.PiExponent.Analysis.FormalLogTailOrder (5.8s)
+✔ [9253/9279] Built OAI.NumberTheory.PiExponent.Approximation.OrdinarySliceComparison (6.7s)
+✔ [9254/9279] Built OAI.NumberTheory.PiExponent.Geometry.PlaceParameterModel (15s)
+✔ [9255/9279] Built OAI.NumberTheory.PiExponent.Jets.TransverseSliceComparison (7.4s)
+✔ [9256/9279] Built OAI.NumberTheory.PiExponent.Jets.FormalBranchCoordinates (6.3s)
+✔ [9257/9279] Built OAI.NumberTheory.PiExponent.Jets.PolynomialJetPackets (5.0s)
+✔ [9258/9280] Built AlgebraicLog.ArithmeticBounds (6.8s)
+✔ [9259/9281] Built OAI.NumberTheory.PiExponent.Geometry.PlaceLocalRing (6.4s)
+✔ [9260/9281] Built OAI.NumberTheory.PiExponent.Jets.FormalBranchContact (6.1s)
+✔ [9261/9281] Built OAI.NumberTheory.PiExponent.Jets.AlgebraicJetPackets (8.5s)
+✔ [9262/9281] Built OAI.NumberTheory.PiExponent.Analysis.LogarithmicContactIdeal (10s)
+✔ [9263/9285] Built OAI.NumberTheory.PiExponent.Jets.CompactJetPolynomial (9.3s)
+✔ [9264/9287] Built OAI.NumberTheory.PiExponent.Approximation.PersistentWeightComparison (32s)
+✔ [9265/9287] Built Logarithm.JetIdeals (7.8s)
+✔ [9266/9287] Built OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveWeights (8.1s)
+✔ [9267/9287] Built OAI.NumberTheory.PiExponent.Geometry.WeightedCurveRigidity (7.4s)
+✔ [9268/9287] Built AlgebraicLog.CurveWeights (9.8s)
+✔ [9269/9288] Built OAI.NumberTheory.PiExponent.Geometry.CurveFieldRigidity (8.0s)
+✔ [9270/9288] Built OAI.NumberTheory.PiExponent.Cohomology.FiniteCoverCohomology (60s)
+✔ [9271/9288] Built OAI.NumberTheory.PiExponent.Cohomology.CurveDerivativeVanishing (11s)
+✔ [9272/9288] Built Logarithm.DerivativeVanishing (9.4s)
+✔ [9273/9288] Built OAI.NumberTheory.PiExponent.Ampleness.ReesPushdown (28s)
+✔ [9274/9289] Built Logarithm.CurveRigidity (7.0s)
+✔ [9275/9289] Built OAI.NumberTheory.PiExponent.Geometry.LineBundleTensor (71s)
+✔ [9276/9289] Built OAI.NumberTheory.PiExponent.Geometry.CurveInequality (8.8s)
+✔ [9277/9293] Built Logarithm.CurveInequality (7.8s)
+✔ [9278/9295] Built OAI.NumberTheory.PiExponent.Geometry.CurveInequalityIntrinsic (7.4s)
+✔ [9279/9296] Built OAI.NumberTheory.PiExponent.Polynomials.FrameCoefficients (11s)
+✔ [9280/9296] Built Logarithm.CurveInequalityIntrinsic (8.8s)
+✔ [9281/9296] Built OAI.NumberTheory.PiExponent.Approximation.GlobalSectionClearing (45s)
+✔ [9282/9300] Built OAI.NumberTheory.PiExponent.Approximation.OpenBaseChange (20s)
+✔ [9283/9300] Built OAI.NumberTheory.PiExponent.Ampleness.CoherentAffineFinite (48s)
+✔ [9284/9300] Built Logarithm.GeometryData (6.2s)
+✔ [9285/9300] Built OAI.NumberTheory.PiExponent.Approximation.FrameSections (16s)
+✔ [9286/9303] Built OAI.NumberTheory.PiExponent.Jets.CompactJetIdeal (6.6s)
+✔ [9287/9303] Built OAI.NumberTheory.PiExponent.Approximation.CoherentTwistPresentation (45s)
+✔ [9288/9305] Built AlgebraicLog.ApproximationGeometry (6.9s)
+✔ [9289/9305] Built OAI.NumberTheory.PiExponent.Approximation.SectionOpens (7.0s)
+✔ [9290/9311] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupSchemeExt (11s)
+✔ [9291/9315] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealModule (13s)
+✔ [9292/9315] Built OAI.NumberTheory.PiExponent.Approximation.TwistSections (11s)
+✔ [9293/9318] Built OAI.NumberTheory.PiExponent.Approximation.IntegralLineSections (10s)
+✔ [9294/9323] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleIso (7.7s)
+✔ [9295/9323] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupIdeal (17s)
+✔ [9296/9326] Built OAI.NumberTheory.PiExponent.Approximation.LinePullback (8.2s)
+✔ [9297/9326] Built OAI.NumberTheory.PiExponent.Ampleness.ReesExceptional (18s)
+✔ [9298/9326] Built OAI.NumberTheory.PiExponent.Approximation.FrameTensorPowers (49s)
+✔ [9299/9326] Built OAI.NumberTheory.PiExponent.Approximation.TensorPure (31s)
+✔ [9300/9326] Built OAI.NumberTheory.PiExponent.Ampleness.ReesPrincipalLift (15s)
+✔ [9301/9326] Built OAI.NumberTheory.PiExponent.Ampleness.ReesUniversalUniqueness (24s)
+✔ [9302/9328] Built OAI.NumberTheory.PiExponent.Approximation.PushforwardTensor (8.7s)
+✔ [9303/9328] Built OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteGlobalPresentation (80s)
+✔ [9304/9333] Built OAI.NumberTheory.PiExponent.Approximation.LinePowerLaws (19s)
+✔ [9305/9333] Built OAI.NumberTheory.PiExponent.Approximation.SectionPullback (9.6s)
+✔ [9306/9333] Built OAI.NumberTheory.PiExponent.Approximation.TensorPowerRestriction (47s)
+✔ [9307/9333] Built OAI.NumberTheory.PiExponent.Geometry.LineBundleCoherent (11s)
+✔ [9308/9333] Built OAI.NumberTheory.PiExponent.Approximation.ClosedPushforwardAffine (17s)
+✔ [9309/9337] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCharts (11s)
+✔ [9310/9337] Built OAI.NumberTheory.PiExponent.Approximation.SectionPowerOpens (6.5s)
+✔ [9311/9337] Built OAI.NumberTheory.PiExponent.Approximation.FramedPullback (8.2s)
+✔ [9312/9337] Built OAI.NumberTheory.PiExponent.Approximation.FrameSubopens (6.8s)
+✔ [9313/9337] Built OAI.NumberTheory.PiExponent.Approximation.ClosedPushforwardCoherent (11s)
+✔ [9314/9337] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleCommonDegree (6.7s)
+✔ [9315/9337] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinates (14s)
+✔ [9316/9338] Built OAI.NumberTheory.PiExponent.Approximation.TensorOpenBaseChange (53s)
+✔ [9317/9338] Built OAI.NumberTheory.PiExponent.Approximation.PowerSectionExtension (11s)
+✔ [9318/9339] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveEmbeddingCharts (10s)
+✔ [9319/9339] Built OAI.NumberTheory.PiExponent.Jets.CompactJetIdealCoherent (11s)
+✔ [9320/9339] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveFramedAtlas (8.8s)
+✔ [9321/9339] Built OAI.NumberTheory.PiExponent.Approximation.LinePullbackPowers (16s)
+✔ [9322/9339] Built OAI.NumberTheory.PiExponent.LocalAlgebra.InvertibleIdealLocal (10s)
+✔ [9323/9339] Built OAI.NumberTheory.PiExponent.Geometry.PolynomialProjectiveStructure (7.3s)
+✔ [9324/9339] Built OAI.NumberTheory.PiExponent.Jets.CompactLogJetIdeal (7.3s)
+✔ [9325/9339] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveFramedSections (14s)
+✔ [9326/9342] Built OAI.NumberTheory.PiExponent.Geometry.LineBundleProduct (6.7s)
+✔ [9327/9342] Built OAI.NumberTheory.PiExponent.Ampleness.ClosedAmpleRestriction (6.4s)
+✔ [9328/9342] Built OAI.NumberTheory.PiExponent.Ampleness.AffineBlowupUniversal (6.7s)
+✔ [9329/9342] Built OAI.NumberTheory.PiExponent.LocalAlgebra.GlobalInvertibleIdeal (8.1s)
+✔ [9330/9342] Built Logarithm.CompactJetIdeal (7.6s)
+✔ [9331/9344] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleProjectiveSections (8.5s)
+✔ [9332/9344] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupUniversalBaseChange (6.7s)
+✔ [9333/9350] Built OAI.NumberTheory.PiExponent.Approximation.TensorSectionOpen (11s)
+✔ [9334/9352] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateValues (7.7s)
+✔ [9335/9352] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveMonomialCech (1.9s)
+✔ [9336/9355] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartOverlaps (13s)
+✔ [9337/9355] Built OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupGluing (7.0s)
+✔ [9338/9355] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleFromCover (7.7s)
+✔ [9339/9355] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveLaurentVertex (16s)
+✔ [9340/9355] Built OAI.NumberTheory.PiExponent.Approximation.SectionPowerFrames (22s)
+✔ [9341/9359] Built OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupRestriction (6.5s)
+✔ [9342/9359] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartRingNaturalityCore (23s)
+✔ [9343/9359] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupComplement (6.1s)
+✔ [9344/9364] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartSections (10s)
+✔ [9345/9364] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupProperIntegral (10s)
+✔ [9346/9364] Built OAI.NumberTheory.PiExponent.Geometry.LineBundleGluing (35s)
+✔ [9347/9364] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartRingNaturality (17s)
+✔ [9348/9364] Built OAI.NumberTheory.PiExponent.Polynomials.PullbackFrameCoefficient (7.4s)
+✔ [9349/9364] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveFrameNaturality (10s)
+✔ [9350/9364] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveRatioCocycle (6.0s)
+✔ [9351/9371] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateSections (20s)
+✔ [9352/9371] Built OAI.NumberTheory.PiExponent.Geometry.LineBundleGluingTransitions (10s)
+✔ [9353/9371] Built OAI.NumberTheory.PiExponent.Geometry.ProjectivePullbackFrames (7.3s)
+✔ [9354/9371] Built OAI.NumberTheory.PiExponent.Polynomials.GradedSubring (6.7s)
+✔ [9355/9371] Built OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialMap (7.3s)
+✔ [9356/9377] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateFiniteSections (8.5s)
+✔ [9357/9378] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionsPullback (8.6s)
+✔ [9358/9378] Built OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialImage (11s)
+✔ [9359/9378] Built OAI.NumberTheory.PiExponent.Polynomials.SurjectiveGradedMap (6.9s)
+✔ [9360/9378] Built OAI.NumberTheory.PiExponent.Geometry.LineBundleGluingSections (19s)
+✔ [9361/9378] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateRingNaturality (15s)
+✔ [9362/9385] Built OAI.NumberTheory.PiExponent.Approximation.WeightedGeometryScale (6.7s)
+✔ [9363/9385] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1Sections (6.2s)
+✔ [9364/9387] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateConstants (12s)
+✔ [9365/9388] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationModel (13s)
+✔ [9366/9388] Built OAI.NumberTheory.PiExponent.LocalAlgebra.SectionImageIdeal (15s)
+✔ [9367/9388] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationLocalRing (9.4s)
+✔ [9368/9388] Built OAI.NumberTheory.PiExponent.Approximation.WeightedCompactification (27s)
+✔ [9369/9388] Built OAI.NumberTheory.PiExponent.Approximation.InverseFrames (9.3s)
+✔ [9370/9388] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1ChartMap (16s)
+✔ [9371/9388] Built OAI.NumberTheory.PiExponent.Geometry.CurveProperExtension (7.4s)
+✔ [9372/9392] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveDenseChart (6.7s)
+✔ [9373/9392] Built OAI.NumberTheory.PiExponent.Approximation.SectionImageSupport (12s)
+✔ [9374/9393] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1LocalIdentity (5.8s)
+✔ [9375/9399] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceIntegral (6.1s)
+✔ [9376/9399] Built OAI.NumberTheory.PiExponent.Geometry.SheafificationUnitIso (7.1s)
+✔ [9377/9399] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1Morphism (13s)
+✔ [9378/9399] Built OAI.NumberTheory.PiExponent.Polynomials.FrameCoefficientLaws (8.7s)
+✔ [9379/9399] Built OAI.NumberTheory.PiExponent.Approximation.WeightedCompactificationImmersion (25s)
+✔ [9380/9399] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1Identity (6.5s)
+✔ [9381/9399] Built OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveStructure (6.1s)
+✔ [9382/9401] Built OAI.NumberTheory.PiExponent.Approximation.FrameSubopensCoherence (20s)
+✔ [9383/9402] Built OAI.NumberTheory.PiExponent.Ampleness.ProjectiveO1Ample (6.3s)
+✔ [9384/9402] Built OAI.NumberTheory.PiExponent.Approximation.ModuleLinePowerLaws (17s)
+✔ [9385/9404] Built OAI.NumberTheory.PiExponent.Approximation.WeightedCompactificationGeometry (15s)
+✔ [9386/9404] Built OAI.NumberTheory.PiExponent.Geometry.SheafSectionGluing (7.2s)
+✔ [9387/9404] Built OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveLineBundle (22s)
+✔ [9388/9408] Built OAI.NumberTheory.PiExponent.Geometry.LineBundleFrameCocycle (21s)
+✔ [9389/9408] Built OAI.NumberTheory.PiExponent.Approximation.TwistSectionScalars (24s)
+✔ [9390/9408] Built OAI.NumberTheory.PiExponent.Approximation.WeightedAffineParametrization (19s)
+✔ [9391/9408] Built OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveEmbedding (19s)
+✔ [9392/9408] Built OAI.NumberTheory.PiExponent.Approximation.TensorMixedSection (12s)
+✔ [9393/9408] Built OAI.NumberTheory.PiExponent.Approximation.CocycleTensor (27s)
+✔ [9394/9408] Built OAI.NumberTheory.PiExponent.Geometry.CurveMonomialMap (7.7s)
+✔ [9395/9408] Built OAI.NumberTheory.PiExponent.Ampleness.WeightedProjectiveAmple (6.5s)
+✔ [9396/9408] Built OAI.NumberTheory.PiExponent.LocalAlgebra.TwistLocalExtension (13s)
+✔ [9397/9408] Built OAI.NumberTheory.PiExponent.Approximation.TwistSectionClearing (14s)
+✔ [9398/9411] Built OAI.NumberTheory.PiExponent.Approximation.TwistPowerSection (8.1s)
+✔ [9399/9412] Built Logarithm.BlowupGeometry (8.2s)
+✔ [9400/9412] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveMonomialCechHigher (3.2s)
+✔ [9401/9417] Built OAI.NumberTheory.PiExponent.Approximation.CocycleTensorIso (12s)
+✔ [9402/9417] Built OAI.NumberTheory.PiExponent.Cohomology.CechOne (12s)
+✔ [9403/9417] Built OAI.NumberTheory.PiExponent.Geometry.LineBundleInverse (7.9s)
+✔ [9404/9417] Built OAI.NumberTheory.PiExponent.Approximation.TwistGlobalExtension (19s)
+✔ [9405/9419] Built OAI.NumberTheory.PiExponent.Cohomology.FreeCechResolution (10s)
+✔ [9406/9422] Built OAI.NumberTheory.PiExponent.Cohomology.CurveEuler (17s)
+✔ [9407/9422] Built OAI.NumberTheory.PiExponent.Approximation.InverseDualRestriction (9.9s)
+✔ [9408/9422] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveMonomialFinite (8.4s)
+✔ [9409/9422] Built OAI.NumberTheory.PiExponent.Approximation.NoetherianPowerExtension (11s)
+✔ [9410/9422] Built OAI.NumberTheory.PiExponent.Cohomology.CechHigher (18s)
+✔ [9411/9422] Built OAI.NumberTheory.PiExponent.LocalAlgebra.SectionZeroIdeal (8.3s)
+✔ [9412/9424] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveMonomialCohomology (8.5s)
+✔ [9413/9424] Built OAI.NumberTheory.PiExponent.Ampleness.NoetherianAmpleProjectiveSections (7.7s)
+✔ [9414/9428] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveTwistCech (6.0s)
+✔ [9415/9429] Built OAI.NumberTheory.PiExponent.LocalAlgebra.SerreDimensionShift (7.8s)
+✔ [9416/9429] Built OAI.NumberTheory.PiExponent.Approximation.SectionZeroSupport (9.4s)
+✔ [9417/9429] Built OAI.NumberTheory.PiExponent.Cohomology.FreeCechSections (13s)
+✔ [9418/9429] Built OAI.NumberTheory.PiExponent.Cohomology.SerreVanishing (7.0s)
+✔ [9419/9431] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveTwistAcyclicity (13s)
+✔ [9420/9434] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveLaurentTransitions (10s)
+✔ [9421/9434] Built OAI.NumberTheory.PiExponent.Approximation.TwistPresentations (25s)
+✔ [9422/9438] Built OAI.NumberTheory.PiExponent.Cohomology.CechLinear (20s)
+✔ [9423/9438] Built OAI.NumberTheory.PiExponent.Approximation.GlueGlobalGenerators (35s)
+✔ [9424/9438] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateFiniteValues (10s)
+✔ [9425/9438] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveTupleCharts (9.0s)
+✔ [9426/9443] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateRatios (12s)
+✔ [9427/9443] Built OAI.NumberTheory.PiExponent.Cohomology.CechZero (8.0s)
+✔ [9428/9443] Built OAI.NumberTheory.PiExponent.Cohomology.LaurentCechFinite (11s)
+✔ [9429/9443] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleGlobalGeneration (23s)
+✔ [9430/9443] Built OAI.NumberTheory.PiExponent.Approximation.InverseFrameRestriction (14s)
+✔ [9431/9444] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateTransitions (7.8s)
+✔ [9432/9446] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeFrames (8.2s)
+✔ [9433/9446] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeTransitions (8.1s)
+✔ [9434/9446] Built OAI.NumberTheory.PiExponent.Cohomology.CechExtFinite (16s)
+✔ [9435/9446] Built OAI.NumberTheory.PiExponent.Approximation.SerreAssembly (13s)
+✔ [9436/9446] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateOverlapNaturality (8.3s)
+✔ [9437/9454] Built OAI.NumberTheory.PiExponent.Approximation.ClosedImmersionSerreTransfer (7.6s)
+✔ [9438/9457] Built OAI.NumberTheory.PiExponent.Cohomology.EulerExact (8.5s)
+✔ [9439/9457] Built OAI.NumberTheory.PiExponent.Cohomology.LaurentExtFinite (11s)
+✔ [9440/9457] Built OAI.NumberTheory.PiExponent.Cohomology.CohomologyIso (7.0s)
+✔ [9441/9458] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveCoordinateAcyclicity (11s)
+✔ [9442/9458] Built OAI.NumberTheory.PiExponent.Approximation.ClosedPushforwardLinear (8.1s)
+✔ [9443/9458] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceBasics (8.9s)
+✔ [9444/9466] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CoherentExtFiniteness (14s)
+✔ [9445/9466] Built OAI.NumberTheory.PiExponent.Ampleness.LineAmpleOperations (6.1s)
+✔ [9446/9467] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveFramedCech (10s)
+✔ [9447/9469] Built OAI.NumberTheory.PiExponent.Cohomology.CurveZeroEuler (8.1s)
+✔ [9448/9469] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeCoordinates (8.6s)
+✔ [9449/9469] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleAllPowersGeneration (12s)
+✔ [9450/9469] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateScalars (9.9s)
+✔ [9451/9469] Built OAI.NumberTheory.PiExponent.Approximation.RegularSectionMono (7.2s)
+✔ [9452/9469] Built OAI.NumberTheory.PiExponent.LocalAlgebra.AssociatedPrimeAvoidance (6.6s)
+✔ [9453/9469] Built OAI.NumberTheory.PiExponent.Cohomology.FiniteZeroEuler (7.9s)
+✔ [9454/9469] Built OAI.NumberTheory.PiExponent.Approximation.NegativeTwistPresentations (30s)
+✔ [9455/9469] Built OAI.NumberTheory.PiExponent.Approximation.RegularSectionChoice (10s)
+✔ [9456/9471] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeScalars (11s)
+✔ [9457/9471] Built OAI.NumberTheory.PiExponent.Geometry.FiniteCurveZeros (10s)
+✔ [9458/9471] Built OAI.NumberTheory.PiExponent.Ampleness.NumericalAmpleness (6.7s)
+✔ [9459/9476] Built OAI.NumberTheory.PiExponent.Approximation.NumericalMarginRestriction (6.6s)
+✔ [9460/9476] Built OAI.NumberTheory.PiExponent.Cohomology.FiniteSupportCohomology (8.9s)
+✔ [9461/9476] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PositiveCoherentExtFiniteness (15s)
+✔ [9462/9476] Built OAI.NumberTheory.PiExponent.Approximation.OpenPullbackUnit (5.1s)
+✔ [9463/9477] Built OAI.NumberTheory.PiExponent.Geometry.PrincipalCartierSequence (6.6s)
+✔ [9464/9483] Built OAI.NumberTheory.PiExponent.Approximation.GeneratorsSectionCover (38s)
+✔ [9465/9484] Built OAI.NumberTheory.PiExponent.Cohomology.FiniteLineEuler (10s)
+✔ [9466/9484] Built OAI.NumberTheory.PiExponent.Approximation.LineClosedUnit (7.8s)
+✔ [9467/9485] Built OAI.NumberTheory.PiExponent.Geometry.CoherentProjectiveFinite (11s)
+✔ [9468/9485] Built OAI.NumberTheory.PiExponent.Cohomology.NakaiCohomology (8.3s)
+✔ [9469/9485] Built OAI.NumberTheory.PiExponent.Cohomology.NakaiEulerGrowth (6.7s)
+✔ [9470/9485] Built OAI.NumberTheory.PiExponent.Ampleness.ZeroDimensionalAmple (6.4s)
+✔ [9471/9485] Built OAI.NumberTheory.PiExponent.Cohomology.EulerSupportDimension (6.7s)
+✔ [9472/9486] Built OAI.NumberTheory.PiExponent.Geometry.CartierSequence (7.5s)
+✔ [9473/9486] Built OAI.NumberTheory.PiExponent.Cohomology.EulerZeroDimensional (6.4s)
+✔ [9474/9487] Built OAI.NumberTheory.PiExponent.LocalAlgebra.CoherentInverseFinite (10s)
+✔ [9475/9489] Built OAI.NumberTheory.PiExponent.Ampleness.NakaiCartier (7.3s)
+✔ [9476/9489] Built OAI.NumberTheory.PiExponent.Approximation.SerrePowerDescent (8.4s)
+✔ [9477/9489] Built OAI.NumberTheory.PiExponent.Cohomology.CartierEulerDifference (7.6s)
+✔ [9478/9494] Built OAI.NumberTheory.PiExponent.Approximation.CoordinateFrameIdentification (6.3s)
+✔ [9479/9494] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateFinite (8.5s)
+✔ [9480/9494] Built OAI.NumberTheory.PiExponent.Geometry.CartierPowerFrames (10s)
+✔ [9481/9495] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateChartMap (8.7s)
+✔ [9482/9497] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceSerre (7.3s)
+✔ [9483/9499] Built OAI.NumberTheory.PiExponent.Cohomology.CohomologyFinite (6.0s)
+✔ [9484/9499] Built OAI.NumberTheory.PiExponent.Approximation.ProjectionFormula (14s)
+✔ [9485/9499] Built OAI.NumberTheory.PiExponent.Geometry.SectionCartierPower (9.5s)
+✔ [9486/9500] Built OAI.NumberTheory.PiExponent.Geometry.CartierDegreeLength (7.3s)
+✔ [9487/9500] Built OAI.NumberTheory.PiExponent.Geometry.CurveEffectiveTwist (9.5s)
+✔ [9488/9501] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinatePullback (17s)
+✔ [9489/9501] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveSerreTransfer (9.6s)
+✔ [9490/9501] Built OAI.NumberTheory.PiExponent.Geometry.CurveMorphismFinite (6.4s)
+✔ [9491/9502] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveFiniteCoordinates (10s)
+✔ [9492/9502] Built OAI.NumberTheory.PiExponent.Geometry.SectionCartierRegular (6.8s)
+✔ [9493/9506] Built OAI.NumberTheory.PiExponent.Ampleness.NefAmple (8.6s)
+✔ [9494/9506] Built OAI.NumberTheory.PiExponent.Geometry.CurveDegreeAdditivity (7.7s)
+✔ [9495/9506] Built OAI.NumberTheory.PiExponent.Approximation.ConstantPullbackDegree (6.3s)
+✔ [9496/9506] Built OAI.NumberTheory.PiExponent.Cohomology.AmpleCohomologyFinite (7.1s)
+✔ [9497/9508] Built OAI.NumberTheory.PiExponent.Cohomology.NoetherianAmpleSerreVanishing (10s)
+✔ [9498/9511] Built OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveInequality (6.9s)
+✔ [9499/9517] Built OAI.NumberTheory.PiExponent.LocalAlgebra.InvertibleIdealAway (6.6s)
+✔ [9500/9517] Built OAI.NumberTheory.PiExponent.Cohomology.CartierMixedEuler (11s)
+✔ [9501/9517] Built OAI.NumberTheory.PiExponent.Approximation.SectionDivision (8.2s)
+✔ [9502/9517] Built OAI.NumberTheory.PiExponent.Cohomology.LineCohomologyDimension (9.9s)
+✔ [9503/9521] Built OAI.NumberTheory.PiExponent.Ampleness.ReesRelativeSections (8.6s)
+✔ [9504/9524] Built OAI.NumberTheory.PiExponent.Approximation.MixedSectionExtension (17s)
+✔ [9505/9524] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleCurveDegreePositive (7.8s)
+✔ [9506/9524] Built OAI.NumberTheory.PiExponent.Geometry.CurveFunctionFieldCompatibility (7.5s)
+✔ [9507/9524] Built OAI.NumberTheory.PiExponent.Geometry.CurveProperImageDimension (6.5s)
+✔ [9508/9530] Built OAI.NumberTheory.PiExponent.Approximation.MixedFrameExtension (7.2s)
+✔ [9509/9530] Built OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologySections (30s)
+✔ [9510/9530] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupCurveMargin (7.6s)
+✔ [9511/9530] Built OAI.NumberTheory.PiExponent.Ampleness.CurveBlowupImageBase (7.3s)
+✔ [9512/9532] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IntegralAffineOpenDimension (7.0s)
+✔ [9513/9532] Built OAI.NumberTheory.PiExponent.Ampleness.AffineFunctionFieldCompatibility (9.4s)
+✔ [9514/9532] Built OAI.NumberTheory.PiExponent.Approximation.MixedSectionOpenExtension (9.6s)
+✔ [9515/9532] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupPresentationRestriction (6.7s)
+✔ [9516/9532] Built Logarithm.CurveMargin (6.5s)
+✔ [9517/9532] Built OAI.NumberTheory.PiExponent.LocalAlgebra.OpenIsoFunctionField (6.2s)
+✔ [9518/9532] Built OAI.NumberTheory.PiExponent.Geometry.CurveImageOpenLocus (6.1s)
+✔ [9519/9532] Built OAI.NumberTheory.PiExponent.Geometry.CurveStalkGluing (7.2s)
+✔ [9520/9533] Built OAI.NumberTheory.PiExponent.Ampleness.RelativeAffineSectionAmple (6.7s)
+✔ [9521/9533] Built OAI.NumberTheory.PiExponent.Geometry.CurveGeometricFunctionField (7.7s)
+✔ [9522/9533] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupAffineSections (5.0s)
+✔ [9523/9533] Built Logarithm.BlowupMargin (6.1s)
+✔ [9524/9534] Built OAI.NumberTheory.PiExponent.Ampleness.CurveBlowupImage (6.3s)
+✔ [9525/9534] Built OAI.NumberTheory.PiExponent.Geometry.BirationalOpenIso (6.8s)
+✔ [9526/9534] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationOverlap (7.2s)
+✔ [9527/9542] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveLineLaurent (2.9s)
+✔ [9528/9542] Built OAI.NumberTheory.PiExponent.Geometry.CurveImageAffineCoordinates (7.7s)
+✔ [9529/9542] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupAmpleTwist (6.6s)
+✔ [9530/9542] Built Logarithm.CurveImage (6.4s)
+✔ [9531/9543] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveLineProper (3.3s)
+✔ [9532/9543] Built OAI.NumberTheory.PiExponent.Geometry.CurveImageAffineChart (6.4s)
+✔ [9533/9544] Built Logarithm.BlowupPolarization (5.9s)
+✔ [9534/9548] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationDimension (10s)
+✔ [9535/9548] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveLineCharts (7.5s)
+✔ [9536/9548] Built OAI.NumberTheory.PiExponent.Ampleness.FinitePullbackAmple (6.3s)
+✔ [9537/9554] Built Logarithm.CurveCoordinates (7.3s)
+✔ [9538/9555] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveLineReciprocal (8.6s)
+✔ [9539/9555] Built OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyLaurent (14s)
+✔ [9540/9555] Built OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyFiniteCharts (10s)
+✔ [9541/9556] Built OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyCharts (21s)
+✔ [9542/9556] Built OAI.NumberTheory.PiExponent.Cohomology.CurveTwoAffineVanishing (7.1s)
+✔ [9543/9556] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationProper (7.6s)
+✔ [9544/9556] Built OAI.NumberTheory.PiExponent.Geometry.ProjectivePencilScalars (11s)
+✔ [9545/9556] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationNonaffine (6.8s)
+✔ [9546/9561] Built OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyPencil (9.9s)
+✔ [9547/9563] Built OAI.NumberTheory.PiExponent.Cohomology.CurveNormalizationCohomology (10s)
+✔ [9548/9565] Built OAI.NumberTheory.PiExponent.Geometry.CurveModelGenericPoint (8.2s)
+✔ [9549/9565] Built OAI.NumberTheory.PiExponent.Geometry.SupportedSheaf (6.6s)
+✔ [9550/9565] Built OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyCech (21s)
+✔ [9551/9565] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCurveTwoAffine (7.5s)
+✔ [9552/9565] Built OAI.NumberTheory.PiExponent.Geometry.CurveGlobalMonomial (9.1s)
+✔ [9553/9565] Built OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteSupportLocalIso (11s)
+✔ [9554/9565] Built OAI.NumberTheory.PiExponent.Geometry.CurveFinitePushforwardCoherent (22s)
+✔ [9555/9565] Built OAI.NumberTheory.PiExponent.Cohomology.PencilCohomology (12s)
+✔ [9556/9570] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationMorphism (7.8s)
+✔ [9557/9570] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationDegree (9.5s)
+✔ [9558/9570] Built OAI.NumberTheory.PiExponent.Cohomology.CurveFinitePushforwardCohomology (23s)
+✔ [9559/9570] Built OAI.NumberTheory.PiExponent.Geometry.CurveChartFunctionField (7.5s)
+✔ [9560/9570] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationUnit (6.8s)
+✔ [9561/9572] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveFinitePencil (17s)
+✔ [9562/9572] Built OAI.NumberTheory.PiExponent.Cohomology.CurveNormalizationEuler (9.7s)
+✔ [9563/9574] Built OAI.NumberTheory.PiExponent.Geometry.CurveModelPlaces (14s)
+✔ [9564/9574] Built OAI.NumberTheory.PiExponent.Geometry.WeightedLocalSheaf (8.4s)
+✔ [9565/9577] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalSectionOrder (7.5s)
+✔ [9566/9577] Built OAI.NumberTheory.PiExponent.Geometry.CurveModelFieldEmbedding (14s)
+✔ [9567/9577] Built OAI.NumberTheory.PiExponent.Ampleness.CurveNormalizationPolarization (12s)
+✔ [9568/9577] Built OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialPole (7.4s)
+✔ [9569/9577] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationInvariance (13s)
+✔ [9570/9580] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveLocalCoefficients (8.7s)
+✔ [9571/9580] Built OAI.NumberTheory.PiExponent.Geometry.CurveModelInfinityGenericPoint (8.3s)
+✔ [9572/9580] Built OAI.NumberTheory.PiExponent.Approximation.WeightedSectionOrder (8.3s)
+✔ [9573/9580] Built OAI.NumberTheory.PiExponent.Geometry.BirationalValuationStalk (7.3s)
+✔ [9574/9586] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationProjective (10s)
+✔ [9575/9589] Built OAI.NumberTheory.PiExponent.Geometry.CurvePlaceCenter (7.4s)
+✔ [9576/9594] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveLatticePullback (6.4s)
+✔ [9577/9594] Built OAI.NumberTheory.PiExponent.Geometry.CurveModelLocalOrder (15s)
+✔ [9578/9594] Built OAI.NumberTheory.PiExponent.Geometry.SectionZeroStalk (8.8s)
+✔ [9579/9594] Built OAI.NumberTheory.PiExponent.Polynomials.CompositePullbackCoefficient (6.1s)
+✔ [9580/9594] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveLatticeOrder (6.2s)
+✔ [9581/9598] Built OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialLattice (6.2s)
+✔ [9582/9598] Built OAI.NumberTheory.PiExponent.Geometry.CurveGlobalMonomialLocal (7.5s)
+✔ [9583/9598] Built OAI.NumberTheory.PiExponent.Geometry.CurvePlaceCenterStalk (7.5s)
+✔ [9584/9599] Built OAI.NumberTheory.PiExponent.Geometry.CurveSectionDegree (7.0s)
+✔ [9585/9600] Built OAI.NumberTheory.PiExponent.Jets.JetProductLocalization (6.6s)
+✔ [9586/9600] Built OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialFamilyLattice (6.5s)
+✔ [9587/9600] Built Logarithm.JetCenterIdentification (8.4s)
+✔ [9588/9600] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalPullbackSectionOrder (7.4s)
+✔ [9589/9602] Built OAI.NumberTheory.PiExponent.Geometry.SectionOrderDivisor (6.9s)
+✔ [9590/9602] Built Logarithm.JetProductLocalization (6.6s)
+✔ [9591/9602] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupGeometry (8.4s)
+✔ [9592/9602] Built OAI.NumberTheory.PiExponent.Jets.JetCenterIdentification (8.4s)
+✔ [9593/9611] Built OAI.NumberTheory.PiExponent.Geometry.CurvePlaceSectionDivisor (7.1s)
+✔ [9594/9611] Built OAI.NumberTheory.PiExponent.Approximation.FullSupportNilpotence (3.1s)
+✔ [9595/9613] Built Logarithm.ContactIdealLength (7.7s)
+✔ [9596/9613] Built OAI.NumberTheory.PiExponent.LocalAlgebra.TensorIdealInclusion (9.7s)
+✔ [9597/9613] Built OAI.NumberTheory.PiExponent.Geometry.CurvePlaceSectionOrder (6.4s)
+✔ [9598/9614] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealTensorPowers (7.8s)
+✔ [9599/9614] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionReindex (9.0s)
+✔ [9600/9617] Built OAI.NumberTheory.PiExponent.Geometry.CurveGlobalCoordinateOrder (7.8s)
+✔ [9601/9617] Built OAI.NumberTheory.PiExponent.Approximation.CoherentCokernels (23s)
+✔ [9602/9618] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleFiniteProjectiveEmbedding (8.3s)
+✔ [9603/9619] Built OAI.NumberTheory.PiExponent.Approximation.AffineThickeningCriterion (4.4s)
+✔ [9604/9619] Built OAI.NumberTheory.PiExponent.Approximation.ClosedRestrictionTensor (11s)
+✔ [9605/9619] Built OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveCurveDegree (7.8s)
+✔ [9606/9621] Built OAI.NumberTheory.PiExponent.Approximation.ClosedSupportedSerre (8.5s)
+✔ [9607/9623] Built OAI.NumberTheory.PiExponent.Approximation.ClosedThickeningSections (7.2s)
+✔ [9608/9624] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerFiltration (11s)
+✔ [9609/9624] Built OAI.NumberTheory.PiExponent.Geometry.CurveNormalizedDegreeTransfer (6.9s)
+✔ [9610/9626] Built OAI.NumberTheory.PiExponent.Approximation.ClosedPowerSectionLifting (6.5s)
+✔ [9611/9626] Built OAI.NumberTheory.PiExponent.Approximation.ClosedPullbackUnit (9.3s)
+✔ [9612/9626] Built OAI.NumberTheory.PiExponent.Cohomology.IdealPowerCohomology (6.6s)
+✔ [9613/9626] Built OAI.NumberTheory.PiExponent.Approximation.ClosedAnnihilatedDescent (14s)
+✔ [9614/9626] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerAnnihilator (7.0s)
+✔ [9615/9632] Built Logarithm.CurveModel (8.5s)
+✔ [9616/9632] Built OAI.NumberTheory.PiExponent.Approximation.ModulePullbackCoherent (11s)
+✔ [9617/9632] Built OAI.NumberTheory.PiExponent.Approximation.ClosedImmersionModules (8.0s)
+✔ [9618/9633] Built OAI.NumberTheory.PiExponent.Approximation.ClosedPullbackUnitRestriction (11s)
+✔ [9619/9633] Built OAI.NumberTheory.PiExponent.Geometry.IdealSheafPowers (5.9s)
+✔ [9620/9635] Built OAI.NumberTheory.PiExponent.Ampleness.ClosedAmpleBaseChange (6.2s)
+✔ [9621/9637] Built OAI.NumberTheory.PiExponent.Approximation.AffineClosedAnnihilatedDescent (12s)
+✔ [9622/9638] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PresentedIdealIso (10s)
+✔ [9623/9638] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealModuleRestriction (7.6s)
+✔ [9624/9638] Built OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentIdeal (6.5s)
+✔ [9625/9638] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleGeneratedTensor (9.6s)
+✔ [9626/9638] Built OAI.NumberTheory.PiExponent.Approximation.GlobalClosedAnnihilatedDescent (12s)
+✔ [9627/9642] Built OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentSupported (8.9s)
+✔ [9628/9646] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerRestriction (9.6s)
+✔ [9629/9647] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalCurveDegree (14s)
+✔ [9630/9647] Built OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentCover (9.0s)
+✔ [9631/9647] Built OAI.NumberTheory.PiExponent.Ampleness.NakaiSectionLifting (7.3s)
+✔ [9632/9647] Built OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentLocal (6.5s)
+✔ [9633/9647] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerDescent (7.8s)
+✔ [9634/9647] Built OAI.NumberTheory.PiExponent.Geometry.IntegralCurveExistence (6.7s)
+✔ [9635/9647] Built OAI.NumberTheory.PiExponent.Approximation.ClosedSectionLifting (6.2s)
+✔ [9636/9647] Built OAI.NumberTheory.PiExponent.Ampleness.ProperAmpleFiniteDimension (6.3s)
+✔ [9637/9650] Built Logarithm.ExceptionalCurveDegree (9.2s)
+✔ [9638/9651] Built OAI.NumberTheory.PiExponent.Cohomology.NilpotentIdealVanishing (7.6s)
+✔ [9639/9651] Built OAI.NumberTheory.PiExponent.Geometry.CurveComponentMultiplicity (6.4s)
+✔ [9640/9651] Built OAI.NumberTheory.PiExponent.Approximation.ClosedUnitKernel (7.4s)
+✔ [9641/9651] Built Logarithm.BlowupExceptionalDegree (6.6s)
+✔ [9642/9651] Built OAI.NumberTheory.PiExponent.Ampleness.AmplePositiveTwist (6.5s)
+✔ [9643/9651] Built OAI.NumberTheory.PiExponent.Ampleness.NilpotentAmpleDescent (6.4s)
+✔ [9644/9653] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleThresholdPolynomial (7.2s)
+✔ [9645/9654] Built OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescent (8.7s)
+✔ [9646/9656] Built Logarithm.CurveModelDegrees (6.9s)
+✔ [9647/9657] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleSlopeAlgebra (6.8s)
+✔ [9648/9657] Built OAI.NumberTheory.PiExponent.Ampleness.NakaiBasepointFree (6.1s)
+✔ [9649/9659] Built OAI.NumberTheory.PiExponent.Ampleness.ReducedComponentAmple (6.7s)
+✔ [9650/9659] Built OAI.NumberTheory.PiExponent.Cohomology.EulerTwistTransport (6.2s)
+✔ [9651/9659] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleSlopeTopology (6.2s)
+✔ [9652/9659] Built OAI.NumberTheory.PiExponent.Cohomology.CartierEulerPair (15s)
+✔ [9653/9662] Built OAI.NumberTheory.PiExponent.Ampleness.NakaiDivisorAmple (6.4s)
+✔ [9654/9662] Built OAI.NumberTheory.PiExponent.Cohomology.EulerRegularTwists (9.4s)
+✔ [9655/9663] Built OAI.NumberTheory.PiExponent.Ampleness.IntegralComponentAmple (6.1s)
+✔ [9656/9663] Built OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteFromClosedFibers (6.2s)
+✔ [9657/9666] Built OAI.NumberTheory.PiExponent.Ampleness.NakaiStationarity (6.7s)
+✔ [9658/9668] Built OAI.NumberTheory.PiExponent.Cohomology.EulerDifferencePolynomial (6.6s)
+✔ [9659/9672] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceFinite (10s)
+✔ [9660/9672] Built OAI.NumberTheory.PiExponent.Geometry.FiniteOfNoContractedCurves (6.3s)
+✔ [9661/9672] Built OAI.NumberTheory.PiExponent.Cohomology.EulerPolynomialInterpolation (5.8s)
+✔ [9662/9675] Built OAI.NumberTheory.PiExponent.Cohomology.EulerRegularSections (7.9s)
+✔ [9663/9675] Built OAI.NumberTheory.PiExponent.Cohomology.ProjectiveEmbeddingCohomologyBound (12s)
+✔ [9664/9675] Built OAI.NumberTheory.PiExponent.Ampleness.NakaiEffectivity (6.4s)
+✔ [9665/9675] Built OAI.NumberTheory.PiExponent.Geometry.CurveDegreeLaws (6.1s)
+✔ [9666/9675] Built OAI.NumberTheory.PiExponent.LocalAlgebra.PrincipalQuotientDimension (2.4s)
+✔ [9667/9678] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleDivisorDimensionBase (6.1s)
+✔ [9668/9681] Built OAI.NumberTheory.PiExponent.Cohomology.EulerCutoff (5.9s)
+✔ [9669/9684] Built OAI.NumberTheory.PiExponent.Ampleness.NakaiAmpleFromSections (6.5s)
+✔ [9670/9687] Built OAI.NumberTheory.PiExponent.Cohomology.AmpleLineCohomology (6.9s)
+✔ [9671/9687] Built OAI.NumberTheory.PiExponent.Ampleness.AmpleDivisorDimension (7.3s)
+✔ [9672/9691] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerAlgebra (6.5s)
+✔ [9673/9691] Built OAI.NumberTheory.PiExponent.Geometry.GeneralCartierDegreeLength (7.3s)
+✔ [9674/9691] Built OAI.NumberTheory.PiExponent.Geometry.CurveLocalAssociativity (6.5s)
+✔ [9675/9695] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerPolarization (8.4s)
+✔ [9676/9697] Built OAI.NumberTheory.PiExponent.Geometry.CurveComponentStalks (6.8s)
+✔ [9677/9700] Built OAI.NumberTheory.PiExponent.Cohomology.EulerPolynomialDegree (18s)
+✔ [9678/9703] Built OAI.NumberTheory.PiExponent.Cohomology.CurveRegularEuler (5.0s)
+✔ [9679/9703] Built OAI.NumberTheory.PiExponent.Geometry.FromSpecStalkLocalIso (3.9s)
+✔ [9680/9703] Built OAI.NumberTheory.PiExponent.Geometry.ReducedComponentStalk (6.7s)
+✔ [9681/9703] Built OAI.NumberTheory.PiExponent.Ampleness.NakaiInductionStep (6.0s)
+✔ [9682/9704] Built OAI.NumberTheory.PiExponent.Cohomology.CurveTensorEuler (6.0s)
+✔ [9683/9704] Built OAI.NumberTheory.PiExponent.Geometry.CurveComponentsDimension (5.8s)
+✔ [9684/9709] Built OAI.NumberTheory.PiExponent.Geometry.CurveLocalMultiplicity (5.9s)
+✔ [9685/9709] Built OAI.NumberTheory.PiExponent.Geometry.CurveCutQuotient (6.4s)
+✔ [9686/9709] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerCartier (13s)
+✔ [9687/9709] Built OAI.NumberTheory.PiExponent.Approximation.RegularComponentSection (7.2s)
+✔ [9688/9709] Built OAI.NumberTheory.PiExponent.Approximation.NumericalSlopeInduction (6.3s)
+✔ [9689/9709] Built OAI.NumberTheory.PiExponent.Polynomials.MixedSlopePolynomial (6.7s)
+✔ [9690/9711] Built OAI.NumberTheory.PiExponent.Geometry.CurveComponentLocalLengths (6.9s)
+✔ [9691/9711] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerDimension (7.2s)
+✔ [9692/9712] Built OAI.NumberTheory.PiExponent.Geometry.CurveComponentZeroPoints (18s)
+✔ [9693/9712] Built OAI.NumberTheory.PiExponent.Approximation.NumericalThresholdStep (6.3s)
+✔ [9694/9712] Built OAI.NumberTheory.PiExponent.Jets.JetPowerIdealCoprime (6.0s)
+✔ [9695/9712] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerCartierAmple (13s)
+✔ [9696/9712] Built OAI.NumberTheory.PiExponent.Ampleness.WeightedAffineFrame (5.9s)
+✔ [9697/9715] Built Logarithm.JetPackets (6.0s)
+✔ [9698/9716] Built OAI.NumberTheory.PiExponent.Geometry.CurveComponentIncidence (10s)
+✔ [9699/9724] Built OAI.NumberTheory.PiExponent.Geometry.CurveComponentCutLengths (16s)
+✔ [9700/9724] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerAmpleDimension (7.3s)
+✔ [9701/9724] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalPowerSections (8.7s)
+✔ [9702/9725] Built OAI.NumberTheory.PiExponent.Approximation.SerreSectionLifting (6.9s)
+✔ [9703/9725] Built OAI.NumberTheory.PiExponent.Geometry.CurveCycleLengths (6.5s)
+✔ [9704/9725] Built OAI.NumberTheory.PiExponent.Cohomology.CechOneConverse (8.1s)
+✔ [9705/9725] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerTop (6.1s)
+✔ [9706/9726] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerRestriction (10s)
+✔ [9707/9726] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalAffineChart (8.4s)
+✔ [9708/9726] Built OAI.NumberTheory.PiExponent.Approximation.WeightedFrameDegree (6.5s)
+✔ [9709/9726] Built OAI.NumberTheory.PiExponent.Cohomology.CurveCycleEuler (8.0s)
+✔ [9710/9727] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerPositivity (6.5s)
+✔ [9711/9727] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerSlope (6.6s)
+✔ [9712/9727] Built OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedChartRingEvaluation (10s)
+✔ [9713/9727] Built OAI.NumberTheory.PiExponent.Geometry.CurveCycleNumerical (7.5s)
+✔ [9714/9730] Built OAI.NumberTheory.PiExponent.Cohomology.CechH1Transfer (17s)
+✔ [9715/9730] Built OAI.NumberTheory.PiExponent.Approximation.CompositePullbackFrame (7.5s)
+✔ [9716/9736] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalAffineChartRestriction (14s)
+✔ [9717/9736] Built OAI.NumberTheory.PiExponent.Cohomology.MixedEulerCurveMargin (7.2s)
+✔ [9718/9736] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupJetSurjectivity (9.2s)
+✔ [9719/9736] Built OAI.NumberTheory.PiExponent.Polynomials.ShiftedFreeGrading (10s)
+✔ [9720/9739] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveRepresentedCoefficient (10s)
+✔ [9721/9740] Built OAI.NumberTheory.PiExponent.Cohomology.NumericalEulerSlopeInputs (8.1s)
+✔ [9722/9745] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveVertexCompatibility (12s)
+✔ [9723/9745] Built OAI.NumberTheory.PiExponent.Jets.AffineJetSupport (7.8s)
+✔ [9724/9745] Built OAI.NumberTheory.PiExponent.Ampleness.NumericalAmplenessTheorem (6.0s)
+✔ [9725/9745] Built OAI.NumberTheory.PiExponent.Polynomials.GradedSerre (9.9s)
+✔ [9726/9746] Built OAI.NumberTheory.PiExponent.Polynomials.WeightedHomogeneousSubstitution (7.3s)
+✔ [9727/9750] Built Logarithm.GeometryAmple (5.8s)
+✔ [9728/9751] Built OAI.NumberTheory.PiExponent.Cohomology.GradedH0 (6.0s)
+✔ [9729/9751] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalPowerPresentation (10s)
+✔ [9730/9751] Built OAI.NumberTheory.PiExponent.Jets.AffineJetQuotient (14s)
+✔ [9731/9751] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPullbackMap (6.9s)
+✔ [9732/9754] Built OAI.NumberTheory.PiExponent.LocalAlgebra.TwistLocalSections (6.6s)
+✔ [9733/9756] Built OAI.NumberTheory.PiExponent.Ampleness.FiniteAffineFrames (6.2s)
+✔ [9734/9756] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveGlobalPolynomialAlgebra (7.2s)
+✔ [9735/9756] Built OAI.NumberTheory.PiExponent.Jets.AffineJetPolynomial (6.6s)
+✔ [9736/9756] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRecoveryMap (6.7s)
+✔ [9737/9756] Built OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupJetSurjectivity (5.7s)
+✔ [9738/9756] Built OAI.NumberTheory.PiExponent.Approximation.PushforwardOpenSections (9.0s)
+✔ [9739/9756] Built OAI.NumberTheory.PiExponent.Jets.AffineJetCoefficientFrame (9.4s)
+✔ [9740/9756] Built OAI.NumberTheory.PiExponent.Jets.AffineJetCoefficientInterface (6.2s)
+✔ [9741/9758] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRecoveryTwist (5.0s)
+✔ [9742/9758] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveGlobalPolynomials (14s)
+✔ [9743/9758] Built OAI.NumberTheory.PiExponent.Approximation.AdmissibleMatrixFrame (6.3s)
+✔ [9744/9761] Built OAI.NumberTheory.PiExponent.Approximation.PushforwardSectionComparison (8.4s)
+✔ [9745/9761] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRepresentedValue (6.2s)
+✔ [9746/9763] Built OAI.NumberTheory.PiExponent.Polynomials.GlobalPolynomialCoefficientLaw (6.4s)
+✔ [9747/9763] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionExtension (10s)
+✔ [9748/9763] Built OAI.NumberTheory.PiExponent.Ampleness.FiniteReesComparison (6.3s)
+✔ [9749/9763] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRepresentedOpaque (6.4s)
+✔ [9750/9763] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalChartPullbackValue (6.4s)
+✔ [9751/9763] Built OAI.NumberTheory.PiExponent.Polynomials.GlobalPolynomialWeightedBound (6.1s)
+✔ [9752/9763] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveIntrinsicCoefficientLaw (7.2s)
+✔ [9753/9764] Built OAI.NumberTheory.PiExponent.Ampleness.ReesPolynomialPresentation (6.9s)
+✔ [9754/9764] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionPullback (6.5s)
+✔ [9755/9764] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupJetReesReduction (6.1s)
+✔ [9756/9764] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRepresentedTypes (6.3s)
+✔ [9757/9769] Built OAI.NumberTheory.PiExponent.Ampleness.ReesFiniteCover (7.2s)
+✔ [9758/9777] Built OAI.NumberTheory.PiExponent.Ampleness.ReesExceptionalSheaf (5.7s)
+✔ [9759/9777] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionInterface (5.8s)
+✔ [9760/9777] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalTypedTransport (7.1s)
+✔ [9761/9781] Built OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedAlgebraEvaluation (8.3s)
+✔ [9762/9782] Built OAI.NumberTheory.PiExponent.Polynomials.NatToIntGrading (9.5s)
+✔ [9763/9784] Built OAI.NumberTheory.PiExponent.Polynomials.GradedLocalizationExact (14s)
+✔ [9764/9784] Built OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoefficientBound (5.8s)
+✔ [9765/9786] Built OAI.NumberTheory.PiExponent.Approximation.AdditiveKernelTransport (7.6s)
+✔ [9766/9786] Built OAI.NumberTheory.PiExponent.Approximation.WeightedPullbackDegree (15s)
+✔ [9767/9789] Built OAI.NumberTheory.PiExponent.Cohomology.TupleCechBound (2.1s)
+✔ [9768/9789] Built OAI.NumberTheory.PiExponent.Cohomology.CechZeroAdditive (6.0s)
+✔ [9769/9796] Built OAI.NumberTheory.PiExponent.Approximation.WeightedGlobalSectionBound (6.8s)
+✔ [9770/9797] Built OAI.NumberTheory.PiExponent.Cohomology.GradedCechRecovery (6.8s)
+✔ [9771/9807] Built OAI.NumberTheory.PiExponent.Polynomials.HomogeneousSubmoduleGrading (12s)
+✔ [9772/9807] Built OAI.NumberTheory.PiExponent.Cohomology.ReesCohomologySetup (7.3s)
+✔ [9773/9807] Built OAI.NumberTheory.PiExponent.Polynomials.GradedLocalizationFree (9.1s)
+✔ [9774/9814] Built OAI.NumberTheory.PiExponent.Cohomology.GradedCech (20s)
+✔ [9775/9814] Built OAI.NumberTheory.PiExponent.Approximation.AddEquivSignedSum (6.1s)
+✔ [9776/9814] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalTypedRestriction (6.2s)
+✔ [9777/9814] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealSectionRestriction (7.6s)
+✔ [9778/9814] Built OAI.NumberTheory.PiExponent.LocalAlgebra.AffineIdealSections (7.5s)
+✔ [9779/9814] Built OAI.NumberTheory.PiExponent.Cohomology.GradedCechBound (8.6s)
+✔ [9780/9814] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealFiniteGenerators (5.9s)
+✔ [9781/9823] Built OAI.NumberTheory.PiExponent.Cohomology.GradedCechExactness (9.8s)
+✔ [9782/9823] Built OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPullbackOpenSquare (7.2s)
+✔ [9783/9823] Built OAI.NumberTheory.PiExponent.Ampleness.ExceptionalTypedTransportNaturality (8.2s)
+✔ [9784/9823] Built OAI.NumberTheory.PiExponent.Cohomology.GradedPolynomialLaurent (13s)
+✔ [9785/9823] Built OAI.NumberTheory.PiExponent.Ampleness.GlobalExceptionalComparison (7.9s)
+✔ [9786/9826] Built OAI.NumberTheory.PiExponent.Geometry.CanonicalRecoveryProperties (6.3s)
+✔ [9787/9827] Built AlgebraicLog.SelectedArithmetic (7.7s)
+✔ [9788/9827] Built OAI.NumberTheory.PiExponent.Ampleness.ReesGradedModule (7.6s)
+✔ [9789/9829] Built OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupAffineSquare (6.9s)
+✔ [9790/9829] Built OAI.NumberTheory.PiExponent.Approximation.CanonicalAffineRecovery (7.2s)
+✔ [9791/9830] Built OAI.NumberTheory.PiExponent.Cohomology.GradedPolynomialCech (15s)
+✔ [9792/9830] Built AlgebraicLog.ConjugateBound (7.7s)
+✔ [9793/9830] Built AlgebraicLog.EmbeddingBudget (3.9s)
+✔ [9794/9830] Built OAI.NumberTheory.PiExponent.Ampleness.GlobalReesRecoveryComparison (6.5s)
+✔ [9795/9830] Built AlgebraicLog.ContradictionNumerics (6.2s)
+✔ [9796/9830] Built OAI.NumberTheory.PiExponent.Cohomology.ReesCechInjectivity (9.4s)
+⚠ [9797/9835] Built AlgebraicLog.FieldRealization (3.5s)
+warning: AlgebraicLog/FieldRealization.lean:25:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9798/9835] Built AlgebraicLog.ConjugateDeterminant (7.3s)
+✔ [9799/9838] Built OAI.NumberTheory.PiExponent.Approximation.Exponent (6.6s)
+⚠ [9800/9838] Built AlgebraicLog.ConjugateAggregate (9.8s)
+warning: AlgebraicLog/ConjugateAggregate.lean:114:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [9801/9838] Built AlgebraicLog.ExponentConsequence (7.7s)
+✔ [9802/9842] Built OAI.NumberTheory.PiExponent.Cohomology.GradedFreeCech (19s)
+✔ [9803/9842] Built OAI.NumberTheory.PiExponent.Ampleness.ReesLocalizedChart (28s)
+✔ [9804/9842] Built Logarithm.DeterminantData (6.5s)
+✔ [9805/9843] Built Logarithm.CurveWeights (7.1s)
+✔ [9806/9845] Built Logarithm.ExponentConsequence (6.4s)
+✔ [9807/9845] Built OAI.NumberTheory.PiExponent.Polynomials.GradedSerreStep (9.7s)
+✔ [9808/9847] Built Logarithm.ApproximationGeometry (6.2s)
+✔ [9809/9847] Built Logarithm.LiteralAnalyticSummand (10s)
+✔ [9810/9847] Built OAI.NumberTheory.PiExponent.Cohomology.GradedSerreVanishing (8.6s)
+✔ [9811/9847] Built OAI.NumberTheory.PiExponent.Ampleness.ReesLocalizedIntersections (16s)
+✔ [9812/9847] Built Logarithm.LogarithmParameters (7.2s)
+✔ [9813/9856] Built Logarithm.AnalyticAggregate (6.8s)
+✔ [9814/9859] Built OAI.NumberTheory.PiExponent.Cohomology.ReesCechRecovery (9.0s)
+✔ [9815/9859] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupMargin (6.6s)
+✔ [9816/9860] Built OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveImage (6.9s)
+✔ [9817/9861] Built OAI.NumberTheory.PiExponent.Analysis.DyadicPowers (3.8s)
+✔ [9818/9861] Built OAI.NumberTheory.PiExponent.Ampleness.ReesProductChart (12s)
+✔ [9819/9863] Built OAI.NumberTheory.PiExponent.Analysis.DyadicSummation (2.0s)
+✔ [9820/9863] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupPolarization (6.8s)
+✔ [9821/9863] Built OAI.NumberTheory.PiExponent.Analysis.LiteralAnalyticSummand (11s)
+✔ [9822/9863] Built OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveCoordinates (7.6s)
+✔ [9823/9865] Built OAI.NumberTheory.PiExponent.Analysis.FlintHills (2.8s)
+✔ [9824/9865] Built OAI.NumberTheory.PiExponent.Analysis.FiniteSpacing (6.7s)
+✔ [9825/9865] Built OAI.NumberTheory.PiExponent.Analysis.AnalyticAggregate (9.1s)
+✔ [9826/9866] Built OAI.NumberTheory.PiExponent.Ampleness.ReesProductSchemeChart (14s)
+✔ [9827/9866] Built OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveModel (9.0s)
+✔ [9828/9866] Built OAI.NumberTheory.PiExponent.Ampleness.ReesProductPower (23s)
+✔ [9829/9866] Built OAI.NumberTheory.PiExponent.Analysis.DyadicSpacing (7.8s)
+✔ [9830/9866] Built OAI.NumberTheory.PiExponent.Approximation.AdmissibleMatrixInterpolation (6.9s)
+✔ [9831/9866] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleCurveModelDegrees (8.8s)
+✔ [9832/9869] Built OAI.NumberTheory.PiExponent.Analysis.FlintSine (19s)
+✔ [9833/9871] Built OAI.NumberTheory.PiExponent.Ampleness.ReesProductFrames (22s)
+✔ [9834/9871] Built OAI.NumberTheory.PiExponent.Ampleness.ReesProductAugmentation (7.5s)
+✔ [9835/9872] Built OAI.NumberTheory.PiExponent.Geometry.AdmissibleCurveDegreeData (6.4s)
+✔ [9836/9873] Built OAI.NumberTheory.PiExponent.Ampleness.ReesProductRestriction (12s)
+✔ [9837/9873] Built OAI.NumberTheory.PiExponent.Jets.AffineJetPackets (6.2s)
+✔ [9838/9873] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleBlowupAmple (5.7s)
+✔ [9839/9873] Built OAI.NumberTheory.PiExponent.Ampleness.ReesFixedChart (8.0s)
+✔ [9840/9873] Built OAI.NumberTheory.PiExponent.Ampleness.ReesProductSchemeRestriction (7.2s)
+✔ [9841/9873] Built OAI.NumberTheory.PiExponent.Jets.AffineJetFramedPackets (5.7s)
+✔ [9842/9873] Built OAI.NumberTheory.PiExponent.Ampleness.AdmissibleJetAmpleness (5.6s)
+✔ [9843/9875] Built OAI.NumberTheory.PiExponent.Analysis.FlintConsequence (18s)
+✔ [9844/9875] Built OAI.NumberTheory.PiExponent.Jets.AdmissibleJetPackets (6.7s)
+✔ [9845/9875] Built OAI.NumberTheory.PiExponent.Ampleness.ReesFixedPower (11s)
+✔ [9846/9875] Built OAI.NumberTheory.PiExponent.Ampleness.ReesFixedRestriction (10s)
+✔ [9847/9877] Built OAI.NumberTheory.PiExponent.Ampleness.ReesFixedFrames (13s)
+✔ [9848/9878] Built OAI.NumberTheory.PiExponent.Approximation.InterpolationConsequence (5.8s)
+✔ [9849/9879] Built PairedAffine.Field (4.7s)
+✔ [9850/9886] Built OAI.NumberTheory.PiExponent.Ampleness.ReesFixedPowerRestriction (7.9s)
+✔ [9851/9886] Built PairedAffine.Concrete (3.8s)
+✔ [9852/9888] Built PairedAffine.Data (6.1s)
+✔ [9853/9888] Built PairedAffine.Norm (4.9s)
+✔ [9855/9890] Built OAI.NumberTheory.PiExponent.Cohomology.ReesSheafCechBase (13s)
+✔ [9856/9890] Built PairedAffine.AnalyticCoarse (7.4s)
+✔ [9857/9890] Built PairedAffine.ArithmeticClearing (9.9s)
+✔ [9858/9890] Built StandardBridge (3.2s)
+✔ [9859/9890] Built PairedAffine.Analytic (11s)
+✔ [9860/9890] Built OAI.NumberTheory.PiExponent.Cohomology.ReesSheafCechNaturality (9.8s)
+✔ [9861/9890] Built OAI.NumberTheory.PiExponent.Ampleness.ReesSectionInclusion (12s)
+✔ [9862/9890] Built PairedAffine.Arithmetic (9.0s)
+✔ [9863/9890] Built PairedAffine.NormSelected (5.5s)
+✔ [9864/9890] Built OAI.NumberTheory.PiExponent.Cohomology.ReesSheafCechRecovery (26s)
+✔ [9865/9890] Built OAI.NumberTheory.PiExponent.Ampleness.ReesSheafCanonicalValue (5.3s)
+✔ [9866/9890] Built OAI.NumberTheory.PiExponent.Ampleness.AffineReesCanonicalRecovery (4.9s)
+✔ [9867/9890] Built OAI.NumberTheory.PiExponent.Ampleness.GlobalReesCanonicalRecovery (4.9s)
+✔ [9868/9890] Built OAI.NumberTheory.PiExponent.Ampleness.BlowupJetSurjectivityComplete (4.8s)
+✔ [9869/9890] Built OAI.NumberTheory.PiExponent.Jets.AdmissibleJetSurjectivity (5.3s)
+✔ [9870/9890] Built Logarithm.GeometricInterpolation (8.5s)
+✔ [9871/9890] Built OAI.NumberTheory.PiExponent.Approximation.AdmissibleMatrixGeometry (5.2s)
+✔ [9872/9890] Built Logarithm.Interpolation (5.3s)
+✔ [9873/9890] Built OAI.NumberTheory.PiExponent.Main (5.5s)
+ℹ [9874/9890] Built Logarithm.AxiomAudit (5.3s)
+info: Logarithm/AxiomAudit.lean:13:0: 'OAI.Logarithm.ScaledFormalJet.formalJet_polynomialFrameWord_vanishing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:14:0: 'OAI.Logarithm.eventually_exists_formalJet_auxiliaryPolynomial_nat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:15:0: 'OAI.Logarithm.logarithmic_coordinate_eq_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:16:0: 'OAI.Logarithm.logWord_field_order_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:17:0: 'OAI.Logarithm.no_excess_of_constant_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:18:0: 'OAI.Logarithm.distinct_Y_curve_inequality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:19:0: 'OAI.Logarithm.weighted_curve_inequality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:20:0: 'OAI.Logarithm.JetIdeals.radical_powerIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:21:0: 'OAI.Logarithm.JetIdeals.packet_zero_of_mem_polynomialIdeal_pow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:22:0: 'OAI.Logarithm.JetPackets.formalJet_packets_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:23:0: 'OAI.Logarithm.JetPackets.packets_surjective_of_polynomialIdeal_quotient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:24:0: 'OAI.Logarithm.rational_power_centers_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:25:0: 'OAI.Logarithm.exp_log_rational_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:26:0: 'OAI.Logarithm.JetProductLocalization.map_polynomialIdeal_eq_selected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:27:0: 'OAI.Logarithm.map_powerIdeal_eq_top_of_transcendental' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:28:0: 'OAI.Logarithm.polynomialIdeal_colength_eq_logContact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:29:0: 'OAI.Logarithm.JetCenterIdentification.centered_of_closedPoint_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:30:0: 'OAI.Logarithm.CompactIdeal.support_compactIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:31:0: 'OAI.Logarithm.CompactIdeal.restrict_compactIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:32:0: 'OAI.Logarithm.CompactIdeal.compactIdeal_isFinitePresentation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:33:0: 'OAI.LogarithmExtension.irrational_of_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:34:0: 'OAI.LogarithmExtension.exponent_eq_two_of_eventualLowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:35:0: 'OAI.Logarithm.blowup_exceptional_degree_eq_neg_contact_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:36:0: 'OAI.Logarithm.BlowupGeometry.interpolationBundle_ample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:37:0: 'OAI.Logarithm.eventually_weighted_logarithmic_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:38:0: 'OAI.Logarithm.eventually_weighted_truncated_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:39:0: 'OAI.Logarithm.ScaledMatrix.truncatedLogMatrix_surjective_of_formalLog_packets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:40:0: 'OAI.Logarithm.ScaledPeriodAnalytic.rational_scaled_periodMonomial_coeff_eq_rowTest' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:41:0: 'OAI.Logarithm.ScaledArithmetic.selectedMinor_arithmetic_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/AxiomAudit.lean:42:0: 'OAI.Logarithm.ScaledApproximationErrors.actual_error_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:43:0: 'OAI.Logarithm.ScaledCollision.formal_scaled_collision_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:44:0: 'OAI.Logarithm.ScaledTranslation.det_matrix_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:45:0: 'OAI.Logarithm.LiteralAnalytic.actual_minor_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:46:0: 'OAI.Logarithm.LiteralAnalytic.actual_minor_analytic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/AxiomAudit.lean:47:0: 'OAI.Logarithm.LiteralAnalytic.tendsto_analyticRemainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9875/9890] Built Logarithm.GlobalMatrixInterpolation (6.3s)
+✔ [9876/9890] Built AlgebraicLog.GlobalMatrixInterpolation (6.5s)
+✔ [9877/9890] Built PairedAffine.Geometry (6.2s)
+✔ [9878/9890] Built Logarithm.DeterminantContradiction (6.5s)
+✔ [9879/9890] Built AlgebraicLog.DeterminantContradiction (7.9s)
+✔ [9880/9890] Built Logarithm.Main (5.2s)
+⚠ [9881/9890] Built AlgebraicLog.Main (6.3s)
+warning: AlgebraicLog/Main.lean:28:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ℹ [9882/9890] Built Logarithm.EndpointAudit (4.9s)
+info: Logarithm/EndpointAudit.lean:2:0: theorem OAI.Logarithm.rational_log_irrationalityExponent_eq_two : ∀ (a : ℚ),
+  0 < a → a ≠ 1 → OAI.PiExponent.irrationalityExponent (Real.log ↑a) = 2 :=
+fun a ha ha1 =>
+  OAI.LogarithmExtension.exponent_eq_two_of_eventualLowerBound
+    (OAI.Logarithm.DeterminantContradiction.rational_log_eventualLowerBound a ha ha1)
+info: Logarithm/EndpointAudit.lean:3:0: theorem OAI.Logarithm.rational_log_explicit_bound : ∀ (a : ℚ),
+  0 < a → a ≠ 1 → ∀ (ν : ℝ), 2 < ν → ∃ Q, 2 ≤ Q ∧ ∀ (p q : ℤ), Q ≤ q → ↑q ^ (-ν) ≤ |Real.log ↑a - ↑p / ↑q| :=
+fun a ha ha1 ν hν => OAI.Logarithm.rational_log_integer_eventualLowerBound a ha ha1 ν hν
+info: Logarithm/EndpointAudit.lean:4:0: 'OAI.Logarithm.GlobalMatrixInterpolation.cofinal_actualMatrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/EndpointAudit.lean:5:0: 'OAI.Logarithm.DeterminantContradiction.no_fixed_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/EndpointAudit.lean:6:0: 'OAI.Logarithm.DeterminantContradiction.rational_log_eventualLowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Logarithm/EndpointAudit.lean:7:0: 'OAI.Logarithm.rational_log_irrationalityExponent_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/EndpointAudit.lean:8:0: 'OAI.Logarithm.log_two_irrationalityExponent_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/EndpointAudit.lean:9:0: 'OAI.Logarithm.log_three_irrationalityExponent_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Logarithm/EndpointAudit.lean:10:0: 'OAI.Logarithm.rational_log_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9883/9890] Built AlgebraicLog.Examples (6.0s)
+✔ [9884/9890] Built PairedAffine.Endpoint (8.1s)
+ℹ [9885/9890] Built AlgebraicLog.AxiomAudit (5.1s)
+info: AlgebraicLog/AxiomAudit.lean:2:0: OAI.AlgebraicLog.quadratic_log_explicit_bound (alpha : ℝ) (hpos : 0 < alpha) (hone : alpha ≠ 1)
+  (halg : IsAlgebraic ℚ alpha) (hdegree : (minpoly ℚ alpha).natDegree = 2) (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log alpha - ↑p / ↑q|
+info: AlgebraicLog/AxiomAudit.lean:3:0: OAI.AlgebraicLog.quadratic_log_irrationalityExponent_le_four (alpha : ℝ) (hpos : 0 < alpha) (hone : alpha ≠ 1)
+  (halg : IsAlgebraic ℚ alpha) (hdegree : (minpoly ℚ alpha).natDegree = 2) :
+  OAI.PiExponent.irrationalityExponent (Real.log alpha) ≤ 4
+info: AlgebraicLog/AxiomAudit.lean:4:0: def OAI.AlgebraicLog.EventualLowerBoundFour : ℝ → Prop :=
+fun x => ∀ (nu : ℝ), 4 < nu → ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |x - ↑p / ↑q|
+info: AlgebraicLog/AxiomAudit.lean:5:0: def OAI.PiExponent.GoodRationalApproximations : ℝ → ℝ → Set ℚ :=
+fun x ν => {r | 2 ≤ r.den ∧ 0 < |x - ↑r| ∧ |x - ↑r| < ↑r.den ^ (-ν)}
+info: AlgebraicLog/AxiomAudit.lean:6:0: def OAI.PiExponent.ApproximationExponents : ℝ → Set ℝ :=
+fun x => {ν | 0 < ν ∧ (OAI.PiExponent.GoodRationalApproximations x ν).Infinite}
+info: AlgebraicLog/AxiomAudit.lean:7:0: def OAI.PiExponent.irrationalityExponent : ℝ → ℝ :=
+fun x => sSup (OAI.PiExponent.ApproximationExponents x)
+info: AlgebraicLog/AxiomAudit.lean:8:0: 'OAI.AlgebraicLog.quadratic_log_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AlgebraicLog/AxiomAudit.lean:9:0: 'OAI.AlgebraicLog.quadratic_log_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AlgebraicLog/AxiomAudit.lean:10:0: 'OAI.AlgebraicLog.quadratic_log_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: AlgebraicLog/AxiomAudit.lean:11:0: 'OAI.AlgebraicLog.Examples.first_sample_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AlgebraicLog/AxiomAudit.lean:12:0: 'OAI.AlgebraicLog.Examples.second_sample_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AlgebraicLog/AxiomAudit.lean:13:0: 'OAI.AlgebraicLog.Examples.first_sample_conjugate_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AlgebraicLog/AxiomAudit.lean:14:0: 'OAI.AlgebraicLog.Examples.second_sample_conjugate_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9886/9890] Built PairedAffine.Main (5.0s)
+✔ [9887/9890] Built PairedAffine.AffineExamples (6.7s)
+ℹ [9888/9890] Built PairedAffine.Audit (5.5s)
+info: PairedAffine/Audit.lean:24:0: OAI.PairedAffine.shifted_period_eventualLowerBound :
+  OAI.AlgebraicLog.EventualLowerBoundFour (Real.log (3 + 2 * √2) / √2 + √3)
+info: PairedAffine/Audit.lean:25:0: OAI.PairedAffine.shifted_period_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log (3 + 2 * √2) / √2 + √3 - ↑p / ↑q|
+info: PairedAffine/Audit.lean:26:0: OAI.PairedAffine.shifted_period_irrational : Irrational (Real.log (3 + 2 * √2) / √2 + √3)
+info: PairedAffine/Audit.lean:27:0: OAI.PairedAffine.shifted_period_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (Real.log (3 + 2 * √2) / √2 + √3) ≤ 4
+info: PairedAffine/Audit.lean:28:0: OAI.PairedAffine.Audit.literal_bound (nu : ℝ) :
+  4 < nu → ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log (3 + 2 * √2) / √2 + √3 - ↑p / ↑q|
+info: PairedAffine/Audit.lean:29:0: OAI.PairedAffine.Audit.exponent_definition (x : ℝ) :
+  OAI.PiExponent.irrationalityExponent x =
+    sSup {nu | 0 < nu ∧ {r | 2 ≤ r.den ∧ 0 < |x - ↑r| ∧ |x - ↑r| < ↑r.den ^ (-nu)}.Infinite}
+info: PairedAffine/Audit.lean:31:0: 'OAI.PairedAffine.shifted_period_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/Audit.lean:32:0: 'OAI.PairedAffine.shifted_period_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/Audit.lean:33:0: 'OAI.PairedAffine.shifted_period_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/Audit.lean:34:0: 'OAI.PairedAffine.shifted_period_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PairedAffine/Audit.lean:35:0: 'OAI.PairedAffine.Audit.literal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9889/9890] Built PairedAffine.AffineAudit (5.1s)
+info: PairedAffine/AffineAudit.lean:3:0: OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log 2 + √2 - ↑p / ↑q|
+info: PairedAffine/AffineAudit.lean:4:0: OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |√2 * Real.log 2 - ↑p / ↑q|
+info: PairedAffine/AffineAudit.lean:5:0: OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (Real.log 2 + √2) ≤ 4
+info: PairedAffine/AffineAudit.lean:6:0: OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (√2 * Real.log 2) ≤ 4
+info: PairedAffine/AffineAudit.lean:8:0: 'OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:9:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:10:0: 'OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:11:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:12:0: 'OAI.PairedAffine.log_two_add_sqrt_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:13:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:14:0: 'OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PairedAffine/AffineAudit.lean:15:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [9890/9890] Built Solution (5.9s)
+Build completed successfully (9890 jobs).
+ℹ [9019/9035] Replayed Logarithm.ScaledApproximationErrors
+info: Logarithm/ScaledApproximationErrors.lean:36:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9033/9038] Replayed AlgebraicLog.ConjugateAggregate
+warning: AlgebraicLog/ConjugateAggregate.lean:114:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9825/9850] Replayed AlgebraicLog.FieldRealization
+warning: AlgebraicLog/FieldRealization.lean:25:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9844/9850] Replayed AlgebraicLog.Main
+warning: AlgebraicLog/Main.lean:28:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ℹ [9849/9850] Replayed PairedAffine.AffineAudit
+info: PairedAffine/AffineAudit.lean:3:0: OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log 2 + √2 - ↑p / ↑q|
+info: PairedAffine/AffineAudit.lean:4:0: OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |√2 * Real.log 2 - ↑p / ↑q|
+info: PairedAffine/AffineAudit.lean:5:0: OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (Real.log 2 + √2) ≤ 4
+info: PairedAffine/AffineAudit.lean:6:0: OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (√2 * Real.log 2) ≤ 4
+info: PairedAffine/AffineAudit.lean:8:0: 'OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:9:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:10:0: 'OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:11:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:12:0: 'OAI.PairedAffine.log_two_add_sqrt_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:13:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:14:0: 'OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PairedAffine/AffineAudit.lean:15:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9850/9850] Replayed PairedAffine.Audit
+info: PairedAffine/Audit.lean:24:0: OAI.PairedAffine.shifted_period_eventualLowerBound :
+  OAI.AlgebraicLog.EventualLowerBoundFour (Real.log (3 + 2 * √2) / √2 + √3)
+info: PairedAffine/Audit.lean:25:0: OAI.PairedAffine.shifted_period_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log (3 + 2 * √2) / √2 + √3 - ↑p / ↑q|
+info: PairedAffine/Audit.lean:26:0: OAI.PairedAffine.shifted_period_irrational : Irrational (Real.log (3 + 2 * √2) / √2 + √3)
+info: PairedAffine/Audit.lean:27:0: OAI.PairedAffine.shifted_period_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (Real.log (3 + 2 * √2) / √2 + √3) ≤ 4
+info: PairedAffine/Audit.lean:28:0: OAI.PairedAffine.Audit.literal_bound (nu : ℝ) :
+  4 < nu → ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log (3 + 2 * √2) / √2 + √3 - ↑p / ↑q|
+info: PairedAffine/Audit.lean:29:0: OAI.PairedAffine.Audit.exponent_definition (x : ℝ) :
+  OAI.PiExponent.irrationalityExponent x =
+    sSup {nu | 0 < nu ∧ {r | 2 ≤ r.den ∧ 0 < |x - ↑r| ∧ |x - ↑r| < ↑r.den ^ (-nu)}.Infinite}
+info: PairedAffine/Audit.lean:31:0: 'OAI.PairedAffine.shifted_period_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/Audit.lean:32:0: 'OAI.PairedAffine.shifted_period_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/Audit.lean:33:0: 'OAI.PairedAffine.shifted_period_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/Audit.lean:34:0: 'OAI.PairedAffine.shifted_period_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PairedAffine/Audit.lean:35:0: 'OAI.PairedAffine.Audit.literal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9850 jobs).
+OAI.PairedAffine.shifted_period_eventualLowerBound :
+  OAI.AlgebraicLog.EventualLowerBoundFour (Real.log (3 + 2 * √2) / √2 + √3)
+OAI.PairedAffine.shifted_period_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log (3 + 2 * √2) / √2 + √3 - ↑p / ↑q|
+OAI.PairedAffine.shifted_period_irrational : Irrational (Real.log (3 + 2 * √2) / √2 + √3)
+OAI.PairedAffine.shifted_period_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (Real.log (3 + 2 * √2) / √2 + √3) ≤ 4
+OAI.PairedAffine.Audit.literal_bound (nu : ℝ) :
+  4 < nu → ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log (3 + 2 * √2) / √2 + √3 - ↑p / ↑q|
+OAI.PairedAffine.Audit.exponent_definition (x : ℝ) :
+  OAI.PiExponent.irrationalityExponent x =
+    sSup {nu | 0 < nu ∧ {r | 2 ≤ r.den ∧ 0 < |x - ↑r| ∧ |x - ↑r| < ↑r.den ^ (-nu)}.Infinite}
+'OAI.PairedAffine.shifted_period_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PairedAffine.Audit.literal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log 2 + √2 - ↑p / ↑q|
+OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |√2 * Real.log 2 - ↑p / ↑q|
+OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (Real.log 2 + √2) ≤ 4
+OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (√2 * Real.log 2) ≤ 4
+'OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PairedAffine.shifted_period_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PairedAffineVerification.shifted_period_standard_exponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PairedAffineVerification.log_two_add_sqrt_two_standard_exponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PairedAffineVerification.sqrt_two_mul_log_two_standard_exponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

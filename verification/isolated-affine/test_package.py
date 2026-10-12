@@ -103,7 +103,7 @@ class PackageTests(unittest.TestCase):
             paths[2].write_text(json.dumps(inventory))
             integrity = self.command(self.proof / 'scripts/check.py')
             self.assertEqual(integrity.returncode, 0, integrity.stdout + integrity.stderr)
-            evidence = self.proof / 'evidence/axiom-audit-2026-10-11'
+            evidence = self.proof / 'evidence/full-module-sweep-2026-10-11'
             result = self.command(self.proof / 'scripts/audit_axioms.py',
                                   '--log', str(evidence / 'build.log'),
                                   '--targets', str(self.proof / 'evidence/target-map.json'),

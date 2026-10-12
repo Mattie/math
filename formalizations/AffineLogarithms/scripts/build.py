@@ -38,6 +38,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--skip-cache-download', action='store_true',
                         help='Use already available upstream Mathlib caches.')
+    parser.add_argument('--all-modules', action='store_true',
+                        help='Explicitly build every bundled proof module, excluding the statement-only Challenge.')
     args = parser.parse_args()
     # Authenticate the Lake configuration, lock, toolchain and complete package
     # before even asking Lean for its version (elan selects a toolchain here).
@@ -59,6 +61,13 @@ def main():
         with (work / 'build.log').open('w', encoding='utf-8') as log:
             if not args.skip_cache_download:
                 run(['lake', 'exe', 'cache', 'get'], log)
+            if args.all_modules:
+                sources = json.loads((ROOT / 'evidence/source-sha256.json').read_text())
+                modules = sorted(name[:-5].replace('/', '.') for name in sources
+                                 if name.endswith('.lean') and name != 'Challenge.lean')
+                receipt['module_sweep'] = {'modules': modules, 'count': len(modules),
+                                           'excluded_specification': 'Challenge.lean'}
+                run(['lake', 'build', *('+' + module for module in modules)], log)
             run(['lake', 'build', '+Solution', '+PairedAffine.Audit', '+PairedAffine.AffineAudit'], log)
             # The specification-only Challenge intentionally contains placeholders.
             # Require warning-free elaboration of the actual solution and both audits.

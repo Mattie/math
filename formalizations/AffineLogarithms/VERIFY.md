@@ -39,9 +39,16 @@ requires the export asset and hashes its **uncompressed** bytes. An absent expor
 is an error when `--export` is supplied. It is 1,280,383,670 bytes before gzip,
 with SHA-256
 `5f242493d0a285caaf5db6d0fa20eda5bd773f51fbd2c843544ac3b442abe5aa`.
-The gzip asset and source ZIP have separate transport hashes in
-`release-assets/SHA256SUMS.txt` beside the archives. These are prepared local
-files; no public download has been published or tested.
+The gzip transport has its own hash, distinct from the uncompressed export
+identity. No public proof-export download has been published or tested.
+
+The checked export and the complete audited hosted evidence archive have been
+prepared as separate release assets. The [distribution inventory](evidence/release-distribution.json)
+records their exact identities. Publishing the assets and verifying anonymous
+retrieval remain separate steps; preparation is not public availability.
+The prepared `SHA256SUMS.txt` checks all three accompanying files with
+`sha256sum --check SHA256SUMS.txt` from the asset directory. The `--export` command
+above additionally checks the decompressed proof against its accepted identity.
 
 Hash checking establishes file identity, not mathematical acceptance. The
 manifest is an integrity aid, not a digital signature or independent trust root.
@@ -54,6 +61,16 @@ With Python 3.11+, Git, and elan installed, run:
 python3 -I scripts/build.py
 ```
 
+On Linux, to explicitly compile every manifest-listed proof module, including
+modules outside the final theorem dependency closure, use
+`python3 -I scripts/build.py --all-modules`.
+This excludes only the independent statement specification `Challenge.lean`.
+The builder records the selected module list and then performs the same fifteen
+endpoint axiom audit. The repository's **Verify publication** manual workflow
+now includes this affine build whenever `rebuild_proof=true`, alongside the eight
+other preprints. Routine push and pull-request CI still performs integrity and
+retained-evidence checks rather than compiling Lean.
+
 This invokes the actual solution and audit targets; the inherited project does
 not have useful implicit default targets. It retrieves the Mathlib cache and
 compiles the bundled inherited proofs and local extensions as needed. It checks
@@ -64,14 +81,22 @@ lockfile and toolchain, before invoking Lean or Lake. It generates axiom reports
 for all twelve public endpoints and the three standard endpoints. The output
 goes to `.work/` and `.lake/`.
 
-Routine CI rechecks the retained [endpoint audit](evidence/axiom-audit-2026-10-11/receipt.json).
+The [complete module sweep](evidence/full-module-sweep-2026-10-11/summary.json)
+compiled all 967 manifest-listed proof modules in a new Linux candidate workspace,
+with initially empty candidate build output and pinned upstream dependency caches.
+Every selected module produced a compiled object. The subsequent fifteen-endpoint
+axiom audit passed, and the source and package identities remained unchanged.
+Inherited style warnings remain in the log; there were no admission warnings.
+This is source-compilation evidence, separate from the earlier independent kernel
+replays and from a bootstrap of upstream dependencies.
+
+Routine CI rechecks this retained [endpoint audit](evidence/full-module-sweep-2026-10-11/receipt.json).
 Its receipt binds the log to the source inventory and target map. A change to
 either identity invalidates reuse and requires a fresh audit; updating package
 hashes alone is insufficient. This is evidence reuse for unchanged proof inputs,
 not a claim that ordinary CI rebuilds Lean proofs.
-The retained audit used the pinned build caches and freshly elaborated the
-endpoint sources and generated axiom-report module with Lean 4.34.1. The
-earlier independent kernel replays remain separate evidence.
+The earlier [cached endpoint audit](evidence/axiom-audit-2026-10-11/receipt.json)
+and independent kernel replays retain their original identities and scope.
 
 The actual audit policy has imported-admission and extra-axiom rejection
 controls. Run them independently with:
@@ -85,7 +110,7 @@ See [CHECKERS.md](CHECKERS.md) for the exact policy and version limitations.
 
 `--skip-cache-download` skips only the Mathlib cache retrieval step. It is useful
 when caches and locked checkouts are already present. It does not turn a cached
-build into a clean bootstrap. The package was tested this way on Linux with
+build into a clean bootstrap. The earlier packaging test used Linux with
 identified inherited `OAI`/`Logarithm` and Mathlib caches, while the required
 `AlgebraicLog` and `PairedAffine` objects started absent. A network-only bootstrap
 from an empty machine and the Windows build route have not been tested here.
@@ -187,7 +212,7 @@ It used the maintained Comparator with Landrun and the tested systemd restrictio
 Official dependency caches remain a declared trust input; this was not a
 from-source rebuild of every dependency. It did not retain a new standalone export.
 
-Later manuscript and documentation changes reuse this dated result because the
+Later tooling and publication changes reuse this dated result because the
 969 frozen inputs and final targets remain unchanged. The ordinary CI integrity
 check does not repeat the hosted proof run. [WORKFLOW.md](WORKFLOW.md) tracks proof
 verification, the evidence audit and preprint readiness separately. The GitHub

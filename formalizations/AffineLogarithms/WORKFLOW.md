@@ -9,6 +9,11 @@ editable source and reproduction records are available in the existing PR.
 All fifteen comparison targets passed Lean and Rust Nanoda on fresh candidate
 compilation. The official Mathlib dependency cache remains trusted. See the
 [immutable hosted result](evidence/hosted-result-2026-10-11.json).
+The later [complete source sweep](evidence/full-module-sweep-2026-10-11/summary.json)
+compiled all 967 proof modules from empty candidate build output and passed all
+fifteen endpoint axiom reports. The shared manual rebuild now includes affine.
+Proof-export and hosted-evidence release assets are prepared and hash checked;
+publication and anonymous retrieval remain pending.
 
 **Target:** irrationality and exponent at most four for the three expressions in
 [README.md](README.md), with the twelve public declarations and fifteen comparison
@@ -41,18 +46,23 @@ title, using the supplied Mbang handoff and the unreleased combined paper as
 style references. Private voice references and the unreleased combined paper
 remain outside the publication package. No merge, release or external submission is authorized.
 A later GitHub approval gate requires separate explicit authorization.
+The subsequent ALIGN/SWEEP assignment authorizes shared rebuild integration,
+a complete module compilation, refreshed verification records, and preparation
+of reviewable proof-export and hosted-evidence release assets.
 
 **Evidence reused:** [GitHub run 38139172013](https://github.com/Mattie/math/actions/runs/38139172013)
 verified commit `b15a6431eca8632a48c1cd84e5200edd30f0670c`; the proof run took
 56 minutes 54 seconds. All 969 frozen inputs and final targets remain unchanged;
-later commits change documentation and records only. This is reuse of the dated
+later commits change documentation, records and verification tooling. This is reuse of the dated
 hosted result, not a fresh run. The complete evidence archive was downloaded and
 its GitHub SHA-256 verified. Hosted artifacts expire January 9, 2027; anonymous
 artifact retrieval and durable public distribution remain unverified.
 
 The [editorial revision](../../preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/evidence/editorial-revision.json) records the corrected title and prose cleanup.
 
-**Next action:** author review of the completed preprint and [PR 22](https://github.com/Mattie/math/pull/22).
+**Next action:** review [PR 22](https://github.com/Mattie/math/pull/22) and the
+[prepared distribution identities](evidence/release-distribution.json), then
+authorize publication of the retained export and hosted evidence if desired.
 No merge, release, external submission, or exhaustive priority claim follows from
 completion of the preparation and verification work.
 
@@ -69,7 +79,8 @@ Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️
 | Claim-to-declaration map, examples and boundaries | ✅ Complete | [Target map](evidence/target-map.json); the memo states all three instances and limits at exponent four |
 | Ordinary argument and Lean development | ✅ Complete | [ARGUMENT](ARGUMENT.md); hypotheses, constants, parameter order and common witness inspected in the correspondence review |
 | Frozen sources, dependencies and final wrappers | ✅ Complete | [Source inventory](evidence/source-sha256.json), [inherited pin](evidence/inherited-source-pin.json), original archives retained |
-| Source build and transitive axiom audit | ✅ Complete, local Linux | [Fresh build receipt](evidence/pre-pr/build-receipt.json): twelve public reports; identified inherited caches, not a full clean dependency rebuild |
+| Source build and transitive axiom audit | ✅ Complete, local Linux | [Complete module sweep](evidence/full-module-sweep-2026-10-11/summary.json): all 967 proof modules built from empty candidate output, then twelve public and three standard endpoint reports passed; pinned upstream dependency caches remain trusted. Earlier receipts remain historical evidence |
+| Shared manual rebuild coverage | ✅ Configured and locally validated | `Verify publication` with `rebuild_proof=true` now includes the affine all-module builder and axiom controls alongside the eight earlier packages. The new job has not been dispatched as a hosted proof run |
 | Actual audit rejection controls | ✅ Complete, local Linux | [Policy controls](evidence/pre-pr/axiom-controls/receipt.json): valid, imported admission, extra axiom, and malformed/missing reports |
 | Trusted statement comparison | ✅ Complete, earlier unchanged artifact | [Checker receipt](evidence/checker-receipt.json): fifteen literal wrappers |
 | Export inventory and proof-body checks | ✅ Complete, earlier unchanged artifact | [Verification summary](evidence/verification-summary.json), [inventory](evidence/export-inventory.json); same accepted export, no new full replay during packaging |
@@ -95,9 +106,9 @@ Legend: ✅ Complete · 🔄 In progress · ⏳ Pending · ⛔ Blocked · ⏸️
 | Narrow PR scope and staged-byte review | ✅ Complete for published branch | Package, focused CI checks, and new hosted verifier; unrelated working-tree changes must remain outside the PR |
 | Branch publication and verifier dispatch | ✅ Complete | Branch `codex/affine-logarithms-verifier` published; run 38139172013 dispatched. [PR 22](https://github.com/Mattie/math/pull/22) created; no release |
 | PR creation | ✅ Complete | [PR 22](https://github.com/Mattie/math/pull/22) includes the full preprint, formalization and audited verifier |
-| PR review follow-up | ✅ Scoped preparation checks passed | Staged inventory reviewed; publication CI [38156710562](https://github.com/Mattie/math/actions/runs/38156710562) passed at f439944; later receipt/checklist updates rechecked locally. Author review and merge remain separate |
+| PR review follow-up | ✅ Seven review comments addressed | Verification tooling hardened and all seven threads resolved at b03f478; publication CI [38188475786](https://github.com/Mattie/math/actions/runs/38188475786) passed. Later ALIGN/SWEEP validation is recorded separately. Author review and merge remain separate |
 | Public release or external submission | ⏳ Pending, not authorized | Separate from preprint preparation; no merge, GitHub release or external submission performed |
-| Public evidence retrieval | 🟡 Partial | GitHub artifact downloaded with authentication and hash checked; complete archive retained locally; anonymous retrieval and durable public distribution pending |
+| Public evidence retrieval | 🟡 Release assets prepared | [Distribution inventory](evidence/release-distribution.json): the retained export's compressed/uncompressed identities and the complete hosted archive were checked; all 95 archive-index entries match. Anonymous retrieval and durable public distribution remain pending |
 | Human peer review | ➖ Not applicable to current assignment | Model review is disclosed; no human-review claim |
 
 Update this file after each material phase transition, changed proof/checker input,

@@ -45,9 +45,9 @@ jobs:
       - run: python3 -I formalizations/AffineLogarithms/scripts/check.py
       - run: >-
           python3 -I formalizations/AffineLogarithms/scripts/audit_axioms.py
-          --log formalizations/AffineLogarithms/evidence/axiom-audit-2026-10-11/build.log
+          --log formalizations/AffineLogarithms/evidence/full-module-sweep-2026-10-11/build.log
           --targets formalizations/AffineLogarithms/evidence/target-map.json
-          --receipt formalizations/AffineLogarithms/evidence/axiom-audit-2026-10-11/receipt.json
+          --receipt formalizations/AffineLogarithms/evidence/full-module-sweep-2026-10-11/receipt.json
           --source-manifest formalizations/AffineLogarithms/evidence/source-sha256.json
   integrity:
     runs-on: ubuntu-24.04
@@ -130,6 +130,36 @@ jobs:
           path: preprints/${{ matrix.preprint }}/.verification/*.log
           if-no-files-found: error
           include-hidden-files: true
+
+  affine-proof:
+    if: github.event_name == 'workflow_dispatch' && inputs.rebuild_proof
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    env:
+      LEAN_NUM_THREADS: '4'
+    defaults:
+      run:
+        working-directory: formalizations/AffineLogarithms
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Install elan
+        run: |
+          curl --fail --location --silent --show-error https://elan.lean-lang.org/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --no-modify-path --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build every affine proof module and audit all endpoints
+        run: python3 -I scripts/build.py --all-modules
+      - name: Exercise axiom rejection controls
+        run: python3 scripts/audit_controls.py
+      - name: Retain fresh affine build and control evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: verification-affine-all-modules
+          path: formalizations/AffineLogarithms/.work/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90
 
   independent-proof:
     if: github.event_name == 'workflow_dispatch' && inputs.independent_proofs
