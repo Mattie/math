@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "audit_kind": "Downloaded hosted evidence audit; no new proof execution",
+  "run_url": "https://github.com/Mattie/math/actions/runs/38283548379",
+  "run_id": 38283548379,
+  "attempt": 1,
+  "checked_commit": "4ecca1e0f52a0ee42e02602d70d5aa69c5483605",
+  "published_commit_at_audit": "c27fe75918659761d418e85b666ba39d0560ba13",
+  "started_utc": "2026-10-12T17:20:46Z",
+  "finished_utc": "2026-10-12T18:19:46Z",
+  "artifact": {
+    "id": 11764902303,
+    "name": "isolated-irrationality-affine-denominators-4ecca1e0f52a0ee42e02602d70d5aa69c5483605-1",
+    "size_in_bytes": 6445895,
+    "digest": "sha256:ce363048cae3e84d6bf75c6291718938e06780c24587d322f05ad0b1fedfd2ad",
+    "expires_at": "2027-01-10T17:20:29Z"
+  },
+  "evidence_index_sha256": "39a63b8dec27cf1a40225547b55532bec25092362fa3e661ca0e19fc8e2470da",
+  "receipt_sha256": "ef99f8c41ff3ada3513e99691ae09bd2dea3fd155f6aaf4a7ee3144ad3a7606f",
+  "archive_identity": "Downloaded archive size and SHA-256 match GitHub metadata; every ZIP member matches the audited extracted bytes.",
+  "checked_counts": {
+    "indexed_files": 99,
+    "retained_file_hashes": 97,
+    "command_logs": 58,
+    "inherited_sources": 966,
+    "new_sources": 10,
+    "source_and_specification_entries": 979,
+    "candidate_entries": 982
+  },
+  "targets": [
+    "DenominatorAffineVerification.general_eventual_lower_bound",
+    "DenominatorAffineVerification.eventual_lower_bound",
+    "DenominatorAffineVerification.explicit_bound",
+    "DenominatorAffineVerification.irrational",
+    "DenominatorAffineVerification.irrationality_exponent_le_four",
+    "DenominatorAffineVerification.standard_exponent_le_four"
+  ],
+  "checks": {
+    "tools": "passed",
+    "isolation": "passed",
+    "valid": "passed",
+    "mismatch": "passed",
+    "axiom": "passed",
+    "imported-admission": "passed",
+    "dependencies": "passed",
+    "affine": "passed",
+    "protected-inputs": "passed"
+  },
+  "pins": {
+    "schema_version": 1,
+    "lean_version": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "lean_archive_sha256": "3013aba02bb8bf31b1cf8c9d956d60fb95bb1c10920dfe91abcaa59cb461ddac",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "rust": "1.99.0",
+    "exporter": "05d43a2bc773b40ecfdebb32294192a5ef756951",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "comparator": "ca04cfc72b550331658ec314bf47685281bfd4bf",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"
+  },
+  "acceptance": "Six targets in both exports; independent statement comparison, permitted-axiom enforcement, Nanoda and Lean default kernel acceptance.",
+  "controls": "Valid accepted; mismatched statement, extra axiom and imported admission rejected with intended diagnostics; protected write and Unix socket probes passed.",
+  "reuse": "Later packaging commits preserve all proof, specification and executed verifier inputs.",
+  "limits": [
+    "Official Mathlib dependency cache was trusted; the six targets and their inherited proof dependencies were freshly built. The print-only Audit.lean driver belongs to the separate local axiom audit.",
+    "Hosted temporary exports were not retained; same-byte stock-reader replay and structured export-body inventory remain the separate local evidence.",
+    "Pinned Nanoda has the previously documented malformed-projection defect; its acceptance is supplementary.",
+    "Actions evidence download requires GitHub authentication and expires at the recorded date; exact downloaded evidence is retained locally."
+  ]
+}

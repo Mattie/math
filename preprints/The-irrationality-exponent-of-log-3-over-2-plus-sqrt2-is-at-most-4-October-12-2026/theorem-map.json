@@ -1,5 +1,5 @@
 {
-  "status": "compiled and reviewed; six-target comparison and same-byte kernel replays passed locally; hosted verification pending",
+  "status": "compiled and reviewed; six-target comparison and same-byte kernel replays passed locally; fresh hosted verification and downloaded evidence audit passed",
   "namespace": "OAI.DenominatorAffine",
   "paper_claims": {
     "Theorem 1.1 literal pilot bound": "log_three_halves_add_sqrt_two_explicit_bound",

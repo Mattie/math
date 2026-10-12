@@ -6,9 +6,15 @@ Lean 4.34.1 replays of the same retained bytes. See the
 [final summary](results/local-replay-2026-10-12.json),
 [export inventory](results/export-inventory-2026-10-12.json), and
 [evidence index](results/evidence-index-2026-10-12.json).
-This used identified inherited/upstream caches; hosted source verification has
-not been performed. Nanoda's reproduced projection defect makes the successful
-same-byte Lean replay essential.
+This used identified inherited/upstream caches. The subsequent
+[hosted source run](https://github.com/Mattie/math/actions/runs/38283548379) and
+[downloaded-evidence audit](results/hosted-audit-2026-10-12.json) also passed.
+The hosted job took 59 minutes 27 seconds, freshly building the six targets and
+their inherited proof dependencies while trusting official Mathlib caches.
+Nanoda's reproduced projection defect makes the successful same-byte Lean replay
+essential. The hosted run did not retain its temporary exports for direct replay.
+The checker assessment below is the frozen pre-dispatch record; its opening
+hosted-status sentence describes that earlier point in time.
 
 The independent specification covers the general degree-four paired-embedding
 theorem and all five `log(3/2) + sqrt(2)` endpoints. [Challenge.lean](Challenge.lean)
@@ -73,7 +79,7 @@ python3 -I -B verification/isolated-affine-denominators/verify.py --run \
 ```
 
 The registered generic workflow contains the new `affine-denominators` case.
-After publication and separate dispatch authorization, the intended command is:
+The completed run was dispatched with:
 
 ```console
 gh workflow run isolated-irrationality.yml --ref feat/affine-denominators -f case=affine-denominators
@@ -84,9 +90,14 @@ requires default-branch registration before that new workflow can be dispatched.
 Both workflows retain manual dispatch, read-only permissions, no checkout
 credentials, hash-guarded cleanup before tool setup, indexing and failure uploads.
 The hosted adapter records and protects both workflow file hashes.
-The five-hour service/six-hour job budget is an inherited starting budget, not a
-measured guarantee for the new clean build. This preparation does not authorize
-push, workflow dispatch or diagnostic publication. No hosted result is claimed.
+The five-hour service/six-hour job budget is an upper limit. The completed job
+used 59 minutes 27 seconds. The evidence audit verified all 99 indexed files and
+58 command logs, the six targets in both exports, expected rejection controls,
+and unchanged proof/verifier inputs at the subsequent packaging revisions.
+The [original hosted index](results/hosted-evidence-index-2026-10-12.json) records
+the retained files. Download them from the run's artifact panel or with
+`gh run download 38283548379 --repo Mattie/math`; authentication is required and
+the Actions artifact expires January 10, 2027. The exact archive is retained locally.
 
 The October 12 local primary comparison completed in 24 minutes 48 seconds; its
 systemd service reported 11.9 GB peak memory and 709.3 MB swap under the 12 GB cap.
@@ -95,9 +106,9 @@ GitHub documents 16 GB RAM and four CPUs for its public-repository Ubuntu runner
 ([runner reference](https://docs.github.com/en/actions/reference/runners/github-hosted-runners)).
 The shared preparation reserves disk but does not configure swap. The hosted
 adapter records host memory and swap totals/availability before setup and proof.
-Available
-memory/swap and the full source rebuild's resource needs remain hosted-run
-conditions to measure; local success is not a capacity guarantee.
+The hosted run completed within the configured limits. Its service reported only
+256 KiB peak memory, which is not a credible whole-build memory measurement and
+is not used as one here. The retained host snapshots record capacity separately.
 
 ## Local cached route and retained-byte replay
 
