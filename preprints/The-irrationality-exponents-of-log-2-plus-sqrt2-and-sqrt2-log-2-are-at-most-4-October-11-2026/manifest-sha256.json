@@ -2,8 +2,8 @@
   ".gitignore": "3cba886152bff7a7f8618aaa079dbb9aeee4b0214d890efa7154838f2cf42ebb",
   "CITATION.cff": "e2eb10ee6f58b811cd7025f30228ca59ee42a24b22f366e7b782a5162f589375",
   "LICENSES.md": "74750ad6256e9c33fd6ae33b9f8e15cab8d14e00e1f1f16c7a57e84794106cfb",
-  "README.md": "5fac4591c21c0885d0a2f700bea062e557d6c741d00684c4cd1318586dd10a80",
-  "VERIFY.md": "d7c71b69ca712a815e823b39d06e22522fabf7a47ef838af1660b8f7ca71d7bd",
+  "README.md": "74930de8e45ec1726fa7f88b4abf6f9522689a83c009e2680ac6ac99f5346767",
+  "VERIFY.md": "668cb11b71878fabde9402a165f1585ba05df9f88c2050a01d889baa74dc7bfb",
   "build/main.tex": "652dc9fd40b3d1e126f6e725b253b0d5fcc6082eabf1cbe6f4fa85c7f4177df8",
   "evidence/build.json": "c7eec1a4bee7467f7a5f020329d30ba820618f0534ca9b3a42c1e3a6e73c0a2c",
   "evidence/editorial-revision.json": "83aaea2683aab3dc990236d1b2ecb11535dc9e5b49350bd6c23f0e47d58b3dcb",
@@ -12,6 +12,6 @@
   "evidence/reviews.json": "5071726f7e64021e875e1e382c19fb79c15ef9382ac56b51a394fb8b45b0a8d5",
   "paper.pdf": "49aa221ff51b069eff519eb3af99bbd279cafa821368c80660aa522d9d7dc00b",
   "scripts/build-paper.sh": "753e320d64e12682d62d8c4d8857549312f593853e8fc62ae63a9d13c0029120",
-  "scripts/check-publication.py": "98046a54b2d1003ad86d2b0bc57f8c1b1cea009b743443522cc8875dec301da2",
+  "scripts/check-publication.py": "98b5296c4ca88c197cc2292b679e80671eb2e1a6e320df6acf7ce41c3aa06714",
   "theorem-map.json": "96ba85b7bbc40496296c4e42033aba5de0ff4ad7bc7fb0db840f79d3ff9ff7b9"
 }

@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """Check this paper's inventory and its links to the unchanged proof package."""
 
+import sys
+
+if __name__ == '__main__' and not sys.flags.isolated:
+    raise SystemExit('Run this checker with Python isolated mode: python3 -I scripts/check-publication.py')
+
 import hashlib
 import json
+import os
 from pathlib import Path, PurePosixPath
 import re
 import subprocess
-import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 PROOF = ROOT.parents[1] / "formalizations" / "AffineLogarithms"
@@ -21,9 +26,23 @@ def digest(path):
 def main():
     """Require exact listed bytes, accessible local links, and all checked targets."""
     manifest = json.loads((ROOT / "manifest-sha256.json").read_text(encoding="utf-8"))
+    actual = set()
+    runtime_dirs = {'.work', 'scripts/__pycache__'}
+    for directory, dirs, files in os.walk(ROOT):
+        parent = Path(directory)
+        for name in dirs + files:
+            if (parent / name).is_symlink():
+                raise ValueError('Symlink in publication inventory: ' + str(parent / name))
+        dirs[:] = [name for name in dirs
+                   if (parent / name).relative_to(ROOT).as_posix() not in runtime_dirs]
+        actual.update((parent / name).relative_to(ROOT).as_posix() for name in files)
+    expected_files = set(manifest) | {'manifest-sha256.json'}
+    if actual != expected_files:
+        raise ValueError('Publication inventory mismatch; unlisted: ' + ', '.join(sorted(actual - expected_files))
+                         + '; missing: ' + ', '.join(sorted(expected_files - actual)))
     for name, expected in manifest.items():
         relative = PurePosixPath(name)
-        if relative.is_absolute() or ".." in relative.parts:
+        if relative.is_absolute() or ".." in relative.parts or '\\' in name:
             raise ValueError("Invalid paper inventory path: " + name)
         if digest(ROOT / name) != expected:
             raise ValueError("Paper file changed: " + name)
@@ -55,7 +74,7 @@ def main():
         raise ValueError("Frozen proof inventory changed")
     if not (ROOT / "paper.pdf").read_bytes().startswith(b"%PDF-"):
         raise ValueError("Missing or invalid PDF header")
-    subprocess.run([sys.executable, "-B", str(PROOF / "scripts/check.py")], check=True)
+    subprocess.run([sys.executable, "-I", "-B", str(PROOF / "scripts/check.py")], check=True)
     print(f"Paper integrity passed: {len(manifest)} files; three main results; fifteen targets.")
 
 

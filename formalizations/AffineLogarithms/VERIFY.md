@@ -26,11 +26,15 @@ derives the Mathlib `LiouvilleWith` formulation.
 ## Check the package and retained artifact
 
 ```sh
-python3 scripts/check.py
-python3 scripts/check.py --export release-assets/affine-proof-export.ndjson.gz
+python3 -I scripts/check.py
+python3 -I scripts/check.py --export release-assets/affine-proof-export.ndjson.gz
 ```
 
-The first command requires every manifest-listed file. The second additionally
+The first command requires exactly the manifest-listed files and the manifest
+itself. Only the named runtime directories `.work/`, `.lake/`, `release-assets/`,
+`replay-reader/.lake/`, and `scripts/__pycache__/` are excluded. Python's `-I`
+mode prevents sibling files and `PYTHONPATH` entries from shadowing standard
+library imports; the checker refuses to start without it. The second command additionally
 requires the export asset and hashes its **uncompressed** bytes. An absent export
 is an error when `--export` is supplied. It is 1,280,383,670 bytes before gzip,
 with SHA-256
@@ -47,7 +51,7 @@ manifest is an integrity aid, not a digital signature or independent trust root.
 With Python 3.11+, Git, and elan installed, run:
 
 ```sh
-python3 scripts/build.py
+python3 -I scripts/build.py
 ```
 
 This invokes the actual solution and audit targets; the inherited project does
@@ -55,8 +59,19 @@ not have useful implicit default targets. It retrieves the Mathlib cache and
 compiles the bundled inherited proofs and local extensions as needed. It checks
 the locked upstream Git revisions and tracked-file cleanliness, then checks the
 source digests again and rejects axiom reports outside the permitted set.
-All twelve public endpoints report exactly those three axioms in the recorded
-result. The output goes to `.work/` and `.lake/`.
+The builder authenticates the complete package, including the Lake configuration,
+lockfile and toolchain, before invoking Lean or Lake. It generates axiom reports
+for all twelve public endpoints and the three standard endpoints. The output
+goes to `.work/` and `.lake/`.
+
+Routine CI rechecks the retained [endpoint audit](evidence/axiom-audit-2026-10-11/receipt.json).
+Its receipt binds the log to the source inventory and target map. A change to
+either identity invalidates reuse and requires a fresh audit; updating package
+hashes alone is insufficient. This is evidence reuse for unchanged proof inputs,
+not a claim that ordinary CI rebuilds Lean proofs.
+The retained audit used the pinned build caches and freshly elaborated the
+endpoint sources and generated axiom-report module with Lean 4.34.1. The
+earlier independent kernel replays remain separate evidence.
 
 The actual audit policy has imported-admission and extra-axiom rejection
 controls. Run them independently with:

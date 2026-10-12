@@ -5,34 +5,28 @@ module and running preparation tests never downloads tools or executes Lean.
 """
 from __future__ import annotations
 
+import sys
+
+if __name__ == '__main__' and not sys.flags.isolated:
+    raise SystemExit('Run this verifier with Python isolated mode: python3 -I verification/isolated-affine/verify.py')
+
 import argparse
+import hashlib
 import importlib.util
 import json
 import os
 from pathlib import Path
 import shutil
-import sys
 import time
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[1]
 SOURCE = REPO / "formalizations/AffineLogarithms"
-spec = importlib.util.spec_from_file_location("affine_shared_6942", HERE.parent / "isolated-6942/verify.py")
-shared = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(shared)
-import preflight
-
-# Preflight's setup reads this module-level setting. This dedicated process uses
-# the affine receipt's tool revisions; no shared file or frozen input is edited.
-PINS = HERE / "pins.json"
-preflight.PINS = PINS
-Preflight = preflight.Preflight
-digest, require, regular = shared.digest, shared.require, shared.regular
-save_json, tree_identity = shared.save_json, shared.tree_identity
 EXPECTED_CHECKS = {"tools", "isolation", "valid", "mismatch", "axiom",
                    "imported-admission", "dependencies", "affine", "protected-inputs"}
 RUNTIME = 18000
 BASELINE = {
+    "verification/publication/prepare-independent-runner.sh": "3de51c75b00b595d30816bb643e61e7219ab9d611b39375762d0aa8855ed511c",
     "verification/isolated-6942/verify.py": "061475aa32588afce34d68e16e19763b5ec086602235e088f3f47874be183b47",
     "verification/isolated-preflight/preflight.py": "b6149c3a2265533769fdf3eade0c56b1bcd94c8ad3d128570ce1eca7eefbd1f8",
     "verification/isolated-preflight/boundary_probe.c": "1cf5105b89fa6207d4b5f8cc8d6c4b57370e91263abe82c81ed29c159fdd32ab",
@@ -43,6 +37,37 @@ BASELINE = {
     "formalizations/AffineLogarithms/evidence/checker-receipt.json": "9647f2cde1d4f8e49f02b78d458f3155e80913bbc5278ae61e16c36ccf78aee6",
     "formalizations/AffineLogarithms/CHECKERS.md": "b62377391081d54799d2f48fdb7a826384b7eb52cab33b9678be150db39a2340",
 }
+
+
+def load_shared():
+    """Authenticate both executable helpers before either module can run."""
+    helpers = {
+        'preflight': 'verification/isolated-preflight/preflight.py',
+        'affine_shared_6942': 'verification/isolated-6942/verify.py',
+    }
+    for name in helpers.values():
+        path = REPO / name
+        if not path.is_file() or any(p.is_symlink() for p in (path, *path.parents)):
+            raise RuntimeError('Unsafe helper path: ' + name)
+        if hashlib.sha256(path.read_bytes()).hexdigest() != BASELINE[name]:
+            raise RuntimeError('Reviewed helper changed before import: ' + name)
+    loaded = {}
+    for module_name, name in helpers.items():
+        spec = importlib.util.spec_from_file_location(module_name, REPO / name)
+        module = importlib.util.module_from_spec(spec)
+        sys.modules[module_name] = module
+        spec.loader.exec_module(module)
+        loaded[module_name] = module
+    return loaded['preflight'], loaded['affine_shared_6942']
+
+
+preflight, shared = load_shared()
+# The dedicated affine process uses its own pins without changing shared files.
+PINS = HERE / 'pins.json'
+preflight.PINS = PINS
+Preflight = preflight.Preflight
+digest, require, regular = shared.digest, shared.require, shared.regular
+save_json, tree_identity = shared.save_json, shared.tree_identity
 
 
 def validate_sources(source: Path, files: dict) -> None:

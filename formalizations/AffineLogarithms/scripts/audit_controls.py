@@ -40,7 +40,7 @@ def main():
         return result.returncode, output, log
 
     def check(label, log, expected):
-        code, output, policy_log = run(label + '-policy', [sys.executable, policy,
+        code, output, policy_log = run(label + '-policy', [sys.executable, '-I', policy,
                                        '--log', log, '--targets', targets], ROOT)
         good = code == 0 if expected is None else code != 0 and expected in output
         if not good:

@@ -26,6 +26,9 @@ jobs:
       - name: Reserve disk before installing tools
         run: |
           set -euo pipefail
+          printf '%s\n' '3de51c75b00b595d30816bb643e61e7219ab9d611b39375762d0aa8855ed511c  verification/publication/prepare-independent-runner.sh' \
+            | sha256sum --check --strict - \
+            | tee "$RUNNER_TEMP/isolated-affine/evidence/capacity-input.log"
           bash verification/publication/prepare-independent-runner.sh \
             2>&1 | tee "$RUNNER_TEMP/isolated-affine/evidence/capacity.log"
           # Cleanup can remove this root; setup-go must recreate its contents as the runner.
@@ -38,7 +41,7 @@ jobs:
       - name: Check isolation and verify all 15 frozen affine targets
         run: |
           set -euo pipefail
-          python3 -B verification/isolated-affine/verify.py \
+          python3 -I -B verification/isolated-affine/verify.py \
             --work-dir "$RUNNER_TEMP/isolated-affine" \
             2>&1 | tee "$RUNNER_TEMP/isolated-affine/evidence/console.log"
       - name: Index exact evidence after the verifier exits

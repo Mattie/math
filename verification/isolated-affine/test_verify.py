@@ -25,6 +25,38 @@ class PreparationTests(unittest.TestCase):
         self.assertEqual(pins["exporter"], "05d43a2bc773b40ecfdebb32294192a5ef756951")
         self.assertEqual(verify.preflight.PINS, verify.PINS)
 
+    def test_changed_helpers_are_rejected_before_either_import_executes(self):
+        names = ['verification/isolated-6942/verify.py', 'verification/isolated-preflight/preflight.py']
+        for name in names:
+            destination = self.root / name
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes((verify.REPO / name).read_bytes())
+        marker = self.root / 'executed'
+        for name in names:
+            with self.subTest(name=name):
+                path = self.root / name
+                original = path.read_bytes()
+                try:
+                    path.write_text('from pathlib import Path\nPath(' + repr(str(marker)) + ').touch()\n')
+                    with patch.object(verify, 'REPO', self.root), \
+                            patch.object(verify.importlib.util, 'spec_from_file_location') as loader:
+                        with self.assertRaisesRegex(RuntimeError, 'Reviewed helper changed before import'):
+                            verify.load_shared()
+                        loader.assert_not_called()
+                    self.assertFalse(marker.exists())
+                finally:
+                    path.write_bytes(original)
+
+    def test_disk_preparation_is_pinned_before_execution_in_both_workflows(self):
+        name = 'verification/publication/prepare-independent-runner.sh'
+        sha = verify.BASELINE[name]
+        self.assertEqual(verify.digest(verify.REPO / name), sha)
+        for workflow in ['isolated-affine.yml', 'isolated-irrationality.yml']:
+            text = (verify.REPO / '.github/workflows' / workflow).read_text()
+            self.assertLess(text.index(sha + '  ' + name), text.index('bash ' + name))
+            if workflow == 'isolated-irrationality.yml':
+                self.assertIn('"$VERIFICATION_CASE" == affine', text[:text.index(sha)])
+
     def test_inventory_rejects_changed_missing_extra_and_escape(self):
         file = self.root / "Main.lean"
         file.write_text("-- frozen\n")

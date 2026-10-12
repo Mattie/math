@@ -50,7 +50,8 @@ records PDF inspection, actual GitHub rendering, and retrieval status separately
 See the [workflow checklist](../../formalizations/AffineLogarithms/WORKFLOW.md)
 for the current publication status.
 
-Run `python3 scripts/check-publication.py` to check the listed paper files, the
+Run `python3 -I scripts/check-publication.py` to reject unlisted paper files and
+check the listed files, the
 shared proof package, and the exact target mapping. This establishes file
 integrity and consistency, not independent mathematical acceptance.
 

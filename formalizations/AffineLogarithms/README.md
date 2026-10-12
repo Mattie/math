@@ -40,13 +40,14 @@ Mathlib and its dependencies are fetched from the lockfile.
 From the extracted package directory:
 
 ```sh
-python3 scripts/check.py
-python3 scripts/build.py
+python3 -I scripts/check.py
+python3 -I scripts/build.py
 ```
 
 On Windows, use `python` in place of `python3`. The build fetches the Mathlib
 cache, compiles the actual solution and two audit modules, checks all twelve
-public axiom reports, and writes `.work/build-receipt.json` and `.work/build.log`.
+public axiom reports and the three standard endpoints, and writes
+`.work/build-receipt.json` and `.work/build.log`.
 Allow substantial time for the inherited proof library on the first build.
 See [VERIFY.md](VERIFY.md) for precise verification scope and replay commands.
 The [proof memo](ARGUMENT.md) explains the mathematical deduction, and the

@@ -71,13 +71,14 @@ class VerificationTests(unittest.TestCase):
         import sys
         # These are disposable generated artifacts; no tracked source is touched.
         for package in PACKAGES:
-            generated=package/'lean/.lake/publication-regression'
+            runtime = 'lean/.lake' if (package/'lean/lean-toolchain').is_file() else '.work'
+            generated=package/runtime/'publication-regression'
             generated.mkdir(parents=True,exist_ok=True)
             document=generated/'README.md'
             self.assertFalse(document.exists())
             try:
                 document.write_text('[dependency link](missing-lean-toolchain)')
-                result=subprocess.run([sys.executable,str(package/'scripts/check-publication.py')],capture_output=True,text=True)
+                result=subprocess.run([sys.executable,'-I',str(package/'scripts/check-publication.py')],capture_output=True,text=True)
                 self.assertEqual(result.returncode,0,result.stdout+result.stderr)
             finally:
                 document.unlink();generated.rmdir()

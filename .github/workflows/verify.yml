@@ -28,6 +28,7 @@ jobs:
       - run: python3 verification/publication/test_verification.py
       - run: python3 verification/irrationality-exponents/test_verify.py
       - run: python3 -B verification/isolated-affine/test_verify.py
+      - run: python3 -B verification/isolated-affine/test_package.py
       - run: python3 -B verification/isolated-irrationality/test_verify.py
       - run: python3 -B verification/isolated-quadratic-periods/test_quadratic.py
       - run: python3 -B verification/isolated-reciprocal-quadratic/test_reciprocal.py
@@ -41,11 +42,13 @@ jobs:
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - run: python3 formalizations/FlintCooksonHills/check.py
-      - run: python3 formalizations/AffineLogarithms/scripts/check.py
+      - run: python3 -I formalizations/AffineLogarithms/scripts/check.py
       - run: >-
-          python3 formalizations/AffineLogarithms/scripts/audit_axioms.py
-          --log formalizations/AffineLogarithms/evidence/pre-pr/build.log
+          python3 -I formalizations/AffineLogarithms/scripts/audit_axioms.py
+          --log formalizations/AffineLogarithms/evidence/axiom-audit-2026-10-11/build.log
           --targets formalizations/AffineLogarithms/evidence/target-map.json
+          --receipt formalizations/AffineLogarithms/evidence/axiom-audit-2026-10-11/receipt.json
+          --source-manifest formalizations/AffineLogarithms/evidence/source-sha256.json
   integrity:
     runs-on: ubuntu-24.04
     strategy:
@@ -66,7 +69,7 @@ jobs:
         working-directory: preprints/${{ matrix.preprint }}
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
-      - run: python3 scripts/check-publication.py
+      - run: python3 -I scripts/check-publication.py
   proof:
     if: github.event_name == 'workflow_dispatch' && inputs.rebuild_proof
     runs-on: ubuntu-24.04

@@ -41,7 +41,7 @@ jobs:
           VERIFICATION_CASE: ${{ inputs.case }}
         run: |
           set -euo pipefail
-          if [[ "$VERIFICATION_CASE" == quadratic-periods || "$VERIFICATION_CASE" == reciprocal-quadratic ]]; then
+          if [[ "$VERIFICATION_CASE" == quadratic-periods || "$VERIFICATION_CASE" == reciprocal-quadratic || "$VERIFICATION_CASE" == affine ]]; then
             printf '%s\n' '3de51c75b00b595d30816bb643e61e7219ab9d611b39375762d0aa8855ed511c  verification/publication/prepare-independent-runner.sh' \
               | sha256sum --check --strict - \
               | tee "$RUNNER_TEMP/isolated-irrationality/evidence/capacity-input.log"
@@ -69,7 +69,7 @@ jobs:
               --work-dir "$RUNNER_TEMP/isolated-irrationality" \
               2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
           elif [[ "$VERIFICATION_CASE" == affine ]]; then
-            python3 -B verification/isolated-affine/verify.py \
+            python3 -I -B verification/isolated-affine/verify.py \
               --work-dir "$RUNNER_TEMP/isolated-irrationality" \
               2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
           else

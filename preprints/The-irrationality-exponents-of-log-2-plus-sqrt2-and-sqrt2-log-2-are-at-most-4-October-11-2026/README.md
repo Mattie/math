@@ -22,7 +22,7 @@ Keep the repository layout when downloading the source.
 With Python 3.11+ installed, run from this directory:
 
 ```sh
-python3 scripts/check-publication.py
+python3 -I scripts/check-publication.py
 ```
 
 With Tectonic 0.15.0 on PATH, rebuild the PDF with:

@@ -1,0 +1,137 @@
+ℹ [9244/9295] Replayed Logarithm.ScaledApproximationErrors
+info: Logarithm/ScaledApproximationErrors.lean:36:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9298/9349] Replayed AlgebraicLog.ConjugateAggregate
+warning: AlgebraicLog/ConjugateAggregate.lean:114:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9803/9849] Replayed AlgebraicLog.FieldRealization
+warning: AlgebraicLog/FieldRealization.lean:25:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9844/9850] Replayed AlgebraicLog.Main
+warning: AlgebraicLog/Main.lean:28:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ℹ [9848/9850] Replayed PairedAffine.Audit
+info: PairedAffine/Audit.lean:24:0: OAI.PairedAffine.shifted_period_eventualLowerBound :
+  OAI.AlgebraicLog.EventualLowerBoundFour (Real.log (3 + 2 * √2) / √2 + √3)
+info: PairedAffine/Audit.lean:25:0: OAI.PairedAffine.shifted_period_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log (3 + 2 * √2) / √2 + √3 - ↑p / ↑q|
+info: PairedAffine/Audit.lean:26:0: OAI.PairedAffine.shifted_period_irrational : Irrational (Real.log (3 + 2 * √2) / √2 + √3)
+info: PairedAffine/Audit.lean:27:0: OAI.PairedAffine.shifted_period_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (Real.log (3 + 2 * √2) / √2 + √3) ≤ 4
+info: PairedAffine/Audit.lean:28:0: OAI.PairedAffine.Audit.literal_bound (nu : ℝ) :
+  4 < nu → ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log (3 + 2 * √2) / √2 + √3 - ↑p / ↑q|
+info: PairedAffine/Audit.lean:29:0: OAI.PairedAffine.Audit.exponent_definition (x : ℝ) :
+  OAI.PiExponent.irrationalityExponent x =
+    sSup {nu | 0 < nu ∧ {r | 2 ≤ r.den ∧ 0 < |x - ↑r| ∧ |x - ↑r| < ↑r.den ^ (-nu)}.Infinite}
+info: PairedAffine/Audit.lean:31:0: 'OAI.PairedAffine.shifted_period_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/Audit.lean:32:0: 'OAI.PairedAffine.shifted_period_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/Audit.lean:33:0: 'OAI.PairedAffine.shifted_period_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/Audit.lean:34:0: 'OAI.PairedAffine.shifted_period_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PairedAffine/Audit.lean:35:0: 'OAI.PairedAffine.Audit.literal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9849/9850] Replayed PairedAffine.AffineAudit
+info: PairedAffine/AffineAudit.lean:3:0: OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log 2 + √2 - ↑p / ↑q|
+info: PairedAffine/AffineAudit.lean:4:0: OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |√2 * Real.log 2 - ↑p / ↑q|
+info: PairedAffine/AffineAudit.lean:5:0: OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (Real.log 2 + √2) ≤ 4
+info: PairedAffine/AffineAudit.lean:6:0: OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (√2 * Real.log 2) ≤ 4
+info: PairedAffine/AffineAudit.lean:8:0: 'OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:9:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:10:0: 'OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:11:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:12:0: 'OAI.PairedAffine.log_two_add_sqrt_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:13:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PairedAffine/AffineAudit.lean:14:0: 'OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PairedAffine/AffineAudit.lean:15:0: 'OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (9850 jobs).
+OAI.PairedAffine.shifted_period_eventualLowerBound :
+  OAI.AlgebraicLog.EventualLowerBoundFour (Real.log (3 + 2 * √2) / √2 + √3)
+OAI.PairedAffine.shifted_period_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log (3 + 2 * √2) / √2 + √3 - ↑p / ↑q|
+OAI.PairedAffine.shifted_period_irrational : Irrational (Real.log (3 + 2 * √2) / √2 + √3)
+OAI.PairedAffine.shifted_period_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (Real.log (3 + 2 * √2) / √2 + √3) ≤ 4
+OAI.PairedAffine.Audit.literal_bound (nu : ℝ) :
+  4 < nu → ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log (3 + 2 * √2) / √2 + √3 - ↑p / ↑q|
+OAI.PairedAffine.Audit.exponent_definition (x : ℝ) :
+  OAI.PiExponent.irrationalityExponent x =
+    sSup {nu | 0 < nu ∧ {r | 2 ≤ r.den ∧ 0 < |x - ↑r| ∧ |x - ↑r| < ↑r.den ^ (-nu)}.Infinite}
+'OAI.PairedAffine.shifted_period_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PairedAffine.Audit.literal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |Real.log 2 + √2 - ↑p / ↑q|
+OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound (nu : ℝ) (hnu : 4 < nu) :
+  ∃ Q, 2 ≤ Q ∧ ∀ (p : ℤ) (q : ℕ), Q ≤ q → ↑q ^ (-nu) ≤ |√2 * Real.log 2 - ↑p / ↑q|
+OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (Real.log 2 + √2) ≤ 4
+OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four :
+  OAI.PiExponent.irrationalityExponent (√2 * Real.log 2) ≤ 4
+'OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PairedAffine.shifted_period_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.shifted_period_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PairedAffineVerification.shifted_period_standard_exponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PairedAffineVerification.log_two_add_sqrt_two_standard_exponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PairedAffineVerification.sqrt_two_mul_log_two_standard_exponent_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
