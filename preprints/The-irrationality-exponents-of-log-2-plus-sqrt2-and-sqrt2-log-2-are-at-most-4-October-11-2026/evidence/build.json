@@ -2,10 +2,10 @@
   "schema_version": 1,
   "date": "2026-10-11",
   "manuscript": "build/main.tex",
-  "manuscript_sha256": "c2239f370f4e807000c7dc0a1322990ec7a919b90ea4f1d6017fa4258ccdaaa2",
+  "manuscript_sha256": "652dc9fd40b3d1e126f6e725b253b0d5fcc6082eabf1cbe6f4fa85c7f4177df8",
   "pdf": "paper.pdf",
-  "pdf_sha256": "7d808ba3112fbc86efcac313f1ace13db432b92ea4bff976ec8dc0b29e300159",
-  "pdf_bytes": 165107,
+  "pdf_sha256": "49aa221ff51b069eff519eb3af99bbd279cafa821368c80660aa522d9d7dc00b",
+  "pdf_bytes": 163542,
   "pages": 19,
   "compiler": {
     "name": "Tectonic",
@@ -17,8 +17,8 @@
   "platform": "Ubuntu via WSL",
   "result": "success",
   "tex_warnings": 0,
-  "build_log_sha256": "0f0814643c42532b3e543e9b0fd90f60dfe13c3502495eb86b4e9adf068a0dca",
-  "desktop_compiler": "Earlier revision compiled in the desktop editor; this navigation and bibliography revision compiled with Tectonic.",
+  "build_log_sha256": "2b6d951179fb178d0331c51cbe58ed4e09dca6c163f2918c601e0ba3e4f94901",
+  "desktop_compiler": "Successful diagnostic compilation of the final trimmed source.",
   "reproducibility_limit": "Build command and compiler are identified. The TeX resource bundle is not vendored or pinned separately; other compiler/resource versions may produce different PDF bytes.",
   "proof_sources_changed": false,
   "editorial_revision": "evidence/editorial-revision.json",
@@ -63,5 +63,44 @@
     ],
     "delta_check": "Abstract, theorem and lemma statements, proposition bodies, and numbered mathematical displays are unchanged. No Lean source changes.",
     "scope": "Coordinator editorial and layout review; no new independent proof review."
+  },
+  "trim_revision": {
+    "previous": {
+      "manuscript_sha256": "c2239f370f4e807000c7dc0a1322990ec7a919b90ea4f1d6017fa4258ccdaaa2",
+      "pdf_sha256": "7d808ba3112fbc86efcac313f1ace13db432b92ea4bff976ec8dc0b29e300159"
+    },
+    "changes": [
+      "Moved the positive-real proxy and explicit-bound identifier explanations to the package verification guide.",
+      "Replaced long declaration names in the main proof with mathematical citations; retained exact locations in Appendix A.",
+      "Shortened verification and licensing prose, retaining the checked-source identity, foundational axioms and reproduction reference.",
+      "Linked the rational and quadratic preprint titles directly to pinned manuscript pages.",
+      "Reworded the factor-two bookkeeping explanation."
+    ],
+    "unchanged_environments": {
+      "abstract": 1,
+      "mainthm": 3,
+      "theorem": 1,
+      "lemma": 5,
+      "proposition": 4,
+      "equation": 51,
+      "align": 5
+    },
+    "new_links_checked": [
+      {
+        "url": "https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/formalizations/AffineLogarithms/VERIFY.md",
+        "status": 200
+      },
+      {
+        "url": "https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026/paper.pdf",
+        "status": 200,
+        "pdf_matches_local": true
+      },
+      {
+        "url": "https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/preprints/The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026/paper.pdf",
+        "status": 200,
+        "pdf_matches_local": true
+      }
+    ],
+    "scope": "Coordinator editorial and visual review; no mathematical statement or Lean source changes, no new proof run."
   }
 }

@@ -467,10 +467,8 @@ of weight strictly below \(n\mathcal R\) at all \(K\) centers is
 surjective.
 \end{proposition}
 
-The source declaration is
-\path{OAI.Logarithm.eventually_weighted_logarithmic_interpolation}
-in \cite{rational}. Its proof passes through ampleness of
-an interpolation bundle and eventual restriction to jets, using the
+This interpolation theorem is proved in \cite{rational} using ampleness of
+an interpolation bundle and eventual restriction to jets, based on the
 weighted geometric results in~\cite{openai}. The additive centers
 in~\eqref{eq:formalcoords} are unrestricted.
 
@@ -611,8 +609,7 @@ For every \(H>0\) and selected full-row minor,
 \end{equation}
 \end{lemma}
 \begin{proof}
-The elementary least-common-multiple estimate
-(\cite{openai}, \path{OAI.PiExponent.Arithmetic.log_lcmUpto_le}) is
+The elementary least-common-multiple estimate from \cite{openai} is
 \(\log D_i\le\Lambda T_i\). Since
 \(T_i\le F_0w_i/v_0+1\) and \(e_i^H\le H/w_i\),
 \[
@@ -678,10 +675,10 @@ centers satisfy
  \qquad 0\le j<K.\notag
 \end{align}
 Indeed, \(|\sigma(u)|\le2\), the approximation error is at most
-\(q_i^{-\nu}\), and \(\log q_i\ge w_i-1\). We have retained a
-factor two from the approximation estimate in \cite{rational}, as well
-as the extra \(\log2\) due to \(u\). We will explicitly absorb the
-latter after combining the embeddings.
+\(q_i^{-\nu}\), and \(\log q_i\ge w_i-1\). The slightly weaker
+bound above matches the constants in \cite{rational}; the multiplier
+\(u\) contributes the additional \(\log2\), which is absorbed after
+combining the embeddings.
 
 \subsection{The collision input}
 For nonnegative integers \(h\), multi-indices \(\gamma,\alpha\), and
@@ -735,9 +732,7 @@ where \(J\) is given in \eqref{eq:errors} and
 \end{proposition}
 
 This is the scaled form of the holomorphic collision estimate
-\cite{openai,rational}, stated as
-\path{OAI.Logarithm.ScaledCollision.formal_scaled_collision_bound}
-in \cite{rational}. Its analytic domain is a disk of radius \(\rho K\).
+in \cite{openai,rational}. Its analytic domain is a disk of radius \(\rho K\).
 The centers lie well inside this disk:
 \(\lvert j\omega\rvert+3/4\le\rho K/2\). On its boundary, the
 weighted degree of the columns bounds the entire functions in
@@ -1116,10 +1111,7 @@ Theorem~\ref{thm:common} is formalized as
 \end{center}
 Its parameters are exactly the field elements, integrality proofs,
 degree, distinguished embedding, real target, and good-embedding
-conditions in Theorem~\ref{thm:common}. The implementation uses
-\(\exp x\) as a positive real proxy in the logarithmic approximation data, so
-that its logarithm is \(x\). This proxy is not the algebraic base
-\(a\), and no algebraicity is required of it.
+conditions in Theorem~\ref{thm:common}.
 
 \subsection{Statement correspondence}
 For each of the three targets, the formalization proves the eventual
@@ -1138,11 +1130,9 @@ Theorem & Declaration stem\\
 \bottomrule
 \end{tabular}
 \end{center}
-The suffixes are \texttt{\_eventualLowerBound},
-\texttt{\_explicit\_bound}, \texttt{\_irrational}, and
-\path{_irrationalityExponent_le_four}. In the second suffix,
-``explicit'' refers to an expanded quantified statement, not to an
-explicit numerical threshold. The package records the full statements
+The corresponding suffixes are \texttt{\_eventualLowerBound},
+\texttt{\_irrational}, and \path{_irrationalityExponent_le_four}.
+The package records the full statements
 and their correspondence with Theorems~\ref{thm:shift}--\ref{thm:period}.
 
 The exponent convention is in
@@ -1183,6 +1173,8 @@ Truncation and full row rank &
 \path{PairedAffine/Geometry.lean},
 \texttt{cofinal\_matrix}.\\[4pt]
 Integral entries and selected minor &
+\path{OAI/NumberTheory/PiExponent/Approximation/Arithmetic.lean},
+\texttt{log\_lcmUpto\_le};
 \path{PairedAffine/ArithmeticClearing.lean},
 \path{exists_integral_entry_lift};
 \path{PairedAffine/Arithmetic.lean},
@@ -1224,14 +1216,11 @@ and \texttt{Quot.sound}. The statements described above passed exact
 statement comparison and proof checking with
 Lean and Rust Nanoda, an independently implemented kernel.
 
-The hosted verification of 11 October 2026,
-\href{https://github.com/Mattie/math/actions/runs/38139172013}{run 38139172013},
-used repository commit \path{b15a6431eca8632a48c1cd84e5200edd30f0670c}.
-It rebuilt the formalization and its required local dependencies, using
-official Mathlib dependency caches. The package's \path{VERIFY.md} and
-\path{CHECKERS.md} explain how to reproduce the checks and describe
-the checker versions, test controls, and trust assumptions. Detailed
-verification records accompany the source.
+The checked source version is identified in Appendix~\ref{app:attribution}.
+The accompanying
+\href{https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/formalizations/AffineLogarithms/VERIFY.md}{verification guide}
+gives reproduction instructions and records the checker versions,
+dependency caches, and trust assumptions.
 
 \section{Source availability and attribution}\label{app:attribution}
 The proof package builds on
@@ -1255,12 +1244,7 @@ are in \path{formalizations/AffineLogarithms} at
 the exact source files and their hashes. Appendix~\ref{app:formalization}
 describes the verification of this version.
 
-The package retains the OpenAI library's Apache~2.0 license and
-notices. Original \texttt{PairedAffine}, \texttt{AlgebraicLog}, and
-\texttt{Logarithm} sources and associated original code are distributed
-under the MIT license; original explanatory prose is under CC~BY~4.0.
-Lean, Mathlib, and the other dependencies retain their respective
-notices.
+Licenses and attribution notices accompany the source package.
 
 \section*{Acknowledgements}
 OpenAI Codex agents assisted with mathematical exploration, formalization,
@@ -1285,13 +1269,13 @@ Lean source library. Version used: Appendix~\ref{app:attribution}.
 
 \bibitem{rational}
 R.~M.~Casper,
-\emph{The irrationality exponent of positive rational logarithms is 2},
-preprint, 7 October 2026. Sources: Appendix~\ref{app:attribution}.
+\emph{\href{https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026/paper.pdf}{The irrationality exponent of positive rational logarithms is 2}},
+preprint, 7 October 2026.
 
 \bibitem{quadratic}
 R.~M.~Casper,
-\emph{The irrationality exponent of positive quadratic logarithms is at most 4},
-preprint, 8 October 2026. Sources: Appendix~\ref{app:attribution}.
+\emph{\href{https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/preprints/The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026/paper.pdf}{The irrationality exponent of positive quadratic logarithms is at most 4}},
+preprint, 8 October 2026.
 
 \bibitem{affine}
 R.~M.~Casper,

@@ -9,6 +9,20 @@ build, and independent proof-body replay. It was not a clean compilation of
 every upstream source. The package build test is recorded separately in
 [the packaging check](evidence/package-check.json).
 
+## Statement representation
+
+The common endpoint uses `exp x` as a positive real proxy in the logarithmic
+approximation data, so that its logarithm is `x`. This proxy is not the
+algebraic base `a`; no algebraicity assumption is made about it. The field
+elements and embedding conditions are separate parameters of
+`OAI.PairedAffine.Endpoint.paired_eventualLowerBound`.
+
+For each concrete target, the `_explicit_bound` declaration expands the
+quantifiers of `_eventualLowerBound`. Its name does not assert an explicit
+numerical threshold. The `_irrational` and `_irrationalityExponent_le_four`
+declarations give the corresponding consequences; `StandardBridge.lean`
+derives the Mathlib `LiouvilleWith` formulation.
+
 ## Check the package and retained artifact
 
 ```sh

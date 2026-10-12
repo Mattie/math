@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-10-11",
-  "manuscript_sha256": "c2239f370f4e807000c7dc0a1322990ec7a919b90ea4f1d6017fa4258ccdaaa2",
-  "pdf_sha256": "7d808ba3112fbc86efcac313f1ace13db432b92ea4bff976ec8dc0b29e300159",
+  "manuscript_sha256": "652dc9fd40b3d1e126f6e725b253b0d5fcc6082eabf1cbe6f4fa85c7f4177df8",
+  "pdf_sha256": "49aa221ff51b069eff519eb3af99bbd279cafa821368c80660aa522d9d7dc00b",
   "github_memo": {
     "commit": "0ddb45657dd3e6fb7fb18fdf3f1f9bb0b6a5a998",
     "path": "formalizations/AffineLogarithms/ARGUMENT.md",
@@ -145,12 +145,10 @@
   "pdf_review": {
     "pages": 19,
     "renderer": "pypdfium2 5.13.0, scale 1.6",
-    "opened": "All 19 pages as contact sheets; notation table on page 4 and bibliography on page 19 individually.",
+    "opened": "All 19 pages as contact sheets; pages 17\u201319 inspected individually.",
     "observations": [
-      "The roadmap and notation table fit together at the start of Section 4.",
-      "Definition links and notation columns are readable without overlap.",
-      "Bibliographic entries are concise; exact source identities remain in Appendix B.",
-      "No clipped displays or overflowing tables observed."
+      "Main proof citations are readable without long declaration names.",
+      "Statement map, verification summary, attribution and linked bibliography are readable with no clipping or overlap."
     ],
     "layout_warnings": 0,
     "metadata": {
@@ -163,7 +161,9 @@
     },
     "attachments": [],
     "uri_links": [
-      "https://github.com/Mattie/math/actions/runs/38139172013",
+      "https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/formalizations/AffineLogarithms/VERIFY.md",
+      "https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/preprints/The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026/paper.pdf",
+      "https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026/paper.pdf",
       "https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd",
       "https://github.com/Mattie/math/tree/b15a6431eca8632a48c1cd84e5200edd30f0670c",
       "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a",
@@ -282,6 +282,39 @@
         "The main results and common lower bound precede the comparison, which precedes the proof overview.",
         "The main results state the exponent bounds; the opening acknowledges classical transcendence.",
         "No clipped displays, source-name overflow or table overflow observed."
+      ],
+      "layout_warnings": 0,
+      "metadata": {
+        "/Creator": "LaTeX with hyperref",
+        "/Title": "The irrationality exponents of log(2) + sqrt(2) and sqrt(2) log(2) are at most 4",
+        "/Subject": "Affine logarithms, rational approximation, and a degree-four norm argument",
+        "/Author": "Ryan Matthew Casper",
+        "/Producer": "xdvipdfmx (0.1)",
+        "/CreationDate": "D:20261011000000-00'00'"
+      },
+      "attachments": [],
+      "uri_links": [
+        "https://github.com/Mattie/math/actions/runs/38139172013",
+        "https://github.com/Mattie/math/tree/0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd",
+        "https://github.com/Mattie/math/tree/b15a6431eca8632a48c1cd84e5200edd30f0670c",
+        "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+        "https://people.maths.bris.ac.uk/~malab/PDFs/HL.pdf",
+        "https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=8518&what=fullteng"
+      ]
+    }
+  },
+  "previous_trim_pdf_review": {
+    "manuscript_sha256": "c2239f370f4e807000c7dc0a1322990ec7a919b90ea4f1d6017fa4258ccdaaa2",
+    "pdf_sha256": "7d808ba3112fbc86efcac313f1ace13db432b92ea4bff976ec8dc0b29e300159",
+    "review": {
+      "pages": 19,
+      "renderer": "pypdfium2 5.13.0, scale 1.6",
+      "opened": "All 19 pages as contact sheets; notation table on page 4 and bibliography on page 19 individually.",
+      "observations": [
+        "The roadmap and notation table fit together at the start of Section 4.",
+        "Definition links and notation columns are readable without overlap.",
+        "Bibliographic entries are concise; exact source identities remain in Appendix B.",
+        "No clipped displays or overflowing tables observed."
       ],
       "layout_warnings": 0,
       "metadata": {
