@@ -24,24 +24,23 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We extend the paired-embedding affine determinant argument to fixed
-nonintegral algebraic data. A column factor clears the additional
-denominators while preserving the original matrix and its selected minor.
-The resulting logarithmic cost is absorbed by the dimension and
-approximation-weight choices, before the matrix height grows. The
-specialization $a=3/2$, $u=1$, $v=\sqrt2$ gives an irrationality exponent
-at most four for $\log(3/2)+\sqrt2$. The extension uses the interpolation
-and analytic estimates of the preceding affine development. We distinguish
-the mathematical argument, the accompanying Lean declarations, and their
-verification status; no assertion of optimality or historical priority
-is made.
+We prove that $\log(3/2)+\sqrt2$ has irrationality exponent at most four.
+More generally, we extend the affine logarithm theorem in a degree-four
+number field to arbitrary algebraic data with two compatible embeddings.
+The proof clears the fixed algebraic denominators by multiplying each
+column of the interpolation matrix by a positive integer. The resulting
+determinant is an algebraic integer whose norm supplies the arithmetic
+lower bound. The additional cost can be made small through the dimension
+and approximation weights, so the preceding interpolation and analytic
+estimates still give the bound four. A Lean formalization accompanies
+the proof.
 \end{abstract}
 
-\section{Statement and contribution}
+\section{Introduction and main result}
 For an irrational real number $x$, its irrationality exponent $\mu(x)$
 is the supremum of the positive real $\nu$ for which
 $0<|x-p/q|<q^{-\nu}$ holds for infinitely many reduced fractions
-$p/q$ with $q>0$. Our result is stated first as a literal uniform bound.
+$p/q$ with $q>0$. We prove the following bound.
 
 \begin{theorem}\label{thm:pilot}
 For every real $\nu>4$, there is an integer $Q\ge2$ such that
@@ -53,31 +52,31 @@ Consequently $\log(3/2)+\sqrt2$ is irrational and
 $\mu(\log(3/2)+\sqrt2)\le4$.
 \end{theorem}
 
-The threshold precedes both $p$ and $q$; no coprimality assumption is
-needed in \eqref{eq:pilot}. The theorem does not identify the exponent
-exactly, compute $Q$, or assert that all exponents equal to four are
-excluded.
+The threshold depends on $\nu$ and is uniform in $p,q$. Fractions in
+\eqref{eq:pilot} need not be reduced.
 
-The preceding affine paper \cite{affine} treated algebraic-integer
-data in a degree-four field with two compatible embeddings. Its
-geometric and analytic statements do not require integrality. This note
-replaces the arithmetic step, accounts for its cost in the same
-parameter construction, and specializes the result to a rational base
-that was excluded by the old arithmetic hypothesis. The underlying
-interpolation and determinant estimates are inherited from the
-OpenAI library, the rational- and quadratic-logarithm extensions, and
-their affine adaptation
-\cite{openai,affine}; they are not new results of this note.
+Our preceding affine theorem \cite{affine} applies to algebraic-integer
+data in a degree-four field with two compatible embeddings. The base
+$3/2$ introduces a denominator into the interpolation matrix. Clearing
+it costs a factor that grows with the matrix height, so we must account
+for that factor when choosing the earlier parameters.
 
-One checked published comparison comes from Marcovecchio
-\cite{marcovecchio}, whose nonquadraticity table gives
+We prove that the same construction works for arbitrary fixed algebraic
+data. A column factor clears their denominators, and its normalized
+logarithmic cost tends to zero as the dimension and the approximation weights
+increase. We then apply the interpolation and analytic estimates from
+the OpenAI library and the preceding logarithmic extensions
+\cite{openai,affine}. Sections~\ref{sec:common}--\ref{sec:absorption}
+give the general argument, followed by the specialization to
+$\log(3/2)+\sqrt2$.
+
+Marcovecchio's nonquadraticity table \cite{marcovecchio} gives
 $\mu_2(\log(3/2))<9.460812$. With that paper's
 minimal-polynomial height, this implies the rational-exponent bound
-$18.921624$ for our shifted target; Section~\ref{sec:benchmark}
-gives the conversion. This is an applicable benchmark, not a
-certification of the best published bound for this exact number.
+$18.921624$ for $\log(3/2)+\sqrt2$; Section~\ref{sec:benchmark}
+gives the conversion. Theorem~\ref{thm:pilot} improves this bound to four.
 
-\section{The denominator-aware affine theorem}\label{sec:common}
+\section{The affine theorem with algebraic denominators}\label{sec:common}
 Write $\operatorname{Emb}(F)=\operatorname{Hom}_{\Q\text{-alg}}(F,\C)$.
 The ring of integers is denoted by $\OO_F$.
 
@@ -109,8 +108,8 @@ ring of integers. Taking a product of denominators clears the last two
 elements simultaneously. These choices depend only on the fixed
 algebraic data, not on any approximating fractions or matrix height.
 
-\subsection{The inherited analytic and geometric input}
-We state the precise part of the existing argument that is reused.
+\subsection{Interpolation and determinant estimates}
+We recall the interpolation and determinant estimates from \cite{affine}.
 For a fixed $\nu>4$, suppose there are approximations
 $|x-p/q|<q^{-\nu}$ with arbitrarily large $q$. Choose finitely many
 $p_i/q_i$ with $q_i\ge2$ and $p_i\ne0$, and put
@@ -194,14 +193,13 @@ such that every nonzero selected minor satisfies
 \frac{\log|\Delta_\sigma|}{MH}
 &\le U(R)+r_c(H),&&\sigma\notin G.\label{eq:coarse}
 \end{align}
-These are estimates for the original matrix \eqref{eq:matrix}; no
-clearing factors are built into them. Their hypotheses are bounds on
-complex bases and centres, the exponential identities, the approximation
-errors and the numerical parameters. Algebraic integrality is absent.
-Likewise, interpolation permits arbitrary additive centres. This is
-why these statements remain applicable to the present data.
+These estimates apply to the matrix \eqref{eq:matrix} before denominator
+clearing. Their hypotheses concern the complex bases and centres, the
+exponential identities, the approximation errors and the numerical
+parameters. Interpolation likewise permits arbitrary additive centres.
+Both results therefore apply to the present algebraic data.
 
-\section{Clearing denominators without changing the minor}
+\section{Clearing denominators}
 Let $D_i=\operatorname{lcm}(1,\ldots,T_i)$ and
 $e_i=\lfloor H/w_i\rfloor$. The original row and column factors are
 \[
@@ -214,15 +212,14 @@ which is an inequality about these numerical factors, gives
 \begin{equation}\label{eq:oldcost}
 \log\mathscr C_H\le MH(1-b_H+E_0).
 \end{equation}
-It does not itself assert integrality for the present data.
+We next clear the denominators of the fixed algebraic data.
 
 Add to each selected column $(h,\gamma)$ the integer factor
 \begin{equation}\label{eq:extracolumn}
 c(h,\gamma)=d_a^{Kh}d_n^{\sum_i\gamma_i},
 \end{equation}
 and let $A_H$ be the product of these extra factors over the selected
-columns. The exponent $Kh$ is a convenient upper bound; replacing it
-by $(K-1)h$ is possible but unnecessary.
+columns. The exponent $Kh$ bounds $jh$ for every row index $j<K$.
 
 \begin{lemma}\label{lem:lift}
 There is a single nonzero algebraic integer $Z_H\in\OO_F$ such that
@@ -260,7 +257,7 @@ determinant is $Z_H$, and determinants commute with every embedding.
 This proves \eqref{eq:lift}. At $\sigma_0$ its image is nonzero,
 since both factors are positive and the selected minor is nonzero.
 Hence $Z_H\ne0$, and injectivity of every field embedding proves the
-last assertion. No new column choice is made at the other embeddings.
+last assertion. Each embedding uses the columns chosen at $\sigma_0$.
 \end{proof}
 
 \begin{lemma}\label{lem:cost}
@@ -274,9 +271,9 @@ one has $0\le\log A_H\le MH\tau$.
 Every column satisfies $h\le H/w_0$ and
 $\sum_i\gamma_i\le H/w_*$. Apply these inequalities to the logarithm
 of \eqref{eq:extracolumn}, then sum over $M$ columns. The logarithms
-of the positive integer denominators are nonnegative. The transverse
-cost has no additional factor $m$, because the column budget bounds
-the sum of all exponents.
+of the positive integer denominators are nonnegative. The column budget
+bounds the sum of all transverse exponents, giving the single term
+$\log d_n/w_*$.
 \end{proof}
 
 The nonzero integer norm of $Z_H$ gives
@@ -291,9 +288,8 @@ gives
 \le{}&V+r_a(H)+\frac{\log2}{w_*}\notag\\
 &+\max\{-C_H,-\nu(A(1-\eta)-b_H)\}.\label{eq:combined}
 \end{align}
-The added normalized arithmetic cost is at most $2\tau$.
-It is counted only here; the analytic bounds still concern the
-unscaled determinants.
+Thus denominator clearing adds at most $2\tau$ to the normalized
+arithmetic cost. The analytic estimates apply to the $\Delta_\sigma$.
 
 \section{Absorption and the contradiction}\label{sec:absorption}
 Set
@@ -341,9 +337,9 @@ successively large enough for separation. Consequently
 2E+U(\widehat R)+V<g,
 \qquad 2+2E+U(\widehat R)+V<C_\infty.
 \end{equation}
-All these choices, including the finite approximation tuple, precede
-the increase of $H$. In particular $K\log d_a/w_0$ and
-$\log d_n/w_*$ are not height remainders.
+We have now fixed the dimension, weights and finite approximation tuple.
+The terms $K\log d_a/w_0$ and $\log d_n/w_*$ are small by these choices
+and remain constant as $H$ tends to infinity.
 
 By \eqref{eq:absorb}, \eqref{eq:combined} implies
 \[
@@ -363,8 +359,8 @@ $C_H\le2(1-b_H)+S_H\le2+S_H$, again a contradiction.
 Either argument works if the two terms are equal.
 
 Interpolation supplies a nonzero minor at a cofinal set of heights, so
-this contradiction disproves the existence of arbitrarily large bad
-denominators. This proves the literal bound in
+this contradiction rules out arbitrarily large denominators with
+$|x-p/q|<q^{-\nu}$. This proves the bound in
 Theorem~\ref{thm:general}. A rational $x$ would have exact
 representations with arbitrarily large unreduced denominators, contrary
 to that bound. Thus $x$ is irrational. For each $\nu>4$, only finitely
@@ -404,60 +400,45 @@ $s>9.460812$ and all sufficiently large such heights,
 Choosing $9.460812<s<\nu/2$ and absorbing the fixed constant gives
 the comparison bound $\mu(x)\le18.921624$.
 The factor two comes from the quadratic growth of coefficient height.
-The comparison checks an applicable consequence of that result;
-it does not settle the strongest current bound or priority for four.
 
-\section{Formalization and verification status}\label{sec:formalization}
-The new source is maintained separately from the inherited affine
-package. Its main mathematical boundary is the entry lift and the
-positive scalar for the same selected determinant. The numerical
-parameter structures are reused with base-denominator parameter
-$\log d_a$ and coarse bound $\widehat R$.
+\section{Further questions}
+Dirichlet's theorem and Theorem~\ref{thm:pilot} give
+$2\le\mu(\log(3/2)+\sqrt2)\le4$. Can the upper bound be reduced
+to two? The proof gives an eventual threshold for each
+$\nu>4$; obtaining an explicit threshold or a lower bound at the
+critical exponent four would require further estimates.
 
-\paragraph{Source validation.}
-The general denominator-aware endpoint and the pilot corollaries have
-compiled in Lean 4.34.1 with strict warning settings. The ten new source
-files are identified by a SHA-256 inventory. A transitive axiom-policy
-audit passed for all seven public endpoints, with rejection controls.
-Separate mathematical, specification and blind manuscript reviews
-found no remaining mathematical or statement defect in this scope.
+The denominator argument applies whenever the affine theorem has the
+two compatible embeddings in Theorem~\ref{thm:general}. It is natural
+to ask how the number of compatible embeddings relative to the field
+degree affects the exponent in a more general version of this method.
 
-\paragraph{Independent verification.}
-Six statements passed comparison against a separate challenge and
-both of Comparator's kernel checks. Nanoda and a separately built
-stock Lean 4.34.1 reader then accepted identical retained export bytes.
-The export contains 112854 serialized declarations, including proof
-bodies for all six public targets and all six comparison wrappers,
-and exactly the three permitted axioms. Source and export hashes,
-acceptance and rejection controls, and tool identities accompany
-the package. Local execution used identified inherited caches;
-a fresh hosted build and its evidence audit remain pending.
-The pinned Nanoda checker accepts a known invalid-projection test
-that both stock Lean checks reject. Its result is supplementary;
-the stock Lean replay remains required.
+\appendix
+\section{Formalization}\label{sec:formalization}
+The accompanying Lean formalization proves Theorem~\ref{thm:general}
+and its specialization in Theorem~\ref{thm:pilot}. The arithmetic
+construction gives one matrix over $\OO_F$ and proves that its
+determinant maps to the positive scalar multiple in \eqref{eq:lift}
+at every embedding. The parameter construction uses $\log d_a$ for
+the base-denominator cost and $\widehat R$ for the coarse bound.
 
-The standard-definition corollary excludes
-\texttt{LiouvilleWith}$(\nu,x)$ for every $\nu>4$. To absorb the
-constant in that definition, apply the literal bound at
-$\nu'=(4+\nu)/2$ and use the frequently occurring smaller-exponent
-approximations furnished by Mathlib. Irrationality is proved separately,
-so the statement does not rest on a default supremum value.
+The formalization also proves irrationality. For each $\nu>4$, it proves
+$\neg\texttt{LiouvilleWith}(\nu,x)$ using Mathlib's definition.
+We absorb the constant in that definition by applying the approximation
+bound at $\nu'=(4+\nu)/2$ and using the smaller-exponent approximations
+supplied by Mathlib.
 
-\section*{Attribution and limitations}
-This work reuses the interpolation, collision, logarithmic-jet and
-parameter-selection machinery in the OpenAI source and the preceding
-affine adaptation \cite{openai,affine}. The new step is the
-fixed-denominator arithmetic extension and its specialization above.
-Code provenance, licenses and exact declaration correspondence belong
-to the accompanying formalization package. The present paper does not
-claim a formalization of every possible quadratic-field affine family,
-an effective approximation threshold, or a new best published record.
+Six statements were compared with independently written specifications.
+Comparator's two kernel checks and a separate stock Lean 4.34.1 replay
+accepted the proofs. The export uses only \texttt{propext},
+\texttt{Classical.choice}, and \texttt{Quot.sound} as axioms.
+The companion \path{VERIFY.md} records the statement correspondence,
+source and tool versions, reproduction instructions, and the scope
+and limitations of these checks.
 
-OpenAI Codex assisted with mathematical development, Lean proof
-construction, verification orchestration and exposition. Separate
-model contexts perform mathematical, specification and manuscript
-reviews. Such reviews are not human peer review, and kernel acceptance
-does not establish historical priority.
+\section*{Acknowledgements}
+OpenAI Codex agents assisted with mathematical development, formalization,
+manuscript preparation, and review.
 
 \begin{thebibliography}{9}
 \raggedright

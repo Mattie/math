@@ -93,12 +93,12 @@
       "bytes": 3274
     },
     "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/build/main.tex": {
-      "sha256": "8f84ccbb3211739756a889362904f36e1f6bb685ae4d8d39e81bfa2ad6c4934f",
-      "bytes": 20969
+      "sha256": "fcf00b9f83bac9d2629a9e6661136295012bdd4e5032d10e3a1267a8e6e8052c",
+      "bytes": 19690
     },
     "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/paper.pdf": {
-      "sha256": "500ef5da4926239104c49e21f9231958eb094c960fc1ac10e3108451db92f50e",
-      "bytes": 97334
+      "sha256": "97b2561f4bcf5e9eea153457a6a339077620a47185534b85849dbca5c5657b86",
+      "bytes": 97134
     },
     "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/scripts/build-paper.ps1": {
       "sha256": "3024ad27a6dcdf91d554d01b7b699cfc422262a4911e3ebdd28b7aaa12d48806",
