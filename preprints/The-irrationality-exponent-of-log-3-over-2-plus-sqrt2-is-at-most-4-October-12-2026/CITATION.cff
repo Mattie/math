@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite the preprint with its date and exact repository revision."
+title: "The irrationality exponent of log(3/2) + sqrt(2) is at most four"
+type: article
+authors:
+  - family-names: Casper
+    given-names: Ryan Matthew
+version: "0.1.0"
+license: CC-BY-4.0

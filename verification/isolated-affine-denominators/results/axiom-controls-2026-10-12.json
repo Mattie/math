@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "scope": "Axiom-policy controls, not a new proof replay",
+  "started_utc": "2026-10-12T12:16:38Z",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "axiom_policy_sha256": "e65d52eceb7aaf90d287796010f8fb2a7cc0ae81907080455fd5d341fa24c137",
+  "cases": {
+    "valid": {
+      "status": "passed",
+      "policy_exit_code": 0,
+      "expected_diagnostic": null,
+      "input_log_sha256": "c4c642266da1200b170a63e8ae2b19365efd6738adf1e7636da155092f4240ac",
+      "policy_log_sha256": "9ae7e522f5657767a16cd073d06d5f3693c03a2ab4c8fbfa139b6c9036f8be4e",
+      "importing_audit_exit_code": 0
+    },
+    "imported-admission": {
+      "status": "passed",
+      "policy_exit_code": 1,
+      "expected_diagnostic": "Unexpected axioms for validation_control: sorryAx",
+      "input_log_sha256": "8bf0b1074b94ca95bc47789888cace4869aee8e25d108b8fe3b42999d68a5026",
+      "policy_log_sha256": "fd7edb07946cfa8faa1ab062cf602e7d14ef183687b98858dc9666370b813464",
+      "importing_audit_exit_code": 0
+    },
+    "imported-extra-axiom": {
+      "status": "passed",
+      "policy_exit_code": 1,
+      "expected_diagnostic": "Unexpected axioms for validation_control: forbidden_control",
+      "input_log_sha256": "c036846f6d2c227facb3518e53fdac7be86299ec3aafd12769d73ea30b6d39d7",
+      "policy_log_sha256": "188eeffc08083095107c6df21362184a47d246a0ea229357bb6f80a77420d86b",
+      "importing_audit_exit_code": 0
+    },
+    "missing-report": {
+      "status": "passed",
+      "policy_exit_code": 1,
+      "expected_diagnostic": "Missing axiom report",
+      "input_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "policy_log_sha256": "b27670f87274e65a31cd212f823df7ce964fe038b3174d9019ed1582358d1c61"
+    },
+    "truncated-report": {
+      "status": "passed",
+      "policy_exit_code": 1,
+      "expected_diagnostic": "Malformed axiom report",
+      "input_log_sha256": "b62c979f0bd9a856657b17acfd0caf85ca5f2e0b19d7bb3b46843264a93a63b0",
+      "policy_log_sha256": "17516855d02f4c29ef5dac3f4e7e05ef9c2ab8ab73d2a8795387bd3bc087ffa7"
+    },
+    "conflicting-reports": {
+      "status": "passed",
+      "policy_exit_code": 1,
+      "expected_diagnostic": "Conflicting axiom reports",
+      "input_log_sha256": "5baf794ae2e8605583a3300166bf50fb12de9fe20b0193ef014dc9f2c4a7448d",
+      "policy_log_sha256": "b507d3d7e80b52e0a830e434aded7e2a1d0e4496f696a26f3544246148d0f035"
+    },
+    "malformed-after-valid": {
+      "status": "passed",
+      "policy_exit_code": 1,
+      "expected_diagnostic": "Malformed axiom report",
+      "input_log_sha256": "2c960c78051ef2d34f79704b74fdf106d79a95e365bcd6f70136cd4693ed3736",
+      "policy_log_sha256": "17516855d02f4c29ef5dac3f4e7e05ef9c2ab8ab73d2a8795387bd3bc087ffa7"
+    }
+  },
+  "finished_utc": "2026-10-12T12:16:41Z",
+  "raw_receipt_sha256": "e014071903ecefae282b36e07ace62b770e48c5eadd8e9ffefc4ffd85fe8d9e0",
+  "evidence_note": "Sanitized summary of fresh execution; raw logs retained privately and identified by digest."
+}

@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "scope": "Identity, target body inventory and structured axiom names only",
+  "export_sha256": "fd0f5d689cc5f04f723d4c105a8da84e0d1f8a4c7356cf01c9db3afeac9f5dd6",
+  "bytes": 1281194270,
+  "declaration_records": 112854,
+  "targets": {
+    "OAI.DenominatorAffine.Endpoint.paired_eventualLowerBound": {
+      "kind": "thm",
+      "type": 22720442,
+      "value": 22721706
+    },
+    "DenominatorAffineVerification.general_eventual_lower_bound": {
+      "kind": "thm",
+      "type": 22721735,
+      "value": 22721772
+    },
+    "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_eventualLowerBound": {
+      "kind": "thm",
+      "type": 22756127,
+      "value": 22757271
+    },
+    "DenominatorAffineVerification.eventual_lower_bound": {
+      "kind": "thm",
+      "type": 22757283,
+      "value": 22757284
+    },
+    "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_explicit_bound": {
+      "kind": "thm",
+      "type": 22757283,
+      "value": 22757288
+    },
+    "DenominatorAffineVerification.explicit_bound": {
+      "kind": "thm",
+      "type": 22757283,
+      "value": 22757289
+    },
+    "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_irrational": {
+      "kind": "thm",
+      "type": 22758447,
+      "value": 22758450
+    },
+    "DenominatorAffineVerification.irrational": {
+      "kind": "thm",
+      "type": 22758447,
+      "value": 22758451
+    },
+    "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_irrationalityExponent_le_four": {
+      "kind": "thm",
+      "type": 22766863,
+      "value": 22766866
+    },
+    "DenominatorAffineVerification.irrationality_exponent_le_four": {
+      "kind": "thm",
+      "type": 22766883,
+      "value": 22766884
+    },
+    "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_standard_exponent_le_four": {
+      "kind": "thm",
+      "type": 22767700,
+      "value": 22768177
+    },
+    "DenominatorAffineVerification.standard_exponent_le_four": {
+      "kind": "thm",
+      "type": 22767700,
+      "value": 22768178
+    }
+  },
+  "structured_axiom_names": [
+    [
+      "propext"
+    ],
+    [
+      "Quot",
+      "sound"
+    ],
+    [
+      "Classical",
+      "choice"
+    ]
+  ]
+}

@@ -1,0 +1,69 @@
+name: Isolated affine denominator verification
+
+# Manual only. Preparation/publication does not authorize a proof run.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: isolated-affine-denominators
+  cancel-in-progress: false
+
+jobs:
+  affine-denominators:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Initialize diagnostic directory
+        run: |
+          mkdir -p "$RUNNER_TEMP/isolated-affine-denominators/evidence"
+          printf 'Verification has not completed.\n' > "$RUNNER_TEMP/isolated-affine-denominators/evidence/started.txt"
+      - name: Reserve disk before installing tools
+        run: |
+          set -euo pipefail
+          printf '%s\n' '3de51c75b00b595d30816bb643e61e7219ab9d611b39375762d0aa8855ed511c  verification/publication/prepare-independent-runner.sh' \
+            | sha256sum --check --strict - \
+            | tee "$RUNNER_TEMP/isolated-affine-denominators/evidence/capacity-input.log"
+          bash verification/publication/prepare-independent-runner.sh \
+            2>&1 | tee "$RUNNER_TEMP/isolated-affine-denominators/evidence/capacity.log"
+          sudo install -d -o "$(id -u)" -g "$(id -g)" -m 0755 /opt/hostedtoolcache
+          test -w /opt/hostedtoolcache
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: '1.25.12'
+          cache: false
+      - name: Check isolation and verify all six frozen targets
+        run: |
+          set -euo pipefail
+          python3 -I -B verification/isolated-affine-denominators/verify.py --run \
+            --work-dir "$RUNNER_TEMP/isolated-affine-denominators" \
+            2>&1 | tee "$RUNNER_TEMP/isolated-affine-denominators/evidence/console.log"
+      - name: Index exact evidence after the verifier exits
+        if: always()
+        run: |
+          python3 -B - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          root = Path(os.environ["RUNNER_TEMP"]) / "isolated-affine-denominators/evidence"
+          root.mkdir(parents=True, exist_ok=True)
+          files = {p.relative_to(root).as_posix(): {
+              "sha256": hashlib.sha256(p.read_bytes()).hexdigest(), "bytes": p.stat().st_size}
+              for p in sorted(root.rglob("*")) if p.is_file() and p.name != "evidence-index.json"}
+          (root / "evidence-index.json").write_text(json.dumps({
+              "commit": os.environ["GITHUB_SHA"], "run_id": os.environ["GITHUB_RUN_ID"],
+              "attempt": os.environ["GITHUB_RUN_ATTEMPT"], "files": files}, indent=2) + "\n")
+          PY
+      - name: Retain evidence, including failure diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: isolated-affine-denominators-${{ github.sha }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/isolated-affine-denominators/evidence/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90

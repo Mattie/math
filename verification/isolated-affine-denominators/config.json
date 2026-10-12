@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "DenominatorAffineVerification.general_eventual_lower_bound",
+    "DenominatorAffineVerification.eventual_lower_bound",
+    "DenominatorAffineVerification.explicit_bound",
+    "DenominatorAffineVerification.irrational",
+    "DenominatorAffineVerification.irrationality_exponent_le_four",
+    "DenominatorAffineVerification.standard_exponent_le_four"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": true
+}

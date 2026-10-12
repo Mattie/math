@@ -1,0 +1,485 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs,booktabs,microtype}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\N}{\mathbb N}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\wt}[1]{\sum_{i=1}^m w_i #1_i}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\title{The irrationality exponent of\texorpdfstring{\\$\log(3/2)+\sqrt2$}{ log(3/2) + sqrt(2)} is at most four}
+\author{Ryan Matthew Casper}
+\date{October 12, 2026}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+We extend the paired-embedding affine determinant argument to fixed
+nonintegral algebraic data. A column factor clears the additional
+denominators while preserving the original matrix and its selected minor.
+The resulting logarithmic cost is absorbed by the dimension and
+approximation-weight choices, before the matrix height grows. The
+specialization $a=3/2$, $u=1$, $v=\sqrt2$ gives an irrationality exponent
+at most four for $\log(3/2)+\sqrt2$. The extension uses the interpolation
+and analytic estimates of the preceding affine development. We distinguish
+the mathematical argument, the accompanying Lean declarations, and their
+verification status; no assertion of optimality or historical priority
+is made.
+\end{abstract}
+
+\section{Statement and contribution}
+For an irrational real number $x$, its irrationality exponent $\mu(x)$
+is the supremum of the positive real $\nu$ for which
+$0<|x-p/q|<q^{-\nu}$ holds for infinitely many reduced fractions
+$p/q$ with $q>0$. Our result is stated first as a literal uniform bound.
+
+\begin{theorem}\label{thm:pilot}
+For every real $\nu>4$, there is an integer $Q\ge2$ such that
+\begin{equation}\label{eq:pilot}
+ q^{-\nu}\le \left|\log(3/2)+\sqrt2-\frac pq\right|
+ \qquad(p\in\Z,\ q\in\N,\ q\ge Q).
+\end{equation}
+Consequently $\log(3/2)+\sqrt2$ is irrational and
+$\mu(\log(3/2)+\sqrt2)\le4$.
+\end{theorem}
+
+The threshold precedes both $p$ and $q$; no coprimality assumption is
+needed in \eqref{eq:pilot}. The theorem does not identify the exponent
+exactly, compute $Q$, or assert that all exponents equal to four are
+excluded.
+
+The preceding affine paper \cite{affine} treated algebraic-integer
+data in a degree-four field with two compatible embeddings. Its
+geometric and analytic statements do not require integrality. This note
+replaces the arithmetic step, accounts for its cost in the same
+parameter construction, and specializes the result to a rational base
+that was excluded by the old arithmetic hypothesis. The underlying
+interpolation and determinant estimates are inherited from the
+OpenAI library, the rational- and quadratic-logarithm extensions, and
+their affine adaptation
+\cite{openai,affine}; they are not new results of this note.
+
+One checked published comparison comes from Marcovecchio
+\cite{marcovecchio}, whose nonquadraticity table gives
+$\mu_2(\log(3/2))<9.460812$. With that paper's
+minimal-polynomial height, this implies the rational-exponent bound
+$18.921624$ for our shifted target; Section~\ref{sec:benchmark}
+gives the conversion. This is an applicable benchmark, not a
+certification of the best published bound for this exact number.
+
+\section{The denominator-aware affine theorem}\label{sec:common}
+Write $\operatorname{Emb}(F)=\operatorname{Hom}_{\Q\text{-alg}}(F,\C)$.
+The ring of integers is denoted by $\OO_F$.
+
+\begin{theorem}\label{thm:general}
+Let $[F:\Q]=4$ and $a,u,v\in F$. Suppose an embedding $\sigma_0$
+satisfies $\sigma_0(a)=b_0\in\R$, with $b_0>0$ and $b_0\ne1$.
+Let $x\in\R\setminus\{0\}$. Suppose a selected set
+$G\subset\operatorname{Emb}(F)$ has cardinality two and
+\begin{equation}\label{eq:compatible}
+ \exp\bigl(\sigma(u)(x-\sigma(v))\bigr)=\sigma(a),
+ \qquad |\sigma(u)|\le2 \quad(\sigma\in G).
+\end{equation}
+Then, for every real $\nu>4$, there is $Q\in\N$, $Q\ge2$, such that
+$q^{-\nu}\le |x-p/q|$ for every $p\in\Z$ and $q\in\N$, $q\ge Q$.
+In particular, $x$ is irrational and $\mu(x)\le4$.
+\end{theorem}
+
+Other embeddings may also satisfy \eqref{eq:compatible}, and
+$\sigma_0$ need not belong to $G$. Embeddings are counted as distinct
+maps even when their values on $a,u,v$ coincide. The result does not
+require the remaining two embeddings to be real.
+
+Choose positive integers $d_a,d_n$ such that
+\begin{equation}\label{eq:fixedclearing}
+ d_a a,\quad d_n u,\quad d_n uv\ \in\OO_F.
+\end{equation}
+Every element of a number field has a positive integer multiple in its
+ring of integers. Taking a product of denominators clears the last two
+elements simultaneously. These choices depend only on the fixed
+algebraic data, not on any approximating fractions or matrix height.
+
+\subsection{The inherited analytic and geometric input}
+We state the precise part of the existing argument that is reused.
+For a fixed $\nu>4$, suppose there are approximations
+$|x-p/q|<q^{-\nu}$ with arbitrarily large $q$. Choose finitely many
+$p_i/q_i$ with $q_i\ge2$ and $p_i\ne0$, and put
+$w_i=\lceil\log q_i\rceil$, $w_* = \min_i w_i>0$.
+Nonzero numerators are available by increasing the initial threshold,
+since $x\ne0$.
+There are rational shape parameters
+\begin{equation}\label{eq:shape}
+0<\theta<A<B<1,\quad C>1,\quad B<C^{-1},\quad B<C\theta<1,
+\end{equation}
+and $0<\eta<1$, for which
+\begin{equation}\label{eq:gap}
+g=\nu\bigl(A(1-\eta)-\theta\bigr)-2(1-\theta)>0.
+\end{equation}
+Choose $F_0>2/\theta$, a dimension $m\ge1$, and set
+\begin{equation}\label{eq:dimension}
+K=\lfloor C^m\rfloor,\qquad w_0=B^{-m},\qquad
+v_0=2K\theta^m w_0.
+\end{equation}
+The finitely many weights $w_i$ are then chosen successively large
+enough to satisfy the weight-separation hypotheses of weighted
+logarithmic interpolation in \cite[Sections 4--5]{affine}. These
+hypotheses compare finitely many products of earlier weights; an
+arbitrarily large next denominator suffices. The strict volume ratio is
+$Kw_0\theta^m/v_0=1/2$.
+
+For $H>0$, use columns $(h,\gamma)\in\N\times\N^m$ with
+$w_0h+\wt\gamma\le H$, and rows $(j,s,\beta)$ with
+$0\le j<K$ and $v_0s+\wt\beta/\theta<H$. The number of rows is $M=M(H)>0$.
+Define
+\begin{align}
+ T_i&=\left\lceil F_0w_i/v_0\right\rceil,&
+ L_i(t)&=\sum_{1\le k<T_i}\frac{(-1)^{k+1}}k t^k,\label{eq:truncation}\\
+ r_{\sigma i}&=\sigma(u)(p_i/q_i-\sigma(v)),&
+ z_\sigma&=\sigma(a).\notag
+\end{align}
+The matrix is
+\begin{equation}\label{eq:matrix}
+\mathcal M_\sigma(H)_{(j,s,\beta),(h,\gamma)}
+=z_\sigma^{jh}[t^sZ^\beta](1+t)^h
+  \prod_{i=1}^m(Z_i+jr_{\sigma i}+L_i(t))^{\gamma_i}.
+\end{equation}
+Weighted interpolation gives full row rank at $\sigma_0$ for a cofinal
+set of heights. Choose one nonzero full-row minor there and use its
+\emph{same columns} at every embedding; its determinant is $\Delta_\sigma$.
+Write
+\[
+b_H=\frac1{MH}\sum_{\text{rows }r}\sum_iw_i\beta_{ri},
+\qquad 0\le b_H\le\theta.
+\]
+
+Fix bounds $\kappa,R\ge0$ and $\rho\ge100$ such that, at all embeddings,
+\begin{align*}
+\log\max(1,|\sigma(a)|)&\le\kappa,\\
+|\sigma(u)|(|x|+1+|\sigma(v)|)&\le R,\\
+100|x|&\le\rho,\qquad
+100|\sigma(u)(x-\sigma(v))|\le\rho.
+\end{align*}
+Finite sums or maxima provide such bounds before the approximations
+are selected. Put $\Lambda=\log4+4$ and $c=\log2/4$, and define
+\begin{align}
+ E_0&=\frac{\Lambda F_0m}{v_0}+\Lambda\sum_i\frac1{w_i}
+                 +\frac\theta{w_*},\label{eq:costs}\\
+ U(S)&=\frac{\log2}{v_0}+\frac{\kappa K+\log(3/2)}{w_0}
+             +\frac{\log(2(KS+2))}{w_*},\notag\\
+ V&=\frac\nu{F_0}+\frac{2\log2}{v_0}+\frac{\rho K}{w_0}
+ +\frac{\log4+\log(2K)+\nu+\log(200K)+\log(\rho/100)}{w_*}.\notag
+\end{align}
+The inherited estimates \cite[Sections 7--8]{affine} assert that
+there are remainders $r_a(H),r_c(H)\to0$ and a collision rate
+$C_H\to C_\infty$, where
+\begin{equation}\label{eq:collision}
+C_\infty=\frac{c\eta^2K\theta^m}{(m+1)v_0A^m}
+        =\frac{c\eta^2}{2(m+1)}(B/A)^m,
+\end{equation}
+such that every nonzero selected minor satisfies
+\begin{align}
+\frac{\log|\Delta_\sigma|}{MH}
+&\le V+r_a(H)+\frac{\log2}{w_*}
+ +\max\{-C_H,-\nu(A(1-\eta)-b_H)\},&&\sigma\in G,\label{eq:good}\\
+\frac{\log|\Delta_\sigma|}{MH}
+&\le U(R)+r_c(H),&&\sigma\notin G.\label{eq:coarse}
+\end{align}
+These are estimates for the original matrix \eqref{eq:matrix}; no
+clearing factors are built into them. Their hypotheses are bounds on
+complex bases and centres, the exponential identities, the approximation
+errors and the numerical parameters. Algebraic integrality is absent.
+Likewise, interpolation permits arbitrary additive centres. This is
+why these statements remain applicable to the present data.
+
+\section{Clearing denominators without changing the minor}
+Let $D_i=\operatorname{lcm}(1,\ldots,T_i)$ and
+$e_i=\lfloor H/w_i\rfloor$. The original row and column factors are
+\[
+\prod_iD_i^{e_i}q_i^{-\beta_i}
+\quad\hbox{and}\quad \prod_iq_i^{\gamma_i}.
+\]
+Their product over the selected square matrix is a positive rational
+number $\mathscr C_H$. The elementary clearing-cost calculation,
+which is an inequality about these numerical factors, gives
+\begin{equation}\label{eq:oldcost}
+\log\mathscr C_H\le MH(1-b_H+E_0).
+\end{equation}
+It does not itself assert integrality for the present data.
+
+Add to each selected column $(h,\gamma)$ the integer factor
+\begin{equation}\label{eq:extracolumn}
+c(h,\gamma)=d_a^{Kh}d_n^{\sum_i\gamma_i},
+\end{equation}
+and let $A_H$ be the product of these extra factors over the selected
+columns. The exponent $Kh$ is a convenient upper bound; replacing it
+by $(K-1)h$ is possible but unnecessary.
+
+\begin{lemma}\label{lem:lift}
+There is a single nonzero algebraic integer $Z_H\in\OO_F$ such that
+\begin{equation}\label{eq:lift}
+\sigma(Z_H)=\mathscr C_H A_H\Delta_\sigma
+\qquad(\sigma\in\operatorname{Emb}(F)).
+\end{equation}
+In particular, all four selected determinants are nonzero.
+\end{lemma}
+\begin{proof}
+Put $n_i=u(p_i-q_iv)$ and $N_i=d_n n_i$. Equation
+\eqref{eq:fixedclearing} makes $N_i=(d_nu)p_i-(d_nuv)q_i$ integral.
+If some $\beta_i>\gamma_i$, the matrix entry is zero. Otherwise put
+$\delta_i=\gamma_i-\beta_i$. After extracting $Z^\beta$ and applying
+the original factors, the entry is the embedded image of
+\[
+a^{jh}\prod_i\binom{\gamma_i}{\beta_i}
+[t^s](1+t)^h\prod_iD_i^{e_i}(jn_i+q_iL_i(t))^{\delta_i}.
+\]
+The additional factor \eqref{eq:extracolumn} clears the remaining
+denominators because
+\begin{align*}
+d_a^{Kh}a^{jh}&=d_a^{(K-j)h}(d_aa)^{jh},\\
+d_n^{\gamma_i}(jn_i+q_iL_i)^{\delta_i}
+ &=d_n^{\beta_i}(jN_i+d_nq_iL_i)^{\delta_i}.
+\end{align*}
+All exponents are nonnegative. The polynomial
+$D_i(jN_i+d_nq_iL_i)$ is integral coefficientwise, and
+$\delta_i\le\gamma_i\le e_i$, so its $\delta_i$th power is cleared
+by $D_i^{e_i}$. Products, binomial coefficients and coefficient
+extraction preserve integrality.
+
+Thus these entries define one square matrix over $\OO_F$. Its
+determinant is $Z_H$, and determinants commute with every embedding.
+This proves \eqref{eq:lift}. At $\sigma_0$ its image is nonzero,
+since both factors are positive and the selected minor is nonzero.
+Hence $Z_H\ne0$, and injectivity of every field embedding proves the
+last assertion. No new column choice is made at the other embeddings.
+\end{proof}
+
+\begin{lemma}\label{lem:cost}
+With
+\begin{equation}\label{eq:tau}
+\tau=\frac{K\log d_a}{w_0}+\frac{\log d_n}{w_*},
+\end{equation}
+one has $0\le\log A_H\le MH\tau$.
+\end{lemma}
+\begin{proof}
+Every column satisfies $h\le H/w_0$ and
+$\sum_i\gamma_i\le H/w_*$. Apply these inequalities to the logarithm
+of \eqref{eq:extracolumn}, then sum over $M$ columns. The logarithms
+of the positive integer denominators are nonnegative. The transverse
+cost has no additional factor $m$, because the column budget bounds
+the sum of all exponents.
+\end{proof}
+
+The nonzero integer norm of $Z_H$ gives
+\[
+0\le4\log(\mathscr C_H A_H)+\sum_\sigma\log|\Delta_\sigma|.
+\]
+Using \eqref{eq:oldcost}, Lemma~\ref{lem:cost}, and the estimates at
+two good and two remaining embeddings, then dividing by $2MH>0$,
+gives
+\begin{align}
+-2(1-b_H)-2(E_0+\tau)-U(R)-r_c(H)
+\le{}&V+r_a(H)+\frac{\log2}{w_*}\notag\\
+&+\max\{-C_H,-\nu(A(1-\eta)-b_H)\}.\label{eq:combined}
+\end{align}
+The added normalized arithmetic cost is at most $2\tau$.
+It is counted only here; the analytic bounds still concern the
+unscaled determinants.
+
+\section{Absorption and the contradiction}\label{sec:absorption}
+Set
+\[
+E=E_0+\frac{K\log d_a}{w_0},\qquad
+\widehat R=2d_n^2(R+2).
+\]
+For $K\ge1$, $R\ge0$, and $d_n\ge1$,
+\[
+2(K\widehat R+2)\ge 2d_n^2\,2(KR+2).
+\]
+Indeed the difference is $8d_n^2(K-1)+4\ge0$. Taking logarithms
+and dividing by $w_*>0$ proves
+\begin{equation}\label{eq:absorb}
+U(R)+\frac{\log2+2\log d_n}{w_*}\le U(\widehat R).
+\end{equation}
+This enlargement pays the transverse denominator cost and the
+good-embedding multiplier simultaneously.
+
+We now justify the required parameter choices with these fixed costs.
+First choose shape parameters with \eqref{eq:gap}; for example take
+rational $t<1$ close enough to one that $\nu t>2(1+t)$, put
+$\theta=t^2$, choose rational $\theta<A<B<t$ close to $t$, then
+choose $C\in(B/\theta,1/B)$ and a sufficiently small $\eta>0$.
+Choose $0<\epsilon<g$ with $\epsilon\le1/2$, then choose
+$F_0>2/\theta$ with $\nu/F_0<\epsilon/3$.
+
+Choose $m$ sufficiently large that
+\begin{equation}\label{eq:dimensionmargin}
+\frac{2\Lambda F_0m+3\log2}{v_0}
++\frac{(\rho+\kappa+2\log d_a)K+\log(3/2)}{w_0}
+<\epsilon/3,
+\qquad C_\infty>3.
+\end{equation}
+This is possible since $K/w_0\le(CB)^m\to0$,
+$m/v_0\to0$ because $C\theta/B>1$, and
+$C_\infty\to\infty$ by \eqref{eq:collision}.
+Next choose the geometric slack required for interpolation and increase
+the initial approximation-weight threshold so that all remaining
+inverse-weight terms in $2E+U(\widehat R)+V$ sum to less than
+$\epsilon/3$. Their coefficients are fixed at this point, and
+$\sum_i1/w_i\le m/w_*$. Later denominators can still be chosen
+successively large enough for separation. Consequently
+\begin{equation}\label{eq:margins}
+2E+U(\widehat R)+V<g,
+\qquad 2+2E+U(\widehat R)+V<C_\infty.
+\end{equation}
+All these choices, including the finite approximation tuple, precede
+the increase of $H$. In particular $K\log d_a/w_0$ and
+$\log d_n/w_*$ are not height remainders.
+
+By \eqref{eq:absorb}, \eqref{eq:combined} implies
+\[
+-2(1-b_H)\le S_H+
+\max\{-C_H,-\nu(A(1-\eta)-b_H)\},
+\]
+where $S_H=2E+U(\widehat R)+V+r_a(H)+r_c(H)$.
+For all sufficiently large $H$, \eqref{eq:margins} yields
+$S_H<g$ and $2+S_H<C_H$.
+If the maximum is the approximation term, rearranging gives
+\[
+g+(\nu-2)(\theta-b_H)
+=\nu(A(1-\eta)-b_H)-2(1-b_H)\le S_H<g,
+\]
+a contradiction. If it is the collision term, it gives
+$C_H\le2(1-b_H)+S_H\le2+S_H$, again a contradiction.
+Either argument works if the two terms are equal.
+
+Interpolation supplies a nonzero minor at a cofinal set of heights, so
+this contradiction disproves the existence of arbitrarily large bad
+denominators. This proves the literal bound in
+Theorem~\ref{thm:general}. A rational $x$ would have exact
+representations with arbitrarily large unreduced denominators, contrary
+to that bound. Thus $x$ is irrational. For each $\nu>4$, only finitely
+many reduced fractions can violate it: denominators are bounded, and
+the inequality bounds their numerators as well. Hence $\mu(x)\le4$.
+
+\section{Specialization and published comparison}
+Take $F=\Q(\sqrt2,\sqrt3)$, which has degree four, and put
+\[
+a=3/2,\qquad u=1,\qquad v=\sqrt2,\qquad
+x=\log(3/2)+\sqrt2>0.
+\]
+The two embeddings fixing $\sqrt2$ and sending $\sqrt3$ to its
+two signs are distinct. They satisfy \eqref{eq:compatible}, since
+$\exp(x-\sqrt2)=3/2$, and their slopes have absolute value one.
+The positive distinguished base is $3/2\ne1$. We may choose
+$d_a=2$, $d_n=1$ in \eqref{eq:fixedclearing}.
+Theorem~\ref{thm:general} proves Theorem~\ref{thm:pilot}.
+
+\subsection{Height conversion}\label{sec:benchmark}
+For coprime $p,q$, $q>0$, the quadratic number
+$U=p/q-\sqrt2$ has primitive irreducible integer polynomial
+\[
+q^2X^2-2pqX+(p^2-2q^2).
+\]
+Primitivity follows from $\gcd(q^2,p^2-2q^2)=1$; irreducibility
+follows from $\sqrt2\notin\Q$. Its coefficient height obeys
+$H(U)\ge q^2$. For approximations with $|x-p/q|<1$, it also obeys
+$H(U)\le C_xq^2$, where $C_x>0$ is fixed.
+Marcovecchio's definition and table
+\cite[pp.~147, 151, 182]{marcovecchio} imply, for every
+$s>9.460812$ and all sufficiently large such heights,
+\[
+|x-p/q|=|\log(3/2)-U|>H(U)^{-s}
+\ge C_x^{-s}q^{-2s}.
+\]
+Choosing $9.460812<s<\nu/2$ and absorbing the fixed constant gives
+the comparison bound $\mu(x)\le18.921624$.
+The factor two comes from the quadratic growth of coefficient height.
+The comparison checks an applicable consequence of that result;
+it does not settle the strongest current bound or priority for four.
+
+\section{Formalization and verification status}\label{sec:formalization}
+The new source is maintained separately from the inherited affine
+package. Its main mathematical boundary is the entry lift and the
+positive scalar for the same selected determinant. The numerical
+parameter structures are reused with base-denominator parameter
+$\log d_a$ and coarse bound $\widehat R$.
+
+\paragraph{Source validation.}
+The general denominator-aware endpoint and the pilot corollaries have
+compiled in Lean 4.34.1 with strict warning settings. The ten new source
+files are identified by a SHA-256 inventory. A transitive axiom-policy
+audit passed for all seven public endpoints, with rejection controls.
+Separate mathematical, specification and blind manuscript reviews
+found no remaining mathematical or statement defect in this scope.
+
+\paragraph{Independent verification.}
+Six statements passed comparison against a separate challenge and
+both of Comparator's kernel checks. Nanoda and a separately built
+stock Lean 4.34.1 reader then accepted identical retained export bytes.
+The export contains 112854 serialized declarations, including proof
+bodies for all six public targets and all six comparison wrappers,
+and exactly the three permitted axioms. Source and export hashes,
+acceptance and rejection controls, and tool identities accompany
+the package. Local execution used identified inherited caches;
+a fresh hosted build and its evidence audit remain pending.
+The pinned Nanoda checker accepts a known invalid-projection test
+that both stock Lean checks reject. Its result is supplementary;
+the stock Lean replay remains required.
+
+The standard-definition corollary excludes
+\texttt{LiouvilleWith}$(\nu,x)$ for every $\nu>4$. To absorb the
+constant in that definition, apply the literal bound at
+$\nu'=(4+\nu)/2$ and use the frequently occurring smaller-exponent
+approximations furnished by Mathlib. Irrationality is proved separately,
+so the statement does not rest on a default supremum value.
+
+\section*{Attribution and limitations}
+This work reuses the interpolation, collision, logarithmic-jet and
+parameter-selection machinery in the OpenAI source and the preceding
+affine adaptation \cite{openai,affine}. The new step is the
+fixed-denominator arithmetic extension and its specialization above.
+Code provenance, licenses and exact declaration correspondence belong
+to the accompanying formalization package. The present paper does not
+claim a formalization of every possible quadratic-field affine family,
+an effective approximation threshold, or a new best published record.
+
+OpenAI Codex assisted with mathematical development, Lean proof
+construction, verification orchestration and exposition. Separate
+model contexts perform mathematical, specification and manuscript
+reviews. Such reviews are not human peer review, and kernel acceptance
+does not establish historical priority.
+
+\begin{thebibliography}{9}
+\raggedright
+\bibitem{affine}
+R. M. Casper,
+\emph{\href{https://github.com/Mattie/math/blob/cf1338bcee8fe9f08422ec36e8fdf6dc6392c677/preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/paper.pdf}{The irrationality exponents of $\log2+\sqrt2$ and
+$\sqrt2\log2$ are at most four}}, October 11, 2026.
+Companion preprint and \texttt{AffineLogarithms} formalization in the
+\texttt{Mattie/math} repository.
+
+\bibitem{openai}
+OpenAI, \emph{\texttt{OAI.NumberTheory.PiExponent}}, Lean source library,
+revision \path{adc7f1241b42e322a6451854ab7e4b4c146bf78a},
+\url{https://github.com/openai/math}.
+The rational-logarithm extensions are inherited through the
+\texttt{Mattie/math} revision
+\path{0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd}; the
+\texttt{AffineLogarithms} package records their exact provenance.
+
+\bibitem{marcovecchio}
+R. Marcovecchio, \emph{The Rhin--Viola method for $\log2$},
+Acta Arithmetica \textbf{139} (2009), no.~2, 147--184.
+\href{https://doi.org/10.4064/aa139-2-5}{doi:10.4064/aa139-2-5}.
+\end{thebibliography}
+\end{document}
