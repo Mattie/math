@@ -10,7 +10,7 @@ for every integer $p$ and natural $q\ge Q$. The target is irrational and its irr
 
 The argument extends the preceding paired affine determinant construction to fixed nonintegral algebraic data. It preserves the selected matrix and pays the extra denominator cost before increasing the matrix height. The paper states the inherited geometric and analytic inputs and proves the new clearing and cost estimates.
 
-The Lean pilot and general denominator-aware endpoint have compiled. Independent mathematical, specification, and blind manuscript reviews found no remaining mathematical or statement defect; manuscript/source correspondence was checked. Six-target statement comparison and same-byte Nanoda and stock Lean replay passed locally. The fresh hosted build remains pending; see [verification status](VERIFY.md) for evidence and the confirmed Nanoda limitation. No new best-bound or priority claim is made.
+The Lean formalization passed local statement comparison and proof replay. The fresh hosted source-verification run is in progress; see [verification status](VERIFY.md) for the run, evidence, and checker limitations.
 
 The [preceding affine paper](../The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/paper.pdf) supplies the inherited estimates. The [claim map](theorem-map.json) identifies the new declarations. Authorship and AI assistance are disclosed in the manuscript; [licenses](LICENSES.md) retain the inherited scopes.
 
