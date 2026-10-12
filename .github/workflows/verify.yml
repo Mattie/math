@@ -150,7 +150,7 @@ jobs:
       - name: Build every affine proof module and audit all endpoints
         run: python3 -I scripts/build.py --all-modules
       - name: Exercise axiom rejection controls
-        run: python3 scripts/audit_controls.py
+        run: python3 -I scripts/audit_controls.py
       - name: Retain fresh affine build and control evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

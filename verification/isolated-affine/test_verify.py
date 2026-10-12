@@ -47,6 +47,20 @@ class PreparationTests(unittest.TestCase):
                 finally:
                     path.write_bytes(original)
 
+    def test_complete_setup_pins_are_checked_before_setup(self):
+        name = 'verification/isolated-affine/pins.json'
+        path = self.root / name
+        path.parent.mkdir(parents=True)
+        pins = json.loads(verify.PINS.read_text())
+        for key in ['lean_archive_sha256', 'lean_commit', 'rust']:
+            with self.subTest(key=key):
+                path.write_text(json.dumps(dict(pins, **{key: 'changed'})))
+                with patch.object(verify, 'REPO', self.root), \
+                        patch.object(verify, 'validate_sources') as sources:
+                    with self.assertRaisesRegex(RuntimeError, 'Reviewed input changed: ' + name):
+                        verify.check_inputs()
+                    sources.assert_not_called()
+
     def test_disk_preparation_is_pinned_before_execution_in_both_workflows(self):
         name = 'verification/publication/prepare-independent-runner.sh'
         sha = verify.BASELINE[name]

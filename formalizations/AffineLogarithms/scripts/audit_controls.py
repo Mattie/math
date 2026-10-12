@@ -4,18 +4,27 @@
 Run with Lean 4.34.1 on PATH. Deliberate admission and extra-axiom fixtures live
 only under .work and are never imported by the mathematical proof project.
 """
+import sys
+
+if __name__ == '__main__' and not sys.flags.isolated:
+    raise SystemExit('Run these controls with Python isolated mode: python3 -I scripts/audit_controls.py')
+
 from pathlib import Path
+import importlib.util
 import json
 import os
 import shutil
 import subprocess
-import sys
 import tempfile
 import time
-from check import ROOT, digest
+spec = importlib.util.spec_from_file_location('package_check', Path(__file__).with_name('check.py'))
+package_check = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(package_check)
+ROOT, digest = package_check.ROOT, package_check.digest
 
 
 def main():
+    package_check.check_package()
     lean = Path(shutil.which('lean') or 'lean').resolve()
     version = subprocess.check_output([str(lean), '--version'], cwd=ROOT, text=True).strip()
     if not version.startswith('Lean (version 4.34.1,'):

@@ -102,7 +102,7 @@ The actual audit policy has imported-admission and extra-axiom rejection
 controls. Run them independently with:
 
 ```sh
-python3 scripts/audit_controls.py
+python3 -I scripts/audit_controls.py
 ```
 
 Their fixtures are compiled only under `.work/`, outside the solution's imports.

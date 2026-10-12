@@ -26,6 +26,7 @@ EXPECTED_CHECKS = {"tools", "isolation", "valid", "mismatch", "axiom",
                    "imported-admission", "dependencies", "affine", "protected-inputs"}
 RUNTIME = 18000
 BASELINE = {
+    "verification/isolated-affine/pins.json": "262659620e2e43aef31a87cd95e824b93d3fe8b64d4f114cd42264f253ba75e9",
     "verification/publication/prepare-independent-runner.sh": "3de51c75b00b595d30816bb643e61e7219ab9d611b39375762d0aa8855ed511c",
     "verification/isolated-6942/verify.py": "061475aa32588afce34d68e16e19763b5ec086602235e088f3f47874be183b47",
     "verification/isolated-preflight/preflight.py": "b6149c3a2265533769fdf3eade0c56b1bcd94c8ad3d128570ce1eca7eefbd1f8",

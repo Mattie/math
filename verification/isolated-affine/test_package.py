@@ -122,6 +122,36 @@ class PackageTests(unittest.TestCase):
         finally:
             fixture.write_bytes(original)
 
+    def test_axiom_controls_reject_shadow_imports_and_changed_policy_before_commands(self):
+        script = self.proof / 'scripts/audit_controls.py'
+        marker = self.root / 'controls-shadow-import-executed'
+        for name in ['scripts/json.py', 'scripts/subprocess.py']:
+            injected = self.proof / name
+            injected.write_text('from pathlib import Path\nPath(' + repr(str(marker)) + ').touch()\n')
+            try:
+                result = self.command(script)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn('inventory mismatch', result.stdout + result.stderr)
+                unsafe = subprocess.run([sys.executable, str(script)], cwd=self.root,
+                                        capture_output=True, text=True)
+                self.assertNotEqual(unsafe.returncode, 0)
+                self.assertIn('isolated mode', unsafe.stdout + unsafe.stderr)
+                self.assertFalse(marker.exists())
+            finally:
+                injected.unlink()
+        controls = load('affine_controls_test', PROOF / 'scripts/audit_controls.py')
+        policy = self.proof / 'scripts/audit_axioms.py'
+        original = policy.read_bytes()
+        try:
+            policy.write_bytes(original + b'\n# modified\n')
+            with patch.object(controls.package_check, 'ROOT', self.proof), \
+                    patch.object(controls.subprocess, 'check_output') as command:
+                with self.assertRaisesRegex(RuntimeError, 'Package file changed: scripts/audit_axioms.py'):
+                    controls.main()
+                command.assert_not_called()
+        finally:
+            policy.write_bytes(original)
+
     def test_updated_manifests_cannot_reuse_a_stale_axiom_log(self):
         paths = [self.proof / name for name in
                  ['PairedAffine/Main.lean', 'evidence/source-sha256.json', 'manifest-sha256.json']]
