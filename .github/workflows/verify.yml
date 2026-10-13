@@ -32,6 +32,7 @@ jobs:
       - run: python3 verification/publication/check-frozen.py
       - run: python3 verification/publication/test_verification.py
       - run: python3 -B verification/publication/test_workflow_checks.py
+      - run: python3 -B verification/publication/test_cubic_archive.py
       - run: python3 verification/irrationality-exponents/test_verify.py
       - run: python3 -B verification/isolated-affine/test_verify.py
       - run: python3 -B verification/isolated-affine/test_package.py
@@ -63,6 +64,7 @@ jobs:
       fail-fast: false
       matrix:
         preprint:
+          - The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026
           - The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026
           - The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026
           - Reciprocal-quadratic-integrals-are-rational-or-have-irrationality-exponent-2-October-10-2026

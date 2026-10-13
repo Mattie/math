@@ -1,0 +1,11 @@
+{
+  "target": "Real.log 2 + (2 : ℝ) ^ (1 / 3 : ℝ)",
+  "source": "../../formalizations/AffineCubic/AffineCubic/Pilot.lean",
+  "main_theorem": "OAI.AffineCubic.Pilot.eventualLowerBound",
+  "irrationality": "OAI.AffineCubic.Pilot.irrational",
+  "irrationality_exponent": "OAI.AffineCubic.Pilot.irrationalityExponent_le_six",
+  "standard_mathlib_consequence": "OAI.AffineCubic.Pilot.not_liouvilleWith",
+  "general_cubic_theorem": "OAI.AffineCubic.Endpoint.cubic_eventualLowerBound",
+  "conventions": "All real nu>6; all integers p; all natural q above a threshold Q>=2. No coprimality assumption in the eventual bound.",
+  "scope": "Upper bound only; no numerical threshold, equality, novelty, or critical-exponent claim."
+}

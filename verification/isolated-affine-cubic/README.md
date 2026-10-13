@@ -13,6 +13,7 @@ sources and the specification. Frozen proof files have not been changed.
 Run the preparation checks from the repository root:
 
 ```sh
+python3 -m pip install -r verification/publication/requirements-test.txt
 python3 -m unittest discover -s verification/isolated-affine-cubic -p 'test_*.py'
 python3 -I verification/isolated-affine-cubic/verify.py --check
 ```
@@ -27,7 +28,11 @@ resource limits, and the distinction from historical local replay.
 The [October 13 hosted result](results/hosted-verification-2026-10-13.md) passed:
 fresh isolated source, all four wrappers, both kernels, and the downloaded
 evidence audit. It identifies the exact commit, run, archive and scope limits.
-The job retains its evidence archive for 90 days. The standalone
+The original job retains its evidence archive for 90 days. The identical
+[evidence ZIP](evidence/hosted-2026-10-13.zip) is also retained in this repository,
+with its size and SHA-256 bound by the dated audit. The
+[published paper's verification companion](../../preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/VERIFY.md)
+describes the archive and its integrity check. The standalone
 [template](hosted-workflow.yml) is retained for
 comparison; the registered [dispatcher](../../.github/workflows/isolated-irrationality.yml)
 is the workflow used for this run.
