@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/Mattie/math",
+  "commit": "0cfe10002ea95c45721b93d18bffbe2c3bbbcbbd",
+  "project": "preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026/lean",
+  "source_file_count": 924,
+  "source_manifest": "dependency-source-sha256.json",
+  "openai_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-11",
+  "previous_manuscript_sha256": "0d56854957f3a0af522e963ba97f95e39c383e9b6537899eb9cce4468630c1b9",
+  "manuscript_sha256": "d5697b2c4fbdcafafd9e1d4322ff3867eb8a4172c646a8c620a750eb3ddf2e2a",
+  "pdf_sha256": "171080b802af09f451344cb2c91049b2b5ab1e9de048777c2429fb575efee7be",
+  "changes": [
+    "Added a direct construction of the shape parameters.",
+    "Explained the two parameter margins before the remaining choices.",
+    "Defined the finite translation choices and scalar, and derived the scalar estimate and polynomial choice count.",
+    "Removed redundant proof commentary and simplified the formalization appendix.",
+    "Acknowledged classical transcendence of all three targets together in the introduction, with a Hermite-Lindemann reference; focused the abstract on exponent bounds."
+  ],
+  "unchanged_statement_environments": {
+    "mainthm": 3,
+    "theorem": 1,
+    "lemma": 5,
+    "proposition": 4
+  },
+  "proof_sources_changed": false,
+  "mathematical_delta_review": {
+    "reviewed_manuscript_sha256": "d4137b69c0eccfb0c7040b1a12b3b4429fc1d479ecaf153fa8002f2233ea924b",
+    "report_sha256": "c673eec0a7097d599d662cc931b8eb43ca3baa10e57dddc0e1e068806c68d237",
+    "result": "No unresolved mathematical defect in the bounded delta. Shape construction, tail sign, binomial factors, coefficient bounds and choice count match the unchanged formal interfaces.",
+    "resolved": "Removed an unsupported equivalence claim from the Mathlib formulation description.",
+    "subsequent_delta": "Reworded one bounds sentence. At the user request, added the classical Hermite-Lindemann transcendence observation for all three targets and its source, and focused the abstract on the quantitative bounds; coordinator checked this elementary consequence.",
+    "scope": "Independent model source and mathematical delta review; no full proof replay or renewed review of inherited foundations."
+  },
+  "build": "Tectonic 0.15.0; 18 pages; no warnings.",
+  "visual_check": "All pages inspected as contact sheets; parameter construction, finite translation and revised appendix inspected individually."
+}

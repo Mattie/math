@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "scope": "Controls only",
+  "binary_sha256": {
+    "nanoda": "a58f6590e9561bd296b7b187d75515fb3e6920defcaeac3582417579210e062d",
+    "lean_reader": "f18020ea3525ee1058788decc2169480cc9ed371a990f4081170c82c186053f9"
+  },
+  "commands": [
+    {
+      "label": "nanoda-positive",
+      "exit_code": 0,
+      "log_sha256": "d4282000d31ad44c1447fc38eb8a4d89c632a92dfef0299911eb40c2d229af0b"
+    },
+    {
+      "label": "nanoda-negative",
+      "exit_code": 101,
+      "log_sha256": "31fd8dfa08554f44e89bde08a7c54e8d20dbeef2e99beb1789577217c4048a9d"
+    },
+    {
+      "label": "lean-positive",
+      "exit_code": 0,
+      "log_sha256": "20735df52a715eb7ff28d1b67703be68a7b72c5fed57ebb94d65f7cdc91c67a4"
+    },
+    {
+      "label": "lean-negative-parses",
+      "exit_code": 0,
+      "log_sha256": "bca3214577d4b066dd3a14eb423a51d9d3490e06aeab3b1a9e7df38d5440bb59"
+    },
+    {
+      "label": "lean-negative",
+      "exit_code": 1,
+      "log_sha256": "cf05b37fa1d6f0d5f7c1a64547a968e848f8b68c7a1917cb30f5ae35875f68ee"
+    }
+  ],
+  "controls": "passed"
+}

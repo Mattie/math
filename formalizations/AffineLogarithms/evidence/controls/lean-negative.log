@@ -1,0 +1,5 @@
+uncaught exception: while replaying declaration 'validation_control':
+(kernel) declaration type mismatch, 'validation_control' has type
+  Prop
+but it is expected to have type
+  True

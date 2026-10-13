@@ -1,0 +1,64 @@
+{
+  "paper_title": "The irrationality exponents of log(2) + sqrt(2) and sqrt(2) log(2) are at most 4",
+  "source_inventory_sha256": "88516799eccd19825089e8e71ef84ebacb87d8a16174c0069b4cabe114089cb1",
+  "hosted_checked_commit": "b15a6431eca8632a48c1cd84e5200edd30f0670c",
+  "main_results": [
+    {
+      "latex_label": "thm:shift",
+      "expression": "Real.log 2 + Real.sqrt 2",
+      "conclusion": "irrational; irrationality exponent at most 4; eventual lower bound for every real nu > 4",
+      "source": "../../formalizations/AffineLogarithms/PairedAffine/AffineExamples.lean",
+      "public_declarations": [
+        "OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound",
+        "OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound",
+        "OAI.PairedAffine.log_two_add_sqrt_two_irrational",
+        "OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four"
+      ],
+      "comparison_targets": [
+        "PairedAffineVerification.log_two_add_sqrt_two_eventualLowerBound",
+        "PairedAffineVerification.log_two_add_sqrt_two_explicit_bound",
+        "PairedAffineVerification.log_two_add_sqrt_two_irrational",
+        "PairedAffineVerification.log_two_add_sqrt_two_irrationalityExponent_le_four",
+        "PairedAffineVerification.log_two_add_sqrt_two_standard_exponent_le_four"
+      ]
+    },
+    {
+      "latex_label": "thm:scale",
+      "expression": "Real.sqrt 2 * Real.log 2",
+      "conclusion": "irrational; irrationality exponent at most 4; eventual lower bound for every real nu > 4",
+      "source": "../../formalizations/AffineLogarithms/PairedAffine/AffineExamples.lean",
+      "public_declarations": [
+        "OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound",
+        "OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound",
+        "OAI.PairedAffine.sqrt_two_mul_log_two_irrational",
+        "OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four"
+      ],
+      "comparison_targets": [
+        "PairedAffineVerification.sqrt_two_mul_log_two_eventualLowerBound",
+        "PairedAffineVerification.sqrt_two_mul_log_two_explicit_bound",
+        "PairedAffineVerification.sqrt_two_mul_log_two_irrational",
+        "PairedAffineVerification.sqrt_two_mul_log_two_irrationalityExponent_le_four",
+        "PairedAffineVerification.sqrt_two_mul_log_two_standard_exponent_le_four"
+      ]
+    },
+    {
+      "latex_label": "thm:period",
+      "expression": "Real.log (3 + 2 * Real.sqrt 2) / Real.sqrt 2 + Real.sqrt 3",
+      "conclusion": "irrational; irrationality exponent at most 4; eventual lower bound for every real nu > 4",
+      "source": "../../formalizations/AffineLogarithms/PairedAffine/Main.lean",
+      "public_declarations": [
+        "OAI.PairedAffine.shifted_period_eventualLowerBound",
+        "OAI.PairedAffine.shifted_period_explicit_bound",
+        "OAI.PairedAffine.shifted_period_irrational",
+        "OAI.PairedAffine.shifted_period_irrationalityExponent_le_four"
+      ],
+      "comparison_targets": [
+        "PairedAffineVerification.shifted_period_eventualLowerBound",
+        "PairedAffineVerification.shifted_period_explicit_bound",
+        "PairedAffineVerification.shifted_period_irrational",
+        "PairedAffineVerification.shifted_period_irrationalityExponent_le_four",
+        "PairedAffineVerification.shifted_period_standard_exponent_le_four"
+      ]
+    }
+  ]
+}

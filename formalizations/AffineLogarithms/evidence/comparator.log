@@ -1,0 +1,100 @@
+Building Challenge
+⚠ [2364/2365] Built Challenge (2.9s)
+warning: Challenge.lean:2:0: 'Mathlib.Data.Real.Sqrt' has been deprecated: please replace this import by
+
+import Mathlib.Analysis.Real.Sqrt
+warning: Challenge.lean:11:8: declaration uses `sorry`
+warning: Challenge.lean:17:8: declaration uses `sorry`
+warning: Challenge.lean:23:8: declaration uses `sorry`
+warning: Challenge.lean:27:8: declaration uses `sorry`
+warning: Challenge.lean:33:8: declaration uses `sorry`
+warning: Challenge.lean:38:8: declaration uses `sorry`
+warning: Challenge.lean:44:8: declaration uses `sorry`
+warning: Challenge.lean:50:8: declaration uses `sorry`
+warning: Challenge.lean:54:8: declaration uses `sorry`
+warning: Challenge.lean:60:8: declaration uses `sorry`
+warning: Challenge.lean:65:8: declaration uses `sorry`
+warning: Challenge.lean:71:8: declaration uses `sorry`
+warning: Challenge.lean:77:8: declaration uses `sorry`
+warning: Challenge.lean:81:8: declaration uses `sorry`
+warning: Challenge.lean:87:8: declaration uses `sorry`
+Build completed successfully (2365 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, PairedAffineVerification.shifted_period_eventualLowerBound, PairedAffineVerification.shifted_period_explicit_bound, PairedAffineVerification.shifted_period_irrational, PairedAffineVerification.shifted_period_irrationalityExponent_le_four, PairedAffineVerification.shifted_period_standard_exponent_le_four, PairedAffineVerification.log_two_add_sqrt_two_eventualLowerBound, PairedAffineVerification.log_two_add_sqrt_two_explicit_bound, PairedAffineVerification.log_two_add_sqrt_two_irrational, PairedAffineVerification.log_two_add_sqrt_two_irrationalityExponent_le_four, PairedAffineVerification.log_two_add_sqrt_two_standard_exponent_le_four, PairedAffineVerification.sqrt_two_mul_log_two_eventualLowerBound, PairedAffineVerification.sqrt_two_mul_log_two_explicit_bound, PairedAffineVerification.sqrt_two_mul_log_two_irrational, PairedAffineVerification.sqrt_two_mul_log_two_irrationalityExponent_le_four, PairedAffineVerification.sqrt_two_mul_log_two_standard_exponent_le_four, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+✔ [9124/9849] Built PairedAffine.Field (6.6s)
+✔ [9274/9849] Built StandardBridge (5.8s)
+⚠ [9332/9849] Built AlgebraicLog.FieldRealization (8.2s)
+warning: AlgebraicLog/FieldRealization.lean:25:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9341/9849] Built AlgebraicLog.EmbeddingBudget (8.4s)
+✔ [9391/9849] Built AlgebraicLog.QuadraticNorm (9.5s)
+✔ [9433/9849] Built PairedAffine.Concrete (8.8s)
+✔ [9576/9849] Built AlgebraicLog.ParameterShape (10s)
+✔ [9623/9849] Built AlgebraicLog.ExponentConsequence (10s)
+✔ [9691/9849] Built PairedAffine.Norm (4.0s)
+ℹ [9703/9849] Replayed Logarithm.ScaledApproximationErrors
+info: Logarithm/ScaledApproximationErrors.lean:36:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9819/9849] Built AlgebraicLog.ContradictionNumerics (7.1s)
+✔ [9820/9849] Built AlgebraicLog.AnalyticData (10s)
+✔ [9821/9849] Built AlgebraicLog.ConjugateBound (12s)
+✔ [9822/9849] Built AlgebraicLog.DimensionBudget (14s)
+✔ [9823/9849] Built AlgebraicLog.IntegerClearing (12s)
+✔ [9824/9849] Built AlgebraicLog.DeterminantData (6.7s)
+✔ [9825/9849] Built AlgebraicLog.ConjugateDeterminant (9.3s)
+✔ [9826/9849] Built AlgebraicLog.MatrixArithmetic (9.7s)
+✔ [9827/9849] Built PairedAffine.Data (13s)
+✔ [9828/9849] Built AlgebraicLog.ArithmeticBounds (13s)
+✔ [9829/9849] Built AlgebraicLog.LiteralAnalyticSummand (18s)
+✔ [9830/9849] Built PairedAffine.ArithmeticClearing (16s)
+✔ [9831/9849] Built AlgebraicLog.AdmissibleParameters (26s)
+✔ [9832/9849] Built AlgebraicLog.AnalyticAggregate (7.3s)
+✔ [9833/9849] Built AlgebraicLog.SelectedArithmetic (8.2s)
+✔ [9834/9849] Built AlgebraicLog.CurveWeights (10s)
+⚠ [9835/9849] Built AlgebraicLog.ConjugateAggregate (12s)
+warning: AlgebraicLog/ConjugateAggregate.lean:114:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [9836/9849] Built PairedAffine.Analytic (13s)
+✔ [9837/9849] Built PairedAffine.Arithmetic (13s)
+✔ [9838/9849] Built AlgebraicLog.ApproximationGeometry (9.7s)
+✔ [9839/9849] Built PairedAffine.AnalyticCoarse (6.7s)
+✔ [9840/9849] Built PairedAffine.NormSelected (6.3s)
+✔ [9841/9849] Built AlgebraicLog.GlobalMatrixInterpolation (14s)
+✔ [9842/9849] Built PairedAffine.Geometry (5.0s)
+✔ [9843/9849] Built AlgebraicLog.DeterminantContradiction (7.8s)
+⚠ [9844/9849] Built AlgebraicLog.Main (6.2s)
+warning: AlgebraicLog/Main.lean:28:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9845/9849] Built PairedAffine.Endpoint (7.5s)
+✔ [9846/9849] Built PairedAffine.Main (6.0s)
+✔ [9847/9849] Built PairedAffine.AffineExamples (6.8s)
+✔ [9848/9849] Built Solution (5.5s)
+Build completed successfully (9849 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, PairedAffineVerification.shifted_period_eventualLowerBound, PairedAffineVerification.shifted_period_explicit_bound, PairedAffineVerification.shifted_period_irrational, PairedAffineVerification.shifted_period_irrationalityExponent_le_four, PairedAffineVerification.shifted_period_standard_exponent_le_four, PairedAffineVerification.log_two_add_sqrt_two_eventualLowerBound, PairedAffineVerification.log_two_add_sqrt_two_explicit_bound, PairedAffineVerification.log_two_add_sqrt_two_irrational, PairedAffineVerification.log_two_add_sqrt_two_irrationalityExponent_le_four, PairedAffineVerification.log_two_add_sqrt_two_standard_exponent_le_four, PairedAffineVerification.sqrt_two_mul_log_two_eventualLowerBound, PairedAffineVerification.sqrt_two_mul_log_two_explicit_bound, PairedAffineVerification.sqrt_two_mul_log_two_irrational, PairedAffineVerification.sqrt_two_mul_log_two_irrationalityExponent_le_four, PairedAffineVerification.sqrt_two_mul_log_two_standard_exponent_le_four, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 25min 21.754s
+             CPU time consumed: 35min 26.696s
+                   Memory peak: 6.9G (swap: 0B)

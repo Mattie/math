@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "Supplemental Lean 4.34.0 body replay only",
+  "export_sha256": "5f242493d0a285caaf5db6d0fa20eda5bd773f51fbd2c843544ac3b442abe5aa",
+  "kernel_sha256": "f18020ea3525ee1058788decc2169480cc9ed371a990f4081170c82c186053f9",
+  "controls_receipt_sha256": "fabad0e4547eb712939b8e14012ae6d8ee5b7cabf4f88af8bbb2a47ef7a25038",
+  "exit": 0,
+  "log_sha256": "fd1fda5a1d50f7dc4bed847468e5564156397c6122698b4ffc7d15e2a40e63eb",
+  "output": "Accepted 118382 declarations.\n",
+  "original_receipt_sha256": "8455d7f835703304283c269ba0331923e8b0fb4fa311ae9b26bcfa6400300d94",
+  "sanitized": true
+}

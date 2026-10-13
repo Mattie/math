@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-11T03:41:07Z",
+  "source_manifest_sha256": "88516799eccd19825089e8e71ef84ebacb87d8a16174c0069b4cabe114089cb1",
+  "scope": "Source compilation and axiom guards; not independent kernel replay.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "public_axiom_reports_checked": 12,
+  "log_sha256": "deeb12211715c02c532ad0364af55d07ba7b5d6d0fe10cd572bc5c15c4258c5d",
+  "finished_utc": "2026-10-11T03:41:38Z"
+}

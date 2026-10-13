@@ -1,0 +1,15 @@
+import PairedAffine.AffineExamples
+
+#check OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound
+#check OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound
+#check OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four
+#check OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four
+
+#print axioms OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound
+#print axioms OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound
+#print axioms OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound
+#print axioms OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound
+#print axioms OAI.PairedAffine.log_two_add_sqrt_two_irrational
+#print axioms OAI.PairedAffine.sqrt_two_mul_log_two_irrational
+#print axioms OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four
+#print axioms OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four

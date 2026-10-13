@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "targets_checked": 12,
+  "axioms": {
+    "OAI.PairedAffine.shifted_period_eventualLowerBound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.shifted_period_explicit_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.shifted_period_irrational": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.shifted_period_irrationalityExponent_le_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.log_two_add_sqrt_two_eventualLowerBound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.log_two_add_sqrt_two_explicit_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.log_two_add_sqrt_two_irrational": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.log_two_add_sqrt_two_irrationalityExponent_le_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.sqrt_two_mul_log_two_eventualLowerBound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.sqrt_two_mul_log_two_explicit_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.sqrt_two_mul_log_two_irrational": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PairedAffine.sqrt_two_mul_log_two_irrationalityExponent_le_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

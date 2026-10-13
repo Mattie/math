@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-11",
+  "manuscript": "build/main.tex",
+  "manuscript_sha256": "652dc9fd40b3d1e126f6e725b253b0d5fcc6082eabf1cbe6f4fa85c7f4177df8",
+  "pdf": "paper.pdf",
+  "pdf_sha256": "49aa221ff51b069eff519eb3af99bbd279cafa821368c80660aa522d9d7dc00b",
+  "pdf_bytes": 163542,
+  "pages": 19,
+  "compiler": {
+    "name": "Tectonic",
+    "version": "0.15.0",
+    "binary_sha256": "f0b36e78c13dd75b821984830533f872c9a12c62957e51357bc16e65cdb71013"
+  },
+  "command": "bash scripts/build-paper.sh",
+  "source_date_epoch": 1791676800,
+  "platform": "Ubuntu via WSL",
+  "result": "success",
+  "tex_warnings": 0,
+  "build_log_sha256": "2b6d951179fb178d0331c51cbe58ed4e09dca6c163f2918c601e0ba3e4f94901",
+  "desktop_compiler": "Successful diagnostic compilation of the final trimmed source.",
+  "reproducibility_limit": "Build command and compiler are identified. The TeX resource bundle is not vendored or pinned separately; other compiler/resource versions may produce different PDF bytes.",
+  "proof_sources_changed": false,
+  "editorial_revision": "evidence/editorial-revision.json",
+  "human_revision": "evidence/human-revision.json",
+  "abstract_revision": {
+    "previous": {
+      "manuscript_sha256": "d5697b2c4fbdcafafd9e1d4322ff3867eb8a4172c646a8c620a750eb3ddf2e2a",
+      "pdf_sha256": "171080b802af09f451344cb2c91049b2b5ab1e9de048777c2429fb575efee7be"
+    },
+    "changes": [
+      "Used irrationality exponent without the redundant rational qualifier.",
+      "Displayed all three targets in the abstract.",
+      "Replaced specialized embedding and collision terminology in the abstract with the requested conjugate-determinant explanation.",
+      "Identified the three numbers as transcendental in the opening sentence."
+    ],
+    "scope": "Wording and layout only; theorem statements, numbered mathematical displays and Lean sources unchanged."
+  },
+  "focused_revision": {
+    "previous": {
+      "manuscript_sha256": "0563e3cf10301e81d29eff12375553ed2d34c4174fc5e3ddc51a89618106e583",
+      "pdf_sha256": "034ef7ce4df81ba21d5c6c5a563fa4445cbdf2451a4390e138f4a0a04e369746"
+    },
+    "changes": [
+      "Moved the Luchin-Salikhov comparison after the results and common lower bound, before the proof overview; retained both specialized numerical bounds and substitutions.",
+      "Defined irrationality exponent before the results and acknowledged classical transcendence near the opening. Main theorem statements now foreground only the exponent bounds.",
+      "Stated the affine determinant contribution directly and replaced inherited labels with source attribution and exact formal declarations.",
+      "Made the threshold, exponent-four constant, field-degree and integrality questions explicit.",
+      "Reduced repository terminology in the appendix and moved AI assistance to Acknowledgements."
+    ],
+    "coordinator_delta_check": "Abstract, common theorem, lemmas, aligned displays and proposition bodies unchanged. All numbered equations unchanged except removal of the general Luchin-Salikhov display, replaced by its specialized consequences and identities. The three main results retain their exponent bounds. Lean sources unchanged.",
+    "review_scope": "Coordinator editorial and mathematical correspondence check; no new independent review or proof run."
+  },
+  "navigation_revision": {
+    "previous": {
+      "manuscript_sha256": "49a6f6b4c0523dedc6a6530975201e43986326ec78e0334f897976ea6494cc67",
+      "pdf_sha256": "b99f4baa56448935fc4f728f684ce764424fe5a8273f94a1a6b7f5befb5eb610"
+    },
+    "changes": [
+      "Added a dependency roadmap and compact notation table with definition links at the start of Section 4.",
+      "Replaced long bibliography paths and visible revision hashes with conventional source entries and appendix references.",
+      "Retained exact source identities and links in Appendix B."
+    ],
+    "delta_check": "Abstract, theorem and lemma statements, proposition bodies, and numbered mathematical displays are unchanged. No Lean source changes.",
+    "scope": "Coordinator editorial and layout review; no new independent proof review."
+  },
+  "trim_revision": {
+    "previous": {
+      "manuscript_sha256": "c2239f370f4e807000c7dc0a1322990ec7a919b90ea4f1d6017fa4258ccdaaa2",
+      "pdf_sha256": "7d808ba3112fbc86efcac313f1ace13db432b92ea4bff976ec8dc0b29e300159"
+    },
+    "changes": [
+      "Moved the positive-real proxy and explicit-bound identifier explanations to the package verification guide.",
+      "Replaced long declaration names in the main proof with mathematical citations; retained exact locations in Appendix A.",
+      "Shortened verification and licensing prose, retaining the checked-source identity, foundational axioms and reproduction reference.",
+      "Linked the rational and quadratic preprint titles directly to pinned manuscript pages.",
+      "Reworded the factor-two bookkeeping explanation."
+    ],
+    "unchanged_environments": {
+      "abstract": 1,
+      "mainthm": 3,
+      "theorem": 1,
+      "lemma": 5,
+      "proposition": 4,
+      "equation": 51,
+      "align": 5
+    },
+    "new_links_checked": [
+      {
+        "url": "https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/formalizations/AffineLogarithms/VERIFY.md",
+        "status": 200
+      },
+      {
+        "url": "https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/preprints/The-irrationality-exponent-of-positive-rational-logarithms-is-2-October-7-2026/paper.pdf",
+        "status": 200,
+        "pdf_matches_local": true
+      },
+      {
+        "url": "https://github.com/Mattie/math/blob/51c9a62e1f8dde60f75201c14b35b42abb04eb2a/preprints/The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026/paper.pdf",
+        "status": 200,
+        "pdf_matches_local": true
+      }
+    ],
+    "scope": "Coordinator editorial and visual review; no mathematical statement or Lean source changes, no new proof run."
+  }
+}

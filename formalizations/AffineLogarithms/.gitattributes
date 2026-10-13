@@ -1,0 +1,4 @@
+*.lean -text
+*.json -text
+*.sh text eol=lf
+*.py text eol=lf

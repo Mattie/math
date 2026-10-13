@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite this proof package by title, date, and repository revision; the accompanying preprint has separate article metadata."
+title: "Three affine logarithm irrationality-exponent bounds at four"
+type: software
+authors:
+  - family-names: Casper
+    given-names: Ryan Matthew
+version: 0.3.0
+date-released: 2026-10-11
+license: MIT
