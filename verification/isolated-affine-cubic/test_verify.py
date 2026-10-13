@@ -56,10 +56,14 @@ class PreparationTests(unittest.TestCase):
         self.assertNotIn('pull_request:', text)
         self.assertNotIn('push:', text)
         self.assertIn('          - affine-cubic', text)
-        self.assertIn("inputs.case == 'affine-cubic') && 360 || 240", text)
+        # Other cases can share the budget; this case need not be last in the OR list.
+        case = r"inputs\.case == '[a-z-]+'"
+        condition = (rf"\((?:{case} \|\| )*inputs\.case == 'affine-cubic'"
+                     rf"(?: \|\| {case})*\)")
+        self.assertRegex(text, rf"timeout-minutes: \$\{{\{{ {condition} && 360 \|\| 240 \}}\}}")
         self.assertIn('elif [[ "$VERIFICATION_CASE" == affine-cubic ]]; then', text)
         self.assertIn('verification/isolated-affine-cubic/verify.py --run', text)
-        self.assertIn("if: always() && (inputs.case == 'affine' || inputs.case == 'affine-denominators' || inputs.case == 'affine-cubic')", text)
+        self.assertRegex(text, rf"if: always\(\) && {condition}(?:\r?\n|$)")
         self.assertIn('contents: read', text)
         self.assertIn('persist-credentials: false', text)
         self.assertNotEqual(verify.digest(verify.WORKFLOW),

@@ -47,14 +47,18 @@ class PreparationTests(unittest.TestCase):
         self.assertIn('contents: read', text)
         self.assertIn('persist-credentials: false', text)
         self.assertIn('          - affine-denominators', text)
-        self.assertIn("inputs.case == 'affine-denominators') && 360", text)
+        # Other cases can share the budget; this case need not be last in the OR list.
+        case = r"inputs\.case == '[a-z-]+'"
+        condition = (rf"\((?:{case} \|\| )*inputs\.case == 'affine-denominators'"
+                     rf"(?: \|\| {case})*\)")
+        self.assertRegex(text, rf"timeout-minutes: \$\{{\{{ {condition} && 360 \|\| 240 \}}\}}")
         branch = text.split('elif [[ "$VERIFICATION_CASE" == affine-denominators ]]; then')[1].split('elif ')[0]
         self.assertIn('python3 -I -B verification/isolated-affine-denominators/verify.py --run', branch)
         self.assertIn('--work-dir "$RUNNER_TEMP/isolated-irrationality"', branch)
         cleanup = 'verification/publication/prepare-independent-runner.sh'
         self.assertLess(text.index(verify.legacy.BASELINE[cleanup] + '  ' + cleanup), text.index('bash ' + cleanup))
         self.assertLess(text.index('bash ' + cleanup), text.index('actions/setup-go@'))
-        self.assertIn("if: always() && (inputs.case == 'affine' || inputs.case == 'affine-denominators')", text)
+        self.assertRegex(text, rf"if: always\(\) && {condition}(?:\r?\n|$)")
         self.assertIn('retention-days: 90', text)
 
     def test_memory_diagnostics_are_values_and_require_complete_units(self):
