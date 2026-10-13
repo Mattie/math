@@ -1,0 +1,26 @@
+{
+  "moduleOrder": [
+    "AffineCubic.Parameters",
+    "AffineCubic.Norm",
+    "AffineCubic.Numerics",
+    "AffineCubic.Consequence",
+    "AffineCubic.Endpoint",
+    "AffineCubic.Field",
+    "AffineCubic.Concrete",
+    "AffineCubic.Pilot",
+    "AffineCubic.Audit"
+  ],
+  "leanVersion": "4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "kind": "source-overlay",
+  "inheritedSource": "../AffineLogarithms",
+  "localSource": "AffineCubic",
+  "namespace": "OAI.AffineCubic",
+  "inheritedSourcePolicy": "readonly; no vendored copy",
+  "targets": [
+    "OAI.AffineCubic.Pilot.eventualLowerBound",
+    "OAI.AffineCubic.Pilot.irrational",
+    "OAI.AffineCubic.Pilot.irrationalityExponent_le_six",
+    "OAI.AffineCubic.Pilot.not_liouvilleWith"
+  ]
+}

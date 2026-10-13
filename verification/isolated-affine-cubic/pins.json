@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "lean_archive_sha256": "3013aba02bb8bf31b1cf8c9d956d60fb95bb1c10920dfe91abcaa59cb461ddac",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "rust": "1.99.0",
+  "exporter": "05d43a2bc773b40ecfdebb32294192a5ef756951",
+  "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+  "comparator": "ca04cfc72b550331658ec314bf47685281bfd4bf",
+  "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"
+}

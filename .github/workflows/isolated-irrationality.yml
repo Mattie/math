@@ -16,6 +16,7 @@ on:
           - reciprocal-quadratic
           - affine
           - affine-denominators
+          - affine-cubic
 
 permissions:
   contents: read
@@ -28,7 +29,7 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-24.04
-    timeout-minutes: ${{ (inputs.case == 'quadratic-periods' || inputs.case == 'reciprocal-quadratic' || inputs.case == 'affine' || inputs.case == 'affine-denominators') && 360 || 240 }}
+    timeout-minutes: ${{ (inputs.case == 'quadratic-periods' || inputs.case == 'reciprocal-quadratic' || inputs.case == 'affine' || inputs.case == 'affine-denominators' || inputs.case == 'affine-cubic') && 360 || 240 }}
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
@@ -42,7 +43,7 @@ jobs:
           VERIFICATION_CASE: ${{ inputs.case }}
         run: |
           set -euo pipefail
-          if [[ "$VERIFICATION_CASE" == quadratic-periods || "$VERIFICATION_CASE" == reciprocal-quadratic || "$VERIFICATION_CASE" == affine || "$VERIFICATION_CASE" == affine-denominators ]]; then
+          if [[ "$VERIFICATION_CASE" == quadratic-periods || "$VERIFICATION_CASE" == reciprocal-quadratic || "$VERIFICATION_CASE" == affine || "$VERIFICATION_CASE" == affine-denominators || "$VERIFICATION_CASE" == affine-cubic ]]; then
             printf '%s\n' '3de51c75b00b595d30816bb643e61e7219ab9d611b39375762d0aa8855ed511c  verification/publication/prepare-independent-runner.sh' \
               | sha256sum --check --strict - \
               | tee "$RUNNER_TEMP/isolated-irrationality/evidence/capacity-input.log"
@@ -69,6 +70,10 @@ jobs:
             python3 -B verification/isolated-reciprocal-quadratic/reciprocal.py \
               --work-dir "$RUNNER_TEMP/isolated-irrationality" \
               2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
+          elif [[ "$VERIFICATION_CASE" == affine-cubic ]]; then
+            python3 -I -B verification/isolated-affine-cubic/verify.py --run \
+              --work-dir "$RUNNER_TEMP/isolated-irrationality" \
+              2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
           elif [[ "$VERIFICATION_CASE" == affine-denominators ]]; then
             python3 -I -B verification/isolated-affine-denominators/verify.py --run \
               --work-dir "$RUNNER_TEMP/isolated-irrationality" \
@@ -84,7 +89,7 @@ jobs:
               2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
           fi
       - name: Index exact evidence after the verifier exits
-        if: always() && (inputs.case == 'affine' || inputs.case == 'affine-denominators')
+        if: always() && (inputs.case == 'affine' || inputs.case == 'affine-denominators' || inputs.case == 'affine-cubic')
         run: |
           python3 -B - <<'PY'
           import hashlib, json, os

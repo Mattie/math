@@ -1,0 +1,16 @@
+{
+  "scope": "Initial compiled candidate; no independent replay claim",
+  "files": {
+    "AffineCubic/Audit.lean": "db56c3eaffebb41d9f85a11f527c40179d72fc3b5135921bbee2a111233206a7",
+    "AffineCubic/Concrete.lean": "fed3221e2d4be7a7d05f5f6d595140d25389eab4d681eb34874692c6ce5c4e2c",
+    "AffineCubic/Consequence.lean": "cb22209c7acba89ced8d1929e8620e66d22a0284b6fbe025775b872f1fe09774",
+    "AffineCubic/Endpoint.lean": "bd448e9f189dd427b410ae75c30d8773c57a1f7dc01238c242912ebb7afbc7c8",
+    "AffineCubic/Field.lean": "7b9ee122c7cb9f4270a8dd5cf3d9c399445f2c01810f7c6769187432a2611b6d",
+    "AffineCubic/Norm.lean": "36494303c70ef818f306605cb783e68350784e47d421f56c709f30f9072be4cb",
+    "AffineCubic/Numerics.lean": "31d5b8c83f2dc98ea1ee7fd0ec313e0eb0bb0480c8f182927f523cef845ca0ad",
+    "AffineCubic/Parameters.lean": "372c61359877a929c49fc049f39a34063b8a333569b59a561a27e22d150169f9",
+    "AffineCubic/Pilot.lean": "9b00391352caf58062ce66bf14354d665c02198a9e85ee2874b92a1dda751597",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "overlay.json": "1d604b951c17581cdc6dd584c66ff762c541a2155ace71fb1a23023ba0af1c81"
+  }
+}
