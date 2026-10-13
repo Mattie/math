@@ -24,9 +24,10 @@ requires acceptance by Comparator, Lean's default kernel, and Nanoda.
 [CHECKERS.md](CHECKERS.md) describes dependency trust, selected versions, controls,
 resource limits, and the distinction from historical local replay.
 
-The job retains an evidence archive for 90 days, including failure diagnostics.
-A dated result record will identify the exact workflow commit, run and attempt,
-archive identity, evidence audit, and outcome. Preparation alone is not a passed
-hosted check. The standalone [template](hosted-workflow.yml) is retained for
+The [October 13 hosted result](results/hosted-verification-2026-10-13.md) passed:
+fresh isolated source, all four wrappers, both kernels, and the downloaded
+evidence audit. It identifies the exact commit, run, archive and scope limits.
+The job retains its evidence archive for 90 days. The standalone
+[template](hosted-workflow.yml) is retained for
 comparison; the registered [dispatcher](../../.github/workflows/isolated-irrationality.yml)
 is the workflow used for this run.
