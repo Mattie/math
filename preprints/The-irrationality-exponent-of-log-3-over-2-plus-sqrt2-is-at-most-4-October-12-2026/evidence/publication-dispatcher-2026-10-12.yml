@@ -1,0 +1,109 @@
+name: Isolated irrationality verification
+
+# Manual only. Preparation/publication does not authorize a proof run.
+on:
+  workflow_dispatch:
+    inputs:
+      case:
+        description: Frozen theorem to verify
+        required: true
+        type: choice
+        options:
+          - log
+          - arctan
+          - imaginary
+          - quadratic-periods
+          - reciprocal-quadratic
+          - affine
+          - affine-denominators
+
+permissions:
+  contents: read
+
+concurrency:
+  group: isolated-irrationality
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: ${{ (inputs.case == 'quadratic-periods' || inputs.case == 'reciprocal-quadratic' || inputs.case == 'affine' || inputs.case == 'affine-denominators') && 360 || 240 }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Initialize diagnostic directory
+        run: |
+          mkdir -p "$RUNNER_TEMP/isolated-irrationality/evidence"
+          printf 'Verification has not completed.\n' > "$RUNNER_TEMP/isolated-irrationality/evidence/started.txt"
+      - name: Reserve disk before installing tools
+        env:
+          VERIFICATION_CASE: ${{ inputs.case }}
+        run: |
+          set -euo pipefail
+          if [[ "$VERIFICATION_CASE" == quadratic-periods || "$VERIFICATION_CASE" == reciprocal-quadratic || "$VERIFICATION_CASE" == affine || "$VERIFICATION_CASE" == affine-denominators ]]; then
+            printf '%s\n' '3de51c75b00b595d30816bb643e61e7219ab9d611b39375762d0aa8855ed511c  verification/publication/prepare-independent-runner.sh' \
+              | sha256sum --check --strict - \
+              | tee "$RUNNER_TEMP/isolated-irrationality/evidence/capacity-input.log"
+          fi
+          bash verification/publication/prepare-independent-runner.sh \
+            2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/capacity.log"
+          # Cleanup can remove this root; setup-go must recreate its contents as the runner.
+          sudo install -d -o "$(id -u)" -g "$(id -g)" -m 0755 /opt/hostedtoolcache
+          test -w /opt/hostedtoolcache
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: '1.25.12'
+          cache: false
+      - name: Check isolation and verify selected frozen source
+        env:
+          VERIFICATION_CASE: ${{ inputs.case }}
+        run: |
+          set -euo pipefail
+          if [[ "$VERIFICATION_CASE" == quadratic-periods ]]; then
+            python3 -B verification/isolated-quadratic-periods/quadratic.py \
+              --work-dir "$RUNNER_TEMP/isolated-irrationality" \
+              2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
+          elif [[ "$VERIFICATION_CASE" == reciprocal-quadratic ]]; then
+            python3 -B verification/isolated-reciprocal-quadratic/reciprocal.py \
+              --work-dir "$RUNNER_TEMP/isolated-irrationality" \
+              2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
+          elif [[ "$VERIFICATION_CASE" == affine-denominators ]]; then
+            python3 -I -B verification/isolated-affine-denominators/verify.py --run \
+              --work-dir "$RUNNER_TEMP/isolated-irrationality" \
+              2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
+          elif [[ "$VERIFICATION_CASE" == affine ]]; then
+            python3 -I -B verification/isolated-affine/verify.py \
+              --work-dir "$RUNNER_TEMP/isolated-irrationality" \
+              2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
+          else
+            python3 -B verification/isolated-irrationality/verify.py \
+              --case "$VERIFICATION_CASE" \
+              --work-dir "$RUNNER_TEMP/isolated-irrationality" \
+              2>&1 | tee "$RUNNER_TEMP/isolated-irrationality/evidence/console.log"
+          fi
+      - name: Index exact evidence after the verifier exits
+        if: always() && (inputs.case == 'affine' || inputs.case == 'affine-denominators')
+        run: |
+          python3 -B - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          root = Path(os.environ["RUNNER_TEMP"]) / "isolated-irrationality/evidence"
+          root.mkdir(parents=True, exist_ok=True)
+          files = {p.relative_to(root).as_posix(): {
+              "sha256": hashlib.sha256(p.read_bytes()).hexdigest(), "bytes": p.stat().st_size}
+              for p in sorted(root.rglob("*")) if p.is_file() and p.name != "evidence-index.json"}
+          (root / "evidence-index.json").write_text(json.dumps({
+              "commit": os.environ["GITHUB_SHA"], "run_id": os.environ["GITHUB_RUN_ID"],
+              "attempt": os.environ["GITHUB_RUN_ATTEMPT"], "files": files}, indent=2) + "\n")
+          PY
+      - name: Retain evidence, including failure diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: isolated-irrationality-${{ inputs.case }}-${{ github.sha }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/isolated-irrationality/evidence/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90

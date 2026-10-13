@@ -1,11 +1,15 @@
 """Preparation only: check real route configuration and fail-closed bookkeeping."""
 import json
 from pathlib import Path
+import sys
 import tempfile
 from types import SimpleNamespace
 import unittest
 from unittest.mock import Mock, patch
 import verify
+
+sys.path.insert(0, str(verify.REPO / 'verification/publication'))
+from workflow_checks import assert_dispatcher_guards
 
 
 class PreparationTests(unittest.TestCase):
@@ -47,14 +51,13 @@ class PreparationTests(unittest.TestCase):
         self.assertIn('contents: read', text)
         self.assertIn('persist-credentials: false', text)
         self.assertIn('          - affine-denominators', text)
-        self.assertIn("inputs.case == 'affine-denominators') && 360", text)
+        assert_dispatcher_guards(text, 'affine-denominators')
         branch = text.split('elif [[ "$VERIFICATION_CASE" == affine-denominators ]]; then')[1].split('elif ')[0]
         self.assertIn('python3 -I -B verification/isolated-affine-denominators/verify.py --run', branch)
         self.assertIn('--work-dir "$RUNNER_TEMP/isolated-irrationality"', branch)
         cleanup = 'verification/publication/prepare-independent-runner.sh'
         self.assertLess(text.index(verify.legacy.BASELINE[cleanup] + '  ' + cleanup), text.index('bash ' + cleanup))
         self.assertLess(text.index('bash ' + cleanup), text.index('actions/setup-go@'))
-        self.assertIn("if: always() && (inputs.case == 'affine' || inputs.case == 'affine-denominators')", text)
         self.assertIn('retention-days: 90', text)
 
     def test_memory_diagnostics_are_values_and_require_complete_units(self):

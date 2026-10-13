@@ -3,12 +3,18 @@
   "status": "Local formalization and replay, fresh hosted source verification, downloaded evidence audit and preprint review passed",
   "base_revision": "cf1338bcee8fe9f08422ec36e8fdf6dc6392c677",
   "scope": "New publication files and scoped repository integration; inherited source separately pinned by verification source-manifest.json",
+  "historical_workflow": {
+    "source_path": ".github/workflows/isolated-irrationality.yml",
+    "source_revision": "c8d66fafa5439f0fd947f10e2a5629aee6596f7f",
+    "retained_path": "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/evidence/publication-dispatcher-2026-10-12.yml",
+    "scope": "Publication-time dispatcher preserved byte for byte; the active shared dispatcher may add later verification cases."
+  },
   "files": {
     ".github/workflows/isolated-affine-denominators.yml": {
       "sha256": "a8c75704c44d3cc036f1f5a9ee3fd828ccf10615a10703901edc122e63220658",
       "bytes": 3176
     },
-    ".github/workflows/isolated-irrationality.yml": {
+    "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/evidence/publication-dispatcher-2026-10-12.yml": {
       "sha256": "3aeb5bfeaa588a4aae2800202604625af0b795505df493b38c167b6c01d2c63e",
       "bytes": 5333
     },
@@ -249,16 +255,16 @@
       "bytes": 1657
     },
     "verification/isolated-affine-denominators/test_verify.py": {
-      "sha256": "5d3a6f92a21e56653b2efc302d4c8e256626d2d1d5f47ba79c05c445050a93f2",
-      "bytes": 7791
+      "sha256": "e5fbef62ad2650023b27d1e68b029834c049c2c27823e4e3fb86577d75cf0a0d",
+      "bytes": 7795
     },
     "verification/isolated-affine-denominators/verify.py": {
       "sha256": "297e7464a2705f3a6416511887a66d3e5a671953eedaf65b563c521c1383b28c",
       "bytes": 11802
     },
     ".github/workflows/verify.yml": {
-      "sha256": "8af6a57fcc624276093aa0fabff509a782ef4370f6592a5677bd6f121b8c88c0",
-      "bytes": 9668
+      "sha256": "41d5b1cf2ed311abe63f60a77d4e8519726db4973bcaf134da9aefca2207d42d",
+      "bytes": 10157
     },
     "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/scripts/check-publication.py": {
       "sha256": "43ab267ed519358ff68cf1e493779da66014ca5bf2f0046751e1731f9471f61f",
@@ -271,6 +277,18 @@
     "verification/isolated-affine-denominators/results/hosted-evidence-index-2026-10-12.json": {
       "sha256": "39a63b8dec27cf1a40225547b55532bec25092362fa3e661ca0e19fc8e2470da",
       "bytes": 14787
+    },
+    "verification/publication/workflow_checks.py": {
+      "sha256": "16f1c22ff60b999bae0e1d389a4261e79dbac3b5cdd3f0fc813228a383d3b2fb",
+      "bytes": 2470
+    },
+    "verification/publication/test_workflow_checks.py": {
+      "sha256": "4e43b319c2c26f7312e9fb0e094082c39bba4548adef082b2605f2e3fe573fb2",
+      "bytes": 5384
+    },
+    "verification/publication/requirements-test.txt": {
+      "sha256": "688ec75bc6d5b72f603fe6a3ee2319ec1eb4d1d9edb1804d8511ab3f70bcbadc",
+      "bytes": 173
     }
   },
   "reader_review": {

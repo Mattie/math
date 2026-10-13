@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "audit_kind": "Downloaded hosted evidence audit; no new proof execution",
+  "run_url": "https://github.com/Mattie/math/actions/runs/38434422471",
+  "run_id": 38434422471,
+  "job_id": 115424606730,
+  "attempt": 1,
+  "checked_commit": "1ee3266da6bd7f6ecafd063caab2cfe7a6defbd2",
+  "workflow_path": ".github/workflows/isolated-irrationality.yml",
+  "workflow_ref": "Mattie/math/.github/workflows/isolated-irrationality.yml@refs/heads/codex/affine-cubic-hosted",
+  "dispatch_workflow_sha256": "a5a6cdbaffe552f58179ca4322901b8b3f00290e540a7fab8b5dbcceb507d58f",
+  "runner_sha256": "bfa1e4bca07fcec0e7ecafa28977c90d35b77d77bbef8fc47141956bfc7635f7",
+  "source_manifest_sha256": "bfeb41237900f4b91b6e1f06463d714c9650dfdf5fddd77836ef6a166ffa90a9",
+  "started_utc": "2026-10-13T16:55:29Z",
+  "finished_utc": "2026-10-13T17:51:46Z",
+  "artifact": {
+    "id": 11836246558,
+    "name": "isolated-irrationality-affine-cubic-1ee3266da6bd7f6ecafd063caab2cfe7a6defbd2-1",
+    "size_in_bytes": 6447231,
+    "digest": "sha256:4a3eaf9ebaf3ea0d247274dd38a737744f312fb2a83aa49e558f88383b8ff83c",
+    "expires_at": "2027-01-11T16:55:15Z"
+  },
+  "evidence_index_sha256": "f2b4394ef6ee00f5ac8b6e6e096e059a35edfb7b7f43d8967e0fc314a2f70bfc",
+  "receipt_sha256": "a16564ec8421f6b963bd99476bf8ec580df37d9ed2bbf97e28cf7f99ea3bb235",
+  "checked_counts": {
+    "indexed_files": 101,
+    "retained_files": 99,
+    "command_logs": 58,
+    "inherited_sources": 966,
+    "overlay_sources": 9,
+    "candidate_entries": 981,
+    "dependency_entries": 143949
+  },
+  "targets": [
+    "AffineCubicVerification.eventual_lower_bound",
+    "AffineCubicVerification.irrational",
+    "AffineCubicVerification.irrationality_exponent_le_six",
+    "AffineCubicVerification.not_liouvilleWith"
+  ],
+  "checks": {
+    "tools": "passed",
+    "isolation": "passed",
+    "valid": "passed",
+    "mismatch": "passed",
+    "axiom": "passed",
+    "imported-admission": "passed",
+    "dependencies": "passed",
+    "affine": "passed",
+    "protected-inputs": "passed"
+  },
+  "pins": {
+    "schema_version": 1,
+    "lean_version": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "lean_archive_sha256": "3013aba02bb8bf31b1cf8c9d956d60fb95bb1c10920dfe91abcaa59cb461ddac",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "rust": "1.99.0",
+    "exporter": "05d43a2bc773b40ecfdebb32294192a5ef756951",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "comparator": "ca04cfc72b550331658ec314bf47685281bfd4bf",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"
+  },
+  "binaries": {
+    "lean": {
+      "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+    },
+    "lake": {
+      "sha256": "6f53827dab18010d6c690d14c8401cacabc1db958edb3552a877ed4cf1dd995d"
+    },
+    "comparator": {
+      "sha256": "afa65e57a1770f5961efe7681626a9a1cd99705262421658abd30b705f66e4a2"
+    },
+    "probe": {
+      "sha256": "5518283b79624671900fc109104e363ad336582f264f7b92541680b43609c784"
+    },
+    "COMPARATOR_LANDRUN": {
+      "sha256": "cede2679ee832750eabb7f16b0f48249c46c4a1efcd3fd4857874488e6cb0094"
+    },
+    "COMPARATOR_LEAN4EXPORT": {
+      "sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1"
+    },
+    "COMPARATOR_NANODA": {
+      "sha256": "e1d97927dd4d0bec2187a7a8b77190db0185471a783c5b8066154ffce9921a8e"
+    }
+  },
+  "resources": {
+    "runtime_seconds": 18000,
+    "memory_max": "12G",
+    "cpu_quota": "400%",
+    "lean_num_threads": 4,
+    "free_bytes_before_setup": 90733993984,
+    "required_bytes_before_setup": 37580963840,
+    "free_bytes_before_proof": 76589305856,
+    "required_bytes_before_proof": 10737418240
+  },
+  "boundary": {
+    "allowed": 0,
+    "challenge": 13,
+    "config": 13,
+    "tool": 13,
+    "outside": 13,
+    "symlink": 13,
+    "unix_stream": 97,
+    "unix_dgram": 97
+  },
+  "acceptance": "Four named wrappers exported from both modules; Comparator and both kernels accepted.",
+  "limits": [
+    "Official upstream dependency cache is trusted; candidate source is freshly built.",
+    "Tool binary and dependency preservation are attested by the hashed executed runner and receipt; remote scratch files are not available for a second direct hash.",
+    "The source route retains no standalone export and does not replay the historical local export bytes.",
+    "The baseline Nanoda pin lacks later projection-name consistency checking; separate current-checker local replay is supplementary historical evidence.",
+    "Boundary probes cover the specified write and socket operations, not every possible escape.",
+    "GitHub artifact access may require authentication and expires at the recorded expiry."
+  ]
+}

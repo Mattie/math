@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "AffineCubicVerification.eventual_lower_bound",
+    "AffineCubicVerification.irrational",
+    "AffineCubicVerification.irrationality_exponent_le_six",
+    "AffineCubicVerification.not_liouvilleWith"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": true
+}

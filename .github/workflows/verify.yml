@@ -24,12 +24,19 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           fetch-depth: 0
+      - name: Install preparation test dependencies
+        run: |
+          python3 -m venv "$RUNNER_TEMP/verification-tests"
+          "$RUNNER_TEMP/verification-tests/bin/python" -m pip install -r verification/publication/requirements-test.txt
+          echo "$RUNNER_TEMP/verification-tests/bin" >> "$GITHUB_PATH"
       - run: python3 verification/publication/check-frozen.py
       - run: python3 verification/publication/test_verification.py
+      - run: python3 -B verification/publication/test_workflow_checks.py
       - run: python3 verification/irrationality-exponents/test_verify.py
       - run: python3 -B verification/isolated-affine/test_verify.py
       - run: python3 -B verification/isolated-affine/test_package.py
       - run: python3 -B -m unittest discover -s verification/isolated-affine-denominators -p 'test_*.py'
+      - run: python3 -B -m unittest discover -s verification/isolated-affine-cubic -p 'test_*.py'
       - run: python3 -B verification/isolated-irrationality/test_verify.py
       - run: python3 -B verification/isolated-quadratic-periods/test_quadratic.py
       - run: python3 -B verification/isolated-reciprocal-quadratic/test_reciprocal.py
