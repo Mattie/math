@@ -11,6 +11,10 @@
       "sha256": "424140d86aaf3460ca13d7e100a83c3aeff368d7dba766139853ef2e1f75f33d",
       "bytes": 20087
     },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/build/publication-review.json": {
+      "sha256": "71334d9d717da673e82362747fe55c63188aef293f60559f4f4a481da9a5c61f",
+      "bytes": 3266
+    },
     "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/build/receipt.json": {
       "sha256": "81b62e0e1f179f273c42c9d42e06fce921cc76aba71e4748fc445fbc63fcaf36",
       "bytes": 298
@@ -36,16 +40,16 @@
       "bytes": 1312
     },
     "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/scripts/check-publication.py": {
-      "sha256": "a511a88f8a8a2d2222e53fd6f09b12efbb318649d14917d9128f47ec2ee3f427",
-      "bytes": 4501
+      "sha256": "c7f21745e661bf7ae42c6241a4fba09fb8a0db906d67e3b81521d4e8833cc4fb",
+      "bytes": 4534
     },
     "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/theorem-map.json": {
       "sha256": "1a4fef0baa11a9eb7fde138ff30381dc728d94b42a689bbdafac3d652ead2fe8",
       "bytes": 725
     },
     "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/VERIFY.md": {
-      "sha256": "218d2a80a711a6623b7fbea03e98df65ca78b593b573d59442831b62a1cf00e1",
-      "bytes": 3496
+      "sha256": "bd4ba9566e9c997dac6850f0dc2e35114f2f2f6f7be13d897db5b2ca68c61d09",
+      "bytes": 3711
     },
     "verification/isolated-affine-cubic/Challenge.lean": {
       "sha256": "5088275b26996abd50d2e2bf70e2d565e3bbc770fd8ef5c2b7fd9447663320c4",

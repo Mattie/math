@@ -25,3 +25,5 @@ It contains the receipt, checker diagnostics, retained inputs, and all 101 index
 The published source and seven-page PDF are the reviewed October 13 manuscript. The final editorial and acknowledgement changes preserved the mathematical statements, displayed mathematical blocks, and frozen Lean sources. Independent model reviews covered the written argument and its correspondence to the formalization; these are not human peer review. Private review packets are not part of this publication.
 
 The [build receipt](build/receipt.json) records the exact manuscript and PDF hashes. The [publication manifest](package-manifest.json) binds the distributed paper, companion files, checking inputs, and retained hosted archive. Run `python -I scripts/check-publication.py` from this directory to check their integrity without rebuilding the proof.
+
+The [publication review record](build/publication-review.json) identifies the inspected PDF, GitHub-rendered pages, and successful unauthenticated downloads of the exact PDF, source, and hosted evidence archive.

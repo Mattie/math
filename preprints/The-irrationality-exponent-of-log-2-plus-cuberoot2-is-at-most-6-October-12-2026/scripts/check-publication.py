@@ -55,7 +55,7 @@ def main():
     files = manifest['files']
     prefix = PAPER.relative_to(REPO).as_posix()
     required = {f'{prefix}/{name}' for name in (
-        'paper.pdf', 'build/main.tex', 'build/receipt.json', 'theorem-map.json',
+        'paper.pdf', 'build/main.tex', 'build/receipt.json', 'build/publication-review.json', 'theorem-map.json',
         'README.md', 'VERIFY.md', 'LICENSES.md', 'CITATION.cff',
         'scripts/build.py', 'scripts/check-publication.py')}
     if not required <= files.keys():
