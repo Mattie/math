@@ -1,0 +1,3 @@
+# Install before running workflow_checks tests or the two affine preparation suites:
+# python -m pip install -r verification/publication/requirements-test.txt
+PyYAML==6.0.3

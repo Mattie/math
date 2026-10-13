@@ -1,11 +1,15 @@
 """Preparation only: check real route configuration and fail-closed bookkeeping."""
 import json
 from pathlib import Path
+import sys
 import tempfile
 from types import SimpleNamespace
 import unittest
 from unittest.mock import Mock, patch
 import verify
+
+sys.path.insert(0, str(verify.REPO / 'verification/publication'))
+from workflow_checks import assert_dispatcher_guards
 
 
 class PreparationTests(unittest.TestCase):
@@ -56,14 +60,9 @@ class PreparationTests(unittest.TestCase):
         self.assertNotIn('pull_request:', text)
         self.assertNotIn('push:', text)
         self.assertIn('          - affine-cubic', text)
-        # Other cases can share the budget; this case need not be last in the OR list.
-        case = r"inputs\.case == '[a-z-]+'"
-        condition = (rf"\((?:{case} \|\| )*inputs\.case == 'affine-cubic'"
-                     rf"(?: \|\| {case})*\)")
-        self.assertRegex(text, rf"timeout-minutes: \$\{{\{{ {condition} && 360 \|\| 240 \}}\}}")
+        assert_dispatcher_guards(text, 'affine-cubic')
         self.assertIn('elif [[ "$VERIFICATION_CASE" == affine-cubic ]]; then', text)
         self.assertIn('verification/isolated-affine-cubic/verify.py --run', text)
-        self.assertRegex(text, rf"if: always\(\) && {condition}(?:\r?\n|$)")
         self.assertIn('contents: read', text)
         self.assertIn('persist-credentials: false', text)
         self.assertNotEqual(verify.digest(verify.WORKFLOW),
