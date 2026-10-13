@@ -12,5 +12,5 @@ proof bytes; [overlay.json](overlay.json) lists module order and endpoints.
 The separate [hosted verifier](../../verification/isolated-affine-cubic/README.md)
 generates trusted build configuration, assembles these sources with their
 inherited dependency closure, and checks the literal intended statements.
-This directory is the verification source package; the manuscript is distributed
-separately.
+The [paper and editable manuscript](../../preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/README.md)
+explain the argument and connect its statements to these declarations.

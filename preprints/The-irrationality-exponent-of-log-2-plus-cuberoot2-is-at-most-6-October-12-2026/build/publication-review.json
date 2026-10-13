@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-13T21:58:36.162059+00:00",
+  "scope": "Publication inventory, PDF visual/privacy checks, GitHub Markdown rendering, and unauthenticated public downloads; no new proof execution.",
+  "status": "passed",
+  "publication_content_commit": "f0aceb41c0269d967aefa1a3a2a34585a6db921a",
+  "manuscript_source_sha256": "424140d86aaf3460ca13d7e100a83c3aeff368d7dba766139853ef2e1f75f33d",
+  "pdf_sha256": "592f5b75114aee95951cab762bc8f9b599e3913b72e20bd33430a38ad8360280",
+  "pdf": {
+    "pages": 7,
+    "attachments": 0,
+    "visual_review": "All seven pages rendered and inspected; equations, table, headings, references, and acknowledgement readable with no clipping or overlap.",
+    "privacy": "No workstation paths, private chat references, or credential-shaped strings found in extracted text and metadata."
+  },
+  "github_rendering": {
+    "pages": [
+      "https://github.com/Mattie/math/blob/f0aceb41c0269d967aefa1a3a2a34585a6db921a/preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/README.md",
+      "https://github.com/Mattie/math/blob/f0aceb41c0269d967aefa1a3a2a34585a6db921a/preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/VERIFY.md"
+    ],
+    "observations": "GitHub Preview opened without authentication. Landing-page inequality and inline mathematics rendered; paper/source/proof/verification navigation and evidence links resolve to the publication commit. Verification headings and archive hash are readable."
+  },
+  "downloads": [
+    {
+      "path": "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/paper.pdf",
+      "url": "https://raw.githubusercontent.com/Mattie/math/f0aceb41c0269d967aefa1a3a2a34585a6db921a/preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/paper.pdf",
+      "http_status": 200,
+      "bytes": 95237,
+      "sha256": "592f5b75114aee95951cab762bc8f9b599e3913b72e20bd33430a38ad8360280"
+    },
+    {
+      "path": "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/build/main.tex",
+      "url": "https://raw.githubusercontent.com/Mattie/math/f0aceb41c0269d967aefa1a3a2a34585a6db921a/preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/build/main.tex",
+      "http_status": 200,
+      "bytes": 20087,
+      "sha256": "424140d86aaf3460ca13d7e100a83c3aeff368d7dba766139853ef2e1f75f33d"
+    },
+    {
+      "path": "verification/isolated-affine-cubic/evidence/hosted-2026-10-13.zip",
+      "url": "https://raw.githubusercontent.com/Mattie/math/f0aceb41c0269d967aefa1a3a2a34585a6db921a/verification/isolated-affine-cubic/evidence/hosted-2026-10-13.zip",
+      "http_status": 200,
+      "bytes": 6447231,
+      "sha256": "4a3eaf9ebaf3ea0d247274dd38a737744f312fb2a83aa49e558f88383b8ff83c"
+    }
+  ],
+  "independent_package_review": "Independent model review found no blocker in public inventory, provenance, verification scope, licensing, or frozen artifact identity. It is not human peer review.",
+  "proof_evidence": "Reuses the unchanged frozen source and hosted run 38434422471; the retained ZIP is byte-identical to the audited Actions download.",
+  "publication_date_update": {
+    "date": "2026-10-13",
+    "scope": "Only the title-page date changed to October 13, 2026; mathematical source and frozen proof evidence are unchanged.",
+    "manuscript_source_sha256": "b2c17d199847e490305b60e13b88525361f6acbeaf8d8f1800cab48ce1531ebe",
+    "pdf_sha256": "81ed8c00fc6038f48cbc2c97d71969c5fec966f1bbd2b53363210a39b79053ea",
+    "pages": 7,
+    "visual_review": "All seven rebuilt pages inspected; no clipping or overlap. Independent model comparison found PDF text unchanged apart from the date, allowing for repagination.",
+    "status": "passed",
+    "publication_content_commit": "fb177136b34dd067bfb303c28331048fee2c0d45",
+    "downloads": [
+      {
+        "path": "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/paper.pdf",
+        "url": "https://raw.githubusercontent.com/Mattie/math/fb177136b34dd067bfb303c28331048fee2c0d45/preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/paper.pdf",
+        "http_status": 200,
+        "bytes": 94688,
+        "sha256": "81ed8c00fc6038f48cbc2c97d71969c5fec966f1bbd2b53363210a39b79053ea"
+      },
+      {
+        "path": "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/build/main.tex",
+        "url": "https://raw.githubusercontent.com/Mattie/math/fb177136b34dd067bfb303c28331048fee2c0d45/preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/build/main.tex",
+        "http_status": 200,
+        "bytes": 20061,
+        "sha256": "b2c17d199847e490305b60e13b88525361f6acbeaf8d8f1800cab48ce1531ebe"
+      }
+    ]
+  }
+}

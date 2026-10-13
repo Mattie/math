@@ -1,0 +1,6 @@
+{
+  "engine": "Tectonic 0.17.0",
+  "source_sha256": "b2c17d199847e490305b60e13b88525361f6acbeaf8d8f1800cab48ce1531ebe",
+  "pdf_sha256": "81ed8c00fc6038f48cbc2c97d71969c5fec966f1bbd2b53363210a39b79053ea",
+  "scope": "PDF compilation and byte identity; visual review is recorded separately."
+}

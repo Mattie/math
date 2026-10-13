@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "scope": "Published manuscript and verification companions; proof evidence is from the unchanged October 13 hosted run.",
+  "hosted_checked_commit": "1ee3266da6bd7f6ecafd063caab2cfe7a6defbd2",
+  "files": {
+    "formalizations/AffineCubic/evidence/source-freeze.json": {
+      "sha256": "427988645a30855d15f08136feb8f07e0ce55de2e4190e418a35899b37799c3c",
+      "bytes": 1185
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/build/main.tex": {
+      "sha256": "b2c17d199847e490305b60e13b88525361f6acbeaf8d8f1800cab48ce1531ebe",
+      "bytes": 20061
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/build/publication-review.json": {
+      "sha256": "014517f13bc5b327a908e9bc2253f96959eaa52cde283057e75894b844f8ec3f",
+      "bytes": 4938
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/build/receipt.json": {
+      "sha256": "219d621266327808ce12a32a0332361527badc3c341972402b9902c7112058a2",
+      "bytes": 292
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/CITATION.cff": {
+      "sha256": "f2616679c35410062393b8bce4f0627b3181eb71d2baf511494c90df4639e36b",
+      "bytes": 313
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/LICENSES.md": {
+      "sha256": "29b532949b2bbe8dc5d08d65daa8636103584aea910d14c481c13c09cc30cc8b",
+      "bytes": 779
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/paper.pdf": {
+      "sha256": "81ed8c00fc6038f48cbc2c97d71969c5fec966f1bbd2b53363210a39b79053ea",
+      "bytes": 94688
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/README.md": {
+      "sha256": "b7630b91f66dc1f2c6df81af0dfef916bbe3a966f3261e38421d50541a9e6897",
+      "bytes": 1634
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/scripts/build.py": {
+      "sha256": "82ba9880b9556eb3556716665981492d0455c01802b25ecea6304065c75cfe5a",
+      "bytes": 1312
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/scripts/check-publication.py": {
+      "sha256": "c7f21745e661bf7ae42c6241a4fba09fb8a0db906d67e3b81521d4e8833cc4fb",
+      "bytes": 4534
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/theorem-map.json": {
+      "sha256": "1a4fef0baa11a9eb7fde138ff30381dc728d94b42a689bbdafac3d652ead2fe8",
+      "bytes": 725
+    },
+    "preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/VERIFY.md": {
+      "sha256": "46d5c363fc2064f314158dc668b6f6fb44e35412d82e262bb9031885083457c0",
+      "bytes": 3756
+    },
+    "verification/isolated-affine-cubic/Challenge.lean": {
+      "sha256": "5088275b26996abd50d2e2bf70e2d565e3bbc770fd8ef5c2b7fd9447663320c4",
+      "bytes": 1302
+    },
+    "verification/isolated-affine-cubic/CHECKERS.md": {
+      "sha256": "31f9978ac62282dc2627f32146bc0efd39b11283982a476630f79db08770961d",
+      "bytes": 4325
+    },
+    "verification/isolated-affine-cubic/config.json": {
+      "sha256": "5cd00e63765311624f3a210d0207f0d286636838ebb2c242b684ebad7876967e",
+      "bytes": 394
+    },
+    "verification/isolated-affine-cubic/evidence/hosted-2026-10-13.zip": {
+      "sha256": "4a3eaf9ebaf3ea0d247274dd38a737744f312fb2a83aa49e558f88383b8ff83c",
+      "bytes": 6447231
+    },
+    "verification/isolated-affine-cubic/pins.json": {
+      "sha256": "262659620e2e43aef31a87cd95e824b93d3fe8b64d4f114cd42264f253ba75e9",
+      "bytes": 528
+    },
+    "verification/isolated-affine-cubic/results/hosted-audit-2026-10-13.json": {
+      "sha256": "1e3f392c1b880b7bb6785345ff86e2f0d5d265b3ac0864ebae12ac4fa3c34610",
+      "bytes": 4853
+    },
+    "verification/isolated-affine-cubic/results/hosted-verification-2026-10-13.md": {
+      "sha256": "0600c11428c9d1d22e6f3af55c99f115c29747d39689b0dc4ee2445a2e7a41c3",
+      "bytes": 5874
+    },
+    "verification/isolated-affine-cubic/Solution.lean": {
+      "sha256": "1b2555e02d96ac2c814976ea45763256bda1d8213b61155a7ed1c14a4db577c6",
+      "bytes": 1068
+    },
+    "verification/isolated-affine-cubic/source-manifest.json": {
+      "sha256": "bfeb41237900f4b91b6e1f06463d714c9650dfdf5fddd77836ef6a166ffa90a9",
+      "bytes": 135305
+    },
+    "verification/isolated-affine-cubic/verify.py": {
+      "sha256": "bfa1e4bca07fcec0e7ecafa28977c90d35b77d77bbef8fc47141956bfc7635f7",
+      "bytes": 12069
+    },
+    "verification/publication/test_cubic_archive.py": {
+      "sha256": "f1e88ad5b971b3660341adadba25afb1364f994024de3d7088fdbaec4bab0031",
+      "bytes": 3277
+    }
+  }
+}

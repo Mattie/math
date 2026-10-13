@@ -1,0 +1,476 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs,booktabs,microtype}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\N}{\mathbb N}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\Emb}{\operatorname{Emb}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\title{The irrationality exponent of\texorpdfstring{\\$\log2+\sqrt[3]{2}$}{ log 2 + cube root of 2} is at most six}
+\author{Ryan Matthew Casper}
+\date{October 13, 2026}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove that $\log2+\sqrt[3]{2}$ has irrationality exponent at most six.
+We adapt our previous affine determinant construction to a cubic field
+with one compatible embedding. Clearing a single minor gives an
+algebraic integer whose norm compares analytic decay at that embedding
+with growth at the other two. The norm contains three copies of the
+clearing factor and two coarse determinant bounds. We choose parameters that absorb
+this full cost, using the logarithmic interpolation and analytic
+estimates from our previous proof. A Lean formalization accompanies
+the argument.
+\end{abstract}
+
+\section{Introduction and main result}
+Let $r$ be the positive real root of $r^3=2$ and put $x=\log2+r$.
+The number $x$ is transcendental: the Hermite--Lindemann theorem
+\cite{lindemann} gives the transcendence of $\log2$, and adding the
+algebraic number $r$ preserves it. We study how well $x$ can be
+approximated by rational numbers.
+
+For an irrational real number $y$, write $\mu(y)$ for the supremum of
+the positive exponents $\nu$ such that
+$0<|y-p/q|<q^{-\nu}$ for infinitely many reduced rational numbers
+$p/q$ with $q>0$.
+
+\begin{theorem}\label{thm:main}
+For every real $\nu>6$ there exists $Q\in\N$, $Q\ge2$, such that
+\begin{equation}\label{eq:main}
+ q^{-\nu}\le\left|\log2+\sqrt[3]{2}-\frac pq\right|
+ \qquad(p\in\Z,\ q\in\N,\ q\ge Q).
+\end{equation}
+Consequently, $\mu(x)\le6$.
+\end{theorem}
+
+The threshold may depend on $\nu$ and is uniform in $p,q$; the
+fractions in \eqref{eq:main} need not be reduced. The proof gives
+neither a numerical value of $Q$ nor an estimate at $\nu=6$.
+
+Our previous affine theorem \cite[Theorem 3.1]{affine} treats integral
+data in a degree-four number field with two compatible embeddings.
+Here we use the same determinant construction in degree three, with
+one compatible embedding and slope of absolute value at most one.
+We retain the integrality assumptions. The logarithmic interpolation
+and analytic estimates come from our previous proof, which builds on
+OpenAI's determinant method \cite{openai} and our logarithmic
+extensions \cite{quadratic}.
+
+The change is in the norm comparison. All three embeddings contribute
+to the norm, but only one supplies the analytic decay we need. We bound
+the other two coarsely and choose parameters that absorb both bounds.
+This works only if we keep the same minor at every embedding: the norm
+must belong to one algebraic integer. Section~\ref{sec:estimates}
+sets out the three estimates, Lemma~\ref{lem:lift} supplies that common
+algebraic integer, and Section~\ref{sec:parameters} chooses the
+parameters that make the estimates incompatible.
+
+Rational approximation to $x$ can also be viewed as approximation to
+$\log2$ by the cubic numbers $p/q-r$. This explains why a bound for
+rational approximation to $\log2$ alone does not give
+Theorem~\ref{thm:main}. Section~\ref{sec:context} relates the two height
+conventions.
+
+\section{A cubic affine theorem}\label{sec:general}
+For a number field $F$, write
+$\Emb(F)=\operatorname{Hom}_{\Q\text{-alg}}(F,\C)$ and let
+$\OO_F$ be its ring of integers.
+
+\begin{theorem}\label{thm:general}
+Suppose $[F:\Q]=3$ and $a,u,v\in\OO_F$. Let $\sigma_0\in\Emb(F)$
+have $\sigma_0(a)=b_0\in\R$, where $b_0>0$ and $b_0\ne1$.
+Let $y\in\R\setminus\{0\}$, and suppose an embedding
+$\tau\in\Emb(F)$ satisfies
+\begin{equation}\label{eq:compatible}
+ \exp\bigl(\tau(u)(y-\tau(v))\bigr)=\tau(a),
+ \qquad |\tau(u)|\le1.
+\end{equation}
+Then for every real $\nu>6$ there is $Q\in\N$, $Q\ge2$, such that
+$q^{-\nu}\le|y-p/q|$ for all integers $p$ and natural $q\ge Q$.
+\end{theorem}
+
+The selected embedding $\tau$ need not equal $\sigma_0$. The other two
+embeddings are bounded coarsely, whether or not either happens to
+satisfy the same exponential identity. The roles are different:
+$\sigma_0$ gives a nonzero minor by interpolation, while $\tau$ gives
+the analytic upper bound on its determinant.
+
+\subsection{Specialization to the target}
+Take $F=\Q(r)$, $a=2$, $u=1$, $v=r$, and $y=x=\log2+r>0$.
+Eisenstein's criterion at 2 proves that $T^3-2$ is irreducible, so
+$[F:\Q]=3$. The element $r$ is integral, as are $a,u$.
+The real embedding is a permissible choice for both $\sigma_0$ and
+$\tau$, since $\exp(x-r)=2$.
+
+If $\zeta$ is a primitive cube root of unity, the other
+embeddings send $r$ to $r\zeta$ and $r\zeta^2$. They obey
+\[
+ |\exp(x-r\zeta)|=|\exp(x-r\zeta^2)|
+ =2\exp(3r/2)>2.
+\]
+Thus they do not supply the identity used at the real embedding,
+even though every embedding sends the base $a$ to 2.
+Theorem~\ref{thm:general} now gives \eqref{eq:main};
+Section~\ref{sec:endpoint} deduces the exponent bound.
+
+\section{The inherited matrix estimates}\label{sec:estimates}
+We first record the estimates we will use from our previous proof
+\cite[Sections 4--8]{affine}. The parameters remain fixed as the matrix
+height $H$ tends to infinity. We choose them in
+Section~\ref{sec:parameters}, after seeing the full cost of the cubic
+norm.
+
+\subsection{Parameters and the selected minor}
+Fix $\nu>6$. Assume, for contradiction, that there are approximations
+\begin{equation}\label{eq:bad}
+ |y-p/q|\le q^{-\nu}
+\end{equation}
+with arbitrarily large denominators. We select
+a finite tuple $p_i/q_i$ with $q_i\ge2$ and $p_i\ne0$, and set
+$w_i=\lceil\log q_i\rceil$, $w_* =\min_i w_i$.
+The nonzero-numerator requirement causes no loss because $y\ne0$.
+Each weight is chosen large enough, after the preceding weights, to
+satisfy the separation conditions for logarithmic interpolation
+\cite[Sections 4--5]{affine}. Arbitrarily large denominators let us
+make these successive choices.
+
+We take $0<\eta<1$ and rational shape parameters satisfying
+\begin{equation}\label{eq:shape}
+ 0<\theta<A<B<1,\quad C>1,\quad CB<1,
+ \quad B<C\theta<1,
+\end{equation}
+For a positive scale $F_0>2/\theta$ and dimension
+$m\ge1$, set
+\begin{equation}\label{eq:dimension}
+ K=\lfloor C^m\rfloor,\qquad w_0=B^{-m},\qquad
+ v_0=2K\theta^m w_0.
+\end{equation}
+The strict volume ratio is $Kw_0\theta^m/v_0=1/2$.
+
+The main quantities in the argument have the following roles.
+\begin{center}
+\small
+\begin{tabular}{@{}lp{0.65\textwidth}@{}}
+\toprule
+Quantity & Role \\
+\midrule
+$m,\ H$ & Number of approximations and matrix height \\
+$K,\ M(H)$ & Number of multiplicative centers and number of rows \\
+$w_i,\ w_0,\ v_0$ & Approximation weights and the weights of $h$ and $s$ \\
+$b_H$ & Normalized mean row weight saved by denominator clearing \\
+$\mathscr C_H,\ \mathcal C_H$ & Rational clearing factor and analytic collision parameter \\
+$E,\ U,\ V$ & Arithmetic error, coarse growth, and analytic error \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+For $H>0$, columns are $(h,\gamma)\in\N\times\N^m$ satisfying
+$w_0h+\sum_iw_i\gamma_i\le H$. Rows are $(j,s,\beta)$ with
+$0\le j<K$ and $v_0s+\sum_iw_i\beta_i/\theta<H$.
+Write $M=M(H)>0$ for the row count. Put
+\[
+ T_i=\lceil F_0w_i/v_0\rceil,\qquad
+ L_i(t)=\sum_{1\le k<T_i}\frac{(-1)^{k+1}}k t^k,
+ \qquad c_{\sigma i}=\sigma(u)(p_i/q_i-\sigma(v)).
+\]
+The matrix at an embedding $\sigma$ is
+\begin{equation}\label{eq:matrix}
+ \mathcal M_\sigma(H)_{(j,s,\beta),(h,\gamma)}
+ =\sigma(a)^{jh}[t^sZ^\beta](1+t)^h
+     \prod_{i=1}^m(Z_i+jc_{\sigma i}+L_i(t))^{\gamma_i}.
+\end{equation}
+At $\sigma_0$, the multiplicative centers $b_0^j$ are distinct and
+nonzero. The interpolation theorem allows arbitrary additive centers,
+so it gives full row rank at a cofinal set of heights. At each such
+height we select one nonzero full-row minor and use exactly those
+columns at every embedding. Write $\Delta_\sigma$ for the resulting
+determinant.
+Define the mean saved row weight by
+\[
+ b_H=\frac1{MH}\sum_{\text{rows }(j,s,\beta)}\sum_iw_i\beta_i,
+ \qquad 0\le b_H\le\theta.
+\]
+
+\subsection{Clearing, growth, and decay}
+Choose fixed bounds $\kappa,R\ge0$ and $\rho\ge100$ such that
+\begin{align*}
+ \log\max(1,|\sigma(a)|)&\le\kappa,\\
+ |\sigma(u)|(|y|+1+|\sigma(v)|)&\le R
+       &&(\sigma\in\Emb(F)),\\
+ 100|y|&\le\rho,\qquad
+ 100|\tau(u)(y-\tau(v))|\le\rho.
+\end{align*}
+There are finitely many embeddings, so we can fix these bounds
+before choosing the dimension or approximations. For $x=\log2+r$,
+we may take $\kappa=\log2$, $R=6$, $\rho=300$.
+Put $\Lambda=\log4+4$ and $c=\log2/4$, as in our previous estimates,
+and define
+\begin{align}
+ E&=\frac{\Lambda F_0m}{v_0}+\Lambda\sum_i\frac1{w_i}
+        +\frac\theta{w_*},\label{eq:errors}\\
+ U&=\frac{\log2}{v_0}+\frac{\kappa K+\log(3/2)}{w_0}
+        +\frac{\log(2(KR+2))}{w_*},\notag\\
+ V&=\frac\nu{F_0}+\frac{2\log2}{v_0}+\frac{\rho K}{w_0}
+       +\frac{\log4+\log(2K)+\nu+\log(2\rho K)}{w_*}.\notag
+\end{align}
+
+The first estimate controls denominator clearing. It supplies a positive rational factor
+$\mathscr C_H$ with
+\begin{equation}\label{eq:clearcost}
+ \frac{\log\mathscr C_H}{MH}\le1-b_H+E.
+\end{equation}
+The second bounds growth at each of the other two embeddings:
+for $\sigma\ne\tau$,
+\begin{equation}\label{eq:coarse}
+ \frac{\log|\Delta_\sigma|}{MH}\le U+r_c(H),
+ \qquad r_c(H)\longrightarrow0.
+\end{equation}
+At the selected embedding write $\omega=\tau(u)(y-\tau(v))$.
+The error comparison is
+\[
+ |c_{\tau i}-\omega|
+ =|\tau(u)|\,|p_i/q_i-y|\le q_i^{-\nu}.
+\]
+The slope bound therefore lets us use the third estimate without
+enlarging the approximation error:
+\begin{equation}\label{eq:good}
+ \frac{\log|\Delta_\tau|}{MH}
+ \le V+r_a(H)+\max\{-\mathcal C_H,-\nu(A(1-\eta)-b_H)\},
+ \qquad r_a(H)\longrightarrow0,
+\end{equation}
+where
+\begin{equation}\label{eq:collision}
+ \mathcal C_H\longrightarrow\mathcal C_\infty
+ =\frac{c\eta^2K\theta^m}{(m+1)v_0A^m}
+ =\frac{c\eta^2}{2(m+1)}(B/A)^m.
+\end{equation}
+These are the estimates of our previous affine construction
+\cite[Sections 6--8]{affine}, applied to the same selected minor.
+Notice that the analytic frequency $\omega$ and the number $y$ being
+approximated need not coincide. In our concrete example they are
+$\log2$ and $\log2+r$, respectively. The identity at $\tau$ is enough; we do not take
+logarithms at the other embeddings.
+
+\section{The norm of the common minor}\label{sec:norm}
+The affine numerators
+$n_i=u(p_i-q_iv)$ are integral. Set
+$D_i=\operatorname{lcm}(1,\ldots,T_i)$ and
+$e_i=\lfloor H/w_i\rfloor$. Multiply each row by
+$\prod_iD_i^{e_i}q_i^{-\beta_i}$ and each selected column by
+$\prod_iq_i^{\gamma_i}$. Their product is $\mathscr C_H$.
+
+\begin{lemma}\label{lem:lift}
+There is one nonzero $Z_H\in\OO_F$ such that
+\[
+ \sigma(Z_H)=\mathscr C_H\Delta_\sigma
+ \qquad(\sigma\in\Emb(F)).
+\]
+Every selected determinant is consequently nonzero.
+\end{lemma}
+\begin{proof}
+If some $\beta_i>\gamma_i$, the matrix entry is zero. Otherwise put
+$\delta_i=\gamma_i-\beta_i$. After coefficient extraction and clearing,
+the entry is the image of
+\[
+ a^{jh}\prod_i\binom{\gamma_i}{\beta_i}
+ [t^s](1+t)^h\prod_i D_i^{e_i}(jn_i+q_iL_i(t))^{\delta_i}.
+\]
+The polynomial $D_i(jn_i+q_iL_i)$ has integral coefficients, and
+$\delta_i\le\gamma_i\le e_i$. Hence this entry is integral. These
+entries define one matrix over $F$; let $Z_H$ be its determinant.
+Determinants commute with every embedding, proving the identity.
+Its image at $\sigma_0$ is nonzero, and every embedding is injective.
+\end{proof}
+
+We can now use the norm of $Z_H$, which is a nonzero integer. Counting
+all three embeddings into $\C$, with each member of any nonreal
+conjugate pair counted separately, we obtain
+\[
+ 0\le3\log\mathscr C_H+\sum_{\sigma\in\Emb(F)}\log|\Delta_\sigma|.
+\]
+Using \eqref{eq:clearcost} and the two bounds \eqref{eq:coarse} gives
+\begin{equation}\label{eq:lower}
+ \frac{\log|\Delta_\tau|}{MH}
+ \ge-3(1-b_H)-3E-2U-2r_c(H).
+\end{equation}
+This is where degree three enters the proof. The clearing factor
+appears three times in the norm, and each of the two other embeddings
+contributes one coarse bound. A conjugate pair may have equal absolute
+values, but both factors still occur in the product.
+
+\section{Stronger parameters and the contradiction}\label{sec:parameters}
+For every $\nu>6$, the shape can be chosen so that
+\begin{equation}\label{eq:gap}
+ g=\nu\bigl(A(1-\eta)-\theta\bigr)-3(1-\theta)>0.
+\end{equation}
+For example, take rational $t<1$ close enough to one that
+$\nu t>3(1+t)$, put $\theta=t^2$, choose rational
+$\theta<A<B<t$ sufficiently close to $t$, then choose
+$B/\theta<C<1/B$ and sufficiently small $\eta>0$.
+These choices satisfy \eqref{eq:shape} and \eqref{eq:gap}.
+
+Let $S=3E+2U+V$. We need $S<g$ to handle the approximation term in
+\eqref{eq:good}, and $3+S<\mathcal C_\infty$ to handle the collision
+term. Expanding \eqref{eq:errors} gives
+\begin{align}\label{eq:budget}
+ S={}&\frac\nu{F_0}
+ +\frac{3\Lambda F_0m+4\log2}{v_0}
+ +\frac{(\rho+2\kappa)K+2\log(3/2)}{w_0}\notag\\
+ &+3\Lambda\sum_i\frac1{w_i}
+ +\frac{3\theta+\log4+\log(2K)+\nu+\log(2\rho K)
+             +2\log(2(KR+2))}{w_*}.
+\end{align}
+Choose $0<\epsilon<g$ with $\epsilon\le1/2$, and next choose
+$F_0>2/\theta$ with $\nu/F_0<\epsilon/3$.
+As $m\to\infty$ in \eqref{eq:dimension},
+\[
+ m/v_0\to0,\qquad 1/v_0\to0,\qquad K/w_0\to0,
+ \qquad 1/w_0\to0,\qquad\mathcal C_\infty\to\infty.
+\]
+The limits involving $v_0$ use $C\theta/B>1$, the ratio $K/w_0$ tends
+to zero because $CB<1$, and the collision parameter grows because
+$B/A>1$. Choose one dimension making the two dimension terms of
+\eqref{eq:budget} less than $\epsilon/3$ and
+$\mathcal C_\infty>4$. Choose a positive rational geometric slack
+satisfying the interpolation conditions in \cite[Section 4]{affine}.
+The strict volume ratio $1/2$, $K\theta^m<1$, and $\theta<1$ permit
+this choice. Then choose a sufficiently large initial
+weight threshold so that the remaining inverse-weight terms sum to
+less than $\epsilon/3$. Subsequent approximations can still be selected
+with the separated-weight inequalities of the same section because
+their denominators are unbounded under \eqref{eq:bad}. All these choices
+precede the limit in $H$.
+
+We have obtained
+\begin{equation}\label{eq:strict}
+ S<\epsilon<g,\qquad 3+S<4<\mathcal C_\infty.
+\end{equation}
+Set $S_H=S+r_a(H)+2r_c(H)$. For all sufficiently large $H$,
+\eqref{eq:strict} gives $S_H<g$ and $3+S_H<\mathcal C_H$.
+Combining \eqref{eq:good} and \eqref{eq:lower} yields
+\[
+ -3(1-b_H)\le S_H+
+ \max\{-\mathcal C_H,-\nu(A(1-\eta)-b_H)\}.
+\]
+If the maximum is the approximation term, then
+\[
+ g+(\nu-3)(\theta-b_H)
+ =\nu(A(1-\eta)-b_H)-3(1-b_H)\le S_H<g,
+\]
+a contradiction. If it is the collision term, then
+$\mathcal C_H\le3(1-b_H)+S_H\le3+S_H$, also a contradiction.
+Cofinality of full-row-rank heights permits the same selected-minor
+construction beyond this common threshold. This proves
+Theorem~\ref{thm:general}.
+
+\subsection{Endpoint consequences}\label{sec:endpoint}
+The contradiction excludes \eqref{eq:bad} at all sufficiently large
+denominators, giving \eqref{eq:main}. The lower bound also supplies
+irrationality directly: a rational $x$ would have exact representations
+with arbitrarily large unreduced denominators.
+For any exponent above six, reduced fractions satisfying its strict
+upper bound have bounded denominators, and their numerators are
+bounded as well. Thus there are only finitely many such fractions,
+which gives $\mu(x)\le6$.
+
+\subsection{Why six appears}
+The conditions $B<C\theta$ and $CB<1$ imply $B^2<\theta$, hence
+$A<\sqrt\theta$. Consequently
+\[
+ \frac{A(1-\eta)-\theta}{1-\theta}
+ <\frac{\sqrt\theta}{1+\sqrt\theta}<\frac12.
+\]
+The sufficient gap \eqref{eq:gap} therefore requires $\nu>6$.
+Six is the infimum cutoff for this choice of shape using only
+$0\le b_H\le\theta$. To lower it, we would need a different shape
+or a stronger estimate for the saved row weight. The argument does
+not determine the exact value of $\mu(x)$.
+
+\section{Approximation by cubic numbers}\label{sec:context}
+Marcovecchio's rational approximation and nonquadraticity estimates
+for $\log2$ \cite{marcovecchio} concern different families of
+approximants. In our problem the algebraic shift gives a particular
+family of cubic numbers.
+For a reduced fraction $p/q$, our approximation error is
+\[
+ |x-p/q|=|\log2-(p/q-r)|.
+\]
+The cubic number $p/q-r$ has primitive irreducible integer polynomial
+\[
+ (qT-p)^3+2q^3
+ =q^3T^3-3pq^2T^2+3p^2qT-p^3+2q^3.
+\]
+Irreducibility follows from the rational affine change of variable
+from $T^3-2$. For primitivity, any prime dividing $q$ fails to divide
+the constant coefficient. Near the fixed target, the coefficient
+height is bounded above and below by positive fixed multiples of
+$q^3$. Thus a general degree-three approximation measure expressed in
+that height would require a factor-three conversion of its exponent
+to this rational-denominator convention.
+
+Thus the relevant comparison is with degree-three approximation to
+$\log2$ along the family $p/q-r$, after converting its coefficient
+height to the denominator $q$. The rational and quadratic estimates
+in \cite{marcovecchio} do not give this comparison directly.
+
+\appendix
+\section{Formalization}
+The accompanying Lean formalization, \texttt{AffineCubic}, proves
+Theorems~\ref{thm:main} and~\ref{thm:general}. It constructs the real
+field $\Q(2^{1/3})$ and proves the irreducibility, degree, integrality,
+and distinguished-embedding identity needed to apply
+Theorem~\ref{thm:general}.
+
+The concrete results are in the \texttt{Pilot} module. Alongside the
+eventual lower bound and exponent inequality, it proves irrationality
+and $\neg\texttt{LiouvilleWith}(\nu,x)$ for every $\nu>6$, using
+Mathlib's predicate. The last consequence follows by applying the
+lower bound at $(6+\nu)/2$, which absorbs the fixed constant allowed
+in that predicate. The companion \path{theorem-map.json} identifies
+the declarations, and \path{VERIFY.md} gives the source versions,
+reproduction instructions, and proof-checking results.
+
+\section*{Acknowledgements}
+OpenAI Codex agents assisted substantially with mathematical development, Lean
+formalization, manuscript preparation, and review.
+
+\begin{thebibliography}{9}
+\raggedright
+\bibitem{affine}
+R. M. Casper,
+\emph{\href{https://github.com/Mattie/math/blob/cf1338bcee8fe9f08422ec36e8fdf6dc6392c677/preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/paper.pdf}{The irrationality exponents of $\log2+\sqrt2$
+and $\sqrt2\log2$ are at most four}}, preprint, October 11, 2026.
+
+\bibitem{openai}
+OpenAI,
+\emph{\href{https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026}{The irrationality exponent of $\pi$ is $2$}},
+preprint, September 24, 2026.
+
+\bibitem{quadratic}
+R. M. Casper,
+\emph{\href{https://github.com/Mattie/math/tree/4aa817179b5a81358dcdefeb1d454a31ab2f2c27/preprints/The-irrationality-exponent-of-positive-quadratic-logarithms-is-at-most-4-October-8-2026}{The irrationality exponent of positive quadratic
+logarithms is at most 4}}, preprint, October 8, 2026.
+
+\bibitem{marcovecchio}
+R. Marcovecchio, \emph{The Rhin--Viola method for $\log2$},
+Acta Arithmetica \textbf{139} (2009), no.~2, 147--184.
+\href{https://doi.org/10.4064/aa139-2-5}{doi:10.4064/aa139-2-5}.
+
+\bibitem{lindemann}
+F. Lindemann, \emph{Ueber die Zahl $\pi$}, Mathematische Annalen
+\textbf{20} (1882), 213--225.
+\href{https://doi.org/10.1007/BF01446522}{doi:10.1007/BF01446522}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this preprint when using its argument or formalization."
+type: article
+title: "The irrationality exponent of log 2 + cube root of 2 is at most six"
+authors:
+  - family-names: Casper
+    given-names: Ryan Matthew
+date-released: 2026-10-13
+version: "1.0"
+license: CC-BY-4.0
