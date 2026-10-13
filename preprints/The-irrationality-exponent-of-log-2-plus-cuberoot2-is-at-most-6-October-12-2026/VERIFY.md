@@ -26,4 +26,4 @@ The published source and seven-page PDF are the reviewed October 13 manuscript. 
 
 The [build receipt](build/receipt.json) records the exact manuscript and PDF hashes. The [publication manifest](package-manifest.json) binds the distributed paper, companion files, checking inputs, and retained hosted archive. Run `python -I scripts/check-publication.py` from this directory to check their integrity without rebuilding the proof.
 
-The [publication review record](build/publication-review.json) identifies the inspected PDF, GitHub-rendered pages, and successful unauthenticated downloads of the exact PDF, source, and hosted evidence archive.
+The [publication review record](build/publication-review.json) retains the initial publication inspection and downloads. Its publication-date update identifies the rebuilt source and PDF after changing only the title-page date to October 13, 2026; all seven pages were inspected again.

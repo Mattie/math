@@ -19,8 +19,8 @@
       "bytes": 5333
     },
     "README.md": {
-      "sha256": "6724e7145dd089b312c9cc8397ab8b48701cf11c98f5d3c1e36fe47227cdb59e",
-      "bytes": 3966
+      "sha256": "d7bca601fcadf97a9b94a37a24049a3f0b9439683bb882f54d11eab3b40524dd",
+      "bytes": 3945
     },
     "formalizations/AffineDenominators/DenominatorAffine/Arithmetic.lean": {
       "sha256": "242914827725f43a656faaf7867b7660716b7d3f5b11daf8f31e3db7d97df73f",

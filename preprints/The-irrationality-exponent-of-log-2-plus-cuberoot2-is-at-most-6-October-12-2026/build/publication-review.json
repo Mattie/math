@@ -43,5 +43,14 @@
     }
   ],
   "independent_package_review": "Independent model review found no blocker in public inventory, provenance, verification scope, licensing, or frozen artifact identity. It is not human peer review.",
-  "proof_evidence": "Reuses the unchanged frozen source and hosted run 38434422471; the retained ZIP is byte-identical to the audited Actions download."
+  "proof_evidence": "Reuses the unchanged frozen source and hosted run 38434422471; the retained ZIP is byte-identical to the audited Actions download.",
+  "publication_date_update": {
+    "date": "2026-10-13",
+    "scope": "Only the title-page date changed to October 13, 2026; mathematical source and frozen proof evidence are unchanged.",
+    "manuscript_source_sha256": "b2c17d199847e490305b60e13b88525361f6acbeaf8d8f1800cab48ce1531ebe",
+    "pdf_sha256": "81ed8c00fc6038f48cbc2c97d71969c5fec966f1bbd2b53363210a39b79053ea",
+    "pages": 7,
+    "visual_review": "All seven rebuilt pages inspected; no clipping or overlap. Independent model comparison found PDF text unchanged apart from the date, allowing for repagination.",
+    "status": "local review passed"
+  }
 }
