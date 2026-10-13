@@ -1,0 +1,17 @@
+{
+  "status": "compiled and reviewed; six-target comparison and same-byte kernel replays passed locally; fresh hosted verification and downloaded evidence audit passed",
+  "namespace": "OAI.DenominatorAffine",
+  "paper_claims": {
+    "Theorem 1.1 literal pilot bound": "log_three_halves_add_sqrt_two_explicit_bound",
+    "Section 4 and Appendix A irrationality consequence": "log_three_halves_add_sqrt_two_irrational",
+    "Theorem 1.1 exponent upper bound": "log_three_halves_add_sqrt_two_irrationalityExponent_le_four",
+    "Theorem 2.1 affine bound with integrality removed": "Endpoint.paired_eventualLowerBound",
+    "Standard Mathlib exponent exclusion": "log_three_halves_add_sqrt_two_standard_exponent_le_four",
+    "Common cleared selected minor": "Arithmetic.exists_denominator_selected_minor",
+    "Additional transverse scalar cost": "Arithmetic.log_transverseScalar_le",
+    "Coarse budget absorption": "conjugateCost_add_denominator_le"
+  },
+  "source_root": "../../formalizations/AffineDenominators/",
+  "comparison_root": "../../verification/isolated-affine-denominators/",
+  "scope": "The arbitrary real-quadratic-field affine family and slope-removal corollary are not advertised as formalized here."
+}

@@ -1,0 +1,297 @@
+{
+  "status": "passed",
+  "scope": "Six denominator affine targets: fresh new modules, identified inherited caches, full exported-body replay",
+  "evidence_kind": "fresh execution",
+  "started_utc": "2026-10-12T12:15:52Z",
+  "finished_utc": "2026-10-12T13:07:47Z",
+  "targets": [
+    "DenominatorAffineVerification.general_eventual_lower_bound",
+    "DenominatorAffineVerification.eventual_lower_bound",
+    "DenominatorAffineVerification.explicit_bound",
+    "DenominatorAffineVerification.irrational",
+    "DenominatorAffineVerification.irrationality_exponent_le_four",
+    "DenominatorAffineVerification.standard_exponent_le_four"
+  ],
+  "source_manifest_sha256": "fd7028cf887064abf5fdaa59a6a2a2d070de51ea358273e3464bb09a29593e16",
+  "runner_sha256": "4a3a135bc13636d5d072db5a118f161d34bc5409184c461d5457b613df101570",
+  "adapter_sha256": "0cc6ed36c2423423baa8194f0cd050b588ac7c2945d69143bae5560d6ca08d2a",
+  "inventory_driver_sha256": "fbc6fc0f6232d9de19412b7b21c290083924124d36fe5183d9aee59156ea95a0",
+  "checks": {
+    "tools": "passed",
+    "isolation": "passed",
+    "valid": "passed",
+    "mismatch": "passed",
+    "axiom": "passed",
+    "imported-admission": "passed",
+    "semantic-comparison-primary-kernels": "passed",
+    "retained-export-inventory": "passed",
+    "nanoda-same-byte": "passed",
+    "stock-lean-same-byte": "passed",
+    "protected-inputs": "passed"
+  },
+  "pins": {
+    "schema_version": 1,
+    "lean_version": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "lean_archive_sha256": "3013aba02bb8bf31b1cf8c9d956d60fb95bb1c10920dfe91abcaa59cb461ddac",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "rust": "1.99.0",
+    "exporter": "05d43a2bc773b40ecfdebb32294192a5ef756951",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "comparator": "ca04cfc72b550331658ec314bf47685281bfd4bf",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"
+  },
+  "candidate": {
+    "initial_denominator_compiled_modules": 0,
+    "inherited_source_count": 966,
+    "inherited_compiled_files": 7688
+  },
+  "export": {
+    "sha256": "fd0f5d689cc5f04f723d4c105a8da84e0d1f8a4c7356cf01c9db3afeac9f5dd6",
+    "bytes": 1281194270,
+    "public_targets": 6,
+    "comparison_targets": 6
+  },
+  "body_controls": {
+    "receipt_sha256": "a1fd8bd32ff4382a676c997a58e7dd10ab4ae2629546d2c2d4f218cfe027b5cd",
+    "stock_sha256": "ae92c625e612fff1c90e329344d22e3c3c330383cb335ce28fd41435be3b3b94"
+  },
+  "boundary": {
+    "allowed": 0,
+    "challenge": 13,
+    "config": 13,
+    "tool": 13,
+    "outside": 13,
+    "symlink": 13,
+    "unix_stream": 97,
+    "unix_dgram": 97
+  },
+  "commands": [
+    {
+      "label": "unrestricted-boundary-baseline",
+      "exit_code": 0,
+      "log": "logs/00-unrestricted-boundary-baseline.log",
+      "log_sha256": "00c962cb4ded6c94f1b6eefdd4581f3ee3e51f95cfe844e697cbcd5b8689df0e"
+    },
+    {
+      "label": "valid-lake-update",
+      "exit_code": 0,
+      "log": "logs/01-valid-lake-update.log",
+      "log_sha256": "402e3f84c52bb2977616bf3e80a2a5ff5132a532ea0585358df10bb5673af125"
+    },
+    {
+      "label": "valid-comparator",
+      "exit_code": 0,
+      "log": "logs/02-valid-comparator.log",
+      "log_sha256": "80721ce32696ad4a9eb24e69c1278edab329f0d9fad2a29a4ec5ae0a61b68432"
+    },
+    {
+      "label": "mismatch-lake-update",
+      "exit_code": 0,
+      "log": "logs/03-mismatch-lake-update.log",
+      "log_sha256": "402e3f84c52bb2977616bf3e80a2a5ff5132a532ea0585358df10bb5673af125"
+    },
+    {
+      "label": "mismatch-comparator",
+      "exit_code": 1,
+      "log": "logs/04-mismatch-comparator.log",
+      "log_sha256": "a17a681eaf790f192fbf4304a058f2066f62d2c46497e5d994db523c32815dbf"
+    },
+    {
+      "label": "axiom-lake-update",
+      "exit_code": 0,
+      "log": "logs/05-axiom-lake-update.log",
+      "log_sha256": "402e3f84c52bb2977616bf3e80a2a5ff5132a532ea0585358df10bb5673af125"
+    },
+    {
+      "label": "axiom-comparator",
+      "exit_code": 1,
+      "log": "logs/06-axiom-comparator.log",
+      "log_sha256": "27ab3246ce2d89ffbda95163f48721f3dd0be23bc6e92ebcdd8443c7af57a00a"
+    },
+    {
+      "label": "imported-admission-lake-update",
+      "exit_code": 0,
+      "log": "logs/07-imported-admission-lake-update.log",
+      "log_sha256": "f14e7d862eb5d2c9dc3b6eef44068d7e22813d88c91bfe7a8a872057a1e69f49"
+    },
+    {
+      "label": "imported-admission-comparator",
+      "exit_code": 1,
+      "log": "logs/08-imported-admission-comparator.log",
+      "log_sha256": "c32fb7d97fe962ee57102a7f46b0ed1c4c80a733fb161ed93a758168e7aa089d"
+    },
+    {
+      "label": "dependency-mathlib",
+      "exit_code": 0,
+      "log": "logs/09-dependency-mathlib.log",
+      "log_sha256": "d26684ea790064f49bcb150415b3a062ec30b5e646b207927aa3fc5fcbb43fbe"
+    },
+    {
+      "label": "dependency-clean-mathlib",
+      "exit_code": 0,
+      "log": "logs/10-dependency-clean-mathlib.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "dependency-plausible",
+      "exit_code": 0,
+      "log": "logs/11-dependency-plausible.log",
+      "log_sha256": "8e19735519205e6e1b0a59824699f406af5b5ce84a32d2a6c583717ce045b900"
+    },
+    {
+      "label": "dependency-clean-plausible",
+      "exit_code": 0,
+      "log": "logs/12-dependency-clean-plausible.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "dependency-LeanSearchClient",
+      "exit_code": 0,
+      "log": "logs/13-dependency-LeanSearchClient.log",
+      "log_sha256": "969f2fabfb7ffe3973dce9836aa523b36b30aba71950f358c0148f7daf1909cd"
+    },
+    {
+      "label": "dependency-clean-LeanSearchClient",
+      "exit_code": 0,
+      "log": "logs/14-dependency-clean-LeanSearchClient.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "dependency-importGraph",
+      "exit_code": 0,
+      "log": "logs/15-dependency-importGraph.log",
+      "log_sha256": "b7befbf415605485d009aa7b002b346adb7ee3ce028e97b697fe5f259d320274"
+    },
+    {
+      "label": "dependency-clean-importGraph",
+      "exit_code": 0,
+      "log": "logs/16-dependency-clean-importGraph.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "dependency-proofwidgets",
+      "exit_code": 0,
+      "log": "logs/17-dependency-proofwidgets.log",
+      "log_sha256": "5c6fde3e5ec3bc7c00fcedc25e51a7d1d68b2dd0ba1057f4cd3a742f780cfc1d"
+    },
+    {
+      "label": "dependency-clean-proofwidgets",
+      "exit_code": 0,
+      "log": "logs/18-dependency-clean-proofwidgets.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "dependency-aesop",
+      "exit_code": 0,
+      "log": "logs/19-dependency-aesop.log",
+      "log_sha256": "e2f238dae0ad15ad802261fd5664fbb7264ca23028ec463653ee359dedad69b1"
+    },
+    {
+      "label": "dependency-clean-aesop",
+      "exit_code": 0,
+      "log": "logs/20-dependency-clean-aesop.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "dependency-Qq",
+      "exit_code": 0,
+      "log": "logs/21-dependency-Qq.log",
+      "log_sha256": "6ea0e5d827cd28719f0f8303c77c64ffd115d117fb873c61dcc064c789b49021"
+    },
+    {
+      "label": "dependency-clean-Qq",
+      "exit_code": 0,
+      "log": "logs/22-dependency-clean-Qq.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "dependency-batteries",
+      "exit_code": 0,
+      "log": "logs/23-dependency-batteries.log",
+      "log_sha256": "a10c5cc1562c7e05002879cbb387405d1e84dfb2b052e4a9da3d7b0915278e17"
+    },
+    {
+      "label": "dependency-clean-batteries",
+      "exit_code": 0,
+      "log": "logs/24-dependency-clean-batteries.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "dependency-Cli",
+      "exit_code": 0,
+      "log": "logs/25-dependency-Cli.log",
+      "log_sha256": "2e20e2a649dd57be51b7d287730d045342813e1fa6e2e7de3e2a6c249e2c51c1"
+    },
+    {
+      "label": "dependency-clean-Cli",
+      "exit_code": 0,
+      "log": "logs/26-dependency-clean-Cli.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "six-target-comparison",
+      "exit_code": 0,
+      "log": "logs/27-six-target-comparison.log",
+      "log_sha256": "648408230b5eba8c4b68e1799be8dc830dd0175726c14aa91af8edc4cb964c98"
+    },
+    {
+      "label": "nanoda-same-byte",
+      "exit_code": 0,
+      "log": "logs/28-nanoda-same-byte.log",
+      "log_sha256": "a15570d79e7fb389e23ddfe2e285703f8d3e5c2a11d80b4419c6f7dd538824b7"
+    },
+    {
+      "label": "stock-lean-4.34.1-same-byte",
+      "exit_code": 0,
+      "log": "logs/29-stock-lean-4.34.1-same-byte.log",
+      "log_sha256": "df6ce7e0c746a7f2e075d9756358600cff46d7e4c7fa8e07bcdb89abd581f1f5"
+    }
+  ],
+  "binaries": {
+    "lean": {
+      "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+    },
+    "lake": {
+      "sha256": "6f53827dab18010d6c690d14c8401cacabc1db958edb3552a877ed4cf1dd995d"
+    },
+    "comparator": {
+      "sha256": "afa65e57a1770f5961efe7681626a9a1cd99705262421658abd30b705f66e4a2"
+    },
+    "probe": {
+      "sha256": "f580d4d2edfcabc34558829498306929a658cf018c113c00b27c31d65db6638f"
+    },
+    "COMPARATOR_LANDRUN": {
+      "sha256": "3974b08f5b912d3a6396dfddc2071b7cd3b932ac13800703d2547d3f06ccc5eb"
+    },
+    "COMPARATOR_LEAN4EXPORT": {
+      "sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1"
+    },
+    "COMPARATOR_NANODA": {
+      "sha256": "a58f6590e9561bd296b7b187d75515fb3e6920defcaeac3582417579210e062d"
+    }
+  },
+  "dependencies": {
+    "revisions": {
+      "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+      "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+    },
+    "scope": "Pinned tracked sources checked; existing upstream compiled cache reused"
+  },
+  "raw_receipt_sha256": "30288084b16a128e2768f75d006c2c96e6097f09ce03546be972263535f037fe",
+  "raw_evidence_index_sha256": "080174869b803aa08b7b12bb3786a7ebc7cd9f4bcbcf3c0fd74effe5ea8ea54d",
+  "evidence_note": "Fresh local execution using identified inherited/upstream caches; no hosted or complete source rebuild claim. Raw evidence and full export retained privately.",
+  "limitations": [
+    "Nanoda selected pin accepts the malformed-projection diagnostic; Lean replay of identical bytes is mandatory.",
+    "Export retention relationship to the Comparator temporary input assumes no concurrent modification.",
+    "Source identity and cache identity do not authenticate cached objects as built from those sources.",
+    "Standalone stock replay supplies neither semantic comparison nor an axiom allowlist; separate gates enforce those requirements."
+  ]
+}

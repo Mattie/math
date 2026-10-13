@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "scope": "Separately built Lean 4.34.1 reader and tiny proof-body controls",
+  "started_utc": "2026-10-12T12:07:09Z",
+  "commands": [
+    {
+      "label": "lean-version",
+      "exit": 0,
+      "log": "lean-version.log",
+      "sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680"
+    },
+    {
+      "label": "exporter-revision",
+      "exit": 0,
+      "log": "exporter-revision.log",
+      "sha256": "cab9d8a8ad5cd24248ee438e5b71ecf8a58893f2fda52b2816ebfdf42f1e1f6c"
+    },
+    {
+      "label": "linkage",
+      "exit": 0,
+      "log": "linkage.log",
+      "sha256": "13e7c8822b84339e5822f101043dfd1e6f95fa753c8158b825504fc542627def"
+    },
+    {
+      "label": "positive",
+      "exit": 0,
+      "log": "positive.log",
+      "sha256": "20735df52a715eb7ff28d1b67703be68a7b72c5fed57ebb94d65f7cdc91c67a4"
+    },
+    {
+      "label": "negative-parses",
+      "exit": 0,
+      "log": "negative-parses.log",
+      "sha256": "bca3214577d4b066dd3a14eb423a51d9d3490e06aeab3b1a9e7df38d5440bb59"
+    },
+    {
+      "label": "negative-kernel",
+      "exit": 1,
+      "log": "negative-kernel.log",
+      "sha256": "cf05b37fa1d6f0d5f7c1a64547a968e848f8b68c7a1917cb30f5ae35875f68ee"
+    },
+    {
+      "label": "nanoda-positive",
+      "exit": 0,
+      "log": "nanoda-positive.log",
+      "sha256": "c1fa7916f87ae8ba410328a59926cd3d386345f7d6139113782bed84d677609b"
+    },
+    {
+      "label": "nanoda-negative",
+      "exit": 101,
+      "log": "nanoda-negative.log",
+      "sha256": "52951516fdf2ebf20e0b9087e94b9764bbac370381df19a438699f0d0f94898f"
+    }
+  ],
+  "mutation": "Only validation_control proof value becomes its type expression; name/type/axioms unchanged.",
+  "inputs": {
+    "controls/positive.ndjson": "27f3cede3d4a16074bee8588a0969ebcdec5ad2d8af5af1ec8fc5e30143b71ad",
+    "controls/ill-typed.ndjson": "bd6be27b1f8e01147117e42dbb5b4c007ee2dec5c2f72b4f56187419896e45d7",
+    "stock-reader/.lake/build/bin/kernel": "ae92c625e612fff1c90e329344d22e3c3c330383cb335ce28fd41435be3b3b94",
+    "stock-build.log": "5076cd8d0a9550062eb9c4e5ef205f78ee263374a4e491f042cc13bc073e6534",
+    "stock-reader/Main.lean": "556dd7ff4498ab19fecfa3c268d48090b2e7e723abd59f43d8e513c9769d8e5c",
+    "stock-reader/lakefile.toml": "6142aec0f3976cc9f814eb351b759e09512e4da411103fcafd50b2965fea4e2f",
+    "stock-reader/lake-manifest.json": "b98e8517cd6dc16f7903a215c701fb9942011f19dc58fa6cff03acf371a1ef95",
+    "stock-reader/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+  },
+  "binaries": {
+    "lean": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "lake": "6f53827dab18010d6c690d14c8401cacabc1db958edb3552a877ed4cf1dd995d",
+    "nanoda_bin": "a58f6590e9561bd296b7b187d75515fb3e6920defcaeac3582417579210e062d"
+  },
+  "finished_utc": "2026-10-12T12:07:11Z",
+  "raw_receipt_sha256": "a1fd8bd32ff4382a676c997a58e7dd10ab4ae2629546d2c2d4f218cfe027b5cd",
+  "evidence_note": "Sanitized summary of fresh execution; raw logs retained privately and identified by digest."
+}

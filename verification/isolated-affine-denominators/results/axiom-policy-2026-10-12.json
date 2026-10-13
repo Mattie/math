@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "targets_checked": 7,
+  "axioms": {
+    "OAI.DenominatorAffine.Endpoint.paired_fixed_denominator_eventualLowerBound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.DenominatorAffine.Endpoint.paired_eventualLowerBound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_eventualLowerBound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_explicit_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_irrational": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_irrationalityExponent_le_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_standard_exponent_le_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "source_manifest_sha256": "5071886b9d4a71129e75f0af78f4c6c0326d96b0e4768f52fe3ee99f5596d575",
+  "target_map_sha256": "9cc7b1c3b80f97647f705fbeb435f29c5b8931105f0088fb40dd4d4dda9235cb",
+  "log_sha256": "7ed205947a96abf0d9caa1e04712a53903a098b62e276e029a18a4ec99a99cfd",
+  "axiom_policy_sha256": "e65d52eceb7aaf90d287796010f8fb2a7cc0ae81907080455fd5d341fa24c137",
+  "scope": "Fresh application of unchanged policy to seven compiled endpoint diagnostics",
+  "raw_receipt_sha256": "03ec30c5bb8fdd71a880c8a9e610a4afcd29f4316ae268b478cf813b5730e73e",
+  "evidence_note": "Sanitized summary of fresh execution; raw logs retained privately and identified by digest."
+}

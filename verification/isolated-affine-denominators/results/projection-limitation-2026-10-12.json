@@ -1,0 +1,44 @@
+{
+  "status": "classified",
+  "scope": "Nanoda issue 47 exact-pin regression classification; not theorem evidence",
+  "issue": "https://github.com/ammkrn/nanoda_lib/issues/47",
+  "classification": "selected Nanoda pin accepts invalid projection; stock Lean rejects",
+  "source_sha256": "465d7c212d8f965c96e99481a42851e9297262fd42e984750b02476173a75a54",
+  "export_sha256": "59d0efe0b4e140151ae60a51a67e9e03feb5345e0d880f2756404f834459186d",
+  "started_utc": "2026-10-12T12:28:04Z",
+  "finished_utc": "2026-10-12T12:28:11Z",
+  "binaries": {
+    "lean": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "lean4export": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1",
+    "nanoda_bin": "a58f6590e9561bd296b7b187d75515fb3e6920defcaeac3582417579210e062d",
+    "kernel": "ae92c625e612fff1c90e329344d22e3c3c330383cb335ce28fd41435be3b3b94"
+  },
+  "controls": [
+    {
+      "label": "ordinary-lean-rejects",
+      "exit": 1,
+      "sha256": "acc3a97252d5b77fb62d2b3e9991b58125b451cb3335e2ffa5eb605c29c3939c"
+    },
+    {
+      "label": "construct-negative-fixture",
+      "exit": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "export-negative-fixture",
+      "exit": 0,
+      "sha256": "59d0efe0b4e140151ae60a51a67e9e03feb5345e0d880f2756404f834459186d"
+    },
+    {
+      "label": "nanoda",
+      "exit": 0,
+      "sha256": "4b4c375f0a90bd8d2abf51dfea6fb5c716994fdd8ba94dba006f4ff7c90d5561"
+    },
+    {
+      "label": "stock-lean",
+      "exit": 1,
+      "sha256": "7e5d737bd63a16abd6e4468e87001b927bb0df267b2d0510cf7d3b47c14f0243"
+    }
+  ],
+  "interpretation": "Nanoda-only acceptance is insufficient. The new proof requires stock Lean acceptance on the same retained bytes; this fixture is excluded from candidate sources."
+}

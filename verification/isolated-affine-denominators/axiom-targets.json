@@ -1,0 +1,9 @@
+[
+  "OAI.DenominatorAffine.Endpoint.paired_fixed_denominator_eventualLowerBound",
+  "OAI.DenominatorAffine.Endpoint.paired_eventualLowerBound",
+  "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_eventualLowerBound",
+  "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_explicit_bound",
+  "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_irrational",
+  "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_irrationalityExponent_le_four",
+  "OAI.DenominatorAffine.log_three_halves_add_sqrt_two_standard_exponent_le_four"
+]

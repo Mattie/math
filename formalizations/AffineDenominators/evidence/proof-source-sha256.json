@@ -1,0 +1,52 @@
+[
+  {
+    "bytes": 1516,
+    "path": "DenominatorAffine/Arithmetic.lean",
+    "sha256": "242914827725f43a656faaf7867b7660716b7d3f5b11daf8f31e3db7d97df73f"
+  },
+  {
+    "bytes": 1445,
+    "path": "DenominatorAffine/ArithmeticClearing.lean",
+    "sha256": "54d6c564d1bce65d1ac5dc33e6268668c3498000b6e3bb2833c5433c03cb14f1"
+  },
+  {
+    "bytes": 1314,
+    "path": "DenominatorAffine/Audit.lean",
+    "sha256": "e11192355e62a998dcc8dbc785bbc99ceccd879f68cb87ec467abac77345e62e"
+  },
+  {
+    "bytes": 1695,
+    "path": "DenominatorAffine/CoarseAbsorption.lean",
+    "sha256": "fc69caf8f82eda4e1669a5b043094d30b94bfa2bef3a9761cfdd75ae235015b0"
+  },
+  {
+    "bytes": 12815,
+    "path": "DenominatorAffine/Endpoint.lean",
+    "sha256": "eb4941d4c2e23b3a6769a7af53affae3f01ea3d87258600b3e5ffd691448a0c9"
+  },
+  {
+    "bytes": 3946,
+    "path": "DenominatorAffine/Pilot.lean",
+    "sha256": "84b3851cf6061a80631244991b805f9760e17453d1320fa2bb8e15cb71a63f72"
+  },
+  {
+    "bytes": 5422,
+    "path": "DenominatorAffine/TransverseArithmetic.lean",
+    "sha256": "f9a6e5e3150554bc4819cbc3ccbe7d9bdcbc00bdf0d5f12b460f6f275c9a01c6"
+  },
+  {
+    "bytes": 2048,
+    "path": "DenominatorAffine/TransverseClearing.lean",
+    "sha256": "2aa2c0f6737f2cf7a4aa049efb94872b465ba9750e77497a14e78469c3484221"
+  },
+  {
+    "bytes": 3280,
+    "path": "DenominatorAffine/TransverseNorm.lean",
+    "sha256": "8709559e81e47709c1cf9683e92f5bf448231b4727cf8cb5e28a7c30d6e4e22f"
+  },
+  {
+    "bytes": 3542,
+    "path": "DenominatorAffine/TransverseScalar.lean",
+    "sha256": "724d162f23e2ea5119038d205d4dfccb95231dd3dddd12cd061f50d1396394ed"
+  }
+]

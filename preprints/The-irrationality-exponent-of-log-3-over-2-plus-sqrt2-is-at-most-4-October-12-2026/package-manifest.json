@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "status": "Local formalization and replay, fresh hosted source verification, downloaded evidence audit and preprint review passed",
+  "base_revision": "cf1338bcee8fe9f08422ec36e8fdf6dc6392c677",
+  "scope": "New publication files and scoped repository integration; inherited source separately pinned by verification source-manifest.json",
+  "files": {
+    ".github/workflows/isolated-affine-denominators.yml": {
+      "sha256": "a8c75704c44d3cc036f1f5a9ee3fd828ccf10615a10703901edc122e63220658",
+      "bytes": 3176
+    },
+    ".github/workflows/isolated-irrationality.yml": {
+      "sha256": "3aeb5bfeaa588a4aae2800202604625af0b795505df493b38c167b6c01d2c63e",
+      "bytes": 5333
+    },
+    "README.md": {
+      "sha256": "8382387d46635aef2a32cc43e781dd82a4a47ab6e57fe0fe8a734fee497f56aa",
+      "bytes": 3628
+    },
+    "formalizations/AffineDenominators/DenominatorAffine/Arithmetic.lean": {
+      "sha256": "242914827725f43a656faaf7867b7660716b7d3f5b11daf8f31e3db7d97df73f",
+      "bytes": 1516
+    },
+    "formalizations/AffineDenominators/DenominatorAffine/ArithmeticClearing.lean": {
+      "sha256": "54d6c564d1bce65d1ac5dc33e6268668c3498000b6e3bb2833c5433c03cb14f1",
+      "bytes": 1445
+    },
+    "formalizations/AffineDenominators/DenominatorAffine/Audit.lean": {
+      "sha256": "e11192355e62a998dcc8dbc785bbc99ceccd879f68cb87ec467abac77345e62e",
+      "bytes": 1314
+    },
+    "formalizations/AffineDenominators/DenominatorAffine/CoarseAbsorption.lean": {
+      "sha256": "fc69caf8f82eda4e1669a5b043094d30b94bfa2bef3a9761cfdd75ae235015b0",
+      "bytes": 1695
+    },
+    "formalizations/AffineDenominators/DenominatorAffine/Endpoint.lean": {
+      "sha256": "eb4941d4c2e23b3a6769a7af53affae3f01ea3d87258600b3e5ffd691448a0c9",
+      "bytes": 12815
+    },
+    "formalizations/AffineDenominators/DenominatorAffine/Pilot.lean": {
+      "sha256": "84b3851cf6061a80631244991b805f9760e17453d1320fa2bb8e15cb71a63f72",
+      "bytes": 3946
+    },
+    "formalizations/AffineDenominators/DenominatorAffine/TransverseArithmetic.lean": {
+      "sha256": "f9a6e5e3150554bc4819cbc3ccbe7d9bdcbc00bdf0d5f12b460f6f275c9a01c6",
+      "bytes": 5422
+    },
+    "formalizations/AffineDenominators/DenominatorAffine/TransverseClearing.lean": {
+      "sha256": "2aa2c0f6737f2cf7a4aa049efb94872b465ba9750e77497a14e78469c3484221",
+      "bytes": 2048
+    },
+    "formalizations/AffineDenominators/DenominatorAffine/TransverseNorm.lean": {
+      "sha256": "8709559e81e47709c1cf9683e92f5bf448231b4727cf8cb5e28a7c30d6e4e22f",
+      "bytes": 3280
+    },
+    "formalizations/AffineDenominators/DenominatorAffine/TransverseScalar.lean": {
+      "sha256": "724d162f23e2ea5119038d205d4dfccb95231dd3dddd12cd061f50d1396394ed",
+      "bytes": 3542
+    },
+    "formalizations/AffineDenominators/LICENSE": {
+      "sha256": "30ddd1d710f28d9977b9055d560ff893cf7591cb5563b59430ad4e67b0123b2d",
+      "bytes": 1076
+    },
+    "formalizations/AffineDenominators/PROVENANCE.md": {
+      "sha256": "4cb6b3e66873c0de165ce7f291e3d31065d6222aa5250decd32b06c602cf08dc",
+      "bytes": 1847
+    },
+    "formalizations/AffineDenominators/README.md": {
+      "sha256": "2db9640a4d1a0b9156fd994761a50fb3f843cb5137b1dd611473a419557d16d5",
+      "bytes": 3036
+    },
+    "formalizations/AffineDenominators/evidence/proof-source-sha256.json": {
+      "sha256": "5071886b9d4a71129e75f0af78f4c6c0326d96b0e4768f52fe3ee99f5596d575",
+      "bytes": 1666
+    },
+    "formalizations/AffineDenominators/lean-toolchain": {
+      "sha256": "8152090414016dd5dc871752f8ce4ecdbd604d9845758e9b9047cb80101280b5",
+      "bytes": 26
+    },
+    "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/CITATION.cff": {
+      "sha256": "3c4b77c3e1c15a375307ce3cd56908d43f5f10b0262fa65be06aa298c0395630",
+      "bytes": 281
+    },
+    "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/LICENSES.md": {
+      "sha256": "2304c2b32f2f783acd4f1a0bb197d85919769caed676450361524cfa5d325899",
+      "bytes": 850
+    },
+    "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/README.md": {
+      "sha256": "42766f785f9d3921bd1e141f966f2321fa1db39ad60955aa77956cd94587d256",
+      "bytes": 1734
+    },
+    "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/VERIFY.md": {
+      "sha256": "8ccb4b97b03b6bb2c5f083a5028f7477d79b56401c8737eed0693f263336d048",
+      "bytes": 4868
+    },
+    "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/build/main.tex": {
+      "sha256": "78f74f21912e608e9cc1e0ee2e9bf1ce5fb7a913e5726ec2b7e849f80c9d7094",
+      "bytes": 21321
+    },
+    "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/paper.pdf": {
+      "sha256": "ed878d0a9377fd0e9d392fa486f92fdd4a61fe260b0559a2bb001947ef5962b6",
+      "bytes": 96381
+    },
+    "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/scripts/build-paper.ps1": {
+      "sha256": "3024ad27a6dcdf91d554d01b7b699cfc422262a4911e3ebdd28b7aaa12d48806",
+      "bytes": 659
+    },
+    "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/theorem-map.json": {
+      "sha256": "d0dbcbbd6bb6748958cb1bd5c873aaaefea4f518df03219084e7ace0b3313329",
+      "bytes": 1220
+    },
+    "verification/isolated-affine-denominators/.gitignore": {
+      "sha256": "9acbc90d80813d1ac334f4086bc8a14afa6289e35bcc3d94dd8da3a1e85f9239",
+      "bytes": 56
+    },
+    "verification/isolated-affine-denominators/CHECKERS.md": {
+      "sha256": "c072f2ab510d025e32dc7288ff6e56e831d59500388816e404217ea1b3175647",
+      "bytes": 5663
+    },
+    "verification/isolated-affine-denominators/Challenge.lean": {
+      "sha256": "678a477cfd7e6d83508cdec47ab95e0e8c7ca42a11c99bec98120ea6f750461e",
+      "bytes": 2329
+    },
+    "verification/isolated-affine-denominators/README.md": {
+      "sha256": "9e057fccf18a88785e59c8629e7b0da6e0c12b6fa62954314a6e8c0f70c6513c",
+      "bytes": 9866
+    },
+    "verification/isolated-affine-denominators/Solution.lean": {
+      "sha256": "79de8862a8fa860836c69c191bbafe19154619a17d9b98a8d1dff5f7c8245bc3",
+      "bytes": 2289
+    },
+    "verification/isolated-affine-denominators/audit_cache.py": {
+      "sha256": "ffb9a1999d24c7dc3cf3b7ea60dbc6879d3b4a42ce74ee1061d796567a5b56ab",
+      "bytes": 2632
+    },
+    "verification/isolated-affine-denominators/axiom-targets.json": {
+      "sha256": "9cc7b1c3b80f97647f705fbeb435f29c5b8931105f0088fb40dd4d4dda9235cb",
+      "bytes": 540
+    },
+    "verification/isolated-affine-denominators/config.json": {
+      "sha256": "9052bcf3d9a60a97ad8ff7088ca05cf6486ff94ca8e58e1c0e8a6feaa791f720",
+      "bytes": 545
+    },
+    "verification/isolated-affine-denominators/controls/ill-typed.ndjson": {
+      "sha256": "bd6be27b1f8e01147117e42dbb5b4c007ee2dec5c2f72b4f56187419896e45d7",
+      "bytes": 983009
+    },
+    "verification/isolated-affine-denominators/controls/positive.ndjson": {
+      "sha256": "27f3cede3d4a16074bee8588a0969ebcdec5ad2d8af5af1ec8fc5e30143b71ad",
+      "bytes": 982964
+    },
+    "verification/isolated-affine-denominators/controls/projection-invalid.ndjson": {
+      "sha256": "59d0efe0b4e140151ae60a51a67e9e03feb5345e0d880f2756404f834459186d",
+      "bytes": 9112
+    },
+    "verification/isolated-affine-denominators/index_evidence.py": {
+      "sha256": "f29394c6933eb55c889fd667dec33cdee4bc8dcf622b958cb5f8a73ea7f0f74e",
+      "bytes": 1349
+    },
+    "verification/isolated-affine-denominators/inherited-source-sha256.json": {
+      "sha256": "e8b3700b4f1091991704758c5d5d56520597bc1482feb603c717512f77b9e6d1",
+      "bytes": 131942
+    },
+    "verification/isolated-affine-denominators/inventory_export.py": {
+      "sha256": "fbc6fc0f6232d9de19412b7b21c290083924124d36fe5183d9aee59156ea95a0",
+      "bytes": 3486
+    },
+    "verification/isolated-affine-denominators/pins.json": {
+      "sha256": "262659620e2e43aef31a87cd95e824b93d3fe8b64d4f114cd42264f253ba75e9",
+      "bytes": 528
+    },
+    "verification/isolated-affine-denominators/projection_control.py": {
+      "sha256": "7e7648fd1d3c11e350f8317783782c6c72a9c216b6c862686e6df0af4beb45a4",
+      "bytes": 4933
+    },
+    "verification/isolated-affine-denominators/results/axiom-controls-2026-10-12.json": {
+      "sha256": "54c1079196c8c4b9d85ec5eec04a8db5649a6848bd65a90ed1524ecbe973cb0b",
+      "bytes": 3245
+    },
+    "verification/isolated-affine-denominators/results/axiom-policy-2026-10-12.json": {
+      "sha256": "79f31d5ba10aedfa7e0d908d82e0a759dafab2508a79d866680acb248c1bd742",
+      "bytes": 1815
+    },
+    "verification/isolated-affine-denominators/results/evidence-index-2026-10-12.json": {
+      "sha256": "080174869b803aa08b7b12bb3786a7ebc7cd9f4bcbcf3c0fd74effe5ea8ea54d",
+      "bytes": 19831
+    },
+    "verification/isolated-affine-denominators/results/executed-adapter-2026-10-12.py": {
+      "sha256": "0cc6ed36c2423423baa8194f0cd050b588ac7c2945d69143bae5560d6ca08d2a",
+      "bytes": 10446
+    },
+    "verification/isolated-affine-denominators/results/export-inventory-2026-10-12.json": {
+      "sha256": "cf277b6a9c21d3ff000c7d3744c88fef4445e54275220579f0393243944e921c",
+      "bytes": 2167
+    },
+    "verification/isolated-affine-denominators/results/local-replay-2026-10-12.json": {
+      "sha256": "bca891c0f12625b1fafa78126f91094dac7dcc776a94d7b79e37f781835a16ef",
+      "bytes": 11724
+    },
+    "verification/isolated-affine-denominators/results/projection-limitation-2026-10-12.json": {
+      "sha256": "7e823bd051b3c97af34add6c976471e91ee32235b1d80d53823d92c1d00dab1e",
+      "bytes": 1875
+    },
+    "verification/isolated-affine-denominators/results/stock-controls-2026-10-12.json": {
+      "sha256": "6289a695dd05d8ecd5bdf172eacba0a59d669c14604b199e9b7b642d98c6fbdb",
+      "bytes": 3128
+    },
+    "verification/isolated-affine-denominators/run_local.py": {
+      "sha256": "4a3a135bc13636d5d072db5a118f161d34bc5409184c461d5457b613df101570",
+      "bytes": 11369
+    },
+    "verification/isolated-affine-denominators/source-manifest.json": {
+      "sha256": "fd7028cf887064abf5fdaa59a6a2a2d070de51ea358273e3464bb09a29593e16",
+      "bytes": 135525
+    },
+    "verification/isolated-affine-denominators/stock-reader/Main.lean": {
+      "sha256": "556dd7ff4498ab19fecfa3c268d48090b2e7e723abd59f43d8e513c9769d8e5c",
+      "bytes": 980
+    },
+    "verification/isolated-affine-denominators/stock-reader/lake-manifest.json": {
+      "sha256": "b98e8517cd6dc16f7903a215c701fb9942011f19dc58fa6cff03acf371a1ef95",
+      "bytes": 481
+    },
+    "verification/isolated-affine-denominators/stock-reader/lakefile.toml": {
+      "sha256": "6142aec0f3976cc9f814eb351b759e09512e4da411103fcafd50b2965fea4e2f",
+      "bytes": 239
+    },
+    "verification/isolated-affine-denominators/stock-reader/lean-toolchain": {
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "bytes": 25
+    },
+    "verification/isolated-affine-denominators/stock_controls.py": {
+      "sha256": "3db8a632289468f0d6852cacd62073191af2f299678a3947dffdb1309c2c251c",
+      "bytes": 5636
+    },
+    "verification/isolated-affine-denominators/summarize_controls.py": {
+      "sha256": "c5883b10074e00e71d84bf06411919304a2ea08837e6923270cc63ae86b255df",
+      "bytes": 1334
+    },
+    "verification/isolated-affine-denominators/summarize_result.py": {
+      "sha256": "2d814fb064afc29e1c6ebc80c9f59ced1f0c14809a68964f7dfa9926497de7e6",
+      "bytes": 2513
+    },
+    "verification/isolated-affine-denominators/support/retain-export.py": {
+      "sha256": "20e45a4a0552a8aca4c9dbd46ba80ed4406cca8944488ba74a4ef0890945a1e6",
+      "bytes": 2175
+    },
+    "verification/isolated-affine-denominators/test_inventory.py": {
+      "sha256": "b81c7c4b5fad7f442ebe23df8036603ea3e8de5788401cacd9e78c07abf00671",
+      "bytes": 1657
+    },
+    "verification/isolated-affine-denominators/test_verify.py": {
+      "sha256": "5d3a6f92a21e56653b2efc302d4c8e256626d2d1d5f47ba79c05c445050a93f2",
+      "bytes": 7791
+    },
+    "verification/isolated-affine-denominators/verify.py": {
+      "sha256": "297e7464a2705f3a6416511887a66d3e5a671953eedaf65b563c521c1383b28c",
+      "bytes": 11802
+    },
+    ".github/workflows/verify.yml": {
+      "sha256": "8af6a57fcc624276093aa0fabff509a782ef4370f6592a5677bd6f121b8c88c0",
+      "bytes": 9668
+    },
+    "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/scripts/check-publication.py": {
+      "sha256": "43ab267ed519358ff68cf1e493779da66014ca5bf2f0046751e1731f9471f61f",
+      "bytes": 2343
+    },
+    "verification/isolated-affine-denominators/results/hosted-audit-2026-10-12.json": {
+      "sha256": "45392adefc38d924712767d2ba6f5f158b4e966655a363d4272906c96d596c91",
+      "bytes": 3571
+    },
+    "verification/isolated-affine-denominators/results/hosted-evidence-index-2026-10-12.json": {
+      "sha256": "39a63b8dec27cf1a40225547b55532bec25092362fa3e661ca0e19fc8e2470da",
+      "bytes": 14787
+    }
+  },
+  "reader_review": {
+    "pdf": "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/paper.pdf",
+    "pages": 7,
+    "observations": "All scientific pages reviewed; final status and reference pages rendered and inspected after final acceptance wording. No clipped content, unresolved references or LaTeX layout warnings. PDF has no attachments or private operational paths.",
+    "github_rendering": "Pending publication authorization",
+    "public_retrieval": "New package and full export not publicly distributed"
+  }
+}
