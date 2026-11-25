@@ -1,0 +1,22 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "PrimeNumerator.WindowFinal.irrationality_measure_pi_sq",
+    "PrimeNumerator.WindowFinal.rational_upper_bound",
+    "PrimeNumerator.WindowFinal.finite_good_ratios",
+    "PrimeNumerator.WindowCatalogue.pi_sq_catalogue_bound",
+    "PrimeNumerator.WindowCatalogue.pi_sq_catalogue_lt"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

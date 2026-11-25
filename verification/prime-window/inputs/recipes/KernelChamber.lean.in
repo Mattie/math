@@ -1,0 +1,76 @@
+import Chambers
+import Zeta2FourTrajectoryMatrices.ArithmeticNormalization.arithmetic_normalization_chamber
+
+open Zeta2Blueprint Zeta2NextTwo
+
+namespace PrimeNumerator.KernelChamber
+
+theorem chi_carry (N p k : ℕ) (hp : 0 < p) (hk : k < p) :
+    chi N p k = (PrimeChambers.carry p N k : ℤ) := by
+  rw [chi_id N p k hp hk]
+  simp only [PrimeChambers.carry, Nat.cast_add, Nat.cast_ite, Nat.cast_one, Nat.cast_zero]
+
+theorem chi_translate (p t s k : ℕ) (hp : 0 < p) (hk : k < p) :
+    chi (t*p+s) p k = chi s p k := by
+  rw [chi_carry _ _ _ hp hk, chi_carry _ _ _ hp hk, PrimeChambers.carry_translate]
+
+/-- The minimum is attained on a residue, as in upstream `chi_min'`. -/
+-- INSERT upstream chi_min' with renamed binders
+
+theorem phi_translate (p t s : ℕ) (hp : 0 < p) :
+    (phi (((t*p+s : ℕ) : ℝ) / p)).toNat = (phi ((s : ℝ) / p)).toNat := by
+  obtain ⟨k, hk, hmin⟩ := chi_min s p hp
+  have h := Zeta2ANChamber.phi_val (t*p+s) p (phi ((s : ℝ) / p)).toNat k hp
+    ((chi_translate p t s k hp hk).trans hmin) (by
+      intro j hj hjp
+      obtain ⟨m, rfl⟩ := Int.eq_ofNat_of_zero_le hj
+      have hm : m < p := by exact_mod_cast hjp
+      rw [chi_translate p t s m hp hm]
+      exact hp_le_chi s p hp m)
+  exact_mod_cast h
+
+theorem base_shell (N p : ℕ) [Fact p.Prime] (hp2 : 50*N < p^2)
+    (hs : InShell (N%p) 0 p) :
+    p < 8*(N%p) ∧ p.Prime ∧ 50*(N%p) < p^2 ∧ InShell (N%p) 0 p := by
+  have pp : p.Prime := Fact.out
+  have remle := Nat.mod_le N p
+  refine ⟨?_, pp, by nlinarith, hs⟩
+  rcases hs with c|c|c|c|c|c <;> omega
+
+/-- The exact minimum-support signature consumed by both upstream kernel assemblers. -/
+def Uniform (N p : ℕ) : Prop :=
+  ∀ k k' : ℕ, k < p → k' < p →
+    chi N p k = ((phi ((N : ℝ) / p)).toNat : ℤ) →
+    chi N p k' = ((phi ((N : ℝ) / p)).toNat : ℤ) →
+    (11*N % p < k ↔ 11*N % p < k') ∧
+      ∀ u ∈ ({9, 10, 11} : Finset ℕ), (k+u*N)/p = (k'+u*N)/p ∧
+        ((k+u*N)%p < 8*N%p ↔ (k'+u*N)%p < 8*N%p)
+
+theorem uniform_translated (N p : ℕ) [Fact p.Prime] (_pn : p < N)
+    (hp2 : 50*N < p^2) (hs : InShell (N%p) 0 p) : Uniform N p := by
+  have pp : p.Prime := Fact.out
+  have hp := pp.pos
+  have bs := base_shell N p hp2 hs
+  have hs1 : 1 ≤ N%p := by have := bs.1; omega
+  have eqN : N = (N/p)*p + N%p := by
+    simpa [Nat.mul_comm, Nat.add_comm] using (Nat.mod_add_div N p).symm
+  rw [eqN]
+  intro k k' hk hk' hmin hmin'
+  rw [phi_translate p (N/p) (N%p) hp, chi_translate p (N/p) (N%p) k hp hk] at hmin
+  rw [phi_translate p (N/p) (N%p) hp, chi_translate p (N/p) (N%p) k' hp hk'] at hmin'
+  have base := Zeta2ANChamber.chamber_table_core (N%p) 0 p hs1 (by omega)
+    bs k k' hk hk' hmin hmin'
+  have low (u : ℕ) : (u*((N/p)*p+N%p))%p = (u*(N%p))%p := by
+    simpa only [Nat.zero_add] using PrimeChambers.residue_translate p (N/p) (N%p) 0 u
+  refine ⟨?_, ?_⟩
+  · simpa only [low] using base.1
+  · intro u hu
+    obtain ⟨floor, residue⟩ := base.2 u hu
+    constructor
+    · exact (PrimeChambers.high_floor_equal_translate p (N/p) (N%p) k k' u hp).mp floor
+    · simpa only [PrimeChambers.residue_translate, low] using residue
+
+#print axioms uniform_translated
+end PrimeNumerator.KernelChamber
+
+

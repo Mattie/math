@@ -1,0 +1,66 @@
+{
+  "upstream": "https://github.com/RamanujanMachine/zeta2_four_trajectory_matrices",
+  "commit": "a0e8ac417cddc6ffa88e43cfd68d2b58ea339517",
+  "numerator_inputs": {
+    "sprime": {
+      "path": "Zeta2FourTrajectoryMatrices/ArithmeticNormalization/arithmetic_normalization_sprime2.lean",
+      "sha256": "168f610283492d8a02729b8af6c5e717e2c0833aa37ffe85037fe2767a1f7386"
+    },
+    "jval": {
+      "path": "Zeta2FourTrajectoryMatrices/ArithmeticNormalization/arithmetic_normalization_jval.lean",
+      "sha256": "8bc572c52f1afaa086bfd9adeb4c9fb02295fcb3b7ce7b7a043c8a4edf560ea6"
+    },
+    "an": {
+      "path": "Zeta2FourTrajectoryMatrices/ArithmeticNormalization/arithmetic_normalization.lean",
+      "sha256": "36de1e0b7f2080414fff9057fc80bf842f1b70d61785a614c72d5e344359916b"
+    }
+  },
+  "kernel_local_inputs": [
+    {
+      "path": "Zeta2FourTrajectoryMatrices/ArithmeticNormalization/arithmetic_normalization_kernel2.lean",
+      "sha256": "35e87a8febce0f92429ee34dee82342461cfed497d38a881e648c39f25fb649b"
+    },
+    {
+      "path": "Zeta2FourTrajectoryMatrices/ArithmeticNormalization/arithmetic_normalization_kernel3.lean",
+      "sha256": "1b2549cf91312babbc959dab59794cb5d89339b39691ad2aec10ea8acbffc41e"
+    }
+  ],
+  "outputs": {
+    "KernelNumerator.lean": {
+      "generator": "prepare_kernel_numerator.py",
+      "lf_sha256": "784c6a870409d2fac8ff1fc064f0a83cba6194c2d389f4e90b17f72c2d832558",
+      "lf_bytes": 15939
+    },
+    "KernelLocal.lean": {
+      "generator": "prepare_kernel_local.py",
+      "lf_sha256": "65c841d068c8a455e634e505d44dafdef9dd40a712b3da36d28db22759a2c295",
+      "lf_bytes": 8042
+    },
+    "KernelChamber.lean": {
+      "generator": "prepare_kernel_chamber.py",
+      "lf_sha256": "2a3235d1030a327e4af401b58a845ead48383337b4c2ca57e000c60e13fd4b44",
+      "lf_bytes": 3792
+    }
+  },
+  "numerator_declarations": {
+    "kernel_divided_translated": "sprime:kernel_divided_core",
+    "J_val_translated": "jval:J_val_core",
+    "harmonic_sum_translated": "an:zsum_zero",
+    "harmonic_val_translated": "an:harm_val",
+    "lcm_GN_split_translated": "an:lcm_GN_split",
+    "column_zero_divides_translated": "an:arithmetic_normalization"
+  },
+  "kernel_local_declarations": {
+    "residue_of_uniform": "arithmetic_normalization_kernel2:kernel_residue_core",
+    "evaluation_of_uniform": "arithmetic_normalization_kernel3:R_pt_core"
+  },
+  "chamber_input": {
+    "path": "Zeta2FourTrajectoryMatrices/ArithmeticNormalization/arithmetic_normalization_kernel.lean",
+    "sha256": "7d6b8178dcdb55618ad22e97162dbaceb2d921bdab2b50e1725d4f32c484224b",
+    "source_lines": [
+      456,
+      468
+    ],
+    "declaration": "chi_min'"
+  }
+}

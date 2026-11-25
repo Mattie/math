@@ -1,0 +1,13 @@
+{
+  "upstream": {
+    "commit": "a0e8ac417cddc6ffa88e43cfd68d2b58ea339517",
+    "url": "https://github.com/RamanujanMachine/zeta2_four_trajectory_matrices.git"
+  },
+  "pnt": {
+    "commit": "127b50e33f6033e2147921167a117af96d9ba4ea",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+  },
+  "lean_commit": "c29b6dda4f7c20e3eeaa717c4e565663c5cfa364",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "lake_dependencies": "lake-manifest.json"
+}

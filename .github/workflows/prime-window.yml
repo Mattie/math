@@ -1,0 +1,49 @@
+name: Prime-window theorem verification
+on:
+  workflow_dispatch:
+  push:
+    branches: ['codex/verify-prime-window*']
+    paths: ['verification/prime-window/**', '.github/workflows/prime-window.yml']
+permissions:
+  contents: read
+concurrency:
+  group: prime-window-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verification:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+          sparse-checkout: verification/prime-window
+      - name: Prepare disposable runner
+        run: |
+          mkdir -p "$RUNNER_TEMP/prime-window-setup"
+          exec > >(tee "$RUNNER_TEMP/prime-window-setup/prepare.log") 2>&1
+          bash verification/prime-window/runner/prepare-capacity.sh
+          sudo apt-get update -qq
+          sudo apt-get install -y bubblewrap zstd
+          probe=(bwrap --unshare-all --ro-bind /usr /usr --symlink usr/lib /lib --symlink usr/lib64 /lib64 -- /usr/bin/true)
+          if ! "${probe[@]}"; then
+            printf '%s\n' 'abi <abi/4.0>,' 'include <tunables/global>' 'profile prime-window-bwrap /usr/bin/bwrap flags=(unconfined) {' '  userns,' '}' > "$RUNNER_TEMP/prime-window-bwrap.profile"
+            sudo apparmor_parser -r "$RUNNER_TEMP/prime-window-bwrap.profile"
+            "${probe[@]}"
+          fi
+          sudo loginctl enable-linger "$(id -un)"
+          sudo systemctl start "user@$(id -u).service"
+      - name: Rebuild and verify the five endpoints
+        run: |
+          set -o pipefail
+          bash verification/prime-window/runner/run.sh "$RUNNER_TEMP/prime-window" 2>&1 | tee "$RUNNER_TEMP/prime-window-setup/run.log"
+      - name: Retain verifier receipts and logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: prime-window-${{ github.sha }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/prime-window/run/evidence/
+            ${{ runner.temp }}/prime-window-setup/
+          if-no-files-found: warn
+          retention-days: 30
