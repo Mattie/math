@@ -19,8 +19,8 @@
       "bytes": 5333
     },
     "README.md": {
-      "sha256": "d7bca601fcadf97a9b94a37a24049a3f0b9439683bb882f54d11eab3b40524dd",
-      "bytes": 3945
+      "sha256": "9b14b22a8a5550695eb43b65e89e8752c3145bba06b649905af6945bbd30aaec",
+      "bytes": 4234
     },
     "formalizations/AffineDenominators/DenominatorAffine/Arithmetic.lean": {
       "sha256": "242914827725f43a656faaf7867b7660716b7d3f5b11daf8f31e3db7d97df73f",
@@ -263,8 +263,8 @@
       "bytes": 11802
     },
     ".github/workflows/verify.yml": {
-      "sha256": "b6de3be85dea51a2c96f66d8fbf70a073b2c0411b5d339f11338165afe649af0",
-      "bytes": 10320
+      "sha256": "fc6b8fc9be1584f2601c23c9c2dd2f5b4106ece26048131428010feb91e2a57e",
+      "bytes": 10412
     },
     "preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/scripts/check-publication.py": {
       "sha256": "43ab267ed519358ff68cf1e493779da66014ca5bf2f0046751e1731f9471f61f",

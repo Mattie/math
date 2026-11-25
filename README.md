@@ -4,6 +4,7 @@ Preprints and formal AI-researched proofs driven by Ryan Matthew Casper.
 
 ## Preprints
 
+- **November 25, 2026:** [The irrationality exponent of π² is less than 4.589897](preprints/The-irrationality-exponent-of-pi-squared-is-less-than-4.589897-November-25-2026/README.md) — translated prime intervals improve the upper bound for unrestricted rational approximation to π².
 - **October 13, 2026:** [The irrationality exponent of log(2) + ∛2 is at most 6](preprints/The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026/README.md) — cubic extension of the affine determinant bound, with manuscript, Lean formalization, and retained hosted verification evidence.
 - **October 12, 2026:** [The irrationality exponent of log(3/2) + √2 is at most 4](preprints/The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026/README.md) — fixed-denominator extension of the paired affine bound, with manuscript, Lean formalization, and verification status.
 - **October 11, 2026:** [The irrationality exponents of log(2) + √2 and √2 log(2) are at most 4](preprints/The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026/README.md) — three affine logarithmic bounds, with manuscript, formalization, and audited hosted verification.
