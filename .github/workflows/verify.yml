@@ -64,6 +64,7 @@ jobs:
       fail-fast: false
       matrix:
         preprint:
+          - The-irrationality-exponent-of-pi-squared-is-less-than-4.589897-November-25-2026
           - The-irrationality-exponent-of-log-2-plus-cuberoot2-is-at-most-6-October-12-2026
           - The-irrationality-exponent-of-log-3-over-2-plus-sqrt2-is-at-most-4-October-12-2026
           - The-irrationality-exponents-of-log-2-plus-sqrt2-and-sqrt2-log-2-are-at-most-4-October-11-2026

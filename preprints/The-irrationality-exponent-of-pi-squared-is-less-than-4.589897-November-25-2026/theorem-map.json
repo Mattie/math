@@ -1,0 +1,30 @@
+{
+  "title": "The irrationality exponent of π² is less than 4.589897",
+  "theorems": [
+    {
+      "statement": "Exact rational upper bound",
+      "declaration": "PrimeNumerator.WindowFinal.rational_upper_bound",
+      "source": "lean/src/WindowFinal.lean"
+    },
+    {
+      "statement": "Strict decimal upper bound",
+      "declaration": "PrimeNumerator.WindowFinal.irrationality_measure_pi_sq",
+      "source": "lean/src/WindowFinal.lean"
+    },
+    {
+      "statement": "Finiteness of exceptional reduced rationals",
+      "declaration": "PrimeNumerator.WindowFinal.finite_good_ratios",
+      "source": "lean/src/WindowFinal.lean"
+    },
+    {
+      "statement": "Exact bound in the supremum formulation",
+      "declaration": "PrimeNumerator.WindowCatalogue.pi_sq_catalogue_bound",
+      "source": "lean/src/WindowCatalogue.lean"
+    },
+    {
+      "statement": "Strict bound in the supremum formulation",
+      "declaration": "PrimeNumerator.WindowCatalogue.pi_sq_catalogue_lt",
+      "source": "lean/src/WindowCatalogue.lean"
+    }
+  ]
+}

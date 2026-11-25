@@ -1,0 +1,594 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\Fp}{\mathbb F_p}
+\newcommand{\Zp}{\mathbb Z_{(p)}}
+\newcommand{\fl}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\ff}[2]{#1^{\underline{#2}}}
+\newcommand{\val}{v_p}
+\newcommand{\res}{\operatorname*{Res}}
+\hypersetup{pdftitle={The irrationality exponent of π² is less than 4.589897},
+            pdfauthor={Ryan Matthew Casper}}
+\title{The irrationality exponent of \texorpdfstring{$\pi^2$}{pi squared}\\is less than 4.589897}
+\author{Ryan Matthew Casper}
+\date{November 25, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove that the irrationality exponent of $\pi^2$ is less than
+$4.589897$. Leibtag, Barkan, Kalisch, Weinbaum, Shalyt, and Kaminer
+obtained the bound $4.62675$ using rational approximations to
+$\zeta(2)$. They removed a common prime factor $p$ from the numerator
+and denominator whenever $p^2>50n$ and $n/p$ lay in one of six
+intervals. Under the same cutoff, we show that every positive integer
+translate gives primes that divide both coefficients even after this
+normalization. The product of these additional
+primes has logarithm $(0.1086823692\ldots+o(1))n$. Dividing by this
+product reduces both the denominator and the error of the associated
+integer linear form, giving the stated bound. We also give a Lean proof of the exponent bound.
+\end{abstract}
+
+\section{The bound and the primes}
+Since $\pi$ is transcendental, so is $\pi^2$. We study how closely
+rational numbers can approximate it. For an irrational real number
+$\xi$, let $\mu(\xi)$ denote the supremum
+of the real $\nu$ for which $|\xi-a/b|<b^{-\nu}$ has infinitely many
+solutions in reduced fractions $a/b$, $b>0$. Multiplication by a nonzero
+rational preserves this exponent, so Euler's identity
+$\pi^2=6\zeta(2)$ lets us work with $\xi=\zeta(2)$.
+
+\begin{theorem}\label{th:main}
+The irrationality exponent of $\pi^2$ satisfies $\mu(\pi^2)<4.589897$.
+\end{theorem}
+
+In particular, the inequality $|\pi^2-a/b|<b^{-4.589897}$ holds
+for only finitely many reduced fractions $a/b$ with $b>0$.
+
+Our earlier theorem on quadratic periods gives $\mu(\pi/\sqrt d)=2$
+for each positive squarefree integer $d$ \cite[Theorem~1(1)]{Casper}.
+It gives a stronger estimate when the approximants lie in a fixed
+squareclass. Indeed, write $a/b=d(u/v)^2$ with both fractions positive
+and reduced. Then $b=v^2/\gcd(d,v^2)\ge v^2/d$.
+If $|\pi^2-a/b|<b^{-\nu}$ for a fixed $\nu>1$, taking square roots gives
+$|\pi/\sqrt d-u/v|\ll_{d,\nu}v^{-2\nu}$. Since $2\nu>2$, only finitely
+many such fractions exist for each fixed $d$. Theorem~\ref{th:main}
+gives one bound for rational approximants in all squareclasses.
+
+Zudilin obtained the bound $5.095412$ by comparing two hypergeometric
+representations of the same linear forms \cite{Z}. Niedbala Giraudin
+obtained $5.0193784$ by changing their parameters \cite{N}.
+Leibtag et al.\ constructed a trajectory in a conservative matrix field
+and proved $\mu(\zeta(2))<4.62675$ \cite{L}. We use their first-column
+approximants and their estimates for growth, decay, and independence.
+The improvement comes from dividing both integer coefficients by further
+primes.\footnote{Carella proposed $\mu(\pi^2)=2$ in
+\cite[Theorem 1.1]{C}. For the convergents $a_j/b_j$, put
+$z_j=|\pi^2 b_j-a_j|$. Equation (6) gives $|\sin z_j|\asymp z_j$,
+while (8) also needs $b_j^{-1}\ll |\sin z_j|$. If $\mu(\pi^2)>2$,
+Legendre's criterion gives a subsequence with $z_j<b_j^{-1-\delta}$
+for some $\delta>0$. Then $b_j|\sin z_j|\le b_jz_j\to0$ along this
+subsequence, so (6) alone does not give the lower bound in (8).}
+
+Write $\mathcal I$ for the collection of intervals
+\begin{equation}\label{eq:intervals}
+ \left(\tfrac18,\tfrac2{13}\right),\
+ \left(\tfrac29,\tfrac3{13}\right),\
+ \left(\tfrac3{10},\tfrac4{13}\right),\
+ \left(\tfrac38,\tfrac5{13}\right),\
+ \left(\tfrac49,\tfrac6{13}\right),\
+ \left(\tfrac89,\tfrac{12}{13}\right),
+\end{equation}
+and let $I$ be their union. The first-column normalization in \cite{L}
+already removes one factor $p$ when $n/p\in I$ and $p^2>50n$.
+Let $(P_n,Q_n)$ be the resulting integral pair, given explicitly in
+\eqref{eq:pq}. The following theorem gives a further common divisor.
+
+\begin{theorem}\label{th:div}
+If $n$ is a positive integer, $p$ is prime, $50n<p^2$, and
+$n/p\in t+I$ for an integer $t\ge1$,
+then $p$ divides both $P_n$ and $Q_n$.
+\end{theorem}
+
+The original six intervals use primes larger than $n$. Every translated
+interval uses primes smaller than $n$. To see why the same intervals
+occur again, write $n=tp+r$ and group the coefficient indices as
+$j=k+p\ell$, with $0\le k<p$. Divide each coefficient by the common
+power of $p$ coming from its carries and reduce modulo $p$. It then
+splits into two factors. The low factor depends on $k$ and the
+remainder $r$. The high factor can change with $t$ and $\ell$, but
+is constant as $k$ varies over the block. The low factors sum to zero in
+$\Fp$. For the numerator we will need this cancellation twice, once
+with harmonic weights and once in a finite difference.
+
+\section{The first-column forms}
+We recall the finite first-column formula in \cite[\S6 and Appendix B]{L}
+and its detailed derivation in \cite{LC}. Write $m=11n$ and put
+\[
+ F(s)=\prod_{u=9}^{11}\binom{s+un}{8n},\qquad
+ c_j=(-1)^j\binom mj F(j),\qquad
+ R(s)=\frac{(-1)^m m!\,F(s)}{\prod_{j=0}^{m}(s-j)} .
+\]
+Unless otherwise specified, products or sums indexed by $u$ range
+over $9,10,11$. The polynomial part $S$ of $R$ satisfies
+\begin{equation}\label{eq:partial}
+ S(s)=R(s)-\sum_{j=0}^m\frac{c_j}{s-j},\qquad \deg S\le13n-1 .
+\end{equation}
+With $\Delta f(s)=f(s+1)-f(s)$ and $H_b^{(2)}=\sum_{i=1}^b i^{-2}$,
+define
+\begin{align}
+ B_n&=\sum_{j=0}^m c_j,\qquad
+ J_\eta(S)=\sum_{i=0}^{13n-1}\frac{(-1)^i}{i+1}\Delta^i S(-\eta),
+ \nonumber\\
+ A_n&=\sum_{j=0}^m c_j H_{j+\eta}^{(2)}+J_\eta(S).
+ \label{eq:finite}
+\end{align}
+The finite first-column identity of \cite{LC} allows any integer
+$2n\le\eta\le9n$. We will choose a multiple of $p$ so that, after
+scaling by $p^2$, the harmonic weight is constant modulo $p$ on each block. To see the invariance directly, note that
+$J_{\eta+1}(S)-J_\eta(S)=-S'(-\eta-1)$, as follows by testing
+$S(s)=e^{zs}$ coefficient by coefficient. The sum defining $J_\eta$
+on this series agrees with $e^{-\eta z}z/(e^z-1)$ through degree
+$13n-1$ in $z$, enough for every polynomial under consideration.
+Thus the change in $A_n$
+is $-R'(-\eta-1)$ by \eqref{eq:partial}. At
+$-9n\le s\le-2n-1$, the binomials with $u=9,10$ both vanish, so
+$R'(s)=0$.
+
+Write $L_j=\operatorname{lcm}(1,\ldots,j)$. For $0\le y<1$ set
+\[
+ \rho(x,y)=[y>\{11x\}]+\sum_u[\{ux+y\}<\{8x\}],\qquad
+ \phi(x)=\min_{0\le y<1}\rho(x,y).
+\]
+Here brackets denote indicators and braces denote fractional parts.
+This is the carry function of \cite{L}, written with fractional
+parts. The normalization uses two divisors,
+\[
+ G_n=\prod_{\sqrt{50n}<p\le13n}p^{\phi(n/p)},\qquad
+ E_n=\prod_{\substack{p^2>50n\\ n/p\in I}}p ,
+\]
+where both products run over primes. With $C_n=F(0)$, the
+first-column entries $\mathsf P_{n,0},\mathsf Q_{n,0}$ in the finite
+identity of \cite{LC} satisfy
+$C_n(\mathsf P_{n,0},\mathsf Q_{n,0})=2(A_n,B_n)$.
+The integral normalization in \cite[Lemmas 6.20--6.21]{L} is thus
+\begin{equation}\label{eq:pq}
+ (P_n,Q_n)=2\,\frac{L_{12n}L_{13n}}{G_nE_n}\,(A_n,B_n)\ \in\mathbb Z^2 .
+\end{equation}
+
+\section{The low digit}
+The companion proof of Leibtag et al.\ \cite{LC} constructs the
+low polynomial (Q) and the kernel congruences (R), (C$'$), and
+(S$'$) for the six original intervals. We show how their table
+(T) changes when $n$ increases by a multiple of $p$, then derive the residue and interpolation identities for $p<n$.
+Fix $n,p$ as in Theorem~\ref{th:div}. Thus $p<n$ and $p>50$.
+Write $8n=ap+b$, $11n=Mp+d$, with $0\le b,d<p$, and let
+$H=\phi(n/p)$. For each $0\le k<p$ put
+\[
+ k+un=p\lambda_u+r_u,\quad 0\le r_u<p,\qquad
+ \delta_u=[r_u<b],\quad e=[k>d],\quad \chi(k)=e+\sum_u\delta_u.
+\]
+Then $H=\min_k\chi(k)$. In fact, between $k/p$ and $(k+1)/p$
+all the translated fractional-part tests in $\rho(n/p,y)$ equal
+their values at $k/p$, apart from the first strict test, which can
+only increase. In particular the discrete minimum is attained.
+
+\begin{lemma}\label{lem:table}
+On the set $\chi(k)=H$ the tuple $(e,\lambda_9,\lambda_{10},
+\lambda_{11},\delta_9,\delta_{10},\delta_{11})$ is independent of $k$.
+Also $13n<(3a-M+H)p$.
+\end{lemma}
+\begin{proof}
+Take $x=r/p$, $r=n-tp$. The table below is the first-column table of \cite{LC} evaluated
+at $r$. In this table only, $a=\lfloor8r/p\rfloor$,
+$M=\lfloor11r/p\rfloor$, $\lambda_u=\lfloor(k+ur)/p\rfloor$,
+and $K=3a-M+H$.
+\[
+\begin{array}{c|rr|rr|c|c|r}
+ x&a&M&H&e&(\lambda_9,\lambda_{10},\lambda_{11})&
+      (\delta_9,\delta_{10},\delta_{11})&K\\ \midrule
+ (1/8,2/13)&1&1&0&0&(1,1,1)&(0,0,0)&2\\
+ (2/9,3/13)&1&2&2&0&(2,2,2)&(1,1,0)&3\\
+ (3/10,4/13)&2&3&1&0&(2,3,3)&(0,1,0)&4\\
+ (3/8,5/13)&3&4&0&0&(3,3,4)&(0,0,0)&5\\
+ (4/9,5/11)&3&4&1&0&(4,5,5)&(0,1,0)&6\\
+ (5/11,6/13)&3&5&2&1&(4,5,5)&(0,1,0)&6\\
+ (8/9,10/11)&7&9&0&0&(8,9,10)&(0,0,0)&12\\
+ (10/11,12/13)&7&10&1&1&(8,9,10)&(0,0,0)&12
+\end{array}
+\]
+To recover the table, split $0\le y<1$ at the seven fractional parts
+\[
+ \{11x\},\quad \{-ux\},\quad \{(8-u)x\}\qquad (u=9,10,11).
+\]
+The first cut tests $e$, the next three the jumps of $\lambda_u$,
+and the last three mark
+where $\{ux+y\}$ reaches $\{8x\}$. Test the cuts themselves as well
+as the open pieces, using the strict comparisons in $\rho$.
+Writing the cuts as $\{cx\}$, their order changes only where $cx$
+or $(c-c')x$ is integral.
+These are the base-period cells in \cite{LC}. The two internal
+endpoints with denominator $11$ would force $p=11$.
+In each row $13x<K$. Replacing $r$ by $n=r+tp$ keeps
+$b,d,r_u,e,\delta_u,\chi(k)$ fixed for every $k$. It increases
+$\lambda_u$ by $ut$, $a$ by $8t$, $M$ by $11t$, and $K$ by $13t$.
+For example, the first row gives $13r<2p$. After $t$
+translations this becomes $13(r+tp)<(2+13t)p$. The same increase
+on both sides preserves the strict inequality in every row.
+\end{proof}
+
+Over $\Fp$ consider the rational expression
+\begin{equation}\label{eq:low}
+ U(X)=\frac{\prod_u\binom{X+un}{b}}
+ {(X^p-X)^{H-1}\prod_{j=0}^d(X-j)} .
+\end{equation}
+At $k$, a binomial in the numerator has a simple zero exactly when
+$r_u<b$. Hence $U$ is a polynomial with multiplicity $\chi(k)-H$
+at $k$. This also covers $H=0$, where $X^p-X$ occurs upstairs.
+Its degree is $3b+p-1-d-pH$. Since $3b-d=13n-(3a-M)p$,
+Lemma~\ref{lem:table} gives $3b<d+pH$, so the degree is below $p-1$. The sum of every power $X^i$, $0\le i<p-1$,
+over $\Fp$ is zero in $\Fp$. We therefore have
+\begin{equation}\label{eq:zerosum}
+ U(k)\ne0\ \Longleftrightarrow\ \chi(k)=H,\qquad
+ \sum_{k=0}^{p-1}U(k)=0 .
+\end{equation}
+
+\section{Residues and interpolation}
+Use the tuple from Lemma~\ref{lem:table} to form a rational function
+over $\Fp$ in the high digit $V$. With
+$\ff{x}{h}=x(x-1)\cdots(x-h+1)$, put
+\[
+ G(V)=\frac{\displaystyle\prod_u
+          \frac{\ff{(V+\lambda_u)}{a+\delta_u}}{a!}}
+                {\displaystyle\prod_{\ell=0}^{M-e}(V-\ell)},\qquad
+ C=(-1)^{d-M+H-1}M!\,d! .
+\]
+Write $r_\ell=\res_{V=\ell}G(V)$ for $0\le\ell\le M$, taking
+residue zero at a regular point. The poles in this formula are
+distinct since $M<p$. We take congruences in $\Zp$, the rationals whose reduced
+denominator is prime to $p$.
+
+\begin{lemma}\label{lem:factor}
+Extend $c_j$ by zero beyond $m$. For $0\le k<p$ and $0\le\ell\le M$,
+\begin{equation}\label{eq:coeff}
+ p^{-H}c_{k+p\ell}\equiv C U(k)r_\ell \pmod p .
+\end{equation}
+For integers $M+1\le V\le p-M-2$,
+\begin{equation}\label{eq:away}
+ p^{1-H}R(k+pV)\equiv C U(k)G(V) \pmod p .
+\end{equation}
+\end{lemma}
+\begin{proof}
+For $0\le vp+w<p^2$, $0\le w<p$, Wilson's theorem in each complete
+block gives $p^{-v}(vp+w)!\equiv(-1)^v v!\,w!$. We apply this formula
+first to $c_j$ at $j=k+p\ell\le m$. Its valuation is
+$e+\sum_u\delta_u=\chi(k)$: these are the borrows in $m-j$ and in the
+three subtractions $j+un-8n$. The largest factorial argument is at
+most $22n<p^2$. Suppose first that $\chi(k)=H$. The low factorials
+give the unit
+\[
+ L(k)=\frac{1}{k!(d-k+ep)!}
+       \prod_u\frac{r_u!}{b!(r_u-b+\delta_up)!}.
+\]
+At $k$ remove all factors $X-k$ before evaluating \eqref{eq:low}.
+The corresponding unit of $X^p-X$ is $-1$. Each shifted falling
+factorial of length $b$ contributes
+$(-1)^{\delta_u}r_u!/(r_u-b+\delta_up)!$.
+The inverse unit of $\prod_{j=0}^d(X-j)$ is
+$(-1)^{d-k}/[k!(d-k+ep)!]$. These evaluations follow from
+$z!(p-1-z)!\equiv(-1)^{z+1}$. Combining the signs gives
+\[
+ U(k)=(-1)^{1-e+d-k}L(k).
+\]
+Restoring the high factorials in $c_j$ yields
+\[
+ p^{-H}c_j\equiv
+ (-1)^{k+\ell+H}d!L(k)\frac{M!}{\ell!(M-\ell-e)!}
+      \prod_u\frac{\ff{(\ell+\lambda_u)}{a+\delta_u}}{a!}.
+\]
+The derivative of $\prod_{v=0}^{M-e}(V-v)$ at $\ell$ is
+$(-1)^{M-e-\ell}\ell!(M-e-\ell)!$. This proves \eqref{eq:coeff}
+at each included minimum. For larger carry, both sides vanish.
+
+In the final block $\ell=M$ we omit $k>d$. If the minimum tuple
+has $e=0$, those omitted residues have $U(k)=0$. If it has $e=1$,
+$G$ is regular at $M$, so $r_M=0$. Thus \eqref{eq:coeff} holds on
+the completed final block as well.
+
+For \eqref{eq:away}, write $s=k+pV$ and use
+$R(s)=(-1)^m m!F(s)(s-m-1)!/s!$. Now $s>m$ and $s+m<p^2$.
+The high digit of $s-m-1$ is $V-M-1+e$, and its low digit is
+$p-1-(d-k+ep)$. Counting the high digits gives
+$\val(R(s))=\chi(k)-1$. At a minimum the high factorial ratio
+$(V-M-1+e)!/V!$ supplies the denominator of $G(V)$, and the three
+binomials supply its numerator. For the low factorial left by
+$(s-m-1)!$, use the complement formula above. The signs from
+$(-1)^m$, the factorial units, and the complement are respectively
+$(-1)^{M+d}$, $(-1)^{H-1}$, and $(-1)^{d-k+e+1}$.
+Together with the formula for $U(k)$, this gives $C U(k)G(V)$.
+Higher carry again gives zero.
+\end{proof}
+
+Congruence \eqref{eq:away} gives $R$ away from the poles of $G$.
+The numerator in \eqref{eq:finite} needs the polynomial part $S$ at
+negative integers, including classes where $G$ has a pole. At nodes
+away from the poles, both $R$ and its pole terms have the factor
+$U(k)$ after scaling and reduction. We subtract those terms there,
+then interpolate the remaining high-digit factor. The same polynomial
+$J$ will serve for every $k$.
+
+\begin{lemma}\label{lem:interpolate}
+There is a polynomial $J\in\Fp[V]$ such that, for all integers $v$
+and all $0\le k<p$,
+\[
+ T(k+pv)\in\Zp,\qquad T(k+pv)\equiv U(k)J(v)\pmod p,\qquad
+ T=p^{1-H}S .
+\]
+\end{lemma}
+\begin{proof}
+First $T$ takes values in $\Zp$ at every integer.
+To see this, take the $13n$ consecutive nodes $s=-13n,\ldots,-1$.
+Every nonzero factor of $F(s)$ and of the pole denominator in $R(s)$
+has absolute value at most $24n<p^2$. Write $s=k+pv$ with $0\le k<p$.
+In the $u$th falling factorial of $F(s)$ there are $a+\delta_u$
+multiples of $p$, compared to $a$ in $(8n)!$.
+The pole denominator has $M+1-e$ such factors, compared to $M$ in $m!$.
+Hence $R(s)=0$ or $\val(R(s))=\chi(k)-1$.
+Every $c_j/(s-j)$ has valuation at least $H-1$ by the same bound
+on $|s-j|$ and the coefficient valuation in Lemma~\ref{lem:factor}.
+Equation~\eqref{eq:partial} gives $T(s)\in\Zp$ at these nodes.
+Newton interpolation in the basis $\binom{s+13n}{i}$, using
+$\deg T\le13n-1$, gives this integrality
+at every integer and hence $\Delta^iT(0)\in\Zp$ for every $i$.
+
+Set $D=\lfloor(13n-1)/p\rfloor$. For each fixed $k$ the reductions
+of $T(k+pv)$ are the values of a polynomial $W_k(v)$ over $\Fp$
+of degree at most $D$. Indeed, expand $T$ in
+$\binom{s}{i}$ with coefficients $\Delta^iT(0)$. If $i=hp+z$,
+$0\le z<p$, then
+\[
+ \binom{k+pv}{hp+z}\equiv\binom kz\binom vh\pmod p .
+\]
+This identity holds even for negative integers $v$: compare
+coefficients in $(1+X)^{k+pv}\equiv(1+X)^k(1+X^p)^v$ as formal
+power series. Here $h\le D<p$, so $\binom vh$ has degree $h$ over
+$\Fp$.
+
+Take the $D+1$ nodes $V=M+1,\ldots,M+D+1$. They lie in the range
+of \eqref{eq:away}, since $2M+D+3\le35n/p+3<p$.
+In \eqref{eq:partial} the terms with $j\not\equiv k\bmod p$ vanish
+after multiplying by $p^{1-H}$ and reducing. For $j=k+p\ell$ the
+reduced term is $C U(k)r_\ell/(V-\ell)$, including the zero extension
+of the final block. It follows that
+\[
+ W_k(V)=U(k)\, C\left(G(V)-\sum_{\ell=0}^M\frac{r_\ell}{V-\ell}\right)
+\]
+at each of these nodes. Interpolate the $D+1$ bracketed values
+multiplied by $C$ to obtain a single polynomial $J$ of degree at most
+$D$. Then $W_k=U(k)J$ for every $k$, since both sides have degree
+at most $D$ and agree at $D+1$ distinct points.
+\end{proof}
+
+\section{A common divisor of the two coefficients}
+\begin{proof}[Proof of Theorem~\ref{th:div}]
+Write $H=\phi(n/p)$. We first show that $v_p(B_n)\ge H+1$
+and $v_p(A_n)\ge H-1$. We then combine these bounds with the valuation of the
+multiplier in \eqref{eq:pq}.
+
+The denominator estimate follows from \eqref{eq:coeff} and
+\eqref{eq:zerosum}: in each completed block $\sum_k c_{k+p\ell}$
+is divisible by $p^{H+1}$. To make the harmonic weight constant on
+each block, choose
+$\eta=p\lceil2n/p\rceil=pq$. Then $2n\le\eta<3n$, so \eqref{eq:finite}
+applies. For $j=k+p\ell\le m$ we have $j+\eta<14n<p^2$, whence
+\[
+ p^2 H_{j+\eta}^{(2)}\equiv\sum_{w=1}^{\ell+q}w^{-2}\pmod p .
+\]
+This weight is constant on the block. Thus \eqref{eq:coeff} and
+\eqref{eq:zerosum} show that $p^{2-H}$ times the harmonic sum vanishes
+modulo $p$, giving valuation at least $H-1$.
+
+It remains to show $J_\eta(T)\in\Zp$, with $T$ as in
+Lemma~\ref{lem:interpolate}. All its finite differences are integral
+at $-\eta$. Since $i+1\le13n<p^2$, the only weights $1/(i+1)$
+that can cost a factor of $p$ occur at $i=vp-1$. Write the index in
+the finite difference as $up+k$, with $0\le u<v$ and $0\le k<p$.
+Lucas's congruence and $\binom{p-1}{k}\equiv(-1)^k$ give
+\[
+ (-1)^{vp-1-up-k}\binom{vp-1}{up+k}
+       \equiv(-1)^{v-1-u}\binom{v-1}{u}\pmod p .
+\]
+By Lemma~\ref{lem:interpolate}, the corresponding polynomial value
+is $T(-\eta+up+k)\equiv U(k)J(u-q)$. Summing over $k$ gives zero
+for each $u$, by \eqref{eq:zerosum}. Therefore
+$p\mid\Delta^{vp-1}T(-\eta)$ in $\Zp$, as required. This proves
+$\val(A_n)\ge H-1$.
+
+Both least common multiples in \eqref{eq:pq} contain $p$ exactly once since
+$p<n<13n<p^2$. The carry divisor contains $p^H$, and $E_n$ contains
+only primes larger than $n$. The multiplier in \eqref{eq:pq} thus
+has valuation $2-H$. Applying it proves the theorem.
+\end{proof}
+
+\section{The logarithmic saving}
+Let $T_n$ be the product of the distinct primes in Theorem~\ref{th:div}.
+For fixed $t\ge1$ and $(\alpha,\beta)\in\mathcal I$, the primes in
+question lie in
+\[
+  \frac{n}{t+\beta}<p<\frac{n}{t+\alpha}.
+\]
+For fixed $t$ these inequalities imply $p^2>50n$ for all large $n$.
+The intervals for different $t$ and different components of $I$ are
+disjoint. Hence the prime number theorem, in the form
+$\vartheta(x)=\sum_{p\le x}\log p\sim x$, gives rate
+\[
+ s_K=\sum_{(\alpha,\beta)\in\mathcal I}\sum_{t=1}^{K}
+       \left(\frac{1}{t+\alpha}-\frac{1}{t+\beta}\right)
+\]
+for the product from $1\le t\le K$ (rate means logarithm divided by
+$n$ in the limit). Endpoint contributions are $O_K(\log n)$.
+All primes from $t>K$ are at most $n/K$, so their total logarithm is
+at most $\vartheta(n/K)$. First letting $n$ tend to infinity, then
+$K$, gives the exact rate
+\begin{equation}\label{eq:rate}
+ \lim_{n\to\infty}\frac{\log T_n}{n}
+ =s=\sum_{(\alpha,\beta)\in\mathcal I}\sum_{t\ge1}
+       \frac{\beta-\alpha}{(t+\alpha)(t+\beta)} .
+\end{equation}
+The infinite sum gives the rate quoted in the abstract. For the
+irrationality exponent it suffices to keep the first million translates.
+
+\begin{lemma}\label{lem:num}
+For $K=10^6$ one has $s_K>s_0^*$, where $s_0^*=10868226/10^8$.
+\end{lemma}
+\begin{proof}
+Write $(x)_j=x(x+1)\cdots(x+j-1)$, with $(x)_0=1$. Subtracting
+successive remainders gives
+\[
+ \frac1{t+a}=\sum_{j=0}^J\frac{(1-a)_j}{(t+1)_{j+1}}
+       +\frac{(1-a)_{J+1}}{(t+a)(t+1)_{J+1}} .
+\]
+If $0<a<b<1$, the last term is strictly larger at $a$ than at $b$.
+Keep the first twelve periods exactly and drop the difference of
+remainders thereafter, with $J=12$. Telescoping in $t$ gives the
+following lower bound for the contribution of $(a,b)$:
+\begin{align*}
+ D(a,b)={}&\sum_{t=1}^{12}\frac{b-a}{(t+a)(t+b)}\\
+   &+\sum_{j=1}^{12}\frac{(1-a)_j-(1-b)_j}{j}
+       \left(\frac1{(14)_j}-\frac1{(K+2)_j}\right).
+\end{align*}
+The integer parts of $10^{12}D(a,b)$ in the
+order of \eqref{eq:intervals} are given below. They can be obtained
+by starting all rising products at $1$ and updating
+$(z)_{j+1}=(z+j)(z)_j$.
+\[
+ \begin{array}{rrr}
+ 39328986343,&10507109706,&8689742248,\\
+ 10054938596,&16673511522,&23427973106 .
+ \end{array}
+\]
+Their sum is $108682261521>10^{12}s_0^*$.
+\end{proof}
+
+The same expansion gives the decimal value in the abstract. Keep
+the first $32$ periods, set $J=32$, and sum the rest to infinity.
+For each interval $(a,b)$ the error in dropping the difference of
+remainders is positive and at most
+\[
+ \sum_{t=33}^\infty\frac{(1-a)_{33}}{(t)_{34}}
+ =\frac{(1-a)_{33}}{33(33)_{33}} .
+\]
+With the lower approximation obtained by dropping the remainders and
+the upper one obtained by adding these six errors, the integer parts
+after multiplication by $10^{14}$ are both $10868236921910$.
+
+\section{Height and irrationality exponent}
+We use the estimates (A7)--(A10) and the final arithmetic enclosure
+in \cite{LC}. Before normalization, (A7)--(A8) give upper bounds of
+$38.168733$ and $-24.467842$ for the logarithmic growth rates of
+$|2B_n|$ and $|\xi(2B_n)-2A_n|$, respectively.
+The multiplier $L_{12n}L_{13n}/(G_nE_n)$ adds its rate to both.
+To bound its contribution, write
+\[
+ d_*=\frac{143297092558247390159}{13110552000000000000}.
+\]
+The section on the exponential cost of normalization in \cite{LC}
+gives the rate $\gamma=\int_{1/13}^{\infty}\phi(x)x^{-2}\,dx$ for
+$G_n$. Summing the six original prime intervals gives $233/120$ for
+the rate of $E_n$, and the two least common multiples have combined
+rate $25$. The rational enclosure for $\gamma$ in \cite{LC} therefore
+bounds the rate of the multiplier by $25-\gamma-233/120\le d_*$.
+
+Finally, dividing both coefficients by $T_n$ subtracts $s$ from
+both logarithmic rates. Put $h=38.168733+d_*$ and
+$g=38.168733+24.467842$. The resulting integer pairs
+$(P'_n,Q'_n)$ satisfy
+\[
+ |Q'_n|\le e^{(h-s+o(1))n},\qquad
+ |\xi Q'_n-P'_n|\le e^{-(g-h+s-o(1))n}.
+\]
+For all large $n$, the three successive first-column directions span
+the three-dimensional state space. Indeed, if $A_n^{\rm tr}$ denotes
+the normalized transition matrix of \cite{LC}, their matrix in the
+level-$n$ basis is
+$(e_0,A_n^{\rm tr}e_0,A_n^{\rm tr}A_{n+1}^{\rm tr}e_0)$, whose
+limiting determinant is nonzero by (A9). The two readout rows are
+independent and the change of basis is invertible. Consequently the
+linear combination of rows corresponding to $bP_j-aQ_j$ cannot
+annihilate all three directions when $b>0$. This nonvanishing
+property survives division at each level.
+
+\begin{proof}[Proof of Theorem~\ref{th:main}]
+Set $\sigma=h-s_0^*$ and $\tau=g-h+s_0^*>0$. For
+$0<\varepsilon<\tau$ and large $b$, take
+$n=\lceil\log(2b)/(\tau-\varepsilon)\rceil$. Choose $j\in[n,n+2]$
+with the integer $bP'_j-aQ'_j$ nonzero. The two rate estimates give
+\[
+ 1\le |bP'_j-aQ'_j|
+ \le \tfrac12+b e^{(\sigma+\varepsilon)(n+2)}|\xi-a/b|.
+\]
+Hence $|\xi-a/b|\gg_\varepsilon
+b^{-1-(\sigma+\varepsilon)/(\tau-\varepsilon)}$ uniformly in $a$.
+Letting $\varepsilon\downarrow0$ and using $\mu(\pi^2)=\mu(\xi)$
+gives
+\[
+ \mu(\pi^2)\le 1+\frac{\sigma}{\tau}
+ =\frac{g}{g-h+s_0^*}
+ =\frac{821200073639400000000}{178914706731744129841}
+ <\frac{4589897}{10^6}.\qedhere
+\]
+\end{proof}
+
+\clearpage
+\paragraph{Lean formalization.}
+The \href{https://github.com/Mattie/math/blob/02d402999844a7b9524c1668d54e6314979c7569/verification/prime-window/inputs/recipes/WindowFinal.lean#L35-L48}{Lean proof of Theorem~\ref{th:main}}
+uses the first-column height, error, and independence estimates of
+Leibtag et al.\ \cite{L,LC} and the prime number theorem from the
+PrimeNumberTheoremAnd project \cite{PNT}. The bound needs only the finite
+estimate $s_{10^6}>10868226/10^8$. The proof of the full limiting rate
+in~\eqref{eq:rate} is given in the text.
+An \href{https://github.com/Mattie/math/actions/runs/45713249120}{independent check on GitHub Actions}
+rebuilt the formalization from source. Lean's kernel and Nanoda both
+checked the exact rational bound and its strict decimal consequence
+in the infimum and supremum definitions of the irrationality exponent,
+as well as the finiteness statement following Theorem~\ref{th:main}.
+
+\paragraph{Acknowledgment.} OpenAI Astra agents assisted substantially
+with mathematical development, Lean formalization, manuscript
+preparation, and review.
+
+\begin{thebibliography}{9}
+\small\setlength{\itemsep}{3pt}
+\bibitem{Casper}
+R. M. Casper, \emph{The irrationality exponent of real and imaginary
+quadratic periods is 2}, 9 October 2026.
+\href{https://github.com/Mattie/math/blob/d9de38369ed65117d61b5230accaa9dbb930d337/preprints/The-irrationality-exponent-of-real-and-imaginary-quadratic-periods-is-2-October-9-2026/paper.pdf}{Preprint}.
+\bibitem{C}
+N. A. Carella, Irrationality measure of $\pi^2$, 2022.
+\href{https://arxiv.org/abs/2201.00651v2}{arXiv:2201.00651v2}.
+\bibitem{Z}
+W. Zudilin, Two hypergeometric tales and a new irrationality measure
+of $\zeta(2)$, \emph{Ann. Math. Qu\'ebec} \textbf{38} (2014), 101--117.
+\href{https://doi.org/10.1007/s40316-014-0016-0}{doi:10.1007/s40316-014-0016-0}.
+\bibitem{N}
+D. Niedbala Giraudin, A new upper bound for the irrationality exponent
+of $\zeta(2)$, 2026. \href{https://arxiv.org/abs/2610.02912}{arXiv:2610.02912}.
+\bibitem{L}
+E. Leibtag, H. Barkan, R. Kalisch, S. Weinbaum, M. Shalyt, and
+I. Kaminer, New directions in irrationality, 2026.
+\href{https://arxiv.org/abs/2610.27799v1}{arXiv:2610.27799v1}.
+\bibitem{PNT}
+PrimeNumberTheoremAnd contributors, \emph{PrimeNumberTheorem+
+and explicit bounds}, Lean formalization.
+\href{https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/tree/127b50e33f6033e2147921167a117af96d9ba4ea}{Project and source}.
+\bibitem{LC}
+Ramanujan Machine, \emph{CMF conservation as an arithmetic tool:
+a proof of $\mu(\zeta(2))<4.62675$ for the direction
+$(10,9,11,-11;2,1,3)$}, supplementary derivation
+for \cite{L}, 2026. \href{https://github.com/RamanujanMachine/zeta2_four_trajectory_matrices/blob/a0e8ac417cddc6ffa88e43cfd68d2b58ea339517/results/zeta2_complete_proof/zeta2_complete_proof.tex}{Version with the six-interval table and rational rate enclosure}.
+\end{thebibliography}
+\end{document}
