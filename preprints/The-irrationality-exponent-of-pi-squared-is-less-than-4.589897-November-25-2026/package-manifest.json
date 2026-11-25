@@ -1,12 +1,12 @@
 {
   "files": {
     "build/main.tex": {
-      "bytes": 26776,
-      "sha256": "d6c262e7a91a064a7b42fa17a2908dbbe87a1979d326a01471fc19a60ad4a940"
+      "bytes": 26825,
+      "sha256": "b54b3da3873b815c57c5f226ec115f38832982176199e2b61cb151731eade922"
     },
     "build/receipt.json": {
       "bytes": 249,
-      "sha256": "a817e69a6fd631d9617b99536b4374a32e2641b6aaec61173f6d1937881dc8f2"
+      "sha256": "f6d4a8b17579f7ce4ef81f0d5797fd0cf2b4f7b92503a904aa10a96ef539defb"
     },
     "check_rate.py": {
       "bytes": 1385,
@@ -153,8 +153,8 @@
       "sha256": "7df368b4c4fa1de887f9b4f866b49a41a1b1fbe17539b94e625f27cd2d4a4dd0"
     },
     "paper.pdf": {
-      "bytes": 124174,
-      "sha256": "84e1e0dcd85b3421de606aa2598e345f549ec5e4ae9fc2b9135857a16fcc9976"
+      "bytes": 124222,
+      "sha256": "cebddc520a546cee224709240ee95043ff7d60498cc87e829d8e714edc69ab91"
     },
     "README.md": {
       "bytes": 1067,
