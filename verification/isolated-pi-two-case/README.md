@@ -22,4 +22,6 @@ python3 -I -B verification/isolated-pi-two-case/verify.py
 python3 -I -B verification/isolated-pi-two-case/verify.py --stage /path/to/new/directory
 ~~~
 
+Local preparation passed the three staging tests and the 14 tests for the reused verifier. On Linux, the generated workspace resolved both trusted libraries and kept the dependency lock intact. Lean also accepted each challenge type when supplied with the corresponding frozen theorem. The GitHub workflow will exercise the actual isolation boundary and the two checker implementations.
+
 The historical exported-proof replay and the hosted build are separate checks. See the [paper verification record](../../preprints/The-irrationality-exponent-of-pi-through-a-two-case-determinant-argument-October-11-2026/VERIFY.md) and the [source replay instructions](REPLAY.md).

@@ -3,7 +3,7 @@
   "revision": "2026-11-27",
   "files": {
     "README.md": "22fbf701c64db823cff886aa4c52b18c0fcfadb43a05436b3114341162606ce6",
-    "VERIFY.md": "af42db2acf909a06fad9fbf5b86029397a2def1b1b5693e19371a9bb24bf5017",
+    "VERIFY.md": "77fb5dd4c170bcca88f140be122be8d6620ee954d35c283189e62d33c1129232",
     "SOURCE-MAP.md": "da94f1f911e8c39d07a13058749c857afaef2dd3b4d14894364088490e7eb489",
     "CITATION.cff": "990d367344dae5f9712547ceeaf1be434bcb3a77fc705286c97c0bcacc8a4a5d",
     "LICENSE": "30ddd1d710f28d9977b9055d560ff893cf7591cb5563b59430ad4e67b0123b2d",
@@ -14,10 +14,11 @@
     "scripts/build-paper.ps1": "cffacb49bad63a7f85f40dfff9259243f9942ef276340fc0e92bf4817071c00b",
     "licenses/CC-BY-4.0.txt": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
     "licenses/OpenAI-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "evidence/checklist.md": "1375e1406a9827a13f5aa3f139cd045f5a48aeba27e7412cfa118307f8060b84",
+    "evidence/checklist.md": "d8881adc795ed1aee6cd0a063b12bc0108ca5ee10b4dc65ef3f63c1d80e550cf",
     "evidence/build.json": "ba3a4f2a46aa687ef84a225290b2ba43a92043beed1979c50c0726d938312601",
     "evidence/pdf-inspection.json": "89e15d687f6acd2b76cefe715c327ce9fe7a928f2d2077dbf542cf98eb41d05f",
-    "build/PiTwoCaseBridge-2026-11-26.zip": "45ff25ab0b7d1d7676be7e7c26a25fedbfb0e13a972e779dc7747179c57d41fa"
+    "build/PiTwoCaseBridge-2026-11-26.zip": "45ff25ab0b7d1d7676be7e7c26a25fedbfb0e13a972e779dc7747179c57d41fa",
+    "evidence/fresh-replay.json": "bc589ec45adac97ecb8f3e705885b19cdefdcf16e48a3bf684d64c7d02129bfa"
   },
   "companion": {
     "upstream_openai_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",

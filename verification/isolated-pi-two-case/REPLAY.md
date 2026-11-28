@@ -1,9 +1,9 @@
 # Replay the two-case pi formalization
 
-These draft instructions reconstruct the source environment for
-the November 26, 2026 replay of PiTwoCaseBridge.main. The
-November 26 run used already compiled inherited modules. The
-fresh-checkout steps below have yet to be tested end to end.
+These instructions reconstruct the source environment for PiTwoCaseBridge.main.
+A separate fresh-checkout run built the inherited OpenAI modules and the
+companion from source with pinned Mathlib cache objects. It exported the
+root and checked the same export with stock Lean and Nanoda. [Receipt](../../preprints/The-irrationality-exponent-of-pi-through-a-two-case-determinant-argument-October-11-2026/evidence/fresh-replay.json)
 
 Use a Linux shell with Git, Elan, Rust and Cargo, unzip, and
 space for the Lean dependencies and the 1.26 GB uncompressed export.
@@ -45,13 +45,17 @@ require mathlib from git "https://github.com/leanprover-community/mathlib4.git" 
 lean_lib OAI
 EOF
 cd "$inherited"
-lake exe cache get
+if ! timeout --kill-after=30s 20m lake exe cache get; then
+  printf '%s\n' 'Cache setup did not finish. Building from the pinned sources with any available cache files.'
+fi
+test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = \
+  d13f23b723b8a846827a245b89c10fc7d3f11612
 mapfile -t targets < <(
   awk '$1 == "import" && $2 ~ /^OAI\./ { sub(/\r$/, "", $2); print "+" $2 }' \
     "$bridge"/PiTwoCaseBridge/*.lean | sort -u
 )
 test "${#targets[@]}" -gt 0
-lake build "${targets[@]}"
+lake --no-cache build "${targets[@]}"
 lake env bash "$bridge/build-overlay.sh" "$overlay"
 ```
 

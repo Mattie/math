@@ -1,0 +1,72 @@
+{
+  "completed_utc": "2026-11-28T06:12:54Z",
+  "evidence_kind": "fresh local execution on Linux x86_64",
+  "source": {
+    "openai": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "pi_exponent_tree": "8a202af08bf5a2b708abfc07248834e4bd2a88fd",
+    "lean": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "mathlib_package_revisions_checked": 9,
+    "mathlib_cache": "Pinned Mathlib dependency objects reused on SSD after archive-drive cache loading delayed the build.",
+    "openai_modules_built": 771,
+    "overlay_modules_built": 27,
+    "frozen_input_hashes_verified": 30
+  },
+  "proof": {
+    "root": "PiTwoCaseBridge.main",
+    "bytes": 1255233780,
+    "sha256": "9c8013cd869e49790892ca6224624cafed2a7b9df6a6461b3c463716d0133b31",
+    "byte_identical_to_november_26": true,
+    "exporter": "05d43a2bc773b40ecfdebb32294192a5ef756951",
+    "transitive_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ]
+  },
+  "checker_outcomes": {
+    "stock_lean": {
+      "declarations": 117238,
+      "exit": 0
+    },
+    "nanoda": {
+      "revision": "0da9f98feadd3a0a2ef4b3dbcf52a298a6fef929",
+      "declarations": 117241,
+      "exit": 0
+    },
+    "controls": "Both newly built checkers accepted the recorded positive fixture and rejected the parseable ill-typed fixture at the expected type check."
+  },
+  "binary_sha256": {
+    "lean": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "exporter": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1",
+    "stock_reader": "ae92c625e612fff1c90e329344d22e3c3c330383cb335ce28fd41435be3b3b94",
+    "nanoda": "bb82334d33b681515dceda71d5a916f6b330d0432d2f14c9298540499617b9a5"
+  },
+  "timing": {
+    "export": {
+      "elapsed": "1:43.10",
+      "max_rss_kib": 7498452
+    },
+    "nanoda": {
+      "elapsed": "2:17.12",
+      "max_rss_kib": 1747712
+    },
+    "stock": {
+      "elapsed": "18:07.60",
+      "max_rss_kib": 2709792
+    }
+  },
+  "private_log_sha256": {
+    "inherited-targets.txt": "c47b09f87bbdb4fb1b9cb405d5d08bd33a3b4039b94ed4695f3bd6a348d10599",
+    "inherited-build.log": "0e6a2c2fb51d216d790f32ff7572bebce0fcfc6aa68fd3f28937c8d1c23c5c74",
+    "overlay-build.log": "9ef5229fd7480fe8b43bf2f2a3d1e8dd4cd730700f526141a5a99d84a90c996b",
+    "replay.log": "93f730610f099e65307181256f11c79a34039724aad1d6021b3bb28d121abf3d",
+    "nanoda-replay.log": "ebef02056f34b62e4c7c1cfcf6d53e94adbdfeed029bd25ef9a70fae64fd5f1e",
+    "stock-replay.log": "71cef7b5a2556fd0633aee4fea5ba00ad6ad34e8afe993c0d1abf829a62b358c",
+    "compatibility.log": "de0d54cf3c9e57fcdd08d87064f8f678f33054c34ae67c6228997e1fec6d77ab",
+    "closure.sha256": "aeaf9912bdda087bdc08c588190fb37bcb52c3eaeed5bd7f154706207f3cb5eb",
+    "export-time.txt": "e8ad254d7844e3e914cae57322e4344111ac8c1a24a0702412f26bc7798a6db6",
+    "nanoda-time.txt": "bf7bdc4d3a919175b25fc2b959e89579ba018d71eb7da1370698228163465712",
+    "stock-time.txt": "ecaa74e91fd2307eddd19405b5143cceda35b01efb1eaaae57752188a45034a5"
+  }
+}

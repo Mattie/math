@@ -37,6 +37,10 @@ lean4export PiTwoCaseBridge.Main -- PiTwoCaseBridge.main > closure.ndjson
 
 [Companion build instructions](../../formalizations/PiTwoCaseBridge/README.md) · [Audit.lean](../../formalizations/PiTwoCaseBridge/PiTwoCaseBridge/Audit.lean) · [Pinned exporter](https://github.com/leanprover/lean4export/tree/05d43a2bc773b40ecfdebb32294192a5ef756951)
 
+## Fresh local replay
+
+The separate [fresh-checkout replay](evidence/fresh-replay.json) rebuilt the required OpenAI modules and all 27 companion modules from source, using the pinned Mathlib cache. Both newly built checkers accepted the same new export of PiTwoCaseBridge.main. The export matches the November 26 export byte for byte. The hosted isolation check is tracked separately.
+
 ## Isolated source verification
 
 The [manual GitHub verifier](../../verification/isolated-pi-two-case/README.md) stages the frozen companion and checks three declarations against independently stated claims. Its local staging and challenge checks passed. GitHub execution and evidence review remain pending.
