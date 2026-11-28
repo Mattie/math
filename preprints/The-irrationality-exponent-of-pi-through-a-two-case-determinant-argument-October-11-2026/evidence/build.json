@@ -1,0 +1,15 @@
+{
+  "revision": "2026-11-27",
+  "compiler": "Tectonic 0.17.0",
+  "platform": "Windows x86_64",
+  "compiler_sha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d",
+  "command": "tectonic -C --keep-logs --keep-intermediates main.tex",
+  "working_directory": "build",
+  "exit_code": 0,
+  "pages": 18,
+  "tex_warnings": [],
+  "runtime_diagnostic": "Fontconfig reported a missing default configuration. Compilation completed.",
+  "source_sha256": "47bfa481f3f43ca2dd1ef80738a89884891cd47236178ee2b7e5344088a775e4",
+  "pdf_sha256": "e537fd88f9c1e53cf368011dcd39a4867e3709d92428f2f66a737133e6f65c55",
+  "structure_inspection": "pdf-inspection.json"
+}

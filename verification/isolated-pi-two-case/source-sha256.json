@@ -1,0 +1,40 @@
+{
+  "proof": {
+    "formalizations/PiTwoCaseBridge/lean-toolchain": "8152090414016dd5dc871752f8ce4ecdbd604d9845758e9b9047cb80101280b5",
+    "formalizations/PiTwoCaseBridge/build-overlay.sh": "b4b33702bd29bddd3174d376557c1dc5e1a2fa5bece8054ae398075b54cfebaa",
+    "formalizations/AffineLogarithms/lake-manifest.json": "75bef2b97ca07c8973031212031f4936198f4c2465459898cf5e6d75f3d5824d",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/Reduction.lean": "2d8368cffe884806673b3bf98242048c397d35886e5376348d413db229617be3",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/Colength.lean": "2716608ebea095bcbcb6308bd1fc6fd92c92f78be86520c80808543808b09f73",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/CRT.lean": "e708268638edc1ed488aac406f78acbe331fb38523694120b93576e31aa95713",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/GradedLifts.lean": "79c8b7863df7976683154d7584c57d7492f26a9134d253acaccece4ee73e35a6",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/Triangular.lean": "0a372ca3b3052cc80661f9c00fc54e1c163a3c55c80e17f525a541a29eb55624",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/Packets.lean": "54bb6d7d3c13ca44be33ba33d77bee3b1a1c231136a2e376a14d3091ea3a97bb",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/FiniteInterpolation.lean": "f122f9d39dcf9e7724312ad6ababf82e445003d144ee6d480c34bb0cd7a3d6fd",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/RationalWeights.lean": "a597ee35fdfc74806e7ea8753e640c6c2c4c993e1f6e4569df030e944253ec20",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/Margin.lean": "ec92862cd040420683613e6b6b09161b9a8989b00f4de50fd591aa77dfb120b0",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/Certificate.lean": "76801d7dfd0cbf54e67e9b0a0bed5865c6630ca2742c7e9c2fb3374994d050a9",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/Determinant.lean": "fad339e135da5b07cc5ee2916d369cc58f89207169f8c22c66dd7a947f3a676c",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/WeightedArcs.lean": "0914216e9a4c88514cbf8ca162021bd0ddffdd5d1caa79dbed5f0cf594f1e137",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/SectionArcBridge.lean": "e79716e61bd5b8d586bb5fecba405b867a74f40c595e2ebf4a4352345d397bfe",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/CurveGeometryCore.lean": "11e05e338ab2efbf2b4d3099fb3a5d8b86c7d94a00077cda677afd4b9f1720d7",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/CurveGeometryModel.lean": "6fe0a5500e5a18f0abe586b3f17993ceff8c7cbfadb81b6f7c7c54fa81d90b67",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/CurveGeometry.lean": "605c723fd9cc4abbaa7f66e007c748cf0b36d008fe74da1e7b1ccde0b735da61",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/CurveGeometryAdmissible.lean": "2d739020e8f4422677179c818521d6212e68347d3a17fb6cb6074e011b02c83d",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/CurveGeometryLift.lean": "ac7675bd48c655aab8071f9dca68489c2cab9bf49b380a92ed811ead159b4bdc",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/CurveGeometryArcs.lean": "b340cd23a364c38c25794011c24b370b712e977544c3e7b380b2d44252bc0f0a",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/SectionPolynomials.lean": "681ad4fcf2074a602cee43453cfa813cbd1a26b6d972ed908ab2e863507189a8",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/ProjectionUnit.lean": "5173cfa6afaca7dec567d528588330c2b511af847312a40bf914ddb70faad826",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/MonomialDegree.lean": "cd58db2d63b3db7a2d867db6bfd3ee4f50100cc5067769791ce4e1792b80e8f4",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/SectionInitials.lean": "f0ad280324c443d383640dff703849730a0e48ead39a6c128eca1a15e746649f",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/Main.lean": "c53d4dacf7e68b436d0e07d5447afba7d337a18e1bac78fab1fee106423fbf07",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/FiniteExample.lean": "71e147991aa393aeab32aa676a07b812e7ce4f53a23fc490f4be9f818a606894",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/LogExample.lean": "ff21e09cee6d228828734fdb40b93288790094a2042f8d81f9816dd610600102",
+    "formalizations/PiTwoCaseBridge/PiTwoCaseBridge/Audit.lean": "77bee228d01948cdf9ddee284dfc3b535dac2e1d1eb69dcb463293cfc76a171b"
+  },
+  "spec": {
+    "Challenge.lean": "e7b7b290089c8fd4c1cf7c085102b4d6958af38e30b33d97b1c65a9877921dbc",
+    "Solution.lean": "141c8434ef907d881867816fe848594c08e81135981519bcda14a21bd05da994",
+    "config.json": "b80d6e87cc5e684697056a19dc36b86b255a8ae4d4f558baf88b53012e73cdad",
+    "pins.json": "8b52e24219b3e1b448f6e5d7f4740c36fdd2b6189536b72fe32460244b2ff1a4"
+  }
+}

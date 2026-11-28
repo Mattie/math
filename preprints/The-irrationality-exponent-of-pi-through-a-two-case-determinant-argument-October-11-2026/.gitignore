@@ -1,0 +1,9 @@
+build/*.atfi
+build/*.aux
+build/*.log
+build/*.out
+build/*.toc
+build/*.xdv
+build/main.pdf
+evidence/rendered/
+evidence/pdf-text.txt

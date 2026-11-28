@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "PiTwoCaseBridge.main",
+    "PiTwoCaseBridge.pi_irrationalityExponent_eq_two",
+    "PiTwoCaseBridge.theorem_5_1"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

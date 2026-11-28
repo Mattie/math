@@ -1,0 +1,39 @@
+{
+  "pages": 18,
+  "page_size": "A4",
+  "replacement_characters": 0,
+  "internal_links": 103,
+  "unresolved_internal_destinations": [],
+  "external_link_targets": [
+    "https://arxiv.org/abs/1806.05346v5",
+    "https://arxiv.org/abs/2610.28079v1",
+    "https://doi.org/10.5486/PMD.2000.2310",
+    "https://github.com/Mattie/math/tree/4430312c0422ee667a0bf8a0d26c48e1bdda51b5/preprints/The-weighted-degree-bound-for-monomial-compactifications-holds-at-every-power-October-8-2026",
+    "https://github.com/openai/math/tree/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026",
+    "https://stacks.math.columbia.edu/tag/01OF",
+    "https://stacks.math.columbia.edu/tag/01PR",
+    "https://stacks.math.columbia.edu/tag/01VG",
+    "https://stacks.math.columbia.edu/tag/0806",
+    "https://stacks.math.columbia.edu/tag/0BXX",
+    "https://www.math.stonybrook.edu/~roblaz/Reprints/Laz.PAG.Chapt1.pdf",
+    "https://www.numdam.org/item/AST_1991__198-199-200__209_0/"
+  ],
+  "external_retrieval_checked": false,
+  "attachments": [
+    {
+      "page": 18,
+      "file": "PiTwoCaseBridge-2026-11-26.zip",
+      "bytes": 70308,
+      "sha256": "45ff25ab0b7d1d7676be7e7c26a25fedbfb0e13a972e779dc7747179c57d41fa"
+    }
+  ],
+  "metadata": {
+    "/Creator": "LaTeX with hyperref",
+    "/Title": "The irrationality exponent of pi through a two-case determinant argument",
+    "/Subject": "A reorganized proof with a global-generation interpolation argument",
+    "/Author": "Ryan Matthew Casper",
+    "/Producer": "xdvipdfmx (0.1)",
+    "/CreationDate": "D:20261128040716-00'00'"
+  },
+  "pdf_sha256": "e537fd88f9c1e53cf368011dcd39a4867e3709d92428f2f66a737133e6f65c55"
+}

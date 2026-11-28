@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this manuscript and its stated mathematical sources."
+type: article
+title: "The irrationality exponent of pi through a two-case determinant argument"
+authors:
+  - family-names: Casper
+    given-names: Ryan Matthew
+version: "2026-11-27"
+license: CC-BY-4.0
+abstract: "An exposition of the argument for the irrationality exponent of pi, organized around a two-case determinant estimate and using a global-generation and initial-form interpolation argument."
