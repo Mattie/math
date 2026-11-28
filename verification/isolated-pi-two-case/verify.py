@@ -22,7 +22,7 @@ RUNNER_INPUTS = (Path(__file__).resolve(), FREEZE,
                  REPO / "verification/isolated-preflight/preflight.py",
                  REPO / "verification/isolated-preflight/boundary_probe.c",
                  REPO / "verification/publication/prepare-independent-runner.sh",
-                 REPO / ".github/workflows/isolated-pi-two-case.yml")
+                 REPO / ".github/workflows/isolated-irrationality.yml")
 SPEC = ("Challenge.lean", "Solution.lean", "config.json", "pins.json")
 TARGETS = ["PiTwoCaseBridge.main", "PiTwoCaseBridge.pi_irrationalityExponent_eq_two",
            "PiTwoCaseBridge.theorem_5_1"]

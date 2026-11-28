@@ -13,7 +13,7 @@ It has been prepared locally. A GitHub-hosted run and its evidence audit remain 
 The interpolation statement spells out the local coefficient condition and the weighted source bound. Its geometric hypothesis uses the pinned definitions of branch contact and pole degree. The challenge uses admitted propositions for comparison. The candidate may use only the three listed standard axioms.
 
 [verify.py](verify.py) reuses the existing Comparator, Landrun, and systemd preflight.
-It checks the input freeze, builds the pinned OpenAI dependencies in a trusted project, and stages the candidate into fresh build space. The workflow requires intended diagnostics for the mismatch, forbidden axiom, and imported admission controls, and acceptance by both kernels. It records tool, input, dependency, and log hashes. [Workflow](../../.github/workflows/isolated-pi-two-case.yml)
+It checks the input freeze, builds the pinned OpenAI dependencies in a trusted project, and stages the candidate into fresh build space. The workflow requires intended diagnostics for the mismatch, forbidden axiom, and imported admission controls, and acceptance by both kernels. It records tool, input, dependency, and log hashes. [Workflow](../../.github/workflows/isolated-irrationality.yml), case pi-two-case.
 
 For local, offline preparation checks, run:
 
